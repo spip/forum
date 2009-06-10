@@ -100,18 +100,21 @@
 
 	<necessite id="SPIP" version="[2.1.0 dev;)" />
 	
-	<bouton id="forum" position='2'>
-		<icone>images/messagerie-48.png</icone>
-		<titre>titre_forum</titre>		
-	</bouton>
-	<bouton id='controle_forum' parent='forum'>
-		<icone>images/suivi-forum-24.gif</icone>
+	<bouton id='forum_reactions' parent='bando_activite'>
+		<icone>images/forum-16.png</icone>
 		<titre>icone_suivi_forums</titre>
-	</bouton>	
+		<url>controle_forum</url>
+	</bouton>
 	
 	<onglet id='config_forum' parent='configuration'>
 		<icone>images/forum-public-24.gif</icone>
 		<titre>titre_forum</titre>
 	</onglet>	
+
+	<bouton id="forum_interne_suivi" parent="outils_collaboratifs">
+		<icone>images/forum-interne-16.png</icone>
+		<titre>titre_cadre_forum_interne</titre>
+		<url>forum</url>
+	</bouton>
 
 </plugin>
