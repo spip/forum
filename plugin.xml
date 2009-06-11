@@ -107,7 +107,7 @@
 	</bouton>
 	
 	<onglet id='config_forum' parent='configuration'>
-		<icone>images/forum-public-24.gif</icone>
+		<icone>images/forum-24.png</icone>
 		<titre>titre_forum</titre>
 	</onglet>	
 

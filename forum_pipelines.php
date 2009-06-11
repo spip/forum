@@ -110,7 +110,7 @@ function forum_afficher_fiche_objet($flux){
 		else
 			$n_forums = 0;
 		if ($n_forums)
-	  	$flux['data'] .= icone_inline(_T('icone_suivi_forum', array('nb_forums' => $n_forums)), generer_url_ecrire("controle_forum","id_rubrique=$id_rubrique"), "suivi-forum-24.gif", "", 'center');
+	  	$flux['data'] .= icone_inline(_T('icone_suivi_forum', array('nb_forums' => $n_forums)), generer_url_ecrire("controle_forum","id_rubrique=$id_rubrique"), "forum-24.png", "", 'center');
 	}
 	return $flux;
 }
