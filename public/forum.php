@@ -33,7 +33,7 @@ function boucle_FORUMS_dist($id_boucle, &$boucles) {
 	// Restreindre aux elements publies
 	if (!isset($boucle->modificateur['criteres']['statut'])) {
 		if ($GLOBALS['var_preview'])
-			array_unshift($boucle->where,array("'IN'", "'$mstatut'", "'(\\'publie\\',\\'prive\\')'"));		
+			array_unshift($boucle->where,array("'IN'", "'$mstatut'", "'(\\'publie\\',\\'prop\\')'"));		
 		else
 			array_unshift($boucle->where,array("'='", "'$mstatut'", "'\\'publie\\''"));
 	}
