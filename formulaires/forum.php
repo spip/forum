@@ -274,12 +274,21 @@ function forum_documents_acceptes()
 	return $formats;
 }
 
+// remplace les \n du texte des forums par des sauts de ligne <br />
+// http://doc.spip.org/@forum_sautsdeligne
+function forum_sautsdeligne($texte) {
+	return post_autobr($texte);
+}
+
 // http://doc.spip.org/@inclure_previsu
 function inclure_previsu($texte,$titre, $url_site, $nom_site, $ajouter_mot, $doc,
 $id_rubrique, $id_forum, $id_article, $id_breve, $id_syndic) {
 	$bouton = _T('forum_message_definitif');
 	include_spip('public/assembler');
 	include_spip('public/composer');
+
+	$texte = forum_sautsdeligne($texte);
+
 	// supprimer les <form> de la previsualisation
 	// (sinon on ne peut pas faire <cadre>...</cadre> dans les forums)
 	return preg_replace("@<(/?)form\b@ism",
