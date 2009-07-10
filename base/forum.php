@@ -42,7 +42,13 @@ function forum_declarer_tables_interfaces($interfaces){
 	$interfaces['table_des_traitements']['URL_SITE']['forums']= 'safehtml(vider_url(%s))';
 	$interfaces['table_des_traitements']['AUTEUR']['forums']= 'safehtml(vider_url(%s))';
 	$interfaces['table_des_traitements']['EMAIL_AUTEUR']['forums']= 'safehtml(vider_url(%s))';
-	
+
+	// gerer les sauts de ligne dans les textes des forums
+	$interfaces['table_des_traitements']['TEXTE']['forums'] =
+		str_replace('%s', 'post_autobr(%s)',
+		$interfaces['table_des_traitements']['TEXTE']['forums']
+	);
+
 	return $interfaces;
 }
 
