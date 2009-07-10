@@ -100,8 +100,6 @@ function inc_forum_insert_dist($force_statut = NULL) {
 	) as $champ)
 		$c[$champ] = _request($champ);
 
-	$c['texte'] = forum_sautsdeligne($c['texte']);
-
 	$c['auteur'] = sinon($GLOBALS['visiteur_session']['nom'],
 		$GLOBALS['visiteur_session']['session_nom']);
 	$c['email_auteur'] = sinon($GLOBALS['visiteur_session']['email'],
