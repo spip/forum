@@ -232,7 +232,9 @@ function forum_declarer_tables_objets_surnoms($table){
  * @param int $n
  * @return int
  */
-function forum_optimiser_base_disparus($n){
+function forum_optimiser_base_disparus($flux){
+	$n = &$flux['data'];
+	
 	# les forums lies a une id_rubrique inexistante
 	$res = sql_select("forum.id_forum AS id",
 			"spip_forum AS forum
@@ -301,7 +303,7 @@ function forum_optimiser_base_disparus($n){
 
 	$n+= optimiser_sansref('spip_mots_forum', 'id_forum', $res);
 	
-	return $n;
+	return $flux;
 }
 
 /**
