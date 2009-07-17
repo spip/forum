@@ -53,10 +53,6 @@
 		<inclure>forum_pipelines.php</inclure>
 	</pipeline>
 	<pipeline>
-		<nom>affiche_milieu</nom>
-		<inclure>forum_pipelines.php</inclure>
-	</pipeline>
-	<pipeline>
 		<nom>boite_infos</nom>
 		<inclure>forum_pipelines.php</inclure>
 	</pipeline>
