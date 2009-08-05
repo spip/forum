@@ -49,11 +49,6 @@ function balise_FORMULAIRE_FORUM ($p) {
 // http://doc.spip.org/@balise_FORMULAIRE_FORUM_stat
 function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 
-	// Note : ceci n'est pas documente !!
-	// $filtres[0] peut contenir l'url sur lequel faire tourner le formulaire
-	// exemple dans un squelette article.html : [(#FORMULAIRE_FORUM|forum)]
-	// ou encore [(#FORMULAIRE_FORUM|forumspip.php)]
-
 	// le denier arg peut contenir l'url sur lequel faire le retour
 	// exemple dans un squelette article.html : [(#FORMULAIRE_FORUM{#SELF})]
 
@@ -103,11 +98,7 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 	
 	// Sur quelle adresse va-t-on "boucler" pour la previsualisation ?
 	// si vide : self()
-	if ($script = $context_compil[5])
-		$script = preg_match(',[.]php3?$,', $script) ?
-			$script : generer_url_public($script);
-	else
-		$script = ''; # sur soi-meme
+	$script = '';
 
 	return
 		array($titre, $table, $type, $script,
