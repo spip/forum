@@ -47,7 +47,7 @@ function balise_FORMULAIRE_FORUM ($p) {
 // Donner aussi la table de reference pour afficher_groupes[]
 
 // http://doc.spip.org/@balise_FORMULAIRE_FORUM_stat
-function balise_FORMULAIRE_FORUM_stat($args, $filtres) {
+function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 
 	// Note : ceci n'est pas documente !!
 	// $filtres[0] peut contenir l'url sur lequel faire tourner le formulaire
@@ -100,10 +100,10 @@ function balise_FORMULAIRE_FORUM_stat($args, $filtres) {
 		$table = '';
 
 	$titre = supprimer_numero($titre['titre']);
-
+	
 	// Sur quelle adresse va-t-on "boucler" pour la previsualisation ?
 	// si vide : self()
-	if ($script = $filtres[0])
+	if ($script = $context_compil[5])
 		$script = preg_match(',[.]php3?$,', $script) ?
 			$script : generer_url_public($script);
 	else
