@@ -23,6 +23,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 // statuts
 'messages_tous' => 'Tous',
+'messages_aucun' => 'Aucun',
 'messages_publie' => 'Publi&eacute;s',
 'messages_prop' => 'Propos&eacute;s',
 'messages_spam' => 'Spam',

@@ -24,11 +24,14 @@ formulaires/forum.html -text
 formulaires/forum.php -text
 formulaires/forum_prive.html -text
 formulaires/forum_prive.php -text
+formulaires/gestion_forum.html -text
+formulaires/gestion_forum.php -text
 formulaires/inc-choix_mots.html -text
 formulaires/inc-forum_ajouter_mot.html -text
 formulaires/inc-forum_bloc_choix_mots.html -text
 formulaires/inc-forum_previsu.html -text
 formulaires/inc-forum_prive_previsu.html -text
+formulaires/inc-gestion_forum_liste.html -text
 formulaires/inc-login_forum.html -text
 formulaires/inc-login_forum_abo.html -text
 /forum_autoriser.php -text
@@ -46,6 +49,7 @@ prive/controler_forum.html -text
 prive/discuter_forum.html -text
 prive/exec/forum.html -text
 prive/listes/controler_forum.html -text
+prive/listes/controler_forum_cvt.html -text
 prive/listes/inc-boutons-filtres-statut-forum.html -text
 prive/listes/participer_forum.html -text
 prive/listes/participer_forum_thread.html -text
