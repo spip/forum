@@ -52,7 +52,7 @@ function exec_controle_forum_args($type,$contexte=array(),$fond = 'prive/control
 		
 		echo pipeline('affiche_milieu',array('args'=>array('exec'=>'controle_forum', 'type'=>$type),'data'=>''));
 
-		echo recuperer_fond('',array_merge($contexte,array('fond'=>$fond)),array('ajax'=>true));
+		echo recuperer_fond($fond, $contexte,array('ajax'=>true));
 		echo fin_gauche(), fin_page();
 }
 
