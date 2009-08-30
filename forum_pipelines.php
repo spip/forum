@@ -92,14 +92,15 @@ function forum_accueil_informations($texte){
  * @return array
  */
 function forum_afficher_fiche_objet($flux){
-	if ($type = $flux['args']['type']=='article'){
+
+	if (($type = $flux['args']['type'])=='article'){
 		$id = $flux['args']['id'];
 		$table = table_objet($type);
 		$id_table_objet = id_table_objet($type);
 		$discuter = charger_fonction('discuter', 'inc');
 		$flux['data'] .= $discuter($id, $table, $id_table_objet, 'prive', _request('debut'));
 	}
-	if ($type = $flux['args']['type']=='rubrique'){
+	if (($type = $flux['args']['type'])=='rubrique'){
 		$id_rubrique = $flux['args']['id'];
 		if (autoriser('publierdans','rubrique',$id_rubrique) 
 		  AND !sql_getfetsel('id_parent','spip_rubriques','id_rubrique='.intval($id_rubrique))) {
