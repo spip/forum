@@ -17,7 +17,7 @@ function formulaires_gestion_forum_charger_dist($id_forum='', $id_rubrique='', $
 		);
 	
 	$valeurs['id_forums'] = array();
-	$valeurs['select_limit'] = _request('select_limit');
+	$valeurs['pagination'] = _request('pagination');
 	$valeurs['select_type'] = _request('select_type');
 	$valeurs['select_statut'] = _request('select_statut');
 	
@@ -31,6 +31,7 @@ function formulaires_gestion_forum_charger_dist($id_forum='', $id_rubrique='', $
 	$valeurs['auteur'] = _request('auteur');
 	$valeurs['email_auteur'] = _request('email_auteur');
 	$valeurs['ip'] = _request('ip');
+	$valeurs['debut_forum'] = _request('debut_forum');
 	
 	return $valeurs;
 }
@@ -54,9 +55,14 @@ function formulaires_gestion_forum_traiter_dist($id_forum='', $id_rubrique='', $
 	
 	$select_type = _request('select_type');
 	$select_statut = _request('select_statut');
+	$pagination = _request('pagination');
+	$pagination_ancien = _request('pagination_ancien');
 
 	set_request('select_type',$select_type);
 	set_request('voir_staut',$select_statut);
+	
+	if ($pagination != $pagination_ancien)
+		set_request('debut_forum','');
 	
 	if (_request('valider')){
 		$statut = 'publie';

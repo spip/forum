@@ -9,7 +9,7 @@
 <form action="#ENV{action}#formulaire_forum" method="post" enctype="multipart/form-data"><div>
 [(#ACTION_FORMULAIRE{[(#ENV{action})]})]
 
-#SET{limit,#ENV{select_limit,10}}
+#SET{pagination,#ENV{pagination,10}}
 #SET{prive,#ENV{select_type,public}|=={interne}|?{'priv%','%'}}
 #SET{public,#ENV{select_type,public}|=={public}|?{'priv%',''}}
 
@@ -23,6 +23,9 @@
 <input type="hidden" name="auteur" id="auteur" value="#ENV{auteur}" />
 <input type="hidden" name="email_auteur" id="email_auteur" value="#ENV{email_auteur}" />
 <input type="hidden" name="ip" id="ip" value="#ENV{ip}" />
+
+<input type="hidden" name="debut_forum" id="debut_forum" value="#ENV{debut_forum}" />
+<input type="hidden" name="pagination_ancien" id="pagination_ancien" value="#ENV{pagination,10}" />
 
 <p class="boutons">
 	<input type="submit" class="submit" name="valider" value="<:forum:icone_valider_messages:>" />
@@ -51,10 +54,10 @@
 			<option value="privoff"[(#ENV*{select_statut}|=={"privoff"}|oui) selected="selected"]><:forum:messages_privoff:></option>
 			]
 		</select>
-		<select id="select_limit" name="select_limit">
-			<option value="10"[(#ENV*{select_limit}|=={10}|oui) selected="selected"]>10</option>
-			<option value="50"[(#ENV*{select_limit}|=={50}|oui) selected="selected"]>50</option>
-			<option value="100"[(#ENV*{select_limit}|=={100}|oui) selected="selected"]>100</option>
+		<select id="pagination" name="pagination">
+			<option value="10"[(#ENV*{pagination}|=={10}|oui) selected="selected"]>10</option>
+			<option value="50"[(#ENV*{pagination}|=={50}|oui) selected="selected"]>50</option>
+			<option value="100"[(#ENV*{pagination}|=={100}|oui) selected="selected"]>100</option>
 		</select>
 	</li>
 	<li class="gestion_forum boutons">
@@ -65,7 +68,7 @@
 	</li>
 	<li class="fieldset">
 		<fieldset>
-			[(#INCLURE{fond=formulaires/inc-gestion_forum_liste}{statut=#ENV*{select_statut}}{prive=#GET{prive}}{public=#GET{public}}{limit=#GET{limit}}{env}{ajax})]
+			[(#INCLURE{fond=formulaires/inc-gestion_forum_liste}{statut=#ENV*{select_statut}}{prive=#GET{prive}}{public=#GET{public}}{pagination=#GET{pagination}}{env})]
 		</fieldset>
 	</li>
 </ul>
@@ -93,7 +96,7 @@ if (window.jQuery)(function($){
 		return false;
 	});
 	
-	$("#select_limit, #select_type, #select_statut").change(function(){
+	$("#pagination, #select_type, #select_statut").change(function(){
 		$("#formulaire_gestion_forum form").submit();
 	});
 }(jQuery));
