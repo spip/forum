@@ -41,6 +41,7 @@ function formulaires_configurer_forums_article_moderation_charger_dist($id_artic
 	$nb_forums = sql_countsel("spip_forum", "id_article=".intval($id_article)." AND statut IN ('publie', 'off', 'prop', 'spam')");
 
 	return array(
+		'id_article' => $id_article,
 		'accepter_forum' => get_forums_publics($id_article),
 		'_suivi_forums' => $nb_forums?_T('icone_suivi_forum', array('nb_forums' => $nb_forums)):"",
 	);
