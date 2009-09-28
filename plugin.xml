@@ -96,22 +96,9 @@
 
 	<necessite id="SPIP" version="[2.1.0 dev;)" />
 	
-	<bouton id="forum_interne_suivi" parent="bando_discussion" position="1">
-		<icone>images/forum-interne-16.png</icone>
-		<titre>titre_cadre_forum_interne</titre>
-		<url>forum</url>
-	</bouton>
-	
-	<bouton id='forum_reactions' parent='bando_discussion'>
+	<bouton id='forum_reactions' parent='bando_activite'>
 		<icone>images/forum-16.png</icone>
-		<titre>Suivre les forums internes</titre>
-		<url>controle_forum</url>
-		<args>type=interne</args>
-	</bouton>
-	
-	<bouton id='forum_reactions_publiques' parent='bando_publication'>
-		<icone>images/forum-16.png</icone>
-		<titre>Forums publics</titre>
+		<titre>icone_suivi_forums</titre>
 		<url>controle_forum</url>
 	</bouton>
 	
@@ -119,5 +106,11 @@
 		<icone>images/forum-24.png</icone>
 		<titre>titre_forum</titre>
 	</onglet>	
+
+	<bouton id="forum_interne_suivi" parent="outils_collaboratifs">
+		<icone>images/forum-interne-16.png</icone>
+		<titre>titre_cadre_forum_interne</titre>
+		<url>forum</url>
+	</bouton>
 
 </plugin>
