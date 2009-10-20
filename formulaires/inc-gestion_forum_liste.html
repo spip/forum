@@ -16,6 +16,8 @@
 	|ou{#ENV{ip}}
 	|oui)<a class='annule_filtre ajax' href='#GET{self}' title="<:forum:tout_voir|attribut_html:>"><strong><:forum:tout_voir:></strong></a>]
 </p>
+[(#REM) désactiver l'ancre de pagination qui est déjà présente dans le squelette appelant ]
+#SET{virer_ancre,#ANCRE_PAGINATION}
 [<p class='pagination'>(#PAGINATION)</p>]
 <ul class='liste_items forums'>
 	<BOUCLE_forum(FORUMS){id_forum?}{id_rubrique ?}{id_article ?}{id_breve ?}{id_syndic ?}{id_message?}{id_auteur?}{auteur?}{email_auteur?}{ip?}{!par id_forum}{pagination #ENV{pagination}}{statut?}{statut LIKE #ENV{prive}}{statut !LIKE #ENV{public}}{recherche?}>
