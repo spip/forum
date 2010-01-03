@@ -79,9 +79,15 @@ function public_critere_secteur_forums_dist($idb, &$boucles, $val, $crit)
 //
 // Parametres de reponse a un forum
 //
-
+// Cette balise peut etre executee en dehors de toute boucle,
+// par exemple en tete de inc-forums.html ; impossible donc de
+// savoir a quel objet elle va s'appliquer, ca dependra du contexte
+//
 // http://doc.spip.org/@balise_PARAMETRES_FORUM_dist
 function balise_PARAMETRES_FORUM_dist($p) {
+
+	// s'il y a un id_article dans le contexte, regarder le statut
+	// accepter_forum de cet article
 	$_id_article = champ_sql('id_article', $p);
 	$p->code = '
 		// refus des forums ?
@@ -90,54 +96,39 @@ function balise_PARAMETRES_FORUM_dist($p) {
 		AND quete_accepter_forum('.$_id_article.') == ""))
 		? "" : // sinon:
 		';
+
 	// pas de calculs superflus si le site est monolingue
 	$lang = strpos($GLOBALS['meta']['langues_utilisees'], ',');
 
-	switch ($p->type_requete) {
-		case 'articles':
-			$c = '"id_article=".' . champ_sql('id_article', $p);
-			if ($lang) $lang = champ_sql('lang', $p);
-			break;
-		case 'breves':
-			$c = '"id_breve=".' . champ_sql('id_breve', $p);
-			if ($lang) $lang = champ_sql('lang', $p);
-			break;
-		case 'rubriques':
-			$c = '"id_rubrique=".' . champ_sql('id_rubrique', $p);
-			if ($lang) $lang = champ_sql('lang', $p);
-			break;
-		case 'syndication':
-		case 'syndic':
-			// passer par la rubrique pour avoir un champ Lang
-			// la table syndic n'en ayant pas
-			$c =  '"id_syndic=".' . champ_sql('id_syndic', $p);
-			if ($lang) $lang = 'sql_getfetsel("lang", "spip_rubriques", ("id_rubrique=" . intval("' . champ_sql('id_rubrique', $p) . '")))';
-			break;
-		case 'forums':
-		default:
-		// ATTENTION mettre 'id_rubrique' avant 'id_syndic':
-		// a l'execution  lang_parametres_forum
-		// y cherchera l'identifiant  donnant la langue
-		// et pour id_syndic c'est id_rubrique car sa table n'en a pas
-		  
-			$liste_table = array ("article","breve","rubrique","syndic","forum");
-			$c = '';
-			$tables = array();
-			foreach ($liste_table as $t) {
-				$champ = 'id_' . $t;
-				$x = champ_sql($champ, $p);
-				$c .= (($c) ? ".\n" : "") . "((!$x) ? '' : ('&$champ='.$x))";
-				if ($lang AND $t!='forum') $tables[]= 
-				  "'$champ' => '" . table_objet_sql($t) . "'";
-			}
-			$c = "substr($c,1)";
+	// si on est dans une boucle de forums, c'est une reponse
+	if ($p->type_requete == 'forums')
+		$_id_reponse = champ_sql('id_forum', $p);
+	else
+		$_id_reponse = "null";
 
-			if ($lang)
-				$lang = "array(" . join(",",$tables) .")";
-			break;
+	// objet et id_objet principaux sont a determiner
+	// dans le contexte ; on demande en tout etat de cause
+	// a la boucle mere de reserver son id_primary
+	if ($p->id_boucle
+	AND isset($p->boucles[$p->id_boucle])
+	AND $primary = $p->boucles[$p->id_boucle]->primary
+	) {
+		$_type = $p->boucles[$p->id_boucle]->type_requete;
+		$_primary = champ_sql($primary, $p);
+	} else {
+		$_type = "null";
+		$_primary = "null";
 	}
 
-	if ($lang) $c = "lang_parametres_forum($c,$lang)";
+	// le code de base des parametres
+	$c = 'calcul_parametres_forum($Pile[0],'
+		.$_id_reponse.','.$_type.','.$_primary.')';
+
+	// ajouter la lang, eventuellement donnee par le contexte
+	if ($lang) {
+		$_lang = champ_sql('lang', $p);
+		$c = "lang_parametres_forum($c,$_lang)";
+	}
 
 	// Syntaxe [(#PARAMETRES_FORUM{#SELF})] pour fixer le retour du forum
 	# note : ce bloc qui sert a recuperer des arguments calcules pourrait
@@ -162,10 +153,49 @@ function balise_PARAMETRES_FORUM_dist($p) {
 	return $p;
 }
 
+// Cette fonction est appellee avec le contexte + trois parametres optionnels :
+// 1. $reponse = l'id_forum auquel on repond
+// 2. $type = le type de boucle dans lequel on se trouve, le cas echeant
+// 3. $primary = l'id_objet de la boucle dans laquelle on se trouve
+// elle doit renvoyer '', 'id_article=5' ou 'id_article=5&id_forum=12'
+// selon les cas
+function calcul_parametres_forum(&$env, $reponse, $type, $primary) {
 
+	// si c'est une reponse, on peut esperer que (objet,id_objet) sont dans
+	// la boucle mere, mais il est possible que non (forums imbriques etc)
+	// dans ce cas on va chercher dans la base.
+	if ($id_parent = intval($reponse)) {
+		if ($type
+		AND $type!='forums'
+		AND $primary)
+			$forum = array('objet' => $type, 'id_objet' => $primary);
+		else
+			$forum = sql_fetsel('objet, id_objet', 'spip_forum', 'id_forum='.$id_parent);
+
+		if ($forum)
+			return id_table_objet($forum['objet']).'='.$forum['id_objet']
+			.'&id_forum='.$id_parent;
+		else
+			return '';
+	}
+
+	// Ce n'est pas une reponse, on prend la boucle mere
+	if ($type AND $primary)
+		return id_table_objet($type).'='.intval($primary);
+
+	// dernier recours, on regarde pour chacun des objets forumables
+	// ce que nous propose le contexte #ENV
+	foreach ($env as $k => $v) {
+		if (preg_match(',^id_([a_z_]+)$,S', $k)
+		AND $id = intval($v)) {
+			return id_table_objet($k).'='.$v;
+		}
+	}
+
+	return '';
+}
 
 # retourne le champ 'accepter_forum' d'un article
-# semble ne plus servir nulle part
 if(!function_exists('quete_accepter_forum')) {
 function quete_accepter_forum($id_article) {
 	// si la fonction est appelee en dehors d'une boucle
@@ -186,13 +216,13 @@ function quete_accepter_forum($id_article) {
 // Si le 2e parametre n'est pas une chaine, c'est qu'on n'a pas pu
 // determiner la table a la compil, on le fait maintenant.
 // Il faudrait encore completer: on ne connait pas la langue
-// pour une boucle forum sans id_article ou id_rubrique donné par le contexte
+// pour une boucle forum sans id_article ou id_rubrique donne par le contexte
 // et c'est signale par un message d'erreur abscons: "table inconnue forum".
 // 
 // http://doc.spip.org/@lang_parametres_forum
 if(!function_exists('lang_parametres_forum')) {
 function lang_parametres_forum($qs, $lang) {
-	if (is_array($lang) AND preg_match(',id_(\w+)=([0-9]+),', $qs, $r)) {
+	if (is_array($lang) AND preg_match(',id_([a-z_]+)=([0-9]+),', $qs, $r)) {
 		$id = 'id_' . $r[1];
 		if ($t = $lang[$id])
 			$lang = sql_getfetsel('lang', $t, "$id=" . $r[2]);

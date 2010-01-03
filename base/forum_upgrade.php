@@ -17,11 +17,12 @@
  * @param string $version_cible
  */
 function forum_upgrade($nom_meta_base_version,$version_cible){
-	$current_version = 0.0;
-	if (   (!isset($GLOBALS['meta'][$nom_meta_base_version]) )
+	$current_version = '1.1';
+
+	if ( (!isset($GLOBALS['meta'][$nom_meta_base_version]) )
 			|| (($current_version = $GLOBALS['meta'][$nom_meta_base_version])!=$version_cible)){
 		
-		if ($current_version==0.0){
+		if ($current_version == 0){
 			include_spip('base/forum');
 			include_spip('base/create');
 			// creer les tables
@@ -29,7 +30,31 @@ function forum_upgrade($nom_meta_base_version,$version_cible){
 			// mettre les metas par defaut
 			$config = charger_fonction('config','inc');
 			$config();
-			ecrire_meta($nom_meta_base_version,$current_version=$version_cible);
+			ecrire_meta($nom_meta_base_version,'1.0');
+		}
+
+		# mise a jour de (id_article,id_breve,...) vers (objet,id_objet)
+		if ($current_version <= '1.0') {
+			ECHO "<h4>MISE A JOUR DES FORUMS (objet,id_objet)</h4>";
+			sql_alter("TABLE `spip_forum` ADD `id_objet` bigint(21) DEFAULT 0 NOT NULL AFTER `id_forum`");
+			sql_alter("TABLE `spip_forum` ADD `objet` VARCHAR (25) DEFAULT '' NOT NULL AFTER `id_objet`");
+			sql_alter("TABLE `spip_forum` DROP key `optimal`");
+			sql_alter("TABLE `spip_forum` ADD key `optimal` (`statut`,`id_parent`,`id_objet`,`objet`,`date_heure`)");
+
+			foreach(array('breve', 'article', 'syndic', 'message', 'rubrique')
+			as $objet) {
+				ECHO "<h5>$objet</h5>";
+				sql_update("spip_forum", array(
+					'objet' => sql_quote($objet),
+					'id_objet' => 'id_'.$objet
+				), 'id_'.$objet.' > 0');
+				sql_alter('TABLE `spip_forum` DROP `id_'.$objet.'`');
+			}
+
+			exit;
+
+
+			ecrire_meta($nom_meta_base_version,'1.1');
 		}
 	}
 }

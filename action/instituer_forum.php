@@ -32,7 +32,7 @@ function instituer_un_forum($statut,$row){
 	// invalider les pages comportant ce forum
 	include_spip('inc/invalideur');
 	include_spip('inc/forum');
-	$index_forum = calcul_index_forum($row['id_article'], $row['id_breve'], $row['id_rubrique'], $row['id_syndic']);
+	$index_forum = calcul_index_forum($row['objet'],$row['id_objet']);
 	suivre_invalideur("id='id_forum/$index_forum'");
 
 	// changer le statut de toute l'arborescence dependant de ce message

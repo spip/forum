@@ -29,10 +29,8 @@ function revision_forum($id_forum, $c=false) {
 		include_spip('inc/invalideur');
 		$invalideur = "id='id_forum/"
 			. calcul_index_forum(
-				$t['id_article'],
-				$t['id_breve'],
-				$t['id_rubrique'],
-				$t['id_syndic']
+				$t['objet'],
+				$t['id_objet']
 			)
 			. "'";
 	} else

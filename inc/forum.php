@@ -28,7 +28,7 @@ function critere_statut_controle_forum($type, $id_rubrique=0, $recherche='') {
 		else $eq = "=$id_rubrique";
 	      
 		$from = 'spip_forum AS F, spip_articles AS A';
-		$where = "A.id_secteur$eq AND F.id_article=A.id_article";
+		$where = "A.id_secteur$eq AND F.objet='article' AND F.id_objet=A.id_article";
 		$and = ' AND ';
 	}
    
@@ -68,11 +68,8 @@ function critere_statut_controle_forum($type, $id_rubrique=0, $recherche='') {
 
 // Index d'invalidation des forums
 // http://doc.spip.org/@calcul_index_forum
-function calcul_index_forum($id_article, $id_breve, $id_rubrique, $id_syndic) {
-	if ($id_article) return 'a'.$id_article; 
-	if ($id_breve) return 'b'.$id_breve;
-	if ($id_rubrique) return 'r'.$id_rubrique;
-	if ($id_syndic) return 's'.$id_syndic;
+function calcul_index_forum($objet,$id_objet) {
+	return substr($objet,0,1).$id_objet;
 }
 
 //
@@ -106,7 +103,7 @@ function calculer_threads() {
 function racine_forum($id_forum){
 	if (!$id_forum = intval($id_forum)) return false;
 
-	$row = sql_fetsel("id_parent, id_rubrique, id_article, id_breve, id_syndic, id_message, id_thread", "spip_forum", "id_forum=".$id_forum);
+	$row = sql_fetsel("id_parent, objet, id_objet, id_thread", "spip_forum", "id_forum=".$id_forum);
 
 	if (!$row) return false;
 
@@ -114,34 +111,19 @@ function racine_forum($id_forum){
 	AND $row['id_thread'] != $id_forum) // eviter boucle infinie
 		return racine_forum($row['id_thread']);
 
-	if ($row['id_message'])
-		return array('message', $row['id_message'], $id_forum);
-	if ($row['id_rubrique'])
-		return array('rubrique', $row['id_rubrique'], $id_forum);
-	if ($row['id_article'])
-		return array('article', $row['id_article'], $id_forum);
-	if ($row['id_breve'])
-		return array('breve', $row['id_breve'], $id_forum);
-	if ($row['id_syndic'])
-		return array('site', $row['id_syndic'], $id_forum);
-
-	// On ne devrait jamais arriver ici, mais prevoir des cas de forums
-	// poses sur autre chose que les objets prevus...
-	spip_log("erreur racine_forum $id_forum");
-	return array();
+	return array($row['objet'], $row['id_objet'], $id_forum);
 } 
 
 
 // http://doc.spip.org/@parent_forum
 function parent_forum($id_forum) {
 	if (!$id_forum = intval($id_forum)) return;
-	$row = sql_fetsel("id_parent, id_rubrique, id_article, id_breve, id_syndic", "spip_forum", "id_forum=".$id_forum);
+	$row = sql_fetsel("id_parent, objet, id_objet", "spip_forum", "id_forum=".$id_forum);
 	if(!$row) return array();
-	if($row['id_parent']) return array('forum', $row['id_parent']);
-	if($row['id_article']) return array('article', $row['id_article']);
-	if($row['id_breve']) return array('breve', $row['id_breve']);
-	if($row['id_rubrique']) return array('rubrique', $row['id_rubrique']);
-	if($row['id_syndic']) return array('site', $row['id_syndic']);
+	if ($row['id_parent'])
+		return array('forum', $row['id_parent']);
+	else
+		return array($row['objet'], $row['id_objet']);
 } 
 
 
