@@ -35,7 +35,7 @@ function forum_upgrade($nom_meta_base_version,$version_cible){
 
 		# mise a jour de (id_article,id_breve,...) vers (objet,id_objet)
 		if (version_compare($current_version, '1.1','<')) {
-			ECHO "<h4>MISE A JOUR DES FORUMS (objet,id_objet)</h4>";
+			echo "<h4>MISE A JOUR DES FORUMS (objet,id_objet)</h4>";
 			sql_alter("TABLE `spip_forum` ADD `id_objet` bigint(21) DEFAULT 0 NOT NULL AFTER `id_forum`");
 			sql_alter("TABLE `spip_forum` ADD `objet` VARCHAR (25) DEFAULT '' NOT NULL AFTER `id_objet`");
 			sql_alter("TABLE `spip_forum` DROP key `optimal`");
@@ -43,7 +43,7 @@ function forum_upgrade($nom_meta_base_version,$version_cible){
 
 			foreach(array('breve', 'article', 'syndic', 'message', 'rubrique')
 			as $objet) {
-				ECHO "<h5>$objet</h5>";
+				echo "<h5>$objet</h5>";
 				sql_update("spip_forum", array(
 					'objet' => sql_quote($objet),
 					'id_objet' => 'id_'.$objet
