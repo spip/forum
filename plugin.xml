@@ -57,7 +57,7 @@
 		<inclure>forum_pipelines.php</inclure>
 	</pipeline>
 	<pipeline>
-		<nom>compter_contributions_visiteur</nom>
+		<nom>compter_contributions_auteur</nom>
 		<inclure>forum_pipelines.php</inclure>
 	</pipeline>
 	<pipeline>
@@ -89,7 +89,7 @@
 		<inclure>forum_pipelines.php</inclure>
 	</pipeline>
 	<pipeline>
-		<nom>supprimer_objets_lies</nom>
+		<nom>trig_supprimer_objets_lies</nom>
 		<inclure>forum_pipelines.php</inclure>
 	</pipeline>
 	

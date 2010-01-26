@@ -31,7 +31,7 @@ function balise_FORMULAIRE_FORUM_PRIVE ($p) {
 // Chercher le titre et la configuration d'un forum 
 
 // http://doc.spip.org/@balise_FORMULAIRE_FORUM_PRIVE_stat
-function balise_FORMULAIRE_FORUM_PRIVE_stat($args, $filtres) {
+function balise_FORMULAIRE_FORUM_PRIVE_stat($args, $context_compil) {
 
 	// le denier arg peut contenir l'url sur lequel faire le retour
 	// exemple dans un squelette article.html : [(#FORMULAIRE_FORUM{#SELF})]

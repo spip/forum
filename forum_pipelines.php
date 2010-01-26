@@ -183,7 +183,7 @@ function forum_boite_infos($flux){
  * @param array $flux
  * @return array
  */
-function forum_compter_contributions_visiteur($flux){
+function forum_compter_contributions_auteur($flux){
 	$id_auteur = intval($flux['args']['id_auteur']);
 	if ($cpt = sql_countsel("spip_forum AS F", "F.id_auteur=".intval($flux['args']['id_auteur']))){
 		// manque "1 message de forum"
@@ -375,7 +375,7 @@ function forum_rubrique_encours($flux){
  * @param array $objets
  * @return array
  */
-function forum_supprimer_objets_lies($objets){
+function forum_trig_supprimer_objets_lies($objets){
 	foreach($objets as $objet){
 		if ($objet['type']=='message')
 			sql_delete("spip_forum", "id_message=".sql_quote($objet['id']));
