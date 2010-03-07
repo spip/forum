@@ -85,6 +85,7 @@ rss/forums_public.html -text
 rss/forums_spam.html -text
 rss/forums_vide.html -text
 spip21/forum_autoriser.php -text
+spip21/public/forum.php -text
 spip22/forum_autoriser.php -text
 spip22/public/forum.php -text
 urls/generer_url_ecrire_forum.php -text
