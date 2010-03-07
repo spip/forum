@@ -34,7 +34,6 @@ formulaires/inc-forum_prive_previsu.html -text
 formulaires/inc-gestion_forum_liste.html -text
 formulaires/inc-login_forum.html -text
 formulaires/inc-login_forum_abo.html -text
-/forum_autoriser.php -text
 /forum_pipelines.php -text
 inc/discuter.php -text
 inc/forum.php -text
@@ -79,12 +78,14 @@ prive/themes/spip/images/forum-statut-prop-24.png -text
 prive/themes/spip/images/forum-statut-publie-24.png -text
 prive/themes/spip/images/forum-statut-spam-24.png -text
 prive/themes/spip/images/forum-vert.gif -text
-public/forum.php -text
 rss/forums.html -text
 rss/forums_interne.html -text
 rss/forums_prop.html -text
 rss/forums_public.html -text
 rss/forums_spam.html -text
 rss/forums_vide.html -text
+spip21/forum_autoriser.php -text
+spip22/forum_autoriser.php -text
+spip22/public/forum.php -text
 urls/generer_url_ecrire_forum.php -text
 urls/generer_url_forum.php -text

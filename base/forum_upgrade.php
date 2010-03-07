@@ -21,7 +21,7 @@ function forum_upgrade($nom_meta_base_version,$version_cible){
 
 	if ( (!isset($GLOBALS['meta'][$nom_meta_base_version]) )
 			|| (($current_version = $GLOBALS['meta'][$nom_meta_base_version])!=$version_cible)){
-		
+
 		if (version_compare($current_version, '0.0','<=')){
 			include_spip('base/forum');
 			include_spip('base/create');
@@ -41,15 +41,19 @@ function forum_upgrade($nom_meta_base_version,$version_cible){
 			sql_alter("TABLE `spip_forum` DROP key `optimal`");
 			sql_alter("TABLE `spip_forum` ADD key `optimal` (`statut`,`id_parent`,`id_objet`,`objet`,`date_heure`)");
 
+			echo "<ul>";
+
 			foreach(array('breve', 'article', 'syndic', 'message', 'rubrique')
 			as $objet) {
-				echo "<h5>$objet</h5>";
+				echo "<li>$objet</li>";
 				sql_update("spip_forum", array(
 					'objet' => sql_quote($objet),
 					'id_objet' => 'id_'.$objet
 				), 'id_'.$objet.' > 0');
 				sql_alter('TABLE `spip_forum` DROP `id_'.$objet.'`');
 			}
+
+			echo "</ul>";
 
 			ecrire_meta($nom_meta_base_version,$current_version = '1.1');
 		}
@@ -64,7 +68,7 @@ function forum_upgrade($nom_meta_base_version,$version_cible){
 function forum_vider_tables($nom_meta_base_version) {
 	sql_drop_table("spip_forum");
 	sql_drop_table("spip_mots_forum");
-	
+
 	effacer_meta("mots_cles_forums");
 	effacer_meta("forums_titre");
 	effacer_meta("forums_texte");
