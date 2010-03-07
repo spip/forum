@@ -17,23 +17,23 @@
  * @return array
  */
 function forum_declarer_tables_interfaces($interfaces){
-	
+
 	$interfaces['table_des_tables']['forums']='forum';
-	
+
 	$interfaces['exceptions_des_tables']['forums']['date']='date_heure';
 	$interfaces['exceptions_des_tables']['forums']['nom']='auteur';
 	$interfaces['exceptions_des_tables']['forums']['email']='email_auteur';
-	
+
 	$interfaces['table_titre']['forums']= "titre, '' AS lang";
-	
+
 	$interfaces['table_date']['forums']='date_heure';
-	
+
 	$interfaces['tables_jointures']['spip_forum'][]= 'mots_forum';
 	$interfaces['tables_jointures']['spip_forum'][]= 'mots';
 	$interfaces['tables_jointures']['spip_forum'][]= 'documents_liens';
-	
+
 	$interfaces['tables_jointures']['spip_mots'][]= 'mots_forum';
-	
+
 	$interfaces['table_des_traitements']['PARAMETRES_FORUM'][]= 'htmlspecialchars(%s)';
 	$interfaces['table_des_traitements']['TEXTE']['forums']= "safehtml("._TRAITEMENT_RACCOURCIS.")";
 	$interfaces['table_des_traitements']['TITRE']['forums']= "safehtml("._TRAITEMENT_TYPO.")";
@@ -59,14 +59,13 @@ function forum_declarer_tables_interfaces($interfaces){
  * @return array
  */
 function forum_declarer_tables_principales($tables_principales){
-	
+
 	$spip_forum = array(
 			"id_forum"	=> "bigint(21) NOT NULL",
+			"id_objet"	=> "bigint(21) DEFAULT '0' NOT NULL",
+			"objet"		=> "VARCHAR (25) DEFAULT '' NOT NULL",
 			"id_parent"	=> "bigint(21) DEFAULT '0' NOT NULL",
 			"id_thread"	=> "bigint(21) DEFAULT '0' NOT NULL",
-			"id_rubrique"	=> "bigint(21) DEFAULT '0' NOT NULL",
-			"id_article"	=> "bigint(21) DEFAULT '0' NOT NULL",
-			"id_breve"	=> "bigint(21) DEFAULT '0' NOT NULL",
 			"date_heure"	=> "datetime DEFAULT '0000-00-00 00:00:00' NOT NULL",
 			"date_thread"	=> "datetime DEFAULT '0000-00-00 00:00:00' NOT NULL",
 			"titre"	=> "text DEFAULT '' NOT NULL",
@@ -78,17 +77,15 @@ function forum_declarer_tables_principales($tables_principales){
 			"statut"	=> "varchar(8) DEFAULT '0' NOT NULL",
 			"ip"	=> "varchar(16) DEFAULT '' NOT NULL",
 			"maj"	=> "TIMESTAMP",
-			"id_auteur"	=> "bigint DEFAULT '0' NOT NULL",
-			"id_message"	=> "bigint(21) DEFAULT '0' NOT NULL",
-			"id_syndic"	=> "bigint(21) DEFAULT '0' NOT NULL");
-	
+			"id_auteur"	=> "bigint DEFAULT '0' NOT NULL";
+
 	$spip_forum_key = array(
 			"PRIMARY KEY"	=> "id_forum",
 			"KEY id_auteur"	=> "id_auteur",
 			"KEY id_parent"	=> "id_parent",
 			"KEY id_thread"	=> "id_thread",
-			"KEY optimal" => "statut,id_parent,id_article,date_heure,id_breve,id_syndic,id_rubrique");
-	
+			"KEY optimal" => "statut,id_parent,id_objet,objet,date_heure");
+
 	$spip_forum_join = array(
 			"id_forum"=>"id_forum",
 			"id_parent"=>"id_parent",
@@ -97,7 +94,7 @@ function forum_declarer_tables_principales($tables_principales){
 			"id_message"=>"id_message",
 			"id_syndic"=>"id_syndic",
 			"id_rubrique"=>"id_rubrique");
-			
+
 	$tables_principales['spip_forum'] =
 		array('field' => &$spip_forum,	'key' => &$spip_forum_key, 'join' => &$spip_forum_join);
 
@@ -115,7 +112,7 @@ function forum_declarer_tables_auxiliaires($tables_auxiliaires){
 	$spip_mots_forum = array(
 			"id_mot"	=> "bigint(21) DEFAULT '0' NOT NULL",
 			"id_forum"	=> "bigint(21) DEFAULT '0' NOT NULL");
-	
+
 	$spip_mots_forum_key = array(
 			"PRIMARY KEY"	=> "id_forum, id_mot",
 			"KEY id_mot"	=> "id_mot");
