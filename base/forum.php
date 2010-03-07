@@ -77,7 +77,7 @@ function forum_declarer_tables_principales($tables_principales){
 			"statut"	=> "varchar(8) DEFAULT '0' NOT NULL",
 			"ip"	=> "varchar(16) DEFAULT '' NOT NULL",
 			"maj"	=> "TIMESTAMP",
-			"id_auteur"	=> "bigint DEFAULT '0' NOT NULL";
+			"id_auteur"	=> "bigint DEFAULT '0' NOT NULL");
 
 	$spip_forum_key = array(
 			"PRIMARY KEY"	=> "id_forum",
