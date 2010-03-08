@@ -102,7 +102,7 @@ function forum_afficher_fiche_objet($flux){
 	}
 	if (($type = $flux['args']['type'])=='rubrique'){
 		$id_rubrique = $flux['args']['id'];
-		if (autoriser('publierdans','rubrique',$id_rubrique) 
+		if (autoriser('publierdans','rubrique',$id_rubrique)
 		  AND !sql_getfetsel('id_parent','spip_rubriques','id_rubrique='.intval($id_rubrique))) {
 			include_spip('inc/forum');
 			list($from, $where) = critere_statut_controle_forum('prop', $id_rubrique);
@@ -127,7 +127,7 @@ function forum_afficher_config_objet($flux){
 		$id = $flux['args']['id'];
 		if (autoriser('modererforum', $type, $id)) {
 			$table = table_objet($type);
-			$id_table_objet = id_table_objet($type);		
+			$id_table_objet = id_table_objet($type);
 			$flux['data'] .= recuperer_fond("prive/configurer/moderation",array($id_table_objet=>$id));
 		}
 	}
@@ -235,7 +235,7 @@ function forum_declarer_tables_objets_surnoms($table){
  */
 function forum_optimiser_base_disparus($flux){
 	$n = &$flux['data'];
-	
+
 	# les forums lies a une id_rubrique inexistante
 	$res = sql_select("forum.id_forum AS id",
 			"spip_forum AS forum
@@ -245,7 +245,7 @@ function forum_optimiser_base_disparus($flux){
 		         AND forum.id_rubrique>0");
 
 	$n+= optimiser_sansref('spip_forum', 'id_forum', $res);
-	
+
 
 	# les forums lies a des articles effaces
 	$res = sql_select("forum.id_forum AS id",
@@ -256,7 +256,7 @@ function forum_optimiser_base_disparus($flux){
 		         AND forum.id_article>0");
 
 	$n+= optimiser_sansref('spip_forum', 'id_forum', $res);
-	
+
 	# les forums lies a des breves effacees
 	$res = sql_select("forum.id_forum AS id",
 		        "spip_forum AS forum
@@ -266,7 +266,7 @@ function forum_optimiser_base_disparus($flux){
 		         AND forum.id_breve>0");
 
 	$n+= optimiser_sansref('spip_forum', 'id_forum', $res);
-	
+
 
 	# les forums lies a des sites effaces
 	$res = sql_select("forum.id_forum AS id",
@@ -287,7 +287,7 @@ function forum_optimiser_base_disparus($flux){
 			"mots.id_mot IS NULL");
 
 	$n+= optimiser_sansref('spip_mots_forum', 'id_mot', $res);
-	
+
 	//
 	// Forums
 	//
@@ -303,7 +303,7 @@ function forum_optimiser_base_disparus($flux){
 			"forum.id_forum IS NULL");
 
 	$n+= optimiser_sansref('spip_mots_forum', 'id_forum', $res);
-	
+
 	return $flux;
 }
 
@@ -352,7 +352,7 @@ function forum_rechercher_liste_des_champs($liste){
 	$liste['forum'] = array(
 	  'titre' => 3, 'texte' => 1, 'auteur' => 2, 'email_auteur' => 2, 'nom_site' => 1, 'url_site' => 1
 	);
-	
+
 	return $liste;
 }
 
@@ -385,4 +385,15 @@ function forum_trig_supprimer_objets_lies($objets){
 	return $objets;
 }
 
+/**
+ * Ajouter jquery.autosave.js
+ * (Uniquement pour SPIP 2.1, par defaut dans SPIP 2.2)
+ * @param unknown_type $array
+ */
+function forum_jquery_plugins($array){
+	if(!in_array('javascript/jquery.autosave.js',$array)){
+		$array[] = 'javascript/jquery.autosave.js';
+	}
+	return $array;
+}
 ?>

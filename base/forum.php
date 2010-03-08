@@ -31,6 +31,11 @@ function forum_declarer_tables_interfaces($interfaces){
 	$interfaces['tables_jointures']['spip_forum'][]= 'mots_forum';
 	$interfaces['tables_jointures']['spip_forum'][]= 'mots';
 	$interfaces['tables_jointures']['spip_forum'][]= 'documents_liens';
+	$interfaces['tables_jointures']['spip_articles'][] = 'forums';
+	$interfaces['tables_jointures']['spip_breves'][] = 'forums';
+	$interfaces['tables_jointures']['spip_rubriques'][] = 'forums';
+	$interfaces['tables_jointures']['spip_syndic'][] = 'forums';
+	$interfaces['tables_jointures']['spip_messages'][] = 'forums';
 
 	$interfaces['tables_jointures']['spip_mots'][]= 'mots_forum';
 

@@ -11,9 +11,11 @@
 \***************************************************************************/
 
 function formulaires_forum_charger_dist(
-$titre, $table, $type, $script,
-$id_rubrique, $id_forum, $id_article, $id_breve, $id_syndic,
+$titre, $table, $type, $objet, $primary, $script,
+$id_objet, $id_forum,
 $ajouter_mot, $ajouter_groupe, $afficher_texte, $url_param_retour) {
+	spip_log("$titre, $table, $type, $objet, $primary, $script,
+$id_objet, $id_forum",'forums');
 
 	// exiger l'authentification des posteurs pour les forums sur abo
 	if ($type == "abo") {
@@ -27,7 +29,6 @@ $ajouter_mot, $ajouter_groupe, $afficher_texte, $url_param_retour) {
 				);
 		}
 	}
-
 	// Tableau des valeurs servant au calcul d'une signature de securite.
 	// Elles seront placees en Input Hidden pour que inc/forum_insert
 	// recalcule la meme chose et verifie l'identite des resultats.
@@ -35,14 +36,10 @@ $ajouter_mot, $ajouter_groupe, $afficher_texte, $url_param_retour) {
 	// la signature et la fabrication des Hidden
 	// Faire attention aussi a 0 != ''
 
-	// id_rubrique est parfois passee pour les articles, on n'en veut pas
 	$ids = array();
-	if ($id_rubrique > 0 AND ($id_article OR $id_breve OR $id_syndic))
-		$id_rubrique = 0;
-	foreach (array('id_article', 'id_breve', 'id_forum', 'id_rubrique', 'id_syndic') as $o) {
-		$ids[$o] = ($x = intval($$o)) ? $x : '';
-	}
 
+	$ids[$primary] = ($x = intval($id_objet)) ? $x : '';
+	$ids['id_forum'] = ($x = intval($id_forum)) ? $x : '';
 
 	// ne pas mettre '', sinon le squelette n'affichera rien.
 	$previsu = ' ';
@@ -64,7 +61,7 @@ $ajouter_mot, $ajouter_groupe, $afficher_texte, $url_param_retour) {
 	}
 	if (_request('retour_forum')){
 		$arg = forum_fichier_tmp(join('', $ids));
-		
+
 		$securiser_action = charger_fonction('securiser_action', 'inc');
 		// on sait que cette fonction est dans le fichier associe
 		$hash = calculer_action_auteur("ajout_forum-$arg");
@@ -74,16 +71,17 @@ $ajouter_mot, $ajouter_groupe, $afficher_texte, $url_param_retour) {
 	$script_hidden = "";
 	foreach ($ids as $id => $v)
 		$script_hidden .= "<input type='hidden' name='$id' value='$v' />";
-		
+
 	$script_hidden .= "<input type='hidden' name='arg' value='$arg' />";
 	$script_hidden .= "<input type='hidden' name='hash' value='$hash' />";
 	$script_hidden .= "<input type='hidden' name='verif_$hash' value='ok' />";
 	$script_hidden .= "<input type='hidden' name='afficher_texte' value='$afficher_texte' />";
 	$script_hidden .= "<input type='hidden' name='retour_forum' value='$retour_forum' />";
 
-	include_spip('inc/securiser_action');
-	$cle = calculer_cle_action('ajouter-document-'.join('-',array_map('intval',$ids)));
-
+	if ($formats = forum_documents_acceptes()) {
+		include_spip('inc/securiser_action');
+		$cle = calculer_cle_action('ajouter-document-'.join('-',array_map('intval',$ids)));
+	}
 	// Valeurs par defaut du formulaire
 	// si le formulaire a ete sauvegarde, restituer les valeurs de session
 	$vals = array(
@@ -99,7 +97,7 @@ $ajouter_mot, $ajouter_groupe, $afficher_texte, $url_param_retour) {
 		// on elimine les donnees de la session
 		if (_request('autosave') == $cle_autosave)
 			session_set('session_autosave_'.$cle_autosave, null);
-	
+
 		// sinon on restitue les donnees
 		else
 		foreach (explode('&', $GLOBALS['visiteur_session']['session_autosave_'.$cle_autosave]) as $l) {
@@ -118,7 +116,7 @@ $ajouter_mot, $ajouter_groupe, $afficher_texte, $url_param_retour) {
 		'cle_ajouter_document' => $cle,
 		'formats_documents_forum' => forum_documents_acceptes(),
 		'ajouter_document' => $_FILES['ajouter_document']['name'],
-		'nobot' => _request($cle),
+		'nobot' => ($cle ? _request($cle) : _request('nobot')),
 		'ajouter_groupe' => $ajouter_groupe,
 		'ajouter_mot' => (is_array($ajouter_mot) ? $ajouter_mot : array($ajouter_mot)),
 		'id_forum' => $id_forum, // passer id_forum au formulaire pour lui permettre d'afficher a quoi l'internaute repond
@@ -156,8 +154,8 @@ function forum_fichier_tmp($arg)
 }
 
 function formulaires_forum_verifier_dist(
-	$titre, $table, $type, $script,
-	$id_rubrique, $id_forum, $id_article, $id_breve, $id_syndic,
+	$titre, $table, $type, $objet, $primary, $script,
+	$id_objet, $id_forum,
 	$ajouter_mot, $ajouter_groupe, $afficher_texte, $url_param_retour)
 {
 	include_spip('inc/acces');
@@ -169,8 +167,8 @@ function formulaires_forum_verifier_dist(
 	$erreurs = array();
 
 	// desactiver id_rubrique si un id_article ou autre existe dans le contexte
-	if ($id_article OR $id_breve OR $id_forum OR $id_syndic)
-		$id_rubrique = 0;
+	// if ($id_article OR $id_breve OR $id_forum OR $id_syndic)
+	//	$id_rubrique = 0;
 
 	// stocker un eventuel document dans un espace temporaire
 	// portant la cle du formulaire ; et ses metadonnees avec
@@ -190,7 +188,7 @@ function formulaires_forum_verifier_dist(
 				. "ajouter-document-$id_article-$id_breve-$id_forum-$id_rubrique-$id_syndic"
 				.", "
 				._request('cle_ajouter_document')
-			
+
 			;
 			unset($_FILES['ajouter_document']);
 		} else {
@@ -252,7 +250,7 @@ function formulaires_forum_verifier_dist(
 	if (!count($erreurs) AND !_request('confirmer_previsu_forum')){
 		if ($afficher_texte != 'non') {
 			$previsu = inclure_previsu($texte, $titre, _request('url_site'), _request('nom_site'), _request('ajouter_mot'), $doc,
-				$id_rubrique, $id_forum, $id_article, $id_breve, $id_syndic);
+				$objet, $id_objet, $id_forum);
 			$erreurs['previsu'] = $previsu;
 		}
 	}
@@ -264,7 +262,7 @@ function forum_documents_acceptes()
 {
 	$formats = trim($GLOBALS['meta']['formats_documents_forum']);
 	if (!$formats) return array();
-	if ($formats !== '*') 
+	if ($formats !== '*')
 		$formats = array_filter(preg_split(',[^a-zA-Z0-9/+_],', $formats));
 	else {
 		include_spip('base/typedoc');
@@ -276,7 +274,7 @@ function forum_documents_acceptes()
 
 // http://doc.spip.org/@inclure_previsu
 function inclure_previsu($texte,$titre, $url_site, $nom_site, $ajouter_mot, $doc,
-$id_rubrique, $id_forum, $id_article, $id_breve, $id_syndic) {
+$objet, $id_objet, $id_forum) {
 	global $table_des_traitements;
 
 	$bouton = _T('forum_message_definitif');
@@ -310,12 +308,10 @@ $id_rubrique, $id_forum, $id_article, $id_breve, $id_syndic) {
 			'ajouter_document' => $doc,
 			'erreur' => $erreur,
 			'bouton' => $bouton,
-			'id_rubrique' => $id_rubrique,
-			'id_forum' => $id_forum,
-			'id_article' => $id_article,
-			'id_breve' => $id_breve,
-			'id_syndic' => $id_syndic
-			)
+		    'objet' => $objet,
+			'id_objet' => $id_objet,
+			'id_forum' => $id_forum
+		     )
 		), false));
 }
 

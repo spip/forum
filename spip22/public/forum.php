@@ -19,11 +19,11 @@ function boucle_FORUMS_dist($id_boucle, &$boucles) {
 	$boucle = &$boucles[$id_boucle];
 	$id_table = $boucle->id_table;
 	$mstatut = $id_table .'.statut';
-	
+
 	// Par defaut, selectionner uniquement les forums sans mere
 	// Les criteres {tout} et {plat} inversent ce choix
 	// de meme qu'un critere sur {id_forum} ou {id_parent}
-	if (!isset($boucle->modificateur['tout']) 
+	if (!isset($boucle->modificateur['tout'])
 	  AND !isset($boucle->modificateur['plat'])
 	  AND !isset($boucle->modificateur['criteres']['id_forum'])
 	  AND !isset($boucle->modificateur['criteres']['id_parent'])
@@ -33,12 +33,12 @@ function boucle_FORUMS_dist($id_boucle, &$boucles) {
 	// Restreindre aux elements publies
 	if (!isset($boucle->modificateur['criteres']['statut'])) {
 		if ($GLOBALS['var_preview'])
-			array_unshift($boucle->where,array("'IN'", "'$mstatut'", "'(\\'publie\\',\\'prop\\')'"));		
+			array_unshift($boucle->where,array("'IN'", "'$mstatut'", "'(\\'publie\\',\\'prop\\')'"));
 		else
 			array_unshift($boucle->where,array("'='", "'$mstatut'", "'\\'publie\\''"));
 	}
 
-	return calculer_boucle($id_boucle, $boucles); 
+	return calculer_boucle($id_boucle, $boucles);
 }
 
 // {meme_parent}
@@ -60,7 +60,7 @@ function critere_FORUMS_meme_parent_dist($idb, &$boucles, $crit) {
 
 // Faute de copie du champ id_secteur dans la table des forums,
 // faut le retrouver par jointure
-// Pour chaque Row il faudrait tester si le forum est 
+// Pour chaque Row il faudrait tester si le forum est
 // d'article, de breve, de rubrique, ou de syndication.
 // Pour le moment on ne traite que les articles,
 // les 3 autres cas ne marcheront donc pas: ca ferait 4 jointures
@@ -203,7 +203,7 @@ function quete_accepter_forum($id_article) {
 	// mais il faut neanmoins accepter l'affichage du forum
 	// d'ou le 0=>'' (et pas 0=>'non').
 	static $cache = array(0 => '');
-	
+
 	$id_article = intval($id_article);
 
 	if (isset($cache[$id_article]))	return $cache[$id_article];
@@ -218,7 +218,7 @@ function quete_accepter_forum($id_article) {
 // Il faudrait encore completer: on ne connait pas la langue
 // pour une boucle forum sans id_article ou id_rubrique donne par le contexte
 // et c'est signale par un message d'erreur abscons: "table inconnue forum".
-// 
+//
 // http://doc.spip.org/@lang_parametres_forum
 if(!function_exists('lang_parametres_forum')) {
 function lang_parametres_forum($qs, $lang) {

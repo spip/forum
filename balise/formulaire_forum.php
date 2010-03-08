@@ -30,8 +30,53 @@ include_spip('inc/forum');
 
 // http://doc.spip.org/@balise_FORMULAIRE_FORUM
 function balise_FORMULAIRE_FORUM ($p) {
+	/**
+	 * Recuperation du type d'objet SPIP $objet
+	 * et de sa cle primaire $primary
+	 * depuis la boucle englobante
+	 * Code emprunté de crayons
+	 * Valable uniquement si l'on est dans une boucle
+	 */
+	$i_boucle = $p->nom_boucle ? $p->nom_boucle : $p->id_boucle;
+	$table = $p->boucles[$i_boucle]->type_requete;
+	$ids = array();
 
-	$p = calculer_balise_dynamique($p,'FORMULAIRE_FORUM', array('id_rubrique', 'id_forum', 'id_article', 'id_breve', 'id_syndic', 'ajouter_mot', 'ajouter_groupe', 'afficher_texte'));
+	if($table){
+		$objet = $table[strlen($table) - 1] == 's' ?
+			substr($table, 0, -1) :
+			str_replace(
+				array('syndication'),
+				array('site'),
+			$table);
+
+		$primary = $p->boucles[$i_boucle]->primary;
+	}
+	/**
+	 * Sinon on essaye de trouver les forums en fonction de l'environnement
+	 */
+	else{
+		$objets = pipeline('forum_objet_accepte',array('id_article','id_rubrique','id_syndic','id_breve','id_ticket'));
+		foreach($objets as $objet){
+			if($val = _request($objet)){
+				$ids[$objet] = $val;
+			}
+		}
+		if(count($ids)>1){
+			if(isset($ids['id_rubrique'])){
+				unset($ids['id_rubrique']);
+			}
+		}
+
+		if(count($ids) == 1){
+			$primary = key($ids);
+			$objet = str_replace('id_','',$primary);
+			$table = table_objet($objet);
+		}else{
+			$primary = 'id_forum';
+		}
+	}
+
+	$p = calculer_balise_dynamique($p,'FORMULAIRE_FORUM', array($primary,'id_forum', 'ajouter_mot', 'ajouter_groupe', 'afficher_texte'),array($objet,$table,$primary));
 
 	// Ajouter le code d'invalideur specifique aux forums
 	include_spip('inc/invalideur');
@@ -42,7 +87,7 @@ function balise_FORMULAIRE_FORUM ($p) {
 }
 
 //
-// Chercher le titre et la configuration d'un forum 
+// Chercher le titre et la configuration d'un forum
 // valeurs possibles : 'pos'teriori, 'pri'ori, 'abo'nnement
 // Donner aussi la table de reference pour afficher_groupes[]
 
@@ -51,35 +96,37 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 
 	// le denier arg peut contenir l'url sur lequel faire le retour
 	// exemple dans un squelette article.html : [(#FORMULAIRE_FORUM{#SELF})]
-
 	// recuperer les donnees du forum auquel on repond.
-	list ($idr, $idf, $ida, $idb, $ids, $am, $ag, $af, $url) = $args;
-	$idr = intval($idr);
+	list ($ido, $idf, $am, $ag, $af, $url) = $args;
+	$ido = intval($ido);
 	$idf = intval($idf);
-	$ida = intval($ida);
-	$idb = intval($idb);
-	$ids = intval($ids);
+
+	$objet = $context_compil[5];
+	$table = $context_compil[6];
+	$primary = $context_compil[7];
+
+	if(!$objet)
+		return false;
 
 	$type = substr($GLOBALS['meta']["forums_publics"],0,3);
 
-	if ($ida) {
-		$titre = sql_fetsel('accepter_forum AS type, titre', 'spip_articles', "statut = 'publie' AND id_article = $ida");
+	if ($objet == 'article') {
+		$titre = sql_fetsel('accepter_forum AS type, titre', 'spip_articles', "statut = 'publie' AND id_article = $ido");
 		if ($titre) {
 			if ($titre['type']) $type = $titre['type'];
-			$table = "articles";
 		}
 		if ($type == 'non') return false;
 	} else {
+
 		if ($type == 'non') return false;
-		if ($idb) {
-			$titre = sql_fetsel('titre', 'spip_breves', "statut = 'publie' AND id_breve = $idb");
-			$table = "breves";
-		} else if ($ids) {
-			$titre = sql_fetsel('nom_site AS titre', 'spip_syndic', "statut = 'publie' AND id_syndic = $ids");
-			$table = "syndic";
-		} else if ($idr) {
-			$titre = sql_fetsel('titre', 'spip_rubriques', "statut = 'publie' AND id_rubrique = $idr");
-			$table = "rubriques";
+
+		if ($objet == 'syndic') {
+			$titre = sql_fetsel('nom_site AS titre', 'spip_syndic', "statut = 'publie' AND id_syndic = $ido");
+		}else if($f = charger_fonction($objet.'_forum_extraire_titre','inc',true)){
+			$titre = $f($ido);
+		}else{
+			$table_objet_sql = table_objet_sql($objet);
+			$titre = sql_fetsel('titre', $table_objet_sql, "statut = 'publie' AND $primary = $ido");
 		}
 	}
 
@@ -95,14 +142,14 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 		$table = '';
 
 	$titre = supprimer_numero($titre['titre']);
-	
+
 	// Sur quelle adresse va-t-on "boucler" pour la previsualisation ?
 	// si vide : self()
 	$script = '';
 
 	return
-		array($titre, $table, $type, $script,
-		$idr, $idf, $ida, $idb, $ids, $am, $ag, $af, $url);
+		array($titre, $table, $type, $objet, $primary, $script,
+		$ido, $idf, $am, $ag, $af, $url);
 }
 
 ?>

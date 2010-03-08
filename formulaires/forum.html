@@ -120,10 +120,16 @@
 	<INCLURE{fond=formulaires/inc-login_forum}{env} />
 
 	[(#REM) Piege a robots spammeurs, dont on change le nom a chaque fois,
-	]<p style="display: none;">
-		<label for="#ENV{cle_ajouter_document}"><:antispam_champ_vide:></label>
+	][<p style="display: none;">
+		<label for="(#ENV{cle_ajouter_document})"><:antispam_champ_vide:></label>
 		<input type="text" class="text" name="#ENV{cle_ajouter_document}" id="#ENV{cle_ajouter_document}" value="#ENV{#ENV{cle_ajouter_document}}" size="10" />
+	</p>]
+	[(#ENV{cle_ajouter_document}|non)
+	<p style="display: none;">
+		<label for="nobot_forum"><:antispam_champ_vide:></label>
+		<input type="text" class="text" name="nobot" id="nobot_forum" value="#ENV{nobot}" size="10" />
 	</p>
+	]
 	<p class="boutons"><input type="submit" class="submit" value="<:forum_voir_avant:>" /></p>
 ]
 </div>

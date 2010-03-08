@@ -85,7 +85,7 @@ function public_critere_secteur_forums($idb, &$boucles, $val, $crit)
 //
 // http://doc.spip.org/@balise_PARAMETRES_FORUM_dist
 function balise_PARAMETRES_FORUM($p) {
-
+spip_log('parametres_forum','forums');
 	// s'il y a un id_article dans le contexte, regarder le statut
 	// accepter_forum de cet article
 	$_id_article = champ_sql('id_article', $p);
@@ -160,7 +160,7 @@ function balise_PARAMETRES_FORUM($p) {
 // elle doit renvoyer '', 'id_article=5' ou 'id_article=5&id_forum=12'
 // selon les cas
 function calcul_parametres_forum(&$env, $reponse, $type, $primary) {
-
+	spip_log('calcul_parametres_forum','forums');
 	// si c'est une reponse, on peut esperer que (objet,id_objet) sont dans
 	// la boucle mere, mais il est possible que non (forums imbriques etc)
 	// dans ce cas on va chercher dans la base.

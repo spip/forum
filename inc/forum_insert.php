@@ -91,7 +91,7 @@ function inc_forum_insert_dist($force_statut = NULL) {
 
 	# temporaire vieux code
 	if (!$id_objet OR !$objet) {
-		foreach (array('article', 'breve', 'rubrique', 'syndic', 'message')
+		foreach (array('article', 'breve', 'rubrique', 'syndic', 'message','ticket')
 		as $ob) {
 			if ($id = intval(_request('id_'.$ob))) {
 				$objet = $ob;
@@ -120,7 +120,7 @@ function inc_forum_insert_dist($force_statut = NULL) {
 		$GLOBALS['visiteur_session']['session_nom']);
 	$c['email_auteur'] = sinon($GLOBALS['visiteur_session']['email'],
 		$GLOBALS['visiteur_session']['session_email']);
-		
+
 	$c = pipeline('pre_edition',array(
 		'args'=>array(
 				'table' => 'spip_forum',
@@ -280,13 +280,13 @@ function forum_insert_statut($champs, $retour, $forcer_statut=NULL)
 	if ($statut == 'abo' AND !test_espace_prive()) {
 		controler_forum_abo($retour); // demandera une auth http
 	}
-	
+
 	if ($forcer_statut !== NULL)
 		$champs['statut'] = $forcer_statut;
 	else
 		$champs['statut'] = ($statut == 'non') ? 'off' : (($statut == 'pri') ? 'prop' :	'publie');
-		
-	// Antispam basique : 
+
+	// Antispam basique :
 	// si l'input invisible a ete renseigne, ca ne peut etre qu'un bot
 	if (strlen(_request(_request('cle_ajouter_document')))) {
 		tracer_erreur_forum('champ interdit (nobot) rempli');

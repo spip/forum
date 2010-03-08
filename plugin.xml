@@ -1,5 +1,80 @@
 <plugin>
+</plugin>
+<plugin spip='[2.1.0-beta;]'>
 	<nom>Forum</nom>
+	<auteur>Collectif SPIP</auteur>
+	<version>1.0</version>
+	<version_base>1.1</version_base>
+	<etat>test</etat>
+	<description>Forum de SPIP (priv&eacute; et public)</description>
+	<prefix>forum</prefix>
+	<install>base/forum_upgrade.php</install>
+	<fonctions>spip21/public/forum.php</fonctions>
+	<fonctions>filtres/forum.php</fonctions>
+	<options>forum_options.php</options>
+
+	<pipeline>
+		<nom>declarer_tables_auxiliaires</nom>
+		<inclure>base/forum.php</inclure>
+	</pipeline>
+	<pipeline>
+		<nom>declarer_tables_principales</nom>
+		<inclure>base/forum.php</inclure>
+	</pipeline>
+	<pipeline>
+		<nom>declarer_tables_interfaces</nom>
+		<inclure>base/forum.php</inclure>
+	</pipeline>
+
+	<pipeline>
+		<nom>autoriser</nom>
+		<inclure>spip21/forum_autoriser.php</inclure>
+	</pipeline>
+	<pipeline>
+		<nom>notifications</nom>
+		<inclure>inc/forum_notifications.php</inclure>
+	</pipeline>
+
+	<pipeline>
+		<nom>accueil_encours</nom>
+		<inclure>forum_pipelines.php</inclure>
+	</pipeline>
+
+	<pipeline>
+		<nom>boite_infos</nom>
+		<inclure>forum_pipelines.php</inclure>
+	</pipeline>
+	<pipeline>
+		<nom>declarer_tables_objets_surnoms</nom>
+		<inclure>forum_pipelines.php</inclure>
+	</pipeline>
+	<pipeline>
+		<nom>optimiser_base_disparus</nom>
+		<inclure>forum_pipelines.php</inclure>
+	</pipeline>
+	<pipeline>
+		<nom>pre_insertion</nom>
+		<inclure>forum_pipelines.php</inclure>
+	</pipeline>
+	<pipeline>
+		<nom>rubrique_encours</nom>
+		<inclure>forum_pipelines.php</inclure>
+	</pipeline>
+	<pipeline>
+		<nom>trig_supprimer_objets_lies</nom>
+		<inclure>forum_pipelines.php</inclure>
+	</pipeline>
+	<pipeline>
+		<nom>jquery_plugins</nom>
+		<inclure>forum_pipelines.php</inclure>
+	</pipeline>
+	<necessite id="SPIP" version="[2.1.0 dev;)" />
+	<chemin dir='' />
+	<chemin dir='spip21/' />
+
+</plugin>
+<plugin spip='[2.2.0-dev;)'>
+	<nom>Forum 2.2</nom>
 	<auteur>Collectif SPIP</auteur>
 	<version>1.0</version>
 	<version_base>1.1</version_base>
@@ -9,6 +84,7 @@
 	<install>base/forum_upgrade.php</install>
 	<fonctions>spip22/public/forum.php</fonctions>
 	<fonctions>filtres/forum.php</fonctions>
+	<options>forum_options.php</options>
 
 	<pipeline>
 		<nom>declarer_tables_auxiliaires</nom>
@@ -115,121 +191,4 @@
 		<titre>titre_cadre_forum_interne</titre>
 		<url>forum</url>
 	</bouton>
-</plugin>
-<plugin spip='[2.1.0-beta;]'>
-	<nom>Forum</nom>
-	<auteur>Collectif SPIP</auteur>
-	<version>1.0</version>
-	<version_base>1.1</version_base>
-	<etat>test</etat>
-	<description>Forum de SPIP (priv&eacute; et public)</description>
-	<prefix>forum</prefix>
-	<install>base/forum_upgrade.php</install>
-	<fonctions>spip21/public/forum.php</fonctions>
-	<fonctions>filtres/forum.php</fonctions>
-
-	<pipeline>
-		<nom>declarer_tables_auxiliaires</nom>
-		<inclure>base/forum.php</inclure>
-	</pipeline>
-	<pipeline>
-		<nom>declarer_tables_principales</nom>
-		<inclure>base/forum.php</inclure>
-	</pipeline>
-	<pipeline>
-		<nom>declarer_tables_interfaces</nom>
-		<inclure>base/forum.php</inclure>
-	</pipeline>
-
-	<pipeline>
-		<nom>autoriser</nom>
-		<inclure>spip21/forum_autoriser.php</inclure>
-	</pipeline>
-	<pipeline>
-		<nom>notifications</nom>
-		<inclure>inc/forum_notifications.php</inclure>
-	</pipeline>
-
-	<pipeline>
-		<nom>accueil_encours</nom>
-		<inclure>forum_pipelines.php</inclure>
-	</pipeline>
-	<pipeline>
-		<nom>accueil_informations</nom>
-		<inclure>forum_pipelines.php</inclure>
-	</pipeline>
-	<pipeline>
-		<nom>afficher_fiche_objet</nom>
-		<inclure>forum_pipelines.php</inclure>
-	</pipeline>
-	<pipeline>
-		<nom>afficher_config_objet</nom>
-		<inclure>forum_pipelines.php</inclure>
-	</pipeline>
-	<pipeline>
-		<nom>afficher_message_statut_objet</nom>
-		<inclure>forum_pipelines.php</inclure>
-	</pipeline>
-	<pipeline>
-		<nom>boite_infos</nom>
-		<inclure>forum_pipelines.php</inclure>
-	</pipeline>
-	<pipeline>
-		<nom>compter_contributions_auteur</nom>
-		<inclure>forum_pipelines.php</inclure>
-	</pipeline>
-	<pipeline>
-		<nom>configurer_liste_metas</nom>
-		<inclure>forum_pipelines.php</inclure>
-	</pipeline>
-	<pipeline>
-		<nom>declarer_tables_objets_surnoms</nom>
-		<inclure>forum_pipelines.php</inclure>
-	</pipeline>
-	<pipeline>
-		<nom>optimiser_base_disparus</nom>
-		<inclure>forum_pipelines.php</inclure>
-	</pipeline>
-	<pipeline>
-		<nom>pre_insertion</nom>
-		<inclure>forum_pipelines.php</inclure>
-	</pipeline>
-	<pipeline>
-		<nom>prepare_recherche</nom>
-		<inclure>forum_pipelines.php</inclure>
-	</pipeline>
-	<pipeline>
-		<nom>rechercher_liste_des_champs</nom>
-		<inclure>forum_pipelines.php</inclure>
-	</pipeline>
-	<pipeline>
-		<nom>rubrique_encours</nom>
-		<inclure>forum_pipelines.php</inclure>
-	</pipeline>
-	<pipeline>
-		<nom>trig_supprimer_objets_lies</nom>
-		<inclure>forum_pipelines.php</inclure>
-	</pipeline>
-
-	<necessite id="SPIP" version="[2.1.0 dev;)" />
-	<chemin dir='' />
-	<chemin dir='spip21/' />
-
-	<bouton id='forum_reactions' parent='bando_activite'>
-		<icone>images/forum-16.png</icone>
-		<titre>icone_suivi_forums</titre>
-		<url>controle_forum</url>
-	</bouton>
-
-	<onglet id='config_forum' parent='configuration'>
-		<icone>images/forum-24.png</icone>
-		<titre>titre_forum</titre>
-	</onglet>
-
-	<bouton id="forum_interne_suivi" parent="outils_collaboratifs">
-		<icone>images/forum-interne-16.png</icone>
-		<titre>titre_cadre_forum_interne</titre>
-		<url>forum</url>
-	</bouton>
-
 </plugin>
