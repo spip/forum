@@ -16,8 +16,6 @@ include_spip('inc/acces');
 include_spip('inc/texte');
 include_spip('inc/forum');
 
-
-
 /*******************************/
 /* GESTION DU FORMULAIRE FORUM */
 /*******************************/
@@ -72,7 +70,9 @@ function balise_FORMULAIRE_FORUM ($p) {
 			$objet = str_replace('id_','',$primary);
 			$table = table_objet($objet);
 		}else{
-			$primary = 'id_forum';
+			$primary = 'null';
+			$objet = 'null';
+			$table = 'null';
 		}
 	}
 
@@ -105,8 +105,17 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 	$table = $context_compil[6];
 	$primary = $context_compil[7];
 
-	if(!$objet)
-		return false;
+	if(!$primary){
+		if(intval($idf)){
+			$objet = sql_fetsel('id_objet,objet','spip_forum','id_forum='.intval($idf));
+			$ido = $objet['id_objet'];
+			$objet = $objet['objet'];
+			$primary = id_table_objet($objet);
+			$table = table_objet($objet);
+		}else{
+			return false;
+		}
+	}
 
 	$type = substr($GLOBALS['meta']["forums_publics"],0,3);
 
