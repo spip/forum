@@ -87,6 +87,7 @@ spip21/images/forum-statut-prop-24.png -text
 spip21/images/forum-statut-publie-24.png -text
 spip21/images/forum-statut-spam-24.png -text
 spip21/images/forum-vert.gif -text
+spip21/prive/discuter_forum.html -text
 spip21/prive/style_prive_plugin_forum.html -text
 spip21/public/forum.php -text
 spip22/forum_autoriser.php -text
