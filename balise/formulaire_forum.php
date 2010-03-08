@@ -108,13 +108,15 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 	if(!$primary){
 		if(intval($idf)){
 			$objet = sql_fetsel('id_objet,objet','spip_forum','id_forum='.intval($idf));
-			$ido = $objet['id_objet'];
-			$objet = $objet['objet'];
-			$primary = id_table_objet($objet);
-			$table = table_objet($objet);
-		}else{
+			if(is_array($objet)){
+				$ido = $objet['id_objet'];
+				$objet = $objet['objet'];
+				$primary = id_table_objet($objet);
+				$table = table_objet($objet);
+			}else
+				return false;
+		}else
 			return false;
-		}
 	}
 
 	$type = substr($GLOBALS['meta']["forums_publics"],0,3);
