@@ -139,9 +139,7 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 	if (table_objet($objet) == 'syndic') {
 		$objet = 'site'; // eviter 'syndication' ... quelle *#@*&! de vilainerie 
 	}
-spip_log($objet, 'forums');
-spip_log($id_objet, 'forums');
-spip_log($idf, 'forums');
+
 	// et si on n'a toujours pas ce qu'on souhaite, on tente de le trouver dans un forum existant...
 	if (!$id_objet and $idf){
 		if ($objet = sql_fetsel(array('id_objet', 'objet'), 'spip_forum', 'id_forum=' . sql_quote($idf))) {
