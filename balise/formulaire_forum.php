@@ -41,7 +41,8 @@ function balise_FORMULAIRE_FORUM ($p) {
 
 	$i_boucle = $p->nom_boucle ? $p->nom_boucle : $p->id_boucle;
 	$_id_objet = $p->boucles[$i_boucle]->primary;
-	
+	$_type = $p->boucles[$i_boucle]->id_table;
+
 	/**
 	 * On essaye de trouver les forums en fonction de l'environnement
 	 * pour cela, on recupere l'ensemble des id_xxx possibles dans l'env
@@ -52,7 +53,6 @@ function balise_FORMULAIRE_FORUM ($p) {
 	}
 
 	$obtenir = array(
-		'FORUM_TYPE_BOUCLE', // demande du type d'objet
 		$_id_objet,
 		'id_forum',
 		'ajouter_mot',
@@ -64,7 +64,7 @@ function balise_FORMULAIRE_FORUM ($p) {
 		$obtenir = array_merge($obtenir, $ids);
 	}
 
-	$p = calculer_balise_dynamique($p,'FORMULAIRE_FORUM', $obtenir);
+	$p = calculer_balise_dynamique($p,'FORMULAIRE_FORUM', $obtenir, array($_type));
 
 	// Ajouter le code d'invalideur specifique aux forums
 	include_spip('inc/invalideur');
@@ -82,6 +82,7 @@ function balise_FORMULAIRE_FORUM ($p) {
 
 // http://doc.spip.org/@balise_FORMULAIRE_FORUM_stat
 function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
+	
 
 	// un arg peut contenir l'url sur lequel faire le retour
 	// exemple dans un squelette article.html : [(#FORMULAIRE_FORUM{#SELF})]
@@ -90,14 +91,14 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 	// [(#FORMULAIRE_FORUM{#SELF, article, 8})]
 	//
 	// $args = (obtenir) + (ids) + (url, objet, id_objet)
-	$nb_args_debut = 6;
-	list ($_objet, $ido, $idf, $am, $ag, $af) = $args;
-
+	$nb_args_debut = 5;
+	list ($ido, $idf, $am, $ag, $af) = $args;
 		$id_objet = intval(array_pop($args));
 		$objet    = array_pop($args);
 		$url      = array_pop($args);
 		$idf      = intval($idf);
 
+	$_objet = $context_compil[5]; // type le la boucle deja calcule
 	// pas d'objet force ? on prend le type de boucle calcule
 	if (!$objet) {
 		$objet = $_objet;	
@@ -107,13 +108,7 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 	}
 	unset($_objet, $ido);
 	
-	// pas dans une boucle ? on generera une erreur ?
-	if ($objet == 'balise_hors_boucle') {
-		$objet = '';
-		$id_objet   = '';
-	} else {		
-		$objet = objet_type($objet);
-	}
+	$objet = objet_type($objet);
 
 	// on tente de prendre l'objet issu de l'environnement si un n'a pas pu etre calcule
 	if (!$objet) {
@@ -200,16 +195,6 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 		array($titre, $table, $accepter_forum, $objet, $primary, $script,
 		$id_objet, $idf, $am, $ag, $af, $url);
 }
-
-
-// balise type_boucle de Rastapopoulos dans le plugin etiquettes
-// present aussi dans plugin ajaxforms, notations, et bien d'autres...
-function balise_FORUM_TYPE_BOUCLE($p) {
-	$type = $p->boucles[$p->id_boucle]->id_table;
-	$p->code = $type ? "'$type'" : "'balise_hors_boucle'";
-	return $p;  
-}
-
 
 function forum_recuperer_titre($objet, $id_objet) {
 	$titre = "";
