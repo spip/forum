@@ -14,8 +14,6 @@ function formulaires_forum_charger_dist(
 $titre, $table, $type, $objet, $primary, $script,
 $id_objet, $id_forum,
 $ajouter_mot, $ajouter_groupe, $afficher_texte, $url_param_retour) {
-	spip_log("$titre, $table, $type, $objet, $primary, $script,
-$id_objet, $id_forum",'forums');
 
 	// exiger l'authentification des posteurs pour les forums sur abo
 	if ($type == "abo") {
@@ -80,7 +78,7 @@ $id_objet, $id_forum",'forums');
 
 	if ($formats = forum_documents_acceptes()) {
 		include_spip('inc/securiser_action');
-		$cle = calculer_cle_action('ajouter-document-'.join('-',array_map('intval',$ids)));
+		$cle = calculer_cle_action('ajouter-document-'.$objet.'-'.$id_objet);
 	}
 	// Valeurs par defaut du formulaire
 	// si le formulaire a ete sauvegarde, restituer les valeurs de session
@@ -183,13 +181,8 @@ function formulaires_forum_verifier_dist(
 		// securite :
 		// verifier si on possede la cle (ie on est autorise a poster)
 		// (sinon tant pis) ; cf. charger.php pour la definition de la cle
-		if (_request('cle_ajouter_document') != calculer_cle_action($a = "ajouter-document-$id_article-$id_breve-$id_forum-$id_rubrique-$id_syndic")) {
-			$erreurs['document_forum'] = _T('public:documents_interdits_forum')
-				. "ajouter-document-$id_article-$id_breve-$id_forum-$id_rubrique-$id_syndic"
-				.", "
-				._request('cle_ajouter_document')
-
-			;
+		if (_request('cle_ajouter_document') != calculer_cle_action($a = "ajouter-document-$objet-$id_objet")) {
+			$erreurs['document_forum'] = _T('public:documents_interdits_forum');
 			unset($_FILES['ajouter_document']);
 		} else {
 			include_spip('inc/ajouter_documents');
