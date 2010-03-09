@@ -3,7 +3,7 @@
 <plugin spip='[2.1.0-beta;]'>
 	<nom>Forum</nom>
 	<auteur>Collectif SPIP</auteur>
-	<version>1.0</version>
+	<version>1.0.1</version>
 	<version_base>1.1</version_base>
 	<etat>test</etat>
 	<description>Forum de SPIP (priv&eacute; et public)</description>
@@ -76,7 +76,7 @@
 <plugin spip='[2.2.0-dev;)'>
 	<nom>Forum 2.2</nom>
 	<auteur>Collectif SPIP</auteur>
-	<version>1.0</version>
+	<version>1.0.1</version>
 	<version_base>1.1</version_base>
 	<etat>test</etat>
 	<description>Forum de SPIP (priv&eacute; et public)</description>
