@@ -39,18 +39,16 @@ function balise_FORMULAIRE_FORUM ($p) {
 	 * Enfin, on pourra aussi forcer objet et id_objet depuis l'appel du formulaire
 	 */
 
-	$i_boucle = $p->nom_boucle ? $p->nom_boucle : $p->id_boucle;
+	$i_boucle  = $p->nom_boucle ? $p->nom_boucle : $p->id_boucle;
 	$_id_objet = $p->boucles[$i_boucle]->primary;
-	$_type = $p->boucles[$i_boucle]->id_table;
+	$_type     = $p->boucles[$i_boucle]->id_table;
 
 	/**
 	 * On essaye de trouver les forums en fonction de l'environnement
 	 * pour cela, on recupere l'ensemble des id_xxx possibles dans l'env
 	 */
-	if (!$i_boucle) {
-		$ids = forum_get_objets_depuis_env();
-		$ids = array_values($ids);
-	}
+	$ids = forum_get_objets_depuis_env();
+	$ids = array_values($ids);
 
 	$obtenir = array(
 		$_id_objet,
@@ -64,7 +62,9 @@ function balise_FORMULAIRE_FORUM ($p) {
 		$obtenir = array_merge($obtenir, $ids);
 	}
 
-	$p = calculer_balise_dynamique($p,'FORMULAIRE_FORUM', $obtenir, array($_type));
+	$p = calculer_balise_dynamique($p,'FORMULAIRE_FORUM', $obtenir,
+		array("'$_type'", count($ids))
+	);
 
 	// Ajouter le code d'invalideur specifique aux forums
 	include_spip('inc/invalideur');
@@ -92,13 +92,16 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 	//
 	// $args = (obtenir) + (ids) + (url, objet, id_objet)
 	$nb_args_debut = 5;
-	list ($ido, $idf, $am, $ag, $af) = $args;
-		$id_objet = intval(array_pop($args));
-		$objet    = array_pop($args);
-		$url      = array_pop($args);
-		$idf      = intval($idf);
 
-	$_objet = $context_compil[5]; // type le la boucle deja calcule
+	list ($ido, $idf, $am, $ag, $af) = $args;
+		$idf        = intval($idf);
+		$_objet     = $context_compil[5]; // type le la boucle deja calcule
+		$nb_ids_env = $context_compil[6]; // nombre d'elements id_xx recuperes
+		$nb         = $nb_args_debut + $nb_ids_env;
+		$url        = isset($args[$nb]) ? $args[$nb] : '';
+		$objet      = isset($args[++$nb]) ? $args[$nb] : '';
+		$id_objet   = isset($args[++$nb]) ? $args[$nb] : 0;
+		
 	// pas d'objet force ? on prend le type de boucle calcule
 	if (!$objet) {
 		$objet = $_objet;	
@@ -136,7 +139,9 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 	if (table_objet($objet) == 'syndic') {
 		$objet = 'site'; // eviter 'syndication' ... quelle *#@*&! de vilainerie 
 	}
-
+spip_log($objet, 'forums');
+spip_log($id_objet, 'forums');
+spip_log($idf, 'forums');
 	// et si on n'a toujours pas ce qu'on souhaite, on tente de le trouver dans un forum existant...
 	if (!$id_objet and $idf){
 		if ($objet = sql_fetsel(array('id_objet', 'objet'), 'spip_forum', 'id_forum=' . sql_quote($idf))) {
