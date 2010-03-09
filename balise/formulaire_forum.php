@@ -224,19 +224,6 @@ function forum_recuperer_titre($objet, $id_objet) {
 
 
 
-function inc_article_accepter_forums_publics_dist($id_objet) {
-	$accepter_forum = substr($GLOBALS['meta']["forums_publics"],0,3);
-	$art_accepter_forum = sql_getfetsel('accepter_forum', 'spip_articles', array(
-		"statut = ". sql_quote('publie'),
-		"id_article = ". sql_quote($id)
-	));
-	if ($art_accepter_forum) {
-		$accepter_forum = $art_accepter_forum;
-	}
-	return $accepter_forum;
-}
-
-
 // recuperer tous les objets dont on veut pouvoir obtenir l'identifiant
 // directement dans l'environnement
 function forum_get_objets_depuis_env() {

@@ -35,17 +35,29 @@ function controler_forum_abo($retour)
 		}
 }
 
+/**
+ * Retourne pour un couple objet/id_objet donne
+ * de quelle maniere les forums sont acceptes dessus
+ * non: pas de forum
+ * pos: a posteriori, acceptes et eventuellements moderes ensuite
+ * pri: a priori, doivent etre valides par un admin
+ * abo: les personnes doivent au prealable etre identifiees
+ *
+ * @param string $objet objet a tester
+ * @param int $id_objet identifiant de l'objet
+ * @param string $res chaine de 3 caractere parmi 'non','pos','pri','abo'
+ */
 // http://doc.spip.org/@controler_forum
 function controler_forum($objet, $id_objet) {
-
-	// Reglage forum d'article si l'article existe
-	if ($objet == 'article' AND $id_objet)
-		$statut = sql_getfetsel('accepter_forum','spip_articles',"id_article=$id_objet");
-
 	// Valeur par defaut
-	return $statut
-		? $statut
-		: substr($GLOBALS['meta']["forums_publics"],0,3);
+	$accepter_forum = $GLOBALS['meta']["forums_publics"];
+	
+	// il y a un cas particulier pour l'acceptation de forum d'article...
+	if ($f = charger_fonction($objet . '_accepter_forums_publics', 'inc', true)){
+		$accepter_forum = $f($id_objet);
+	}
+
+	return substr($accepter_forum, 0, 3);
 }
 
 // http://doc.spip.org/@mots_du_forum
