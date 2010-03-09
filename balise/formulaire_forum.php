@@ -158,7 +158,7 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 	// si on n'avait pas a envoyer la valeur $accepter_forum au formulaire
 	$accepter_forum = substr($GLOBALS['meta']["forums_publics"], 0, 3);
 	// il y a un cas particulier pour l'acceptation de forum d'article...
-	if ($f = charger_fonction($objet . '_accepter_forums_public', 'inc', true)){
+	if ($f = charger_fonction($objet . '_accepter_forums_publics', 'inc', true)){
 		$accepter_forum = $f($id_objet);
 	}
 	
@@ -224,7 +224,7 @@ function forum_recuperer_titre($objet, $id_objet) {
 
 
 
-function inc_article_accepter_forums_public_dist($id_objet) {
+function inc_article_accepter_forums_publics_dist($id_objet) {
 	$accepter_forum = substr($GLOBALS['meta']["forums_publics"],0,3);
 	$art_accepter_forum = sql_getfetsel('accepter_forum', 'spip_articles', array(
 		"statut = ". sql_quote('publie'),
