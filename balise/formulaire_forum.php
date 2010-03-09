@@ -125,7 +125,6 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 			}
 			$i++;
 		}
-		spip_log($ids, 'forums');
 		if (count($ids)>1) {
 			if (isset($ids['rubrique'])) {
 				unset($ids['rubrique']);
