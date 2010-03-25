@@ -10,6 +10,10 @@
  *  Pour plus de details voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
+// ajouter certaines fonctions non modifiees de spip 2.1
+include_spip('public/quete');
+// quete_accepter_forum()
+// lang_parametres_forum()
 
 //
 // <BOUCLE(FORUMS)>
@@ -195,46 +199,7 @@ function calcul_parametres_forum(&$env, $reponse, $type, $primary) {
 	return '';
 }
 
-# retourne le champ 'accepter_forum' d'un article
-if(!function_exists('quete_accepter_forum')) {
-function quete_accepter_forum($id_article) {
-	// si la fonction est appelee en dehors d'une boucle
-	// article (forum de breves), $id_article est nul
-	// mais il faut neanmoins accepter l'affichage du forum
-	// d'ou le 0=>'' (et pas 0=>'non').
-	static $cache = array(0 => '');
 
-	$id_article = intval($id_article);
-
-	if (isset($cache[$id_article]))	return $cache[$id_article];
-
-	return $cache[$id_article] = sql_getfetsel('accepter_forum','spip_articles',"id_article=$id_article");
-}
-}
-
-// Ajouter "&lang=..." si la langue du forum n'est pas celle du site.
-// Si le 2e parametre n'est pas une chaine, c'est qu'on n'a pas pu
-// determiner la table a la compil, on le fait maintenant.
-// Il faudrait encore completer: on ne connait pas la langue
-// pour une boucle forum sans id_article ou id_rubrique donne par le contexte
-// et c'est signale par un message d'erreur abscons: "table inconnue forum".
-//
-// http://doc.spip.org/@lang_parametres_forum
-if(!function_exists('lang_parametres_forum')) {
-function lang_parametres_forum($qs, $lang) {
-	if (is_array($lang) AND preg_match(',id_([a-z_]+)=([0-9]+),', $qs, $r)) {
-		$id = 'id_' . $r[1];
-		if ($t = $lang[$id])
-			$lang = sql_getfetsel('lang', $t, "$id=" . $r[2]);
-	}
-  // Si ce n'est pas la meme que celle du site, l'ajouter aux parametres
-
-	if ($lang AND $lang <> $GLOBALS['meta']['langue_site'])
-		return $qs . "&lang=" . $lang;
-
-	return $qs;
-}
-}
 
 // Pour que le compilo ajoute un invalideur a la balise #PARAMETRES_FORUM
 // Noter l'invalideur de la page contenant ces parametres,
