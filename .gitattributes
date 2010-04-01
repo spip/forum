@@ -42,6 +42,7 @@ inc/forum.php -text
 inc/forum_insert.php -text
 inc/forum_notifications.php -text
 javascript/jquery.autosave.js -text
+lang/forum_de.php -text
 lang/forum_fr.php -text
 modeles/auteur_nom.html -text
 /plugin.xml -text
