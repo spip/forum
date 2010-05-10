@@ -6,7 +6,7 @@
 	<version>1.0.1</version>
 	<version_base>1.1</version_base>
 	<etat>test</etat>
-	<description>Forum de SPIP (priv&eacute; et public)</description>
+	<description><multi>[fr]Forum de SPIP (priv&eacute; et public)[de]Foren in SPIP (Redaktionsbereich und &ouml;ffentliche Website)</multi></description>
 	<prefix>forum</prefix>
 	<install>base/forum_upgrade.php</install>
 	<fonctions>spip21/public/forum.php</fonctions>
@@ -79,7 +79,7 @@
 	<version>1.0.1</version>
 	<version_base>1.1</version_base>
 	<etat>test</etat>
-	<description>Forum de SPIP (priv&eacute; et public)</description>
+	<description><multi>[fr]Forum de SPIP (priv&eacute; et public)[de]Foren in SPIP (Redaktionsbereich und &ouml;ffentliche Website)</multi></description>
 	<prefix>forum</prefix>
 	<install>base/forum_upgrade.php</install>
 	<fonctions>spip22/public/forum.php</fonctions>
