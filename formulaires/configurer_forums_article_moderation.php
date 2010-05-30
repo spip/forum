@@ -38,7 +38,7 @@ function formulaires_configurer_forums_article_moderation_charger_dist($id_artic
 
 	include_spip('inc/presentation');
 	include_spip('base/abstract_sql');
-	$nb_forums = sql_countsel("spip_forum", "id_article=".intval($id_article)." AND statut IN ('publie', 'off', 'prop', 'spam')");
+	$nb_forums = sql_countsel("spip_forum", "objet='article' AND id_objet=".intval($id_article)." AND statut IN ('publie', 'off', 'prop', 'spam')");
 
 	return array(
 		'id_article' => $id_article,
