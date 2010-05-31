@@ -7,7 +7,7 @@ balise/formulaire_forum_prive.php -text
 base/forum.php -text
 base/forum_upgrade.php -text
 exec/articles_forum.php -text
-exec/config_forum.php -text
+exec/configurer_forum.php -text
 exec/controle_forum.php -text
 filtres/forum.php -text
 formulaires/configurer_forums_article_moderation.html -text

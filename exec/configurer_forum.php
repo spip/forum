@@ -14,7 +14,7 @@ if (!defined("_ECRIRE_INC_VERSION")) return;
 
 include_spip('inc/presentation');
 
-function exec_config_forum_dist()
+function exec_configurer_forum_dist()
 {
 	if (!autoriser('configurer', 'forum')) {
 		include_spip('inc/minipres');
@@ -24,7 +24,7 @@ function exec_config_forum_dist()
 	$config = charger_fonction('config', 'inc');
 	$config();
 
-	pipeline('exec_init',array('args'=>array('exec'=>'config_forum'),'data'=>''));
+	pipeline('exec_init',array('args'=>array('exec'=>'configurer_forum'),'data'=>''));
 	$commencer_page = charger_fonction('commencer_page', 'inc');
 	echo $commencer_page(_T('titre_page_config_contenu'), "configuration", "configuration");
 
@@ -33,9 +33,9 @@ function exec_config_forum_dist()
 
 	echo debut_gauche('', true);
 
-	echo pipeline('affiche_gauche',array('args'=>array('exec'=>'config_forum'),'data'=>''));
+	echo pipeline('affiche_gauche',array('args'=>array('exec'=>'configurer_forum'),'data'=>''));
 	echo creer_colonne_droite('', true);
-	echo pipeline('affiche_droite',array('args'=>array('exec'=>'config_forum'),'data'=>''));
+	echo pipeline('affiche_droite',array('args'=>array('exec'=>'configurer_forum'),'data'=>''));
 	echo debut_droite('', true);
 
 	echo pipeline('affiche_milieu',array('args'=>array('exec'=>'config_forum'),'data'=>recuperer_fond("prive/configurer/forum",array())));
