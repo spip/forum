@@ -80,7 +80,7 @@ function forum_declarer_tables_principales($tables_principales){
 			"nom_site"	=> "text DEFAULT '' NOT NULL",
 			"url_site"	=> "text DEFAULT '' NOT NULL",
 			"statut"	=> "varchar(8) DEFAULT '0' NOT NULL",
-			"ip"	=> "varchar(16) DEFAULT '' NOT NULL",
+			"ip"	=> "varchar(40) DEFAULT '' NOT NULL",
 			"maj"	=> "TIMESTAMP",
 			"id_auteur"	=> "bigint DEFAULT '0' NOT NULL");
 
