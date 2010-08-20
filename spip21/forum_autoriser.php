@@ -42,4 +42,16 @@ if(!function_exists('autoriser_bouton_controle_forum_dist')){
 		return 	(sql_countsel('spip_forum'));
 	}
 }
+
+// Consulter le forum des admins ?
+// admins y compris restreints
+// http://doc.spip.org/@autoriser_forum_admin_dist
+if(!function_exists('autoriser_forum_admin_dist')){
+function autoriser_forum_admin_dist($faire, $type, $id, $qui, $opt) {
+	return
+		$qui['statut'] == '0minirezo'
+		;
+}
+}
+
 ?>
