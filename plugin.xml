@@ -71,7 +71,7 @@
 	<necessite id="SPIP" version="[2.1.0 dev;)" />
 	<chemin dir='' />
 	<chemin dir='spip21/' />
-
+	<categorie>communication</categorie>
 </plugin>
 <plugin spip='[2.2.0-dev;)'>
 	<nom>Forum 2.2</nom>
@@ -191,4 +191,5 @@
 		<titre>titre_cadre_forum_interne</titre>
 		<url>forum</url>
 	</bouton>
+	<categorie>communication</categorie>
 </plugin>
