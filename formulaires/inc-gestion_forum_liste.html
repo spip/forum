@@ -1,9 +1,9 @@
 #CACHE{0}
 <B_forum>
-<p class="legend">
-[(#GRAND_TOTAL|singulier_ou_pluriel{forum:un_message_forum,forum:nombre_messages_forum}|sinon{<:forum:aucun_message_forum:>})]
+<h2>[(#GRAND_TOTAL|singulier_ou_pluriel{forum:un_message_forum,forum:nombre_messages_forum}|sinon{<:forum:aucun_message_forum:>})]</h2>
+[<p class="legend">
 #SET{self,#SELF|parametre_url{id_article|id_forum|email_auteur|ip|id_auteur|auteur|debut_id_forum|statut,''}}
-[(#ENV{id_forum}
+(#ENV{id_forum}
 	|ou{#ENV{id_rubrique}}
 	|ou{#ENV{id_article}}
 	|ou{#ENV{id_breve}}
@@ -14,8 +14,8 @@
 	|ou{#ENV{auteur}}
 	|ou{#ENV{email_auteur}}
 	|ou{#ENV{ip}}
-	|oui)<a class='annule_filtre ajax' href='#GET{self}' title="<:forum:tout_voir|attribut_html:>"><strong><:forum:tout_voir:></strong></a>]
-</p>
+	|oui)<a class='annule_filtre ajax' href='#GET{self}' title="<:forum:tout_voir|attribut_html:>"><strong><:forum:tout_voir:></strong></a>
+</p>]
 [(#REM) désactiver l'ancre de pagination qui est déjà présente dans le squelette appelant ]
 #SET{virer_ancre,#ANCRE_PAGINATION}
 [<p class='pagination'>(#PAGINATION)</p>]
