@@ -1,5 +1,3 @@
-<plugin>
-</plugin>
 <plugin spip='[2.1.0-beta;]'>
 	<nom>Forum</nom>
 	<auteur>Collectif SPIP</auteur>
