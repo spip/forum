@@ -73,8 +73,11 @@ function forum_accueil_informations($texte){
 		}
 
 		$texte .= "<div class='accueil_informations forum verdana1'>";
+		$afficher_plus = 'afficher_plus_info';
+		if (!function_exists($afficher_plus))
+			$afficher_plus = 'afficher_plus';
 		if (autoriser('modererforum'))
-			$texte .= afficher_plus(generer_url_ecrire("controle_forum",""));
+			$texte .= $afficher_plus(generer_url_ecrire("controle_forum",""));
 		$texte .= "<b>" ._T('onglet_messages_publics') ."</b>";
 		$texte .= "<ul style='margin:0px; padding-".$GLOBALS['spip_lang_left'].": 20px; margin-bottom: 5px;'>";
 		if (isset($cpt['prop'])) $texte .= "<li>"._T("texte_statut_attente_validation").": ".$cpt2['prop'] .$cpt['prop'] . '</li>';
