@@ -18,6 +18,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'interface_onglets' => 'Interface avec onglets',
 	'interface_formulaire' => 'Interface formulaire',
 
+	'info_1_message_forum' => '1 message de forum',
+	'info_nb_messages_forum' => '@nb@ messages de forum',
+
 	// M
 	'messages_aucun' => 'Aucun',
 	'messages_meme_auteur' => 'Tous les messages de cet auteur',
@@ -34,9 +37,6 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'messages_spam' => 'Spam',
 	'messages_tous' => 'Tous',
 
-	// N
-	'nombre_messages_forum' => '@nb@ messages de forum',
-
 	// S
 	'statut_prop' => 'Propos&eacute;',
 	'statut_publie' => 'Publi&eacute;',
@@ -47,8 +47,6 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'texte_en_cours_validation'=> 'Les articles, br&egrave;ves, forums ci dessous sont propos&eacute;s &agrave; la publication.',
 	'tout_voir' => 'Voir tous les messages',
 
-	// U
-	'un_message_forum' => '1 message de forum',
 );
 
 

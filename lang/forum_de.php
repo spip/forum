@@ -5,8 +5,9 @@
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 'aucun_message_forum' => 'Kein Beitrag',
-'un_message_forum' => '1 Beitrag im Forum',
-'nombre_messages_forum' => '@nb@ Beitr&auml;ge im Forum',
+
+'info_1_message_forum' => '1 Beitrag im Forum',
+'info_nb_messages_forum' => '@nb@ Beitr&auml;ge im Forum',
 
 'icone_bruler_message' => "Als SPAM markieren",
 'icone_valider_repondre_message' => 'Beantworten dieses Beitrags best&auml;tigen',

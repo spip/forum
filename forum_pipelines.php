@@ -190,8 +190,8 @@ function forum_compter_contributions_auteur($flux){
 	$id_auteur = intval($flux['args']['id_auteur']);
 	if ($cpt = sql_countsel("spip_forum AS F", "F.id_auteur=".intval($flux['args']['id_auteur']))){
 		// manque "1 message de forum"
-		$contributions = ($cpt>1) ? $cpt.' '._T('public:messages_forum'):'1 '._T('public:message');
-		$flux['data'] .= ($flux['data']?", ":"").$contributions;
+		$contributions = singulier_ou_pluriel($cpt,'forum:info_1_message_forum','forum:info_nb_messages_forum');
+		$flux['data'][] = $contributions;
 	}
 	return $flux;
 }
