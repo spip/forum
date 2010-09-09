@@ -37,9 +37,10 @@ function exec_controle_forum_args($type,$contexte=array(),$fond = 'prive/control
 
 		echo fin_boite_info(true);
 
-		if ($id_article=$contexte['id_article']){
-			$res = icone_horizontale(_T('icone_retour'), generer_url_ecrire("articles","id_article=$id_article"), "article-24.png","", false);
-			$res .= icone_horizontale(_T('icone_statistiques_visites'), generer_url_ecrire("statistiques_visites","id_article=$id_article"), "statistique-24.png","", false);
+		if ($type=$contexte['objet'] AND $id=intval($contexte['id_objet'])){
+			$res = icone_horizontale(_T('icone_retour'), generer_url_entite($id,$type), "$type-24.png","", false);
+			if ($type=='article')
+				$res .= icone_horizontale(_T('icone_statistiques_visites'), generer_url_ecrire("statistiques_visites","id_article=$id"), "statistique-24.png","", false);
 			echo bloc_des_raccourcis($res);
 		}
 

@@ -114,7 +114,7 @@ function forum_afficher_fiche_objet($flux){
 		else
 			$n_forums = 0;
 		if ($n_forums)
-	  	$flux['data'] .= icone_inline(_T('icone_suivi_forum', array('nb_forums' => $n_forums)), generer_url_ecrire("controle_forum","id_rubrique=$id_rubrique"), "forum-24.png", "", 'center');
+	  	$flux['data'] .= icone_inline(_T('icone_suivi_forum', array('nb_forums' => $n_forums)), generer_url_ecrire("controle_forum","objet=rubrique&id_objet=$id_rubrique"), "forum-24.png", "", 'center');
 	}
 	return $flux;
 }
@@ -126,12 +126,11 @@ function forum_afficher_fiche_objet($flux){
  * @return array
  */
 function forum_afficher_config_objet($flux){
-	if (($type = $flux['args']['type'])=='article'){
-		$id = $flux['args']['id'];
+	if (($type = $flux['args']['type'])
+		AND $id = $flux['args']['id']){
 		if (autoriser('modererforum', $type, $id)) {
-			$table = table_objet($type);
 			$id_table_objet = id_table_objet($type);
-			$flux['data'] .= recuperer_fond("prive/configurer/moderation",array($id_table_objet=>$id));
+			$flux['data'] .= recuperer_fond("prive/configurer/moderation",array('id_objet'=>$id,'objet'=>  objet_type(table_objet($type))));
 		}
 	}
 	return $flux;

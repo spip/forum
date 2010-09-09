@@ -10,12 +10,12 @@ exec/articles_forum.php -text
 exec/configurer_forum.php -text
 exec/controle_forum.php -text
 filtres/forum.php -text
-formulaires/configurer_forums_article_moderation.html -text
-formulaires/configurer_forums_article_moderation.php -text
 formulaires/configurer_forums_contenu.html -text
 formulaires/configurer_forums_contenu.php -text
 formulaires/configurer_forums_notifications.html -text
 formulaires/configurer_forums_notifications.php -text
+formulaires/configurer_forums_objet_moderation.html -text
+formulaires/configurer_forums_objet_moderation.php -text
 formulaires/configurer_forums_participants.html -text
 formulaires/configurer_forums_participants.php -text
 formulaires/configurer_forums_prives.html -text

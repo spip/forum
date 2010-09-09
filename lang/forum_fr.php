@@ -46,6 +46,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// T
 	'texte_en_cours_validation'=> 'Les articles, br&egrave;ves, forums ci dessous sont propos&eacute;s &agrave; la publication.',
 	'tout_voir' => 'Voir tous les messages',
+	'texte_messages_publics' => 'Messages publics sur&nbsp;:',
+
+	// V
+	'voir_messages_objet' => 'voir les messages'
 
 );
 

@@ -1,11 +1,11 @@
-<div class='formulaire_spip formulaire_configurer formulaire_configurer_forums_article_moderation' id='formulaire_configurer_forums_article_moderation'>
+<div class='formulaire_spip formulaire_configurer formulaire_#FORM' id='formulaire_#FORM-#ID'>
 [(#ENV{_suivi_forums}|oui)
-[(#ENV{_suivi_forums}|icone_horizontale{#URL_ECRIRE{articles_forum,id_article=#ID_ARTICLE},forum-24.png,'',''})]
+[(#ENV{_suivi_forums}|icone_horizontale{#URL_ECRIRE{controle_forum,objet=#ENV{objet}&id_objet=#ENV{id_objet}},forum-24.png,'',''})]
 ]
 
 [<p class="reponse_formulaire reponse_formulaire_ok">(#ENV*{message_ok})</p>]
 [<p class="reponse_formulaire reponse_formulaire_erreur">(#ENV*{message_erreur})</p>]
-
+[(#ENV{editable})
 	<form action="#ENV{action}#formulaire_configurer_forums_article_moderation" method="post" enctype='multipart/form-data'><div>
 		[(#ACTION_FORMULAIRE{#ENV{action}})]
 		<ul>
@@ -22,4 +22,5 @@
 		</ul>
 		<p class='boutons'><input class='submit' type="submit" name="ok" value="<:bouton_enregistrer:>"/></p>
 	</div></form>
+]
 </div>

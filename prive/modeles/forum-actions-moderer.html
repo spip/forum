@@ -1,9 +1,8 @@
 #SET{action,'<div class="actions moderer"><div>'}
 [(#SET{retour,[(#REM|test_espace_prive|?{[(#VAL{ecrire/}|concat{#SELF|replace{'./',''}})],#SELF}|ancre_url{forum#ID_FORUM})]})]
 #SET{redirect,#URL_PAGE{forum}|parametre_url{id_forum,#ID_FORUM}
-	 |parametre_url{id_article,#ID_ARTICLE}
-	 |parametre_url{id_breve,#ID_BREVE}
-	 |parametre_url{id_syndic,#ID_SYNDIC}
+	 |parametre_url{id_objet,#ID_OBJET}
+	 |parametre_url{objet,#OBJET}
 	 |parametre_url{retour,#GET{retour}}}
 [(#AUTORISER{instituer,forum,#ID_FORUM})
 	[(#STATUT|=={prop}|oui)
