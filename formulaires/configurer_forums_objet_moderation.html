@@ -1,6 +1,6 @@
 <div class='formulaire_spip formulaire_configurer formulaire_#FORM' id='formulaire_#FORM-#ID'>
 [(#ENV{_suivi_forums}|oui)
-[(#ENV{_suivi_forums}|icone_horizontale{#URL_ECRIRE{controle_forum,objet=#ENV{objet}&id_objet=#ENV{id_objet}},forum-24.png,'',''})]
+[(#URL_ECRIRE{controle_forum,objet=#ENV{objet}&id_objet=#ENV{id_objet}}|icone_horizontale{#ENV{_suivi_forums},forum-24.png,'',''})]
 ]
 
 [<p class="reponse_formulaire reponse_formulaire_ok">(#ENV*{message_ok})</p>]
