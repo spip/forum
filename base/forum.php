@@ -94,11 +94,12 @@ function forum_declarer_tables_principales($tables_principales){
 	$spip_forum_join = array(
 			"id_forum"=>"id_forum",
 			"id_parent"=>"id_parent",
-			"id_article"=>"id_article",
-			"id_breve"=>"id_breve",
-			"id_message"=>"id_message",
-			"id_syndic"=>"id_syndic",
-			"id_rubrique"=>"id_rubrique");
+			#"id_article"=>"id_article",
+			#"id_breve"=>"id_breve",
+			#"id_message"=>"id_message",
+			#"id_syndic"=>"id_syndic",
+			#"id_rubrique"=>"id_rubrique"
+	);
 
 	$tables_principales['spip_forum'] =
 		array('field' => &$spip_forum,	'key' => &$spip_forum_key, 'join' => &$spip_forum_join);
