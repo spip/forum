@@ -7,6 +7,8 @@
  *
  */
 
+include_spip('inc/presentation');
+
 function exec_controle_forum_dist()
 {
 	if (!autoriser('publierdans','rubrique',_request('id_rubrique'))
