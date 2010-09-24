@@ -38,7 +38,7 @@ function exec_configurer_forum_dist()
 	echo pipeline('affiche_droite',array('args'=>array('exec'=>'configurer_forum'),'data'=>''));
 	echo debut_droite('', true);
 
-	echo pipeline('affiche_milieu',array('args'=>array('exec'=>'config_forum'),'data'=>recuperer_fond("prive/configurer/forum",array())));
+	echo pipeline('affiche_milieu',array('args'=>array('exec'=>'config_forum'),'data'=>recuperer_fond("prive/squelettes/contenu/page-configurer_forum",array())));
 
 	echo fin_gauche(), fin_page();
 	}

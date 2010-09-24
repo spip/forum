@@ -46,7 +46,6 @@ lang/forum_de.php -text
 lang/forum_fr.php -text
 modeles/auteur_nom.html -text
 /plugin.xml -text
-prive/configurer/forum.html -text
 prive/configurer/moderation.html -text
 prive/controler_forum.html -text
 prive/discuter_forum.html -text
@@ -59,6 +58,7 @@ prive/listes/participer_forum_thread.html -text
 prive/modeles/forum-actions-moderer.html -text
 prive/modeles/forum.html -text
 prive/repondre_forum.html -text
+prive/squelettes/contenu/page-configurer_forum.html -text
 prive/style_prive_plugin_forum.html -text
 rss/forums.html -text
 rss/forums_interne.html -text

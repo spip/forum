@@ -179,10 +179,10 @@
 		<url>controle_forum</url>
 	</bouton>
 
-	<onglet id='config_forum' parent='configuration'>
-		<icone>images/forum-24.png</icone>
+	<bouton id='configurer_forum' parent='bando_configuration'>
+		<icone>images/forum-16.png</icone>
 		<titre>titre_forum</titre>
-	</onglet>
+	</bouton>
 
 	<bouton id="forum_interne_suivi" parent="outils_collaboratifs">
 		<icone>images/forum-interne-16.png</icone>
