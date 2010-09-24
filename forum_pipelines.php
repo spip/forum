@@ -96,7 +96,7 @@ function forum_accueil_informations($texte){
  */
 function forum_afficher_fiche_objet($flux){
 
-	if (($type = $flux['args']['type'])=='article'){
+	if (in_array($type = $flux['args']['type'],array('article','breve','site'))){
 		$id = $flux['args']['id'];
 		$table = table_objet($type);
 		$id_table_objet = id_table_objet($type);
