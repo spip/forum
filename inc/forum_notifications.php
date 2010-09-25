@@ -12,25 +12,24 @@
 
 if (!defined("_ECRIRE_INC_VERSION")) return;
 
-// http://doc.spip.org/@email_notification_forum
-if(!function_exists('email_notification_forum')){
-	function email_notification_forum ($t, $email) {
+/**
+ * Construitre l'email personalise de notification d'un forum
+ *
+ * @param array $t
+ * @param string $email
+ * @return string
+ */
+function email_notification_forum ($t, $email) {
+	static $contexte = array();
 
-		// Rechercher eventuellement la langue du destinataire
-		if (NULL !== ($l = sql_getfetsel('lang', 'spip_auteurs', "email=" . sql_quote($email))))
-			$l = lang_select($l);
-
+	if(!isset($contexte[$t['id_forum']])){
 		$url = '';
 		$id_forum = $t['id_forum'];
 
 		if ($t['statut'] == 'prive') # forum prive
 		{
-			if ($t['id_article'])
-				$url = generer_url_ecrire('articles', 'id_article='.$t['id_article']).'#id'.$id_forum;
-			else if ($t['id_breve'])
-				$url = generer_url_ecrire('breves_voir', 'id_breve='.$t['id_breve']).'#id'.$id_forum;
-			else if ($t['id_syndic'])
-				$url = generer_url_ecrire('sites', 'id_syndic='.$t['id_syndic']).'#id'.$id_forum;
+			if ($t['id_objet'])
+				$url = generer_url_entite($t['id_objet'], $t['objet'], '', '#id'.$id_forum, false);
 		}
 		else if ($t['statut'] == 'privrac') # forum general
 		{
@@ -50,164 +49,52 @@ if(!function_exists('email_notification_forum')){
 		}
 
 		if (!$url) {
-			spip_log("forum $id_forum sans referent");
+			spip_log("forum $id_forum sans referent",'notifications');
 			$url = './';
 		}
-		if ($t['id_article']) {
-			$titre = textebrut(typo(sql_getfetsel("titre", "spip_articles", "id_article=".sql_quote($t['id_article']))));
-		}
-		if ($t['id_message']) {
-			$titre = textebrut(typo(sql_getfetsel("titre", "spip_messages", "id_message=".sql_quote($t['id_message']))));
+		if ($t['id_objet']) {
+			include_spip('inc/filtres');
+			$t['titre_source'] = generer_info_entite($t['id_objet'], $t['objet'], 'titre');
 		}
 
-		$sujet = "[" .
-		  entites_html(textebrut(typo($GLOBALS['meta']["nom_site"]))) .
-		  "] ["._T('forum_forum')."] ".typo($t['titre']);
+		$t['url'] = $url;
 
-		$parauteur = (strlen($t['auteur']) <= 2) ? '' :
-		  (" " ._T('forum_par_auteur', array(
-		  	'auteur' => $t['auteur'])
-		  ) .
-		   ($t['email_auteur'] ? ' <' . $t['email_auteur'] . '>' : ''));
+		// detecter les url des liens du forum
+		// pour la moderation (permet de reperer les SPAMS avec des liens caches)
+		$links = array();
+		foreach ($t as $champ)
+			$links = $links + extraire_balises($champ,'a');
+		$links = extraire_attribut($links,'href');
+		$links = implode("\n",$links);
+		$t['liens'] = $links;
 
-		$forum_poste_par = $t['id_article']
-			? _T('forum_poste_par', array(
-				'parauteur' => $parauteur, 'titre' => $titre)). "\n\n"
-			: $parauteur . ' (' . $titre . ')';
-
-		// TODO: squelettiser
-		$corps = _T('form_forum_message_auto') . "\n\n"
-			. $forum_poste_par
-			. (($t['statut'] == 'publie') ? _T('forum_ne_repondez_pas')."\n" : '')
-			. url_absolue($url)
-			. "\n\n\n** ".textebrut(typo($t['titre']))
-			."\n\n* ".textebrut(propre($t['texte']))
-			. "\n\n".$t['nom_site']."\n".$t['url_site']."\n";
-
-		if ($l)
-			lang_select();
-
-		return array('subject' => $sujet, 'body' => $corps);
+		$contexte[$t['id_forum']] = $t;
 	}
-}
-// cette notification s'execute quand on valide un message 'prop'ose,
-// dans ecrire/inc/forum_insert.php ; ici on va notifier ceux qui ne l'ont
-// pas ete a la notification forumposte (sachant que les deux peuvent se
-// suivre si le forum est valide directement ('pos' ou 'abo')
-// http://doc.spip.org/@notifications_forumvalide_dist
-if(!function_exists('notifications_forumvalide_dist')){
-	function notifications_forumvalide_dist($quoi, $id_forum) {
 
-		$t = sql_fetsel("*", "spip_forum", "id_forum=".sql_quote($id_forum));
+	$t = $contexte[$t['id_forum']];
+		// Rechercher eventuellement la langue du destinataire
+	if (NULL !== ($l = sql_getfetsel('lang', 'spip_auteurs', "email=" . sql_quote($email))))
+		$l = lang_select($l);
 
-		// forum sur un message prive : pas de notification ici (cron)
-		if (!@$t['id_article'] OR @$t['statut'] == 'perso') return;
+	$parauteur = (strlen($t['auteur']) <= 2) ? '' :
+		(" " ._T('forum_par_auteur', array(
+			'auteur' => $t['auteur'])
+		) .
+		 ($t['email_auteur'] ? ' <' . $t['email_auteur'] . '>' : ''));
 
-		$s = sql_getfetsel('accepter_forum','spip_articles',"id_article=" . $t['id_article']);
-		if (!$s)  $s = substr($GLOBALS['meta']["forums_publics"],0,3);
+	$titre = textebrut(typo($t['titre_source']));
+	$forum_poste_par = ($t['id_article']
+		? _T('forum_poste_par', array(
+			'parauteur' => $parauteur, 'titre' => $titre))
+		: $parauteur . ' (' . $titre . ')');
 
-		if (strpos(@$GLOBALS['meta']['prevenir_auteurs'],",$s,")===false
-		AND @$GLOBALS['meta']['prevenir_auteurs'] !== 'oui') // compat
-			return;
+	$t['par_auteur'] = $forum_poste_par;
 
-		include_spip('inc/texte');
-		include_spip('inc/filtres');
-		include_spip('inc/autoriser');
+	$envoyer_mail = charger_fonction('envoyer_mail','inc'); // pour nettoyer_titre_email
+	$corps = recuperer_fond("notifications/forum_poste",$t);
 
-		// Qui va-t-on prevenir ?
-		$tous = array();
-		$pasmoi = array();
+	if ($l)
+		lang_select();
 
-		// 1. Les auteurs de l'article qui n'ont pas le droit de le moderer
-		// (les autres l'ont recu plus tot)
-
-		$result = sql_select("auteurs.id_auteur, auteurs.email", "spip_auteurs AS auteurs, spip_auteurs_articles AS lien", "lien.id_article=".sql_quote($t['id_article'])." AND auteurs.id_auteur=lien.id_auteur");
-
-		while ($qui = sql_fetch($result)) {
-			if (!autoriser('modererforum', 'article', $t['id_article'], $qui['id_auteur']))
-					$tous[] = $qui['email'];
-			else
-					$pasmoi[] = $qui['email'];
-		}
-
-		// Nettoyer le tableau
-		// Ne pas ecrire au posteur du message, ni au moderateur qui active le mail,
-		// ni aux auteurs deja notifies precedemment
-		$destinataires = array();
-		foreach ($tous as $m) {
-			if ($m = email_valide($m)
-			AND $m != trim($t['email_auteur'])
-			AND $m != $GLOBALS['visiteur_session']['email']
-			AND !in_array($m, $pasmoi))
-				$destinataires[$m]++;
-		}
-
-		//
-		// Envoyer les emails
-		//
-		$envoyer_mail = charger_fonction('envoyer_mail','inc');
-		foreach (array_keys($destinataires) as $email) {
-			$msg = email_notification_forum($t, $email);
-			$envoyer_mail($email, $msg['subject'], $msg['body']);
-		}
-	}
-}
-
-// http://doc.spip.org/@notifications_forumposte_dist
-if(!function_exists('notifications_forumposte_dist')){
-	function notifications_forumposte_dist($quoi, $id_forum) {
-		$t = sql_fetsel("*", "spip_forum", "id_forum=".sql_quote($id_forum));
-		if (!$t) return;
-		$id_article = $t['id_article'];
-
-		include_spip('inc/texte');
-		include_spip('inc/filtres');
-		include_spip('inc/autoriser');
-
-		// Qui va-t-on prevenir ?
-		$tous = array();
-
-		// 1. Les auteurs de l'article (si c'est un article), mais
-		// seulement s'ils ont le droit de le moderer (les autres seront
-		// avertis par la notifications_forumvalide).
-		if ($id_article) {
-			$s = sql_getfetsel('accepter_forum','spip_articles',"id_article=" . $id_article);
-			if (!$s)  $s = substr($GLOBALS['meta']["forums_publics"],0,3);
-
-			if (strpos(@$GLOBALS['meta']['prevenir_auteurs'],",$s,")!==false
-			OR @$GLOBALS['meta']['prevenir_auteurs'] === 'oui') // compat
-			  {
-				$result = sql_select("auteurs.id_auteur, auteurs.email", "spip_auteurs AS auteurs, spip_auteurs_articles AS lien", "lien.id_article=".sql_quote($id_article)." AND auteurs.id_auteur=lien.id_auteur");
-
-				while ($qui = sql_fetch($result)) {
-				  if (autoriser('modererforum', 'article', $id_article, $qui['id_auteur']))
-					$tous[] = $qui['email'];
-				}
-			  }
-		}
-
-		// Nettoyer le tableau
-		// Ne pas ecrire au posteur du message !
-		$destinataires = array();
-		foreach ($tous as $m) {
-			if ($m = email_valide($m)
-			AND $m != trim($t['email_auteur']))
-				$destinataires[$m]++;
-		}
-
-		//
-		// Envoyer les emails
-		//
-		$envoyer_mail = charger_fonction('envoyer_mail','inc');
-		foreach (array_keys($destinataires) as $email) {
-			$msg = email_notification_forum($t, $email);
-			$envoyer_mail($email, $msg['subject'], $msg['body']);
-		}
-
-		// Notifier les autres si le forum est valide
-		if ($t['statut'] == 'publie') {
-			$notifications = charger_fonction('notifications', 'inc');
-			$notifications('forumvalide', $id_forum);
-		}
-	}
+	return $corps;
 }

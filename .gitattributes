@@ -45,6 +45,9 @@ javascript/jquery.autosave.js -text
 lang/forum_de.php -text
 lang/forum_fr.php -text
 modeles/auteur_nom.html -text
+notifications/forum_poste.html -text
+notifications/forumposte.php -text
+notifications/forumvalide.php -text
 /plugin.xml -text
 prive/configurer/moderation.html -text
 prive/controler_forum.html -text
