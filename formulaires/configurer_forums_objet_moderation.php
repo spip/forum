@@ -14,10 +14,10 @@ if (!defined("_ECRIRE_INC_VERSION")) return;
 
 // Recuperer le reglage des forums publics de l'article x
 // http://doc.spip.org/@get_forums_publics
-function get_forums_publics($id_article=0) {
+function get_forums_publics($id_objet=0, $objet='article') {
 
-	if ($id_article) {
-		$obj = sql_fetsel("accepter_forum", "spip_articles", "id_article=$id_article");
+	if ($objet=='article' AND $id_objet) {
+		$obj = sql_fetsel("accepter_forum", "spip_articles", "id_article=".intval($id_objet));
 
 		if ($obj) return $obj['accepter_forum'];
 	} else { // dans ce contexte, inutile
@@ -44,7 +44,7 @@ function formulaires_configurer_forums_objet_moderation_charger_dist($id_objet, 
 		'editable' => ($objet=='article')?true:false,
 		'objet' => $objet,
 		'id_objet' => $id_objet,
-		'accepter_forum' => get_forums_publics($id_objet),
+		'accepter_forum' => get_forums_publics($id_objet, $objet),
 		'_suivi_forums' => $nb_forums?_T('icone_suivi_forum', array('nb_forums' => $nb_forums)):"",
 	);
 	
