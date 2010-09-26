@@ -68,7 +68,7 @@ function formulaires_configurer_forums_objet_moderation_traiter_dist($id_objet, 
 			ecrire_meta('accepter_visiteurs', 'oui');
 		}
 		include_spip('inc/invalideur');
-		suivre_invalideur("id='id_forum/a$id_objet'");
+		suivre_invalideur("id='$objet/$id_objet'");
 	}
 		
 	return array('message_ok'=>_T('config_info_enregistree'),'editable'=>true);
