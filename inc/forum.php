@@ -72,6 +72,9 @@ function critere_statut_controle_forum($type, $id_rubrique=0, $recherche='') {
 }
 
 // Index d'invalidation des forums
+// obsolete, remplace par l'appel systematique a 2 invalideurs :
+// - forum/id_forum
+// - objet/id_objet
 // http://doc.spip.org/@calcul_index_forum
 function calcul_index_forum($objet,$id_objet) {
 	return substr($objet,0,1).$id_objet;

@@ -28,12 +28,7 @@ if(!function_exists('revision_forum')){
 		// Calculer l'invalideur des caches lies a ce forum
 		if ($t['statut'] == 'publie') {
 			include_spip('inc/invalideur');
-			$invalideur = "id='id_forum/"
-				. calcul_index_forum(
-					$t['objet'],
-					$t['id_objet']
-				)
-				. "'";
+			$invalideur = array("id='forum/$id_forum'","id='".$t['objet']."/".$t['id_objet']."'");
 		} else
 			$invalideur = '';
 

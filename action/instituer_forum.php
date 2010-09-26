@@ -66,9 +66,8 @@ function instituer_un_forum($statut,$row){
 
 	// invalider les pages comportant ce forum
 	include_spip('inc/invalideur');
-	include_spip('inc/forum');
-	$index_forum = calcul_index_forum($row['id_article'], $row['id_breve'], $row['id_rubrique'], $row['id_syndic']);
-	suivre_invalideur("id='id_forum/$index_forum'");
+	suivre_invalideur("id='forum/$id_forum'");
+	suivre_invalideur("id='".$row['objet']."/".$row['id_objet']."'");
 
 	// Reindexation du thread (par exemple)
 	pipeline('post_edition',
