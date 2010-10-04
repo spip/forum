@@ -32,7 +32,7 @@ function get_forums_publics($id_objet=0, $objet='article') {
  * @param int $id_article
  * @return array
  */
-function formulaires_configurer_forums_objet_moderation_charger_dist($id_objet, $objet='article'){
+function formulaires_activer_forums_objet_charger_dist($id_objet, $objet='article'){
 	if (!autoriser('modererforum', $objet, $id_objet))
 		return false;
 
@@ -57,7 +57,7 @@ function formulaires_configurer_forums_objet_moderation_charger_dist($id_objet, 
  * @param string $objet
  * @return array
  */
-function formulaires_configurer_forums_objet_moderation_traiter_dist($id_objet, $objet='article'){
+function formulaires_activer_forums_objet_traiter_dist($id_objet, $objet='article'){
 	include_spip('inc/autoriser');
 	if ($objet=='article' AND autoriser('modererforum', $objet, $id_objet)){
 		$statut = _request('accepter_forum');
