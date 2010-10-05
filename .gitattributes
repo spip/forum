@@ -61,7 +61,7 @@ prive/listes/participer_forum_thread.html -text
 prive/modeles/forum-actions-moderer.html -text
 prive/modeles/forum.html -text
 prive/repondre_forum.html -text
-prive/squelettes/contenu/page-configurer_forum.html -text
+prive/squelettes/contenu/configurer_forum.html -text
 prive/style_prive_plugin_forum.html -text
 rss/forums.html -text
 rss/forums_interne.html -text
