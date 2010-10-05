@@ -63,4 +63,11 @@ function autoriser_forum_admin_dist($faire, $type, $id, $qui, $opt) {
 		;
 }
 
+/**
+ * Auto-association de documents sur des forum : niet
+ */
+function autoriser_forum_autoassocierdocument_dist($faire, $type, $id, $qui, $opts) {
+	return false;
+}
+
 ?>
