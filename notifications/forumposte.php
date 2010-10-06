@@ -36,15 +36,14 @@ function notifications_forumposte_dist($quoi, $id_forum, $options) {
 	// Qui va-t-on prevenir ?
 	$tous = array();
 
-	// 1. Les auteurs de l'article (si c'est un article), mais
+	// 1. Les auteurs de l'objet lie au forum
 	// seulement s'ils ont le droit de le moderer (les autres seront
 	// avertis par la notifications_forumvalide).
-	if ($t['objet']=='article'
-	AND $prevenir_auteurs) {
-		$result = sql_select("auteurs.*","spip_auteurs AS auteurs, spip_auteurs_articles AS lien","lien.id_article=".intval($t['id_objet'])." AND auteurs.id_auteur=lien.id_auteur");
+	if ($prevenir_auteurs) {
+		$result = sql_select("auteurs.*","spip_auteurs AS auteurs, spip_auteurs_liens AS lien","lien.objet=".sql_quote($t['objet'])." AND lien.id_objet=".intval($t['id_objet'])." AND auteurs.id_auteur=lien.id_auteur");
 
 		while ($qui = sql_fetch($result)) {
-			if ($qui['email'] AND autoriser('modererforum', 'article', $t['id_objet'], $qui['id_auteur']))
+			if ($qui['email'] AND autoriser('modererforum', $t['objet'], $t['id_objet'], $qui['id_auteur']))
 				$tous[] = $qui['email'];
 		}
 	}

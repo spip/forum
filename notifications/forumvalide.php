@@ -45,22 +45,22 @@ function notifications_forumvalide_dist($quoi, $id_forum, $options) {
 	// Ne pas ecrire au posteur du message, ni au moderateur qui valide le forum,
 	$pasmoi = array($t['email_auteur'],$GLOBALS['visiteur_session']['email']);
 
-	// 1. Les auteurs de l'article ; si c'est un article, ceux qui n'ont
+	// 1. Les auteurs de l'objet lie au forum
+	// seulement ceux qui n'ont
 	// pas le droit de le moderer (les autres l'ont recu plus tot)
-	if ($t['objet']=='article'
-	AND $prevenir_auteurs) {
-		$result = sql_select("auteurs.*","spip_auteurs AS auteurs, spip_auteurs_articles AS lien","lien.id_article=".intval($t['id_objet'])." AND auteurs.id_auteur=lien.id_auteur");
+	if ($prevenir_auteurs) {
+		$result = sql_select("auteurs.*","spip_auteurs AS auteurs, spip_auteurs_liens AS lien","lien.objet=".sql_quote($t['objet'])." AND lien.id_objet=".intval($t['id_objet'])." AND auteurs.id_auteur=lien.id_auteur");
 
 		while ($qui = sql_fetch($result)) {
-			if (!autoriser('modererforum', 'article', $t['id_objet'], $qui['id_auteur']))
-				$tous[] = $qui['email'];
-			else
-				// Ne pas ecrire aux auteurs deja notifies precedemment
-				$pasmoi[] = $qui['email'];
-
+			if ($qui['email']) {
+				if (!autoriser('modererforum', $t['objet'], $t['id_objet'], $qui['id_auteur']))
+					$tous[] = $qui['email'];
+				else
+					// Ne pas ecrire aux auteurs deja notifies precedemment
+					$pasmoi[] = $qui['email'];
+			}
 		}
 	}
-
 
 	$options['forum'] = $t;
 	$destinataires = pipeline('notifications_destinataires',
