@@ -28,7 +28,7 @@ function forum_declarer_tables_interfaces($interfaces){
 
 	$interfaces['table_date']['forums']='date_heure';
 
-	$interfaces['tables_jointures']['spip_forum'][]= 'mots_forum';
+	$interfaces['tables_jointures']['spip_forum'][]= 'mots_liens';
 	$interfaces['tables_jointures']['spip_forum'][]= 'mots';
 	$interfaces['tables_jointures']['spip_forum'][]= 'documents_liens';
 	$interfaces['tables_jointures']['spip_articles'][] = 'forums';
@@ -37,7 +37,6 @@ function forum_declarer_tables_interfaces($interfaces){
 	$interfaces['tables_jointures']['spip_syndic'][] = 'forums';
 	$interfaces['tables_jointures']['spip_messages'][] = 'forums';
 
-	$interfaces['tables_jointures']['spip_mots'][]= 'mots_forum';
 
 	$interfaces['table_des_traitements']['PARAMETRES_FORUM'][]= 'htmlspecialchars(%s)';
 	$interfaces['table_des_traitements']['TEXTE']['forums']= "safehtml("._TRAITEMENT_RACCOURCIS.")";
@@ -105,28 +104,6 @@ function forum_declarer_tables_principales($tables_principales){
 		array('field' => &$spip_forum,	'key' => &$spip_forum_key, 'join' => &$spip_forum_join);
 
 	return $tables_principales;
-}
-
-/**
- * Tables de jointures mots_forums
- *
- * @param array $tables_auxiliaires
- * @return array
- */
-function forum_declarer_tables_auxiliaires($tables_auxiliaires){
-
-	$spip_mots_forum = array(
-			"id_mot"	=> "bigint(21) DEFAULT '0' NOT NULL",
-			"id_forum"	=> "bigint(21) DEFAULT '0' NOT NULL");
-
-	$spip_mots_forum_key = array(
-			"PRIMARY KEY"	=> "id_forum, id_mot",
-			"KEY id_mot"	=> "id_mot");
-	$tables_auxiliaires['spip_mots_forum'] = array(
-		'field' => &$spip_mots_forum,
-		'key' => &$spip_mots_forum_key);
-
-	return $tables_auxiliaires;
 }
 
 ?>

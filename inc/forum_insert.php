@@ -63,10 +63,8 @@ function controler_forum($objet, $id_objet) {
 // http://doc.spip.org/@mots_du_forum
 function mots_du_forum($ajouter_mot, $id_message)
 {
-	$t = array('id_forum' => $id_message);
-	foreach ($ajouter_mot as $id_mot)
-		if ($t['id_mot'] = intval($id_mot))
-			sql_insertq('spip_mots_forum', $t);
+	include_spip('action/editer_mot');
+	mot_associer($ajouter_mot, array('forum'=>$id_message));
 }
 
 

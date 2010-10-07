@@ -73,7 +73,6 @@ function forum_upgrade($nom_meta_base_version,$version_cible){
  */
 function forum_vider_tables($nom_meta_base_version) {
 	sql_drop_table("spip_forum");
-	sql_drop_table("spip_mots_forum");
 
 	effacer_meta("mots_cles_forums");
 	effacer_meta("forums_titre");

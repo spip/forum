@@ -281,30 +281,12 @@ function forum_optimiser_base_disparus($flux){
 	$n+= optimiser_sansref('spip_forum', 'id_forum', $res);
 
 
-	# les liens mots-forum sur des mots effaces
-	$res = sql_select("mots_forum.id_mot AS id",
-		        "spip_mots_forum AS mots_forum
-		        LEFT JOIN spip_mots AS mots
-		          ON mots_forum.id_mot=mots.id_mot",
-			"mots.id_mot IS NULL");
-
-	$n+= optimiser_sansref('spip_mots_forum', 'id_mot', $res);
-
 	//
 	// Forums
 	//
 
 	sql_delete("spip_forum", "statut='redac' AND maj < $mydate");
 
-
-	# les liens mots-forum sur des forums effaces
-	$res = sql_select("mots_forum.id_forum AS id",
-		        "spip_mots_forum AS mots_forum
-		        LEFT JOIN spip_forum AS forum
-		          ON mots_forum.id_forum=forum.id_forum",
-			"forum.id_forum IS NULL");
-
-	$n+= optimiser_sansref('spip_mots_forum', 'id_forum', $res);
 
 
 	//
@@ -406,8 +388,6 @@ function forum_trig_supprimer_objets_lies($objets){
 	foreach($objets as $objet){
 		if ($objet['type']=='message')
 			sql_delete("spip_forum", "id_message=".sql_quote($objet['id']));
-		if ($objet['type']=='mot')
-			sql_delete("spip_mots_forum", "id_mot=".intval($objet['id']));
 	}
 	return $objets;
 }
