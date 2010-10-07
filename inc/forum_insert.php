@@ -71,7 +71,7 @@ function mots_du_forum($ajouter_mot, $id_message)
 // http://doc.spip.org/@reduce_strlen
 function reduce_strlen($n, $c)
 {
-  return $n - strlen($c);
+  return $n - (is_string($c) ? strlen($c) : 0);
 }
 
 

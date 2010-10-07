@@ -34,6 +34,7 @@ formulaires/inc-forum_prive_previsu.html -text
 formulaires/inc-gestion_forum_liste.html -text
 formulaires/inc-login_forum.html -text
 formulaires/inc-login_forum_abo.html -text
+/forum_autoriser.php -text
 /forum_options.php -text
 /forum_pipelines.php -text
 inc/article_accepter_forums_publics.php -text
@@ -63,17 +64,12 @@ prive/modeles/forum.html -text
 prive/repondre_forum.html -text
 prive/squelettes/contenu/configurer_forum.html -text
 prive/style_prive_plugin_forum.html -text
+public/forum.php -text
 rss/forums.html -text
 rss/forums_interne.html -text
 rss/forums_prop.html -text
 rss/forums_public.html -text
 rss/forums_spam.html -text
 rss/forums_vide.html -text
-spip21/forum_autoriser.php -text
-spip21/prive/discuter_forum.html -text
-spip21/prive/style_prive_plugin_forum.html -text
-spip21/public/forum.php -text
-spip22/forum_autoriser.php -text
-spip22/public/forum.php -text
 urls/generer_url_ecrire_forum.php -text
 urls/generer_url_forum.php -text
