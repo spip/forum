@@ -12,10 +12,6 @@
 	<options>forum_options.php</options>
 
 	<pipeline>
-		<nom>declarer_tables_auxiliaires</nom>
-		<inclure>base/forum.php</inclure>
-	</pipeline>
-	<pipeline>
 		<nom>declarer_tables_principales</nom>
 		<inclure>base/forum.php</inclure>
 	</pipeline>
