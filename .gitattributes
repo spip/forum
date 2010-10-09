@@ -35,7 +35,6 @@ formulaires/inc-gestion_forum_liste.html -text
 formulaires/inc-login_forum.html -text
 formulaires/inc-login_forum_abo.html -text
 /forum_autoriser.php -text
-/forum_options.php -text
 /forum_pipelines.php -text
 inc/article_accepter_forums_publics.php -text
 inc/discuter.php -text

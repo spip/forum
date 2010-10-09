@@ -9,8 +9,16 @@
 	<install>base/forum_upgrade.php</install>
 	<fonctions>public/forum.php</fonctions>
 	<fonctions>filtres/forum.php</fonctions>
-	<options>forum_options.php</options>
 
+	<!--
+		Declaration du pipeline forum_objets_depuis_env
+		Correspond a un array objet/cles primaires des tables qui acceptent
+		qu'un forum recherche dans l'environnement d'appel l'identifiant sur lequel s'appliquera
+		le forum, de sorte que son appel ne se trouve pas necessairement
+		dans une boucle englobante
+	-->
+	<pipeline><nom>forum_objets_depuis_env</nom><action></action></pipeline>
+	
 	<pipeline>
 		<nom>declarer_tables_principales</nom>
 		<inclure>base/forum.php</inclure>
