@@ -331,6 +331,7 @@ function forum_pre_insertion($flux){
 
 /**
  * Regrouper les resultats de recherche par threads
+ * sauf si {plat} est present
  *
  * @param array $flux
  * @return array
@@ -340,12 +341,19 @@ function forum_prepare_recherche($flux){
 	if ($flux['args']['type']=='forum'
 	  AND $points = $flux['data']){
 	  $serveur =  $flux['args']['serveur'];
-		$p2 = array();
-		$s = sql_select("id_thread, id_forum", "spip_forum", "statut='publie' AND ".sql_in('id_forum', array_keys($points)), '','','','',$serveur);
-		while ($t = sql_fetch($s, $serveur))
-			$p2[intval($t['id_thread'])]['score']
-				+= $points[intval($t['id_forum'])]['score'];
-		$flux['data'] = $p2;
+	  $modificateurs = (isset($flux['args']['modificateurs'])?$flux['args']['modificateurs']:array());
+
+	  // pas de groupe par thread si {plat}
+	  if (!isset($modificateurs['plat'])){
+			$p2 = array();
+			// si critere statut dans la boucle, ne pas filtrer par statut publie ici
+			$cond = (isset($modificateurs['statut'])?"":"statut='publie' AND ");
+			$s = sql_select("id_thread, id_forum", "spip_forum", $cond.sql_in('id_forum', array_keys($points)), '','','','',$serveur);
+			while ($t = sql_fetch($s, $serveur))
+				$p2[intval($t['id_thread'])]['score']
+					+= $points[intval($t['id_forum'])]['score'];
+			$flux['data'] = $p2;
+	  }
 	}
 	return $flux;
 }
