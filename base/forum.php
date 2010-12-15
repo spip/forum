@@ -37,6 +37,7 @@ function forum_declarer_tables_interfaces($interfaces){
 	$interfaces['tables_jointures']['spip_syndic'][] = 'forums';
 	$interfaces['tables_jointures']['spip_messages'][] = 'forums';
 
+	$interfaces['table_statut']['spip_forum'][] = array('champ'=>'statut','publie'=>'publie','previsu'=>'publie,prop','exception'=>'statut');
 
 	$interfaces['table_des_traitements']['PARAMETRES_FORUM'][]= 'htmlspecialchars(%s)';
 	$interfaces['table_des_traitements']['TEXTE']['forums']= "safehtml("._TRAITEMENT_RACCOURCIS.")";
