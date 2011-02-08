@@ -55,6 +55,7 @@ prive/discuter_forum.html -text
 prive/exec/forum.html -text
 prive/listes/controler_forum.html -text
 prive/listes/controler_forum_cvt.html -text
+prive/listes/forums.html -text
 prive/listes/inc-boutons-filtres-statut-forum.html -text
 prive/listes/participer_forum.html -text
 prive/listes/participer_forum_thread.html -text
