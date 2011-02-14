@@ -3,16 +3,17 @@
 #SET{self,#SELF|parametre_url{id_forum|email_auteur|ip|id_auteur|auteur|debut_id_forum,''}}
 
 [(#ENV{objet}|et{#ENV{id_objet}})
-<a class='annule_filtre' href='[(#GET{self}|parametre_url{id_objet|objet,''})]' title="<:forum:tout_voir|attribut_html:>">[(#CHEMIN{images/annuler-recherche.png}|balise_img|inserer_attribut{alt,<:forum:tout_voir:>})]</a>
-<:forum:texte_messages_publics:><h1><a href='[(#INFO_URL{#OBJET,#ID_OBJET}|ancre_url{forum#ID_FORUM})]'>[(#INFO_TITRE{#OBJET,#ID_OBJET})]</a></h1>
+<p><:forum:texte_messages_publics:></p>
+<a class='annule_filtre' href='[(#GET{self}|parametre_url{id_objet|objet,''})]' title="<:forum:tout_voir|attribut_html:>">[(#CHEMIN_IMAGE{fermer-16.png}|balise_img|inserer_attribut{alt,<:forum:tout_voir:>})]</a>
+<h2 class='objet_titre'><a href='[(#INFO_URL{#OBJET,#ID_OBJET}|ancre_url{forum#ID_FORUM})]'>[(#INFO_TITRE{#OBJET,#ID_OBJET})]</a></h2>
 ]
 
 #SET{self,#SELF|parametre_url{id_forum|email_auteur|ip|id_auteur|auteur|debut_id_forum|statut,''}}
 <div class='onglets_simple clearfix'>
 <ul>
-<li>[(#GET{self}|parametre_url{type_message,public}|lien_ou_expose{<:onglet_messages_publics:>,#ENV{type_message,public}|=={public}})]</li>
-<li>[(#GET{self}|parametre_url{type_message,interne}|lien_ou_expose{<:onglet_messages_internes:>,#ENV{type_message,public}|=={interne}})]</li>
-<li>[(#GET{self}|parametre_url{type_message,vide}|lien_ou_expose{<:onglet_messages_vide:>,#ENV{type_message,public}|=={vide}})]</li>
+<li>[(#GET{self}|parametre_url{type_message,public}|lien_ou_expose{<:onglet_messages_publics:>,#ENV{type_message,public}|=={public},ajax})]</li>
+<li>[(#GET{self}|parametre_url{type_message,interne}|lien_ou_expose{<:onglet_messages_internes:>,#ENV{type_message,public}|=={interne},ajax})]</li>
+<li>[(#GET{self}|parametre_url{type_message,vide}|lien_ou_expose{<:onglet_messages_vide:>,#ENV{type_message,public}|=={vide},ajax})]</li>
 </ul>
 </div>
 
@@ -23,11 +24,12 @@
 <B_forum>
 [(#REM) Les boutons pour tout le lot de message d'un emetteur ---------------------------------------------------------]
 [(#ENV{ip}|ou{#ENV{email_auteur}}|ou{#ENV{auteur}}|ou{#ENV{id_auteur}}|ou{#ENV{id_forum}})
-<a class='annule_filtre ajax' href='#GET{self}' title="<:forum:tout_voir|attribut_html:>">[(#CHEMIN{images/annuler-recherche.png}|balise_img|inserer_attribut{alt,<:forum:tout_voir:>})]</a>
+<a class='annule_filtre ajax' href='#GET{self}' title="<:forum:tout_voir|attribut_html:>">[(#CHEMIN_IMAGE{fermer-16.png}|balise_img|inserer_attribut{alt,<:forum:tout_voir:>})]</a>
 ]
 [(#ENV{ip}|ou{#ENV{email_auteur}}|ou{#ENV{auteur}}|ou{#ENV{id_auteur}})
 <div class='source'>
 <div class='par'><:par:>
+
 [
 (#ENV{id_auteur,''}|oui)<a href='#URL_ECRIRE{auteur_infos,id_auteur=#ENV{id_auteur}}'>#MODELE{auteur_nom,id_auteur=#ENV{id_auteur}}</a>
 ][(#ENV{id_auteur,''}|?{'',#ENV{auteur,''}})
