@@ -22,7 +22,7 @@ la premiere fois qu'un message est poste (cf. inc/invalideur). ]
 				<span class='date'>[(#DATE|affdate_jourcourt)][&nbsp;(#DATE|heures)][:(#DATE|minutes)]</span>
 				<span class='par'><:par:>
 				[
-				(#ID_AUTEUR|oui)<a href='#URL_ECRIRE{auteur_infos,id_auteur=#ID_AUTEUR}'>#MODELE{auteur_nom,id_auteur}</a>
+				(#ID_AUTEUR|oui)<a href='#URL_ECRIRE{auteur,id_auteur=#ID_AUTEUR}'>#MODELE{auteur_nom,id_auteur}</a>
 				][(#ID_AUTEUR|?{'',#AUTEUR})
 				][(#ID_AUTEUR|non)[<a href='mailto:#EMAIL_AUTEUR'>(#EMAIL_AUTEUR)</a>]]
 				</span>
@@ -55,7 +55,7 @@ la premiere fois qu'un message est poste (cf. inc/invalideur). ]
 						<span class='date'>[(#DATE|affdate_jourcourt)][&nbsp;(#DATE|heures)][:(#DATE|minutes)]</span>
 						<span class='par'><:par:>
 						[
-						(#ID_AUTEUR|oui)<a href='#URL_ECRIRE{auteur_infos,id_auteur=#ID_AUTEUR}'>#MODELE{auteur_nom,id_auteur}</a>
+						(#ID_AUTEUR|oui)<a href='#URL_ECRIRE{auteur,id_auteur=#ID_AUTEUR}'>#MODELE{auteur_nom,id_auteur}</a>
 						][(#ID_AUTEUR|?{'',#AUTEUR})
 						][(#ID_AUTEUR|non)[<a href='mailto:#EMAIL_AUTEUR'>(#EMAIL_AUTEUR)</a>]]
 						</span>				
