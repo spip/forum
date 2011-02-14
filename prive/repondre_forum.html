@@ -1,5 +1,5 @@
 [(#ENV{repondre}|intval|oui)
-	[(#INCLURE{fond=prive/listes/participer_forum}{env}{id_forum=#ENV{repondre}}{repondre=non})]
+	[(#INCLURE{fond=prive/objets/liste/participer_forum}{env}{id_forum=#ENV{repondre}}{repondre=non})]
 ]
 <BOUCLE_repondre(FORUMS){id_forum=#ENV{repondre}}{statut?}>
 #FORMULAIRE_FORUM_PRIVE{#SELF|parametre_url{repondre,''}}
