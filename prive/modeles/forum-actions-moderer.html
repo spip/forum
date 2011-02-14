@@ -22,7 +22,7 @@
 	 #GET{action}#SET{action,''}
 	 [(#BOUTON_ACTION{<:icone_supprimer_message:>,#URL_ACTION_AUTEUR{instituer_forum,#ID_FORUM-privoff,#SELF|ancre_url{forum#ID_FORUM}},'ajax supprimer'})<span class="sep"> | </span>]
 	]
-	
+
 	[(#STATUT|in_any{#ARRAY{0,publie,1,off,2,prop}})
 	 #GET{action}#SET{action,''}
 	 [(#BOUTON_ACTION{<:forum:icone_bruler_message:>,#URL_ACTION_AUTEUR{instituer_forum,#ID_FORUM-spam,#SELF|ancre_url{forum#ID_FORUM}},'ajax bruler'})<span class="sep"> | </span>]
@@ -31,8 +31,8 @@
 	 #GET{action}#SET{action,''}
 	 [(#BOUTON_ACTION{<:forum:icone_legitimer_message:>,#URL_ACTION_AUTEUR{instituer_forum,#ID_FORUM-prop,#SELF|ancre_url{forum#ID_FORUM}},'ajax bruler'})[(#STATUT|=={publie}|oui)<span class="sep"> | </span>]]
 	]
-]
-[(#STATUT|=={publie}|oui)
+][
+(#STATUT|=={publie}|oui)
 	 #GET{action}#SET{action,''}
 	<a href="#GET{redirect}"><:repondre_message:></a>
 ]

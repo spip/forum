@@ -29,7 +29,7 @@ function forum_accueil_encours($texte){
 				$lien = _T('info_liens_syndiques_5')." "._T('info_liens_syndiques_6');
 			$lien = "<small>$cpt $lien " ._T('info_liens_syndiques_7'). "</small>";
 			if ($GLOBALS['connect_toutes_rubriques'])
-				$lien = "<a href='" . generer_url_ecrire("controle_forum","statut=prop") . "' style='color: black;'>". $lien . ".</a>";
+				$lien = "<a href='" . generer_url_ecrire("controler_forum","statut=prop") . "' style='color: black;'>". $lien . ".</a>";
 			$texte .= "\n<br />" . $lien;
 		}
 		if (strlen($texte) AND $GLOBALS['meta']['forum_prive_objets'] != 'non')
@@ -77,7 +77,7 @@ function forum_accueil_informations($texte){
 		if (!function_exists($afficher_plus))
 			$afficher_plus = 'afficher_plus';
 		if (autoriser('modererforum'))
-			$texte .= $afficher_plus(generer_url_ecrire("controle_forum",""));
+			$texte .= $afficher_plus(generer_url_ecrire("controler_forum",""));
 		$texte .= "<b>" ._T('onglet_messages_publics') ."</b>";
 		$texte .= "<ul style='margin:0px; padding-".$GLOBALS['spip_lang_left'].": 20px; margin-bottom: 5px;'>";
 		if (isset($cpt['prop'])) $texte .= "<li>"._T("texte_statut_attente_validation").": ".$cpt2['prop'] .$cpt['prop'] . '</li>';
@@ -96,12 +96,20 @@ function forum_accueil_informations($texte){
  */
 function forum_afficher_fiche_objet($flux){
 
-	if (in_array($type = $flux['args']['type'],array('article','breve','site'))){
+	if (in_array($type = $flux['args']['type'],array('article','breve','site'))
+	  AND $GLOBALS['meta']['forum_prive_objets'] != 'non'){
 		$id = $flux['args']['id'];
 		$table = table_objet($type);
 		$id_table_objet = id_table_objet($type);
-		$discuter = charger_fonction('discuter', 'inc');
-		$flux['data'] .= $discuter($id, $table, $id_table_objet, 'prive', _request('debut'));
+		$contexte = array_merge($flux['args']['contexte'],
+			array(
+				'objet'=>$type,
+				'id_objet'=>$id,
+				'quoi'=>'interne',
+				'statut'=>'prive'
+			)
+		);
+		$flux['data'] .= recuperer_fond('prive/squelettes/inclure/discuter_forum',$contexte,array('ajax'=>true));
 	}
 	if (($type = $flux['args']['type'])=='rubrique'){
 		$id_rubrique = $flux['args']['id'];
@@ -114,7 +122,7 @@ function forum_afficher_fiche_objet($flux){
 		else
 			$n_forums = 0;
 		if ($n_forums)
-	  	$flux['data'] .= icone_inline(_T('icone_suivi_forum', array('nb_forums' => $n_forums)), generer_url_ecrire("controle_forum","objet=rubrique&id_objet=$id_rubrique"), "forum-24.png", "", 'center');
+	  	$flux['data'] .= icone_inline(_T('icone_suivi_forum', array('nb_forums' => $n_forums)), generer_url_ecrire("controler_forum","objet=rubrique&id_objet=$id_rubrique"), "forum-24.png", "", 'center');
 	}
 	return $flux;
 }
@@ -130,7 +138,7 @@ function forum_afficher_config_objet($flux){
 		AND $id = $flux['args']['id']){
 		if (autoriser('modererforum', $type, $id)) {
 			$id_table_objet = id_table_objet($type);
-			$flux['data'] .= recuperer_fond("prive/configurer/moderation",array('id_objet'=>$id,'objet'=>  objet_type(table_objet($type))));
+			$flux['data'] .= recuperer_fond("prive/objets/configurer/moderation",array('id_objet'=>$id,'objet'=>  objet_type(table_objet($type))));
 		}
 	}
 	return $flux;

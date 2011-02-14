@@ -18,7 +18,7 @@ function urls_generer_url_ecrire_forum_dist($id, $args='', $ancre='', $statut=''
 	}
 	$h = ($statut == 'publie' OR $connect)
 	?  generer_url_entite_absolue($id, 'forum', $args, $ancre, $connect)
-	: (generer_url_ecrire('controle_forum', "debut_id_forum=$id" . ($args ? "&$args" : ''))
+	: (generer_url_ecrire('controler_forum', "debut_forum=@$id" . ($args ? "&$args" : ''))
 		. ($ancre ? "#$ancre" : ''));
 	return $h;
 }

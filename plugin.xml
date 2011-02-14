@@ -107,7 +107,7 @@
 	<bouton id='forum_reactions' parent='bando_activite'>
 		<icone>images/forum-16.png</icone>
 		<titre>icone_suivi_forums</titre>
-		<url>controle_forum</url>
+		<url>controler_forum</url>
 	</bouton>
 
 	<bouton id='configurer_forum' parent='bando_configuration'>

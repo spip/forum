@@ -45,7 +45,7 @@ function email_notification_forum_dist ($t, $email) {
 		}
 		else #  forum modere, spam, poubelle direct ....
 		{
-			$url = generer_url_ecrire('controle_forum', "debut_id_forum=".$id_forum);
+			$url = generer_url_ecrire('controler_forum', "debut_id_forum=".$id_forum);
 		}
 
 		if (!$url) {

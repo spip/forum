@@ -1,10 +1,10 @@
 [(#REM) Cette balise (invisible) provoque le recalcul du forum
 la premiere fois qu'un message est poste (cf. inc/invalideur). ]
 [(#PARAMETRES_FORUM|?{''})]
-#SET{prive,#ENV{type,public}|=={interne}|?{'^(priv|perso)','.*'}}
+#SET{prive,#ENV{quoi,public}|=={interne}|?{'^(priv|perso)','.*'}}
 
 [(#REM) Nombre total de messages ]
-<BOUCLE_decompte(FORUMS) {id_rubrique ?}{id_article ?}{id_breve ?}{id_syndic ?}{id_message?}{statut?}{statut==#GET{prive}}{plat} />[<h2>(#TOTAL_BOUCLE|>{0}|?{#TOTAL_BOUCLE,''})
+<BOUCLE_decompte(FORUMS) {id_objet ?}{objet ?}{statut?}{statut==#GET{prive}}{plat} />[<h2>(#TOTAL_BOUCLE|>{0}|?{#TOTAL_BOUCLE,''})
 [(#TOTAL_BOUCLE|=={1}|?{<:message:>,<:messages_forum:>})]</h2>]<//B_decompte>
 
 [(#REM) Messages du forum ]
@@ -12,7 +12,7 @@ la premiere fois qu'un message est poste (cf. inc/invalideur). ]
 [<p class='pagination'>(#PAGINATION)</p>]
 <ul class="forum">
 
-	<BOUCLE_forums(FORUMS) {id_rubrique ?}{id_article ?}{id_breve ?}{id_syndic ?}{id_message?}{statut?}{statut==#GET{prive}} {!par date}{pagination 10}>
+	<BOUCLE_forums(FORUMS) {id_objet ?}{objet ?}{statut?}{statut==#GET{prive}} {!par date}{pagination 10}>
 
 	<li class="forum-fil statut_#STATUT">
 

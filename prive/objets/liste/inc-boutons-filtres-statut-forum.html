@@ -3,8 +3,8 @@
 #SET{public,#ENV{type_message,public}|=={public}|?{'priv%',''}}
 #SET{vide,#ENV{type_message,public}|=={vide}|?{'','%'}}
 
-<div class='filtres second'>
-<ul>
+<div class='onglets_simple second'>
+<ul class="statut statut_forum">
 <li>[(#GET{self}|parametre_url{statut,''}|lien_ou_expose{<:forum:messages_tous:>,#ENV{statut,''}|=={''},ajax})]</li>
 
 #SET{statut,#ENV{type_message,public}|=={interne}|?{'prive','publie'}}
