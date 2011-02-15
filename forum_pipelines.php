@@ -355,7 +355,7 @@ function forum_prepare_recherche($flux){
 	  if (!isset($modificateurs['plat'])){
 			$p2 = array();
 			// si critere statut dans la boucle, ne pas filtrer par statut publie ici
-			$cond = (isset($modificateurs['statut'])?"":"statut='publie' AND ");
+			$cond = (isset($modificateurs['criteres']['statut'])?"":"statut='publie' AND ");
 			$s = sql_select("id_thread, id_forum", "spip_forum", $cond.sql_in('id_forum', array_keys($points)), '','','','',$serveur);
 			while ($t = sql_fetch($s, $serveur))
 				$p2[intval($t['id_thread'])]['score']
