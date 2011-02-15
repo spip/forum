@@ -45,10 +45,10 @@ notifications/forum_poste.html -text
 notifications/forumposte.php -text
 notifications/forumvalide.php -text
 /plugin.xml -text
+prive/javascript/actiongroup.js -text
 prive/modeles/forum-actions-moderer.html -text
 prive/modeles/forum.html -text
 prive/objets/configurer/moderation.html -text
-prive/objets/liste/controler_forum.html -text
 prive/objets/liste/controler_forum_cvt.html -text
 prive/objets/liste/forums.html -text
 prive/objets/liste/inc-boutons-filtres-statut-forum.html -text

@@ -13,11 +13,18 @@
 if (!defined("_ECRIRE_INC_VERSION")) return;
 
 // http://doc.spip.org/@action_instituer_forum_dist
-function action_instituer_lot_forum_dist() {
+function action_instituer_lot_forum_dist($arg=null) {
 
-	$securiser_action = charger_fonction('securiser_action', 'inc');
-	$arg = $securiser_action();
+	if (is_null($arg)){
+		$securiser_action = charger_fonction('securiser_action', 'inc');
+		$arg = $securiser_action();
+	}
 
+	/**
+	 * Cas 1 : les arguments sont explicites
+	 * statut-ip/email/id_auteur/auteur
+	 *
+	 */
 	if (preg_match(",^(\w+)-,",$arg,$match)
 	 AND in_array($statut=$match[1],array('publie','off','spam'))
 	 AND autoriser('instituer','forum',0)){
@@ -39,6 +46,26 @@ function action_instituer_lot_forum_dist() {
 		include_spip('action/instituer_forum');
 		foreach ($rows as $row) {
 			instituer_un_forum($statut,$row);			
+		}
+	}
+	/**
+	 * Cas 2 : seul le statut est explicite et signe
+	 * les id concernes sont passes en arg supplementaires
+	 * dans un taleau ids[]
+	 */
+	elseif (preg_match(",^(\w+)$,",$arg,$match)
+	 AND in_array($statut=$match[1],array('publie','off','spam'))
+	 AND autoriser('instituer','forum',0)
+	 AND $id=_request('ids')
+	 AND is_array($id)){
+
+		$ids = array_map('intval',$id);
+		$rows = sql_allfetsel("*", "spip_forum", sql_in('id_forum',$ids));
+		if (!count($rows)) return;
+		
+		include_spip('action/instituer_forum');
+		foreach ($rows as $row) {
+			instituer_un_forum($statut,$row);
 		}
 	}
 }

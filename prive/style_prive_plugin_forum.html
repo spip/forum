@@ -36,21 +36,9 @@
 .source .actions {font-weight:normal;}
 .annule_filtre {float:#GET{right};}
 
-#formulaire_gestion_forum .liste_items .select_forum { float: right; margin: 8px; }
-#formulaire_gestion_forum .liste_items .cartouche { margin-bottom: 0; border-bottom: 0; }
-#formulaire_gestion_forum .liste_items .texte { border-top: 1px solid #ddd; }
-#formulaire_gestion_forum .boutons { font-size: 1em; background:[ #(#GET{claire}|couleur_eclaircir)]; }
-#formulaire_gestion_forum .boutons,
-#formulaire_gestion_forum .gestion_forum { text-align: left; }
-#formulaire_gestion_forum input.submit { margin-left: 0; padding-left: 4px; padding-right: 4px; }
-#formulaire_gestion_forum .gestion_forum select { width: 30%; }
-#formulaire_gestion_forum p.legend,
-#formulaire_gestion_forum p.pagination { margin-top: 0; padding: 2px 1em; background: transparent; }
-
-
 /* Habillage des forums en liste pour moderation
 ---------------------------------------------- */
-ul.forums li.item,ul.forums li.item.odd { margin: 15px 0; padding: 0 0 .8em 0; background: #eee url(#CHEMIN_IMAGE{forum-bg-item.png}); border: 0; border-top: 5px solid #ccc; }
+ul.forums li.item,ul.forums li.item.odd { margin: 15px 0; padding: 0 0 .8em 0; background: #eee url(#CHEMIN_IMAGE{forum-bg-item.png}); border: 0; border-top: 5px solid #ccc; position:relative;}
 ul.forums li.item:hover,ul.forums li.item.odd:hover { background-color: #e9e9e9; }
 
 ul.forums li.statut_publie,ul.forums li.statut_publie.odd { background-image: none; border-color: #B2BF6B; }
@@ -96,6 +84,7 @@ ul.forums >li.item:hover .actions.moderer > div{visibility:visible;}
 
 ul.forums li .actions .bruler input.submit {color:#af976d;}
 ul.forums li .actions .supprimer input.submit {color:#cf4d4d;}
+ul.forums li .checkbox {position:absolute;top:50%;left:1px;}
 
 /* controle des forums : afficher les liens */
 .controle a {

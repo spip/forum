@@ -3,3 +3,33 @@
 
 [(#VAL{forums_}|concat{#ENV{type_message,public}}|bouton_spip_rss)]
 #BOITE_FERMER
+
+#BOITE_OUVRIR{'',raccourcis}
+<div id="actiongroup">
+	<label>Selection&nbsp;:</label>
+	<p class="status">
+		<span class="zero">Aucun message</span>
+		<span class="one none">1 message</span>
+		<span class="many none"><b>nb</b> messages</span>
+	</p>
+	<p>
+	<a href="#" class="shortcut" onclick="actiongroup.selectAll();return false;">Selectionner tout</a><br />
+	<a href="#" class="shortcut" onclick="actiongroup.unselectAll();return false;">Deselectionner tout</a><br />
+	<a href="#" class="shortcut empty" onclick="actiongroup.emptySelection();return false;">Vider la selection</a><br />
+	</p>
+	<div>
+		<button class='action' data-href='#URL_ACTION_AUTEUR{instituer_lot_forum,off}'>Supprimer</button>
+		<button class='action' data-href='#URL_ACTION_AUTEUR{instituer_lot_forum,publie}'>Publier</button><br />
+		<button class='action' data-href='#URL_ACTION_AUTEUR{instituer_lot_forum,spam}'>Signaler comme SPAM</button>
+	</div>
+</div>
+<div class="success none">OK</div>
+#BOITE_FERMER
+
+
+<script type="text/javascript">/*<![CDATA[*/
+[(#INCLURE{prive/javascript/actiongroup.js}|minifier{js})]
+function reinit(){actiongroup.activate(jQuery("ul.liste_items.forums >.item.forum",this));}
+jQuery(reinit);
+onAjaxLoad(reinit);
+/*]]>*/</script>
