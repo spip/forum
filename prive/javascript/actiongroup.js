@@ -14,8 +14,9 @@ actiongroup.emptySelection = function(){
 /**
  * Selectionner les items de la page
  */
-actiongroup.selectAll = function(){
-	$('input.actiongroup')
+actiongroup.selectAll = function(sel){
+	sel = sel || document;
+	$('input.actiongroup',sel)
 		.attr('checked',true)
 		.each(function(){
 			actiongroup.updateChecklist($(this).attr('value'),true,false);
@@ -25,8 +26,9 @@ actiongroup.selectAll = function(){
 /**
  * Deselectionner les items de la page
  */
-actiongroup.unselectAll = function(){
-	$('input.actiongroup')
+actiongroup.unselectAll = function(sel){
+	sel = sel || document;
+	$('input.actiongroup',sel)
 		.attr('checked',false)
 		.each(function(){
 			actiongroup.updateChecklist($(this).attr('value'),false,false);
@@ -49,8 +51,10 @@ actiongroup.updateChecklist = function(value,checked,update_status){
 	if (update_status || typeof update_status=="undefined") {
 		jQuery.spip.log(actiongroup.countchecked);
 		if (actiongroup.countchecked==0){
-			$('#actiongroup .shortcut.empty')
+			$('#actiongroup .shortcut.empty,#actiongroup .shortcut.unselectall')
 				.addClass('hidden');
+			$('#actiongroup .shortcut.selectall')
+				.removeClass('hidden');
 			$('#actiongroup .status .zero')
 				.show()
 				.siblings(':visible')
@@ -74,9 +78,25 @@ actiongroup.updateChecklist = function(value,checked,update_status){
 					.siblings(':visible')
 					.hide();
 			}
-			if (actiongroup.countchecked>actiongroup.countCurrent || actiongroup.countchecked>$('input.actiongroup:checked').length)
+			var checked = $('input.actiongroup:checked').length;
+			if (checked)
+				$('#actiongroup .shortcut.unselectall')
+					.removeClass('hidden');
+			else
+				$('#actiongroup .shortcut.unselectall')
+					.addClass('hidden');
+			if (actiongroup.countchecked>checked)
 				$('#actiongroup .shortcut.empty')
 					.removeClass('hidden');
+			else
+				$('#actiongroup .shortcut.empty')
+					.addClass('hidden');
+			if (actiongroup.countCurrent>checked)
+				$('#actiongroup .shortcut.selectall')
+					.removeClass('hidden');
+			else
+				$('#actiongroup .shortcut.selectall')
+					.addClass('hidden');
 		}
 		$('#actiongroup')
 			.siblings('.success:visible')
