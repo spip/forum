@@ -3,9 +3,11 @@
 #SET{self,#SELF|parametre_url{id_forum|email_auteur|ip|id_auteur|auteur|debut_id_forum,''}}
 
 [(#ENV{objet}|et{#ENV{id_objet}})
-<p><:forum:texte_messages_publics:></p>
-<a class='annule_filtre' href='[(#GET{self}|parametre_url{id_objet|objet,''})]' title="<:forum:tout_voir|attribut_html:>">[(#CHEMIN_IMAGE{fermer-16.png}|balise_img|inserer_attribut{alt,<:forum:tout_voir:>})]</a>
-<h2 class='objet_titre'><a href='[(#INFO_URL{#OBJET,#ID_OBJET}|ancre_url{forum#ID_FORUM})]'>[(#INFO_TITRE{#OBJET,#ID_OBJET})]</a></h2>
+#BOITE_OUVRIR{'','note'}
+	<p><:forum:texte_messages_publics:></p>
+	<a class='annule_filtre' href='[(#GET{self}|parametre_url{id_objet|objet,''})]' title="<:forum:tout_voir|attribut_html:>">[(#CHEMIN_IMAGE{fermer-16.png}|balise_img|inserer_attribut{alt,<:forum:tout_voir:>})]</a>
+	<h2 class='objet_titre'><a href='[(#INFO_URL{#OBJET,#ID_OBJET}|ancre_url{forum#ID_FORUM})]'>[(#INFO_TITRE{#OBJET,#ID_OBJET})]</a></h2>
+#BOITE_FERMER
 ]
 
 #SET{self,#SELF|parametre_url{id_forum|email_auteur|ip|id_auteur|auteur|debut_id_forum|statut,''}}
@@ -22,18 +24,19 @@
 #SET{vide,#ENV{type_message,public}|=={vide}|?{'','%'}}
 
 	[(#REM) Les boutons pour tout le lot de message d'un emetteur ---------------------------------------------------------]
-	[(#ENV{ip}|ou{#ENV{email_auteur}}|ou{#ENV{auteur}}|ou{#ENV{id_auteur}}|ou{#ENV{id_forum}})
+	[(#ENV{id_forum}|oui)
 	<a class='annule_filtre ajax' href='#GET{self}' title="<:forum:tout_voir|attribut_html:>">[(#CHEMIN_IMAGE{fermer-16.png}|balise_img|inserer_attribut{alt,<:forum:tout_voir:>})]</a>
 	]
 	[(#ENV{ip}|ou{#ENV{email_auteur}}|ou{#ENV{auteur}}|ou{#ENV{id_auteur}})
-	<div class='source'>
-	<div class='par'><:par:>
+	#BOITE_OUVRIR{'','note'}
+		<div class='par'><:par:>
+			<a class='annule_filtre ajax' href='#GET{self}' title="<:forum:tout_voir|attribut_html:>">[(#CHEMIN_IMAGE{fermer-16.png}|balise_img|inserer_attribut{alt,<:forum:tout_voir:>})]</a>
 
-	[
-	(#ENV{id_auteur,''}|oui)<a href='#URL_ECRIRE{auteur,id_auteur=#ENV{id_auteur}}'>#MODELE{auteur_nom,id_auteur=#ENV{id_auteur}}</a>
-	][(#ENV{id_auteur,''}|?{'',#ENV{auteur,''}})
-	][<a href='mailto:#ENV{email_auteur}'>(#ENV{email_auteur,''})</a>][IP (#ENV{ip,''})]
-	</div>
+		[
+		(#ENV{id_auteur,''}|oui)<a href='#URL_ECRIRE{auteur,id_auteur=#ENV{id_auteur}}'>#MODELE{auteur_nom,id_auteur=#ENV{id_auteur}}</a>
+		][(#ENV{id_auteur,''}|?{'',#ENV{auteur,''}})
+		][<a href='mailto:#ENV{email_auteur}'>(#ENV{email_auteur,''})</a>][IP (#ENV{ip,''})]
+		</div>
 		#SET{selection,#ENV{ip}|concat{'/',#ENV{email_auteur},'/',#ENV{id_auteur},'/',#ENV{auteur}}}
 		[(#ENV{type_message,public}|=={public}|et{#AUTORISER{instituer,forum,0}}|et{#ENV{recherche,''}|non}|et{#ENV{id_article,''}|non})
 		<p class='actions'>
@@ -42,7 +45,7 @@
 		 &#91;<a class='ajax supprimer' href='#URL_ACTION_AUTEUR{instituer_lot_forum,off-#GET{selection},#SELF}'><:forum:icone_supprimer_messages:></a>&#93;
 		</p>
 		]
-	</div>
+	#BOITE_FERMER
 	]
 	
 	[(#INCLURE{fond=prive/objets/liste/inc-boutons-filtres-statut-forum}{env})]
@@ -54,7 +57,7 @@
 	<div class="nettoyeur"></div>
 
 	[<p class='pagination'>(#PAGINATION{prive})</p>]
-	<ul class='liste_items forums'>
+	<ul class='liste-items forums'>
 		<BOUCLE_forum(FORUMS){id_forum?}{id_objet?}{objet?}{id_auteur?}{auteur?}{email_auteur?}{ip?}{!par id_forum}{pagination #ENV{nb,10}}{statut?}{statut LIKE #GET{prive}}{statut !LIKE #GET{public}}{texte LIKE #GET{vide}}{recherche?}>
 			<li class="item forum statut_#STATUT[ (#COMPTEUR_BOUCLE|alterner{'','odd'})]" id='forum#ID_FORUM' data-id='#ID_FORUM'>
 			[(#INCLURE{fond=prive/modeles/forum}{id_forum}{self})]

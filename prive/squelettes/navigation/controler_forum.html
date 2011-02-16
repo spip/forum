@@ -2,10 +2,10 @@
 <:info_gauche_suivi_forum_2:> #AIDER{suiviforum}
 
 [(#VAL{forums_}|concat{#ENV{type_message,public}}|bouton_spip_rss)]
-#SET{nb,'<b>N</b>'}
 #BOITE_FERMER
 
 #BOITE_OUVRIR{'',raccourcis}
+#SET{nb,'<b>N</b>'}
 <div id="actiongroup">
 	<label>Selection&nbsp;:</label>
 	<p class="status">
@@ -36,7 +36,7 @@
 
 <script type="text/javascript">/*<![CDATA[*/
 [(#INCLURE{prive/javascript/actiongroup.js}|minifier{js})]
-function reinit(){actiongroup.activate(jQuery("ul.liste_items.forums >.item.forum",this));}
+function reinit(){actiongroup.activate(jQuery("ul.liste-items.forums >.item.forum",this));}
 jQuery(reinit);
 onAjaxLoad(reinit);
 /*]]>*/</script>

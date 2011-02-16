@@ -3,7 +3,7 @@
 #SET{public,#ENV{type_message,public}|=={public}|?{'priv%',''}}
 #SET{vide,#ENV{type_message,public}|=={vide}|?{'','%'}}
 
-<div class='onglets_simple second'>
+<div class='onglets_simple second clearfix'>
 <ul class="statut statut_forum">
 <li>[(#GET{self}|parametre_url{statut,''}|lien_ou_expose{<:forum:messages_tous:>,#ENV{statut,''}|=={''},ajax})]</li>
 
@@ -23,5 +23,4 @@
 <BOUCLE_cpt_4(FORUMS){id_forum?}{id_auteur?}{id_article?}{auteur?}{email_auteur?}{ip?}{statut=#GET{statut}}{statut !LIKE #GET{public}}{texte LIKE #GET{vide}}{recherche?} />
 [(#TOTAL_BOUCLE|oui) <li class='#GET{statut}'>[(#GET{self}|parametre_url{statut,#GET{statut}}|lien_ou_expose{#VAL{forum:messages_#GET{statut}}|_T|concat{' (',#TOTAL_BOUCLE,')'},#ENV{statut,''}|=={#GET{statut}},'ajax'})]</li>]<//B_cpt_4>
 </ul>
-<div class='nettoyeur'></div>
 </div>
