@@ -51,7 +51,6 @@ prive/modeles/forum.html -text
 prive/objets/configurer/moderation.html -text
 prive/objets/liste/controler_forum_cvt.html -text
 prive/objets/liste/forums.html -text
-prive/objets/liste/inc-boutons-filtres-statut-forum.html -text
 prive/objets/liste/participer_forum.html -text
 prive/objets/liste/participer_forum_thread.html -text
 prive/repondre_forum.html -text
@@ -64,6 +63,7 @@ prive/rss/forums_vide.html -text
 prive/squelettes/contenu/configurer_forum.html -text
 prive/squelettes/contenu/controler_forum.html -text
 prive/squelettes/contenu/forum.html -text
+prive/squelettes/inclure/boutons-filtres-statut-forum.html -text
 prive/squelettes/inclure/discuter_forum.html -text
 prive/squelettes/navigation/controler_forum.html -text
 prive/style_prive_plugin_forum.html -text
