@@ -24,9 +24,9 @@ function forum_declarer_tables_interfaces($interfaces){
 	$interfaces['exceptions_des_tables']['forums']['nom']='auteur';
 	$interfaces['exceptions_des_tables']['forums']['email']='email_auteur';
 
-	$interfaces['table_titre']['forums']= "titre, '' AS lang";
+	#$interfaces['table_titre']['forums']= "titre, '' AS lang";
 
-	$interfaces['table_date']['forums']='date_heure';
+	#$interfaces['table_date']['forums']='date_heure';
 
 	$interfaces['tables_jointures']['spip_forum'][]= 'mots_liens';
 	$interfaces['tables_jointures']['spip_forum'][]= 'mots';
@@ -57,15 +57,26 @@ function forum_declarer_tables_interfaces($interfaces){
 	return $interfaces;
 }
 
-/**
- * Table principale spip_forum
- *
- * @param array $tables_principales
- * @return array
- */
-function forum_declarer_tables_principales($tables_principales){
 
-	$spip_forum = array(
+function forum_declarer_tables_objets_sql($tables){
+	$tables['spip_forum'] = array(
+		'table_objet'=>'forums', # ??? hum hum redevient spip_forum par table_objet_sql mais casse par un bete "spip_".table_objet()
+		'type'=>'forum',
+	  'url_voir'=>'controler_forum',
+	  'url_edit'=>'controler_forum',
+	  'editable'=>'non',
+	  'principale' => 'oui',
+		'page'=>'', // pas de page editoriale pour un forum
+
+		'texte_retour' => 'icone_retour',
+		'texte_objets' => 'titre_page_statistiques_messages_forum',
+		'info_aucun_objet'=> 'aucun_message_forum',
+		'info_1_objet' => 'info_1_message_forum',
+		'info_nb_objets' => 'info_nb_message_forum',
+		'titre' => "titre, '' AS lang",
+		'date' => 'date_heure',
+
+		'field'=> array(
 			"id_forum"	=> "bigint(21) NOT NULL",
 			"id_objet"	=> "bigint(21) DEFAULT '0' NOT NULL",
 			"objet"		=> "VARCHAR (25) DEFAULT '' NOT NULL",
@@ -82,16 +93,16 @@ function forum_declarer_tables_principales($tables_principales){
 			"statut"	=> "varchar(8) DEFAULT '0' NOT NULL",
 			"ip"	=> "varchar(40) DEFAULT '' NOT NULL",
 			"maj"	=> "TIMESTAMP",
-			"id_auteur"	=> "bigint DEFAULT '0' NOT NULL");
-
-	$spip_forum_key = array(
+			"id_auteur"	=> "bigint DEFAULT '0' NOT NULL"
+		),
+		'key' => array(
 			"PRIMARY KEY"	=> "id_forum",
 			"KEY id_auteur"	=> "id_auteur",
 			"KEY id_parent"	=> "id_parent",
 			"KEY id_thread"	=> "id_thread",
-			"KEY optimal" => "statut,id_parent,id_objet,objet,date_heure");
-
-	$spip_forum_join = array(
+			"KEY optimal" => "statut,id_parent,id_objet,objet,date_heure"
+		),
+		'join' => array(
 			"id_forum"=>"id_forum",
 			"id_parent"=>"id_parent",
 			"id_article"=>"id_article",
@@ -99,12 +110,13 @@ function forum_declarer_tables_principales($tables_principales){
 			"id_message"=>"id_message",
 			"id_syndic"=>"id_syndic",
 			"id_rubrique"=>"id_rubrique"
+		),
+		'rechercher_champs' => array(
+	    'titre' => 3, 'texte' => 1, 'auteur' => 2, 'email_auteur' => 2, 'nom_site' => 1, 'url_site' => 1
+		),
 	);
 
-	$tables_principales['spip_forum'] =
-		array('field' => &$spip_forum,	'key' => &$spip_forum_key, 'join' => &$spip_forum_join);
-
-	return $tables_principales;
+	return $tables;
 }
 
 ?>

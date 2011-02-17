@@ -224,17 +224,6 @@ function forum_configurer_liste_metas($metas){
 	return $metas;
 }
 
-/**
- * Declarer le surnom des forums
- *
- * @param array $table
- * @return array
- */
-function forum_declarer_tables_objets_surnoms($table){
-	$table['forum'] = 'forums'; # hum hum redevient spip_forum par table_objet_sql mais casse par un bete "spip_".table_objet()
-	return $table;
-}
-
 
 
 /**
@@ -366,20 +355,6 @@ function forum_prepare_recherche($flux){
 	return $flux;
 }
 
-
-/**
- * Definir la liste des champs de recherche sur la table forum
- *
- * @param array $liste
- * @return array
- */
-function forum_rechercher_liste_des_champs($liste){
-	$liste['forum'] = array(
-	  'titre' => 3, 'texte' => 1, 'auteur' => 2, 'email_auteur' => 2, 'nom_site' => 1, 'url_site' => 1
-	);
-
-	return $liste;
-}
 
 /**
  * Bloc en sur les encours d'une rubrique (page naviguer)

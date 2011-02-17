@@ -21,7 +21,7 @@
 	<pipeline><nom>forum_objets_depuis_env</nom><action></action></pipeline>
 	
 	<pipeline>
-		<nom>declarer_tables_principales</nom>
+		<nom>declarer_tables_objets_sql</nom>
 		<inclure>base/forum.php</inclure>
 	</pipeline>
 	<pipeline>
@@ -71,10 +71,6 @@
 		<inclure>forum_pipelines.php</inclure>
 	</pipeline>
 	<pipeline>
-		<nom>declarer_tables_objets_surnoms</nom>
-		<inclure>forum_pipelines.php</inclure>
-	</pipeline>
-	<pipeline>
 		<nom>optimiser_base_disparus</nom>
 		<inclure>forum_pipelines.php</inclure>
 	</pipeline>
@@ -84,10 +80,6 @@
 	</pipeline>
 	<pipeline>
 		<nom>prepare_recherche</nom>
-		<inclure>forum_pipelines.php</inclure>
-	</pipeline>
-	<pipeline>
-		<nom>rechercher_liste_des_champs</nom>
 		<inclure>forum_pipelines.php</inclure>
 	</pipeline>
 	<pipeline>
