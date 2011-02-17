@@ -70,9 +70,9 @@ function forum_declarer_tables_objets_sql($tables){
 
 		'texte_retour' => 'icone_retour',
 		'texte_objets' => 'titre_page_statistiques_messages_forum',
-		'info_aucun_objet'=> 'aucun_message_forum',
-		'info_1_objet' => 'info_1_message_forum',
-		'info_nb_objets' => 'info_nb_message_forum',
+		'info_aucun_objet'=> 'forum:aucun_message_forum',
+		'info_1_objet' => 'forum:info_1_message_forum',
+		'info_nb_objets' => 'forum:info_nb_message_forum',
 		'titre' => "titre, '' AS lang",
 		'date' => 'date_heure',
 
