@@ -92,7 +92,7 @@
 	</pipeline>
 
 
-	<necessite id="SPIP" version="[2.2.0 dev;)" />
+	<necessite id="SPIP" version="[2.2.0 dev;]" />
 
 	<chemin dir='' />
 
