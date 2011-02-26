@@ -25,17 +25,7 @@ function forum_declarer_tables_interfaces($interfaces){
 	$interfaces['exceptions_des_tables']['forums']['email']='email_auteur';
 
 	#$interfaces['table_titre']['forums']= "titre, '' AS lang";
-
 	#$interfaces['table_date']['forums']='date_heure';
-
-	$interfaces['tables_jointures']['spip_forum'][]= 'mots_liens';
-	$interfaces['tables_jointures']['spip_forum'][]= 'mots';
-	$interfaces['tables_jointures']['spip_forum'][]= 'documents_liens';
-	$interfaces['tables_jointures']['spip_articles'][] = 'forums';
-	$interfaces['tables_jointures']['spip_breves'][] = 'forums';
-	$interfaces['tables_jointures']['spip_rubriques'][] = 'forums';
-	$interfaces['tables_jointures']['spip_syndic'][] = 'forums';
-	$interfaces['tables_jointures']['spip_messages'][] = 'forums';
 
 	$interfaces['table_statut']['spip_forum'][] = array('champ'=>'statut','publie'=>'publie','previsu'=>'publie,prop','exception'=>'statut');
 
@@ -116,6 +106,9 @@ function forum_declarer_tables_objets_sql($tables){
 	    'titre' => 3, 'texte' => 1, 'auteur' => 2, 'email_auteur' => 2, 'nom_site' => 1, 'url_site' => 1
 		),
 	);
+
+	// jointures sur les forum pour tous les objets
+	$tables[]['tables_jointures'][]= 'forums';
 
 	return $tables;
 }
