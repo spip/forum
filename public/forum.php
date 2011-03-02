@@ -50,21 +50,24 @@ function critere_FORUMS_meme_parent_dist($idb, &$boucles, $crit) {
 	$boucle->modificateur['plat'] = true;
 }
 
-// Faute de copie du champ id_secteur dans la table des forums,
-// faut le retrouver par jointure
-// Pour chaque Row il faudrait tester si le forum est
-// d'article, de breve, de rubrique, ou de syndication.
-// Pour le moment on ne traite que les articles,
-// les 3 autres cas ne marcheront donc pas: ca ferait 4 jointures
-// qu'il faut traiter optimalement ou alors pas du tout.
+/**
+ * Faute de copie du champ id_secteur dans la table des forums,
+ * faut le retrouver par jointure
+ * Pour chaque Row il faudrait tester si le forum est
+ * d'article, de breve, de rubrique, ou de syndication.
+ * Pour le moment on ne traite que les articles,
+ * les 3 autres cas ne marcheront donc pas: ca ferait 4 jointures
+ * qu'il faut traiter optimalement ou alors pas du tout.
+ *
+ * @param string $idb
+ * @param object $boucles
+ * @param  $val
+ * @param  $crit
+ * @return mixed|string
+ */
 function public_critere_secteur_forums_dist($idb, &$boucles, $val, $crit)
 {
-	static $trouver_table;
-	if (!$trouver_table)
-		$trouver_table = charger_fonction('trouver_table', 'base');
-
-	$desc = $trouver_table('articles', $boucles[$idb]->sql_serveur);
-	return calculer_critere_externe_init($boucles[$idb], array($desc['table']), 'id_secteur', $desc, $crit->cond, true);
+	return calculer_critere_externe_init($boucles[$idb], array('spip_articles'), 'id_secteur', $boucles[$idb]->show, $crit->cond, true);
 }
 
 

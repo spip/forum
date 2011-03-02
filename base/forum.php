@@ -96,11 +96,9 @@ function forum_declarer_tables_objets_sql($tables){
 		'join' => array(
 			"id_forum"=>"id_forum",
 			"id_parent"=>"id_parent",
-			"id_article"=>"id_article",
-			"id_breve"=>"id_breve",
-			"id_message"=>"id_message",
-			"id_syndic"=>"id_syndic",
-			"id_rubrique"=>"id_rubrique"
+			"id_objet"=>"id_objet",
+			"objet"=>"objet",
+			"id_auteur"=>"id_auteur",
 		),
 		'rechercher_champs' => array(
 	    'titre' => 3, 'texte' => 1, 'auteur' => 2, 'email_auteur' => 2, 'nom_site' => 1, 'url_site' => 1
