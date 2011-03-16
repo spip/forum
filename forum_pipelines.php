@@ -234,6 +234,7 @@ function forum_configurer_liste_metas($metas){
  */
 function forum_optimiser_base_disparus($flux){
 	$n = &$flux['data'];
+	$mydate = $flux['args']['date'];
 
 	# les forums lies a une id_rubrique inexistante
 	$res = sql_select("forum.id_forum AS id",
