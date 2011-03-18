@@ -29,7 +29,7 @@ function autoriser_forumreactions_bouton_dist($faire, $type='', $id=0, $qui = NU
 // http://doc.spip.org/@autoriser_modererforum_dist
 function autoriser_modererforum_dist($faire, $type, $id, $qui, $opt) {
 	return
-		autoriser('modifier', $type, $id, $qui, $opt);
+		$type?autoriser('modifier', $type, $id, $qui, $opt):autoriser('moderer', 'forum', 0, $qui, $opt);
 }
 
 
@@ -68,6 +68,15 @@ function autoriser_forum_admin_dist($faire, $type, $id, $qui, $opt) {
  */
 function autoriser_forum_autoassocierdocument_dist($faire, $type, $id, $qui, $opts) {
 	return false;
+}
+
+/**
+ * Autoriser a participer au forum des admins
+ *
+ * @return bool
+ */
+function autoriser_forumadmin_participer_dist($faire, $type, $id, $qui, $opts) {
+	return $qui['statut']=='0minirezo';
 }
 
 ?>

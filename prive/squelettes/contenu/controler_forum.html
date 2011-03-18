@@ -1,3 +1,4 @@
+[(#AUTORISER{moderer,forum}|sinon_interdire_acces)]
 <h1><:titre_forum_suivi:></h1>
 
 #SET{self,#SELF|parametre_url{id_forum|email_auteur|ip|id_auteur|auteur|debut_id_forum,''}}
@@ -10,18 +11,25 @@
 #BOITE_FERMER
 ]
 
+#SET{type_message,#ENV{type_message,public}}
+[(#GET{type_message}|=={interne}|et{#AUTORISER{moderer,foruminterne}|non})
+	#SET{type_message,public}
+]
+#SET{prive,#GET{type_message}|=={interne}|?{'priv%','%'}}
+#SET{public,#GET{type_message}|=={public}|?{'priv%',''}}
+#SET{vide,#GET{type_message}|=={vide}|?{'','%'}}
+
 #SET{self,#SELF|parametre_url{id_forum|email_auteur|ip|id_auteur|auteur|debut_id_forum|statut,''}}
 <div class='onglets_simple clearfix'>
-<ul>
-<li>[(#GET{self}|parametre_url{type_message,public}|lien_ou_expose{<:onglet_messages_publics:>,#ENV{type_message,public}|=={public},ajax})]</li>
-<li>[(#GET{self}|parametre_url{type_message,interne}|lien_ou_expose{<:onglet_messages_internes:>,#ENV{type_message,public}|=={interne},ajax})]</li>
-<li>[(#GET{self}|parametre_url{type_message,vide}|lien_ou_expose{<:onglet_messages_vide:>,#ENV{type_message,public}|=={vide},ajax})]</li>
-</ul>
+	<ul>
+		<li>[(#GET{self}|parametre_url{type_message,public}|lien_ou_expose{<:onglet_messages_publics:>,#GET{type_message}|=={public},ajax})]</li>
+		[(#AUTORISER{moderer,foruminterne}|oui)
+		<li>[(#GET{self}|parametre_url{type_message,interne}|lien_ou_expose{<:onglet_messages_internes:>,#GET{type_message}|=={interne},ajax})]</li>
+		]
+		<li>[(#GET{self}|parametre_url{type_message,vide}|lien_ou_expose{<:onglet_messages_vide:>,#GET{type_message}|=={vide},ajax})]</li>
+	</ul>
 </div>
 
-#SET{prive,#ENV{type_message,public}|=={interne}|?{'priv%','%'}}
-#SET{public,#ENV{type_message,public}|=={public}|?{'priv%',''}}
-#SET{vide,#ENV{type_message,public}|=={vide}|?{'','%'}}
 
 	[(#REM) Les boutons pour tout le lot de message d'un emetteur ---------------------------------------------------------]
 	[(#ENV{id_forum}|oui)

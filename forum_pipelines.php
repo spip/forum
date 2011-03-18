@@ -72,16 +72,17 @@ function forum_accueil_informations($texte){
 			}
 		}
 
-		$texte .= "<div class='accueil_informations forum verdana1'>";
+		$texte .= "<div class='accueil_informations forum'>";
 		$afficher_plus = 'afficher_plus_info';
+		$plus = "";
 		if (!function_exists($afficher_plus))
 			$afficher_plus = 'afficher_plus';
 		if (autoriser('modererforum'))
-			$texte .= $afficher_plus(generer_url_ecrire("controler_forum",""));
-		$texte .= "<b>" ._T('onglet_messages_publics') ."</b>";
-		$texte .= "<ul style='margin:0px; padding-".$GLOBALS['spip_lang_left'].": 20px; margin-bottom: 5px;'>";
-		if (isset($cpt['prop'])) $texte .= "<li>"._T("texte_statut_attente_validation").": ".$cpt2['prop'] .$cpt['prop'] . '</li>';
-		if (isset($cpt['publie'])) $texte .= "<li><b>"._T("texte_statut_publies").": ".$cpt2['publie'] .$cpt['publie'] . "</b>" .'</li>';
+			$plus = $afficher_plus(generer_url_ecrire("controler_forum",""));
+		$texte .= "<h4>$plus" ._T('onglet_messages_publics') ."</h4>";
+		$texte .= "<ul class='liste-items'>";
+		if (isset($cpt['prop'])) $texte .= "<li class='item'>"._T("texte_statut_attente_validation").": ".$cpt2['prop'] .$cpt['prop'] . '</li>';
+		if (isset($cpt['publie'])) $texte .= "<li class='item on'>"._T("texte_statut_publies").": ".$cpt2['publie'] .$cpt['publie'] .'</li>';
 		$texte .= "</ul>";
 		$texte .= "</div>";
 	}
