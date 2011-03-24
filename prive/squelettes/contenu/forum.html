@@ -1,4 +1,4 @@
-[(#AUTORISER{bouton,foruminternesuivi}|?{' ',[(#REM|sinon_interdire_acces)]})
+[(#AUTORISER{bouton,foruminternesuivi}|sinon_interdire_acces)]
 #SET{self,#SELF}
 #SET{quoi,interne}
 [(#AUTORISER{participer,forumadmin}|non)
@@ -17,7 +17,7 @@
 <h1 class="none"><:titre_cadre_forum_interne:></h1>
 <INCLURE{fond=prive/squelettes/inclure/discuter_forum}{env}{quoi=interne}{statut=privrac}{ajax}>
 ]
-[(#GET{quoi}|=={admin}|oui)
+[(#GET{quoi}|=={admin}|et{#AUTORISER{participer,forumadmin}}|oui)
 <h1 class="none"><:titre_cadre_forum_administrateur:></h1>
 <INCLURE{fond=prive/squelettes/inclure/discuter_forum}{env}{quoi=interne}{statut=privadm}{ajax}>
-]]
+]

@@ -30,8 +30,7 @@ function autoriser_forumreactions_bouton_dist($faire, $type='', $id=0, $qui = NU
 // = droits par defaut sinon (admin complet pour moderation complete)
 // http://doc.spip.org/@autoriser_modererforum_dist
 function autoriser_modererforum_dist($faire, $type, $id, $qui, $opt) {
-	return
-		$type?autoriser('modifier', $type, $id, $qui, $opt):autoriser('moderer', 'forum', 0, $qui, $opt);
+	return $type ? autoriser('modifier', $type, $id, $qui, $opt):autoriser('moderer', 'forum', 0, $qui, $opt);
 }
 
 
@@ -39,8 +38,7 @@ function autoriser_modererforum_dist($faire, $type, $id, $qui, $opt) {
 // = jamais !
 // http://doc.spip.org/@autoriser_forum_modifier_dist
 function autoriser_forum_modifier_dist($faire, $type, $id, $qui, $opt) {
-	return
-		false;
+	return false;
 }
 
 
@@ -60,9 +58,7 @@ function autoriser_bouton_controle_forum_dist($faire, $type, $id, $qui, $opt){
 // admins y compris restreints
 // http://doc.spip.org/@autoriser_forum_admin_dist
 function autoriser_forum_admin_dist($faire, $type, $id, $qui, $opt) {
-	return
-		$qui['statut'] == '0minirezo'
-		;
+	return $qui['statut'] == '0minirezo';
 }
 
 /**
@@ -78,7 +74,7 @@ function autoriser_forum_autoassocierdocument_dist($faire, $type, $id, $qui, $op
  * @return bool
  */
 function autoriser_forumadmin_participer_dist($faire, $type, $id, $qui, $opts) {
-	return $qui['statut']=='0minirezo';
+	return ($GLOBALS['meta']['forum_prive_admin'] == 'oui') && $qui['statut']=='0minirezo';
 }
 
 ?>
