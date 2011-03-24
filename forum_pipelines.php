@@ -237,49 +237,23 @@ function forum_optimiser_base_disparus($flux){
 	$n = &$flux['data'];
 	$mydate = $flux['args']['date'];
 
-	# les forums lies a une id_rubrique inexistante
-	$res = sql_select("forum.id_forum AS id",
-			"spip_forum AS forum
-		        LEFT JOIN spip_rubriques AS rubriques
-		          ON forum.id_rubrique=rubriques.id_rubrique",
-			"rubriques.id_rubrique IS NULL
-		         AND forum.id_rubrique>0");
+	# les forums lies a une id_objet inexistant
+	$r = sql_select("DISTINCT objet",'spip_forum');
+	while ($t = sql_fetch($r)){
+		$type = $t['objet'];
+		$spip_table_objet = table_objet_sql($type);
+		$id_table_objet = id_table_objet($type);	
+		# les forums lies a un objet inexistant
+		$res = sql_select("forum.id_forum AS id",
+						"spip_forum AS forum
+							LEFT JOIN $spip_table_objet AS O
+								ON O.$id_table_objet=forum.id_objet AND forum.objet=".sql_quote($type),
+				"O.$id_table_objet IS NULL AND forum.id_objet>0");
 
 	$n+= optimiser_sansref('spip_forum', 'id_forum', $res);
+	}
 
-
-	# les forums lies a des articles effaces
-	$res = sql_select("forum.id_forum AS id",
-		        "spip_forum AS forum
-		        LEFT JOIN spip_articles AS articles
-		          ON forum.id_article=articles.id_article",
-			"articles.id_article IS NULL
-		         AND forum.id_article>0");
-
-	$n+= optimiser_sansref('spip_forum', 'id_forum', $res);
-
-	# les forums lies a des breves effacees
-	$res = sql_select("forum.id_forum AS id",
-		        "spip_forum AS forum
-		        LEFT JOIN spip_breves AS breves
-		          ON forum.id_breve=breves.id_breve",
-			"breves.id_breve IS NULL
-		         AND forum.id_breve>0");
-
-	$n+= optimiser_sansref('spip_forum', 'id_forum', $res);
-
-
-	# les forums lies a des sites effaces
-	$res = sql_select("forum.id_forum AS id",
-		        "spip_forum AS forum
-		        LEFT JOIN spip_syndic AS syndic
-		          ON forum.id_syndic=syndic.id_syndic",
-			"syndic.id_syndic IS NULL
-		         AND forum.id_syndic>0");
-
-	$n+= optimiser_sansref('spip_forum', 'id_forum', $res);
-
-
+	
 	//
 	// Forums
 	//
