@@ -15,6 +15,8 @@ function forum_autoriser(){}
 
 
 function autoriser_foruminternesuivi_bouton_dist($faire, $type='', $id=0, $qui = NULL, $opt = NULL){
+	if(($GLOBALS['meta']['forum_prive'] == 'non') && ($GLOBALS['meta']['forum_prive_admin'] == 'non'))
+		return false;
 	return true;
 }
 
