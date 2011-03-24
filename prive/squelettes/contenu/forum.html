@@ -1,3 +1,4 @@
+[(#AUTORISER{bouton,foruminternesuivi}|?{' ',[(#REM|sinon_interdire_acces)]})
 #SET{self,#SELF}
 #SET{quoi,interne}
 [(#AUTORISER{participer,forumadmin}|non)
@@ -19,4 +20,4 @@
 [(#GET{quoi}|=={admin}|oui)
 <h1 class="none"><:titre_cadre_forum_administrateur:></h1>
 <INCLURE{fond=prive/squelettes/inclure/discuter_forum}{env}{quoi=interne}{statut=privadm}{ajax}>
-]
+]]
