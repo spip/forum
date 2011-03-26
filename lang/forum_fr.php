@@ -12,7 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => "Signaler comme licite",
 	'icone_supprimer_messages' => 'Supprimer ces messages',
 	'icone_valider_messages' => 'Valider ces messages',
-	'icone_valider_repondre_message' => 'Valider &amp; R&eacute;pondre &agrave; ce message',
+	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message',
 	'info_liens_texte' => 'Lien(s) contenu(s) dans le texte du message',
 	'info_liens_titre' => 'Lien(s) contenu(s) dans le titre du message',
 	'interface_onglets' => 'Interface avec onglets',
@@ -21,30 +21,33 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_1_message_forum' => '1 message de forum',
 	'info_nb_messages_forum' => '@nb@ messages de forum',
 
+	// E
+	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique',
+
 	// M
 	'messages_aucun' => 'Aucun',
 	'messages_meme_auteur' => 'Tous les messages de cet auteur',
 	'messages_meme_email' => 'Tous les messages de cet email',
 	'messages_meme_ip' => 'Tous les messages de cette IP',
-	'messages_off' => 'Supprim&eacute;s',
+	'messages_off' => 'Supprimés',
 	'messages_perso' => 'Personnels',
-	'messages_prive' => 'Priv&eacute;s',
-	'messages_privoff' => 'Supprim&eacute;s',
-	'messages_privrac' => 'G&eacute;n&eacute;raux',
+	'messages_prive' => 'Privés',
+	'messages_privoff' => 'Supprimés',
+	'messages_privrac' => 'Généraux',
 	'messages_privadm' => 'Administrateurs',
-	'messages_prop' => 'Propos&eacute;s',
-	'messages_publie' => 'Publi&eacute;s',
+	'messages_prop' => 'Proposés',
+	'messages_publie' => 'Publiés',
 	'messages_spam' => 'Spam',
 	'messages_tous' => 'Tous',
 
 	// S
-	'statut_prop' => 'Propos&eacute;',
-	'statut_publie' => 'Publi&eacute;',
+	'statut_prop' => 'Proposé',
+	'statut_publie' => 'Publié',
 	'statut_spam' => 'Spam',
-	'statut_off' => 'Supprim&eacute;',
+	'statut_off' => 'Supprimé',
 
 	// T
-	'texte_en_cours_validation'=> 'Les articles, br&egrave;ves, forums ci dessous sont propos&eacute;s &agrave; la publication.',
+	'texte_en_cours_validation'=> 'Les articles, brèves, forums ci dessous sont proposés à la publication.',
 	'tout_voir' => 'Voir tous les messages',
 	'texte_messages_publics' => 'Messages publics sur&nbsp;:',
 

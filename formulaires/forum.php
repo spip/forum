@@ -315,7 +315,11 @@ function formulaires_forum_traiter_dist() {
 
 	list($redirect,$id_forum) = $forum_insert();
 
-	return array('redirect'=>$redirect,'id_forum'=>$id_forum);
+	if ($id_forum)
+		$res = array('redirect'=>$redirect,'id_forum'=>$id_forum);
+	else
+		$res = array('message_erreur'=>_T('forum:erreur_enregistrement_message'));
+	return $res;
 }
 
 
