@@ -20,6 +20,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	'info_1_message_forum' => '1 message de forum',
 	'info_nb_messages_forum' => '@nb@ messages de forum',
+	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot',
 
 	// E
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique',

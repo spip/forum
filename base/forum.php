@@ -24,6 +24,8 @@ function forum_declarer_tables_interfaces($interfaces){
 	$interfaces['exceptions_des_tables']['forums']['nom']='auteur';
 	$interfaces['exceptions_des_tables']['forums']['email']='email_auteur';
 
+	$interfaces['exceptions_des_jointures']['spip_forum']['id_mot'] = array('spip_mots','id_mot');
+	
 	#$interfaces['table_titre']['forums']= "titre, '' AS lang";
 	#$interfaces['table_date']['forums']='date_heure';
 
