@@ -27,7 +27,7 @@ function forum_declarer_tables_interfaces($interfaces){
 	// il ne faut pas essayer de chercher le forum du mot cle, mais bien le mot cle associe au forum
 	$interfaces['exceptions_des_jointures']['spip_forum']['id_mot'] = array('spip_mots','id_mot');
 	$interfaces['exceptions_des_jointures']['spip_forum']['titre_mot'] = array('spip_mots','titre');
-	$interfaces['exceptions_des_jointures']['spip_forum']['type'] = array('spip_mots','type');
+	$interfaces['exceptions_des_jointures']['spip_forum']['type_mot'] = array('spip_mots','type');
 	$interfaces['exceptions_des_jointures']['spip_forum']['id_groupe'] = array('spip_mots','id_groupe');
 
 	
