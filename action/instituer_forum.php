@@ -74,6 +74,9 @@ function instituer_un_forum($statut,$row){
 		array(
 			'args' => array(
 				'table' => 'spip_forum',
+				'table_objet' => 'forums',
+				'spip_table_objet' => 'spip_forum',
+				'type' => 'forum',
 				'id_objet' => $id_forum,
 				'action' => 'instituer',
 			),
