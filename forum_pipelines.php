@@ -260,6 +260,23 @@ function forum_optimiser_base_disparus($flux){
 
 	sql_delete("spip_forum", "statut='redac' AND maj < $mydate");
 
+	// nettoyer les documents des forums en spam&poubelle pour eviter de sortir des quota disques
+	// bizarrement on ne nettoie jamais les messages eux meme ?
+	include_spip('action/editer_liens');
+	if (objet_associable('document')){
+		$res = sql_select('L.id_document,F.id_forum',"spip_documents_liens AS L JOIN spip_forum AS F ON (F.id_forum=L.id_objet AND L.objet='forum')","F.statut IN ('off','spam')");
+		while ($row = sql_fetch($res)){
+			include_spip('inc/autoriser');
+			// si un seul lien (ce forum donc), on supprime le document
+			// si un document est attache a plus d'un forum, c'est un cas bizarre ou gere a la main
+			// on ne touche a rien !
+			if (count(objet_trouver_liens(array('document'=>$row['id_document']),'*'))==1){
+				autoriser_exception('supprimer','document',$row['id_document']);
+				if ($supprimer_document = charger_fonction('supprimer_document','action',true))
+					$supprimer_document($row['id_document']);
+			}
+		}
+	}
 
 
 	//
