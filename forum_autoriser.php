@@ -33,6 +33,18 @@ function autoriser_modererforum_dist($faire, $type, $id, $qui, $opt) {
 	return $type ? autoriser('modifier', $type, $id, $qui, $opt):autoriser('moderer', 'forum', 0, $qui, $opt);
 }
 
+/**
+ * Autorise a changer le statut d'un message de forum :
+ * seulement sur les objets qu'on a le droit de moderer
+ */
+function autoriser_forum_instituer_dist($faire, $type, $id, $qui, $opt){
+	$row = sql_fetsel('objet,id_objet','spip_forum','id_forum='.intval($id));
+	return $row?autoriser('modererforum',$row['objet'],$row['id_objet'],$qui,$opt):false;
+}
+
+function autoriser_forum_moderer_dist($faire, $type, $id, $qui, $opt){
+	return $qui['statut']=='0minirezo'; // les admins restreints peuvent moderer leurs messages
+}
 
 // Modifier un forum ?
 // = jamais !
