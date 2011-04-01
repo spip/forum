@@ -371,7 +371,7 @@ function forum_rubrique_encours($flux){
 function forum_trig_supprimer_objets_lies($objets){
 	foreach($objets as $objet){
 		if ($objet['type']=='message')
-			sql_delete("spip_forum", "id_message=".sql_quote($objet['id']));
+			sql_delete("spip_forum", "id_message=".intval($objet['id']));
 	}
 	return $objets;
 }

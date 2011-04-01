@@ -164,12 +164,12 @@ function generer_url_forum_parent($id_forum) {
 // sous forme d'un forum en reponse, de statut 'original'
 // http://doc.spip.org/@conserver_original
 function conserver_original($id_forum) {
-	$s = sql_fetsel("id_forum", "spip_forum", "id_parent=".sql_quote($id_forum)." AND statut='original'");
+	$s = sql_fetsel("id_forum", "spip_forum", "id_parent=".intval($id_forum)." AND statut='original'");
 
 	if ($s)	return ''; // pas d'erreur
 
 	// recopier le forum
-	$t = sql_fetsel("*", "spip_forum", "id_forum=".sql_quote($id_forum));
+	$t = sql_fetsel("*", "spip_forum", "id_forum=".intval($id_forum));
 
 	if ($t) {
 		unset($t['id_forum']);

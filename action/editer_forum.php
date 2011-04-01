@@ -19,7 +19,7 @@ include_spip('inc/modifier');
 if(!function_exists('revision_forum')){
 	function revision_forum($id_forum, $c=false) {
 
-		$t = sql_fetsel("*", "spip_forum", "id_forum=".sql_quote($id_forum));
+		$t = sql_fetsel("*", "spip_forum", "id_forum=".intval($id_forum));
 		if (!$t) {
 			spip_log("erreur forum $id_forum inexistant");
 			return;
@@ -67,7 +67,7 @@ if(!function_exists('revision_forum')){
 			// dans le message modifie (trop penible a l'usage) ; mais du
 			// coup attention a la responsabilite editoriale
 			/*
-			sql_updateq('spip_forum', array('ip'=>($GLOBALS['ip']), 'id_auteur'=>($GLOBALS['visiteur_session']['id_auteur'])),"id_forum=".sql_quote($id_forum));
+			sql_updateq('spip_forum', array('ip'=>($GLOBALS['ip']), 'id_auteur'=>($GLOBALS['visiteur_session']['id_auteur'])),"id_forum=".intval($id_forum));
 			*/
 
 			// & meme ca ca pourrait etre optionnel

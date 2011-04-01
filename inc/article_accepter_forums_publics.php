@@ -10,7 +10,7 @@ if (!defined("_ECRIRE_INC_VERSION")) return;
 function inc_article_accepter_forums_publics_dist($id_objet) {
 	$accepter_forum = $GLOBALS['meta']["forums_publics"];
 	$art_accepter_forum = sql_getfetsel('accepter_forum', 'spip_articles', array(
-		"id_article = ". sql_quote($id_objet)
+		"id_article = ". intval($id_objet)
 	));
 	if ($art_accepter_forum) {
 		$accepter_forum = $art_accepter_forum;
