@@ -56,7 +56,7 @@
 	#BOITE_FERMER
 	]
 	
-	[(#INCLURE{fond=prive/squelettes/inclure/boutons-filtres-statut-forum}{env})]
+	[(#INCLURE{fond=prive/squelettes/inclure/boutons-filtres-statut-forum, env})]
 	#FORMULAIRE_RECHERCHE_ECRIRE{#GET{self},ajax}
 	[<h2><:resultats_recherche:> &#171;&nbsp;(#ENV{recherche})&nbsp;&#187;</h2>]
 
@@ -68,7 +68,7 @@
 	<ul class='liste-items forums'>
 		<BOUCLE_forum(FORUMS){id_forum?}{id_objet?}{objet?}{id_auteur?}{auteur?}{email_auteur?}{ip?}{!par id_forum}{pagination #ENV{nb,10}}{statut?}{statut LIKE #GET{prive}}{statut !LIKE #GET{public}}{texte LIKE #GET{vide}}{recherche?}>
 			<li class="item forum[ (#EXPOSE)] statut_#STATUT[ (#COMPTEUR_BOUCLE|alterner{'','odd'})]" id='forum#ID_FORUM' data-id='#ID_FORUM'>
-			[(#INCLURE{fond=prive/modeles/forum}{id_forum}{self})]
+			[(#INCLURE{fond=prive/modeles/forum, id_forum, self})]
 			</li>
 		</BOUCLE_forum>
 	</ul>

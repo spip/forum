@@ -15,9 +15,9 @@
 ]
 [(#GET{quoi}|=={interne}|oui)
 <h1 class="none"><:titre_cadre_forum_interne:></h1>
-<INCLURE{fond=prive/squelettes/inclure/discuter_forum}{env}{quoi=interne}{statut=privrac}{ajax}>
+<INCLURE{fond=prive/squelettes/inclure/discuter_forum, env, quoi=interne, statut=privrac, ajax} />
 ]
 [(#GET{quoi}|=={admin}|et{#AUTORISER{participer,forumadmin}}|oui)
 <h1 class="none"><:titre_cadre_forum_administrateur:></h1>
-<INCLURE{fond=prive/squelettes/inclure/discuter_forum}{env}{quoi=interne}{statut=privadm}{ajax}>
+<INCLURE{fond=prive/squelettes/inclure/discuter_forum, env, quoi=interne, statut=privadm, ajax} />
 ]

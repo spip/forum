@@ -68,7 +68,7 @@
 	</li>
 	<li class="fieldset">
 		<fieldset>
-			[(#INCLURE{fond=formulaires/inc-gestion_forum_liste}{statut=#ENV*{select_statut}}{prive=#GET{prive}}{public=#GET{public}}{pagination=#GET{pagination}}{env})]
+			[(#INCLURE{fond=formulaires/inc-gestion_forum_liste, statut=#ENV*{select_statut}, prive=#GET{prive}, public=#GET{public}, pagination=#GET{pagination}, env})]
 		</fieldset>
 	</li>
 </ul>

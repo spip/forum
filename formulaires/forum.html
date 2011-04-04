@@ -5,7 +5,7 @@
 [<p class="reponse_formulaire reponse_formulaire_erreur">(#ENV*{message_erreur})</p>]
 
 [(#ENV{login_forum_abo})
-<INCLURE{fond=formulaires/inc-login_forum_abo}{env} />
+<INCLURE{fond=formulaires/inc-login_forum_abo, env} />
 ]
 
 [(#ENV{editable})
@@ -26,7 +26,7 @@
 	<input type='hidden' name='url_site' value="#ENV{url_site}" />
 	<input type='hidden' name='nom_site' value="#ENV{nom_site}" />
 	[<input type="hidden" name="id_forum" value="(#ENV*{id_forum})" />]
-	[(#INCLURE{fond=formulaires/inc-forum_ajouter_mot}{ajouter_mot})]
+	[(#INCLURE{fond=formulaires/inc-forum_ajouter_mot, ajouter_mot})]
 	(#ENV*{erreurs}|table_valeur{previsu})
 	</div>
 </form>]
@@ -51,7 +51,7 @@
 	(#CONFIG{forums_titre}|!={non}|non)
 		<input type="hidden" name="titre" id="titre"[ value="(#ENV{titre})"] />
 	]<ul>
-	[<li class='saisie_mots_forum'>(#INCLURE{fond=formulaires/inc-forum_bloc_choix_mots}{table=#ENV*{table}}{ajouter_mot})</li>]
+	[<li class='saisie_mots_forum'>(#INCLURE{fond=formulaires/inc-forum_bloc_choix_mots, table=#ENV*{table}, ajouter_mot})</li>]
 
 [(#CONFIG{forums_titre}|!={non}|oui)
 	<li class='saisie_titre[ (#ENV**{erreurs}|table_valeur{titre}|oui)erreur]'>
@@ -117,7 +117,7 @@
 	</ul></fieldset>
 ]
 
-	<INCLURE{fond=formulaires/inc-login_forum}{env} />
+	<INCLURE{fond=formulaires/inc-login_forum, env} />
 
 	[(#REM) Piege a robots spammeurs, dont on change le nom a chaque fois,
 	][<p style="display: none;">
