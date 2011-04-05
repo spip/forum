@@ -36,10 +36,10 @@ function forum_upgrade($nom_meta_base_version,$version_cible){
 		# mise a jour de (id_article,id_breve,...) vers (objet,id_objet)
 		if (version_compare($current_version, '1.1','<')) {
 			echo "<h4>MISE A JOUR DES FORUMS (objet,id_objet)</h4>";
-			sql_alter("TABLE `spip_forum` ADD `id_objet` bigint(21) DEFAULT 0 NOT NULL AFTER `id_forum`");
-			sql_alter("TABLE `spip_forum` ADD `objet` VARCHAR (25) DEFAULT '' NOT NULL AFTER `id_objet`");
-			sql_alter("TABLE `spip_forum` DROP key `optimal`");
-			sql_alter("TABLE `spip_forum` ADD key `optimal` (`statut`,`id_parent`,`id_objet`,`objet`,`date_heure`)");
+			sql_alter("TABLE spip_forum ADD `id_objet` bigint(21) DEFAULT 0 NOT NULL AFTER `id_forum`");
+			sql_alter("TABLE spip_forum ADD `objet` VARCHAR (25) DEFAULT '' NOT NULL AFTER `id_objet`");
+			sql_alter("TABLE spip_forum DROP key `optimal`");
+			sql_alter("TABLE spip_forum ADD key `optimal` (`statut`,`id_parent`,`id_objet`,`objet`,`date_heure`)");
 
 			echo "<ul>";
 
@@ -50,7 +50,7 @@ function forum_upgrade($nom_meta_base_version,$version_cible){
 					'objet' => sql_quote($objet),
 					'id_objet' => 'id_'.$objet
 				), 'id_'.$objet.' > 0');
-				sql_alter('TABLE `spip_forum` DROP `id_'.$objet.'`');
+				sql_alter('TABLE spip_forum DROP `id_'.$objet.'`');
 			}
 
 			echo "</ul>";
@@ -60,7 +60,7 @@ function forum_upgrade($nom_meta_base_version,$version_cible){
 
 		# champ ip sur 40 car (compat IPv6)
 		if (version_compare($current_version, '1.2','<')) {
-			sql_alter("TABLE `spip_forum` CHANGE `ip` `ip` VRCHAR(40) DEFAULT '' NOT NULL");
+			sql_alter("TABLE spip_forum CHANGE `ip` `ip` VRCHAR(40) DEFAULT '' NOT NULL");
 			ecrire_meta($nom_meta_base_version,$current_version = '1.2');
 		}
 	}
