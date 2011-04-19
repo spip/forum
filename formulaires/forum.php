@@ -37,6 +37,8 @@ $ajouter_mot, $ajouter_groupe, $afficher_texte, $url_param_retour) {
 	$ids = array();
 
 	$ids[$primary] = ($x = intval($id_objet)) ? $x : '';
+	$ids['id_objet'] = ($x = intval($id_objet)) ? $x : '';
+	$ids['objet'] = $objet;
 	$ids['id_forum'] = ($x = intval($id_forum)) ? $x : '';
 
 	// ne pas mettre '', sinon le squelette n'affichera rien.
