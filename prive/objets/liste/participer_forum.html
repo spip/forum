@@ -4,8 +4,7 @@ la premiere fois qu'un message est poste (cf. inc/invalideur). ]
 #SET{prive,#ENV{quoi,public}|=={interne}|?{'^(priv|perso)','.*'}}
 
 [(#REM) Nombre total de messages ]
-<BOUCLE_decompte(FORUMS) {id_forum?}{id_objet ?}{objet ?}{statut?}{statut==#GET{prive}}{recherche?}{plat} />[<h2>(#TOTAL_BOUCLE|>{0}|?{#TOTAL_BOUCLE,''})
-[(#TOTAL_BOUCLE|=={1}|?{<:message:>,<:messages_forum:>})]</h2>]<//B_decompte>
+<BOUCLE_decompte(FORUMS) {id_forum?}{id_objet ?}{objet ?}{statut?}{statut==#GET{prive}}{recherche?}{plat} />[<h2>(#TOTAL_BOUCLE|singulier_ou_pluriel{forum:info_1_message_forum,forum:info_nb_message_forum})</h2>]<//B_decompte>
 
 [(#REM) Messages du forum ]
 <B_forums>
@@ -40,7 +39,7 @@ la premiere fois qu'un message est poste (cf. inc/invalideur). ]
 				})]
 				</BOUCLE_doc>
 				[(#ENV{repondre,'oui'}|=={non}|non)
-				[<p class="repondre"><a class='ajax' href="(#SELF|parametre_url{repondre,#ID_FORUM})" rel="noindex nofollow"><:repondre_message:></a></p>]
+				[<p class="repondre"><a class='ajax' href="(#SELF|parametre_url{repondre,#ID_FORUM})" rel="noindex nofollow"><:forum:repondre_message:></a></p>]
 				]
 			</div>
 		</div>

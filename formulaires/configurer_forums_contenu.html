@@ -1,5 +1,5 @@
 <div class='formulaire_spip formulaire_configurer formulaire_configurer_forums_contenu' id='formulaire_configurer_forums_contenu'>
-<h3 class='titrem'>[(#CHEMIN_IMAGE{forum-public-24.png}|balise_img{'',cadre-icone})]<:titre_forum:></h3>
+<h3 class='titrem'>[(#CHEMIN_IMAGE{forum-public-24.png}|balise_img{'',cadre-icone})]<:forum:titre_forum:></h3>
 
 [<p class="reponse_formulaire reponse_formulaire_ok">(#ENV*{message_ok})</p>]
 [<p class="reponse_formulaire reponse_formulaire_erreur">(#ENV*{message_erreur})</p>]
@@ -29,8 +29,8 @@
 			</li>
 			<li class='configurer_documents_forums[ (#ENV**{erreurs}|table_valeur{formats_documents_forum}|oui)erreur]'>
 				<label for="formats_documents_forum"><:titre_documents_joints:></label>
-				<div class='explication'><:info_question_visiteur_ajout_document_forum:>
-				<small><:info_question_visiteur_ajout_document_forum_format:></small></div>
+				<div class='explication'><:forum:info_question_visiteur_ajout_document_forum:>
+				<small><:forum:info_question_visiteur_ajout_document_forum_format:></small></div>
 				[<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{formats_documents_forum})</span>]
 				<input type="text" class="text" name="formats_documents_forum" id="formats_documents_forum"[ value="(#ENV{formats_documents_forum})"] size="40" />
 			</li>

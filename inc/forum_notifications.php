@@ -84,7 +84,7 @@ function email_notification_forum_dist ($t, $email) {
 
 	$titre = textebrut(typo($t['titre_source']));
 	$forum_poste_par = ($t['id_article']
-		? _T('forum_poste_par', array(
+		? _T('forum:forum_poste_par', array(
 			'parauteur' => $parauteur, 'titre' => $titre))
 		: $parauteur . ' (' . $titre . ')');
 

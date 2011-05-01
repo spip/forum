@@ -70,11 +70,11 @@ function formulaires_forum_prive_verifier_dist($id_rubrique, $id_forum, $id_arti
 
 
 	if (strlen($texte = _request('texte')) < 10 AND $GLOBALS['meta']['forums_texte'] == 'oui')
-		$erreurs['texte'] = _T('forum_attention_dix_caracteres');
+		$erreurs['texte'] = _T('forum:forum_attention_dix_caracteres');
 	else if (defined('_FORUM_LONGUEUR_MAXI')
 	AND _FORUM_LONGUEUR_MAXI > 0
 	AND strlen($texte) > _FORUM_LONGUEUR_MAXI)
-		$erreurs['texte'] = _T('forum_attention_trop_caracteres',
+		$erreurs['texte'] = _T('forum:forum_attention_trop_caracteres',
 			array(
 				'compte' => strlen($texte),
 				'max' => _FORUM_LONGUEUR_MAXI
@@ -82,7 +82,7 @@ function formulaires_forum_prive_verifier_dist($id_rubrique, $id_forum, $id_arti
 
 	if (strlen($titre=_request('titre')) < 3
 	AND $GLOBALS['meta']['forums_titre'] == 'oui')
-		$erreurs['titre'] = _T('forum_attention_trois_caracteres');
+		$erreurs['titre'] = _T('forum:forum_attention_trois_caracteres');
 
 	if (!count($erreurs) AND !_request('confirmer_previsu_forum')){
 		if ($afficher_texte != 'non') {
@@ -96,7 +96,7 @@ function formulaires_forum_prive_verifier_dist($id_rubrique, $id_forum, $id_arti
 
 
 function inclure_forum_prive_previsu($texte,$titre, $url_site, $nom_site, $ajouter_mot, $doc){
-	$bouton = _T('forum_message_definitif');
+	$bouton = _T('forum:forum_message_definitif');
 	include_spip('public/assembler');
 	include_spip('public/composer');
 	// supprimer les <form> de la previsualisation

@@ -45,7 +45,7 @@ function formulaires_activer_forums_objet_charger_dist($id_objet, $objet='articl
 		'objet' => $objet,
 		'id_objet' => $id_objet,
 		'accepter_forum' => get_forums_publics($id_objet, $objet),
-		'_suivi_forums' => $nb_forums?_T('icone_suivi_forum', array('nb_forums' => $nb_forums)):"",
+		'_suivi_forums' => $nb_forums?_T('forum:icone_suivi_forum', array('nb_forums' => $nb_forums)):"",
 	);
 	
 }

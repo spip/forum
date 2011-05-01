@@ -98,18 +98,18 @@
 
 	<bouton id='forum_reactions' parent='bando_activite'>
 		<icone>images/forum-16.png</icone>
-		<titre>icone_suivi_forums</titre>
+		<titre>forum:icone_suivi_forums</titre>
 		<url>controler_forum</url>
 	</bouton>
 
 	<bouton id='configurer_forum' parent='bando_configuration'>
 		<icone>images/forum-16.png</icone>
-		<titre>titre_forum</titre>
+		<titre>forum:titre_forum</titre>
 	</bouton>
 
 	<bouton id="forum_interne_suivi" parent="outils_collaboratifs">
 		<icone>images/forum-interne-16.png</icone>
-		<titre>titre_cadre_forum_interne</titre>
+		<titre>forum:titre_cadre_forum_interne</titre>
 		<url>forum</url>
 	</bouton>
 	<categorie>communication</categorie>

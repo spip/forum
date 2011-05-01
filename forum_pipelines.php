@@ -24,10 +24,10 @@ function forum_accueil_encours($texte){
 		$cpt = sql_countsel("spip_forum", "statut='prop'");
 		if ($cpt) {
 			if ($cpt>1)
-				$lien = _T('info_liens_syndiques_3')." "._T('info_liens_syndiques_4');
+				$lien = _T('forum:info_liens_syndiques_3')." "._T('forum:info_liens_syndiques_4');
 			else
-				$lien = _T('info_liens_syndiques_5')." "._T('info_liens_syndiques_6');
-			$lien = "<small>$cpt $lien " ._T('info_liens_syndiques_7'). "</small>";
+				$lien = _T('forum:info_liens_syndiques_5')." "._T('forum:info_liens_syndiques_6');
+			$lien = "<small>$cpt $lien " ._T('forum:info_liens_syndiques_7'). "</small>";
 			if ($GLOBALS['connect_toutes_rubriques'])
 				$lien = "<a href='" . generer_url_ecrire("controler_forum","statut=prop") . "' style='color: black;'>". $lien . ".</a>";
 			$texte .= "\n<br />" . $lien;
@@ -35,7 +35,7 @@ function forum_accueil_encours($texte){
 		if (strlen($texte) AND $GLOBALS['meta']['forum_prive_objets'] != 'non')
 			$cpt2 = sql_countsel("spip_articles", "statut='prop'");
 			if ($cpt2)
-				$texte = _T('texte_en_cours_validation_forum') . $texte;
+				$texte = _T('forum:texte_en_cours_validation_forum') . $texte;
 	}
 
 	return $texte;
@@ -79,7 +79,7 @@ function forum_accueil_informations($texte){
 			$afficher_plus = 'afficher_plus';
 		if (autoriser('modererforum'))
 			$plus = $afficher_plus(generer_url_ecrire("controler_forum",""));
-		$texte .= "<h4>$plus" ._T('onglet_messages_publics') ."</h4>";
+		$texte .= "<h4>$plus" ._T('forum:onglet_messages_publics') ."</h4>";
 		$texte .= "<ul class='liste-items'>";
 		if (isset($cpt['prop'])) $texte .= "<li class='item'>"._T("texte_statut_attente_validation").": ".$cpt2['prop'] .$cpt['prop'] . '</li>';
 		if (isset($cpt['publie'])) $texte .= "<li class='item on'>"._T("texte_statut_publies").": ".$cpt2['publie'] .$cpt['publie'] .'</li>';
@@ -123,7 +123,7 @@ function forum_afficher_fiche_objet($flux){
 		else
 			$n_forums = 0;
 		if ($n_forums)
-	  	$flux['data'] .= icone_verticale(_T('icone_suivi_forum', array('nb_forums' => $n_forums)), generer_url_ecrire("controler_forum","objet=rubrique&id_objet=$id_rubrique"), "forum-24.png", "", 'center');
+	  	$flux['data'] .= icone_verticale(_T('forum:icone_suivi_forum', array('nb_forums' => $n_forums)), generer_url_ecrire("controler_forum","objet=rubrique&id_objet=$id_rubrique"), "forum-24.png", "", 'center');
 	}
 	return $flux;
 }
@@ -156,7 +156,7 @@ function forum_afficher_message_statut_objet($flux){
 		$statut = $flux['args']['statut'];
 		if ($GLOBALS['meta']['forum_prive_objets'] != 'non'
 		  AND $statut == 'prop')
-			$flux['data'] .= "<p class='article_prop'>"._T('text_article_propose_publication_forum').'</p>';
+			$flux['data'] .= "<p class='article_prop'>"._T('forum:text_article_propose_publication_forum').'</p>';
 	}
 	return $flux;
 }
@@ -177,7 +177,7 @@ function forum_boite_infos($flux){
 		else
 			$n_forums = 0;
 		if ($n_forums){
-			$aff = "<p class='forums'>"._T('icone_suivi_forum',array('nb_forums'=>$n_forums)).'</p>';
+			$aff = "<p class='forums'>"._T('forum:icone_suivi_forum',array('nb_forums'=>$n_forums)).'</p>';
 			if (($pos = strpos($flux['data'],'<!--nb_elements-->'))!==FALSE)
 				$flux['data'] = substr($flux['data'],0,$pos) . $aff . substr($flux['data'],$pos);
 			else
@@ -358,7 +358,7 @@ function forum_prepare_recherche($flux){
 function forum_rubrique_encours($flux){
 	if (strlen($flux['data'])
 	  AND $GLOBALS['meta']['forum_prive_objets'] != 'non')
-		$flux['data'] = _T('texte_en_cours_validation_forum') . $flux['data'];
+		$flux['data'] = _T('forum:texte_en_cours_validation_forum') . $flux['data'];
 	return $flux;
 }
 

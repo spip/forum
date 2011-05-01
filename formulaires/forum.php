@@ -184,7 +184,7 @@ function formulaires_forum_verifier_dist(
 		// verifier si on possede la cle (ie on est autorise a poster)
 		// (sinon tant pis) ; cf. charger.php pour la definition de la cle
 		if (_request('cle_ajouter_document') != calculer_cle_action($a = "ajouter-document-$objet-$id_objet")) {
-			$erreurs['document_forum'] = _T('public:documents_interdits_forum');
+			$erreurs['document_forum'] = _T('forum:documents_interdits_forum');
 			unset($_FILES['ajouter_document']);
 		} else {
 			include_spip('inc/ajouter_documents');
@@ -228,11 +228,11 @@ function formulaires_forum_verifier_dist(
 
 	if (strlen($texte = _request('texte')) < 10
 	AND !$ajouter_mot AND $GLOBALS['meta']['forums_texte'] == 'oui')
-		$erreurs['texte'] = _T('forum_attention_dix_caracteres');
+		$erreurs['texte'] = _T('forum:forum_attention_dix_caracteres');
 	else if (defined('_FORUM_LONGUEUR_MAXI')
 	AND _FORUM_LONGUEUR_MAXI > 0
 	AND strlen($texte) > _FORUM_LONGUEUR_MAXI)
-		$erreurs['texte'] = _T('forum_attention_trop_caracteres',
+		$erreurs['texte'] = _T('forum:forum_attention_trop_caracteres',
 			array(
 				'compte' => strlen($texte),
 				'max' => _FORUM_LONGUEUR_MAXI
@@ -240,7 +240,7 @@ function formulaires_forum_verifier_dist(
 
 	if (strlen($titre=_request('titre')) < 3
 	AND $GLOBALS['meta']['forums_titre'] == 'oui')
-		$erreurs['titre'] = _T('forum_attention_trois_caracteres');
+		$erreurs['titre'] = _T('forum:forum_attention_trois_caracteres');
 
 	if (!count($erreurs) AND !_request('confirmer_previsu_forum')){
 		if ($afficher_texte != 'non') {
@@ -272,7 +272,7 @@ function inclure_previsu($texte,$titre, $url_site, $nom_site, $ajouter_mot, $doc
 $objet, $id_objet, $id_forum) {
 	global $table_des_traitements;
 
-	$bouton = _T('forum_message_definitif');
+	$bouton = _T('forum:forum_message_definitif');
 	include_spip('public/assembler');
 	include_spip('public/composer');
 

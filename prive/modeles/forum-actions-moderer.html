@@ -11,16 +11,16 @@
 	]
 	[(#STATUT|in_any{#ARRAY{0,off,1,spam,2,prop}})
 	 #GET{action}#SET{action,''}
-	 [(#BOUTON_ACTION{<:icone_valider_message:>,#URL_ACTION_AUTEUR{instituer_forum,#ID_FORUM-publie,#SELF|ancre_url{forum#ID_FORUM}},'ajax valider'})<span class="sep"> | </span>]
+	 [(#BOUTON_ACTION{<:forum:icone_valider_message:>,#URL_ACTION_AUTEUR{instituer_forum,#ID_FORUM-publie,#SELF|ancre_url{forum#ID_FORUM}},'ajax valider'})<span class="sep"> | </span>]
 	 <br />
 	]
 	[(#STATUT|in_any{#ARRAY{0,publie,2,prop}})
 	 #GET{action}#SET{action,''}
-	 [(#BOUTON_ACTION{<:icone_supprimer_message:>,#URL_ACTION_AUTEUR{instituer_forum,#ID_FORUM-off,#SELF|ancre_url{forum#ID_FORUM}},'ajax supprimer'})<span class="sep"> | </span>]
+	 [(#BOUTON_ACTION{<:forum:icone_supprimer_message:>,#URL_ACTION_AUTEUR{instituer_forum,#ID_FORUM-off,#SELF|ancre_url{forum#ID_FORUM}},'ajax supprimer'})<span class="sep"> | </span>]
 	]
 	[(#STATUT|in_any{#ARRAY{0,prive,1,privrac}})
 	 #GET{action}#SET{action,''}
-	 [(#BOUTON_ACTION{<:icone_supprimer_message:>,#URL_ACTION_AUTEUR{instituer_forum,#ID_FORUM-privoff,#SELF|ancre_url{forum#ID_FORUM}},'ajax supprimer'})<span class="sep"> | </span>]
+	 [(#BOUTON_ACTION{<:forum:icone_supprimer_message:>,#URL_ACTION_AUTEUR{instituer_forum,#ID_FORUM-privoff,#SELF|ancre_url{forum#ID_FORUM}},'ajax supprimer'})<span class="sep"> | </span>]
 	]
 
 	[(#STATUT|in_any{#ARRAY{0,publie,1,off,2,prop}})
@@ -34,6 +34,6 @@
 ][
 (#STATUT|=={publie}|oui)
 	 #GET{action}#SET{action,''}
-	<a href="#GET{redirect}"><:repondre_message:></a>
+	<a href="#GET{redirect}"><:forum:repondre_message:></a>
 ]
 [(#GET{action}|non)</div></div>]

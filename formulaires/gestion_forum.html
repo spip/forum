@@ -36,8 +36,8 @@
 <ul>
 	<li class="gestion_forum boutons">
 		<select id="select_type" name="select_type">
-			<option value="public"[(#ENV*{select_type,public}|=={"public"}|oui) selected="selected"]><:onglet_messages_publics:></option>
-			<option value="interne"[(#ENV*{select_type,public}|=={"interne"}|oui) selected="selected"]><:onglet_messages_internes:></option>
+			<option value="public"[(#ENV*{select_type,public}|=={"public"}|oui) selected="selected"]><:forum:onglet_messages_publics:></option>
+			<option value="interne"[(#ENV*{select_type,public}|=={"interne"}|oui) selected="selected"]><:forum:onglet_messages_internes:></option>
 		</select>
 		<select id="select_statut" name="select_statut">
 			<option value=""><:forum:messages_tous:></option>

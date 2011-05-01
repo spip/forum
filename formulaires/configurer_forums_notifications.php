@@ -11,12 +11,16 @@
 \***************************************************************************/
 
 if (!defined("_ECRIRE_INC_VERSION")) return;
+$GLOBALS['liste_des_forums']['forum:bouton_radio_modere_posteriori'] = 'pos';
+$GLOBALS['liste_des_forums']['forum:bouton_radio_modere_priori'] = 'pri';
+$GLOBALS['liste_des_forums']['forum:bouton_radio_modere_abonnement'] = 'abo';
+$GLOBALS['liste_des_forums']['forum:info_pas_de_forum'] = 'non';
 
 function formulaires_configurer_forums_notifications_charger_dist(){
 	$valeurs = array();
 	$m = $GLOBALS['meta']['prevenir_auteurs'];
 	$l = $GLOBALS['liste_des_forums'];
-	unset($l['info_pas_de_forum']);
+	unset($l['forum:info_pas_de_forum']);
 	foreach ($l as $desc => $val)
 		$valeurs['prevenir_auteurs_' . $val] = (($m == 'oui') OR strpos($m,",$val,")!==false);
 

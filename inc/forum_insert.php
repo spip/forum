@@ -24,13 +24,13 @@ function controler_forum_abo($retour)
 	if ($visiteur_session) {
 		$statut = $visiteur_session['statut'];
 		if (!$statut OR $statut == '5poubelle') {
-			ask_php_auth(_T('forum_acces_refuse'),
-				     _T('forum_cliquer_retour',
+			ask_php_auth(_T('forum:forum_acces_refuse'),
+				     _T('forum:forum_cliquer_retour',
 						array('retour_forum' => $retour)));
 		}
 	} else {
 		ask_php_auth(_T('forum_non_inscrit'),
-			     _T('forum_cliquer_retour',
+			     _T('forum:forum_cliquer_retour',
 					array('retour_forum' => $retour)));
 		}
 }
@@ -189,8 +189,8 @@ function forum_insert_base($c, $id_forum, $objet, $id_objet, $statut, $retour)
 	}
 
 	if (array_reduce($_POST, 'reduce_strlen', (20 * 1024)) < 0) {
-		ask_php_auth(_T('forum_message_trop_long'),
-			_T('forum_cliquer_retour',
+		ask_php_auth(_T('forum:forum_message_trop_long'),
+			_T('forum:forum_cliquer_retour',
 				array('retour_forum' => $retour)));
 	}
 
