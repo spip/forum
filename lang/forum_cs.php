@@ -22,6 +22,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  ze správců).',
 	'bouton_radio_modere_abonnement' => 'na základě přihlášení',
 	'bouton_radio_modere_posteriori' => 'moderování ex post',
+	'bouton_radio_modere_priori' => 'moderování předem',
 	'bouton_radio_publication_immediate' => 'Okamžité zveřejňování zpráv
  (příspěvky se zobrazují okamžitě,
  správci je mohou odstranit dodatečně).',
@@ -33,6 +34,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Chcete nám něco sdělit nebo máte nějaké připomínky?',
 	'forum' => 'Fórum',
 	'forum_acces_refuse' => 'K těmto diskusním skupinám již nemáte přístup.',
 	'forum_attention_dix_caracteres' => '<b>Varování!</b> Zpráva musí obsahovat minimálně deset znaků.',
@@ -48,9 +50,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'Neodpovídejte na tuto zprávu. Odpověď zveřejněte v rámci skupiny na adrese:', # MODIF
 	'forum_page_url' => '(Týká-li se zpráva článku zveřejněného na webu nebo stránky s doplňujícími informacemi, zadejte dále název stránky a její adresu).',
 	'forum_poste_par' => 'Zpráva od posted@parauteur@ na základě vašeho článku.', # MODIF
+	'forum_qui_etes_vous' => '<b>Kdo jste?</b> (volitelné)',
 	'forum_texte' => 'Text zprávy:',
 	'forum_titre' => 'Předmět:',
+	'forum_url' => 'Adresa URL:',
+	'forum_valider' => 'Potvrdit výběr',
 	'forum_voir_avant' => 'Před odesláním zprávu zobrazit',
+	'forum_votre_email' => 'Váš e-mail:',
+	'forum_votre_nom' => 'Vaše jméno (resp. přezdívka):',
 	'forum_vous_enregistrer' => 'Této diskusní skupiny se můžete účastnit
   až po zaregistrování. Děkujeme vám
   za zadání identifikačních údajů.
@@ -63,6 +70,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Odeslat zprávu',
 	'icone_suivi_forum' => 'Sledování veřejné diskusní skupiny: @nb_forums@ příspěvky',
+	'icone_suivi_forums' => 'Správa diskusních skupin',
 	'icone_supprimer_message' => 'Ostranit zprávu',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Schválit zprávu',
@@ -106,6 +114,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'Vypnout diskusní skupinu správců',
 	'item_non_config_forums_prive_global' => 'Deactivate the authors\' forum', # NEW
 	'item_non_config_forums_prive_objets' => 'Deactivate these forums', # NEW
+
+	// L
+	'lien_reponse_article' => 'Odpověď na článek',
+	'lien_reponse_breve_2' => 'Odpověď na novinku',
+	'lien_reponse_rubrique' => 'Odpověď na sekci',
+	'lien_reponse_site_reference' => 'Odpověď na web, na nějž vede odkaz:',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

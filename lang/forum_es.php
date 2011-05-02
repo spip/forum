@@ -18,6 +18,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_moderation_priori' => 'Moderado a priori (las contribuciones no aparecen hasta ser validadas por una persona con derechos de administración en el sitio).',
 	'bouton_radio_modere_abonnement' => 'sólo para inscritos',
 	'bouton_radio_modere_posteriori' => 'moderado a posteriori',
+	'bouton_radio_modere_priori' => 'moderado a priori',
 	'bouton_radio_publication_immediate' => 'Publicación inmediata de los mensajes (las contribuciones aparecen en cuanto enviadas, pueden suprimirse posteriormente desde la administración).',
 
 	// D
@@ -27,6 +28,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => '¿Un mensaje, un comentario?',
 	'forum' => 'Foro',
 	'forum_acces_refuse' => 'Ya no tienes acceso a estos foros.',
 	'forum_attention_dix_caracteres' => '<b>¡Atención!</b> tu mensaje debe tener al menos diez caracteres.',
@@ -42,9 +44,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'No conteste a este correo, sino el foro en la dirección siguiente:',
 	'forum_page_url' => '(Si tu mensaje se refiere a un artículo publicado en Internet, o a una página que contiene más informaciones, indica a continuación el título de la página y su dirección URL.)',
 	'forum_poste_par' => 'Mensaje enviado @parauteur@ a como respuesta al artículo <i>@titre@</i>.',
+	'forum_qui_etes_vous' => '<b>¿Quién eres?</b> (opcional)',
 	'forum_texte' => 'Texto de tu mensaje:',
 	'forum_titre' => 'Título:',
+	'forum_url' => 'URL:',
+	'forum_valider' => 'Validar la elección',
 	'forum_voir_avant' => 'Ver este mensaje antes de enviarlo',
+	'forum_votre_email' => 'Tu dirección de correo electrónico:',
+	'forum_votre_nom' => 'Tu nombre (o seudónimo):',
 	'forum_vous_enregistrer' => 'Para participar en este foro, previamente debes registrarte.
 Gracias por indicar a continuación el identificador personal que se te ha
 suministrado. Si no estás inscrito/a, debes',
@@ -56,6 +63,7 @@ suministrado. Si no estás inscrito/a, debes',
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Enviar un mensaje',
 	'icone_suivi_forum' => 'Actualidad del foro público: @nb_forums@ contribución(es)',
+	'icone_suivi_forums' => 'Seguir y administrar los foros',
 	'icone_supprimer_message' => 'Suprimir este mensaje',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Validar este mensaje',
@@ -94,6 +102,12 @@ suministrado. Si no estás inscrito/a, debes',
 	'item_desactiver_forum_administrateur' => 'Desactivar el foro de administración',
 	'item_non_config_forums_prive_global' => 'Desactivar el foro de los redactores',
 	'item_non_config_forums_prive_objets' => 'Desactivar estos foros',
+
+	// L
+	'lien_reponse_article' => 'Respuesta al artículo',
+	'lien_reponse_breve_2' => 'Respuesta a la breve',
+	'lien_reponse_rubrique' => 'Respuesta a la sección',
+	'lien_reponse_site_reference' => 'Respuesta al sitio referenciado',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

@@ -18,6 +18,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_moderation_priori' => 'Moderare à priori (contribuţiile nu sunt afişate decât după validarea lor de către un administrator).',
 	'bouton_radio_modere_abonnement' => 'cu abonament',
 	'bouton_radio_modere_posteriori' => 'moderare ulterioară',
+	'bouton_radio_modere_priori' => 'moderare à priori',
 	'bouton_radio_publication_immediate' => 'Publicarea imediată a mesajelor
  (contribuţiile sunt afişate imediat, un administrator poate
  să le şteargă ulterior).',
@@ -29,6 +30,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Un mesaj, un comentariu ?',
 	'forum' => 'Forum',
 	'forum_acces_refuse' => 'Nu mai aveţi acces la aceste forum-uri.',
 	'forum_attention_dix_caracteres' => '<b>Atenţie !</b> mesajul dumneavoastră trebuie să conţină cel puţin  zece caractere.',
@@ -44,9 +46,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'Nu răspundeţi acestui email, ci direct pe forum la adresa următoare :', # MODIF
 	'forum_page_url' => '(Dacă mesajul se referă la un articol publicat pe Web sau la o pagină cu informaţii suplimentare, indicaţi mai jos titlul şi adresa URL a paginii.)',
 	'forum_poste_par' => 'Mesaj publicat de @parauteur@ ca răspuns la articolul « @titre@ ».',
+	'forum_qui_etes_vous' => '<b>Cine sunteţi dumneavoastră ?</b> (opţional)',
 	'forum_texte' => 'Textul mesajului dumneavoastră :',
 	'forum_titre' => 'Titlu :',
+	'forum_url' => 'URL :',
+	'forum_valider' => 'Validaţi această alegere',
 	'forum_voir_avant' => 'Vedeţi acest mesaj înainte de a-l trimite',
+	'forum_votre_email' => 'Adresa dumneavoastră de email :',
+	'forum_votre_nom' => 'Numele dumneavoastră (sau pseudonimul) :',
 	'forum_vous_enregistrer' => 'Pentru a participa
   la acest forum, trebuie să vă înregistraţi în prealabil. Vă rugăm să furnizaţi identificatorul personal care v-a fost furnizat.
   Dacă nu sunteţi deja înregistrat, va trebui',
@@ -58,6 +65,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Trimiteţi un mesaj',
 	'icone_suivi_forum' => 'Urmăriţi forum-ul public : @nb_forums@ contribuții',
+	'icone_suivi_forums' => 'Administrare forumuri',
 	'icone_supprimer_message' => 'Suprimaţi acest mesaj',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Validaţi acest mesaj',
@@ -99,6 +107,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'Dezactivaţi forum-ul administratorilor',
 	'item_non_config_forums_prive_global' => 'Dezactivaţi forum-ul redactorilor',
 	'item_non_config_forums_prive_objets' => 'Dezactivaţi aceste forum-uri',
+
+	// L
+	'lien_reponse_article' => 'Răspuns la articol',
+	'lien_reponse_breve_2' => 'Răspuns la ştire',
+	'lien_reponse_rubrique' => 'Răspuns la rubrica',
+	'lien_reponse_site_reference' => 'Răspuns la site-ul referenţiat :',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

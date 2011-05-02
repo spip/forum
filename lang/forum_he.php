@@ -22,6 +22,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  האדמיניסטרטורים).',
 	'bouton_radio_modere_abonnement' => 'צמצום על ידי מנוי',
 	'bouton_radio_modere_posteriori' => 'צמצום לאחר מכן',
+	'bouton_radio_modere_priori' => 'צמצום מראש',
 	'bouton_radio_publication_immediate' => 'פרסום מיידי של הודעות
  (התרומות מופיעות מרגע שליחתן, האדמיניסטרטורים יכולים
  למחקן לאחר מכן).',
@@ -33,6 +34,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'יש לך תגובה או הודעה ?',
 	'forum' => 'פורום',
 	'forum_acces_refuse' => 'אין לך גישה לפורומים האלה יותר.',
 	'forum_attention_dix_caracteres' => '<b>שים לב!</b> ההודעה שלך צריכה לכלול לפחות עשר אותיות.',
@@ -48,9 +50,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'אל תחזיר תשובה לדוא"ל הזה אבל בפורום בכתובת הבאה:', # MODIF
 	'forum_page_url' => '(אם הודעתך מופנית למאמר שמפורסם ברשת או לדף המספק מידע נוסף, בבקשה רשום את הכותרת של הדף והכתובת הכללית שלו.)',
 	'forum_poste_par' => 'הודעה נשלחה @parauteur@ העוסקת בכתבתך « @titre@ ».',
+	'forum_qui_etes_vous' => '<b>מי את / אתה?</b> (אופציונלי)',
 	'forum_texte' => 'טקסט של הודעתך :',
 	'forum_titre' => 'נושא:',
+	'forum_url' => 'כתובת כללית:',
+	'forum_valider' => 'תן תוקף לבחירה הזאת',
 	'forum_voir_avant' => 'הצגה מוקדמת של ההודעה לפני פרסומה',
+	'forum_votre_email' => 'כתובת הדוא"ל שלך:',
+	'forum_votre_nom' => ':(השם שלך (או הכינוי',
 	'forum_vous_enregistrer' => 'כדי להשתתף
   לפורום זה, ההרשמה מחויבת
   נא להכנסי את הפרטים האישים
@@ -63,6 +70,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'כתוב הודעה',
 	'icone_suivi_forum' => 'מעקב אחר הפורום הכללי: @nb_forums@ תרומה/תרומות',
+	'icone_suivi_forums' => 'מעקב/ניהול פורומים',
 	'icone_supprimer_message' => 'מחק הודעה זו',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'תן תוקף להודעה זו',
@@ -106,6 +114,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'Désactiver le forum des administrateurs', # NEW
 	'item_non_config_forums_prive_global' => 'Désactiver le forum des rédacteurs', # NEW
 	'item_non_config_forums_prive_objets' => 'Désactiver ces forums', # NEW
+
+	// L
+	'lien_reponse_article' => 'Réponse à l\'article', # NEW
+	'lien_reponse_breve_2' => 'תגובה למבזק',
+	'lien_reponse_rubrique' => 'Réponse à la rubrique', # NEW
+	'lien_reponse_site_reference' => 'Réponse au site référencé :', # NEW
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

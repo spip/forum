@@ -18,6 +18,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_moderation_priori' => 'Önceden onayla yönetim (yazılan iletiler onaylandıktan sonra yayınlanıyor).',
 	'bouton_radio_modere_abonnement' => 'abonelik sistemiyle yönetim',
 	'bouton_radio_modere_posteriori' => 'sonradan onayla yönetim',
+	'bouton_radio_modere_priori' => 'önceden onayla yönetim',
 	'bouton_radio_publication_immediate' => 'İletilerin anında yayınlanması 
 (katılımlar gönderildiklerinde anında görüntülenir, yöneticiler onları 
 sonradan yok edebilir).',
@@ -29,6 +30,7 @@ sonradan yok edebilir).',
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Bir ileti, bir yorum ?',
 	'forum' => 'Forum',
 	'forum_acces_refuse' => 'Artık bu forumlara erişiminiz yok.',
 	'forum_attention_dix_caracteres' => '<b>Dikkat !</b> iletiniz on karakterden kısa.',
@@ -44,9 +46,14 @@ sonradan yok edebilir).',
 	'forum_ne_repondez_pas' => 'Bu e-postaya yanıt vermeyin, yanıt için forumu kullanın :', # MODIF
 	'forum_page_url' => '(Eğer mesajınız Web\'de yayınlanan bir makaleye, ya da daha fazla bilgi içeren bir sayfaya atıfta bulunuyorsa, lütfen buraya sayfanın başlığını ve URL adresini belirtiniz.)',
 	'forum_poste_par' => 'Makalenize @parauteur@ ileti gönderildi.',
+	'forum_qui_etes_vous' => '<b>Sizi tanıyalım ?</b> (seçimlik)',
 	'forum_texte' => 'İletinizin metni :',
 	'forum_titre' => 'Başlık :',
+	'forum_url' => 'URL :',
+	'forum_valider' => 'Bu seçimi onayla',
 	'forum_voir_avant' => 'Göndermeden önce iletiyi göster',
+	'forum_votre_email' => 'E-posta adresiniz :',
+	'forum_votre_nom' => 'İsminiz (veya takma isminiz) :',
 	'forum_vous_enregistrer' => 'Bu foruma katılmak için, 
 önce kaydolmanız gerekmektedir.
  Lütfen aşağıya size verilmiş olan tanımlayıcıyı giriniz.
@@ -59,6 +66,7 @@ sonradan yok edebilir).',
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Bir ileti yolla',
 	'icone_suivi_forum' => 'Kamu forumunun izlenmesi :@nb_forums@ katılım',
+	'icone_suivi_forums' => 'Forumları izle / Yönet',
 	'icone_supprimer_message' => 'Bu iletiyi sil',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'İletiyi onayla',
@@ -101,6 +109,12 @@ sonradan yok edebilir).',
 	'item_desactiver_forum_administrateur' => 'Yönetici forumunu iptal et.',
 	'item_non_config_forums_prive_global' => 'Yazarlar forumunu dezaktive et',
 	'item_non_config_forums_prive_objets' => 'Bu forumları dezaktive et',
+
+	// L
+	'lien_reponse_article' => 'Bu makaleye yanıt ',
+	'lien_reponse_breve_2' => 'Bu kısa habere yanıt',
+	'lien_reponse_rubrique' => 'Bu bölüme yanıt ',
+	'lien_reponse_site_reference' => 'Atıfta bulunan siteye yanıt : ',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

@@ -18,6 +18,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_moderation_priori' => 'Phải được chấp thuận trước (thư tín chỉ được đăng sau khi được quản trị viên chấp thuận).',
 	'bouton_radio_modere_abonnement' => 'ghi danh mới được đăng',
 	'bouton_radio_modere_posteriori' => 'đăng trước, xét sau',
+	'bouton_radio_modere_priori' => 'xét trước, đăng sau',
 	'bouton_radio_publication_immediate' => 'Phát hành thư tín ngay lập tức (thư gửi đi sẽ hiện lên ngay, quản trị viên có thể xóa chúng sau đó).',
 
 	// D
@@ -27,6 +28,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Có nhắn tin hay bình luận gì không?',
 	'forum' => 'Diễn đàn',
 	'forum_acces_refuse' => 'Bạn không có quyền vào các diễn đàn này nữa.',
 	'forum_attention_dix_caracteres' => '<b>Cảnh báo!</b> Thư tín quá ngắn - Phải hơn 10 mẫu tự.',
@@ -42,9 +44,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'Đừng hồi âm email này, hồi âm trong diễn đàn ở địa chỉ sau đây:', # MODIF
 	'forum_page_url' => '(Nếu thư tín của bạn có đề cập đến một bài khác trên web, xin điền vào tựa đề và địa chỉ URL của nó dưới đây).',
 	'forum_poste_par' => 'Có thư tín @parauteur@ đi sau bài của bạn.', # MODIF
+	'forum_qui_etes_vous' => '<b>Chi tiết về bạn</b> (không bắt buộc)',
 	'forum_texte' => 'Thân bài của thư tín:',
 	'forum_titre' => 'Tựa đề:',
+	'forum_url' => 'URL:',
+	'forum_valider' => 'Xác nhận lựa chọn này',
 	'forum_voir_avant' => 'Xem lại thư tín trước khi đăng',
+	'forum_votre_email' => 'Địa chỉ email của bạn:',
+	'forum_votre_nom' => 'Tên (hay bí danh):',
 	'forum_vous_enregistrer' => 'Trước khi tham gia vào diễn đàn này, bạn phải ghi danh. Nếu chưa ghi danh, bạn phải',
 	'forum_vous_inscrire' => 'ghi danh.',
 
@@ -54,6 +61,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Gửi một thư tín ',
 	'icone_suivi_forum' => 'Theo dõi diễn đàn : @nb_forums@ dóng góp',
+	'icone_suivi_forums' => 'Quản trị diễn đàn',
 	'icone_supprimer_message' => 'Xoá thư tín này',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Chấp thuận',
@@ -92,6 +100,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'Khóa diễn đàn quản trị viên',
 	'item_non_config_forums_prive_global' => 'Désactiver le forum des rédacteurs', # NEW
 	'item_non_config_forums_prive_objets' => 'Désactiver ces forums', # NEW
+
+	// L
+	'lien_reponse_article' => 'Hồi âm bài này',
+	'lien_reponse_breve_2' => 'Hồi âm tin ngắn',
+	'lien_reponse_rubrique' => 'Hồi âm đề mục này',
+	'lien_reponse_site_reference' => 'Hồi âm website nối kết:',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

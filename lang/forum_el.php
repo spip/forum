@@ -20,6 +20,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  administrators).', # NEW
 	'bouton_radio_modere_abonnement' => 'απαιτείται εγγραφή',
 	'bouton_radio_modere_posteriori' => 'post-moderation', # NEW
+	'bouton_radio_modere_priori' => 'pre-moderation', # NEW
 	'bouton_radio_publication_immediate' => 'Αμεση δημοσίευση των μηνυμάτων (οι συνεισφορές θα παρουσιαστούν μόλις στέλνονται, οι διαχειριστές του ιστοχώρου μπορούν έπειτα να τις διαγράψουν).',
 
 	// D
@@ -29,6 +30,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Μήνυμα, σχόλιο ;',
 	'forum' => 'Φόρουμ',
 	'forum_acces_refuse' => 'Δεν έχετε πια πρόσβαση σε αυτά τα forum.',
 	'forum_attention_dix_caracteres' => '<b>Προσοχή !</b> το μήνυμά σας πρέπει να περιέχει τουλάχιστον δέκα χαρακτήρες.',
@@ -44,9 +46,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'Μην απαντήσετε σε αυτό το mail αλλά στο φόρουμ στην παρακάτω διεύθυνση :', # MODIF
 	'forum_page_url' => '(Αν το μήνυμά σας αναφέρεται σε άρθρο που βρίσκεται στο Web, ή σε μία σελίδα που δίνει περισσότερες πληροφορίες, μπορείτε να εισάγετε τον τίτλο και τη διεύθυνση.)',
 	'forum_poste_par' => 'Μήνυμα του/της@parauteur@ στο τέλος του άρθρου « @titre@ ».',
+	'forum_qui_etes_vous' => '<b>Ποιός είστε ?</b> (προαιρετικό)',
 	'forum_texte' => 'Κείμενο του μηνύματός σας :',
 	'forum_titre' => 'Τίτλος :',
+	'forum_url' => 'URL :',
+	'forum_valider' => 'Επικυρώστε την επιλογή σας',
 	'forum_voir_avant' => 'Δείτε το μήνυμα πριν την αποστολή του',
+	'forum_votre_email' => 'Διεύθνση ηλεκτρονικού ταχυδρομείου :',
+	'forum_votre_nom' => 'Ονομα (ή ψευδόνυμο) :',
 	'forum_vous_enregistrer' => 'Για να συμμετέχετε σε
   αυτό το φόρουμ πρέπει να είστε εγγεγραμμένος χρήστης. Δώστε
   το προσωπικό σας κωδικό
@@ -59,6 +66,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Αποστολή μηνύματος',
 	'icone_suivi_forum' => 'Συνέχιση του δημόσιου φόρουμ: @nb_forums@ συνεισφορες',
+	'icone_suivi_forums' => 'Παρακολούθηση/διαχείρηση φόρουμ',
 	'icone_supprimer_message' => 'Κατάργηση αυτού του μηνύματος',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Επικύρωση μηνύματος',
@@ -101,6 +109,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'Disable administrators forum', # NEW
 	'item_non_config_forums_prive_global' => 'Deactivate the authors\' forum', # NEW
 	'item_non_config_forums_prive_objets' => 'Deactivate these forums', # NEW
+
+	// L
+	'lien_reponse_article' => 'Reply to the article', # NEW
+	'lien_reponse_breve_2' => 'Reply to the news item', # NEW
+	'lien_reponse_rubrique' => 'Reply to the section', # NEW
+	'lien_reponse_site_reference' => 'Reply to the referenced site:', # NEW
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

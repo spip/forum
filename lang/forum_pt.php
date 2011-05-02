@@ -22,6 +22,7 @@ utilizadores devem ter uma assinatura ao fornecer o seu endereço e-mail antes d
  administradores). ',
 	'bouton_radio_modere_abonnement' => 'moderado com assinatura',
 	'bouton_radio_modere_posteriori' => 'moderado a posteriori',
+	'bouton_radio_modere_priori' => 'moderado a priori',
 	'bouton_radio_publication_immediate' => 'Publicação imediata das mensagens
  (as contribuições afixam-se logo que são enviadas, os administradores podem suprimi-las depois).',
 
@@ -32,6 +33,7 @@ utilizadores devem ter uma assinatura ao fornecer o seu endereço e-mail antes d
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Uma mensagem, um comentário ?',
 	'forum' => 'Fórum',
 	'forum_acces_refuse' => 'Já não tem acesso a esses fóruns.',
 	'forum_attention_dix_caracteres' => '<b>Atenção !</b> a sua mensagem contém menos de dez carácteres.',
@@ -47,9 +49,14 @@ utilizadores devem ter uma assinatura ao fornecer o seu endereço e-mail antes d
 	'forum_ne_repondez_pas' => 'Não responder para este mail mas no fórum, para o endereço seguinte:', # MODIF
 	'forum_page_url' => '(Se a sua mensagem se refere a um artigo publicado na Web, ou a uma página que fornece mais informações, por favor indique a seguir o título da página e o seu endereço URL.)',
 	'forum_poste_par' => 'Mensagem posta@parauteur@ depois do seu artigo', # MODIF
+	'forum_qui_etes_vous' => '<b>Quem é você?</b> (opcional)',
 	'forum_texte' => 'Texto da sua mensagem:',
 	'forum_titre' => 'Título:',
+	'forum_url' => 'URL:',
+	'forum_valider' => 'Validar a sua escolha',
 	'forum_voir_avant' => 'Ver esta mensagem antes de mandar',
+	'forum_votre_email' => 'O seu endereço email:',
+	'forum_votre_nom' => 'O seu nome (pseudónimo):',
 	'forum_vous_enregistrer' => 'Para participar
  nesse fórum, deve estar previamente registado. É favor
   indicar a seguir o identificador pessoal que lhe foi
@@ -62,6 +69,7 @@ utilizadores devem ter uma assinatura ao fornecer o seu endereço e-mail antes d
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Enviar uma mensagem ',
 	'icone_suivi_forum' => 'Seguimento do fórum público : @nb_forums@ contribuição(ões)',
+	'icone_suivi_forums' => 'Seguir/gerir os fóruns',
 	'icone_supprimer_message' => 'Suprimir esta mensagem',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Validar esta mensagem',
@@ -105,6 +113,12 @@ utilizadores devem ter uma assinatura ao fornecer o seu endereço e-mail antes d
 	'item_desactiver_forum_administrateur' => 'Desactivar o fórum dos administradores',
 	'item_non_config_forums_prive_global' => 'Désactiver le forum des rédacteurs', # NEW
 	'item_non_config_forums_prive_objets' => 'Désactiver ces forums', # NEW
+
+	// L
+	'lien_reponse_article' => 'Resposta ao artigo',
+	'lien_reponse_breve_2' => 'Resposta à notícia',
+	'lien_reponse_rubrique' => 'Resposta à rubrica ',
+	'lien_reponse_site_reference' => 'Resposta ao sítio referenciado',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

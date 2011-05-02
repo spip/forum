@@ -22,6 +22,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  los alministradores).',
 	'bouton_radio_modere_abonnement' => 'pa abonáos',
 	'bouton_radio_modere_posteriori' => 'moderación a posteriori',
+	'bouton_radio_modere_priori' => 'moderación a priori',
 	'bouton_radio_publication_immediate' => 'Espublizar d\'inmediatu los mensaxes
  (les contribuciones s\'amuesen desque s\'unvíen, los alministradores pueden
  desaniciales llueu).',
@@ -33,6 +34,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => '¿Un mensaxe, un comentariu?',
 	'forum' => 'Foru',
 	'forum_acces_refuse' => 'Ya nun ties accesu a estos foros.',
 	'forum_attention_dix_caracteres' => '<b>¡Atención!</b> el mensaxe tien que tener polo menos diez carauteres.',
@@ -48,9 +50,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'Nun responder a esti corréu sinón nel foru, nes señes darréu:',
 	'forum_page_url' => '(Si el to mensaxe refierse a un artículu espublizáu na Rede, o a una páxina que tenga más información, equí embaxo vas poder indicar el títulu de la páxina y les sos señes.)',
 	'forum_poste_par' => 'Mensaxe unviáu @parauteur@ tocante a l\'artículu «@titre@».',
+	'forum_qui_etes_vous' => '<b>¿Quién yes?</b> (opcional)',
 	'forum_texte' => 'Testu del to mensaxe:',
 	'forum_titre' => 'Títulu:',
+	'forum_url' => 'URL:',
+	'forum_valider' => 'Validar la escoyeta',
 	'forum_voir_avant' => 'Ver el mensaxe enantes de publicalu',
+	'forum_votre_email' => 'Les tos señes d\'email:',
+	'forum_votre_nom' => 'El to nome (o nomatu):',
 	'forum_vous_enregistrer' => 'Pa poder participar nesti
   foru, primero hai que rexistrase.
   Escribe embaxo l\'identificador personal que
@@ -63,6 +70,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Unviar un mensaxe',
 	'icone_suivi_forum' => 'Siguimientu del foru públicu: @nb_forums@ contribución(es)',
+	'icone_suivi_forums' => 'Siguir/xestionar los foros',
 	'icone_supprimer_message' => 'Desaniciar esti mensaxe',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Validar esti mensaxe',
@@ -104,6 +112,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'Desactivar el foru de los alministradores',
 	'item_non_config_forums_prive_global' => 'Desactivar el foru de los redactores',
 	'item_non_config_forums_prive_objets' => 'Desactivar estos foros',
+
+	// L
+	'lien_reponse_article' => 'Respuesta a l\'artículu',
+	'lien_reponse_breve_2' => 'Respuesta a la breve',
+	'lien_reponse_rubrique' => 'Respuesta a la estaya',
+	'lien_reponse_site_reference' => 'Respuesta al sitiu referenciáu:',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

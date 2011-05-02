@@ -22,6 +22,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  администраторами).',
 	'bouton_radio_modere_abonnement' => 'запрос на регистрацию',
 	'bouton_radio_modere_posteriori' => 'пост-модерация',
+	'bouton_radio_modere_priori' => 'пре-модерация',
 	'bouton_radio_publication_immediate' => 'Немедленная публикация сообщений 
 (статьи будут показываться, как только они будут отправлены. Администраторы могут 
  потом удалить их).',
@@ -33,6 +34,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Любое сообщение или комментарий?',
 	'forum' => 'Форум',
 	'forum_acces_refuse' => 'Вы больше не имеете доступа к этим форумам.',
 	'forum_attention_dix_caracteres' => '<b>Внимание!</b> Сообщение должно быть не менее десяти символов.',
@@ -48,9 +50,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'Не отвечайте на эту почту  на форуме в следующих адресеах:',
 	'forum_page_url' => '(Если ваше сообщение обращено к статьям изданным в сети или к странице, обеспечивающей дальнейшую информацию, пожалуйста введите заголовок страницы и ее URL ниже).',
 	'forum_poste_par' => '@parauteur@ прокомментировал вашу статью.',
+	'forum_qui_etes_vous' => '<b>Кто вы?</b> (необязательно)',
 	'forum_texte' => 'Текст сообщения:',
 	'forum_titre' => 'Тема:',
+	'forum_url' => 'URL:',
+	'forum_valider' => 'Подтвердите выбор',
 	'forum_voir_avant' => 'Предварительный просмотр сообщения перед отправлением',
+	'forum_votre_email' => 'Ваш e-mail адрес:',
+	'forum_votre_nom' => 'Ваше имя (или псевдоним):',
 	'forum_vous_enregistrer' => 'Для участия в
   этом форуме, вы должны зарегистрироваться. Введите персоналый  идентификатор,
   высланный вам.',
@@ -62,6 +69,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Разместить сообщение',
 	'icone_suivi_forum' => 'Продолжение общественного форума: @nb_forums@ статья (статьи)',
+	'icone_suivi_forums' => 'Управление форумами',
 	'icone_supprimer_message' => 'Удалить это сообщение',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Подтвердить сообщение',
@@ -104,6 +112,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'Отключить форум администраторов',
 	'item_non_config_forums_prive_global' => 'Отключить форум авторов',
 	'item_non_config_forums_prive_objets' => 'отключить эти форумы',
+
+	// L
+	'lien_reponse_article' => 'Ответить на статью',
+	'lien_reponse_breve_2' => 'Ответить на новость',
+	'lien_reponse_rubrique' => 'Ответить на раздел',
+	'lien_reponse_site_reference' => 'Ответить на ссылающийся сайт:',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

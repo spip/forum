@@ -18,6 +18,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_moderation_priori' => 'Aurretiaz moderatua (ekarpenak agerian egongodira lekuaren administrazio-eskubideak dituen pertsona batek onartu eta gero).',
 	'bouton_radio_modere_abonnement' => 'Moderatua (harpidedunentzat soilik)',
 	'bouton_radio_modere_posteriori' => 'gerora moderatua',
+	'bouton_radio_modere_priori' => 'aurretiaz moderatua',
 	'bouton_radio_publication_immediate' => 'Mezuen bat-batekoargitaratzea (erakarpenak agerian egongo dira igorri bezain laister, gero administraziotikkendu daitezke).',
 
 	// D
@@ -27,6 +28,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Mezurik, azalpenik ?',
 	'forum' => 'Foroa',
 	'forum_acces_refuse' => 'Dagoeneko ezin zara foro hauetan sartu.',
 	'forum_attention_dix_caracteres' => '<b>Adi!</b> zure mezuak hamar karaktere baino gutxiago ditu',
@@ -43,9 +45,14 @@ Zure ekarpena gunearen administratzaileak onartu ondoren soilik agerian izango d
 	'forum_ne_repondez_pas' => 'Ez erantzun mezu elektroniko honi, baizik eta hurrengo helbidean dagoen foroan:',
 	'forum_page_url' => '(Zure mezua interneten argitaratutako artikulu bati buruzkoa baldin bada, edo informazio gehiago duen orrialde bati buruzkoa, adieraz itzazu jarraian orrialdearen izena bai eta URL helbidea ere).',
 	'forum_poste_par' => '« @titre@ » artikuluaren ondotik  @parauteur@-k bidalitako mezua.',
+	'forum_qui_etes_vous' => '<b>Nor zara zu?</b> (aukeratzekoa)',
 	'forum_texte' => 'Zure mezuaren testua:',
 	'forum_titre' => 'Izenburua :',
+	'forum_url' => 'URL :',
+	'forum_valider' => 'Aukera hori onartu',
 	'forum_voir_avant' => 'Igorri aurretik mezu hau ikusi',
+	'forum_votre_email' => 'Zure posta-elektronikoaren helbidea :',
+	'forum_votre_nom' => 'Zure izena (edo goitizena) :',
 	'forum_vous_enregistrer' => 'Aurretik inskribatzea beharrezkoa da foro honetan parte hartzeko.
 Hornitua izan zaizun identifikadore pertsonala jarraian adieraztea eskertuko dizugu.
 Inskribaturik ez bazaude, aurretik inskribatu behar duzu.',
@@ -57,6 +64,7 @@ Inskribaturik ez bazaude, aurretik inskribatu behar duzu.',
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Mezu bat igorri',
 	'icone_suivi_forum' => 'Foro publikoaren gaurkotasuna: @nb_forums@ekarpena(k)',
+	'icone_suivi_forums' => 'Foroen gestioa',
 	'icone_supprimer_message' => 'Mezu hau kendu',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Mezu hau onartu',
@@ -95,6 +103,12 @@ Inskribaturik ez bazaude, aurretik inskribatu behar duzu.',
 	'item_desactiver_forum_administrateur' => 'Administrazio-foroa desaktibatu',
 	'item_non_config_forums_prive_global' => 'idazleen foroa desaktibatu',
 	'item_non_config_forums_prive_objets' => 'Foro hauek desaktibatu',
+
+	// L
+	'lien_reponse_article' => 'Artikuluari erantzuna',
+	'lien_reponse_breve_2' => 'Atalari erantzuna',
+	'lien_reponse_rubrique' => 'Atalari erantzuna',
+	'lien_reponse_site_reference' => 'Aipatutako lekuari erantzuna',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

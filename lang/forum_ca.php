@@ -23,6 +23,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  lloc).',
 	'bouton_radio_modere_abonnement' => 'per subscripció',
 	'bouton_radio_modere_posteriori' => 'moderació a posteriori',
+	'bouton_radio_modere_priori' => 'moderació a priori',
 	'bouton_radio_publication_immediate' => 'Publicació immediata dels missatges (es poden suprimir posteriorment des de l\'administració). ',
 
 	// D
@@ -32,6 +33,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Un missatge, un comentari?',
 	'forum' => 'Fòrum',
 	'forum_acces_refuse' => 'Ja no teniu accés a aquests fòrums.',
 	'forum_attention_dix_caracteres' => '<b>Atenció!</b> el vostre missatge ha de tenir almenys deu caràcters.',
@@ -47,9 +49,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'No respongueu a aquest correu electrònic, feu-ho al fòrum a la següent adreça: ',
 	'forum_page_url' => '(Si el vostre missatge fa referència a un article publicat a la Web, o a una pàgina que conté més informacions, podeu indicar a continuació el títol de la pàgina i la seva adreça URL.)',
 	'forum_poste_par' => 'Missatge enviat@parauteur@ a continuació de l\'article « @titre@ ».',
+	'forum_qui_etes_vous' => '<b>Qui sóu?</b> (opcional)',
 	'forum_texte' => 'Text del missatge:',
 	'forum_titre' => 'Titol:',
+	'forum_url' => 'URL:',
+	'forum_valider' => 'Validar l\'elecció',
 	'forum_voir_avant' => 'Veure el missatge abans d\'enviar-lo',
+	'forum_votre_email' => 'La seva adreça electrònica:',
+	'forum_votre_nom' => 'El vostre nom (o pseudònim):',
 	'forum_vous_enregistrer' => 'Per participar al fòrum, us heu de registrar prèviament.
 Si ja n\'esteu, escriviu a continuació l\'identifcador que us ha estat proporcionat. Si encara no ho heu fet, heu d\'',
 	'forum_vous_inscrire' => 'inscriure\'s.',
@@ -60,6 +67,7 @@ Si ja n\'esteu, escriviu a continuació l\'identifcador que us ha estat proporci
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Enviar un missatge',
 	'icone_suivi_forum' => 'Seguiment del fòrum públic: @nb_forums@ contribution(s)',
+	'icone_suivi_forums' => 'Seguir/gestionar els fòrums',
 	'icone_supprimer_message' => 'Suprimir aquest missatge',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Validar aquest missatge',
@@ -101,6 +109,12 @@ Si ja n\'esteu, escriviu a continuació l\'identifcador que us ha estat proporci
 	'item_desactiver_forum_administrateur' => 'Desactivar el fòrum dels administradors',
 	'item_non_config_forums_prive_global' => 'Desactivar el fòrum dels redactors',
 	'item_non_config_forums_prive_objets' => 'Desactivar aquests fòrums',
+
+	// L
+	'lien_reponse_article' => 'Resposta a l\'article',
+	'lien_reponse_breve_2' => 'Resposta a la breu',
+	'lien_reponse_rubrique' => 'Resposta a la secció',
+	'lien_reponse_site_reference' => 'Resposta al lloc referenciat:',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

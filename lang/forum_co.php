@@ -19,6 +19,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_moderation_priori' => 'Muderazione in antìcipu (i cuntributi ùn sò pubblicati chè dopu accunsentu da l\'amministratori).',
 	'bouton_radio_modere_abonnement' => 'Solu cù abbunamentu',
 	'bouton_radio_modere_posteriori' => 'Muderazione dopu',
+	'bouton_radio_modere_priori' => 'muderazione in antìcipu',
 	'bouton_radio_publication_immediate' => 'Pubblicazione à l\'istante di i messagi
 (e cuntribuzioni sò pubblicate subbitu dopu mandate, l\'amministradori i ponu sguassà dopu).',
 
@@ -29,6 +30,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Qualchì messagiu o cummentu ?',
 	'forum' => 'Foru',
 	'forum_acces_refuse' => 'Ùn avete più accessu à sti fori.',
 	'forum_attention_dix_caracteres' => '<b>Attenti !</b> U vostru messagiu deve cuntene à u mìnimu dece caràtteri.',
@@ -46,9 +48,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_page_url' => '(Sì u vostru messagiu siriferisce à un artìculu pubblicatu nant\'à u web, o à una pàgina 
 	chì furnisce di più infurmazioni, pudete puru rinsignà custì u tìtulu di a pàgina cù u so indirizzu.)',
 	'forum_poste_par' => 'Messagiu postu@parauteur@ in coda di l\'artìculu « @titre@ ».',
+	'forum_qui_etes_vous' => '<b>Quale site ?</b> (micca ubbligatoriu)',
 	'forum_texte' => 'Testu di u vostru messagiu :',
 	'forum_titre' => 'Tìtulu :',
+	'forum_url' => 'URL :',
+	'forum_valider' => 'Cunvalidà sta scelta',
 	'forum_voir_avant' => 'Vede u messagiu prima di pustà lu',
+	'forum_votre_email' => 'U vostru indirizzu email :',
+	'forum_votre_nom' => 'U vostru nome (o pseudo) :',
 	'forum_vous_enregistrer' => 'Per participà à stu foru, duvite esse digià arregistratu. 
 		Rinsignate puru quì sottu u còdice persunale chì v\'hè statu furnitu.
 		Sè vo ùn site ancu à arregistrà, vi tocca à',
@@ -60,6 +67,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Mandà un messagiu',
 	'icone_suivi_forum' => 'Guardia di u foru pùbblicu : @nb_forums@ cuntributi',
+	'icone_suivi_forums' => 'Seguità/gestisce i fori',
 	'icone_supprimer_message' => 'Sguassà stu messagiu',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Cunvalidà stu messagiu',
@@ -107,6 +115,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'Disattivà u foru di l\'amministratori',
 	'item_non_config_forums_prive_global' => 'Disattivà i fori di i scrittori',
 	'item_non_config_forums_prive_objets' => 'Disattivà sti fori',
+
+	// L
+	'lien_reponse_article' => 'Risposta à l\'artìculu',
+	'lien_reponse_breve_2' => 'Risposta i dispacci',
+	'lien_reponse_rubrique' => 'Risposta à a rùbbrica',
+	'lien_reponse_site_reference' => 'Risposta à u situ riferitu :',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

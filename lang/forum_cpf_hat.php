@@ -22,6 +22,7 @@ patisipasyon yo zitilizatè tout ke pa afiche sou sitwèb piblik si yon komandé
 ).',
 	'bouton_radio_modere_abonnement' => 'Fòk yon abònman',
 	'bouton_radio_modere_posteriori' => 'Modewe dèyè',
+	'bouton_radio_modere_priori' => 'modewe avan',
 	'bouton_radio_publication_immediate' => 'Piblikasyon imedyat pout tout mesaj
  (patisipasyon ke afiche dirèkman yo te voye, komandè rès kapab kraze y aprè
 ).',
@@ -33,6 +34,7 @@ patisipasyon yo zitilizatè tout ke pa afiche sou sitwèb piblik si yon komandé
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Gen yon mesaj, yon komanté pou di ?',
 	'forum' => 'Fowom',
 	'forum_acces_refuse' => 'W ap pli laksé pou fowom-nan.',
 	'forum_attention_dix_caracteres' => '<b>Atansyon !</b> mesaj ou li se mwen di lèt.',
@@ -48,9 +50,14 @@ patisipasyon yo zitilizatè tout ke pa afiche sou sitwèb piblik si yon komandé
 	'forum_ne_repondez_pas' => 'Reponn pa limèl la. Reponn anndan fowom-an sou ladrès la :', # MODIF
 	'forum_page_url' => '(Si mesaj ou ka voye sou yon tik sou Wèb déò ou yon lòt paj pli konplé, mèsi mèt anba kouman paj la  ka rele èk ladrès URL.)',
 	'forum_poste_par' => 'Mesaj te poste @parauteur@ anba atik ou-a.', # MODIF
+	'forum_qui_etes_vous' => '<b>Kouman w rele ?</b> (pa oblijé)',
 	'forum_texte' => 'Teks mesaj ou :',
 	'forum_titre' => 'Kouman i rele mesaj ou :',
+	'forum_url' => 'URL :',
+	'forum_valider' => 'Apiyé chwa-a',
 	'forum_voir_avant' => 'Gad mesaj la avan post ali',
+	'forum_votre_email' => 'Ladrès limèl ou :',
+	'forum_votre_nom' => 'Kouman w rele (ousinon kouman w vlé rele isit) :',
 	'forum_vous_enregistrer' => 'Pou soutni andan
  fowom-nan, fòk w enskri avan. Mési
  mèt enba lidantifyan pèsonèl ou-a 
@@ -63,6 +70,7 @@ patisipasyon yo zitilizatè tout ke pa afiche sou sitwèb piblik si yon komandé
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Poste yon mesaj',
 	'icone_suivi_forum' => 'Swiv fowom piblik la : @nb_forums@ mesaj',
+	'icone_suivi_forums' => 'Swiv/okipe tout fowom ',
 	'icone_supprimer_message' => 'Kraze mesaj la',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Konfime mesaj la',
@@ -105,6 +113,12 @@ ak yon limèl. W vle itilize opsyon nan ?', # MODIF
 	'item_desactiver_forum_administrateur' => 'Rete fowom pou komandé yo',
 	'item_non_config_forums_prive_global' => 'Désactiver le forum des rédacteurs', # NEW
 	'item_non_config_forums_prive_objets' => 'Désactiver ces forums', # NEW
+
+	// L
+	'lien_reponse_article' => 'Réponn atik-la',
+	'lien_reponse_breve_2' => 'Réponn tinouvèl-la',
+	'lien_reponse_rubrique' => 'Réponn ribrik-la',
+	'lien_reponse_site_reference' => 'Reponn sit referanse-a :',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

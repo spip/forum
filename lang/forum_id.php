@@ -22,6 +22,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  oleh administrator).',
 	'bouton_radio_modere_abonnement' => 'registrasi diperlukan',
 	'bouton_radio_modere_posteriori' => 'moderasi akhir',
+	'bouton_radio_modere_priori' => 'moderasi awal',
 	'bouton_radio_publication_immediate' => 'Publikasi pesan segera
  (kontribusi akan ditampilkan sesegera mungkin setelah dikirimkan, kemudian
  administrator dapat menghapusnya).',
@@ -33,6 +34,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Ada pesan atau komentar?',
 	'forum' => 'Forum',
 	'forum_acces_refuse' => 'Anda tidak memiliki akses ke forum ini lagi.',
 	'forum_attention_dix_caracteres' => '<b>Peringatan!</b> Pesan anda hendaknya terdiri dari sepuluh karakter atau lebih.',
@@ -48,9 +50,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'Jangan balas ke e-mail ini tapi ke forum yang terdapat di alamat berikut:', # MODIF
 	'forum_page_url' => '(Jika pesan anda merujuk pada sebuah artikel yang dipublikasi di web atau halaman yang memberikan informasi lebih lanjut, silakan masukkan judul halaman dan URL-nya di bawah).',
 	'forum_poste_par' => 'Pesan dikirim@parauteur@ mengikuti artikel anda.',
+	'forum_qui_etes_vous' => '<b>Siapa anda?</b> (opsional)',
 	'forum_texte' => 'Teks pesan anda:',
 	'forum_titre' => 'Subyek:',
+	'forum_url' => 'URL:',
+	'forum_valider' => 'Validasi pilihan ini',
 	'forum_voir_avant' => 'Lihat pesan sebelum dikirim',
+	'forum_votre_email' => 'Alamat e-mail anda:',
+	'forum_votre_nom' => 'Nama anda (atau alias):',
 	'forum_vous_enregistrer' => 'Sebelum berpartisipasi di
 		forum ini, anda harus mendaftarkan diri. Terima kasih
 		telah memasukkan pengidentifikasi pribadi yang
@@ -63,6 +70,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Kirim sebuah pesan',
 	'icone_suivi_forum' => 'Tindak lanjut dari forum umum: @nb_forums@ kontribusi',
+	'icone_suivi_forums' => 'Kelola forum',
 	'icone_supprimer_message' => 'Hapus pesan ini',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Validasi pesan ini',
@@ -105,6 +113,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'Non aktifkan forum administrator',
 	'item_non_config_forums_prive_global' => 'Désactiver le forum des rédacteurs', # NEW
 	'item_non_config_forums_prive_objets' => 'Désactiver ces forums', # NEW
+
+	// L
+	'lien_reponse_article' => 'Balasan pada artikel',
+	'lien_reponse_breve_2' => 'Balasan pada artikel berita',
+	'lien_reponse_rubrique' => 'Balasan pada bagian',
+	'lien_reponse_site_reference' => 'Balasan pada situs-situs referensi:',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

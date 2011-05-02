@@ -20,6 +20,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	administrateurs).', # NEW
 	'bouton_radio_modere_abonnement' => 'qillqatanakatakiki',
 	'bouton_radio_modere_posteriori' => 'qhipurunx k\'achata',
+	'bouton_radio_modere_priori' => 'nayraqatax k\'achata',
 	'bouton_radio_publication_immediate' => 'Yatiyawinakat jank\'aki yatiyaña (apayasinxa yanapawinakaxa uñstapxiwa, apnaqawirit ukata qhipurunxa apaqataspawa)',
 
 	// D
@@ -29,6 +30,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => '¿Mä yatiyawi, mä amuyu?',
 	'forum' => 'Aruskipaña',
 	'forum_acces_refuse' => 'Aka aruskipañaru janiw mantawimax utjiti.',
 	'forum_attention_dix_caracteres' => '&lt;b&gt;¡Amuyam!&lt;/b&gt;  tunka qillqaniñapakikiw yatiyawimanx utjañapawa.',
@@ -44,9 +46,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'Aka aruskipayirirux jan jaysamti, jan ukjax aruskipañar jaysam aka utjawiru:', # MODIF
 	'forum_page_url' => '(Sitix yatiyawimax mä qillqat yatiyatar aytata internetan, jan ukjax kawkintix mä laphi uñnaqan kunantix juk\'amp yatiyawinak utjkisa, ukjarux laphi uñnaqan sutinchap ukhamarak URL utjawip uñachayam)',
 	'forum_poste_par' => 'Yatiyaw apayata @parauteur@ qillqatar jaysayañjama @titre@',
+	'forum_qui_etes_vous' => '&lt;b&gt;¿Khititasa?&lt;/b&gt;    (ajlliñatakiwa)',
 	'forum_texte' => 'Yatiyawiman sawu:',
 	'forum_titre' => 'Sutichata:',
+	'forum_url' => 'URL:',
+	'forum_valider' => 'Ajllita yaw saña',
 	'forum_voir_avant' => 'Janir apaykasin aka yatiyaw uñjaña',
+	'forum_votre_email' => 'Aruskipayiriman utjawipa:',
+	'forum_votre_nom' => 'Sutima (jan ukjax sutichawima):',
 	'forum_vous_enregistrer' => 'Aka aruskipañan arsuñatakix, naraqatax qillqayasisma. Ukjarux juman uñt\'irim churapksma uñachawimatxa yuspagara. Jan qillqataktax ukjax, ',
 	'forum_vous_inscrire' => 'qillqayasiñama.',
 
@@ -56,6 +63,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Mä yatiyawi apayaña',
 	'icone_suivi_forum' => 'Jichhaptat aruskiñat yatiyata: @nb_forums@yanapawinaka',
+	'icone_suivi_forums' => 'Aruskipañanak apnaqaña ukhamarak uñch\'ukiña',
 	'icone_supprimer_message' => 'Aka yatiyaw apaqaña',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Aka yatiyaw iyaw saña',
@@ -95,6 +103,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'Désactiver le forum des administrateurs', # NEW
 	'item_non_config_forums_prive_global' => 'Désactiver le forum des rédacteurs', # NEW
 	'item_non_config_forums_prive_objets' => 'Désactiver ces forums', # NEW
+
+	// L
+	'lien_reponse_article' => 'Réponse à l\'article', # NEW
+	'lien_reponse_breve_2' => 'Réponse à la brève', # NEW
+	'lien_reponse_rubrique' => 'Réponse à la rubrique', # NEW
+	'lien_reponse_site_reference' => 'Réponse au site référencé :', # NEW
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

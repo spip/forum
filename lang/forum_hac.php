@@ -22,6 +22,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	administrateurs).', # NEW
 	'bouton_radio_modere_abonnement' => 'sur abonnement', # NEW
 	'bouton_radio_modere_posteriori' => 'modération à posteriori', # NEW
+	'bouton_radio_modere_priori' => 'modération à priori', # NEW
 	'bouton_radio_publication_immediate' => 'Publication immédiate des messages
 	(les contributions s\'affichent dès leur envoi, les administrateurs peuvent
 	les supprimer ensuite).', # NEW
@@ -33,6 +34,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'يك پيام ، يك تفسير ؟',
 	'forum' => 'Forum', # NEW
 	'forum_acces_refuse' => '.شما ديگر اجازه استفاده از اين سخنگاه را نداريد',
 	'forum_attention_dix_caracteres' => '</b>! توجه<b>   پيامتان بايد بيش از ده حرف باشد.',
@@ -48,9 +50,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'به اين ايميل پاسخ ندهيد،  پاسختان را در سخنگاه به آدرس زير بفرستيد',
 	'forum_page_url' => 'اگر پيامتان راجع به يك مقاله چاپ شده يا به يك صفحه اى كه داراى اطلاعات سودمندى است مربوط ميشود، خواهشمند است عنوان صفحه وآدرس آنرا در زير مشخص كنيد ',
 	'forum_poste_par' => 'پيام @parauteur@ بدنبال مقاله « @titre@ »  فرستاده شده. ',
+	'forum_qui_etes_vous' => '(اختيارى) <b> كى هستيد؟ </b>                                      ',
 	'forum_texte' => ':متن پيامتان',
 	'forum_titre' => ':عنوان',
+	'forum_url' => 'URL :',
+	'forum_valider' => 'اين انتخاب را معتبر كنيد',
 	'forum_voir_avant' => 'اين پيام را پيش از فرستادن آن بخوانيد',
+	'forum_votre_email' => ':آدرس ايميل تان',
+	'forum_votre_nom' => '(نام  يا (نام مستعارتان  ',
 	'forum_vous_enregistrer' => ' براى شركت در اين سخنگاه، شما بايد از پيش ثبت نام ميكرديد. خواهشمند است كلمه شناساييتان را كه دريافت كرده ايد در زير مشخص كنيد.اگر ثبت نشديد، بايد',
 	'forum_vous_inscrire' => 'ثبت نام كنيد.   ',
 
@@ -60,6 +67,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Poster un message', # NEW
 	'icone_suivi_forum' => 'Suivi du forum public : @nb_forums@ contribution(s)', # NEW
+	'icone_suivi_forums' => 'پيگيرى/اداره كردن سخنگاه',
 	'icone_supprimer_message' => 'اين پيام را حذف كنيد',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'اين پيام را معتبر كنيد',
@@ -101,6 +109,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'Désactiver le forum des administrateurs', # NEW
 	'item_non_config_forums_prive_global' => 'Désactiver le forum des rédacteurs', # NEW
 	'item_non_config_forums_prive_objets' => 'Désactiver ces forums', # NEW
+
+	// L
+	'lien_reponse_article' => 'Réponse à l\'article', # NEW
+	'lien_reponse_breve_2' => 'Réponse à la brève', # NEW
+	'lien_reponse_rubrique' => 'Réponse à la rubrique', # NEW
+	'lien_reponse_site_reference' => 'Réponse au site référencé :', # NEW
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

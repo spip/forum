@@ -18,6 +18,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_moderation_priori' => '\\f1 Pre-moderation\\f0  (prijedlozi se ne prikazuju na javnoj stranici prije ovjere od strane administratora).',
 	'bouton_radio_modere_abonnement' => 'registracija obavezna',
 	'bouton_radio_modere_posteriori' => '\\f1 post-moderation\\f0 ',
+	'bouton_radio_modere_priori' => '\\f1 pre-moderation\\f0 ',
 	'bouton_radio_publication_immediate' => 'Direktna publikacija poruka (prijedlozi se prikazuju nakon slanja, administratori ih  odmah mogu izbrisati).',
 
 	// D
@@ -27,6 +28,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Da li zelite napisati poruku ili komentar?',
 	'forum' => 'Forum',
 	'forum_acces_refuse' => 'Nemate vise pristup ovim forumima.',
 	'forum_attention_dix_caracteres' => '<b>Upozorenje!</b> Vasa poruka mora sadrzati najmanje deset karaktera.',
@@ -42,9 +44,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'Ne odgovarajte na ovu poruku osim u forumu na sljedecu adresu:', # MODIF
 	'forum_page_url' => '(Ako se vasa poruka odnosi na clanak objavljen na web-u, ili na stranicu koja pruza dodatne informacije, mozete na kraju naznaciti naziv i URL adresu stranice.)',
 	'forum_poste_par' => 'Poruku postavio/la@parauteur@; poruka slijedi nakon vaseg clanka.', # MODIF
+	'forum_qui_etes_vous' => '<b>Ko ste?</b> (optionnel)',
 	'forum_texte' => 'Tekst vase poruke:',
 	'forum_titre' => 'Tema:',
+	'forum_url' => 'URL:',
+	'forum_valider' => 'Ptvrdite ovaj izbor',
 	'forum_voir_avant' => 'Pogledaj poruku',
+	'forum_votre_email' => 'Vasa e-mail adresa:',
+	'forum_votre_nom' => 'Vase ime (ili pseudonim):',
 	'forum_vous_enregistrer' => 'Da bi ste ucestvovali u ovom forumu, morate se prijaviti. Naznacite ispod licni identifikator koji vam je dodjeljen. Ako niste vec registrovani, trebate',
 	'forum_vous_inscrire' => 'se upisati.',
 
@@ -54,6 +61,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Postavi poruku',
 	'icone_suivi_forum' => 'Posmatranje javnog foruma: @nb_forums@ contribution(s)',
+	'icone_suivi_forums' => 'Prati/uredi foruma',
 	'icone_supprimer_message' => 'Izbrisi ovu poruku',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Ovjeri ovu poruku',
@@ -92,6 +100,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'Dezaktiviraj forum za administratore',
 	'item_non_config_forums_prive_global' => 'Désactiver le forum des rédacteurs', # NEW
 	'item_non_config_forums_prive_objets' => 'Désactiver ces forums', # NEW
+
+	// L
+	'lien_reponse_article' => 'Odgovori na clanak',
+	'lien_reponse_breve_2' => 'Odgovori na kratku poruku',
+	'lien_reponse_rubrique' => 'Odgovori na rubriku',
+	'lien_reponse_site_reference' => 'Odgovori na referenciranu stranicu:',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

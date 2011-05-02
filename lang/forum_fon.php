@@ -18,6 +18,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_moderation_priori' => 'dɛdɛ vlɛ ( nu yé ma sɔ kɛn nu alɔdo mi tɔn a mi siwu ze yé xlɛ a )',
 	'bouton_radio_modere_abonnement' => 'mi dalɔ nyikɔzinzin wu ',
 	'bouton_radio_modere_posteriori' => 'mi dalɔ wu ',
+	'bouton_radio_modere_priori' => 'mi dalɔ wu ',
 	'bouton_radio_publication_immediate' => 'Mi na ɖé wɛn xlɛ azɔn ɖokpo, sisɛɖo kpoɖo ɖiɖèxlɛ alɔdo, gânl lɛ̂ hɛn ɔ yé siwu sunsun yé ',
 
 	// D
@@ -27,6 +28,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'wɛn, tɛ xójí?',
 	'forum' => 'Kplékplé ',
 	'forum_acces_refuse' => 'Mì sɔ síwú byɔ Kpékpé ɔ mɛ á.',
 	'forum_attention_dix_caracteres' => 'vlɛ ! wékwín é wlán wɛn mí tɔn é sù wó á.', # MODIF
@@ -42,9 +44,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'mì mà yígbè nú e-mailù é lɔ ó, àmɔ ɖò kplékplé ɔ mɛ ɔ mì kpɔn nɔtɛn é lɔ ', # MODIF
 	'forum_page_url' => '(nú é nyí  ɖɔ wɛn mì tɔn tɛɖó wékpá é xlɛ ɖò àtɛ ɔ jí ɔ, kàbí wěmá é nɔ xlɛ xó gege ɔ, mì sìwú ɖè xótá àló nɔtɛn wěkpá tɔn ɖò fí.)',
 	'forum_poste_par' => '@nyɔwlántɔ ɖókpóɖókpó sɛ wɛn ɖó@gbètákɛnxòkplé ɔ gbàfɔ, yè sìwú wlí wɛn mì tɔn hɛn á', # MODIF
+	'forum_qui_etes_vous' => 'mɛcé ká ɖyè',
 	'forum_texte' => 'xó é ɖò wɛn ɔ mɛ ɔ :',
 	'forum_titre' => 'xótá :',
+	'forum_url' => 'URLU:',
+	'forum_valider' => 'sɔ kɛŋ ná  nù è mì cyán é',
 	'forum_voir_avant' => 'mí kpɔn wɛn é lɔ có bó sɛɖó',
+	'forum_votre_email' => 'e-mailù mi tɔn  :',
+	'forum_votre_nom' => 'nyìkɔ mi tɔn :',
 	'forum_vous_enregistrer' => 'nú mi ná ɖó byɔ kplékplé é lɔ mɛ ɔ, mi ɖó ná ná nyìkɔ tɔn hwɛ. Mi zé sùnyíkɔ mi tɔn zé xlɛ. Nú mi mà kò nyìkɔ á, mi ɖó ná',
 	'forum_vous_inscrire' => 'mi ɖó ná ná nyìkɔ .',
 
@@ -54,6 +61,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'sɛ wɛn dó',
 	'icone_suivi_forum' => 'nɔkɔn xwíxwlété àgùn ɔ tɔn ',
+	'icone_suivi_forums' => 'cɔ/tìtò klpékplé ɔ tɔn ',
 	'icone_supprimer_message' => 'gbìɖí wɛn é lɔ',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'sɔ kɛn nú wɛn é lɔ',
@@ -92,6 +100,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'Tìtótɔ lɛ',
 	'item_non_config_forums_prive_global' => 'Désactiver le forum des rédacteurs', # NEW
 	'item_non_config_forums_prive_objets' => 'Désactiver ces forums', # NEW
+
+	// L
+	'lien_reponse_article' => 'yígbjè nú wékpá é lɔ',
+	'lien_reponse_breve_2' => 'yígbjè nú xó kléwún é lɔ',
+	'lien_reponse_rubrique' => 'yígbjè nú àkpáxwé  é lɔ',
+	'lien_reponse_site_reference' => 'yígbjè nú gblogblojí ɔ  é lɔ :',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

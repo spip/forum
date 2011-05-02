@@ -22,6 +22,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	4dm1n157r470r5).',
 	'bouton_radio_modere_abonnement' => 'm0d3r4710n by 5ub5cr1p710n',
 	'bouton_radio_modere_posteriori' => '4f73rw4rd5 m0d3r4710n',
+	'bouton_radio_modere_priori' => 'b3f0r3h4nd m0d3r4710n',
 	'bouton_radio_publication_immediate' => '1mm3d1473 pub11c4710n 0f m3554g35
 	(c0n7r1bu710n5 w111 b3 5h0wn 7h3 m0m3n7 7h3y 4r3 53n7, 4dm1n157r470r5 c4n
 	d31373 7h3m 7h3n).',
@@ -33,6 +34,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => '4ny m3554g3 0r c0mm3n7?',
 	'forum' => 'F0rum',
 	'forum_acces_refuse' => 'Y0u h4v3 n07 4cc355 70 7h353 f0rum5 4nym0r3.',
 	'forum_attention_dix_caracteres' => '<b>W4rn1ng!</b> y0ur m3554g3 15 1355 7h4n 73n ch4r4c73r5 1n 13ng7h.', # MODIF
@@ -48,9 +50,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'D0 n07 r3p1y 70 7h15 m411 bu7 1n 7h3 f0rum 47 7h3 f0110w1ng 4ddr355:', # MODIF
 	'forum_page_url' => '(1f y0ur m3554g3 r3f3r5 70 4n 4r71c13 pub115h3d 0n 7h3 w3b 0r 70 4 p4g3 pr0v1d1ng fur7h3r 1nf0rm4710n, p13453 3n73r 7h3 71713 0f 7h3 p4g3 4nd 175 UR1 b310w).',
 	'forum_poste_par' => 'M3554g3 p0573d@parauteur@ f0110w1ng y0ur 4r71c13.', # MODIF
+	'forum_qui_etes_vous' => '<b>Wh0 4r3 y0u?</b> (0p710n41)', # MODIF
 	'forum_texte' => '73x7 0f y0ur m3554g3:',
 	'forum_titre' => '5ubj3c7:',
+	'forum_url' => 'UR1:',
+	'forum_valider' => 'V411d473 7h15 ch01c3',
 	'forum_voir_avant' => 'Pr3v13w m3554g3 b3f0r3 p0571ng',
+	'forum_votre_email' => 'Y0ur 3-m411 4ddr355:',
+	'forum_votre_nom' => 'Y0ur n4m3 (0r 41145):',
 	'forum_vous_enregistrer' => 'Pr10r 70 p4r71c1p471ng 1n
 		7h15 f0rum, y0u mu57 r3g1573r. 7h4nk y0u
 		f0r 3n73r1ng 7h3 p3r50n41 1d3n71f13r
@@ -63,6 +70,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'P057 4 m3554g3',
 	'icone_suivi_forum' => 'F0110w-up 0f pub11c f0rum: @nb_forums@ c0n7r1bu710n(5)',
+	'icone_suivi_forums' => 'M4n4g3 f0rum5',
 	'icone_supprimer_message' => 'D31373 7h15 m3554g3',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'V411d473 7h15 m3554g3',
@@ -105,6 +113,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'D154b13 4dm1n157r470r5 f0rum',
 	'item_non_config_forums_prive_global' => 'Désactiver le forum des rédacteurs', # NEW
 	'item_non_config_forums_prive_objets' => 'Désactiver ces forums', # NEW
+
+	// L
+	'lien_reponse_article' => 'R3p1y 70 7h3 4r71c13',
+	'lien_reponse_breve_2' => 'R3p1y 70 7h3 n3w5 173m',
+	'lien_reponse_rubrique' => 'R3p1y 70 7h3 53c710n',
+	'lien_reponse_site_reference' => 'R3p1y 70 7h3 r3f3r3nc3d 5173:',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

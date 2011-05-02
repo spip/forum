@@ -20,6 +20,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  bijdragen worden pas gepubliceerd na goedkeuring door een van de beheerders).',
 	'bouton_radio_modere_abonnement' => 'op aanvraag',
 	'bouton_radio_modere_posteriori' => 'nadien modereren',
+	'bouton_radio_modere_priori' => 'vooraf modereren',
 	'bouton_radio_publication_immediate' => 'Onmiddellijke publicatie van berichten
  (bijdragen worden zichtbaar zodra ze verstuurd worden; beheerders kunnen nadien nog steeds
  berichten schrappen).',
@@ -31,6 +32,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Een bericht, een commentaar?',
 	'forum' => 'Forum',
 	'forum_acces_refuse' => 'Je hebt geen toegang meer tot deze forums.',
 	'forum_attention_dix_caracteres' => '<b>Opgelet!</b> : je bericht moet minstens 10 tekens bevatten.',
@@ -46,9 +48,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'Niet reageren op deze mail, maar op het forum om het volgende adres :',
 	'forum_page_url' => '(Als je bericht naar een artikel op het web verwijst of naar een pagina die meer informatie bevat, kunt u hier de titel en de URL van deze webverwijzing invoeren.)',
 	'forum_poste_par' => 'Bericht poste@parauteur@ als vervolg op je artikel « @titre@ » .',
+	'forum_qui_etes_vous' => '<b>Wie ben je ?</b> (optioneel)',
 	'forum_texte' => 'Tekst van je bericht :',
 	'forum_titre' => 'Titel :',
+	'forum_url' => 'URL :',
+	'forum_valider' => 'Keuze bevestigen',
 	'forum_voir_avant' => 'Bericht bekijken alvorens te posten',
+	'forum_votre_email' => 'Je e-mailadres :',
+	'forum_votre_nom' => 'Je naam (of alias) :',
 	'forum_vous_enregistrer' => 'Om deel te nemen aan
   dit forum, dien je op voorhand te registreren. Gelieve
   hieronder je logingegevens in te vullen die je bezorgd werden
@@ -61,6 +68,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Een bericht versturen',
 	'icone_suivi_forum' => 'Opvolging van het publieke forum: @nb_forums@ bijdrage(n)',
+	'icone_suivi_forums' => 'Forums opvolgen/beheren',
 	'icone_supprimer_message' => 'Dit bericht wissen',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Bericht goedkeuren',
@@ -102,6 +110,12 @@ De publieke forums kunnen per artikel toegestaan worden
 	'item_desactiver_forum_administrateur' => 'Forum van de beheerders desactiveren',
 	'item_non_config_forums_prive_global' => 'Het forum van de redacteuren desactiveren',
 	'item_non_config_forums_prive_objets' => 'Deze forums desactiveren',
+
+	// L
+	'lien_reponse_article' => 'Beantwoord dit artikel',
+	'lien_reponse_breve_2' => 'Beantwoord dit nieuwsbericht',
+	'lien_reponse_rubrique' => 'Beantwoord deze rubriek',
+	'lien_reponse_site_reference' => 'Antwoord op gekoppelde site :',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

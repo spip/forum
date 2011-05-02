@@ -18,6 +18,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_moderation_priori' => 'Moderação prévia (as contribuições só serão exibidas publicamente após a aprovação dos administradores).',
 	'bouton_radio_modere_abonnement' => 'por assinatura',
 	'bouton_radio_modere_posteriori' => 'moderação à posteriori',
+	'bouton_radio_modere_priori' => 'moderação à priori',
 	'bouton_radio_publication_immediate' => 'Publicação imediata das mensagens
  (as contribuições serão exibidas assim que forem enviadas; os administradores poderão excluí-las em seguida).',
 
@@ -28,6 +29,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Uma mensagem ou comentário?',
 	'forum' => 'Fórum',
 	'forum_acces_refuse' => 'Você não tem mais acesso a estes fóruns.',
 	'forum_attention_dix_caracteres' => '<b>Atenção!</b> Sua mensagem precisa ter pelo menos dez caracteres.',
@@ -43,9 +45,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'Não responda a esta mensagem e sim no fórum com o endereço a seguir:',
 	'forum_page_url' => '(Se a sua mensagem se refere a uma matéria pubicada na Web, ou a uma página fornecendo mais informações, por favor informe abaixo o título da página e o seu endereço.)',
 	'forum_poste_par' => 'Mensagem enviada @parauteur@ em seguimento da sua matéria.',
+	'forum_qui_etes_vous' => '<b>Quem é você?</b> (opcional)',
 	'forum_texte' => 'Texto da sua mensagem:',
 	'forum_titre' => 'Título:',
+	'forum_url' => 'URL:',
+	'forum_valider' => 'Validar a seleção',
 	'forum_voir_avant' => 'Ver esta mensagem antes de a enviar',
+	'forum_votre_email' => 'Seu endereço de e-mail:',
+	'forum_votre_nom' => 'Seu nome (ou apelido):',
 	'forum_vous_enregistrer' => 'Para participar deste fórum, você precisa se cadastrar previamente. Por favor, informe abaixo o identificador pessoal que lhe foi fornecido. Se você não está cadastrado, você precisa',
 	'forum_vous_inscrire' => 'cadastrar-se.',
 
@@ -55,6 +62,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Postar uma mensagem',
 	'icone_suivi_forum' => 'Acompanhamento do fórum público: @nb_forums@ contribuição(ões)',
+	'icone_suivi_forums' => 'Acompanhar / gerenciar os fóruns',
 	'icone_supprimer_message' => 'Suprimir esta mensagem',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Validar esta mensagem',
@@ -93,6 +101,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'Desativar o fórum dos administradores',
 	'item_non_config_forums_prive_global' => 'Desativar o fórum dos redatores',
 	'item_non_config_forums_prive_objets' => 'Desativar estes fóruns',
+
+	// L
+	'lien_reponse_article' => 'Resposta à matéria',
+	'lien_reponse_breve_2' => 'Resposta à nota',
+	'lien_reponse_rubrique' => 'Resposta à seção',
+	'lien_reponse_site_reference' => 'resposta ao site referenciado:',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

@@ -18,6 +18,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_moderation_priori' => 'Gwiriañ a-raok embann (diskouez a reer ar c\'hemennadennoù ur wech lennet hag aotreet gant ar verourien hepken).',
 	'bouton_radio_modere_abonnement' => 'war goumanant',
 	'bouton_radio_modere_posteriori' => 'gwiriañ goude an embann',
+	'bouton_radio_modere_priori' => 'gwiriañ a-raok embann',
 	'bouton_radio_publication_immediate' => 'Embann ar c\'hemennadennoù kerkent (embannet e vez ar c\'hemennadennoù diouzhtu goude bezañ bet skrivet, war-lerc\'h e c\'hellont bezañ diverket gant ar verourien).',
 
 	// D
@@ -27,6 +28,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Ur gemennadenn, un evezhiadenn ?',
 	'forum' => 'Forom',
 	'forum_acces_refuse' => 'N\'oc\'h ket aotreet da vont war ar foromoù-mañ ken .',
 	'forum_attention_dix_caracteres' => '<b>Diwallit !</b> Dek arouezenn d\'an nebeutañ a rank bezañ en ho kemennadenn.',
@@ -42,9 +44,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'Na respontit ket d\'ar postel-mañ, met war ar forom, d\'ar chomlec\'h da-heul :', # MODIF
 	'forum_page_url' => '(Ma ra ho kemmennadenn anv eus ur pennad all war Internet pe eus ur bajenn warni muioc\'h a ditouroù e c\'hellit skrivañ amañ goude titl ar bajenn hag ar chomlec\'h anezhi.)',
 	'forum_poste_par' => 'Kemennadenn kaset @parauteur@ da-heul ar pennad « @titre@ ».',
+	'forum_qui_etes_vous' => '<b>Piv oc\'h-hu ?</b> (Diret)',
 	'forum_texte' => 'Testenn ho kemennadenn :',
 	'forum_titre' => 'Titl :',
+	'forum_url' => 'URL :',
+	'forum_valider' => 'Kadarnaat an dibab-mañ',
 	'forum_voir_avant' => 'Rakwelet ar gemennadenn a-raok kas anezhi',
+	'forum_votre_email' => 'Ho postel :',
+	'forum_votre_nom' => 'Hoc\'h anv (pe lesanv) :',
 	'forum_vous_enregistrer' => 'Evit kemer perzh er forom-mañ e rankit bezañ enrollet en a-raok.
   Trugarez da skrivañ amañ dindan an titouroù hiniennel zo bet roet deoc\'h.
   Ma n\'oc\'h ket enrollet c\'hoazh e rankit ',
@@ -56,6 +63,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Kas ur gemennadenn',
 	'icone_suivi_forum' => 'War ar forom foran : @nb_forums@ evezhiadenn',
+	'icone_suivi_forums' => 'Heuliañ/merañ ar foromoù',
 	'icone_supprimer_message' => 'Diverkañ ar gemennadenn-mañ',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Asantiñ d\'ar gemennadenn-mañ',
@@ -96,6 +104,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'Diweredekaat forom ar verourien',
 	'item_non_config_forums_prive_global' => 'Diweredekaat forom ar skridaozerien',
 	'item_non_config_forums_prive_objets' => 'Diweredekaat ar foromoù-mañ',
+
+	// L
+	'lien_reponse_article' => 'Respont d\'ar pennad',
+	'lien_reponse_breve_2' => 'Respont d\'ar berrskrid',
+	'lien_reponse_rubrique' => 'Respont d\'ar rubrikenn',
+	'lien_reponse_site_reference' => 'Respont d\'al lec\'hienn menegeret :',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

@@ -22,6 +22,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 المدراء).',
 	'bouton_radio_modere_abonnement' => 'اشتراك إجباري',
 	'bouton_radio_modere_posteriori' => 'مراقبة بعدية',
+	'bouton_radio_modere_priori' => 'مراقبة استباقية',
 	'bouton_radio_publication_immediate' => 'نشر فوري للمشاركات
 (ستظهر المشاركات حال إرسالها، ويمكن للمدراء
 حذفها وقتذاك).',
@@ -33,6 +34,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'أي رسالة أو تعليق؟',
 	'forum' => 'المنتدى',
 	'forum_acces_refuse' => 'لم تعد تتمتع بحق الدخول إلى هذه المنتديات.',
 	'forum_attention_dix_caracteres' => '<b>تحذير!</b> يجب أن تحتوي رسالتك على عشرة حروف على الأقل.',
@@ -48,9 +50,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'لا ترد على هذه الرسالة بل في المنتدى على العنوان التالي:',
 	'forum_page_url' => '(إذا كانت مشاركتك تشير إلى مقال منشور على النسيج أو صفحة توفر المزيد من المعلومات، الرجاء إدخال اسم هذه الصفحة وعنوانها أدناه).',
 	'forum_poste_par' => 'مشاركة مرسلة@parauteur@ تعقيباً على المقال «@titre@».',
+	'forum_qui_etes_vous' => '<b>من أنت؟</b>  (اختياري)',
 	'forum_texte' => 'نص المشاركة:',
 	'forum_titre' => 'الموضوع:',
+	'forum_url' => 'عنوان URL:',
+	'forum_valider' => 'التصديق على هذا الخيار',
 	'forum_voir_avant' => 'معاينة هذه المشاركة قبل إرسالها',
+	'forum_votre_email' => 'عنوانك الإلكتروني:',
+	'forum_votre_nom' => 'اسمك (أو لقبك):',
 	'forum_vous_enregistrer' => 'قبل الاشتراك في
   هذا المنتدى، يجب أن تسجل نفسك. الرجاء
   إدخال أدناه المعرّف الشخصي الذي
@@ -63,6 +70,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'إرسال مشاركة',
 	'icone_suivi_forum' => 'متابعة المنتدى العام: @nb_forums@ مشاركة',
+	'icone_suivi_forums' => 'متابعة/إدارة المنتديات',
 	'icone_supprimer_message' => 'حذف هذه المشاركة',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'التصديق على هذه المشاركة',
@@ -104,6 +112,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'ايقاف منتدى المدراء',
 	'item_non_config_forums_prive_global' => 'تعطيل منتدى المحررين',
 	'item_non_config_forums_prive_objets' => 'تعطيل هذه المنتديات',
+
+	// L
+	'lien_reponse_article' => 'الرد على المقال',
+	'lien_reponse_breve_2' => 'الرد على الخبر',
+	'lien_reponse_rubrique' => 'الرد على القسم',
+	'lien_reponse_site_reference' => 'الرد على الموقع المبوب:',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

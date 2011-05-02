@@ -22,6 +22,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  administratorów).',
 	'bouton_radio_modere_abonnement' => 'na abonament',
 	'bouton_radio_modere_posteriori' => 'moderacja a posteriori',
+	'bouton_radio_modere_priori' => 'moderacja a priori',
 	'bouton_radio_publication_immediate' => 'Natychmiastowa publikacja wiadomości
  (posty będą się ukazywać w momencie ich wysłania, administratorzy mogą
  je później usunąć).',
@@ -33,6 +34,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Jakieś wiadomości lub komentarze?',
 	'forum' => 'Forum',
 	'forum_acces_refuse' => 'Nie masz już dostępu do tego forum.',
 	'forum_attention_dix_caracteres' => '<b>Uwaga!</b> Twoja wiadomość powinna mieć conajmniej 10 znaków.',
@@ -48,9 +50,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'Nie odpowiadaj na tego maila, lecz na forum, pod następującym adresem:', # MODIF
 	'forum_page_url' => '(Jeśli twoja wiadomość odnosi się jakiegoś artykuły opublikowanego w internecie, wpisz poniżej tytuł tej strony oraz jej adres).',
 	'forum_poste_par' => 'Wiadomość na temat twojego artykułu napisana przez@parauteur@.',
+	'forum_qui_etes_vous' => '<b>Kim jesteś?</b> (nieobowiązkowe)',
 	'forum_texte' => 'Tekst Twojej wiadomości:',
 	'forum_titre' => 'Temat:',
+	'forum_url' => 'URL:',
+	'forum_valider' => 'Zatwierdź ten wybór',
 	'forum_voir_avant' => 'Podgląd wiadomości przed umieszczeniem na forum',
+	'forum_votre_email' => 'Twój adres e-mail:',
+	'forum_votre_nom' => 'Twoje imię (lub alias):',
 	'forum_vous_enregistrer' => 'Aby uczestniczyć w
   tym forum - musisz się zarejestrować Dziękuję
   za wprowadzenie loginu
@@ -63,6 +70,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Napisz wiadomość',
 	'icone_suivi_forum' => 'Śledź wątek forum publicznego: @nb_forums@',
+	'icone_suivi_forums' => 'Zarządzanie forum',
 	'icone_supprimer_message' => 'Usuń tę wiadomość',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Zatwierdź tę wiadomość',
@@ -105,6 +113,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'Wyłącz forum administratorów',
 	'item_non_config_forums_prive_global' => 'Désactiver le forum des rédacteurs', # NEW
 	'item_non_config_forums_prive_objets' => 'Désactiver ces forums', # NEW
+
+	// L
+	'lien_reponse_article' => 'Odpowiedz na ten artykuł',
+	'lien_reponse_breve_2' => 'Odpowiedz na ten news',
+	'lien_reponse_rubrique' => 'Odpowiedz w tym dziale',
+	'lien_reponse_site_reference' => 'Odwołanie się do zlinkowanej strony :',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

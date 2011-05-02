@@ -22,6 +22,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  administratorer).',
 	'bouton_radio_modere_abonnement' => 'moderasjon etter påmelding', # MODIF
 	'bouton_radio_modere_posteriori' => 'endring i etterkant', # MODIF
+	'bouton_radio_modere_priori' => 'endring på forhånd', # MODIF
 	'bouton_radio_publication_immediate' => 'Umiddelbar publisering av meldinger
  (bidrag vil bli vist det øyeblikket de er sendt, deretter kan
  administratorer slette dem).',
@@ -33,6 +34,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Har du en melding eller kommentar?',
 	'forum' => '<NEW> Forum',
 	'forum_acces_refuse' => 'Du har ikke tilgang til forumene lengre.',
 	'forum_attention_dix_caracteres' => '<b>Advarsel!</b> meldingen er kortere enn ti tegn.', # MODIF
@@ -48,9 +50,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'Ikke svar på denne e-posten, men i forumet på følgende adresse:', # MODIF
 	'forum_page_url' => '(Dersom meldingen din refererer til en side på veven vennligst legg inn tittel og adressen til siden nedenfor).',
 	'forum_poste_par' => 'Melding kommet @parauteur@ til din artikkel "@titre@".',
+	'forum_qui_etes_vous' => '<b>Hvem er du?</b> (valgfritt)',
 	'forum_texte' => 'Meldingstekst:',
 	'forum_titre' => 'Emne:',
+	'forum_url' => 'URI:',
+	'forum_valider' => 'Bekreft dette valget',
 	'forum_voir_avant' => 'Forhåndsvis melding først ',
+	'forum_votre_email' => 'Epostadresse:',
+	'forum_votre_nom' => 'Navn (eller kallenavn):',
 	'forum_vous_enregistrer' => 'Før man kan delta in
   dette forumet må man registrere seg.
   Vennligst logg inn.
@@ -63,6 +70,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Poster un message', # NEW
 	'icone_suivi_forum' => 'Suivi du forum public : @nb_forums@ contribution(s)', # NEW
+	'icone_suivi_forums' => 'Behandle forum',
 	'icone_supprimer_message' => 'Slett melding',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Bekreft denne meldingen',
@@ -106,6 +114,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'Désactiver le forum des administrateurs', # NEW
 	'item_non_config_forums_prive_global' => 'Désactiver le forum des rédacteurs', # NEW
 	'item_non_config_forums_prive_objets' => 'Désactiver ces forums', # NEW
+
+	// L
+	'lien_reponse_article' => 'Svar på artikkelen',
+	'lien_reponse_breve_2' => 'Svar på nyheten',
+	'lien_reponse_rubrique' => 'Svar på seksjonen',
+	'lien_reponse_site_reference' => 'Réponse au site référencé :', # NEW
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

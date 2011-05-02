@@ -22,6 +22,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  administrators).',
 	'bouton_radio_modere_abonnement' => 'registration required',
 	'bouton_radio_modere_posteriori' => 'post-moderation',
+	'bouton_radio_modere_priori' => 'pre-moderation',
 	'bouton_radio_publication_immediate' => 'Immediate publication of messages
  (contributions will be shown as soon as they are sent, administrators can
  then delete them if necessary).',
@@ -33,6 +34,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Any message or comments?',
 	'forum' => 'Forum',
 	'forum_acces_refuse' => 'You no longer have access to these forums.',
 	'forum_attention_dix_caracteres' => '<b>Warning!</b> Your message must be at least ten characters long.',
@@ -48,9 +50,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'Do not reply directly to this email - please use the online forum here:',
 	'forum_page_url' => '(If your message refers to an article published on the web or to a page providing further information, please enter the title of the page and its URL below).',
 	'forum_poste_par' => 'Message posted@parauteur@ following your article "@titre@".',
+	'forum_qui_etes_vous' => '<b>Who are you?</b> (optional)',
 	'forum_texte' => 'Text of your message:',
 	'forum_titre' => 'Subject:',
+	'forum_url' => 'URL:',
+	'forum_valider' => 'Validate your choice',
 	'forum_voir_avant' => 'Preview message before posting',
+	'forum_votre_email' => 'Your email address:',
+	'forum_votre_nom' => 'Your name (or alias):',
 	'forum_vous_enregistrer' => 'You must be registered before participating in
   this forum. Please
   enter your personal identifier
@@ -63,6 +70,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Post a message',
 	'icone_suivi_forum' => 'Follow public forum: @nb_forums@ contribution(s)',
+	'icone_suivi_forums' => 'Manage forums',
 	'icone_supprimer_message' => 'Delete this message',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Validate message',
@@ -103,6 +111,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'Disable administrators\' forum',
 	'item_non_config_forums_prive_global' => 'Disable authors\' forum',
 	'item_non_config_forums_prive_objets' => 'Disable these forums',
+
+	// L
+	'lien_reponse_article' => 'Comment on this article',
+	'lien_reponse_breve_2' => 'Comment on this news item',
+	'lien_reponse_rubrique' => 'Comment on this section',
+	'lien_reponse_site_reference' => 'Comment on this website:',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

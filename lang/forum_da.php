@@ -20,6 +20,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_moderation_priori' => 'Forhåndsgodkendelse (bidrag vises først efter at de er godkendt af administratorer).',
 	'bouton_radio_modere_abonnement' => 'Kun for abonnenter (bidragydere skal oplyse e-mail-adresse, før de kan indsende bidrag)',
 	'bouton_radio_modere_posteriori' => 'Efterfølgende godkendelse (bidrag er straks synlige men en administrator kan senere slette dem)',
+	'bouton_radio_modere_priori' => 'Forhåndsgodkendelse',
 	'bouton_radio_publication_immediate' => 'Indlæg offentliggøres straks (bidrag vises straks efter at de er sendt, administratorer kan slette dem senere).',
 
 	// D
@@ -29,6 +30,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Meddelelse eller kommentar?',
 	'forum' => 'Forum',
 	'forum_acces_refuse' => 'Du har ikke mere adgang til disse forummer',
 	'forum_attention_dix_caracteres' => '<b>Advarsel!</b> dit indlæg er mindre end ti tegn langt.', # MODIF
@@ -44,9 +46,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'Undlad at besvare denne e-mail, men gå i stedet til forummet på denne adresse:', # MODIF
 	'forum_page_url' => '(Hvis dit indlæg henviser til en artikel, der er offentliggjort på Internettet, eller til en side der indeholder yderligere oplysninger, så angiv venligst sidens titel og dens adresse eller URL nedenfor).',
 	'forum_poste_par' => 'Indlæg @parauteur@ som svar på din artikel.', # MODIF
+	'forum_qui_etes_vous' => '<b>Hvem er du?</b> (valgfrit)',
 	'forum_texte' => 'Indlæggets tekst:',
 	'forum_titre' => 'Titel:',
+	'forum_url' => 'URL:',
+	'forum_valider' => 'Kontroller gyldighed',
 	'forum_voir_avant' => 'Vis indlæg før indsendelse',
+	'forum_votre_email' => 'Din e-mail-adresse:',
+	'forum_votre_nom' => 'Dit navn (eller alias):',
 	'forum_vous_enregistrer' => 'Før du kan deltage i dette forum,
 		skal du tilmelde dig. Indtast venligst nedenfor de
 		personlige adgangsoplysninger, du har fået tilsendt.
@@ -59,6 +66,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Opret meddelelse',
 	'icone_suivi_forum' => 'Opfølgning i offentligt forum: @nb_forums@ bidrag',
+	'icone_suivi_forums' => 'Administrer forummer',
 	'icone_supprimer_message' => 'Slet denne meddelelse',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Godkend meddelelse',
@@ -98,6 +106,12 @@ De vil være lukkede i forhold til afsnit, meddelelser osv..',
 	'item_desactiver_forum_administrateur' => 'Slå funktionen administratorforum fra',
 	'item_non_config_forums_prive_global' => 'Désactiver le forum des rédacteurs', # NEW
 	'item_non_config_forums_prive_objets' => 'Désactiver ces forums', # NEW
+
+	// L
+	'lien_reponse_article' => 'Kommenter denne artikel',
+	'lien_reponse_breve_2' => 'Kommenter denne nyhed',
+	'lien_reponse_rubrique' => 'Kommenter dette afsnit',
+	'lien_reponse_site_reference' => 'Kommenter dette link:',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

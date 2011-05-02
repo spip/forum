@@ -18,6 +18,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_moderation_priori' => 'ကြိုတင် ထိန်းသိမ်းထားခြင်း (ပါဝင်ရေးသားချက်များသည် ကြီးကြပ်သူမှ စစ်ဆေးအတည်ပြုပြီးမှသာ အများဆိုင်စာမျက်နှာတွင် ပေါ်လာမည်)',
 	'bouton_radio_modere_abonnement' => 'မှတ်ပုံတင်ထားရန် လိုအပ်သည်',
 	'bouton_radio_modere_posteriori' => 'နောက်မှ ထိန်းသိမ်းခြင်း',
+	'bouton_radio_modere_priori' => 'ကြိုတင် ထိန်းသိမ်းထားခြင်း',
 	'bouton_radio_publication_immediate' => 'ချက်ချင်းထုတ်ပြန်ခြင်းအတွက် သတင်းအချက်အလက် (ပါဝင်ရေးသားချက်များ ပို့​ပြီးပြီးခြင်း ဖော်ပြမည်၊ အဲဒီနောက် ကြီးကြပ်သူများမှ ပယ်ဖျက်နိုင်သည်)',
 
 	// D
@@ -27,6 +28,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'မှတ်ချက် တစ်စုံတစ်ရာ ပေးလိုပါသလား?',
 	'forum' => 'ဖိုရမ်',
 	'forum_acces_refuse' => 'ဤဖိုရမ်သို့ ဝင်ရောက်ခွင့် မရှိတော့ပါ',
 	'forum_attention_dix_caracteres' => '<b>သတိပေးချက်!</b> သင့်စာစောင်သည် အနည်းဆုံး စာလုံး၁ဝလုံးနှင့် အထက်ပါဝင်သင့်သည်',
@@ -42,9 +44,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'ဤမေးလ်ကို တိုက်ရိုက် အကြောင်းမပြန်ပါနှင့်၊ အောက်ပါလိပ်စာမှ ပြန်ပါ', # MODIF
 	'forum_page_url' => '(သင့်ဆောင်ပါး ထုတ်ဝေမှုကို ဒီစာစောင်မ ညွှန်းထားတယ်ဆိုရင်တော့၊ အောက်ဖော်ပြပါနေရာတွင် စာမျက်နှာခေါင်းစဉ်နှင့် လိပ်စာကိုထည့်သွင်းပါ။)',
 	'forum_poste_par' => 'သင့်ဆောင်းပါး \\"@titre@\\" တင်သွင်းပြီးကြောင်း @parauteur@',
+	'forum_qui_etes_vous' => '<b>သင်ဘယ်သူလဲ?</b> (optional)',
 	'forum_texte' => 'သင့်စာစောင်၏ စာသားများ',
 	'forum_titre' => 'အကြောင်းအရာ',
+	'forum_url' => 'ဝက်ဘ်လိပ်စာ',
+	'forum_valider' => 'ဤရွေးချယ်မှုကို အတည်ပြုရန်',
 	'forum_voir_avant' => 'စာစောင်မတင်သွင်းမှီ အရင်ကြည့်ရှုရန်',
+	'forum_votre_email' => 'သင့်အီးမေးလ်လိပ်စာ',
+	'forum_votre_nom' => 'သင့်နာမည်',
 	'forum_vous_enregistrer' => 'သင့်ကိုပေးထားသော မှတ်ပုံတင်နံပါတ်နှင့်ဝင်ပါ သို့မဟုတ် ဤဖိုရမ်ထဲ အထူးနေရာမှ ပါဝင် ရန် အရင်မှတ်ပုံတင်ပါ',
 	'forum_vous_inscrire' => 'မှတ်ပုံတင်ရန်',
 
@@ -54,6 +61,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'စာတစောင်ပို့ပါ',
 	'icone_suivi_forum' => 'နောက်ဆက်တွဲဖိုရမ် @nb_forums@ ပါဝင်မှု(များ)',
+	'icone_suivi_forums' => 'ဖိုရမ်ကို စီမံရန်',
 	'icone_supprimer_message' => 'ဤစာစောင်ကို ပယ်ဖျက်ရန်',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'ဤစာစောင်ကို အတည်ပြုရန်',
@@ -93,6 +101,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'ဝက်ဘ်ဆိုက်ကြီကြပ်သူများဖိုရမ် မရနိုင်ပါ',
 	'item_non_config_forums_prive_global' => 'Désactiver le forum des rédacteurs', # NEW
 	'item_non_config_forums_prive_objets' => 'Désactiver ces forums', # NEW
+
+	// L
+	'lien_reponse_article' => 'ဆောင်းပါးသို့ ပြန်တုန့်ပြန်ပါ',
+	'lien_reponse_breve_2' => 'သတင်းအချက်သို့ အကြောင်းပြန်ပါ',
+	'lien_reponse_rubrique' => 'အခန်းကဏ္ဍသို့ အကြောင်းပြန်ပါ',
+	'lien_reponse_site_reference' => 'ကိုးကားဝက်ဘ်ဆိုက်သို့ အကြောင်းပြန်ပါ',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

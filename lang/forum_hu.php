@@ -21,6 +21,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  küldött anyagok csak az adminisztrátorok adta jováhagyást kerülnek nyilvánosságra).',
 	'bouton_radio_modere_abonnement' => 'moderálva beiratkozásnál',
 	'bouton_radio_modere_posteriori' => 'utólag moderált',
+	'bouton_radio_modere_priori' => 'elözőleg moderálva',
 	'bouton_radio_publication_immediate' => 'Üzenetek azonnali publikálása
  (a küldött anyagok már küldéskor megjelennek, az adminisztrátorok későb tudják törölni).',
 
@@ -31,6 +32,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Üzenet, hozzászólás ?',
 	'forum' => 'Fórum',
 	'forum_acces_refuse' => 'Már nincs hozzáférése ezekhez a fórumokhoz.',
 	'forum_attention_dix_caracteres' => '<b>Vigyázat !</b> Az üzenetének legalább 10 karaktert kell tartalmaznia.',
@@ -46,9 +48,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'Ne erre az emailre válaszoljon, hanem a fórumon a következő címen:', # MODIF
 	'forum_page_url' => '(Amennyiben az Ön üzenete egy interneten publikált, vagy további információt tartalmazó oldalra vonatkozik, akkor adja meg az oldal nevét, illetve URL címét.)',
 	'forum_poste_par' => 'Az üzenetet @parauteur@ küldte, "@titre@" című cikkére válaszul.',
+	'forum_qui_etes_vous' => '<b>Kicsoda Ön?</b> (nem kötelező)',
 	'forum_texte' => 'Üzenetének szövege:',
 	'forum_titre' => 'Tárgy:',
+	'forum_url' => 'URL:',
+	'forum_valider' => 'Érvényesítse választását',
 	'forum_voir_avant' => 'Küldés előtti előnézet megtekintése',
+	'forum_votre_email' => 'Az Ön email címe:',
+	'forum_votre_nom' => 'Az Öne neve (vagy beceneve):',
 	'forum_vous_enregistrer' => 'A fórum használatához
   kérjük, először regisztráljon. Lentebb adja meg
   a személyes azonosítót,
@@ -61,6 +68,7 @@ amit kapott. Amennyiben nincs regisztrálva, akkor',
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Üzenet küldése',
 	'icone_suivi_forum' => 'A nyilvános fórum megfigyelése : @nb_forums@ hozzászlás',
+	'icone_suivi_forums' => 'Figyelni/kezelni a fórumokat',
 	'icone_supprimer_message' => 'Az üzenet törlése',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Az üzenet érvényesítése',
@@ -103,6 +111,12 @@ amit kapott. Amennyiben nincs regisztrálva, akkor',
 	'item_desactiver_forum_administrateur' => 'Az adminisztrátori fórumok inaktiválása',
 	'item_non_config_forums_prive_global' => 'Désactiver le forum des rédacteurs', # NEW
 	'item_non_config_forums_prive_objets' => 'Désactiver ces forums', # NEW
+
+	// L
+	'lien_reponse_article' => 'Hozzászólás a cikkről',
+	'lien_reponse_breve_2' => 'Hozzászólás a hírhez',
+	'lien_reponse_rubrique' => 'Hozzászólás a rubrikához',
+	'lien_reponse_site_reference' => 'Hozzászólás a felvett honlaphoz :',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

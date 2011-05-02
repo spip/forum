@@ -22,6 +22,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  才能显示出来).',
 	'bouton_radio_modere_abonnement' => '通过订阅预存', # MODIF
 	'bouton_radio_modere_posteriori' => '预存后', # MODIF
+	'bouton_radio_modere_priori' => '预存前', # MODIF
 	'bouton_radio_publication_immediate' => '直接消息出版物
  (投稿发送后可显示, 管理员可以
  删除它们).',
@@ -33,6 +34,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => '其它消息和评论?',
 	'forum' => '论坛',
 	'forum_acces_refuse' => '您已经无权访问这些论坛.',
 	'forum_attention_dix_caracteres' => '<b>警告!</b> 您的消息少于十个字符.', # MODIF
@@ -48,9 +50,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => '请勿回复该信件,请到如下地址的论坛回复:', # MODIF
 	'forum_page_url' => '(如果您的消息引用了web上发表的文章请提供进一步的消息, 请输入页头和它的URL).',
 	'forum_poste_par' => '您文章@parauteur@之后后发表的信息.', # MODIF
+	'forum_qui_etes_vous' => '<b>您是谁?</b> (可选)', # MODIF
 	'forum_texte' => '消息正文:',
 	'forum_titre' => '标题:',
+	'forum_url' => 'URL:',
+	'forum_valider' => '使选择生效',
 	'forum_voir_avant' => '发表前预览',
+	'forum_votre_email' => '您的邮件地址:',
+	'forum_votre_nom' => '您的名字(或昵称):',
 	'forum_vous_enregistrer' => '在参与论坛前,您必须注册. 谢谢您填写已经递交过的个人信息.
 如果你您尚未注册, 您必须',
 	'forum_vous_inscrire' => '请注册。',
@@ -61,6 +68,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => '发表消息',
 	'icone_suivi_forum' => '跟踪公共论坛: @nb_forums@ 出版物',
+	'icone_suivi_forums' => '跟踪/管理论坛',
 	'icone_supprimer_message' => '删除消息',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => '使消息有效',
@@ -103,6 +111,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => '使管理论坛不可用',
 	'item_non_config_forums_prive_global' => 'Désactiver le forum des rédacteurs', # NEW
 	'item_non_config_forums_prive_objets' => 'Désactiver ces forums', # NEW
+
+	// L
+	'lien_reponse_article' => '回应文章',
+	'lien_reponse_breve_2' => '回应新闻',
+	'lien_reponse_rubrique' => '回应专栏',
+	'lien_reponse_site_reference' => '回应到参考站点:',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

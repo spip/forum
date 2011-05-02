@@ -22,6 +22,7 @@ contributi saranno pubblicati previa autorizzazione delle
 amministratori).',
 	'bouton_radio_modere_abonnement' => 'solo su abbonamento',
 	'bouton_radio_modere_posteriori' => 'moderato a posteriori',
+	'bouton_radio_modere_priori' => 'moderato a priori',
 	'bouton_radio_publication_immediate' => 'Pubblicazione immediata dei messaggi
 (i contributi sono pubblicati subito dopo il loro invio, le amministratrici possono
 cancellarli successivamente).',
@@ -33,6 +34,7 @@ cancellarli successivamente).',
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Un messaggio, un commento?',
 	'forum' => 'Forum',
 	'forum_acces_refuse' => 'Non hai accesso a questi forum.',
 	'forum_attention_dix_caracteres' => '<b>Attenzione!</b> il messaggio deve contenere almeno dieci caratteri.',
@@ -48,9 +50,14 @@ cancellarli successivamente).',
 	'forum_ne_repondez_pas' => 'Non rispondere a questo email ma intervieni sul forum all\'indirizzo seguente:', # MODIF
 	'forum_page_url' => '(Se il tuo messaggio si riferisce ad un articolo pubblicato sul Web o ad una pagina contenente maggiori informazioni, è possibile indicare di seguito il titolo della pagina ed il suo indirizzo URL.)',
 	'forum_poste_par' => 'Messaggio inviato da @parauteur@ in calce all\'articolo  « @titre@ ».',
+	'forum_qui_etes_vous' => '<b>Chi sei?</b> (opzionale)',
 	'forum_texte' => 'Testo del messaggio:',
 	'forum_titre' => 'Titolo:',
+	'forum_url' => 'URL:',
+	'forum_valider' => 'Conferma la scelta',
 	'forum_voir_avant' => 'Vedi il messaggio prima di inviarlo',
+	'forum_votre_email' => 'Indirizzo email:',
+	'forum_votre_nom' => 'Nome (o pseudonimo):',
 	'forum_vous_enregistrer' => 'È necessario iscriversi
 per partecipare a questo forum.  Indica qui sotto l\'ID personale
 che ti è stato fornito.  Se non sei registrata, devi',
@@ -62,6 +69,7 @@ che ti è stato fornito.  Se non sei registrata, devi',
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Invia un messaggio',
 	'icone_suivi_forum' => 'Andamento del forum pubblico: @nb_forums@ contributi',
+	'icone_suivi_forums' => 'Gestione dei forum',
 	'icone_supprimer_message' => 'Elimina il messaggio',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Convalida il messaggio',
@@ -105,6 +113,12 @@ avvertite via email. Per ogni tipo di forum, indica se desideri utilizzare quest
 	'item_desactiver_forum_administrateur' => 'Disattiva il forum delle amministratrici',
 	'item_non_config_forums_prive_global' => 'Disattiva i forum delle redattrici',
 	'item_non_config_forums_prive_objets' => 'Disattiva questi forum',
+
+	// L
+	'lien_reponse_article' => 'Risposta all\'articolo',
+	'lien_reponse_breve_2' => 'Risposta alla breve',
+	'lien_reponse_rubrique' => 'Risposta alla rubrica',
+	'lien_reponse_site_reference' => 'Risposta al sito repertoriato:',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

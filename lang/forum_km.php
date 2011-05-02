@@ -18,6 +18,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_moderation_priori' => 'សំរបសំរួល ជាដំបូង (​ការរួមចំណែក បង្ហាញចេញ សាធារណៈ តែបន្ទាប់ពី ការផ្តល់សុពលភាព ដោយអ្នកអភិបាល)។',
 	'bouton_radio_modere_abonnement' => 'ផ្អែកលើ ការជាវប្រចាំ',
 	'bouton_radio_modere_posteriori' => 'សំរបសំរួល ពេលបន្ទាប់',
+	'bouton_radio_modere_priori' => 'សំរបសំរួល ជាដំបូង',
 	'bouton_radio_publication_immediate' => 'ការផ្សព្វ​ផ្សាយ​​បន្ទាន់ នៃសារ (​ការរួមចំណែក ​បង្ហាញ​ចេញ ពេល​ផ្ញើពួកវា, ពួកអ្នកអភិបាល អាចលុបចេញ ពួកវា​ ពេលបន្ទាប់)។',
 
 	// D
@@ -27,6 +28,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'មួយសារ មួយវិចារ ឬ  ?',
 	'forum' => 'វេទិកា',
 	'forum_acces_refuse' => 'អ្នក​គ្មានអាចទៀត ចូលទៅ វេទិកា​ទាំងនេះ។',
 	'forum_attention_dix_caracteres' => '<b>​ប្រយ័ត្ន  !</b> សារ ​របស់​អ្នក ត្រូវtE​មាន​ប្រវែង​យ៉ាងតិច ១០ អក្សរ។',
@@ -42,9 +44,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'កុំ​ឆ្លើយ​ទៅ ​មែ​វល៍​នេះ ប៉ុន្ដែ​ លើ​វេទិកា តាម​អាសយដ្ឋាន​ខាងក្រោម៖', # MODIF
 	'forum_page_url' => '(​បើ​សារ​ របស់​អ្នក ​យោងទៅ មួយអត្ថបទ​ដែល​បាន​ផ្សព្វផ្សាយលើ​វ៉ែបសៃថ៍ ឬ នៅទំព័រ ​ដែល​ផ្ដល់​​ពត៌មាន​បន្ថែម, បញ្ចូល​បន្ទាប់នេះ ចំណងជើង​ទំព័រ និង អាសយដ្ឋាន URL របស់វា។)',
 	'forum_poste_par' => 'បានដាក់សារ ដោយ @parauteur@ បន្ទាប់​ពី​អត្ថបទ​ "@titre@"។',
+	'forum_qui_etes_vous' => 'អ្នកជា អ្នកណា? </b> (​ជា ជំរើស​)', # b
 	'forum_texte' => '​សារ ​របស់​អ្នក៖',
 	'forum_titre' => 'ចំណងជើង៖',
+	'forum_url' => 'URL៖',
+	'forum_valider' => 'ធ្វើ​អោយ​សុពលភាព ជំរើស នេះ',
 	'forum_voir_avant' => 'មើល​សារនេះ ​មុននឹងដាក់ប្រកាសវា',
+	'forum_votre_email' => 'អាសយដ្ឋាន​អ៊ីមែវល៍ ​របស់​អ្នក៖',
+	'forum_votre_nom' => 'ឈ្មោះ (​ឬ​ ឈ្មោះ​ហៅ​ក្រៅ​) របស់​អ្នក៖',
 	'forum_vous_enregistrer' => 'ដើម្បី​ចូលរួម ​វេទិកា​នេះ, អ្នក​ត្រូវតែជាដំបូង ​ចុះ​ឈ្មោះ​។ អរគុណ​ ដែល​បញ្ចូល​អត្តសញ្ញា​ផ្ទាល់ខ្លួន​ ដែលត្រូវ​បាន​ផ្ដល់​ជូន​អ្នក។ បើ​អ្នក​មិន​ទាន់​ចុះ​ឈ្មោះ​, អ្នក​ត្រូវតែ',
 	'forum_vous_inscrire' => 'ចុះ​ឈ្មោះ អ្នក។',
 
@@ -54,6 +61,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'ផ្ញើ​សារ',
 	'icone_suivi_forum' => 'តាមដាន​វេទិកាសាធារណៈ ៖ @nb_forums@ contribution(s)',
+	'icone_suivi_forums' => 'តាមដាន/គ្រប់គ្រង ​វេទិកានានា',
 	'icone_supprimer_message' => 'លុប​ចេញ សារ​នេះ',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'ធ្វើ​អោយ​សុពលភាព សារ​នេះ',
@@ -92,6 +100,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'បិទ​មុខងារ​វេទិកា​ក្រុម​អ្នកគ្រប់គ្រង​ប្រព័ន្ធ',
 	'item_non_config_forums_prive_global' => 'ធ្វើអោយអសកម្ម ទីប្រជុំមតិ នៃពួកអ្នកនិពន្ធ',
 	'item_non_config_forums_prive_objets' => 'ធ្វើអោយអសកម្ម ទីប្រជុំមតិទាំងនេះ',
+
+	// L
+	'lien_reponse_article' => 'ចំលើយ ទៅ​អត្ថបទ',
+	'lien_reponse_breve_2' => 'ចំលើយ ទៅ​ពត៌មានខ្លី',
+	'lien_reponse_rubrique' => 'ចំលើយ ទៅផ្នែក',
+	'lien_reponse_site_reference' => 'ចំលើយ ទៅវ៉ែបសៃថ៍យោង៖',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

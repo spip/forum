@@ -18,6 +18,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_moderation_priori' => 'Apriora moderigado (kontribuaĵoj estas publikigataj nur post validigo far de mastrumantoj).',
 	'bouton_radio_modere_abonnement' => 'per abono',
 	'bouton_radio_modere_posteriori' => 'aposteriore moderigata',
+	'bouton_radio_modere_priori' => 'apriore moderigata',
 	'bouton_radio_publication_immediate' => 'Tujpublikigo de mesaĝoj
  (la kontribuaĵoj afiŝiĝas tuj post ties sendo, la mastrumantoj povas
 forviŝi ilin poste).',
@@ -29,6 +30,7 @@ forviŝi ilin poste).',
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Ĉu mesaĝon, ĉu komenton ?',
 	'forum' => 'Forumo',
 	'forum_acces_refuse' => 'Vi ne plu havas alir-rajton al tiuj ĉi forumoj.',
 	'forum_attention_dix_caracteres' => '<b>Atentu !</b> via mesaĝo devas enhavi almenaŭ dek signojn.',
@@ -44,9 +46,14 @@ forviŝi ilin poste).',
 	'forum_ne_repondez_pas' => 'Ne respondu al tiu ĉi retletero, sed en la forumo ĉe la jena adreso:', # MODIF
 	'forum_page_url' => '(Se via mesaĝo rilatas al artikolo publikigita ĉe la reto, aŭ al paĝo donanta pli da informoj, bonvolu indiki ĉi-poste la titolon de la paĝo kaj ties ret-adreson.)',
 	'forum_poste_par' => 'Mesaĝo posté@parauteur@ reage al via artikolo « @titre@ ».',
+	'forum_qui_etes_vous' => '<b>Kiu vi estas?</b> (nedeviga)',
 	'forum_texte' => 'Teksto de via mesaĝo:',
 	'forum_titre' => 'Titolo:',
+	'forum_url' => 'URL:',
+	'forum_valider' => 'Validigi tiun elekton',
 	'forum_voir_avant' => 'Vidi tiun ĉi mesaĝon antaŭ ol sendi ĝin',
+	'forum_votre_email' => 'Via retpoŝtadreso:',
+	'forum_votre_nom' => 'Via nomo (aŭ salutnomo):',
 	'forum_vous_enregistrer' => 'Por partopreni en ;
   tiu ĉi forumo, vi devas antaŭe registriĝi. Bonvolu
   indiki ĉi-sube la personan ensalutilon kiu estis
@@ -59,6 +66,7 @@ forviŝi ilin poste).',
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Sendi mesaĝon',
 	'icone_suivi_forum' => 'Superrigardo de la publika forumo : @nb_forums@ kontribuo(j)',
+	'icone_suivi_forums' => 'Superrigardi/mastrumi la forumojn',
 	'icone_supprimer_message' => 'Forigi tiun mesaĝon',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Validigi tiun mesaĝon',
@@ -101,6 +109,12 @@ La publikaj forumoj estos laŭkaze unu post la alia permesitaj
 	'item_desactiver_forum_administrateur' => 'Malaktivigi la forumon de la mastrumantoj',
 	'item_non_config_forums_prive_global' => 'Malaktivigi la forumon de redaktantoj',
 	'item_non_config_forums_prive_objets' => 'Malaktivigi tiujn ĉi forumojn',
+
+	// L
+	'lien_reponse_article' => 'Respondo al la artikolo',
+	'lien_reponse_breve_2' => 'Respondo al la fulm-informo',
+	'lien_reponse_rubrique' => 'Respondo al la rubriko',
+	'lien_reponse_site_reference' => 'Respondo al la referencigita retejo:',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

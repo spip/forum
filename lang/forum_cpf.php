@@ -20,6 +20,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 ',
 	'bouton_radio_modere_abonnement' => 'In labonman lé nesèsèr',
 	'bouton_radio_modere_posteriori' => 'lé modèré apré konfirmasyon ',
+	'bouton_radio_modere_priori' => 'lé modèré-dovan',
 	'bouton_radio_publication_immediate' => 'Modékri lé publyé sir losan (bann komisyon lé visib toutswit apré zot la anvway ali ; bann komander sitwèb i pé dégrèn ali aprè).',
 
 	// D
@@ -29,6 +30,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Inn modékri, inn ti lavi, inn komantèr ?',
 	'forum' => 'Forom kozman',
 	'forum_acces_refuse' => 'Ou néna pli lapermisyon pou gèt dann bann forom-la.',
 	'forum_attention_dix_caracteres' => '<b>Tansyon pangar !</b> out modékri néna mwin 10 karaktèr-linprimri. Lé pa asé pou anrozistr ali.',
@@ -46,9 +48,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'Pou réponn limél-la, anserv lo forom kozman ou sava trouv tèrla (réponn pa èk inn ot limèl mé zizt inn modékri sir lo sitwèb):', # MODIF
 	'forum_page_url' => '(Si out modékri li ranvwa si inn lartik si lo Wèb o inn ot paz pli konplé déor, mèrsi mèt anba lo non lapazwèb èk son ladrès URL.)',
 	'forum_poste_par' => 'Modékri-la, @parauteur@ la post ali pou réponn out lartik.', # MODIF
+	'forum_qui_etes_vous' => '<b>Kisa ou lé ?</b> (réponn lé pa obligatwar)',
 	'forum_texte' => 'Lo tèks out modékri :',
 	'forum_titre' => 'Non :',
+	'forum_url' => 'URL :',
+	'forum_valider' => 'Konfirm out swa',
 	'forum_voir_avant' => 'Artourn gét modékri-la avann konfirm ali',
+	'forum_votre_email' => 'Out ladrès imèl  :',
+	'forum_votre_nom' => 'Out vrénon (ou ti-non-gaté) :',
 	'forum_vous_enregistrer' => 'Pou mèt ansanm dann forom-la, ifo anrozistr aou. Mersi pou mèt anba latèr nondkod-lidantité sak ni la donn aou. Si ou lé pa anrozistré, i dwa',
 	'forum_vous_inscrire' => 'inskri a ou </a>.',
 
@@ -58,6 +65,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Anvwa inn modékri',
 	'icone_suivi_forum' => 'Swiv lo forom piblik sir figirwèb : @nb_forums@ contribution(s)',
+	'icone_suivi_forums' => 'Swiv/aranz bann forom',
 	'icone_supprimer_message' => 'Dégrèn modékri-la',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Konfirm modékri-la',
@@ -98,6 +106,12 @@ sanm inn limèl. Indik tèrla si ou vé anserv lopsyon-la ?', # MODIF
 	'item_desactiver_forum_administrateur' => 'Défalk bann forom-komandèr',
 	'item_non_config_forums_prive_global' => 'Désactiver le forum des rédacteurs', # NEW
 	'item_non_config_forums_prive_objets' => 'Désactiver ces forums', # NEW
+
+	// L
+	'lien_reponse_article' => 'Réponn lartik-la',
+	'lien_reponse_breve_2' => 'Répons pou tit-nouvèl',
+	'lien_reponse_rubrique' => 'Répons pou rubrik-la',
+	'lien_reponse_site_reference' => 'Répons pou sit-la:',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

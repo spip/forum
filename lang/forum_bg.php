@@ -22,6 +22,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  администраторите).',
 	'bouton_radio_modere_abonnement' => 'изисква се регистрация',
 	'bouton_radio_modere_posteriori' => 'последваща модерация',
+	'bouton_radio_modere_priori' => 'предварителна модерация',
 	'bouton_radio_publication_immediate' => 'Незабавно публикуване на съобщения
  (приносите от съобщения ще бъдат показани в момента, в който бъдат изпратени; след това
  администраторите могат да ги изтриват).',
@@ -33,6 +34,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Коментар?',
 	'forum' => 'Форум',
 	'forum_acces_refuse' => 'Вече нямате достъп до тези форуми.',
 	'forum_attention_dix_caracteres' => '<b>Предупреждение!</b> съобщението трябва да е по-дълго от 10 знака.',
@@ -48,9 +50,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'Не отговаряйте на съобщението директно, а във форума на следния адрес:', # MODIF
 	'forum_page_url' => '(Ако съобщението Ви се отнася към вече публикувана статия или към Интернет страница с повече информация, моля впишете името на старницата и нейния URL адрес по-долу).',
 	'forum_poste_par' => 'Изпратено е съобщение @parauteur@, следващо статията.', # MODIF
+	'forum_qui_etes_vous' => '<b>Кой сте Вие?</b> (по избор)',
 	'forum_texte' => 'Текст на съобщението:',
 	'forum_titre' => 'Тема:',
+	'forum_url' => 'URL адрес:',
+	'forum_valider' => 'Одобряване на избора',
 	'forum_voir_avant' => 'Преглед на съобщението преди изпращане',
+	'forum_votre_email' => 'Вашият електронен адрес:',
+	'forum_votre_nom' => 'Вашето име (или псевдоним):',
 	'forum_vous_enregistrer' => 'Преди да участвате в този форум
   е необходимо да се регистрирате. Благодарим,
   че отворихте личния си идентификатор,
@@ -63,6 +70,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Изпращане на съобщение',
 	'icone_suivi_forum' => 'Принос от съобщение(я) в публичния форум: @nb_forums@ съобщения',
+	'icone_suivi_forums' => 'Развитие на форумите',
 	'icone_supprimer_message' => 'Изтриване на съобщението',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Одобряване на съобщението',
@@ -105,6 +113,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'Без администраторски форум',
 	'item_non_config_forums_prive_global' => 'Désactiver le forum des rédacteurs', # NEW
 	'item_non_config_forums_prive_objets' => 'Désactiver ces forums', # NEW
+
+	// L
+	'lien_reponse_article' => 'Отговор на статията',
+	'lien_reponse_breve_2' => 'Отговор на новината',
+	'lien_reponse_rubrique' => 'Отговор в рубриката',
+	'lien_reponse_site_reference' => 'Отговор на свързания сайт:',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

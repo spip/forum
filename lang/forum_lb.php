@@ -18,6 +18,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_moderation_priori' => 'Moderatioun à priori (d\'Beiträg ginn eréischt publizéiert nodeem se vun engem Administrateur validéiert goufen).',
 	'bouton_radio_modere_abonnement' => 'op Abonnement',
 	'bouton_radio_modere_posteriori' => 'modéréiert "à posteriori"',
+	'bouton_radio_modere_priori' => 'modéréiert "à priori"',
 	'bouton_radio_publication_immediate' => 'Direkt Publikatioun vun de Messagen (d\'Beiträg ginn direkt nom Schécken sichtbar, d\'Administrateuren kënnen se duerno läschen).',
 
 	// D
@@ -27,6 +28,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'E Message, e Kommentar?',
 	'forum' => 'Forum',
 	'forum_acces_refuse' => 'Dir hutt keen Zougang méi zu dëse Forum\'en.',
 	'forum_attention_dix_caracteres' => '<b>Opgepasst!</b> Äre Message muss op manst 10 Buchstawen hun.',
@@ -42,9 +44,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'Äntwert nët op dësen Email, mais um Forum op dëser Adress:', # MODIF
 	'forum_page_url' => '(Wann äre Message sech op en Artikel vum Internet bezitt oder op eng Säit déi méi Informatiounen gët, kënnt dir hei den Titel an d\'Adress vun der Säit uginn.)',
 	'forum_poste_par' => 'Message geschéckt vun @parauteur@ als Suite vum Artikel "@titre@".',
+	'forum_qui_etes_vous' => '<b>Wie sidd Dir?</b> (optionnel)',
 	'forum_texte' => 'Text vun ärem Message:',
 	'forum_titre' => 'Titel:',
+	'forum_url' => 'URL:',
+	'forum_valider' => 'Är Wiel validéieren',
 	'forum_voir_avant' => 'Dëse Message kucken ier e geschéckt gët',
+	'forum_votre_email' => 'Är Email-Adress:',
+	'forum_votre_nom' => 'Äre Numm (oder Pseudo):',
 	'forum_vous_enregistrer' => 'Fir bei dësem Forum matzemaachen, muss dir Iech fir d\'éischt umelden. Gidd hei är perséinlech Identifikatioun un déi der krut. Wann dir nët ugemelt sidd, da musst dir',
 	'forum_vous_inscrire' => 'Iech aschreiwen.',
 
@@ -54,6 +61,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Message schécken',
 	'icone_suivi_forum' => 'Den öffentlechen Forum verfolgen: @nb_forums@ Beiträg',
+	'icone_suivi_forums' => 'Forum\'en verfolgen',
 	'icone_supprimer_message' => 'Dëse Message läschen',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Dëse Message validéieren',
@@ -92,6 +100,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'De Forum vun den Administrateuren ofschalten',
 	'item_non_config_forums_prive_global' => 'De Redaktor-Forum ausschalten',
 	'item_non_config_forums_prive_objets' => 'Forumen ausschalten',
+
+	// L
+	'lien_reponse_article' => 'Äntwert op den Artikel',
+	'lien_reponse_breve_2' => 'Äntwert op d\'Kuerzmeldung',
+	'lien_reponse_rubrique' => 'Äntwert op d\'Rubrik',
+	'lien_reponse_site_reference' => 'Äntwert op de referenzéierten Site:',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

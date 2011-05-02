@@ -21,6 +21,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  投稿物は、管理者によって適正検査された後、表示されます)。',
 	'bouton_radio_modere_abonnement' => '会員だけ投稿可能',
 	'bouton_radio_modere_posteriori' => 'コメントを投稿後に検査',
+	'bouton_radio_modere_priori' => '検査したコメントのみ表示',
 	'bouton_radio_publication_immediate' => '投稿と同時に表示
 （投稿すると瞬時に表示するため、管理者は投稿を削除することは可能ですが投稿後になるでしょう）。',
 
@@ -31,6 +32,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'よろしければメッセージをお寄せください。',
 	'forum' => 'フォーラム',
 	'forum_acces_refuse' => 'あなたはもうこれらの掲示板にアクセスできません。',
 	'forum_attention_dix_caracteres' => '<b>警告 !</b> あなたのメッセージは長さが１０文字以下です。',
@@ -46,9 +48,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'このメールに返信しないで、次のアドレスの掲示板で:', # MODIF
 	'forum_page_url' => '(もしあなたのメッセージがウェブに公表されている記事、更なる情報が提供されているページを参照するなら、ページのタイトルとその下にURLを入力してください)。',
 	'forum_poste_par' => 'あなたの記事の後に投稿された@parauteur@ メッセージ。', # MODIF
+	'forum_qui_etes_vous' => '<b>あなたはだれ?</b> (オプション)',
 	'forum_texte' => 'あなたのメッセージテキスト:',
 	'forum_titre' => '件名:',
+	'forum_url' => 'URL:',
+	'forum_valider' => 'この選択を確認',
 	'forum_voir_avant' => '投稿する前にメッセージをプレビュー',
+	'forum_votre_email' => 'あなたのe-mailアドレス:',
+	'forum_votre_nom' => 'あなたの名前（か仮名）:',
 	'forum_vous_enregistrer' => 'この掲示板に投稿する前に
   あなたは登録しなければなりません。あなたに与えられた個人的なIDを入力してくれてありがとう。もしまだ登録してないなら、あなたはするべきです。',
 	'forum_vous_inscrire' => '登録者。',
@@ -59,6 +66,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'メッセージの投稿',
 	'icone_suivi_forum' => '公開掲示板の追跡: @nb_forums@ 投稿',
+	'icone_suivi_forums' => '掲示板を管理する',
 	'icone_supprimer_message' => 'このメッセージを削除',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'このメッセージを確認',
@@ -97,6 +105,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => '管理者用の掲示板を作らない',
 	'item_non_config_forums_prive_global' => 'Désactiver le forum des rédacteurs', # NEW
 	'item_non_config_forums_prive_objets' => 'Désactiver ces forums', # NEW
+
+	// L
+	'lien_reponse_article' => '記事へ返信',
+	'lien_reponse_breve_2' => 'ニュースに返信',
+	'lien_reponse_rubrique' => 'セクションに返信',
+	'lien_reponse_site_reference' => '参照されたサイトに返信:',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

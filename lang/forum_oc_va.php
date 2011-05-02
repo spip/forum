@@ -22,6 +22,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  las an validaas).',
 	'bouton_radio_modere_abonnement' => 'moderat amb abonament',
 	'bouton_radio_modere_posteriori' => 'moderat a posteriòri',
+	'bouton_radio_modere_priori' => 'moderat a priòri',
 	'bouton_radio_publication_immediate' => 'Publicar los messatges sus lo còp
  (las contribucions apareisson tre mandaas, los administrators las pòon
  suprimir puei).',
@@ -33,6 +34,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Un messatge, una remarca?',
 	'forum' => 'Forum',
 	'forum_acces_refuse' => 'Poètz pas pus accedir vèrs aqueles forums.',
 	'forum_attention_dix_caracteres' => '<b>Atencion!</b> vòstre messatge deu tenir aumens dètz caractèrs.',
@@ -48,9 +50,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'Respondatz pas a aquel e-mail mas per lo forum a l\'adreiça seguenta: ', # MODIF
 	'forum_page_url' => '(se vòstre messatge se referís a un article publicat per lo web, o a una pagina que baile mai d\'informacions, volhatz marcar çai sos lo títol de la pagina e son adreiça URL.)',
 	'forum_poste_par' => 'Messatge poste@parauteur@ que fai seguia a vòstre article.',
+	'forum_qui_etes_vous' => '<b>Qui siatz?</b> (opcionau)',
 	'forum_texte' => 'Tèxt de vòstre messatge:',
 	'forum_titre' => 'Títol:',
+	'forum_url' => 'URL:',
+	'forum_valider' => 'Validar aquela chausia',
 	'forum_voir_avant' => 'Veire lo messatge avans de lo mandar',
+	'forum_votre_email' => 'Vòstra adreiça e-mail:',
+	'forum_votre_nom' => 'Vòstre nom (o pseudonim):',
 	'forum_vous_enregistrer' => 'Per participar a
   aqueu forum, d\'en primier vos chau registrar. Mercé
   de marcar çai sos l\'identificant personau qu\'avètz recebut.
@@ -63,6 +70,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Postar un messatge',
 	'icone_suivi_forum' => 'Seguit dau forum public: @nb_forums@ contribucion(s)',
+	'icone_suivi_forums' => 'Seguir/gerir los forums',
 	'icone_supprimer_message' => 'Suprimir aqueu messatge',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Validar aqueu messatge',
@@ -103,6 +111,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'Desactivar lo forum dels administrators',
 	'item_non_config_forums_prive_global' => 'Désactiver le forum des rédacteurs', # NEW
 	'item_non_config_forums_prive_objets' => 'Désactiver ces forums', # NEW
+
+	// L
+	'lien_reponse_article' => 'Respònsa a l\'article',
+	'lien_reponse_breve_2' => 'Respònsa a la brèva',
+	'lien_reponse_rubrique' => 'Respònsa a la rubrica',
+	'lien_reponse_site_reference' => 'Respònsa au sit referenciat:',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

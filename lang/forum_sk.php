@@ -22,6 +22,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  administrators).',
 	'bouton_radio_modere_abonnement' => 'registration required', # MODIF
 	'bouton_radio_modere_posteriori' => 'post-moderation', # MODIF
+	'bouton_radio_modere_priori' => 'pre-moderation', # MODIF
 	'bouton_radio_publication_immediate' => 'Immediate publication of messages
  (contributions will be shown as soon as they are sent, administrators can
  then delete them).',
@@ -33,6 +34,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Any message or comment?',
 	'forum' => 'Fórum',
 	'forum_acces_refuse' => 'You have not access to these forums anymore.',
 	'forum_attention_dix_caracteres' => '<b>Warning!</b> Your message needs to be at least ten characters in length.',
@@ -48,9 +50,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'Do not reply to this mail but in the forum at the following address:', # MODIF
 	'forum_page_url' => '(If your message refers to an article published on the web or to a page providing further information, please enter the title of the page and its URL below).',
 	'forum_poste_par' => 'Message posted@parauteur@ following your article "@titre@".', # MODIF
+	'forum_qui_etes_vous' => '<b>Kto ste?</b> (voliteľné)',
 	'forum_texte' => 'Text vašej správy:',
 	'forum_titre' => 'Predmet:',
+	'forum_url' => 'Adresa:',
+	'forum_valider' => 'Validate this choice', # MODIF
 	'forum_voir_avant' => 'Preview message before posting', # MODIF
+	'forum_votre_email' => 'Váš e-mail:',
+	'forum_votre_nom' => 'Vaše méno (resp. prezývka):',
 	'forum_vous_enregistrer' => 'Prior to participating in
 		this forum, you must register. Thank you
 		for entering the personal identifier
@@ -63,6 +70,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Poslať odkaz',
 	'icone_suivi_forum' => 'Follow-up of public forum: @nb_forums@ contribution(s)',
+	'icone_suivi_forums' => 'Sledovanie diskusních skupín',
 	'icone_supprimer_message' => 'Zmazať tento príspevok',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Uverejniť tento príspevok',
@@ -105,6 +113,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'Disable administrators forum',
 	'item_non_config_forums_prive_global' => 'Deactivate the authors\' forum',
 	'item_non_config_forums_prive_objets' => 'Deactivate these forums',
+
+	// L
+	'lien_reponse_article' => 'Reply to the article',
+	'lien_reponse_breve_2' => 'Reply to the news item',
+	'lien_reponse_rubrique' => 'Reply to the section',
+	'lien_reponse_site_reference' => 'Reply to the referenced site:',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

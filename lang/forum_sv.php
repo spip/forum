@@ -18,6 +18,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_moderation_priori' => 'Moderering i förhand (bidrag visas endast efter att de godkänts av en administatör).',
 	'bouton_radio_modere_abonnement' => 'registrering krävs',
 	'bouton_radio_modere_posteriori' => 'moderering i efterhand',
+	'bouton_radio_modere_priori' => 'moderering i förhand',
 	'bouton_radio_publication_immediate' => 'Omedelbar publicering av meddelanden (bidrag visas direkt efter att de skickas, administratörer kan radera dom senare):',
 
 	// D
@@ -27,6 +28,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Något meddelande eller kommentar?',
 	'forum' => 'Forum',
 	'forum_acces_refuse' => 'Du har inte längre tillgång till dessa forum.',
 	'forum_attention_dix_caracteres' => '<b>Varning!</b> Ditt meddelande måste vara minst 10 tecken långt.',
@@ -42,9 +44,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_ne_repondez_pas' => 'Svara inte på detta brev utan i forumet på denna adress:', # MODIF
 	'forum_page_url' => '(Om ditt meddelande refererar till en artikel publicerad på webben eller till en sida med mer information, ange namnet på sidan och dess adress nedan).',
 	'forum_poste_par' => 'Meddelande inskickat@parauteur@ efter din artikel',
+	'forum_qui_etes_vous' => '<b>Vem är du?</b> (valfritt)',
 	'forum_texte' => 'Texten i meddelandet:',
 	'forum_titre' => 'Ämne:',
+	'forum_url' => 'URL:',
+	'forum_valider' => 'Granska valet',
 	'forum_voir_avant' => 'Förhandsgranska meddelandet innan du skickar det',
+	'forum_votre_email' => 'Din epost-adress',
+	'forum_votre_nom' => 'Ditt namn (eller alias):',
 	'forum_vous_enregistrer' => 'För att delta
  i detta forum måste du vara registrerad. Var vänlig
   att skriv in ditt användarnamn som du fick.
@@ -57,6 +64,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Anslå ett meddelande',
 	'icone_suivi_forum' => 'Uppföljning av publika forum: @nb_forums@ bidrag',
+	'icone_suivi_forums' => 'Hantera forumen',
 	'icone_supprimer_message' => 'Radera meddelandet',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Godkänn meddelandet',
@@ -99,6 +107,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_desactiver_forum_administrateur' => 'Avaktivera administratörernas forum',
 	'item_non_config_forums_prive_global' => 'Avaktivera redaktörernas forum',
 	'item_non_config_forums_prive_objets' => 'Avaktivera dessa forum',
+
+	// L
+	'lien_reponse_article' => 'Svara på artikeln',
+	'lien_reponse_breve_2' => 'Skriv ett svar på nyheten',
+	'lien_reponse_rubrique' => 'Skriv ett svar till avdelningen',
+	'lien_reponse_site_reference' => 'Réponse au site référencé :', # NEW
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW
