@@ -113,4 +113,5 @@
 		<url>forum</url>
 	</bouton>
 	<categorie>communication</categorie>
+	<traduire gestionnaire="salvatore" module="forum" reference="fr" />
 </plugin>
