@@ -139,6 +139,7 @@ De vil være lukkede i forhold til afsnit, meddelelser osv..',
 
 	// S
 	'statut_off' => 'Supprimé', # NEW
+	'statut_original' => 'original', # NEW
 	'statut_prop' => 'Proposé', # NEW
 	'statut_publie' => 'Publié', # NEW
 	'statut_spam' => 'Spam', # NEW

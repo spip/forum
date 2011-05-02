@@ -142,6 +142,7 @@ La publikaj forumoj estos laŭkaze unu post la alia permesitaj
 
 	// S
 	'statut_off' => 'Supprimé', # NEW
+	'statut_original' => 'originala',
 	'statut_prop' => 'Proposé', # NEW
 	'statut_publie' => 'Publié', # NEW
 	'statut_spam' => 'Spam', # NEW

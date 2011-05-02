@@ -143,6 +143,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// S
 	'statut_off' => 'Supprimé',
+	'statut_original' => 'original',
 	'statut_prop' => 'Proposé',
 	'statut_publie' => 'Publié',
 	'statut_spam' => 'Spam',

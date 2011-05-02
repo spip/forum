@@ -142,6 +142,7 @@ Si ja n\'esteu, escriviu a continuació l\'identifcador que us ha estat proporci
 
 	// S
 	'statut_off' => 'Supprimé', # NEW
+	'statut_original' => 'original',
 	'statut_prop' => 'Proposé', # NEW
 	'statut_publie' => 'Publié', # NEW
 	'statut_spam' => 'Spam', # NEW

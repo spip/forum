@@ -143,6 +143,7 @@ De publieke forums kunnen per artikel toegestaan worden
 
 	// S
 	'statut_off' => 'Supprimé', # NEW
+	'statut_original' => 'origineel',
 	'statut_prop' => 'Proposé', # NEW
 	'statut_publie' => 'Publié', # NEW
 	'statut_spam' => 'Spam', # NEW

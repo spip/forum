@@ -146,6 +146,7 @@ utilizadores devem ter uma assinatura ao fornecer o seu endereço e-mail antes d
 
 	// S
 	'statut_off' => 'Supprimé', # NEW
+	'statut_original' => 'original', # NEW
 	'statut_prop' => 'Proposé', # NEW
 	'statut_publie' => 'Publié', # NEW
 	'statut_spam' => 'Spam', # NEW

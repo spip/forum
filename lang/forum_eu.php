@@ -136,6 +136,7 @@ Inskribaturik ez bazaude, aurretik inskribatu behar duzu.',
 
 	// S
 	'statut_off' => 'Supprimé', # NEW
+	'statut_original' => 'jatorrizkoa',
 	'statut_prop' => 'Proposé', # NEW
 	'statut_publie' => 'Publié', # NEW
 	'statut_spam' => 'Spam', # NEW

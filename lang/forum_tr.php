@@ -142,6 +142,7 @@ sonradan yok edebilir).',
 
 	// S
 	'statut_off' => 'Supprimé', # NEW
+	'statut_original' => 'orijinal',
 	'statut_prop' => 'Proposé', # NEW
 	'statut_publie' => 'Publié', # NEW
 	'statut_spam' => 'Spam', # NEW

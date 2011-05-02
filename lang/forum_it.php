@@ -144,6 +144,7 @@ sui singoli articoli; saranno invece proibiti nelle rubriche, nelle brevi, ecc',
 
 	// S
 	'statut_off' => 'Supprimé', # NEW
+	'statut_original' => 'originale',
 	'statut_prop' => 'Proposé', # NEW
 	'statut_publie' => 'Publié', # NEW
 	'statut_spam' => 'Spam', # NEW
