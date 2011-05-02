@@ -37,7 +37,7 @@
 	]
 	[(#ENV{ip}|ou{#ENV{email_auteur}}|ou{#ENV{auteur}}|ou{#ENV{id_auteur}})
 	#BOITE_OUVRIR{'','note'}
-		<div class='par'><:par:>
+		<div class='par'><:par_auteur:>
 			<a class='annule_filtre ajax' href='#GET{self}' title="<:forum:tout_voir|attribut_html:>">[(#CHEMIN_IMAGE{fermer-16.png}|balise_img|inserer_attribut{alt,<:forum:tout_voir:>})]</a>
 
 		[

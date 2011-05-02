@@ -42,12 +42,12 @@
 
 [(#ENV**{afficher_texte}|choixsiegal{'non', ' ',''})
 [<input type="hidden" name="titre" value="(#ENV{titre})" />]
-<p class="spip_bouton"><input type="submit" class="submit" value="<:forum_valider:>" /></p>]
+<p class="spip_bouton"><input type="submit" class="submit" value="<:forum:forum_valider:>" /></p>]
 
 [(#ENV**{afficher_texte}|choixsiegal{'non', '',' '})
 
 	<fieldset>
-	<legend><:form_pet_message_commentaire:></legend>[
+	<legend><:forum:form_pet_message_commentaire:></legend>[
 	(#CONFIG{forums_titre}|!={non}|non)
 		<input type="hidden" name="titre" id="titre"[ value="(#ENV{titre})"] />
 	]<ul>
@@ -79,7 +79,7 @@
 	<li class='saisie_nom_site[ (#ENV**{erreurs}|table_valeur{nom_site}|oui)erreur]'><label for="nom_site"><:forum:forum_titre:></label>
 	[<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{nom_site})</span>]
 	<input type="text" class="text" name="nom_site" id="nom_site" size="40" value="[(#ENV{nom_site})]" /></li>
-	<li class='saisie_url_site[ (#ENV**{erreurs}|table_valeur{url_site}|oui)erreur]'><label for="url_site"><:forum_url:></label>
+	<li class='saisie_url_site[ (#ENV**{erreurs}|table_valeur{url_site}|oui)erreur]'><label for="url_site"><:forum:forum_url:></label>
 	[<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{url_site})</span>]
 	<input type="text" class="text" name="url_site" id="url_site" style="text-align: left;" dir="ltr" size="40" value="[(#ENV{url_site})]" /></li>
 	</ul></fieldset>
