@@ -38,6 +38,7 @@ inc/forum.php -text
 inc/forum_insert.php -text
 inc/forum_notifications.php -text
 javascript/jquery.autosave.js -text
+lang/forum.xml -text
 lang/forum_ar.php -text
 lang/forum_ast.php -text
 lang/forum_ay.php -text
@@ -92,6 +93,7 @@ lang/forum_pt.php -text
 lang/forum_pt_br.php -text
 lang/forum_rn.php -text
 lang/forum_ro.php -text
+lang/forum_roa.php -text
 lang/forum_ru.php -text
 lang/forum_sk.php -text
 lang/forum_ss.php -text
