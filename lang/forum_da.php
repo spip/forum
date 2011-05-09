@@ -30,7 +30,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
-	'form_pet_message_commentaire' => 'Meddelelse eller kommentar?',
+	'form_forum_message_commentaire' => 'Meddelelse eller kommentar?',
 	'forum' => 'Forum',
 	'forum_acces_refuse' => 'Du har ikke mere adgang til disse forummer',
 	'forum_attention_dix_caracteres' => '<b>Advarsel!</b> dit indlæg er mindre end ti tegn langt.', # MODIF

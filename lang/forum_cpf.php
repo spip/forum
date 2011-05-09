@@ -30,7 +30,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
-	'form_pet_message_commentaire' => 'Inn modékri, inn ti lavi, inn komantèr ?',
+	'form_forum_message_commentaire' => 'Inn modékri, inn ti lavi, inn komantèr ?',
 	'forum' => 'Forom kozman',
 	'forum_acces_refuse' => 'Ou néna pli lapermisyon pou gèt dann bann forom-la.',
 	'forum_attention_dix_caracteres' => '<b>Tansyon pangar !</b> out modékri néna mwin 10 karaktèr-linprimri. Lé pa asé pou anrozistr ali.',

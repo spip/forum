@@ -28,7 +28,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
-	'form_pet_message_commentaire' => 'မှတ်ချက် တစ်စုံတစ်ရာ ပေးလိုပါသလား?',
+	'form_forum_message_commentaire' => 'မှတ်ချက် တစ်စုံတစ်ရာ ပေးလိုပါသလား?',
 	'forum' => 'ဖိုရမ်',
 	'forum_acces_refuse' => 'ဤဖိုရမ်သို့ ဝင်ရောက်ခွင့် မရှိတော့ပါ',
 	'forum_attention_dix_caracteres' => '<b>သတိပေးချက်!</b> သင့်စာစောင်သည် အနည်းဆုံး စာလုံး၁ဝလုံးနှင့် အထက်ပါဝင်သင့်သည်',

@@ -28,7 +28,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
-	'form_pet_message_commentaire' => 'E Message, e Kommentar?',
+	'form_forum_message_commentaire' => 'E Message, e Kommentar?',
 	'forum' => 'Forum',
 	'forum_acces_refuse' => 'Dir hutt keen Zougang méi zu dëse Forum\'en.',
 	'forum_attention_dix_caracteres' => '<b>Opgepasst!</b> Äre Message muss op manst 10 Buchstawen hun.',

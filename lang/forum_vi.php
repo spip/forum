@@ -28,7 +28,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
-	'form_pet_message_commentaire' => 'Có nhắn tin hay bình luận gì không?',
+	'form_forum_message_commentaire' => 'Có nhắn tin hay bình luận gì không?',
 	'forum' => 'Diễn đàn',
 	'forum_acces_refuse' => 'Bạn không có quyền vào các diễn đàn này nữa.',
 	'forum_attention_dix_caracteres' => '<b>Cảnh báo!</b> Thư tín quá ngắn - Phải hơn 10 mẫu tự.',

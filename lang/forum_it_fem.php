@@ -34,7 +34,7 @@ cancellarli successivamente).',
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
-	'form_pet_message_commentaire' => 'Un messaggio, un commento?',
+	'form_forum_message_commentaire' => 'Un messaggio, un commento?',
 	'forum' => 'Forum',
 	'forum_acces_refuse' => 'Non hai accesso a questi forum.',
 	'forum_attention_dix_caracteres' => '<b>Attenzione!</b> il messaggio deve contenere almeno dieci caratteri.',

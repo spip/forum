@@ -34,7 +34,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
-	'form_pet_message_commentaire' => '4ny m3554g3 0r c0mm3n7?',
+	'form_forum_message_commentaire' => '4ny m3554g3 0r c0mm3n7?',
 	'forum' => 'F0rum',
 	'forum_acces_refuse' => 'Y0u h4v3 n07 4cc355 70 7h353 f0rum5 4nym0r3.',
 	'forum_attention_dix_caracteres' => '<b>W4rn1ng!</b> y0ur m3554g3 15 1355 7h4n 73n ch4r4c73r5 1n 13ng7h.', # MODIF

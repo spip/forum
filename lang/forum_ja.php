@@ -32,7 +32,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
-	'form_pet_message_commentaire' => 'よろしければメッセージをお寄せください。',
+	'form_forum_message_commentaire' => 'よろしければメッセージをお寄せください。',
 	'forum' => 'フォーラム',
 	'forum_acces_refuse' => 'あなたはもうこれらの掲示板にアクセスできません。',
 	'forum_attention_dix_caracteres' => '<b>警告 !</b> あなたのメッセージは長さが１０文字以下です。',

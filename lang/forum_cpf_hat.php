@@ -34,7 +34,7 @@ patisipasyon yo zitilizatè tout ke pa afiche sou sitwèb piblik si yon komandé
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
-	'form_pet_message_commentaire' => 'Gen yon mesaj, yon komanté pou di ?',
+	'form_forum_message_commentaire' => 'Gen yon mesaj, yon komanté pou di ?',
 	'forum' => 'Fowom',
 	'forum_acces_refuse' => 'W ap pli laksé pou fowom-nan.',
 	'forum_attention_dix_caracteres' => '<b>Atansyon !</b> mesaj ou li se mwen di lèt.',

@@ -32,7 +32,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
-	'form_pet_message_commentaire' => 'Een bericht, een commentaar?',
+	'form_forum_message_commentaire' => 'Een bericht, een commentaar?',
 	'forum' => 'Forum',
 	'forum_acces_refuse' => 'Je hebt geen toegang meer tot deze forums.',
 	'forum_attention_dix_caracteres' => '<b>Opgelet!</b> : je bericht moet minstens 10 tekens bevatten.',

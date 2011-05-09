@@ -32,7 +32,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
-	'form_pet_message_commentaire' => 'Üzenet, hozzászólás ?',
+	'form_forum_message_commentaire' => 'Üzenet, hozzászólás ?',
 	'forum' => 'Fórum',
 	'forum_acces_refuse' => 'Már nincs hozzáférése ezekhez a fórumokhoz.',
 	'forum_attention_dix_caracteres' => '<b>Vigyázat !</b> Az üzenetének legalább 10 karaktert kell tartalmaznia.',
