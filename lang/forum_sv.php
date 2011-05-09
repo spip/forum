@@ -28,7 +28,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
-	'form_forum_message_commentaire' => 'Något meddelande eller kommentar?',
+	'form_pet_message_commentaire' => 'Något meddelande eller kommentar?',
 	'forum' => 'Forum',
 	'forum_acces_refuse' => 'Du har inte längre tillgång till dessa forum.',
 	'forum_attention_dix_caracteres' => '<b>Varning!</b> Ditt meddelande måste vara minst 10 tecken långt.',

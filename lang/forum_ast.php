@@ -34,7 +34,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
-	'form_forum_message_commentaire' => '¿Un mensaxe, un comentariu?',
+	'form_pet_message_commentaire' => '¿Un mensaxe, un comentariu?',
 	'forum' => 'Foru',
 	'forum_acces_refuse' => 'Ya nun ties accesu a estos foros.',
 	'forum_attention_dix_caracteres' => '<b>¡Atención!</b> el mensaxe tien que tener polo menos diez carauteres.',

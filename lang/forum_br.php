@@ -28,7 +28,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
-	'form_forum_message_commentaire' => 'Ur gemennadenn, un evezhiadenn ?',
+	'form_pet_message_commentaire' => 'Ur gemennadenn, un evezhiadenn ?',
 	'forum' => 'Forom',
 	'forum_acces_refuse' => 'N\'oc\'h ket aotreet da vont war ar foromoù-mañ ken .',
 	'forum_attention_dix_caracteres' => '<b>Diwallit !</b> Dek arouezenn d\'an nebeutañ a rank bezañ en ho kemennadenn.',

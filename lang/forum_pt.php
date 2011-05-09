@@ -33,7 +33,7 @@ utilizadores devem ter uma assinatura ao fornecer o seu endereço e-mail antes d
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
-	'form_forum_message_commentaire' => 'Uma mensagem, um comentário ?',
+	'form_pet_message_commentaire' => 'Uma mensagem, um comentário ?',
 	'forum' => 'Fórum',
 	'forum_acces_refuse' => 'Já não tem acesso a esses fóruns.',
 	'forum_attention_dix_caracteres' => '<b>Atenção !</b> a sua mensagem contém menos de dez carácteres.',

@@ -30,7 +30,7 @@ forviŝi ilin poste).',
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
-	'form_forum_message_commentaire' => 'Ĉu mesaĝon, ĉu komenton ?',
+	'form_pet_message_commentaire' => 'Ĉu mesaĝon, ĉu komenton ?',
 	'forum' => 'Forumo',
 	'forum_acces_refuse' => 'Vi ne plu havas alir-rajton al tiuj ĉi forumoj.',
 	'forum_attention_dix_caracteres' => '<b>Atentu !</b> via mesaĝo devas enhavi almenaŭ dek signojn.',

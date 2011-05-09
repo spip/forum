@@ -30,7 +30,7 @@ sonradan yok edebilir).',
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
-	'form_forum_message_commentaire' => 'Bir ileti, bir yorum ?',
+	'form_pet_message_commentaire' => 'Bir ileti, bir yorum ?',
 	'forum' => 'Forum',
 	'forum_acces_refuse' => 'Artık bu forumlara erişiminiz yok.',
 	'forum_attention_dix_caracteres' => '<b>Dikkat !</b> iletiniz on karakterden kısa.',
