@@ -1,17 +1,17 @@
 <plugin spip='[2.1.0-beta;]'>
-	<nom>Forum</nom>
+	<nom>Forum sur Objets pour SPIP 2</nom>
 	<auteur>Collectif SPIP</auteur>
-	<version>1.1.2</version>
+	<version>1.2</version>
 	<version_base>1.2</version_base>
 	<etat>test</etat>
 	<description>
 		<multi>
-			[fr]Forum de SPIP (priv&#233; et public)
-			[de]Foren in SPIP (Redaktionsbereich und &#246;ffentliche Website)
-			[en]Forums of SPIP (for the private and public area)
+			[fr]Forum sur tous objets pour SPIP2 (priv&#233; et public)
+			[de]Foren für alle Objekte in SPIP2 (Redaktionsbereich und &#246;ffentliche Website)
+			[en]Forums on any objects for SPIP2 (for private and public area)
 		</multi>
 	</description>
-	<prefix>forum</prefix>
+	<prefix>forum_objets_spip2</prefix>
 	<install>base/forum_upgrade.php</install>
 	<fonctions>spip21/public/forum.php</fonctions>
 	<fonctions>filtres/forum.php</fonctions>
@@ -80,19 +80,19 @@
 	<categorie>communication</categorie>
 </plugin>
 <plugin spip='[2.2.0-dev;)'>
-	<nom>Forum</nom>
+	<nom>Forum sur Objets pour SPIP2</nom>
 	<auteur>Collectif SPIP</auteur>
-	<version>1.1.1</version>
+	<version>1.2</version>
 	<version_base>1.2</version_base>
 	<etat>test</etat>
 	<description>
 		<multi>
-			[fr]Forum de SPIP (priv&#233; et public)
-			[de]Foren in SPIP (Redaktionsbereich und &#246;ffentliche Website)
-			[en]Forums of SPIP (for the private and public area)
+			[fr]Forum sur tous objets pour SPIP2 (priv&#233; et public)
+			[de]Foren fûr alle Objekte in SPIP2 (Redaktionsbereich und &#246;ffentliche Website)
+			[en]Forums for any objects in SPIP2 (for private and public area)
 		</multi>
 	</description>
-	<prefix>forum</prefix>
+	<prefix>forum_objets_spip2</prefix>
 	<install>base/forum_upgrade.php</install>
 	<fonctions>spip22/public/forum.php</fonctions>
 	<fonctions>filtres/forum.php</fonctions>
