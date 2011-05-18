@@ -72,7 +72,7 @@ function forum_accueil_informations($texte){
 			}
 		}
 
-		$texte .= "<div class='accueil_informations forum'>";
+		$texte .= "<div class='accueil_informations forum liste'>";
 		$afficher_plus = 'afficher_plus_info';
 		$plus = "";
 		if (!function_exists($afficher_plus))

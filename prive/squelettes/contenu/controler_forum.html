@@ -1,5 +1,5 @@
 [(#AUTORISER{moderer,forum}|sinon_interdire_acces)]
-<h1><:forum:titre_forum_suivi:></h1>
+<h1 class="grostitre"><:forum:titre_forum_suivi:>[(#VAL{forums_}|concat{#ENV{type_message,public}}|bouton_spip_rss)]</h1>
 
 #SET{self,#SELF|parametre_url{id_forum|email_auteur|ip|id_auteur|auteur|debut_id_forum,''}}
 
