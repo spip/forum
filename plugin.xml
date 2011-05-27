@@ -11,7 +11,7 @@
 			[en]Forums on any objects for SPIP2 (for private and public area)
 		</multi>
 	</description>
-	<prefix>forum_objets_spip2</prefix>
+	<prefix>forum</prefix>
 	<install>base/forum_upgrade.php</install>
 	<fonctions>spip21/public/forum.php</fonctions>
 	<fonctions>filtres/forum.php</fonctions>
@@ -92,7 +92,7 @@
 			[en]Forums for any objects in SPIP2 (for private and public area)
 		</multi>
 	</description>
-	<prefix>forum_objets_spip2</prefix>
+	<prefix>forum</prefix>
 	<install>base/forum_upgrade.php</install>
 	<fonctions>spip22/public/forum.php</fonctions>
 	<fonctions>filtres/forum.php</fonctions>
