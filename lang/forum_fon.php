@@ -149,6 +149,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_forum' => 'kplékplé',
 	'titre_forum_suivi' => 'Bɔ núkún nú kplékplé ɔ',
 	'titre_page_forum_suivi' => 'Bɔnúkún kplékplé ɔ jí',
+	'titre_selection_action' => 'Sélection', # NEW
 	'tout_voir' => 'Voir tous les messages', # NEW
 
 	// V

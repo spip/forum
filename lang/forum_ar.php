@@ -161,6 +161,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_forum' => 'المنتدى',
 	'titre_forum_suivi' => 'متابعة المنتديات',
 	'titre_page_forum_suivi' => 'متابعة المنتديات',
+	'titre_selection_action' => 'Sélection', # NEW
 	'tout_voir' => 'عرض كل المشاركات',
 
 	// V

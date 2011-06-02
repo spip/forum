@@ -8,7 +8,7 @@ if (!defined('_ECRIRE_INC_VERSION')) return;
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// A
-	'aucun_message_forum' => 'Aucun message de forum', # NEW
+	'aucun_message_forum' => 'Aucun message de forum',
 
 	// B
 	'bouton_radio_articles_futurs' => 'aux articles futurs uniquement (pas d\'action sur la base de données).',
@@ -31,7 +31,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'documents_interdits_forum' => 'Documents interdits dans le forum',
 
 	// E
-	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
+	'erreur_enregistrement_message' => 'Ton message n\'a pas pu être enregistré en raison d\'un problème technique',
 
 	// F
 	'form_pet_message_commentaire' => 'Un message, un commentaire ?',
@@ -65,18 +65,18 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_vous_inscrire' => 't\'inscrire.',
 
 	// I
-	'icone_bruler_message' => 'Signaler comme Spam', # NEW
-	'icone_bruler_messages' => 'Signaler comme Spam', # NEW
-	'icone_legitimer_message' => 'Signaler comme licite', # NEW
+	'icone_bruler_message' => 'Signaler comme Spam',
+	'icone_bruler_messages' => 'Signaler comme Spam',
+	'icone_legitimer_message' => 'Signaler comme licite',
 	'icone_poster_message' => 'Poster un message',
 	'icone_suivi_forum' => 'Suivi du forum public : @nb_forums@ contribution(s)',
 	'icone_suivi_forums' => 'Suivre/gérer les forums',
 	'icone_supprimer_message' => 'Supprimer ce message',
-	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
+	'icone_supprimer_messages' => 'Supprimer ces messages',
 	'icone_valider_message' => 'Valider ce message',
-	'icone_valider_messages' => 'Valider ces messages', # NEW
-	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message', # NEW
-	'info_1_message_forum' => '1 message de forum', # NEW
+	'icone_valider_messages' => 'Valider ces messages',
+	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message',
+	'info_1_message_forum' => '1 message de forum',
 	'info_activer_forum_public' => '<i>Pour activer les forums publics, choisis leur mode
  de modération par défaut:</i>',
 	'info_appliquer_choix_moderation' => 'Appliquer ce choix de modération :',
@@ -89,23 +89,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	sur les articles ; ils seront interdits sur les rubriques, brèves, etc.',
 	'info_envoi_forum' => 'Envoi des forums aux auteurs des articles',
 	'info_fonctionnement_forum' => 'Fonctionnement du forum :',
-	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
+	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot',
 	'info_gauche_suivi_forum_2' => 'La page de <i>suivi des forums</i> est un outil de gestion de ton site (et non un espace de discussion ou de rédaction). Elle affiche toutes les contributions des forums du site, aussi bien celles du site public que de l\'espace privé et te permet de gérer ces contributions.',
 	'info_liens_syndiques_3' => 'forums',
 	'info_liens_syndiques_4' => 'sont',
 	'info_liens_syndiques_5' => 'forum',
 	'info_liens_syndiques_6' => 'est',
 	'info_liens_syndiques_7' => 'en attente de validation',
-	'info_liens_texte' => 'Lien(s) contenu(s) dans le texte du message', # NEW
-	'info_liens_titre' => 'Lien(s) contenu(s) dans le titre du message', # NEW
+	'info_liens_texte' => 'Lien(s) contenu(s) dans le texte du message',
+	'info_liens_titre' => 'Lien(s) contenu(s) dans le titre du message',
 	'info_mode_fonctionnement_defaut_forum_public' => 'Mode de fonctionnement par défaut des forums publics',
-	'info_nb_messages_forum' => '@nb@ messages de forum', # NEW
+	'info_nb_messages_forum' => '@nb@ messages de forum',
 	'info_option_email' => 'Lorsqu\'un visiteur du site poste un nouveau message dans le forum associé à un article, les auteurs de l\'article peuvent être prévenus de ce message par e-mail. Indiquer pour chaque type de forum s\'il faut utiliser cette option.',
 	'info_pas_de_forum' => 'pas de forum',
 	'info_question_visiteur_ajout_document_forum' => 'Si tu souhaites autoriser les visiteurs à joindre des documents (images, sons...) à leurs messages de forums, indique ci-dessous la liste des extensions de documents autorisés pour les forums (ex: gif, jpg, png, mp3).',
 	'info_question_visiteur_ajout_document_forum_format' => 'Si tu souhaites autoriser tous les types de documents considérés comme fiables par SPIP, mettre une étoile. Pour ne rien autoriser, ne rien indiquer',
-	'interface_formulaire' => 'Interface formulaire', # NEW
-	'interface_onglets' => 'Interface avec onglets', # NEW
+	'interface_formulaire' => 'Interface formulaire',
+	'interface_onglets' => 'Interface avec onglets',
 	'item_activer_forum_administrateur' => 'Activer le forum des administrateurs',
 	'item_config_forums_prive_global' => 'Activer le forum des rédacteurs',
 	'item_config_forums_prive_objets' => 'Activer ces forums',
@@ -120,20 +120,20 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'lien_reponse_site_reference' => 'Réponse au site référencé :',
 
 	// M
-	'messages_aucun' => 'Aucun', # NEW
-	'messages_meme_auteur' => 'Tous les messages de cet auteur', # NEW
-	'messages_meme_email' => 'Tous les messages de cet email', # NEW
-	'messages_meme_ip' => 'Tous les messages de cette IP', # NEW
-	'messages_off' => 'Supprimés', # NEW
-	'messages_perso' => 'Personnels', # NEW
-	'messages_privadm' => 'Administrateurs', # NEW
-	'messages_prive' => 'Privés', # NEW
-	'messages_privoff' => 'Supprimés', # NEW
-	'messages_privrac' => 'Généraux', # NEW
-	'messages_prop' => 'Proposés', # NEW
-	'messages_publie' => 'Publiés', # NEW
-	'messages_spam' => 'Spam', # NEW
-	'messages_tous' => 'Tous', # NEW
+	'messages_aucun' => 'Aucun',
+	'messages_meme_auteur' => 'Tous les messages de cet auteur',
+	'messages_meme_email' => 'Tous les messages de cet email',
+	'messages_meme_ip' => 'Tous les messages de cette IP',
+	'messages_off' => 'Supprimés',
+	'messages_perso' => 'Personnels',
+	'messages_privadm' => 'Administrateurs',
+	'messages_prive' => 'Privés',
+	'messages_privoff' => 'Supprimés',
+	'messages_privrac' => 'Généraux',
+	'messages_prop' => 'Proposés',
+	'messages_publie' => 'Publiés',
+	'messages_spam' => 'Spam',
+	'messages_tous' => 'Tous',
 
 	// O
 	'onglet_messages_internes' => 'Messages internes',
@@ -144,27 +144,28 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'repondre_message' => 'Répondre à ce message',
 
 	// S
-	'statut_off' => 'Supprimé', # NEW
+	'statut_off' => 'Supprimé',
 	'statut_original' => 'original',
-	'statut_prop' => 'Proposé', # NEW
-	'statut_publie' => 'Publié', # NEW
-	'statut_spam' => 'Spam', # NEW
+	'statut_prop' => 'Proposé',
+	'statut_publie' => 'Publié',
+	'statut_spam' => 'Spam',
 
 	// T
 	'text_article_propose_publication_forum' => 'N\'hésite pas à donner ton avis grâce au forum attaché à cet article (en bas de page).',
-	'texte_en_cours_validation' => 'Les articles, brèves, forums ci dessous sont proposés à la publication.', # NEW
+	'texte_en_cours_validation' => 'Les articles, brèves, forums ci dessous sont proposés à la publication.',
 	'texte_en_cours_validation_forum' => 'N\'hésite pas à donner ton avis grâce aux forums qui leur sont attachés.',
-	'texte_messages_publics' => 'Messages publics sur&nbsp;:', # NEW
+	'texte_messages_publics' => 'Messages publics sur :',
 	'titre_cadre_forum_administrateur' => 'Forum privé des administrateurs',
 	'titre_cadre_forum_interne' => 'Forum interne',
 	'titre_config_forums_prive' => 'Forums de l’espace priv&eacute;',
 	'titre_forum' => 'Forum',
 	'titre_forum_suivi' => 'Suivi des forums',
 	'titre_page_forum_suivi' => 'Suivi des forums',
-	'tout_voir' => 'Voir tous les messages', # NEW
+	'titre_selection_action' => 'Sélection', # NEW
+	'tout_voir' => '>Voir tous les messages',
 
 	// V
-	'voir_messages_objet' => 'voir les messages' # NEW
+	'voir_messages_objet' => 'voir les messages'
 );
 
 ?>

@@ -162,6 +162,7 @@ utilizadores devem ter uma assinatura ao fornecer o seu endereço e-mail antes d
 	'titre_forum' => 'Fórum',
 	'titre_forum_suivi' => 'Acompanhamento dos fóruns',
 	'titre_page_forum_suivi' => 'Acompanhamento dos fóruns',
+	'titre_selection_action' => 'Sélection', # NEW
 	'tout_voir' => 'Voir tous les messages', # NEW
 
 	// V

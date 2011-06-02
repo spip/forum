@@ -151,6 +151,7 @@ suministrado. Si no estás inscrito/a, debes',
 	'titre_forum' => 'Foro interno',
 	'titre_forum_suivi' => 'Gestión de los foros',
 	'titre_page_forum_suivi' => 'Seguimiento de los foros',
+	'titre_selection_action' => 'Sélection', # NEW
 	'tout_voir' => 'Voir tous les messages', # NEW
 
 	// V

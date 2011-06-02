@@ -150,6 +150,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_forum' => 'Forum',
 	'titre_forum_suivi' => 'Foren moderieren',
 	'titre_page_forum_suivi' => 'Foren moderieren',
+	'titre_selection_action' => 'Sélection', # NEW
 	'tout_voir' => 'Alle Beiträge anzeigen',
 
 	// V

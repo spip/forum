@@ -150,6 +150,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_forum' => 'ဖိုရမ်',
 	'titre_forum_suivi' => 'နောက်ဆက်တွဲဖိုရမ်',
 	'titre_page_forum_suivi' => 'ဖိုရမ်နောက်ဆက်တွဲ',
+	'titre_selection_action' => 'Sélection', # NEW
 	'tout_voir' => 'Voir tous les messages', # NEW
 
 	// V

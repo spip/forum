@@ -164,6 +164,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_forum' => 'Foru',
 	'titre_forum_suivi' => 'Guardia di i fori',
 	'titre_page_forum_suivi' => 'Guardia di i fori',
+	'titre_selection_action' => 'Sélection', # NEW
 	'tout_voir' => 'Voir tous les messages', # NEW
 
 	// V

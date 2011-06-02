@@ -154,6 +154,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_forum' => '掲示板',
 	'titre_forum_suivi' => '掲示板の続報',
 	'titre_page_forum_suivi' => '掲示板の続報',
+	'titre_selection_action' => 'Sélection', # NEW
 	'tout_voir' => 'Voir tous les messages', # NEW
 
 	// V

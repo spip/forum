@@ -162,6 +162,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_forum' => 'Форум',
 	'titre_forum_suivi' => 'Допълнения във форумите',
 	'titre_page_forum_suivi' => 'Допълнения във форумите',
+	'titre_selection_action' => 'Sélection', # NEW
 	'tout_voir' => 'Voir tous les messages', # NEW
 
 	// V

@@ -152,6 +152,7 @@ Inskribaturik ez bazaude, aurretik inskribatu behar duzu.',
 	'titre_forum' => 'Barne-foroa',
 	'titre_forum_suivi' => 'Foruen kudeaketa',
 	'titre_page_forum_suivi' => 'Foruenjarraipena',
+	'titre_selection_action' => 'Sélection', # NEW
 	'tout_voir' => 'Voir tous les messages', # NEW
 
 	// V

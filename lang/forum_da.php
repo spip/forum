@@ -155,6 +155,7 @@ De vil være lukkede i forhold til afsnit, meddelelser osv..',
 	'titre_forum' => 'Internt forum',
 	'titre_forum_suivi' => 'Opfølgning på forummer',
 	'titre_page_forum_suivi' => 'Opfølgning på forummer',
+	'titre_selection_action' => 'Sélection', # NEW
 	'tout_voir' => 'Voir tous les messages', # NEW
 
 	// V

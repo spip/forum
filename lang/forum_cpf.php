@@ -155,6 +155,7 @@ sanm inn limèl. Indik tèrla si ou vé anserv lopsyon-la ?', # MODIF
 	'titre_forum' => 'Forom ',
 	'titre_forum_suivi' => 'Swivi bann forom',
 	'titre_page_forum_suivi' => 'Swivi bann forom',
+	'titre_selection_action' => 'Sélection', # NEW
 	'tout_voir' => 'Voir tous les messages', # NEW
 
 	// V

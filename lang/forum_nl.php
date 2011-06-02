@@ -159,6 +159,7 @@ De publieke forums kunnen per artikel toegestaan worden
 	'titre_forum' => 'Forum',
 	'titre_forum_suivi' => 'Vervolg van de forums',
 	'titre_page_forum_suivi' => 'Vervolg van de forums',
+	'titre_selection_action' => 'Sélection', # NEW
 	'tout_voir' => 'Voir tous les messages', # NEW
 
 	// V

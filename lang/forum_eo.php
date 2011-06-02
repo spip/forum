@@ -158,6 +158,7 @@ La publikaj forumoj estos laŭkaze unu post la alia permesitaj
 	'titre_forum' => 'Forumo',
 	'titre_forum_suivi' => 'Superrigardo de la forumoj',
 	'titre_page_forum_suivi' => 'Superrigardo de la forumoj',
+	'titre_selection_action' => 'Sélection', # NEW
 	'tout_voir' => 'Voir tous les messages', # NEW
 
 	// V

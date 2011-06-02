@@ -163,6 +163,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_forum' => 'Diskusní skupina',
 	'titre_forum_suivi' => 'Sledování diskusních skupin',
 	'titre_page_forum_suivi' => 'Sledování diskusních skupin',
+	'titre_selection_action' => 'Sélection', # NEW
 	'tout_voir' => 'Voir tous les messages', # NEW
 
 	// V

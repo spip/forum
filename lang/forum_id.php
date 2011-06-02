@@ -162,6 +162,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_forum' => 'Forum',
 	'titre_forum_suivi' => 'Tindak lanjut forum',
 	'titre_page_forum_suivi' => 'Tindak lanjut forum',
+	'titre_selection_action' => 'Sélection', # NEW
 	'tout_voir' => 'Voir tous les messages', # NEW
 
 	// V

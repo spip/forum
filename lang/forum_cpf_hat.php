@@ -162,6 +162,7 @@ ak yon limèl. W vle itilize opsyon nan ?', # MODIF
 	'titre_forum' => 'Fowom',
 	'titre_forum_suivi' => 'Swivi fowom yo',
 	'titre_page_forum_suivi' => 'Pou swiv tout fowom yo',
+	'titre_selection_action' => 'Sélection', # NEW
 	'tout_voir' => 'Voir tous les messages', # NEW
 
 	// V

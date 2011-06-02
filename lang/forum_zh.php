@@ -160,6 +160,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_forum' => '内部论坛',
 	'titre_forum_suivi' => '论坛跟踪',
 	'titre_page_forum_suivi' => '论坛跟踪',
+	'titre_selection_action' => 'Sélection', # NEW
 	'tout_voir' => 'Voir tous les messages', # NEW
 
 	// V

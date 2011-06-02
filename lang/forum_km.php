@@ -149,6 +149,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_forum' => 'វេទិកា',
 	'titre_forum_suivi' => 'ការ​តាមដាន​វេទិកា',
 	'titre_page_forum_suivi' => 'ការ​តាមដាន​វេទិកា',
+	'titre_selection_action' => 'Sélection', # NEW
 	'tout_voir' => 'Voir tous les messages', # NEW
 
 	// V

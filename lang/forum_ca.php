@@ -158,6 +158,7 @@ Si ja n\'esteu, escriviu a continuació l\'identifcador que us ha estat proporci
 	'titre_forum' => 'Fòrum',
 	'titre_forum_suivi' => 'Seguiment dels fòrums',
 	'titre_page_forum_suivi' => 'Seguiment dels fòrums',
+	'titre_selection_action' => 'Sélection', # NEW
 	'tout_voir' => 'Voir tous les messages', # NEW
 
 	// V
