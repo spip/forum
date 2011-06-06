@@ -42,15 +42,15 @@ function forum_upgrade($nom_meta_base_version,$version_cible){
 		#array('sql_alter',"TABLE spip_forum ADD INDEX optimal (statut,id_parent,id_objet,objet,date_heure)"),
 	);
 	$maj['1.1.1'] = array(
-		array('sql_update',"spip_forum", array('objet' => 'breve','id_objet' => 'id_breve'), 'id_breve> 0'),
+		array('sql_update',"spip_forum", array('objet' => "'breve'",'id_objet' => 'id_breve'), 'id_breve> 0'),
 		#array('sql_alter',"TABLE spip_forum DROP id_breve"),
-		array('sql_update',"spip_forum", array('objet' => 'article','id_objet' => 'id_article'), 'id_article>0'),
+		array('sql_update',"spip_forum", array('objet' => "'article'",'id_objet' => 'id_article'), 'id_article>0'),
 		#array('sql_alter',"TABLE spip_forum DROP id_article"),
-		array('sql_update',"spip_forum", array('objet' => 'site','id_objet' => 'id_syndic'), 'id_syndic>0'),
+		array('sql_update',"spip_forum", array('objet' => "'site'",'id_objet' => 'id_syndic'), 'id_syndic>0'),
 		#array('sql_alter',"TABLE spip_forum DROP id_syndic"),
-		array('sql_update',"spip_forum", array('objet' => 'message','id_objet' => 'id_message'), 'id_message>0'),
+		array('sql_update',"spip_forum", array('objet' => "'message'",'id_objet' => 'id_message'), 'id_message>0'),
 		#array('sql_alter',"TABLE spip_forum DROP id_message"),
-		array('sql_update',"spip_forum", array('objet' => 'rubrique','id_objet' => 'id_rubrique'), 'id_rubrique>0'),
+		array('sql_update',"spip_forum", array('objet' => "'rubrique'",'id_objet' => 'id_rubrique'), 'id_rubrique>0'),
 		#array('sql_alter',"TABLE spip_forum DROP id_rubrique"),
 	);
 
