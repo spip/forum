@@ -8,7 +8,7 @@
 		[(#ACTION_FORMULAIRE{#ENV{action}})]
 		<p class='explication'><:forum:info_config_forums_prive:></p>
 		<ul>
-			<li class='long_label configurer_forum_prive_objets[ (#ENV**{erreurs}|table_valeur{forum_prive_objets}|oui)erreur]'>
+			<li class='editer long_label configurer_forum_prive_objets[ (#ENV**{erreurs}|table_valeur{forum_prive_objets}|oui)erreur]'>
 				<label><:forum:info_config_forums_prive_objets:></label>[
 				<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{forum_prive_objets})</span>
 				]<div class='choix'>
@@ -20,7 +20,7 @@
 					<label for="forum_prive_objets_non"><:forum:item_non_config_forums_prive_objets:></label>
 				</div>
 			</li>
-			<li class='long_label configurer_forum_prive[ (#ENV**{erreurs}|table_valeur{forum_prive}|oui)erreur]'>
+			<li class='editer long_label configurer_forum_prive[ (#ENV**{erreurs}|table_valeur{forum_prive}|oui)erreur]'>
 				<label><:forum:info_config_forums_prive_global:></label>[
 				<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{forum_prive})</span>
 				]<div class='choix'>
@@ -32,7 +32,7 @@
 					<label for="forum_prive_non"><:forum:item_non_config_forums_prive_global:></label>
 				</div>
 			</li>
-			<li class='long_label configurer_forum_prive_admin[ (#ENV**{erreurs}|table_valeur{forum_prive_admin}|oui)erreur]'>
+			<li class='editer long_label configurer_forum_prive_admin[ (#ENV**{erreurs}|table_valeur{forum_prive_admin}|oui)erreur]'>
 				<label><:forum:info_config_forums_prive_admin:></label>[
 				<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{forum_prive_admin})</span>
 				]<div class='choix'>
