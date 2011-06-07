@@ -38,6 +38,7 @@ function autoriser_modererforum_dist($faire, $type, $id, $qui, $opt) {
  * seulement sur les objets qu'on a le droit de moderer
  */
 function autoriser_forum_instituer_dist($faire, $type, $id, $qui, $opt){
+	if (!intval($id)) return autoriser('moderer','forum');
 	$row = sql_fetsel('objet,id_objet','spip_forum','id_forum='.intval($id));
 	return $row?autoriser('modererforum',$row['objet'],$row['id_objet'],$qui,$opt):false;
 }
