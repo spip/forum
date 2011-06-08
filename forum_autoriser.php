@@ -44,6 +44,17 @@ function autoriser_forum_instituer_dist($faire, $type, $id, $qui, $opt){
 }
 
 function autoriser_forum_moderer_dist($faire, $type, $id, $qui, $opt){
+	// si on fournit un id : deleguer a modererforum sur l'objet concerne
+	if ($id){
+		include_spip('inc/forum');
+		if ($racine = racine_forum($id)
+		  AND list($objet,$id_objet,) = $racine
+		  AND $objet){
+			return autoriser('modererforum',$objet,$id_objet);
+		}
+	}
+	
+	// sinon : admins uniquement
 	return $qui['statut']=='0minirezo'; // les admins restreints peuvent moderer leurs messages
 }
 
