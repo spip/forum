@@ -60,7 +60,7 @@ function forum_upgrade($nom_meta_base_version,$version_cible){
 
 		# champ ip sur 40 car (compat IPv6)
 		if (version_compare($current_version, '1.2','<')) {
-			sql_alter("TABLE spip_forum CHANGE `ip` `ip` VRCHAR(40) DEFAULT '' NOT NULL");
+			sql_alter("TABLE spip_forum CHANGE `ip` `ip` VARCHAR(40) DEFAULT '' NOT NULL");
 			ecrire_meta($nom_meta_base_version,$current_version = '1.2');
 		}
 	}
