@@ -187,7 +187,8 @@ function formulaires_forum_verifier_dist(
 			$erreurs['document_forum'] = _T('forum:documents_interdits_forum');
 			unset($_FILES['ajouter_document']);
 		} else {
-			include_spip('inc/ajouter_documents');
+			include_spip('inc/joindre_document');
+			include_spip('action/ajouter_documents');
 			list($extension,$doc['name']) = fixer_extension_document($doc);
 			$acceptes = forum_documents_acceptes();
 

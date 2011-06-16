@@ -19,7 +19,7 @@ if (!defined("_ECRIRE_INC_VERSION")) return;
  * @param string $email
  * @return string
  */
-function email_notification_forum_dist ($t, $email) {
+function inc_email_notification_forum_dist ($t, $email) {
 	static $contexte = array();
 
 	if(!isset($contexte[$t['id_forum']])){

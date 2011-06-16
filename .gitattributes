@@ -34,9 +34,9 @@ formulaires/inc-login_forum_abo.html -text
 /forum_autoriser.php -text
 /forum_pipelines.php -text
 inc/article_accepter_forums_publics.php -text
+inc/email_notification_forum.php -text
 inc/forum.php -text
 inc/forum_insert.php -text
-inc/forum_notifications.php -text
 javascript/jquery.autosave.js -text
 lang/forum.xml -text
 lang/forum_ar.php -text

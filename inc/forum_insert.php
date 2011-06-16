@@ -222,11 +222,14 @@ function forum_insert_base($c, $id_forum, $objet, $id_objet, $statut, $retour)
 	// Ajouter un document
 	if (isset($_FILES['ajouter_document'])
 	AND $_FILES['ajouter_document']['tmp_name']) {
-		$ajouter_documents = charger_fonction('ajouter_documents', 'inc');
+		$files[] = array('tmp_name'=>$_FILES['ajouter_document']['tmp_name'],'name'=>$_FILES['ajouter_document']['name']);
+		$ajouter_documents = charger_fonction('ajouter_documents','action');
 		$ajouter_documents(
-			$_FILES['ajouter_document']['tmp_name'],
-			$_FILES['ajouter_document']['name'], 'forum', $id_reponse,
-			'document', 0, $documents_actifs);
+			'new',
+			$files,
+			'forum',
+			$id_reponse,
+			'document');
 		// supprimer le temporaire et ses meta donnees
 		spip_unlink($_FILES['ajouter_document']['tmp_name']);
 		spip_unlink(preg_replace(',\.bin$,',
