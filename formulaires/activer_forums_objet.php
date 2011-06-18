@@ -39,9 +39,12 @@ function formulaires_activer_forums_objet_charger_dist($id_objet, $objet='articl
 	include_spip('inc/presentation');
 	include_spip('base/abstract_sql');
 	$nb_forums = sql_countsel("spip_forum", "objet=".sql_quote($objet)." AND id_objet=".intval($id_objet)." AND statut IN ('publie', 'off', 'prop', 'spam')");
+	$editable = ($objet=='article')?true:false;
+	if (!$editable AND !$nb_forums)
+		return false;
 
 	return array(
-		'editable' => ($objet=='article')?true:false,
+		'editable' => $editable,
 		'objet' => $objet,
 		'id_objet' => $id_objet,
 		'accepter_forum' => get_forums_publics($id_objet, $objet),
