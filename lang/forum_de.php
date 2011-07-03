@@ -25,7 +25,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'documents_interdits_forum' => 'Dokumente sind im Forum verboten.',
 
 	// E
-	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
+	'erreur_enregistrement_message' => 'Fehler: Ihr Beitrag konnte nicht gespeichert werden.',
 
 	// F
 	'form_pet_message_commentaire' => 'Eine Nachricht, ein Kommentar?',
@@ -66,7 +66,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_supprimer_messages' => 'Diese Beiträge löschen',
 	'icone_valider_message' => 'Beitrag freigeben',
 	'icone_valider_messages' => 'Diese Beiträge freischalten',
-	'icone_valider_repondre_message' => 'Beantworten dieses Beitrags bestätigen',
+	'icone_valider_repondre_message' => 'Bestätigung; Diesen Beitrag beantworten',
 	'info_1_message_forum' => '1 Beitrag im Forum',
 	'info_activer_forum_public' => '<i>Um die öffentlichen Foren zu aktivieren, wählen Sie bitte
  die Moderation im Standardmodus:</i>',
@@ -78,15 +78,15 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_desactiver_forum_public' => 'Öffentliche Foren abschalten. Es ist immer noch möglich, ein Forum für einen Artikel einzurichten. Für Rubriken, Meldungen, etc. stehen dann keine Foren zur Verfügung.',
 	'info_envoi_forum' => 'Forumsbeiträge an Autoren der Artikel schicken',
 	'info_fonctionnement_forum' => 'Funktionsweise des Forums:',
-	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
+	'info_forums_liees_mot' => 'Beiträge mit diesem Schlagwort',
 	'info_gauche_suivi_forum_2' => 'Die Seite zum <i>Verwalten der Foren</i> hat eine administrative Funktion und dient nicht zum Diskutieren mit den Lesern. Es werden alle Einträge in öffentlichen und internen Foren gezeigt, so dass Sie diese einzeln ein- und ausschalten können.',
 	'info_liens_syndiques_3' => 'Foren',
 	'info_liens_syndiques_4' => 'sind',
 	'info_liens_syndiques_5' => 'Forum',
 	'info_liens_syndiques_6' => 'ist',
 	'info_liens_syndiques_7' => 'warten auf Freigabe',
-	'info_liens_texte' => 'Lien(s) contenu(s) dans le texte du message', # NEW
-	'info_liens_titre' => 'Lien(s) contenu(s) dans le titre du message', # NEW
+	'info_liens_texte' => 'Links im Text des Beitrags',
+	'info_liens_titre' => 'Links im Titel des Beitrags',
 	'info_mode_fonctionnement_defaut_forum_public' => 'Standardmodus der öffentlichen Foren',
 	'info_nb_messages_forum' => '@nb@ Beiträge im Forum',
 	'info_option_email' => 'Wenn ein Besucher einen Beitrag im Forum eines Artikels postet, kann SPIP ihn an den Autor des Artikels schicken. Bitte geben Sie für jeden Inhaltstyp an, ob sie diese Funktion nutzen möchten.',
@@ -143,18 +143,18 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'text_article_propose_publication_forum' => 'Bitte schreiben Sie Ihren Kommentar in das Forum zu diesem Artikel (unten auf der Seite).',
 	'texte_en_cours_validation' => 'Diese Artikel, Meldungen und Forumsbeiträge sind zur Veröffentlichung vorgeschlagen',
 	'texte_en_cours_validation_forum' => 'Bitte schreiben Sie Ihre Kommentare in die entsprechenden Foren.',
-	'texte_messages_publics' => 'Messages publics sur&nbsp;:', # NEW
+	'texte_messages_publics' => 'Öffentliche Beiträge zu:',
 	'titre_cadre_forum_administrateur' => 'Administratorforum',
 	'titre_cadre_forum_interne' => 'Internes Forum',
 	'titre_config_forums_prive' => 'Forum des Redaktionsbereichs',
 	'titre_forum' => 'Forum',
 	'titre_forum_suivi' => 'Foren moderieren',
 	'titre_page_forum_suivi' => 'Foren moderieren',
-	'titre_selection_action' => 'Sélection', # NEW
+	'titre_selection_action' => 'Auswahl',
 	'tout_voir' => 'Alle Beiträge anzeigen',
 
 	// V
-	'voir_messages_objet' => 'voir les messages' # NEW
+	'voir_messages_objet' => 'Beiträge anzeigen'
 );
 
 ?>

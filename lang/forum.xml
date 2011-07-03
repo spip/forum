@@ -76,7 +76,9 @@
 	<langue code="ru">
 		<traducteur nom="papa_troll" />
 	</langue>
-	<langue code="sk" />
+	<langue code="sk">
+		<traducteur nom="jaro" />
+	</langue>
 	<langue code="ss" />
 	<langue code="sv" />
 	<langue code="tl" />
