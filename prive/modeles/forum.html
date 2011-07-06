@@ -26,7 +26,7 @@
 </div>
 [(#REM) Le corps ---------------------------------------------------------]
 [<div class='texte controle'>(#TEXTE|lignes_longues)</div>]
-<BOUCLE_doc(DOCUMENTS){id_forum}>
+<BOUCLE_doc(DOCUMENTS){id_forum}{tout}>
 [(#EXTENSION|match{'^(gif|jpg|png)$'}|?{
 	[(#MODELE{emb}|image_reduire{150})]
 ,
