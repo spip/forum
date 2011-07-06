@@ -26,7 +26,13 @@
 </div>
 [(#REM) Le corps ---------------------------------------------------------]
 [<div class='texte controle'>(#TEXTE|lignes_longues)</div>]
-<BOUCLE_docs(documents_liens?){id_objet=#ID_FORUM}{objet=forum}>#MODELE{doc,id_document}</BOUCLE_docs>
+<BOUCLE_doc(DOCUMENTS){id_forum}>
+[(#EXTENSION|match{'^(gif|jpg|png)$'}|?{
+	[(#MODELE{emb}|image_reduire{150})]
+,
+	#LOGO_DOCUMENT{#URL_DOCUMENT}
+})]
+</BOUCLE_doc>
 [<div class='notes controle'>(#NOTES|lignes_longues)</div>]
 [<div class='site'><:info_url:></:info_url:><a href='#URL_SITE'>(#NOM_SITE|sinon{#URL_SITE}|lignes_longues)</a></div>]
 #SET{liens,#TITRE|extraire_balises{a}|extraire_attribut{href}}
