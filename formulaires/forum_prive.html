@@ -14,7 +14,7 @@
 	<input type='hidden' name='url_site' value="#ENV{url_site}" />
 	<input type='hidden' name='nom_site' value="#ENV{nom_site}" />
 	[<input type="hidden" name="id_forum" value="(#ENV*{id_forum})" />]
-	(#ENV*{erreurs}|table_valeur{previsu})
+	(#ENV**{erreurs}|table_valeur{previsu})
 	</div>
 </form>]
 <div class="formulaire_spip formulaire_forum" id="formulaire_forum">

@@ -50,7 +50,8 @@ function formulaires_forum_prive_charger_dist($id_rubrique, $id_forum, $id_artic
 		'_hidden' => $script_hidden, # pour les variables hidden
 		'url_site' => "http://",
 		'id_forum' => $id_forum, // passer id_forum au formulaire pour lui permettre d'afficher a quoi l'internaute repond
-		'_sign'=>implode('_',$ids)
+		'_sign'=>implode('_',$ids),
+		'_autosave_id' => $ids,
 	);
 }
 

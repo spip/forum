@@ -38,6 +38,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_dix_caracteres' => '<b>Attention !</b> votre message doit contenir au moins dix caractères.',
 	'forum_attention_trois_caracteres' => '<b>Attention !</b> votre titre doit contenir au moins trois caractères.',
 	'forum_attention_trop_caracteres' => '<b>Attention !</b> votre message est trop long (@compte@ caractères) : pour pouvoir être enregistré, il ne doit pas dépasser @max@ caractères.',
+	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !',
 	'forum_avez_selectionne' => 'Vous avez sélectionné :',
 	'forum_cliquer_retour' => 'Cliquez <a href=\'@retour_forum@\'>ici</a> pour continuer.',
 	'forum_forum' => 'forum',
