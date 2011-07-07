@@ -90,22 +90,6 @@ $ajouter_mot, $ajouter_groupe, $afficher_texte, $url_param_retour) {
 		'nom_site' => '',
 		'url_site' => 'http://'
 	);
-	$cle_autosave = 'forum-'. join('-',array_map('intval',$ids));
-	$script_hidden .= "<input type='hidden' name='autosave' value='$cle_autosave' />";
-	if (isset($GLOBALS['visiteur_session']['session_autosave_'.$cle_autosave])) {
-		// si on poste 'autosave' c'est qu'on n'a pas besoin de sauvegarder :
-		// on elimine les donnees de la session
-		if (_request('autosave') == $cle_autosave)
-			session_set('session_autosave_'.$cle_autosave, null);
-
-		// sinon on restitue les donnees
-		else
-		foreach (explode('&', $GLOBALS['visiteur_session']['session_autosave_'.$cle_autosave]) as $l) {
-			if (list($key, $val) = explode('=', $l, 2)
-			AND isset($vals[$key]))
-				$vals[$key] = urldecode($val);
-		}
-	}
 
 	return array_merge($vals, array(
 		'modere' => (($type != 'pri') ? '' : ' '),
@@ -120,7 +104,8 @@ $ajouter_mot, $ajouter_groupe, $afficher_texte, $url_param_retour) {
 		'ajouter_groupe' => $ajouter_groupe,
 		'ajouter_mot' => (is_array($ajouter_mot) ? $ajouter_mot : array($ajouter_mot)),
 		'id_forum' => $id_forum, // passer id_forum au formulaire pour lui permettre d'afficher a quoi l'internaute repond
-		'_sign'=>implode('_',$ids)
+		'_sign'=>implode('_',$ids),
+		'_autosave_id' => $ids,
 	));
 }
 
