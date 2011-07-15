@@ -34,6 +34,7 @@ forviŝi ilin poste).',
 	'forum' => 'Forumo',
 	'forum_acces_refuse' => 'Vi ne plu havas alir-rajton al tiuj ĉi forumoj.',
 	'forum_attention_dix_caracteres' => '<b>Atentu !</b> via mesaĝo devas enhavi almenaŭ dek signojn.',
+	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Atentu !</b> via titolo devas enhavi almenaŭ tri signojn.',
 	'forum_attention_trop_caracteres' => '<b>Atentu !</b> via mesaĝo estas tro longa (@compte@ signoj) : por esti registrita, ĝi ne preteratingu @max@ signojn.',
 	'forum_avez_selectionne' => 'Vi selektis :',

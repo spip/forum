@@ -32,6 +32,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum' => 'ဖိုရမ်',
 	'forum_acces_refuse' => 'ဤဖိုရမ်သို့ ဝင်ရောက်ခွင့် မရှိတော့ပါ',
 	'forum_attention_dix_caracteres' => '<b>သတိပေးချက်!</b> သင့်စာစောင်သည် အနည်းဆုံး စာလုံး၁ဝလုံးနှင့် အထက်ပါဝင်သင့်သည်',
+	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>သတိပေးချက်!</b> သင့်ခေါင်းစဉ်သည် အနည်းဆုံး စာလုံး၃လုံးနှင့် အထက်ပါဝင်သင့်သည်',
 	'forum_attention_trop_caracteres' => '<b>သတိပေးချက် !</b> သင့်စာစောင် (@compte@ characters) သည် သိမ်းဆည်းရန် ရှည်လွန်းသည်၊ ​အများဆုံး စာလုံး @max@သာ ပါဝင်သင့်သည်',
 	'forum_avez_selectionne' => 'သင်ရွေးချယ်ခဲ့ပြီးပြီ',

@@ -38,6 +38,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum' => 'Forum',
 	'forum_acces_refuse' => 'Anda tidak memiliki akses ke forum ini lagi.',
 	'forum_attention_dix_caracteres' => '<b>Peringatan!</b> Pesan anda hendaknya terdiri dari sepuluh karakter atau lebih.',
+	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Peringatan!</b> Judul anda hendaknya terdiri dari tiga karakter atau lebih.',
 	'forum_attention_trop_caracteres' => '<b>Peringatan !</b> pesan anda terlalu panjang (@compte@ karakter) : untuk dapat menyimpannya, pesan tidak boleh lebih dari @max@ karakter.',
 	'forum_avez_selectionne' => 'Anda telah memilih:',

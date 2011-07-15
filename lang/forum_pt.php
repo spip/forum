@@ -37,6 +37,7 @@ utilizadores devem ter uma assinatura ao fornecer o seu endereço e-mail antes d
 	'forum' => 'Fórum',
 	'forum_acces_refuse' => 'Já não tem acesso a esses fóruns.',
 	'forum_attention_dix_caracteres' => '<b>Atenção !</b> a sua mensagem contém menos de dez carácteres.',
+	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Atenção !</b> o seu título contém menos de três carácteres.',
 	'forum_attention_trop_caracteres' => '<b>Attention !</b> votre message est trop long (@compte@ caractères) : pour pouvoir être enregistré, il ne doit pas dépasser @max@ caractères.', # NEW
 	'forum_avez_selectionne' => 'Seleccionou :',

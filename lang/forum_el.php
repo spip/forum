@@ -34,6 +34,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum' => 'Φόρουμ',
 	'forum_acces_refuse' => 'Δεν έχετε πια πρόσβαση σε αυτά τα forum.',
 	'forum_attention_dix_caracteres' => '<b>Προσοχή !</b> το μήνυμά σας πρέπει να περιέχει τουλάχιστον δέκα χαρακτήρες.',
+	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Προσοχή !</b> ο τίτλος σας θα πρέπει να περιέχει τουλάχιστον τρεις χαρακτήρες.',
 	'forum_attention_trop_caracteres' => '<b>Προσοχή !</b> το μήνυμά σας είναι πολύ μεγάλο =(@compte@ caractères) : για να καταγραφεί δεν πρέπει να ξεπερνά τους @max@ χαρακτήρες.',
 	'forum_avez_selectionne' => 'Έχετε επιλέξει :',

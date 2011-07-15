@@ -32,6 +32,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum' => 'Foroa',
 	'forum_acces_refuse' => 'Dagoeneko ezin zara foro hauetan sartu.',
 	'forum_attention_dix_caracteres' => '<b>Adi!</b> zure mezuak hamar karaktere baino gutxiago ditu',
+	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Adi!</b> zure izenburuak hiru karaktere baino gutxiago ditu.',
 	'forum_attention_trop_caracteres' => '<b>kontuz !</b> zure mezua luzeegi da (@compte@ caractères) : grabatua izateko, ez ditu @max@ karaktero baino gehiago izan behar.',
 	'forum_avez_selectionne' => 'Aukeratu egin duzu:',

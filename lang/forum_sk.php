@@ -38,6 +38,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum' => 'Diskusné fórum',
 	'forum_acces_refuse' => 'K týmto diskusným fóram už viac nemáte prístup.',
 	'forum_attention_dix_caracteres' => '<b>Upozornenie!</b> Váš príspevok musí mať aspoň 10 znakok.',
+	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Upozornenie!</b> Názov musí mať aspoň 3 znaky.',
 	'forum_attention_trop_caracteres' => '<b>Warning !</b> your message is too long (@compte@ characters) : to be able to save it, the message should not contain more than @max@ characters.',
 	'forum_avez_selectionne' => 'Vybrali ste:',

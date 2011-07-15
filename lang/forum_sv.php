@@ -32,6 +32,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum' => 'Forum',
 	'forum_acces_refuse' => 'Du har inte längre tillgång till dessa forum.',
 	'forum_attention_dix_caracteres' => '<b>Varning!</b> Ditt meddelande måste vara minst 10 tecken långt.',
+	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Varning!</b> Din rubrik måste vara minst tre tecken lång.',
 	'forum_attention_trop_caracteres' => '<b>Warning !</b> Ditt meddelande är för långt (@compte@ characters) : För att det skall kunna skrivas får meddelandet inte innehålla mer än @max@ tecken.',
 	'forum_avez_selectionne' => 'Du har valt:',

@@ -34,6 +34,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum' => 'Aruskipaña',
 	'forum_acces_refuse' => 'Aka aruskipañaru janiw mantawimax utjiti.',
 	'forum_attention_dix_caracteres' => '&lt;b&gt;¡Amuyam!&lt;/b&gt;  tunka qillqaniñapakikiw yatiyawimanx utjañapawa.',
+	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '&lt;b&gt;¡Uñjam!&lt;/b&gt; Kimsa qillqaniñapakikiw sutinchatanx utjañapawa.',
 	'forum_attention_trop_caracteres' => '&lt;b&gt;¡Amuyam!&lt;/b&gt; Amuyam yatiyawimax sinti jac\'hawa (@compte@ qillqanaka) qillqayañatakixa, qillqanakax janiw jilanchjañapakiti @max@.',
 	'forum_avez_selectionne' => 'Ajlltawa:',

@@ -34,6 +34,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum' => 'Forom kozman',
 	'forum_acces_refuse' => 'Ou néna pli lapermisyon pou gèt dann bann forom-la.',
 	'forum_attention_dix_caracteres' => '<b>Tansyon pangar !</b> out modékri néna mwin 10 karaktèr-linprimri. Lé pa asé pou anrozistr ali.',
+	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Tansyon pangar !</b> Lo non ou la doné nana mwin 3 karactèr-linprimri.Sa lé pa asé pou anrozistr ali.',
 	'forum_attention_trop_caracteres' => '<b>TANSYON@circ@!</b> out\' mèzaz lé tro long\' (@compte@ karaktèr-linprimri)@circ@: pour giny anrozistré, li doi pa fé pli dé @max@ karaktèr-linprimri',
 	'forum_avez_selectionne' => 'Ou la swazi :',

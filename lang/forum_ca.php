@@ -37,6 +37,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum' => 'Fòrum',
 	'forum_acces_refuse' => 'Ja no teniu accés a aquests fòrums.',
 	'forum_attention_dix_caracteres' => '<b>Atenció!</b> el vostre missatge ha de tenir almenys deu caràcters.',
+	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Atenció!</b> el vostre títol ha de tenir almenys tres caràcters.',
 	'forum_attention_trop_caracteres' => '<b>Atenció!</b> el vostre missatge és massa llarg (@compte@ caràcters) : per a poder-vos enregistrar no pot sobrepassar els @max@ caràcters.',
 	'forum_avez_selectionne' => 'Heu seleccionat:',

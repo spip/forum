@@ -38,6 +38,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum' => '<NEW> Forum',
 	'forum_acces_refuse' => 'Du har ikke tilgang til forumene lengre.',
 	'forum_attention_dix_caracteres' => '<b>Advarsel!</b> meldingen er kortere enn ti tegn.', # MODIF
+	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Advarsel!</b> emnet er kortere enn tre tegn.', # MODIF
 	'forum_attention_trop_caracteres' => '<b>Advarsel !</b> meldinger er for lang (@compte@ tegn) : for at den skal kunne lagres må den ikke inneholde mer enn @max@ tegn.',
 	'forum_avez_selectionne' => 'Du har valgt:',

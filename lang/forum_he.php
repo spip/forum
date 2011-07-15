@@ -38,6 +38,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum' => 'פורום',
 	'forum_acces_refuse' => 'אין לך גישה לפורומים האלה יותר.',
 	'forum_attention_dix_caracteres' => '<b>שים לב!</b> ההודעה שלך צריכה לכלול לפחות עשר אותיות.',
+	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>שים לב!</b> הנושא שלך צריך לכלול לפחות שלוש אותיות.',
 	'forum_attention_trop_caracteres' => '<b>זהירות !</b> הודעתך ארוכה מדי (@compte@ caractères) : על מנת להישמר. היא צריכה לכולל פחות מ@max@ אותיות.',
 	'forum_avez_selectionne' => 'הינך בחרת:',

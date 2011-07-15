@@ -38,6 +38,7 @@ patisipasyon yo zitilizatè tout ke pa afiche sou sitwèb piblik si yon komandé
 	'forum' => 'Fowom',
 	'forum_acces_refuse' => 'W ap pli laksé pou fowom-nan.',
 	'forum_attention_dix_caracteres' => '<b>Atansyon !</b> mesaj ou li se mwen di lèt.',
+	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Atansyon !</b> Kouman i rele sit-la se mwen trwa lèt. Fôk w mèt trwa lèt omwen',
 	'forum_attention_trop_caracteres' => '<b>Atansyon !</b> mesaje a w se tro lon (@compte@ caractères) : fòk w respek @max@ karaktèr pou enskri ali.',
 	'forum_avez_selectionne' => 'W te chwazi :',

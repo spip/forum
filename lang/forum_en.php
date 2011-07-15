@@ -38,6 +38,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum' => 'Forum',
 	'forum_acces_refuse' => 'You no longer have access to these forums.',
 	'forum_attention_dix_caracteres' => '<b>Warning!</b> Your message must be at least ten characters long.',
+	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Warning!</b> Your title must be at least three characters long.',
 	'forum_attention_trop_caracteres' => '<b>Warning !</b> Your message is too long (@compte@ characters) : a message cannot contain more than @max@ characters.',
 	'forum_avez_selectionne' => 'You have selected:',

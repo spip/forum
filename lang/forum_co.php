@@ -34,6 +34,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum' => 'Foru',
 	'forum_acces_refuse' => 'Ùn avete più accessu à sti fori.',
 	'forum_attention_dix_caracteres' => '<b>Attenti !</b> U vostru messagiu deve cuntene à u mìnimu dece caràtteri.',
+	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Attenti !</b> U vostru tìtulu deve cuntene à u mìnimu trè caràtteri.',
 	'forum_attention_trop_caracteres' => '<b>Attention !</b> U vostru messagiu hè troppu longu (@compte@ caràtteri) : pè pudè esse arregistratu, 
 	ùn deve superà @max@ caràtteri.',

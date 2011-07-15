@@ -38,6 +38,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum' => 'Forum', # NEW
 	'forum_acces_refuse' => 'Þú hefur ekki lengur aðgang að þessari umræðu.',
 	'forum_attention_dix_caracteres' => '<NEW> <b>Attention !</b> votre message fait moins de dix caractères.',
+	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<NEW> <b>Attention !</b> votre titre fait moins de trois caractères.',
 	'forum_attention_trop_caracteres' => '<b>Attention !</b> votre message est trop long (@compte@ caractères) : pour pouvoir être enregistré, il ne doit pas dépasser @max@ caractères.', # NEW
 	'forum_avez_selectionne' => '<NEW> Vous avez sélectionné :',
