@@ -10,11 +10,11 @@
 [<caption><strong class="caption">(#ENV*{titre,#GRAND_TOTAL|singulier_ou_pluriel{forum:info_1_message_forum,forum:info_nb_message_forum}})</strong></caption>]
 	<thead>
 		<tr class='first_row'>
-			<th class='statut'>[(#TRI{statut,<span title="<:lien_trier_statut|attribut_html:>">#</span>,ajax})]</th>
-			<th class='titre principale'>[(#TRI{titre,<:info_titre:>,ajax})]</th>
-			<th class='auteur'><:auteur:></th>
-			<th class='date secondaire'>[(#TRI{date_heure,<:date:>,ajax})]</th>
-			<th class='id'>[(#TRI{id_forum,<:info_numero_abbreviation:>,ajax})]</th>
+			<th class='statut' scope='col'>[(#TRI{statut,<span title="<:lien_trier_statut|attribut_html:>">#</span>,ajax})]</th>
+			<th class='titre principale' scope='col'>[(#TRI{titre,<:info_titre:>,ajax})]</th>
+			<th class='auteur' scope='col'><:auteur:></th>
+			<th class='date secondaire' scope='col'>[(#TRI{date_heure,<:date:>,ajax})]</th>
+			<th class='id' scope='col'>[(#TRI{id_forum,<:info_numero_abbreviation:>,ajax})]</th>
 		</tr>
 	</thead>
 	<tbody>
