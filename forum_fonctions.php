@@ -10,20 +10,29 @@
  *  Pour plus de details voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
-//
-// Un filtre applique a #PARAMETRES_FORUM, qui donne l'adresse de la page
-// de reponse
-//
+include_spip('public/forum');
+
+/**
+ * Un filtre applique a #PARAMETRES_FORUM, qui donne l'adresse de la page
+ * de reponse
+ *
+ * @param $parametres
+ * @return string
+ */
 function filtre_url_reponse_forum($parametres) {
 	if (!$parametres) return '';
 	return generer_url_public('forum', $parametres);
 }
 
-//
-// Un filtre qui, etant donne un #PARAMETRES_FORUM, retourne un URL de suivi rss
-// dudit forum
-// Attention applique a un #PARAMETRES_FORUM complexe (id_article=x&id_forum=y)
-// ca retourne un url de suivi du thread y (que le thread existe ou non)
+/**
+ * Un filtre qui, etant donne un #PARAMETRES_FORUM, retourne un URL de suivi rss
+ * dudit forum
+ * Attention applique a un #PARAMETRES_FORUM complexe (id_article=x&id_forum=y)
+ * ca retourne un url de suivi du thread y (que le thread existe ou non)
+ *
+ * @param $param
+ * @return string
+ */
 function filtre_url_rss_forum($param) {
 	if (!preg_match(',.*(id_(\w*?))=([0-9]+),S', $param, $regs)) return '';
 	list(,$k,$t,$v) = $regs;

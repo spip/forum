@@ -5,8 +5,6 @@ action/instituer_lot_forum.php -text
 balise/formulaire_forum.php -text
 balise/formulaire_forum_prive.php -text
 base/forum.php -text
-base/forum_upgrade.php -text
-filtres/forum.php -text
 formulaires/activer_forums_objet.html -text
 formulaires/activer_forums_objet.php -text
 formulaires/configurer_forums_contenu.html -text
@@ -31,7 +29,9 @@ formulaires/inc-forum_prive_previsu.html -text
 formulaires/inc-gestion_forum_liste.html -text
 formulaires/inc-login_forum.html -text
 formulaires/inc-login_forum_abo.html -text
+/forum_administrations.php -text
 /forum_autoriser.php -text
+/forum_fonctions.php -text
 /forum_pipelines.php -text
 inc/article_accepter_forums_publics.php -text
 inc/email_notification_forum.php -text
@@ -106,7 +106,6 @@ modeles/auteur_nom.html -text
 notifications/forum_poste.html -text
 notifications/forumposte.php -text
 notifications/forumvalide.php -text
-/plugin.xml -text
 prive/javascript/actiongroup.js -text
 prive/modeles/forum-actions-moderer.html -text
 prive/modeles/forum.html -text
