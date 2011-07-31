@@ -34,7 +34,7 @@
 	<pipeline nom="rubrique_encours" inclure="forum_pipelines.php" />
 	<pipeline nom="trig_supprimer_objets_lies" inclure="forum_pipelines.php" />
 
-	<menu nom="forum_reactions" titre="forum:icone_suivi_forums" parent="bando_activite" icone="images/forum-16.png" action="controler_forum" />
-	<menu nom="configurer_forum" titre="forum:titre_forum" parent="bando_configuration" icone="images/forum-16.png" />
+	<menu nom="forum_reactions" titre="forum:icone_suivi_forums" parent="menu_activite" icone="images/forum-16.png" action="controler_forum" />
+	<menu nom="configurer_forum" titre="forum:titre_forum" parent="menu_configuration" icone="images/forum-16.png" />
 	<menu nom="forum_interne_suivi" titre="forum:titre_cadre_forum_interne" parent="outils_collaboratifs" icone="images/forum-interne-16.png" action="forum" />
 </paquet>
