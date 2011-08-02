@@ -8,11 +8,14 @@
 [<h1><:resultats_recherche:> &#171;&nbsp;(#ENV{recherche})&nbsp;&#187;</h1>]
 #FORMULAIRE_RECHERCHE_ECRIRE{#GET{self}}
 
+#SET{interne,non}
+[(#CONFIG{forum_prive_objets}|=={oui}|ou{#CONFIG{forum_prive}|=={oui}}|ou{#CONFIG{forum_prive_admin}|=={oui}}|oui)#SET{interne,oui}]
+<BOUCLE_forums_interne(FORUMS){statut LIKE priv%}{0,1}>[(#SET{interne,oui})] #ID_FORUM</BOUCLE_forums_interne>
 #SET{self,#SELF|parametre_url{id_forum|email_auteur|ip|id_auteur|auteur|debut_id_forum|statut,''}}
 <div class='filtres premier'>
 <ul>
 <li>[(#GET{self}|parametre_url{type_message,public}|lien_ou_expose{<:onglet_messages_publics:>,#ENV{type_message,public}|=={public}})]</li>
-<li>[(#GET{self}|parametre_url{type_message,interne}|lien_ou_expose{<:onglet_messages_internes:>,#ENV{type_message,public}|=={interne}})]</li>
+[(#GET{interne}|=={oui}|oui)<li>[(#GET{self}|parametre_url{type_message,interne}|lien_ou_expose{<:onglet_messages_internes:>,#ENV{type_message,public}|=={interne}})]</li>]
 <li>[(#GET{self}|parametre_url{type_message,vide}|lien_ou_expose{<:onglet_messages_vide:>,#ENV{type_message,public}|=={vide}})]</li>
 </ul>
 <div class='nettoyeur'></div>
