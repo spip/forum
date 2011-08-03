@@ -48,7 +48,8 @@ function formulaires_gestion_forum_traiter_dist($id_forum='', $id_rubrique='', $
 
 	$retour = array();
 	
-	$retour['message_ok'] = 'rien a faire';
+	if(_request('valider') OR _request('bruler') OR _request('supprimer'))
+		$retour['message_ok'] = _T('forum:message_rien_a_faire');
 	
 	if (!$forum_ids = _request('forum_ids'))
 		$forum_ids = array();
@@ -64,29 +65,34 @@ function formulaires_gestion_forum_traiter_dist($id_forum='', $id_rubrique='', $
 	if ($pagination != $pagination_ancien)
 		set_request('debut_forum','');
 	
-	if (_request('valider')){
+	if (_request('valider') && (count($forum_ids) > 0)){
 		$statut = 'publie';
-		$retour['message_ok'] = 'messages publies';
+		$retour['message_ok'] = singulier_ou_pluriel(count($forum_ids), 'forum:message_publie', 'forum:messages_publies');
 	}
 	
-	if (_request('bruler')){
+	if (_request('bruler') && (count($forum_ids) > 0)){
 		$statut = 'spam';
-		$retour['message_ok'] = 'messages marquees comme spam';
+		$retour['message_ok'] = singulier_ou_pluriel(count($forum_ids), 'forum:message_marque_comme_spam', 'forum:messages_marques_comme_spam');
 	}
 	
-	if(_request('supprimer')){
+	if(_request('supprimer') && (count($forum_ids) > 0)){
 		$statut = 'off';
-		$retour['message_ok'] = 'messages supprimes';
+		$retour['message_ok'] = singulier_ou_pluriel(count($forum_ids), 'forum:message_supprime', 'forum:messages_supprimes');
 	}
 	
 	include_spip('action/instituer_forum');
 	foreach ($forum_ids as $id) {
 		$row = sql_fetsel("*", "spip_forum", "id_forum=$id");
+		if($statut == "publie" and $row['statut'] == "privoff")
+			$statut = "prive";
+		if($statut == "off" and $row['statut'] == "prive")
+			$statut = "privoff";	
+		if($statut == "off" and $row['statut'] == "privrac")
+			$statut = "privoff";		
 		instituer_un_forum($statut,$row);
 	}
 	
 	return $retour;
-	
 }
 
 ?>
