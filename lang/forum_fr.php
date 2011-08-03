@@ -1,6 +1,7 @@
 <?php
-
 // This is a SPIP language file  --  Ceci est un fichier langue de SPIP
+// Fichier source, a modifier dans svn://zone.spip.org/spip-zone/_core_/branches/spip-2.1/plugins/forum/lang/
+if (!defined('_ECRIRE_INC_VERSION')) return;
 
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// A
@@ -10,19 +11,28 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_bruler_message' => "Signaler comme Spam",
 	'icone_bruler_messages' => "Signaler comme Spam",
 	'icone_legitimer_message' => "Signaler comme licite",
-	'icone_supprimer_messages' => 'Supprimer ces messages',
-	'icone_valider_messages' => 'Valider ces messages',
+	'icone_supprimer_messages' => 'Supprimer',
+	'icone_valider_messages' => 'Valider',
 	'icone_valider_repondre_message' => 'Valider &amp; R&eacute;pondre &agrave; ce message',
 	'info_liens_texte' => 'Lien(s) contenu(s) dans le texte du message',
 	'info_liens_titre' => 'Lien(s) contenu(s) dans le titre du message',
 	'interface_onglets' => 'Interface avec onglets',
 	'interface_formulaire' => 'Interface formulaire',
-
 	'info_1_message_forum' => '1 message de forum',
 	'info_nb_messages_forum' => '@nb@ messages de forum',
 
+	// L
+	'label_afficher' => 'Afficher&nbsp;:',
+	'label_nb_messages' => 'messages',
+	'label_selectionner' => 'S&eacute;lectionner&nbsp;:',
+
 	// M
+	'message_marque_comme_spam' => 'Un message marqu&eacute; comme spam',
+	'message_publie' => 'Un message publi&eacute;',
+	'message_rien_a_faire' => 'Aucun forum n\'a &eacute;t&eacute; s&eacute;lectionn&eacute;',
+	'message_supprime' => 'Un message supprim&eacute;',
 	'messages_aucun' => 'Aucun',
+	'messages_marques_comme_spam' => '@nb@ messages marqu&eacute;s comme spam',
 	'messages_meme_auteur' => 'Tous les messages de cet auteur',
 	'messages_meme_email' => 'Tous les messages de cet email',
 	'messages_meme_ip' => 'Tous les messages de cette IP',
@@ -34,7 +44,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'messages_privadm' => 'Administrateurs',
 	'messages_prop' => 'Propos&eacute;s',
 	'messages_publie' => 'Publi&eacute;s',
+	'messages_publies' => '@nb@ messages publi&eacute;s',
 	'messages_spam' => 'Spam',
+	'messages_supprimes' => '@nb@ messages supprim&eacute;s',
 	'messages_tous' => 'Tous',
 
 	// S
