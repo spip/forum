@@ -1,13 +1,19 @@
 <plugin spip='[2.1.0-beta;]'>
-	<nom>Forum sur Objets pour SPIP 2</nom>
+	<nom>
+		<multi>
+			[fr]Forum sur tous les objets
+			[en]Forums on any objects
+			[de]Foren f&#252;r alle Objekte
+		</multi>
+	</nom>
 	<auteur>Collectif SPIP</auteur>
 	<version>1.2</version>
 	<version_base>1.2</version_base>
 	<etat>test</etat>
 	<description>
 		<multi>
-			[fr]Forum sur tous objets pour SPIP2 (priv&#233; et public)
-			[de]Foren für alle Objekte in SPIP2 (Redaktionsbereich und &#246;ffentliche Website)
+			[fr]Forum sur tous les objets pour SPIP2 (priv&#233; et public)
+			[de]Foren f&#252;r alle Objekte in SPIP2 (Redaktionsbereich und &#246;ffentliche Website)
 			[en]Forums on any objects for SPIP2 (for private and public area)
 		</multi>
 	</description>
@@ -80,15 +86,21 @@
 	<categorie>communication</categorie>
 </plugin>
 <plugin spip='[2.2.0-dev;)'>
-	<nom>Forum sur Objets pour SPIP2</nom>
+	<nom>
+		<multi>
+			[fr]Forum sur tous les objets
+			[en]Forums on any objects
+			[de]Foren f&#252;r alle Objekte
+		</multi>
+	</nom>
 	<auteur>Collectif SPIP</auteur>
 	<version>1.2</version>
 	<version_base>1.2</version_base>
 	<etat>test</etat>
 	<description>
 		<multi>
-			[fr]Forum sur tous objets pour SPIP2 (priv&#233; et public)
-			[de]Foren fûr alle Objekte in SPIP2 (Redaktionsbereich und &#246;ffentliche Website)
+			[fr]Forum sur tous les objets pour SPIP2 (priv&#233; et public)
+			[de]Foren f&#252;r alle Objekte in SPIP2 (Redaktionsbereich und &#246;ffentliche Website)
 			[en]Forums for any objects in SPIP2 (for private and public area)
 		</multi>
 	</description>
