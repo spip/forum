@@ -50,8 +50,9 @@
 ]
 
 [(#INCLURE{fond=prive/listes/inc-boutons-filtres-statut-forum}{env})]
-<h2>[(#GRAND_TOTAL|singulier_ou_pluriel{forum:info_1_message_forum,forum:info_nb_messages_forum}|sinon{<:forum:aucun_message_forum:>})]</h2>
 
+<h2>[(#GRAND_TOTAL|singulier_ou_pluriel{forum:info_1_message_forum,forum:info_nb_messages_forum}|sinon{<:forum:aucun_message_forum:>})]</h2>
+#ANCRE_PAGINATION
 [<p class='pagination'>(#PAGINATION)</p>]
 <ul class='liste_items forums'>
 <BOUCLE_forum(FORUMS){id_forum?}{id_objet?}{objet?}{id_auteur?}{auteur?}{email_auteur?}{ip?}{!par id_forum}{pagination 10}{statut?}{statut LIKE #GET{prive}}{statut !LIKE #GET{public}}{texte LIKE #GET{vide}}{recherche?}>
