@@ -5,7 +5,7 @@
 [<p class="reponse_formulaire reponse_formulaire_ok">(#ENV*{message_ok})</p>]
 [<p class="reponse_formulaire reponse_formulaire_erreur">(#ENV*{message_erreur})</p>]
 <a id="pagination_forum" class="noajax" name="pagination_forum"></a>
-[(#ENV{editable})
+<BOUCLE_si_editable(CONDITION){si #ENV{editable}|oui}>
 <form action="#ENV{action}#formulaire_forum" method="post" enctype="multipart/form-data"><div>
 [(#ACTION_FORMULAIRE{[(#ENV{action})]})]
 
@@ -35,26 +35,30 @@
 	<input type="submit" class="submit" name="supprimer" value="<:forum:icone_supprimer_messages:>" />
 </p>
 
+[(#REM) Vérifier si on a des forums internes]
+#SET{forums_internes,non}
+[(#CONFIG{forum_prive_objets}|=={oui}|ou{#CONFIG{forum_prive}|=={oui}}|ou{#CONFIG{forum_prive_admin}|=={oui}}|oui)[(#SET{forums_internes,oui})]]
+<BOUCLE_forums_interne(FORUMS){statut LIKE priv%}{0,1}>[(#SET{forums_internes,oui})]</BOUCLE_forums_interne>
+
 <ul>
 	<li class="gestion_forum boutons">
+		[(#GET{forums_internes}|=={oui}|oui)
 		<select id="select_type" name="select_type">
 			<option value="public"[(#ENV*{select_type,public}|=={"public"}|oui) selected="selected"]><:onglet_messages_publics:></option>
 			<option value="interne"[(#ENV*{select_type,public}|=={"interne"}|oui) selected="selected"]><:onglet_messages_internes:></option>
-		</select>
+		</select>]
 		<select id="select_statut" name="select_statut">
 			<option value=""><:forum:messages_tous:></option>
-			[(#GET{public}|oui)
-			<option value="publie"[(#ENV*{select_statut}|=={"publie"}|oui) selected="selected"]><:forum:messages_publie:></option>
-			<option value="prop"[(#ENV*{select_statut}|=={"prop"}|oui) selected="selected"]><:forum:messages_prop:></option>
-			<option value="spam"[(#ENV*{select_statut}|=={"spam"}|oui) selected="selected"]><:forum:messages_spam:></option>
-			<option value="off"[(#ENV*{select_statut}|=={"off"}|oui) selected="selected"]><:forum:messages_off:></option>
-			]
-			[(#GET{prive}|=={'priv%'}|oui)
-			<option value="prive"[(#ENV*{select_statut}|=={"prive"}|oui) selected="selected"]><:forum:messages_prive:></option>
-			<option value="privrac"[(#ENV*{select_statut}|=={"privrac"}|oui) selected="selected"]><:forum:messages_privrac:></option>
-			<option value="privadm"[(#ENV*{select_statut}|=={"privadm"}|oui) selected="selected"]><:forum:messages_privadm:></option>
-			<option value="privoff"[(#ENV*{select_statut}|=={"privoff"}|oui) selected="selected"]><:forum:messages_privoff:></option>
-			]
+			<BOUCLE_si_public(CONDITION){si #GET{public}|oui}>
+			<BOUCLE_statuts_publics(FORUMS){statut IN 'prop','spam','off','publie'}{fusion statut}{par statut}>
+			<option value="#STATUT"[(#ENV*{select_statut}|=={#STATUT}|oui) selected="selected"]>[(#VAL{forum:messages_}|concat{#STATUT}|_T)]</option>
+			</BOUCLE_statuts_publics>
+			</BOUCLE_si_public>
+			<BOUCLE_si_prive(CONDITION){si #GET{prive}|=={'priv%'}|oui}>
+			<BOUCLE_statuts_prives(FORUMS){statut IN 'prive','privrac','privadm','privoff'}{fusion statut}{par statut}>
+			<option value="#STATUT"[(#ENV*{select_statut}|=={#STATUT}|oui) selected="selected"]>[(#VAL{forum:messages_}|concat{#STATUT}|_T)]</option>
+			</BOUCLE_statuts_prives>
+			</BOUCLE_si_prive>
 		</select>
 		<select id="pagination" name="pagination">
 			<option value="10"[(#ENV*{pagination}|=={10}|oui) selected="selected"]>10</option>
@@ -81,7 +85,7 @@
 	<input type="submit" class="submit" name="supprimer" value="<:forum:icone_supprimer_messages:>" />
 </p>
 
-</div></form>]
+</div></form></BOUCLE_si_editable>
 <script type="text/javascript">/*<!#EVAL{chr(91)}CDATA#EVAL{chr(91)}*/
 if (window.jQuery)(function($){
 	$("#select_tous").click(function(){
