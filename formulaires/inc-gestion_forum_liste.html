@@ -13,11 +13,24 @@
 	|ou{#ENV{id_forum}}
 	|ou{#ENV{id_message}}
 	|ou{#ENV{id_auteur}}
+	|ou{#ENV{id_objet}}
+	|ou{#ENV{objet}}
 	|ou{#ENV{auteur}}
 	|ou{#ENV{email_auteur}}
 	|ou{#ENV{ip}}
-	|oui)<a class='annule_filtre ajax' href='#GET{self}' title="<:forum:tout_voir|attribut_html:>"><strong><:forum:tout_voir:></strong></a>
+	|oui)<a class='annule_filtre ajax' href='#GET{self}' title="<:forum:tout_voir|attribut_html:>">[(#CHEMIN{images/annuler-recherche.png}|balise_img|inserer_attribut{alt,<:forum:tout_voir:>})]</a>
 </p>]
+
+[(#ENV{ip}|ou{#ENV{email_auteur}}|ou{#ENV{auteur}}|ou{#ENV{id_auteur}})
+<div class='source'>
+<div class='par'><:par:>
+[
+(#ENV{id_auteur,''}|oui)<a href='[(#REM|test_espace_prive|?{[(#URL_ECRIRE{auteur_infos,id_auteur=#ENV{id_auteur}})],[(#URL_AUTEUR{#ENV{id_auteur}})]})]'>#MODELE{auteur_nom,id_auteur=#ENV{id_auteur}}</a>
+][(#ENV{id_auteur,''}|?{'',#ENV{auteur,''}})
+][<a href='mailto:#ENV{email_auteur}'>(#ENV{email_auteur,''})</a>][IP (#ENV{ip,''})] 
+</div>
+</div>
+]
 [(#REM) désactiver l'ancre de pagination qui est déjà présente dans le squelette appelant ]
 #SET{virer_ancre,#ANCRE_PAGINATION}
 [<p class='pagination'>(#PAGINATION)</p>]
@@ -48,12 +61,14 @@
 		][<a class='ajax' href='[(#GET{self}|parametre_url{email_auteur,#EMAIL_AUTEUR})]' title='<:forum:messages_meme_email|attribut_html:>' >(#EMAIL_AUTEUR|email_valide|?{#EMAIL_AUTEUR})</a> &mdash;
 
 		][ IP <a class='ajax' href='[(#GET{self}|parametre_url{ip,#IP})]' title='<:forum:messages_meme_ip|attribut_html:>' >(#IP)</a>]</div>
-
-		<BOUCLE_art(ARTICLES){id_article}{id_article!=#ENV{id_article}}><div class='reponse_a'><:lien_reponse_article:> <a class='ajax' href='[(#GET{self}|parametre_url{id_article,#ID_ARTICLE})]'>#TITRE</a></div></BOUCLE_art>
-		<BOUCLE_rub(RUBRIQUES){id_rubrique}><div class='reponse_a'><:lien_reponse_rubrique:> <a class='ajax' href='[(#URL_RUBRIQUE|ancre_url{forum#ID_FORUM})]'>#TITRE</a></div></BOUCLE_rub>
-		<BOUCLE_bre(BREVES?){id_breve}><div class='reponse_a'><:lien_reponse_breve_2:> <a class='ajax' href='[(#URL_BREVE|ancre_url{forum#ID_FORUM})]'>#TITRE</a></div></BOUCLE_bre>
-		<BOUCLE_sit(SITES?){id_syndic}><div class='reponse_a'><:lien_reponse_site_reference:> <a class='ajax' href='[(#URL_SITE|ancre_url{forum#ID_FORUM})]'>#NOM_SITE</a></div></BOUCLE_sit>
-		<//B_art>
+		#SET{voir,''}
+		<BOUCLE_art(ARTICLES){id_article=#OBJET|=={article}|?{#ID_OBJET}}{id_article!=#ENV{id_article}}><div class='reponse_a'><:lien_reponse_article:> <a href='[(#URL_ARTICLE|ancre_url{forum#ID_FORUM})]'>#TITRE</a>#SET{voir,'</div>'}</BOUCLE_art></B_art>
+		<BOUCLE_rub(RUBRIQUES){id_rubrique=#OBJET|=={rubrique}|?{#ID_OBJET}}><div class='reponse_a'><:lien_reponse_rubrique:> <a href='[(#URL_RUBRIQUE|ancre_url{forum#ID_FORUM})]'>#TITRE</a>#SET{voir,'</div>'}</BOUCLE_rub></B_rub>
+		<BOUCLE_bre(BREVES?){id_breve=#OBJET|=={breve}|?{#ID_OBJET}}><div class='reponse_a'><:lien_reponse_breve_2:> <a href='[(#URL_BREVE|ancre_url{forum#ID_FORUM})]'>#TITRE</a>#SET{voir,'</div>'}</BOUCLE_bre></B_bre>
+		<BOUCLE_sit(SYNDIC?){id_syndic=#OBJET|=={syndic}|?{#ID_OBJET}}><div class='reponse_a'><:lien_reponse_site_reference:> <a href='[(#ID_SYNDIC|generer_url_entite{site,'','',1}|ancre_url{forum#ID_FORUM})]'>#NOM_SITE</a>#SET{voir,'</div>'}</BOUCLE_sit></B_sit>
+		<div class='reponse_a'><:forum:lien_reponse_objet{objet=#OBJET}:> <a href='[(#ID_OBJET|generer_url_entite{#OBJET}|ancre_url{forum#ID_FORUM})]'>#INFO_TITRE{#OBJET,#ID_OBJET}</a>#SET{voir,'</div>'}
+		<//B_sit><//B_bre><//B_rub><//B_art>
+		[ &#91;<a href='[(#GET{self}|parametre_url{objet,#OBJET}|parametre_url{id_objet,#ID_OBJET})]' class="ajax"><:forum:voir_messages_objet:></a>&#93;(#GET{voir})]
 		</div>
 		[(#REM) Le corps ---------------------------------------------------------]
 		[<div class='texte'>(#TEXTE|lignes_longues|vider_attribut{style})</div>]

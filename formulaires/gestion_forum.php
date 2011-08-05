@@ -10,7 +10,7 @@
  *  Pour plus de details voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
-function formulaires_gestion_forum_charger_dist($id_forum='', $id_rubrique='', $id_article='', $id_breve='', $id_syndic='', $id_message='', $id_auteur='', $auteur='', $email_auteur='', $ip='') {
+function formulaires_gestion_forum_charger_dist($id_forum='', $id_rubrique='', $id_article='', $id_breve='', $id_syndic='', $id_message='', $id_auteur='', $auteur='', $email_auteur='', $ip='',$objet='',$id_objet='') {
 	
 	$valeurs = array(
 		'editable'=>true
@@ -21,22 +21,24 @@ function formulaires_gestion_forum_charger_dist($id_forum='', $id_rubrique='', $
 	$valeurs['select_type'] = _request('select_type');
 	$valeurs['select_statut'] = _request('select_statut');
 	
-	$valeurs['id_forum'] = _request('id_forum');
-	$valeurs['id_rubrique'] = _request('id_rubrique');
-	$valeurs['id_article'] = _request('id_article');
-	$valeurs['id_breve'] = _request('id_breve');
-	$valeurs['id_syndic'] = _request('id_syndic');
-	$valeurs['id_message'] = _request('id_message');
-	$valeurs['id_auteur'] = _request('id_auteur');
-	$valeurs['auteur'] = _request('auteur');
-	$valeurs['email_auteur'] = _request('email_auteur');
-	$valeurs['ip'] = _request('ip');
-	$valeurs['debut_forum'] = _request('debut_forum');
+	$valeurs['id_forum'] = _request('id_forum',$id_forum);
+	$valeurs['id_rubrique'] = _request('id_rubrique',$id_rubrique);
+	$valeurs['id_article'] = _request('id_article',$id_article);
+	$valeurs['id_breve'] = _request('id_breve',$id_breve);
+	$valeurs['id_syndic'] = _request('id_syndic',$id_syndic);
+	$valeurs['id_message'] = _request('id_message',$id_message);
+	$valeurs['id_auteur'] = _request('id_auteur',$id_auteur);
+	$valeurs['objet'] = _request('objet',$objet);
+	$valeurs['id_objet'] = _request('id_objet',$id_objet);
+	$valeurs['auteur'] = _request('auteur',$auteur);
+	$valeurs['email_auteur'] = _request('email_auteur',$email_auteur);
+	$valeurs['ip'] = _request('ip',$ip);
+	$valeurs['debut_forum'] = _request('debut_forum',$debut_forum);
 	
 	return $valeurs;
 }
 
-function formulaires_gestion_forum_verifier_dist($id_forum='', $id_rubrique='', $id_article='', $id_breve='', $id_syndic='', $id_message='', $id_auteur='', $auteur='', $email_auteur='', $ip='') {
+function formulaires_gestion_forum_verifier_dist($id_forum='', $id_rubrique='', $id_article='', $id_breve='', $id_syndic='', $id_message='', $id_auteur='', $auteur='', $email_auteur='', $ip='',$objet='',$id_objet='') {
 
 	$erreurs = array();
 	
@@ -44,7 +46,7 @@ function formulaires_gestion_forum_verifier_dist($id_forum='', $id_rubrique='', 
 }
 
 
-function formulaires_gestion_forum_traiter_dist($id_forum='', $id_rubrique='', $id_article='', $id_breve='', $id_syndic='', $id_message='', $id_auteur='', $auteur='', $email_auteur='', $ip='') {
+function formulaires_gestion_forum_traiter_dist($id_forum='', $id_rubrique='', $id_article='', $id_breve='', $id_syndic='', $id_message='', $id_auteur='', $auteur='', $email_auteur='', $ip='',$objet='',$id_objet='') {
 
 	$retour = array();
 	

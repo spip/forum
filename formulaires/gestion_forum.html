@@ -20,6 +20,8 @@
 <input type="hidden" name="id_syndic" id="id_syndic" value="#ENV{id_syndic}" />
 <input type="hidden" name="id_message" id="id_message" value="#ENV{id_message}" />
 <input type="hidden" name="id_auteur" id="id_auteur" value="#ENV{id_auteur}" />
+<input type="hidden" name="id_objet" id="id_objet" value="#ENV{id_objet}" />
+<input type="hidden" name="objet" id="objet" value="#ENV{objet}" />
 <input type="hidden" name="auteur" id="auteur" value="#ENV{auteur}" />
 <input type="hidden" name="email_auteur" id="email_auteur" value="#ENV{email_auteur}" />
 <input type="hidden" name="ip" id="ip" value="#ENV{ip}" />
@@ -61,7 +63,7 @@
 		</select>
 	</li>
 	<li class="gestion_forum boutons">
-		Sélectionner : 
+		<:forum:label_selectionner:>
 		<a href="#SELF" id="select_tous"><:forum:messages_tous:></a>
 		<a href="#SELF" id="select_aucun"><:forum:messages_aucun:></a>
 		<a href="#SELF" id="select_prop"><:forum:messages_prop:></a>

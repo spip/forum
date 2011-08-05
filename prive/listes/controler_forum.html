@@ -44,7 +44,7 @@
 <div class='source'>
 <div class='par'><:par:>
 [
-(#ENV{id_auteur,''}|oui)<a href='#URL_ECRIRE{auteur_infos,id_auteur=#ENV{id_auteur}}'>#MODELE{auteur_nom,id_auteur=#ENV{id_auteur}}</a>
+(#ENV{id_auteur,''}|oui)<a href='[(#REM|test_espace_prive|?{[(#URL_ECRIRE{auteur_infos,id_auteur=#ENV{id_auteur}})],[(#URL_AUTEUR{#ENV{id_auteur}})]})]'>#MODELE{auteur_nom,id_auteur=#ENV{id_auteur}}</a>
 ][(#ENV{id_auteur,''}|?{'',#ENV{auteur,''}})
 ][<a href='mailto:#ENV{email_auteur}'>(#ENV{email_auteur,''})</a>][IP (#ENV{ip,''})] 
 </div>
