@@ -34,6 +34,7 @@ function formulaires_gestion_forum_charger_dist($id_forum='', $id_rubrique='', $
 	$valeurs['email_auteur'] = _request('email_auteur',$email_auteur);
 	$valeurs['ip'] = _request('ip',$ip);
 	$valeurs['debut_forum'] = _request('debut_forum',$debut_forum);
+	$valeurs['recherche'] = _request('recherche');
 	
 	return $valeurs;
 }
