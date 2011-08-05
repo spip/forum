@@ -8,7 +8,7 @@ if (!defined('_ECRIRE_INC_VERSION')) return;
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// A
-	'aucun_message_forum' => 'Aucun message de forum', # NEW
+	'aucun_message_forum' => 'لا يوجد اي رسائل منتدى',
 
 	// B
 	'bouton_radio_articles_futurs' => ' ( منحصرأ براى مقالات آينده (بر روى  داده پى ها بى تأثير ميباشد',
@@ -26,14 +26,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'documents_interdits_forum' => 'سندهاي ممنوع در سخناگاه ',
 
 	// E
-	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
+	'erreur_enregistrement_message' => 'لم يتم تسجيل رسالتك بسبب خطأ تقني',
 
 	// F
 	'form_pet_message_commentaire' => 'يك پيام ، يك تفسير ؟',
 	'forum' => 'سخنگاه',
 	'forum_acces_refuse' => '.شما ديگر اجازه استفاده از اين سخنگاه را نداريد',
 	'forum_attention_dix_caracteres' => '</b>! توجه<b>   پيامتان بايد بيش از ده حرف باشد.',
-	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
+	'forum_attention_message_non_poste' => 'تنبيه، لم تبعث برسالتك!',
 	'forum_attention_trois_caracteres' => '</b>! توجه<b> عنوانتان بايد بيش از سه حرف باشد. ',
 	'forum_attention_trop_caracteres' => '<b>توجه!</b> پیامتان بسیار طولانی است     (@compte@کلمه)  و نباید از  @max@ کلمه بیشتر باشد.',
 	'forum_avez_selectionne' => ': شما انتخاب كرده ايد',

@@ -19,6 +19,7 @@
 	<langue code="da" />
 	<langue code="de">
 		<traducteur nom="klaus" />
+		<traducteur nom="jaro" />
 	</langue>
 	<langue code="el">
 		<traducteur nom="yann7" />
@@ -30,7 +31,9 @@
 	<langue code="eo" />
 	<langue code="es" />
 	<langue code="eu" />
-	<langue code="fa" />
+	<langue code="fa">
+		<traducteur nom="kandalaft" />
+	</langue>
 	<langue code="fon" />
 	<langue code="fr_tu">
 		<traducteur nom="beatnick" />
