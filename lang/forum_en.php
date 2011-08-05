@@ -25,6 +25,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'label_afficher' => 'Display:',
 	'label_nb_messages' => 'messages',
 	'label_selectionner' => 'Select:',
+	'lien_reponse_objet' => 'Reply to (@objet@)',
 	
 	// M
 	'message_marque_comme_spam' => 'One post marked as spam',
@@ -57,11 +58,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	
 	// T
 	'texte_en_cours_validation'=> 'Articles, news, forums below are submitted to publication.',
-	'tout_voir' => 'Display all messages',
+	'tout_voir' => 'Display all posts',
 	'texte_messages_publics' => 'Public messages:',
 	
-	// T
-	'tout_voir' => 'See all posts',
+	// V
+	'voir_messages_objet' => 'display the posts'
+
 );
 
 

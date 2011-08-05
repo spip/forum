@@ -2,7 +2,7 @@
 #SET{self,#SELF|parametre_url{debut_forum|email_auteur|ip|id_auteur|auteur,''}}
 [(#REM) Le cartouche ---------------------------------------------------------]
 <div class='cartouche'>
-<h3 class='titre'><span class='info_statut'>[(#CHEMIN_IMAGE{#VAL{forum-statut-}|concat{#STATUT,-24.png}}|balise_img|inserer_attribut{alt,#VAL{forum:statut_}|concat{#STATUT}|_T})]</span>
+<h3 class='titre #EDIT{titre}'><span class='info_statut'>[(#CHEMIN_IMAGE{#VAL{forum-statut-}|concat{#STATUT,-24.png}}|balise_img|inserer_attribut{alt,#VAL{forum:statut_}|concat{#STATUT}|_T})]</span>
 <a href='#forum#ID_FORUM' title='[<:info_numero_abbreviation|attribut_html:> (#ID_FORUM)]'>[(#TITRE|sinon{<:info_sans_titre:>})]</a></h3>
 <div class='date'>[(#DATE_HEURE|date_interface)]</div>
 
@@ -16,15 +16,17 @@
 
 ][ IP <a class='ajax' href='[(#GET{self}|parametre_url{ip,#IP})]' title='<:forum:messages_meme_ip|attribut_html:>' >(#IP)</a>]</div>
 #SET{voir,''}
-<BOUCLE_art(ARTICLES){id_article=#OBJET|=={article}|?{#ID_OBJET}}{id_article!=#ENV{id_article}}><div class='reponse_a'><:lien_reponse_article:> <a href='[(#URL_ARTICLE|ancre_url{forum#ID_FORUM})]'>#TITRE</a>#SET{voir,'</div>'}</BOUCLE_art>
-<BOUCLE_rub(RUBRIQUES){id_rubrique=#OBJET|=={rubrique}|?{#ID_OBJET}}><div class='reponse_a'><:lien_reponse_rubrique:> <a href='[(#URL_RUBRIQUE|ancre_url{forum#ID_FORUM})]'>#TITRE</a>#SET{voir,'</div>'}</BOUCLE_rub>
-<BOUCLE_bre(BREVES){id_breve=#OBJET|=={breve}|?{#ID_OBJET}}><div class='reponse_a'><:lien_reponse_breve_2:> <a href='[(#URL_BREVE|ancre_url{forum#ID_FORUM})]'>#TITRE</a>#SET{voir,'</div>'}</BOUCLE_bre>
-<BOUCLE_sit(SYNDIC){id_syndic=#OBJET|=={syndic}|?{#ID_OBJET}}><div class='reponse_a'><:lien_reponse_site_reference:> <a href='[(#ID_SYNDIC|generer_url_entite{site,'','',1}|ancre_url{forum#ID_FORUM})]'>#NOM_SITE</a>#SET{voir,'</div>'}</BOUCLE_sit>
+<BOUCLE_art(ARTICLES){id_article=#OBJET|=={article}|?{#ID_OBJET}}{id_article!=#ENV{id_article}}><div class='reponse_a'><:lien_reponse_article:> <a href='[(#URL_ARTICLE|ancre_url{forum#ID_FORUM})]'>#TITRE</a>#SET{voir,'</div>'}</BOUCLE_art></B_art>
+<BOUCLE_rub(RUBRIQUES){id_rubrique=#OBJET|=={rubrique}|?{#ID_OBJET}}><div class='reponse_a'><:lien_reponse_rubrique:> <a href='[(#URL_RUBRIQUE|ancre_url{forum#ID_FORUM})]'>#TITRE</a>#SET{voir,'</div>'}</BOUCLE_rub></B_rub>
+<BOUCLE_bre(BREVES?){id_breve=#OBJET|=={breve}|?{#ID_OBJET}}><div class='reponse_a'><:lien_reponse_breve_2:> <a href='[(#URL_BREVE|ancre_url{forum#ID_FORUM})]'>#TITRE</a>#SET{voir,'</div>'}</BOUCLE_bre></B_bre>
+<BOUCLE_sit(SYNDIC?){id_syndic=#OBJET|=={syndic}|?{#ID_OBJET}}><div class='reponse_a'><:lien_reponse_site_reference:> <a href='[(#ID_SYNDIC|generer_url_entite{site,'','',1}|ancre_url{forum#ID_FORUM})]'>#NOM_SITE</a>#SET{voir,'</div>'}</BOUCLE_sit></B_sit>
+<div class='reponse_a'><:forum:lien_reponse_objet{objet=#OBJET}:> <a href='[(#ID_OBJET|generer_url_entite{#OBJET}|ancre_url{forum#ID_FORUM})]'>#INFO_TITRE{#OBJET,#ID_OBJET}</a>#SET{voir,'</div>'}
+<//B_sit><//B_bre><//B_rub><//B_art>
 <//B_art>
 [ &#91;<a href='[(#GET{self}|parametre_url{objet,#OBJET}|parametre_url{id_objet,#ID_OBJET})]'><:forum:voir_messages_objet:></a>&#93;(#GET{voir})]
 </div>
 [(#REM) Le corps ---------------------------------------------------------]
-[<div class='texte controle'>(#TEXTE|lignes_longues)</div>]
+[<div class='texte controle #EDIT{texte}'>(#TEXTE|lignes_longues|vider_attribut{style})</div>]
 [<div class='notes controle'>(#NOTES|lignes_longues)</div>]
 [<div class='site'><a href='#URL_SITE'>(#NOM_SITE|sinon{#URL_SITE}|lignes_longues)</a></div>]
 [<div class="urls">

@@ -25,6 +25,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'label_afficher' => 'Afficher&nbsp;:',
 	'label_nb_messages' => 'messages',
 	'label_selectionner' => 'S&eacute;lectionner&nbsp;:',
+	'lien_reponse_objet' => 'Réponse à (@objet@)',
 
 	// M
 	'message_marque_comme_spam' => 'Un message marqu&eacute; comme spam',
