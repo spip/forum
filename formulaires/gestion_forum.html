@@ -42,6 +42,8 @@
 
 <ul>
 	<li class="gestion_forum boutons">
+		<BOUCLE_compte_forums_trouves(FORUMS){id_forum?}{objet ?}{id_objet ?}{id_rubrique ?}{id_article ?}{id_breve ?}{id_syndic ?}{id_message?}{id_auteur?}{auteur?}{email_auteur?}{ip?}{statut?}{statut LIKE #GET{prive}}{statut !LIKE #GET{public}}{recherche?}>
+		</BOUCLE_compte_forums_trouves>
 		[(#GET{forums_internes}|=={oui}|oui)
 		<select id="select_type" name="select_type">
 			<option value="public"[(#ENV*{select_type,public}|=={"public"}|oui) selected="selected"]><:onglet_messages_publics:></option>
@@ -50,28 +52,38 @@
 		<select id="select_statut" name="select_statut">
 			<option value=""><:forum:messages_tous:></option>
 			<BOUCLE_si_public(CONDITION){si #GET{public}|oui}>
-			<BOUCLE_statuts_publics(FORUMS){statut IN 'prop','spam','off','publie'}{fusion statut}{par statut}>
+			<BOUCLE_statuts_publics(FORUMS){statut IN 'prop','spam','off','publie'}{id_forum?}{objet ?}{id_objet ?}{id_rubrique ?}{id_article ?}{id_breve ?}{id_syndic ?}{id_message?}{id_auteur?}{auteur?}{email_auteur?}{ip?}{recherche?}{fusion statut}{par statut}>
 			<option value="#STATUT"[(#ENV*{select_statut}|=={#STATUT}|oui) selected="selected"]>[(#VAL{forum:messages_}|concat{#STATUT}|_T)]</option>
 			</BOUCLE_statuts_publics>
 			</BOUCLE_si_public>
 			<BOUCLE_si_prive(CONDITION){si #GET{prive}|=={'priv%'}|oui}>
-			<BOUCLE_statuts_prives(FORUMS){statut IN 'prive','privrac','privadm','privoff'}{fusion statut}{par statut}>
+			<BOUCLE_statuts_prives(FORUMS){statut IN 'prive','privrac','privadm','privoff'}{id_forum?}{objet ?}{id_objet ?}{id_rubrique ?}{id_article ?}{id_breve ?}{id_syndic ?}{id_message?}{id_auteur?}{auteur?}{email_auteur?}{ip?}{recherche?}{fusion statut}{par statut}>
 			<option value="#STATUT"[(#ENV*{select_statut}|=={#STATUT}|oui) selected="selected"]>[(#VAL{forum:messages_}|concat{#STATUT}|_T)]</option>
 			</BOUCLE_statuts_prives>
 			</BOUCLE_si_prive>
 		</select>
+		[(#COMPTEUR_BOUCLE|>{10}|oui)
 		<select id="pagination" name="pagination">
 			<option value="10"[(#ENV*{pagination}|=={10}|oui) selected="selected"]>10</option>
 			<option value="50"[(#ENV*{pagination}|=={50}|oui) selected="selected"]>50</option>
-			<option value="100"[(#ENV*{pagination}|=={100}|oui) selected="selected"]>100</option>
-		</select>
+			[(#COMPTEUR_BOUCLE|>{50}|oui)<option value="100"[(#ENV*{pagination}|=={100}|oui) selected="selected"]>100</option>]
+		</select>]
 	</li>
+	</B_compte_forums_trouves>
+	<p><:forum:aucun_message_forum:></p>
+	<//B_compte_forums_trouves>
+	<B_forums_trouves>
 	<li class="gestion_forum boutons">
 		<:forum:label_selectionner:>
+		<BOUCLE_forums_trouves(FORUMS){id_forum?}{objet ?}{id_objet ?}{id_rubrique ?}{id_article ?}{id_breve ?}{id_syndic ?}{id_message?}{id_auteur?}{auteur?}{email_auteur?}{ip?}{statut?}{statut LIKE #GET{prive}}{statut !LIKE #GET{public}}{recherche?}{0,1}>
 		<a href="#SELF" id="select_tous"><:forum:messages_tous:></a>
 		<a href="#SELF" id="select_aucun"><:forum:messages_aucun:></a>
+		<BOUCLE_forums_trouves_prop(FORUMS){id_forum?}{objet ?}{id_objet ?}{id_rubrique ?}{id_article ?}{id_breve ?}{id_syndic ?}{id_message?}{id_auteur?}{auteur?}{email_auteur?}{ip?}{statut?}{statut LIKE #GET{prive}}{statut !LIKE #GET{public}}{statut = 'prop'}{recherche?}{0,1}>
 		<a href="#SELF" id="select_prop"><:forum:messages_prop:></a>
+		</BOUCLE_forums_trouves_prop>
+		</BOUCLE_forums_trouves>
 	</li>
+	</B_forums_trouves>
 	<li class="fieldset">
 		<fieldset>
 			[(#INCLURE{fond=formulaires/inc-gestion_forum_liste}{statut=#ENV*{select_statut}}{prive=#GET{prive}}{public=#GET{public}}{pagination=#GET{pagination}}{env})]

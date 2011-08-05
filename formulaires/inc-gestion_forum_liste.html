@@ -81,3 +81,34 @@
 </ul>
 [<p class='pagination'>(#PAGINATION)</p>]
 </B_forum>
+[<p class="legend">
+#SET{self,#SELF|parametre_url{objet|id_objet|id_article|id_forum|email_auteur|ip|id_auteur|auteur|debut_id_forum|statut,''}}
+(#ENV{id_forum}
+	|ou{#ENV{objet}}
+	|ou{#ENV{id_objet}}
+	|ou{#ENV{id_rubrique}}
+	|ou{#ENV{id_article}}
+	|ou{#ENV{id_breve}}
+	|ou{#ENV{id_syndic}}
+	|ou{#ENV{id_forum}}
+	|ou{#ENV{id_message}}
+	|ou{#ENV{id_auteur}}
+	|ou{#ENV{id_objet}}
+	|ou{#ENV{objet}}
+	|ou{#ENV{auteur}}
+	|ou{#ENV{email_auteur}}
+	|ou{#ENV{ip}}
+	|oui)<a class='annule_filtre ajax' href='#GET{self}' title="<:forum:tout_voir|attribut_html:>">[(#CHEMIN{images/annuler-recherche.png}|balise_img|inserer_attribut{alt,<:forum:tout_voir:>})]</a>
+</p>]
+
+[(#ENV{ip}|ou{#ENV{email_auteur}}|ou{#ENV{auteur}}|ou{#ENV{id_auteur}})
+<div class='source'>
+<div class='par'><:par:>
+[
+(#ENV{id_auteur,''}|oui)<a href='[(#REM|test_espace_prive|?{[(#URL_ECRIRE{auteur_infos,id_auteur=#ENV{id_auteur}})],[(#URL_AUTEUR{#ENV{id_auteur}})]})]'>#MODELE{auteur_nom,id_auteur=#ENV{id_auteur}}</a>
+][(#ENV{id_auteur,''}|?{'',#ENV{auteur,''}})
+][<a href='mailto:#ENV{email_auteur}'>(#ENV{email_auteur,''})</a>][IP (#ENV{ip,''})] 
+</div>
+</div>
+]
+<//B_forum>
