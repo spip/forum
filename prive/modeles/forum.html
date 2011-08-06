@@ -26,6 +26,11 @@
 </div>
 [(#REM) Le corps ---------------------------------------------------------]
 [<div class='texte controle #EDIT{texte}'>(#TEXTE|lignes_longues|vider_attribut{style})</div>]
+<BOUCLE_doc(DOCUMENTS){id_forum}{tout}>
+[(#EXTENSION|match{'^(gif|jpg|png)$'}|?{
+	[(#MODELE{emb}|image_reduire{150})],[(#LOGO_DOCUMENT{#URL_DOCUMENT})]
+})]
+</BOUCLE_doc>
 [<div class='notes controle'>(#NOTES|lignes_longues)</div>]
 [<div class='site'><a href='#URL_SITE'>(#NOM_SITE|sinon{#URL_SITE}|lignes_longues)</a></div>]
 [<div class="urls">
