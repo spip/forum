@@ -3,7 +3,7 @@
 /***************************************************************************\
  *  SPIP, Systeme de publication pour l'internet                           *
  *                                                                         *
- *  Copyright (c) 2001-2009                                                *
+ *  Copyright (c) 2001-2011                                                *
  *  Arnaud Martin, Antoine Pitrou, Philippe Riviere, Emmanuel Saint-James  *
  *                                                                         *
  *  Ce programme est un logiciel libre distribue sous licence GNU/GPL.     *
@@ -142,7 +142,7 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 
 	// et si on n'a toujours pas ce qu'on souhaite, on tente de le trouver dans un forum existant...
 	if (!$id_objet and $idf){
-		if ($objet = sql_fetsel(array('id_objet', 'objet'), 'spip_forum', 'id_forum=' . sql_quote($idf))) {
+		if ($objet = sql_fetsel(array('id_objet', 'objet'), 'spip_forum', 'id_forum=' . intval($idf))) {
 			$id_objet = $objet['id_objet'];
 			$objet = $objet['objet'];
 		} else {
@@ -174,7 +174,7 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 	
 	
 	if ($idf > 0) {
-		$titre_m = sql_fetsel('titre', 'spip_forum', "id_forum = " . sql_quote($idf));
+		$titre_m = sql_fetsel('titre', 'spip_forum', "id_forum = " . intval($idf));
 		if (!$titre_m) {
 			return false; // URL fabriquee
 		}
