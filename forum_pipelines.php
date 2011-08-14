@@ -168,7 +168,8 @@ function forum_afficher_message_statut_objet($flux){
  * @return array
  */
 function forum_boite_infos($flux){
-	if ($type = $flux['args']['type']=='rubrique'){
+	if ($flux['args']['type']=='rubrique'
+	  AND $id_rubrique = $flux['args']['id']){
 		if (autoriser('publierdans','rubrique',$id_rubrique) AND !$flux['args']['row']['id_parent']) {
 			include_spip('inc/forum');
 			list($from, $where) = critere_statut_controle_forum('prop', $id_rubrique);
@@ -177,11 +178,19 @@ function forum_boite_infos($flux){
 		else
 			$n_forums = 0;
 		if ($n_forums){
-			$aff = "<p class='forums'>"._T('forum:icone_suivi_forum',array('nb_forums'=>$n_forums)).'</p>';
+			$aff = "<p class='forums'>".singulier_ou_pluriel($n_forums, "forum:info_1_message_forum", "forum:info_nb_message_forum").'</p>';
 			if (($pos = strpos($flux['data'],'<!--nb_elements-->'))!==FALSE)
 				$flux['data'] = substr($flux['data'],0,$pos) . $aff . substr($flux['data'],$pos);
 			else
 				$flux['data'] .= $aff;
+		}
+	}
+	elseif ($flux['args']['type']=='auteur'
+		AND $id_auteur = $flux['args']['id']){
+		if ($nb = sql_countsel('spip_forum',"statut!='poubelle' AND id_auteur=".intval($id_auteur))){
+			$nb = "<div>". singulier_ou_pluriel($nb, "forum:info_1_message_forum", "forum:info_nb_messages_forum") . "</div>";
+			if ($p = strpos($flux['data'],"<!--nb_elements-->"))
+				$flux['data'] = substr_replace($flux['data'],$nb,$p,0);
 		}
 	}
 	return $flux;
@@ -387,4 +396,5 @@ function forum_jquery_plugins($array){
 	}
 	return $array;
 }
+
 ?>

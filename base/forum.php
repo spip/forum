@@ -70,7 +70,7 @@ function forum_declarer_tables_objets_sql($tables){
 		'texte_objet' => 'forum:forum',
 		'info_aucun_objet'=> 'forum:aucun_message_forum',
 		'info_1_objet' => 'forum:info_1_message_forum',
-		'info_nb_objets' => 'forum:info_nb_message_forum',
+		'info_nb_objets' => 'forum:info_nb_messages_forum',
 		'titre' => "titre, '' AS lang",
 		'date' => 'date_heure',
 
