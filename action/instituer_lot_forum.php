@@ -38,6 +38,8 @@ function action_instituer_lot_forum_dist($arg=null) {
 			$id_auteur = intval(array_shift($arg));
 			$auteur = implode('/',$arg);
 			$where = array();
+			// pas de moderation par lot sur les forum prives
+			$where[] = sql_in('statut',array('privadm','prive','privrac'),'NOT');
 			if ($ip) $where[] = "ip=".sql_quote($ip);
 			if ($email_auteur) $where[] = "email_auteur=".sql_quote($email_auteur);
 			if ($id_auteur) $where[] = "id_auteur=".intval($id_auteur);
@@ -61,7 +63,11 @@ function action_instituer_lot_forum_dist($arg=null) {
 		 AND is_array($id)){
 
 			$ids = array_map('intval',$id);
-			$rows = sql_allfetsel("*", "spip_forum", sql_in('id_forum',$ids));
+			$where = array();
+			// pas de moderation par lot sur les forum prives
+			$where[] = sql_in('statut',array('privadm','prive','privrac'),'NOT');
+			$where[] = sql_in('id_forum',$ids);
+			$rows = sql_allfetsel("*", "spip_forum", $where);
 			if (!count($rows)) return;
 
 			include_spip('action/instituer_forum');
