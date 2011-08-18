@@ -7,7 +7,7 @@
 #BOITE_OUVRIR{'','note'}
 	<p><:forum:texte_messages_publics:></p>
 	<a class='annule_filtre' href='[(#GET{self}|parametre_url{id_objet|objet,''})]' title="<:forum:tout_voir|attribut_html:>">[(#CHEMIN_IMAGE{fermer-16.png}|balise_img|inserer_attribut{alt,<:forum:tout_voir:>})]</a>
-	<h2 class='objet_titre'><a href='[(#INFO_URL{#OBJET,#ID_OBJET}|ancre_url{forum#ID_FORUM})]'>[(#INFO_TITRE{#OBJET,#ID_OBJET})]</a></h2>
+	<h2 class='objet_titre'><a href='[(#INFO_URL{#OBJET,#ID_OBJET}|ancre_url{forum#ID_FORUM})]'>[(#OBJET|objet_icone{16}) ][(#INFO_TITRE{#OBJET,#ID_OBJET})]</a></h2>
 #BOITE_FERMER
 ]
 

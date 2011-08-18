@@ -116,7 +116,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'lien_reponse_article' => 'Réponse à l\'article',
 	'lien_reponse_breve_2' => 'Réponse à la brève',
 	'lien_reponse_rubrique' => 'Réponse à la rubrique',
-	'lien_reponse_site_reference' => 'Réponse au site référencé :',
+	'lien_reponse_site_reference' => 'Réponse au site référencé',
+	'lien_reponse_message' => 'Réponse au message',
 
 	// M
 	'messages_aucun' => 'Aucun',

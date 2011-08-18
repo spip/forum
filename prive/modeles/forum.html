@@ -3,7 +3,7 @@
 [(#REM) Le cartouche ---------------------------------------------------------]
 <div class='cartouche'>
 <h3 class='titre'><span class='info_statut'>[(#CHEMIN_IMAGE{[forum-statut-(#STATUT)-24.png]}|balise_img|inserer_attribut{alt,#VAL{forum:statut_}|concat{#STATUT}|_T})]</span>
-<a href='[(#GET{self}|parametre_url{debut_forum,@#ID_FORUM}|ancre_url{forum#ID_FORUM})]' title='[<:info_numero_abbreviation|attribut_html:> (#ID_FORUM)]'>[(#TITRE|sinon{<:info_sans_titre:>})]</a></h3>
+<a href='[(#GET{self}|parametre_url{debut_forum,@#ID_FORUM}|ancre_url{forum#ID_FORUM})]' title='[<:info_numero_abbreviation|attribut_html:> (#ID_FORUM)]'>[(#TITRE|sinon{<:info_sans_titre:>})]<b class="numero">#ID_FORUM</b></a></h3>
 <div class='date'>[(#DATE_HEURE|date_interface)]</div>
 
 <div class='par'><:par_auteur:>[
@@ -16,6 +16,9 @@
 
 ][(#STATUT|!={publie}|oui)[ &mdash; IP <a class='ajax' href='[(#GET{self}|parametre_url{ip,#IP})]' title='<:forum:messages_meme_ip|attribut_html:>' >(#IP)</a>]]</div>
 
+[(#ID_PARENT|oui)
+<div class='reponse_a parent'><:forum:lien_reponse_message:> <a href="[(#SELF|parametre_url{debut_forum,@#ID_PARENT})]"><:info_numero_abbreviation:>#ID_PARENT</a></div>
+]
 #SET{voir,''}
 <BOUCLE_art(ARTICLES){id_article=#OBJET|=={article}|?{#ID_OBJET}}{id_article!=#ENV{id_article,0}}><div class='reponse_a'><:forum:lien_reponse_article:> <a href='[(#URL_ARTICLE|ancre_url{forum#ID_FORUM})]'>#TITRE</a>#SET{voir,'</div>'}</BOUCLE_art>
 <BOUCLE_rub(RUBRIQUES){id_rubrique=#OBJET|=={rubrique}|?{#ID_OBJET}}><div class='reponse_a'><:forum:lien_reponse_rubrique:> <a href='[(#URL_RUBRIQUE|ancre_url{forum#ID_FORUM})]'>#TITRE</a>#SET{voir,'</div>'}</BOUCLE_rub>
