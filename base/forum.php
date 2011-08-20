@@ -37,17 +37,17 @@ function forum_declarer_tables_interfaces($interfaces){
 	$interfaces['table_statut']['spip_forum'][] = array('champ'=>'statut','publie'=>'publie','previsu'=>'publie,prop','exception'=>'statut');
 
 	$interfaces['table_des_traitements']['PARAMETRES_FORUM'][]= 'htmlspecialchars(%s)';
-	$interfaces['table_des_traitements']['TEXTE']['forums']= "safehtml("._TRAITEMENT_RACCOURCIS.")";
-	$interfaces['table_des_traitements']['TITRE']['forums']= "safehtml("._TRAITEMENT_TYPO.")";
-	$interfaces['table_des_traitements']['NOTES']['forums']= "safehtml("._TRAITEMENT_RACCOURCIS.")";
-	$interfaces['table_des_traitements']['NOM_SITE']['forums']=  "safehtml("._TRAITEMENT_TYPO.")";
+	$interfaces['table_des_traitements']['TEXTE']['forums']= "safehtml(".str_replace("%s","interdit_html(%s)",_TRAITEMENT_RACCOURCIS).")";
+	$interfaces['table_des_traitements']['TITRE']['forums']= "safehtml(".str_replace("%s","interdit_html(%s)",_TRAITEMENT_TYPO).")";
+	$interfaces['table_des_traitements']['NOTES']['forums']= "safehtml(".str_replace("%s","interdit_html(%s)",_TRAITEMENT_RACCOURCIS).")";
+	$interfaces['table_des_traitements']['NOM_SITE']['forums']=  "safehtml(".str_replace("%s","interdit_html(%s)",_TRAITEMENT_TYPO).")";
 	$interfaces['table_des_traitements']['URL_SITE']['forums']= 'safehtml(vider_url(%s))';
 	$interfaces['table_des_traitements']['AUTEUR']['forums']= 'safehtml(vider_url(%s))';
 	$interfaces['table_des_traitements']['EMAIL_AUTEUR']['forums']= 'safehtml(vider_url(%s))';
 
 	// gerer les sauts de ligne dans les textes des forums
 	$interfaces['table_des_traitements']['TEXTE']['forums'] =
-		str_replace('%s', 'post_autobr(%s)',
+		str_replace('interdit_html(%s)', 'post_autobr(interdit_html(%s))',
 		$interfaces['table_des_traitements']['TEXTE']['forums']
 	);
 

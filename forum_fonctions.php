@@ -40,4 +40,9 @@ function filtre_url_rss_forum($param) {
 	return generer_url_public("rss_forum_$t", array($k => $v));
 }
 
+function interdit_html($texte){
+	if (defined('_INTERDIRE_TEXTE_HTML'))
+		$texte = str_replace("<","&lt;",$texte);
+	return $texte;
+}
 ?>
