@@ -11,7 +11,7 @@
 \***************************************************************************/
 
 function formulaires_forum_charger_dist(
-$type, $objet, $script,
+$type, $objet,
 $id_objet, $id_forum,
 $ajouter_mot, $ajouter_groupe, $afficher_texte, $url_param_retour) {
 
@@ -100,7 +100,6 @@ $ajouter_mot, $ajouter_groupe, $afficher_texte, $url_param_retour) {
 		'modere' => (($type != 'pri') ? '' : ' '),
 		'table' => $table,
 		'config' => array('afficher_barre' => ($GLOBALS['meta']['forums_afficher_barre']!='non'?' ':'')),
-		'action' => $script, # ce sur quoi on fait le action='...'
 		'_hidden' => $script_hidden, # pour les variables hidden
 		'cle_ajouter_document' => $cle,
 		'formats_documents_forum' => forum_documents_acceptes(),
@@ -173,7 +172,7 @@ function forum_fichier_tmp($arg)
 }
 
 function formulaires_forum_verifier_dist(
-	$type, $objet, $script,
+	$type, $objet,
 	$id_objet, $id_forum,
 	$ajouter_mot, $ajouter_groupe, $afficher_texte, $url_param_retour)
 {

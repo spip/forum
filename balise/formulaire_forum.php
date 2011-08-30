@@ -172,14 +172,8 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 		$table = '';
 	}
 
-	
-
-	// Sur quelle adresse va-t-on "boucler" pour la previsualisation ?
-	// si vide : self()
-	$script = '';
-
 	return
-		array($accepter_forum, $objet, $script,
+		array($accepter_forum, $objet,
 		$id_objet, $idf, $am, $ag, $af, $url);
 }
 
