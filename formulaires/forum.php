@@ -10,18 +10,33 @@
  *  Pour plus de details voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
-function formulaires_forum_charger_dist(
-$type, $objet,
-$id_objet, $id_forum,
-$ajouter_mot, $ajouter_groupe, $afficher_texte, $url_param_retour) {
+function formulaires_forum_charger_dist($objet,$id_objet, $id_forum,
+$ajouter_mot, $ajouter_groupe, $afficher_texte, $retour) {
 
 	if (!$titre = forum_recuperer_titre($objet,$id_objet,$id_forum))
 		return false;
+
+	// ca s'apparenterait presque a une autorisation...
+	// si on n'avait pas a envoyer la valeur $accepter_forum au formulaire
+	$accepter_forum = substr($GLOBALS['meta']["forums_publics"], 0, 3);
+	// il y a un cas particulier pour l'acceptation de forum d'article...
+	if ($f = charger_fonction($objet . '_accepter_forums_publics', 'inc', true)){
+		$accepter_forum = $f($id_objet);
+	}
+	if ($accepter_forum == 'non') {
+		return false;
+	}
+
 	$primary = id_table_objet($objet);
-	$table = table_objet($objet);
+
+	// table a laquelle sont associés les mots :
+	if ($GLOBALS['meta']["mots_cles_forums"] != "oui")
+		$table = '';
+	else
+		$table = table_objet($objet);
 
 	// exiger l'authentification des posteurs pour les forums sur abo
-	if ($type == "abo") {
+	if ($accepter_forum == "abo") {
 		if (!$GLOBALS["visiteur_session"]['statut']) {
 			return array(
 				'action' => '', #ne sert pas dans ce cas, on la vide pour mutualiser le cache
@@ -32,6 +47,8 @@ $ajouter_mot, $ajouter_groupe, $afficher_texte, $url_param_retour) {
 				);
 		}
 	}
+
+
 	// Tableau des valeurs servant au calcul d'une signature de securite.
 	// Elles seront placees en Input Hidden pour que inc/forum_insert
 	// recalcule la meme chose et verifie l'identite des resultats.
@@ -53,17 +70,15 @@ $ajouter_mot, $ajouter_groupe, $afficher_texte, $url_param_retour) {
 	// memoriser eventuellement l'URL de retour pour y revenir apres
 	// envoi du message ; aux appels suivants, reconduire la valeur.
 	// Initialiser aussi l'auteur
-	if ($retour_forum = rawurldecode(_request('retour')))
-		$retour_forum =  str_replace('&var_mode=recalcul','',$retour_forum);
-	else {
-		// par defaut, on veut prendre url_forum(), mais elle ne sera connue
-		// qu'en sortie, on inscrit donc une valeur absurde ("!")
-		$retour_forum = "!";
-		// sauf si on a passe un parametre en argument (exemple : {#SELF})
-		if ($url_param_retour)
-			$retour_forum = str_replace('&amp;', '&', $url_param_retour);
-		$retour_forum = rawurlencode($retour_forum);
-	}
+
+	// par defaut, on veut prendre url_forum(), mais elle ne sera connue
+	// qu'en sortie, on inscrit donc une valeur absurde ("!")
+	$retour_forum = "!";
+	// sauf si on a passe un parametre en argument (exemple : {#SELF})
+	if ($retour)
+		$retour_forum = str_replace('&amp;', '&', $retour);
+	$retour_forum = rawurlencode($retour_forum);
+
 	if (_request('retour_forum')){
 		$arg = forum_fichier_tmp(join('', $ids));
 
@@ -97,7 +112,7 @@ $ajouter_mot, $ajouter_groupe, $afficher_texte, $url_param_retour) {
 	);
 
 	return array_merge($vals, array(
-		'modere' => (($type != 'pri') ? '' : ' '),
+		'modere' => (($accepter_forum != 'pri') ? '' : ' '),
 		'table' => $table,
 		'config' => array('afficher_barre' => ($GLOBALS['meta']['forums_afficher_barre']!='non'?' ':'')),
 		'_hidden' => $script_hidden, # pour les variables hidden
@@ -171,10 +186,8 @@ function forum_fichier_tmp($arg)
 	return $alea;
 }
 
-function formulaires_forum_verifier_dist(
-	$type, $objet,
-	$id_objet, $id_forum,
-	$ajouter_mot, $ajouter_groupe, $afficher_texte, $url_param_retour)
+function formulaires_forum_verifier_dist($objet,$id_objet, $id_forum,
+	$ajouter_mot, $ajouter_groupe, $afficher_texte, $retour)
 {
 	include_spip('inc/acces');
 	include_spip('inc/texte');
@@ -330,7 +343,8 @@ $objet, $id_objet, $id_forum) {
 }
 
 
-function formulaires_forum_traiter_dist() {
+function formulaires_forum_traiter_dist($objet,$id_objet, $id_forum,
+	$ajouter_mot, $ajouter_groupe, $afficher_texte, $retour) {
 
 	$forum_insert = charger_fonction('forum_insert', 'inc');
 

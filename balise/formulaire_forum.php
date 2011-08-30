@@ -149,31 +149,8 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 		return false;
 	}
 
-	// ca s'apparenterait presque a une autorisation...
-	// si on n'avait pas a envoyer la valeur $accepter_forum au formulaire
-	$accepter_forum = substr($GLOBALS['meta']["forums_publics"], 0, 3);
-	// il y a un cas particulier pour l'acceptation de forum d'article...
-	if ($f = charger_fonction($objet . '_accepter_forums_publics', 'inc', true)){
-		$accepter_forum = $f($id_objet);
-	}
-	
-	if ($accepter_forum == 'non') {
-		return false;
-	}
-
-	if ($titre = forum_recuperer_titre($objet, $id_objet)) {
-		$titre = supprimer_numero($titre);
-	} else {
-		return false; // inexistant ou non public
-	}
-
-	
-	if ($GLOBALS['meta']["mots_cles_forums"] != "oui") {
-		$table = '';
-	}
-
 	return
-		array($accepter_forum, $objet,
+		array($objet,
 		$id_objet, $idf, $am, $ag, $af, $url);
 }
 
