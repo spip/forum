@@ -110,7 +110,7 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 		$id_objet = intval($id_objet); 
 	}
 	unset($_objet, $ido);
-	
+
 	$objet = objet_type($objet);
 
 	// on tente de prendre l'objet issu de l'environnement si un n'a pas pu etre calcule
@@ -141,7 +141,7 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 	}
 
 	// et si on n'a toujours pas ce qu'on souhaite, on tente de le trouver dans un forum existant...
-	if (!$id_objet and $idf){
+	if (($objet=='forum' OR !$id_objet) and $idf){
 		if ($objet = sql_fetsel(array('id_objet', 'objet'), 'spip_forum', 'id_forum=' . intval($idf))) {
 			$id_objet = $objet['id_objet'];
 			$objet = $objet['objet'];
@@ -171,7 +171,7 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 	} else {
 		return false; // inexistant ou non public
 	}
-	
+
 	
 	if ($idf > 0) {
 		$titre_m = sql_fetsel('titre', 'spip_forum', "id_forum = " . intval($idf));
