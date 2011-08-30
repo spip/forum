@@ -135,11 +135,6 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 	}
 	unset ($i, $nb_args_debut);
 
-	
-	if (table_objet($objet) == 'syndic') {
-		$objet = 'site'; // eviter 'syndication' ... quelle *#@*&! de vilainerie 
-	}
-
 	// et si on n'a toujours pas ce qu'on souhaite, on tente de le trouver dans un forum existant...
 	if (($objet=='forum' OR !$id_objet) and $idf){
 		if ($objet = sql_fetsel(array('id_objet', 'objet'), 'spip_forum', 'id_forum=' . intval($idf))) {
@@ -173,17 +168,6 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 	}
 
 	
-	if ($idf > 0) {
-		$titre_m = sql_fetsel('titre', 'spip_forum', "id_forum = " . intval($idf));
-		if (!$titre_m) {
-			return false; // URL fabriquee
-		}
-		$titre = $titre_m['titre'];
-	}
-
-	$primary = id_table_objet($objet);
-	$table = table_objet($objet);
-	
 	if ($GLOBALS['meta']["mots_cles_forums"] != "oui") {
 		$table = '';
 	}
@@ -195,34 +179,9 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 	$script = '';
 
 	return
-		array($titre, $table, $accepter_forum, $objet, $primary, $script,
+		array($accepter_forum, $objet, $script,
 		$id_objet, $idf, $am, $ag, $af, $url);
 }
-
-function forum_recuperer_titre($objet, $id_objet) {
-	$titre = "";
-	
-	if ($f = charger_fonction($objet.'_forum_extraire_titre', 'inc', true)){
-		$titre = $f($id_objet);
-	} else {
-		// retrouver le titre grace a table_titre...
-		$trouver_table = charger_fonction('trouver_table', 'base');
-		$desc = $trouver_table(table_objet_sql($objet));
-		$_titre = $desc['titre'] ? $desc['titre'] : ($desc['field']['titre'] ? 'titre' : '');
-		$_table = $desc['table'];
-		$_primary = id_table_objet($_table);
-		if ($_titre and $res = sql_fetsel($_titre, $_table, array(
-			"statut = " . sql_quote('publie'),
-			"$_primary = ". sql_quote($id_objet))
-		)) {
-			$titre = $res['titre'];
-		}
-	}
-	
-	return $titre;
-}
-
-
 
 // recuperer tous les objets dont on veut pouvoir obtenir l'identifiant
 // directement dans l'environnement

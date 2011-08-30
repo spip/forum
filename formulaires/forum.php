@@ -11,9 +11,14 @@
 \***************************************************************************/
 
 function formulaires_forum_charger_dist(
-$titre, $table, $type, $objet, $primary, $script,
+$type, $objet, $script,
 $id_objet, $id_forum,
 $ajouter_mot, $ajouter_groupe, $afficher_texte, $url_param_retour) {
+
+	if (!$titre = forum_recuperer_titre($objet,$id_objet,$id_forum))
+		return false;
+	$primary = id_table_objet($objet);
+	$table = table_objet($objet);
 
 	// exiger l'authentification des posteurs pour les forums sur abo
 	if ($type == "abo") {
@@ -110,6 +115,35 @@ $ajouter_mot, $ajouter_groupe, $afficher_texte, $url_param_retour) {
 }
 
 
+function forum_recuperer_titre($objet, $id_objet, $id_forum=0) {
+	include_spip('inc/filtres');
+	$titre = "";
+
+	if ($f = charger_fonction($objet.'_forum_extraire_titre', 'inc', true)){
+		$titre = $f($id_objet);
+	}
+	else {
+		include_spip('base/objets');
+		if (!objet_test_si_publie($objet, $id_objet))
+			return false;
+
+		$titre = generer_info_entite($id_objet, $objet,'titre','*');
+	}
+
+	if ($titre AND $id_forum){
+		$titre_m = sql_getfetsel('titre', 'spip_forum', "id_forum = " . intval($id_forum));
+		if (!$titre_m) {
+			return false; // URL fabriquee
+		}
+		$titre = $titre_m;
+	}
+
+	$titre = supprimer_numero($titre);
+
+	return $titre;
+}
+
+
 // Une securite qui nous protege contre :
 // - les doubles validations de forums (derapages humains ou des brouteurs)
 // - les abus visant a mettre des forums malgre nous sur un article (??)
@@ -139,7 +173,7 @@ function forum_fichier_tmp($arg)
 }
 
 function formulaires_forum_verifier_dist(
-	$titre, $table, $type, $objet, $primary, $script,
+	$type, $objet, $script,
 	$id_objet, $id_forum,
 	$ajouter_mot, $ajouter_groupe, $afficher_texte, $url_param_retour)
 {
