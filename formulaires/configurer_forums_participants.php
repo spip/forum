@@ -46,7 +46,11 @@ function formulaires_configurer_forums_participants_traiter_dist(){
 	if ($accepter_forum == 'abo')
 		ecrire_meta('accepter_visiteurs', 'oui');
 
-	appliquer_modifs_config($purger_skel);
+	appliquer_modifs_config();
+	if ($purger_skel) {
+		include_spip('inc/invalideur');
+		suivre_invalideur("forum/*");
+	}
 
 	return array('message_ok'=>_T('config_info_enregistree'));
 }
