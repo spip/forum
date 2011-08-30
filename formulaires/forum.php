@@ -33,11 +33,8 @@ $ajouter_mot, $ajouter_groupe, $afficher_previsu, $retour) {
 
 	// ca s'apparenterait presque a une autorisation...
 	// si on n'avait pas a envoyer la valeur $accepter_forum au formulaire
-	$accepter_forum = substr($GLOBALS['meta']["forums_publics"], 0, 3);
-	// il y a un cas particulier pour l'acceptation de forum d'article...
-	if ($f = charger_fonction($objet . '_accepter_forums_publics', 'inc', true)){
-		$accepter_forum = $f($id_objet);
-	}
+	include_spip('inc/forum');
+	$accepter_forum = controler_forum($objet, $id_objet);
 	if ($accepter_forum == 'non') {
 		return false;
 	}
@@ -81,20 +78,7 @@ $ajouter_mot, $ajouter_groupe, $afficher_previsu, $retour) {
 	// ne pas mettre '', sinon le squelette n'affichera rien.
 	$previsu = ' ';
 
-	// au premier appel (pas de Post-var nommee "retour_forum")
-	// memoriser eventuellement l'URL de retour pour y revenir apres
-	// envoi du message ; aux appels suivants, reconduire la valeur.
-	// Initialiser aussi l'auteur
-
-	// par defaut, on veut prendre url_forum(), mais elle ne sera connue
-	// qu'en sortie, on inscrit donc une valeur absurde ("!")
-	$retour_forum = "!";
-	// sauf si on a passe un parametre en argument (exemple : {#SELF})
-	if ($retour)
-		$retour_forum = str_replace('&amp;', '&', $retour);
-	$retour_forum = rawurlencode($retour_forum);
-
-	if (_request('retour_forum')){
+	if (_request('formulaire_action')){
 		$arg = forum_fichier_tmp(join('', $ids));
 
 		$securiser_action = charger_fonction('securiser_action', 'inc');
@@ -110,8 +94,6 @@ $ajouter_mot, $ajouter_groupe, $afficher_previsu, $retour) {
 	$script_hidden .= "<input type='hidden' name='arg' value='$arg' />";
 	$script_hidden .= "<input type='hidden' name='hash' value='$hash' />";
 	$script_hidden .= "<input type='hidden' name='verif_$hash' value='ok' />";
-	$script_hidden .= "<input type='hidden' name='afficher_texte' value='$afficher_previsu' />";
-	$script_hidden .= "<input type='hidden' name='retour_forum' value='$retour_forum' />";
 
 	if ($formats = forum_documents_acceptes()) {
 		include_spip('inc/securiser_action');
@@ -120,7 +102,7 @@ $ajouter_mot, $ajouter_groupe, $afficher_previsu, $retour) {
 	// Valeurs par defaut du formulaire
 	// si le formulaire a ete sauvegarde, restituer les valeurs de session
 	$vals = array(
-		'titre' => str_replace('~', ' ', extraire_multi($titre)),
+		'titre' => $titre,
 		'texte' => '',
 		'nom_site' => '',
 		'url_site' => 'http://'
@@ -130,7 +112,7 @@ $ajouter_mot, $ajouter_groupe, $afficher_previsu, $retour) {
 		'modere' => (($accepter_forum != 'pri') ? '' : ' '),
 		'table' => $table,
 		'config' => array('afficher_barre' => ($GLOBALS['meta']['forums_afficher_barre']!='non'?' ':'')),
-		'_hidden' => $script_hidden, # pour les variables hidden
+		'_hidden' => $script_hidden, # pour les variables hidden qui seront inserees dans le form et dans le form de previsu
 		'cle_ajouter_document' => $cle,
 		'formats_documents_forum' => forum_documents_acceptes(),
 		'ajouter_document' => $_FILES['ajouter_document']['name'],
@@ -174,6 +156,7 @@ function forum_recuperer_titre($objet, $id_objet, $id_forum=0) {
 	}
 
 	$titre = supprimer_numero($titre);
+	$titre = str_replace('~', ' ', extraire_multi($titre));
 
 	return $titre;
 }
@@ -311,6 +294,25 @@ function formulaires_forum_verifier_dist($objet,$id_objet, $id_forum,
 				'max' => _FORUM_LONGUEUR_MAXI
 			));
 
+	if (array_reduce($_POST, 'reduce_strlen', (20 * 1024)) < 0) {
+		$erreurs['erreur_message'] = _T('forum:forum_message_trop_long');
+	}
+	else {
+		// Ne pas autoriser d'envoi hacke si forum sur abonnement
+		if (controler_forum($objet, $id_objet)=='abo'
+		  AND !test_espace_prive()) {
+			controler_forum_abo($retour); // demandera une auth http
+			if (!isset($GLOBALS['visiteur_session'])
+			  OR !isset($GLOBALS['visiteur_session']['statut'])) {
+				$erreurs['erreur_message'] = _T('forum_non_inscrit');
+			}
+			elseif($GLOBALS['visiteur_session']['statut']=='5poubelle') {
+				$erreurs['erreur_message'] = _T('forum:forum_acces_refuse');
+			}
+
+		}
+	}
+
 	if (strlen($titre=_request('titre')) < 3
 	AND $GLOBALS['meta']['forums_titre'] == 'oui')
 		$erreurs['titre'] = _T('forum:forum_attention_trois_caracteres');
@@ -323,7 +325,24 @@ function formulaires_forum_verifier_dist($objet,$id_objet, $id_forum,
 		}
 	}
 
+	//  Si forum avec previsu sans bon hash de securite, echec
+	if (!count($erreurs)){
+		include_spip('inc/forum');
+		if (!test_espace_prive()
+		  AND $afficher_previsu<>'non'
+		  AND forum_insert_noprevisu()) {
+			$erreurs['erreur_message'] = _T('forum:forum_acces_refuse');
+		}
+	}
+
 	return $erreurs;
+}
+
+
+// http://doc.spip.org/@reduce_strlen
+function reduce_strlen($n, $c)
+{
+  return $n - (is_string($c) ? strlen($c) : 0);
 }
 
 /**
@@ -426,12 +445,44 @@ function formulaires_forum_traiter_dist($objet,$id_objet, $id_forum,
 
 	$forum_insert = charger_fonction('forum_insert', 'inc');
 
-	list($redirect,$id_forum) = $forum_insert();
+	// Antispam basique :
+	// si l'input invisible a ete renseigne, ca ne peut etre qu'un bot
+	if (strlen(_request(_request('cle_ajouter_document')))) {
+		tracer_erreur_forum('champ interdit (nobot) rempli');
+		return array('message_erreur'=>_T('forum:erreur_enregistrement_message'));
+	}
 
-	if ($id_forum)
-		$res = array('redirect'=>$redirect,'id_forum'=>$id_forum);
+	$id_reponse = $forum_insert($objet, $id_objet, $id_forum);
+
+
+	if ($id_reponse){
+		// En cas de retour sur (par exemple) {#SELF}, on ajoute quand
+		// meme #forum12 a la fin de l'url, sauf si un #ancre est explicite
+		if ($retour){
+			if (!strpos($retour, '#'))
+				$retour .= '#forum'.$id_reponse;
+		}
+		else {
+			// le retour par defaut envoie sur le thread, ce qui permet
+			// de traiter elegamment le cas des forums moderes a priori.
+			// Cela assure aussi qu'on retrouve son message dans le thread
+			// dans le cas des forums moderes a posteriori, ce qui n'est
+			// pas plus mal.
+			if (function_exists('generer_url_forum')) {
+				$retour = generer_url_forum($id_reponse);
+			}
+			else {
+				$thread = sql_fetsel('id_thread', 'spip_forum', 'id_forum='.$id_reponse);
+				spip_log('id_thread='.$thread['id_thread'], 'forum');
+				$retour = generer_url_entite($thread['id_thread'], 'forum');
+			}
+		}
+
+		$res = array('redirect'=>$retour,'id_forum'=>$id_forum);
+	}
 	else
 		$res = array('message_erreur'=>_T('forum:erreur_enregistrement_message'));
+
 	return $res;
 }
 

@@ -196,4 +196,60 @@ function enregistre_et_modifie_forum($id_forum, $c=false) {
 }
 
 
+/**
+ * Retourne pour un couple objet/id_objet donne
+ * de quelle maniere les forums sont acceptes dessus
+ * non: pas de forum
+ * pos: a posteriori, acceptes et eventuellements moderes ensuite
+ * pri: a priori, doivent etre valides par un admin
+ * abo: les personnes doivent au prealable etre identifiees
+ *
+ * http://doc.spip.org/@controler_forum
+ * 
+ * @param string $objet objet a tester
+ * @param int $id_objet identifiant de l'objet
+ * @param string $res chaine de 3 caractere parmi 'non','pos','pri','abo'
+ */
+function controler_forum($objet, $id_objet) {
+	// Valeur par defaut
+	$accepter_forum = $GLOBALS['meta']["forums_publics"];
+
+	// il y a un cas particulier pour l'acceptation de forum d'article...
+	if ($f = charger_fonction($objet . '_accepter_forums_publics', 'inc', true)){
+		$accepter_forum = $f($id_objet);
+	}
+
+	return substr($accepter_forum, 0, 3);
+}
+
+
+/**
+ * Verifier la presence du jeton de secu post previsu
+ * http://doc.spip.org/@forum_insert_noprevisu
+ * @return bool
+ */
+function forum_insert_noprevisu(){
+	// simuler une action venant de l'espace public
+	// pour se conformer au cas general.
+	set_request('action', 'ajout_forum');
+	// Creer une session s'il n'y en a pas (cas du postage sans cookie)
+	$securiser_action = charger_fonction('securiser_action', 'inc');
+	$arg = $securiser_action();
+
+	$file = _DIR_TMP ."forum_" . preg_replace('/[^0-9]/', '', $arg) .".lck";
+	if (!file_exists($file)) {
+		# ne pas tracer cette erreur, peut etre due a un double POST
+		# tracer_erreur_forum('session absente');
+		return true;
+	}
+	unlink($file);
+
+	// antispam : si le champ au nom aleatoire verif_$hash n'est pas 'ok'
+	// on meurt
+	if (_request('verif_'._request('hash')) != 'ok') {
+			tracer_erreur_forum('champ verif manquant');
+			return true;
+	}
+	return false;
+}
 ?>

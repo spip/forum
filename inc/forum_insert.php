@@ -17,49 +17,6 @@ include_spip('inc/actions');
 
 // Ce fichier est inclus par dist/formulaires/forum.php
 
-// http://doc.spip.org/@controler_forum_abo
-function controler_forum_abo($retour)
-{
-	global $visiteur_session;
-	if ($visiteur_session) {
-		$statut = $visiteur_session['statut'];
-		if (!$statut OR $statut == '5poubelle') {
-			ask_php_auth(_T('forum:forum_acces_refuse'),
-				     _T('forum:forum_cliquer_retour',
-						array('retour_forum' => $retour)));
-		}
-	} else {
-		ask_php_auth(_T('forum_non_inscrit'),
-			     _T('forum:forum_cliquer_retour',
-					array('retour_forum' => $retour)));
-		}
-}
-
-/**
- * Retourne pour un couple objet/id_objet donne
- * de quelle maniere les forums sont acceptes dessus
- * non: pas de forum
- * pos: a posteriori, acceptes et eventuellements moderes ensuite
- * pri: a priori, doivent etre valides par un admin
- * abo: les personnes doivent au prealable etre identifiees
- *
- * @param string $objet objet a tester
- * @param int $id_objet identifiant de l'objet
- * @param string $res chaine de 3 caractere parmi 'non','pos','pri','abo'
- */
-// http://doc.spip.org/@controler_forum
-function controler_forum($objet, $id_objet) {
-	// Valeur par defaut
-	$accepter_forum = $GLOBALS['meta']["forums_publics"];
-	
-	// il y a un cas particulier pour l'acceptation de forum d'article...
-	if ($f = charger_fonction($objet . '_accepter_forums_publics', 'inc', true)){
-		$accepter_forum = $f($id_objet);
-	}
-
-	return substr($accepter_forum, 0, 3);
-}
-
 // http://doc.spip.org/@mots_du_forum
 function mots_du_forum($ajouter_mot, $id_message)
 {
@@ -67,12 +24,6 @@ function mots_du_forum($ajouter_mot, $id_message)
 	mot_associer($ajouter_mot, array('forum'=>$id_message));
 }
 
-
-// http://doc.spip.org/@reduce_strlen
-function reduce_strlen($n, $c)
-{
-  return $n - (is_string($c) ? strlen($c) : 0);
-}
 
 
 // http://doc.spip.org/@tracer_erreur_forum
@@ -89,33 +40,21 @@ function tracer_erreur_forum($type='') {
 	}
 }
 
-// Un parametre permet de forcer le statut (exemple: plugin antispam)
-// http://doc.spip.org/@inc_forum_insert_dist
-function inc_forum_insert_dist($force_statut = NULL) {
-	# en reponse a
-	$id_forum = intval(_request('id_forum'))>0?intval(_request('id_forum')):0;
-
-	# objet
-	$id_objet = intval(_request('id_objet'));
-	$objet = _request('objet');
-
-	# temporaire vieux code
-	if (!$id_objet OR !$objet) {
-		foreach (array('article', 'breve', 'rubrique', 'syndic', 'message','ticket')
-		as $ob) {
-			if ($id = intval(_request('id_'.$ob))) {
-				$objet = $ob;
-				$id_objet = $id;
-			}
-		}
-	}
+/**
+ * Un parametre permet de forcer le statut (exemple: plugin antispam)
+ *
+ * http://doc.spip.org/@inc_forum_insert_dist
+ *
+ * @param $objet
+ * @param $id_objet
+ * @param $id_forum
+ *   en reponse a
+ * @param null $force_statut
+ * @return bool
+ */
+function inc_forum_insert_dist($objet, $id_objet, $id_forum, $force_statut = NULL) {
 
 	spip_log("insertion de forum sur $objet $id_objet (+$id_forum)", 'forum');
-
-	$reqret = rawurldecode(_request('retour_forum'));
-	$retour = ($reqret !== '!')
-		? $reqret
-		: forum_insert_nopost($id_forum, $objet, $id_objet);
 
 	$c = array('statut'=>'off');
 	$c['objet'] = $objet;
@@ -137,62 +76,27 @@ function inc_forum_insert_dist($force_statut = NULL) {
 				'id_objet' => $id_forum,
 				'action'=>'instituer'
 		),
-		'data'=>forum_insert_statut($c, $retour, $force_statut)
+		'data'=>forum_insert_statut($c, $force_statut)
 	));
 
-	$id_reponse = forum_insert_base($c, $id_forum, $objet, $id_objet, $c['statut'], $retour);
+	$id_reponse = forum_insert_base($c, $id_forum, $objet, $id_objet, $c['statut'], _request('ajouter_mot'));
 
-	if (!$id_reponse) {
-		spip_log("Echec insertion $retour", 'forum');
-		return array($retour,0); // echec
-	}
+	if (!$id_reponse)
+		spip_log("Echec insertion forum sur $objet $id_objet (+$id_forum)", 'forum');
 	else
-		spip_log("forum insere' $id_reponse", 'forum');
+		spip_log("forum insere' $id_reponse sur $objet $id_objet (+$id_forum)", 'forum');
 
-	// En cas de retour sur (par exemple) {#SELF}, on ajoute quand
-	// meme #forum12 a la fin de l'url, sauf si un #ancre est explicite
-	if ($reqret !== '!')
-		return array(
-			strpos($retour, '#') ? $retour : $retour.'#forum'.$id_reponse,
-			$id_reponse
-		);
+	return $id_reponse;
 
-	// le retour par defaut envoie sur le thread, ce qui permet
-	// de traiter elegamment le cas des forums moderes a priori.
-	// Cela assure aussi qu'on retrouve son message dans le thread
-	// dans le cas des forums moderes a posteriori, ce qui n'est
-	// pas plus mal.
-	if (function_exists('generer_url_forum')) {
-		$url = generer_url_forum($id_reponse);
-	} else {
-		$thread = sql_fetsel('id_thread', 'spip_forum', 'id_forum='.$id_reponse);
-spip_log('id_thread='.$thread['id_thread'], 'forum');
-		$url = generer_url_entite($thread['id_thread'], 'forum');
-	}
-
-	return array($url, $id_reponse);
 }
 
 // http://doc.spip.org/@forum_insert_base
-function forum_insert_base($c, $id_forum, $objet, $id_objet, $statut, $retour)
+function forum_insert_base($c, $id_forum, $objet, $id_objet, $statut, $ajouter_mot = false)
 {
-	$afficher_texte = (_request('afficher_texte') <> 'non');
-	$ajouter_mot = _request('ajouter_mot');
 
 	// si le statut est vide, c'est qu'on ne veut pas de ce presume spam !
 	if (!$statut)
 		return false;
-
-	//  Si forum avec previsu sans bon hash de securite, echec silencieux
-	if (!test_espace_prive() AND $afficher_texte AND forum_insert_noprevisu()) {
-		return false;
-	}
-
-	if (array_reduce($_POST, 'reduce_strlen', (20 * 1024)) < 0) {
-		ask_php_auth(_T('forum:forum_message_trop_long'),
-			_T('forum:forum_cliquer_retour',
-				array('retour_forum' => $retour)));
-	}
 
 	// Entrer le message dans la base
 	$id_reponse = sql_insertq('spip_forum', array(
@@ -243,68 +147,17 @@ function forum_insert_base($c, $id_forum, $objet, $id_objet, $statut, $retour)
 	return $id_reponse;
 }
 
-// calcul de l'adresse de retour en cas d'echec du POST
-// mais la veritable adresse de retour sera calculee apres insertion
-
-// http://doc.spip.org/@forum_insert_nopost
-function forum_insert_nopost($id_forum, $objet, $id_objet)
-{
-	if ($id_forum>0)
-		$r = generer_url_entite($id_forum, 'forum');
-	else
-		$r = generer_url_entite($id_objet, $objet);
-
-	return str_replace('&amp;','&',$r);
-}
-
-// http://doc.spip.org/@forum_insert_noprevisu
-function forum_insert_noprevisu()
-{
-	// simuler une action venant de l'espace public
-	// pour se conformer au cas general.
-	set_request('action', 'ajout_forum');
-	// Creer une session s'il n'y en a pas (cas du postage sans cookie)
-	$securiser_action = charger_fonction('securiser_action', 'inc');
-	$arg = $securiser_action();
-
-	$file = _DIR_TMP ."forum_" . preg_replace('/[^0-9]/', '', $arg) .".lck";
-	if (!file_exists($file)) {
-		# ne pas tracer cette erreur, peut etre due a un double POST
-		# tracer_erreur_forum('session absente');
-		return true;
-	}
-	unlink($file);
-
-	// antispam : si le champ au nom aleatoire verif_$hash n'est pas 'ok'
-	// on meurt
-	if (_request('verif_'._request('hash')) != 'ok') {
-			tracer_erreur_forum('champ verif manquant');
-			return true;
-	}
-	return false;
-}
 
 // http://doc.spip.org/@forum_insert_statut
-function forum_insert_statut($champs, $retour, $forcer_statut=NULL)
+function forum_insert_statut($champs, $forcer_statut=NULL)
 {
+	include_spip('inc/forum');
 	$statut = controler_forum($champs['objet'], $champs['id_objet']);
-
-	// Ne pas autoriser d'envoi hacke si forum sur abonnement
-	if ($statut == 'abo' AND !test_espace_prive()) {
-		controler_forum_abo($retour); // demandera une auth http
-	}
 
 	if ($forcer_statut !== NULL)
 		$champs['statut'] = $forcer_statut;
 	else
 		$champs['statut'] = ($statut == 'non') ? 'off' : (($statut == 'pri') ? 'prop' :	'publie');
-
-	// Antispam basique :
-	// si l'input invisible a ete renseigne, ca ne peut etre qu'un bot
-	if (strlen(_request(_request('cle_ajouter_document')))) {
-		tracer_erreur_forum('champ interdit (nobot) rempli');
-		$champs['statut']=false;
-	}
 
 	return $champs;
 }
