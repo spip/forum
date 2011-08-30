@@ -4,7 +4,7 @@ la premiere fois qu'un message est poste (cf. inc/invalideur). ]
 #SET{prive,#ENV{quoi,public}|=={interne}|?{'^(priv|perso)','.*'}}
 
 [(#REM) Nombre total de messages ]
-<BOUCLE_decompte(FORUMS) {id_forum?}{id_objet ?}{objet ?}{statut?}{statut==#GET{prive}}{recherche?}{plat} />[<h2>(#TOTAL_BOUCLE|singulier_ou_pluriel{forum:info_1_message_forum,forum:info_nb_message_forum})</h2>]<//B_decompte>
+<BOUCLE_decompte(FORUMS) {id_forum?}{id_objet ?}{objet ?}{statut?}{statut==#GET{prive}}{recherche?}{plat} />[<h2>(#TOTAL_BOUCLE|singulier_ou_pluriel{forum:info_1_message_forum,forum:info_nb_messages_forum})</h2>]<//B_decompte>
 
 [(#REM) Messages du forum ]
 <B_forums>

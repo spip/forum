@@ -197,6 +197,43 @@ function enregistre_et_modifie_forum($id_forum, $c=false) {
 
 
 /**
+ * Trouver le titre d'un objet publie
+ * @param string $objet
+ * @param int $id_objet
+ * @param int $id_forum
+ * @return bool|string
+ */
+function forum_recuperer_titre($objet, $id_objet, $id_forum=0, $publie = true) {
+	include_spip('inc/filtres');
+	$titre = "";
+
+	if ($f = charger_fonction($objet.'_forum_extraire_titre', 'inc', true)){
+		$titre = $f($id_objet);
+	}
+	else {
+		include_spip('base/objets');
+		if ($publie AND !objet_test_si_publie($objet, $id_objet))
+			return false;
+
+		$titre = generer_info_entite($id_objet, $objet,'titre','*');
+	}
+
+	if ($titre AND $id_forum){
+		$titre_m = sql_getfetsel('titre', 'spip_forum', "id_forum = " . intval($id_forum));
+		if (!$titre_m) {
+			return false; // URL fabriquee
+		}
+		$titre = $titre_m;
+	}
+
+	$titre = supprimer_numero($titre);
+	$titre = str_replace('~', ' ', extraire_multi($titre));
+
+	return $titre;
+}
+
+
+/**
  * Retourne pour un couple objet/id_objet donne
  * de quelle maniere les forums sont acceptes dessus
  * non: pas de forum
@@ -206,9 +243,12 @@ function enregistre_et_modifie_forum($id_forum, $c=false) {
  *
  * http://doc.spip.org/@controler_forum
  * 
- * @param string $objet objet a tester
- * @param int $id_objet identifiant de l'objet
- * @param string $res chaine de 3 caractere parmi 'non','pos','pri','abo'
+ * @param string $objet
+ *   objet a tester
+ * @param int $id_objet
+ *   identifiant de l'objet
+ * @return string
+ *   chaine de 3 caractere parmi 'non','pos','pri','abo'
  */
 function controler_forum($objet, $id_objet) {
 	// Valeur par defaut
@@ -251,5 +291,37 @@ function forum_insert_noprevisu(){
 			return true;
 	}
 	return false;
+}
+
+
+/**
+ * recuperer tous les objets dont on veut pouvoir obtenir l'identifiant
+ * directement dans l'environnement
+ *
+ * @return array
+ */
+function forum_get_objets_depuis_env() {
+	static $objets = null;
+	if ($objets === null) {
+		// on met une cle (le type d'objet) pour qu'un appel du pipeline
+		// puisse facilement soustraire un objet qu'il ne veut pas avec
+		// unset($objets['rubrique']) par exemple.
+		$objets = pipeline('forum_objets_depuis_env', array(
+			'article' => id_table_objet('article'),
+			'rubrique' => id_table_objet('rubrique'),
+			'site' => id_table_objet('site'),
+			'breve' => id_table_objet('breve')
+		));
+		asort($objets);
+	}
+
+	return $objets;
+}
+
+
+// http://doc.spip.org/@reduce_strlen
+function reduce_strlen($n, $c)
+{
+  return $n - (is_string($c) ? strlen($c) : 0);
 }
 ?>

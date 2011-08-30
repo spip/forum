@@ -10,7 +10,15 @@
  *  Pour plus de details voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
-function formulaires_forum_prive_charger_dist($id_rubrique, $id_forum, $id_article, $id_breve, $id_syndic, $id_message, $afficher_texte, $statut, $titre, $url_param_retour = NULL) {
+include_spip('inc/forum');
+
+function formulaires_forum_prive_charger_dist($objet, $id_objet, $id_forum, $afficher_previsu, $statut, $retour='') {
+
+	if (!$titre = forum_recuperer_titre($objet,$id_objet,$id_forum,false))
+		return false;
+
+	$primary = id_table_objet($objet);
+	$table = table_objet($objet);
 
 	// Tableau des valeurs servant au calcul d'une signature de securite.
 	// Elles seront placees en Input Hidden pour que inc/forum_insert
@@ -18,15 +26,11 @@ function formulaires_forum_prive_charger_dist($id_rubrique, $id_forum, $id_artic
 	// Donc ne pas changer la valeur de ce tableau entre le calcul de
 	// la signature et la fabrication des Hidden
 	// Faire attention aussi a 0 != ''
-
-	// id_rubrique est parfois passee pour les articles, on n'en veut pas
 	$ids = array();
-	if ($id_rubrique > 0 AND ($id_article OR $id_breve OR $id_syndic))
-		$id_rubrique = 0;
-	foreach (array('id_article', 'id_breve', 'id_forum', 'id_rubrique', 'id_syndic') as $o) {
-		$ids[$o] = ($x = intval($$o)) ? $x : '';
-	}
-
+	$ids[$primary] = ($x = intval($id_objet)) ? $x : '';
+	$ids['id_objet'] = ($x = intval($id_objet)) ? $x : '';
+	$ids['objet'] = $objet;
+	$ids['id_forum'] = ($x = intval($id_forum)) ? $x : '';
 
 	// ne pas mettre '', sinon le squelette n'affichera rien.
 	$previsu = ' ';
@@ -45,8 +49,7 @@ function formulaires_forum_prive_charger_dist($id_rubrique, $id_forum, $id_artic
 		'table' => $table,
 		'texte' => '',
 		'config' => $config,
-		'titre' => str_replace('~', ' ', extraire_multi($titre)),
-		'action' => $url_param_retour?$url_param_retour:self(), # ce sur quoi on fait le action='...'
+		'titre' => $titre,
 		'_hidden' => $script_hidden, # pour les variables hidden
 		'url_site' => "http://",
 		'id_forum' => $id_forum, // passer id_forum au formulaire pour lui permettre d'afficher a quoi l'internaute repond
@@ -56,7 +59,7 @@ function formulaires_forum_prive_charger_dist($id_rubrique, $id_forum, $id_artic
 }
 
 
-function formulaires_forum_prive_verifier_dist($id_rubrique, $id_forum, $id_article, $id_breve, $id_syndic, $id_message, $afficher_texte, $statut, $titre, $url_param_retour = NULL) {
+function formulaires_forum_prive_verifier_dist($objet, $id_objet, $id_forum, $afficher_previsu, $statut, $retour='') {
 	include_spip('inc/acces');
 	include_spip('inc/texte');
 	include_spip('inc/forum');
@@ -64,11 +67,6 @@ function formulaires_forum_prive_verifier_dist($id_rubrique, $id_forum, $id_arti
 	include_spip('base/abstract_sql');
 
 	$erreurs = array();
-
-	// desactiver id_rubrique si un id_article ou autre existe dans le contexte
-	if ($id_article OR $id_breve OR $id_forum OR $id_syndic)
-		$id_rubrique = 0;
-
 
 	if (strlen($texte = _request('texte')) < 10 AND $GLOBALS['meta']['forums_texte'] == 'oui')
 		$erreurs['texte'] = _T('forum:forum_attention_dix_caracteres');
@@ -85,9 +83,13 @@ function formulaires_forum_prive_verifier_dist($id_rubrique, $id_forum, $id_arti
 	AND $GLOBALS['meta']['forums_titre'] == 'oui')
 		$erreurs['titre'] = _T('forum:forum_attention_trois_caracteres');
 
+	if (array_reduce($_POST, 'reduce_strlen', (20 * 1024)) < 0) {
+		$erreurs['erreur_message'] = _T('forum:forum_message_trop_long');
+	}
+
 	if (!count($erreurs) AND !_request('confirmer_previsu_forum')){
-		if ($afficher_texte != 'non') {
-			$previsu = inclure_forum_prive_previsu($texte, $titre, _request('url_site'), _request('nom_site'), _request('ajouter_mot'), $doc);
+		if ($afficher_previsu != 'non') {
+			$previsu = inclure_forum_prive_previsu($texte, $titre, _request('url_site'), _request('nom_site'), _request('ajouter_mot'));
 			$erreurs['previsu'] = $previsu;
 		}
 	}
@@ -96,7 +98,7 @@ function formulaires_forum_prive_verifier_dist($id_rubrique, $id_forum, $id_arti
 }
 
 
-function inclure_forum_prive_previsu($texte,$titre, $url_site, $nom_site, $ajouter_mot, $doc){
+function inclure_forum_prive_previsu($texte,$titre, $url_site, $nom_site, $ajouter_mot, $doc=""){
 	$bouton = _T('forum:forum_message_definitif');
 	include_spip('public/assembler');
 	include_spip('public/composer');
@@ -122,13 +124,39 @@ function inclure_forum_prive_previsu($texte,$titre, $url_site, $nom_site, $ajout
 }
 
 
-function formulaires_forum_prive_traiter_dist($id_rubrique, $id_forum, $id_article, $id_breve, $id_syndic, $id_message, $afficher_texte, $statut, $titre, $url_param_retour = NULL) {
+function formulaires_forum_prive_traiter_dist($objet, $id_objet, $id_forum, $afficher_previsu, $statut, $retour='') {
 
 	$forum_insert = charger_fonction('forum_insert', 'inc');
-	set_request('retour_forum',$url_param_retour);
-	
-	list($redirect,$id_forum) = $forum_insert($statut);
-	return array('redirect'=>$redirect,'id_forum'=>$id_forum);
+	$id_reponse = $forum_insert($objet, $id_objet, $id_forum,$statut);
+	if ($id_reponse){
+		// En cas de retour sur (par exemple) {#SELF}, on ajoute quand
+		// meme #forum12 a la fin de l'url, sauf si un #ancre est explicite
+		if ($retour){
+			if (!strpos($retour, '#'))
+				$retour .= '#forum'.$id_reponse;
+		}
+		else {
+			// le retour par defaut envoie sur le thread, ce qui permet
+			// de traiter elegamment le cas des forums moderes a priori.
+			// Cela assure aussi qu'on retrouve son message dans le thread
+			// dans le cas des forums moderes a posteriori, ce qui n'est
+			// pas plus mal.
+			if (function_exists('generer_url_forum')) {
+				$retour = generer_url_forum($id_reponse);
+			}
+			else {
+				$thread = sql_fetsel('id_thread', 'spip_forum', 'id_forum='.$id_reponse);
+				spip_log('id_thread='.$thread['id_thread'], 'forum');
+				$retour = generer_url_entite($thread['id_thread'], 'forum');
+			}
+		}
+
+		$res = array('redirect'=>$retour,'id_forum'=>$id_forum);
+	}
+	else
+		$res = array('message_erreur'=>_T('forum:erreur_enregistrement_message'));
+
+	return $res;
 }
 
 

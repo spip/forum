@@ -10,6 +10,8 @@
  *  Pour plus de details voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
+include_spip('inc/forum');
+
 /**
  * Charger l'env du squelette de #FORMULAIRE_FORUM
  * @param string $objet
@@ -26,7 +28,7 @@
  * @return array|bool
  */
 function formulaires_forum_charger_dist($objet,$id_objet, $id_forum,
-$ajouter_mot, $ajouter_groupe, $afficher_previsu, $retour) {
+  $ajouter_mot, $ajouter_groupe, $afficher_previsu, $retour) {
 
 	if (!$titre = forum_recuperer_titre($objet,$id_objet,$id_forum))
 		return false;
@@ -67,9 +69,7 @@ $ajouter_mot, $ajouter_groupe, $afficher_previsu, $retour) {
 	// Donc ne pas changer la valeur de ce tableau entre le calcul de
 	// la signature et la fabrication des Hidden
 	// Faire attention aussi a 0 != ''
-
 	$ids = array();
-
 	$ids[$primary] = ($x = intval($id_objet)) ? $x : '';
 	$ids['id_objet'] = ($x = intval($id_objet)) ? $x : '';
 	$ids['objet'] = $objet;
@@ -123,42 +123,6 @@ $ajouter_mot, $ajouter_groupe, $afficher_previsu, $retour) {
 		'_sign'=>implode('_',$ids),
 		'_autosave_id' => $ids,
 	));
-}
-
-/**
- * Trouver le titre d'un objet publie
- * @param string $objet
- * @param int $id_objet
- * @param int $id_forum
- * @return bool|string
- */
-function forum_recuperer_titre($objet, $id_objet, $id_forum=0) {
-	include_spip('inc/filtres');
-	$titre = "";
-
-	if ($f = charger_fonction($objet.'_forum_extraire_titre', 'inc', true)){
-		$titre = $f($id_objet);
-	}
-	else {
-		include_spip('base/objets');
-		if (!objet_test_si_publie($objet, $id_objet))
-			return false;
-
-		$titre = generer_info_entite($id_objet, $objet,'titre','*');
-	}
-
-	if ($titre AND $id_forum){
-		$titre_m = sql_getfetsel('titre', 'spip_forum', "id_forum = " . intval($id_forum));
-		if (!$titre_m) {
-			return false; // URL fabriquee
-		}
-		$titre = $titre_m;
-	}
-
-	$titre = supprimer_numero($titre);
-	$titre = str_replace('~', ' ', extraire_multi($titre));
-
-	return $titre;
 }
 
 
@@ -301,7 +265,6 @@ function formulaires_forum_verifier_dist($objet,$id_objet, $id_forum,
 		// Ne pas autoriser d'envoi hacke si forum sur abonnement
 		if (controler_forum($objet, $id_objet)=='abo'
 		  AND !test_espace_prive()) {
-			controler_forum_abo($retour); // demandera une auth http
 			if (!isset($GLOBALS['visiteur_session'])
 			  OR !isset($GLOBALS['visiteur_session']['statut'])) {
 				$erreurs['erreur_message'] = _T('forum_non_inscrit');
@@ -338,12 +301,6 @@ function formulaires_forum_verifier_dist($objet,$id_objet, $id_forum,
 	return $erreurs;
 }
 
-
-// http://doc.spip.org/@reduce_strlen
-function reduce_strlen($n, $c)
-{
-  return $n - (is_string($c) ? strlen($c) : 0);
-}
 
 /**
  * Lister les formats de documents joints acceptes dans les forum

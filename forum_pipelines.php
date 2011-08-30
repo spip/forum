@@ -178,7 +178,7 @@ function forum_boite_infos($flux){
 		else
 			$n_forums = 0;
 		if ($n_forums){
-			$aff = "<p class='forums'>".singulier_ou_pluriel($n_forums, "forum:info_1_message_forum", "forum:info_nb_message_forum").'</p>';
+			$aff = "<p class='forums'>".singulier_ou_pluriel($n_forums, "forum:info_1_message_forum", "forum:info_nb_messages_forum").'</p>';
 			if (($pos = strpos($flux['data'],'<!--nb_elements-->'))!==FALSE)
 				$flux['data'] = substr($flux['data'],0,$pos) . $aff . substr($flux['data'],$pos);
 			else

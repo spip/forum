@@ -20,55 +20,90 @@ include_spip('inc/forum');
 /* GESTION DU FORMULAIRE FORUM */
 /*******************************/
 
-// Contexte du formulaire
+/**
+ * Contexte du formulaire
+ * Mots-cles dans les forums :
+ * Si la variable de personnalisation $afficher_groupe[] est definie
+ * dans le fichier d'appel, et si la table de reference est OK, proposer
+ * la liste des mots-cles
+ * #FORMULAIRE_FORUM_PRIVE seul calcule (objet, id_objet) depuis la boucle parente
+ * #FORMULAIRE_FORUM_PRIVE{#SELF} pour forcer l'url de retour
+ * #FORMULAIRE_FORUM_PRIVE{#SELF, article, 3} pour forcer l'objet et son identifiant
+ * http://doc.spip.org/@balise_FORMULAIRE_FORUM_PRIVE
+ *
+ * @param Object $p
+ * @return Object
+ */
 function balise_FORMULAIRE_FORUM_PRIVE ($p) {
 
-	$p = calculer_balise_dynamique($p,'FORMULAIRE_FORUM_PRIVE', array('id_rubrique', 'id_forum', 'id_article', 'id_breve', 'id_syndic', 'id_message', 'afficher_texte', 'statut'));
+	/**
+	 * On recupere $objet et $id_objet depuis une boucle englobante si possible
+	 * Sinon, on essaie aussi de recuperer des id_xx dans l'URL qui pourraient indiquer
+	 * sur quoi le formulaire porte.
+	 * Enfin, on pourra aussi forcer objet et id_objet depuis l'appel du formulaire
+	 */
+	$i_boucle  = $p->nom_boucle ? $p->nom_boucle : $p->id_boucle;
+	$_id_objet = $p->boucles[$i_boucle]->primary;
+	$_type     = $p->boucles[$i_boucle]->id_table;
+
+	/**
+	 * On essaye de trouver les forums en fonction de l'environnement
+	 * pour cela, on recupere l'ensemble des id_xxx possibles dans l'env
+	 */
+	$ids = forum_get_objets_depuis_env();
+	$ids = array_values($ids);
+
+	$obtenir = array(
+		$_id_objet,
+		'id_forum',
+		'afficher_texte',
+		'statut',
+	);
+
+	if ($ids) {
+		$obtenir = array_merge($obtenir, $ids);
+	}
+
+	$p = calculer_balise_dynamique($p,'FORMULAIRE_FORUM_PRIVE', $obtenir,
+		array("'$_type'", count($ids))
+	);
+
 	return $p;
 }
 
-//
-// Chercher le titre et la configuration d'un forum 
-
-// http://doc.spip.org/@balise_FORMULAIRE_FORUM_PRIVE_stat
+/**
+ * Chercher l'objet/id_objet et la configuration du forum
+ *
+ * http://doc.spip.org/@balise_FORMULAIRE_FORUM_PRIVE_stat
+ *
+ * @param array $args
+ * @param array $context_compil
+ * @return array|bool
+ */
 function balise_FORMULAIRE_FORUM_PRIVE_stat($args, $context_compil) {
 
-	// le denier arg peut contenir l'url sur lequel faire le retour
-	// exemple dans un squelette article.html : [(#FORMULAIRE_FORUM{#SELF})]
 
+	// un arg peut contenir l'url sur lequel faire le retour
+	// exemple dans un squelette article.html : [(#FORMULAIRE_FORUM_PRIVE{#SELF})]
 	// recuperer les donnees du forum auquel on repond.
-	list ($idr, $idf, $ida, $idb, $ids, $idm, $af, $st, $url) = $args;
-	$idr = intval($idr);
-	$idf = intval($idf);
-	$ida = intval($ida);
-	$idb = intval($idb);
-	$ids = intval($ids);
-	$idm = intval($idm);
+	// deux autres a la suite pour forcer objet et id_objet
+	// [(#FORMULAIRE_FORUM_PRIVE{#SELF, article, 8})]
+	//
+	// $args = (obtenir) + (ids) + (url, objet, id_objet)
+	$ido = array_shift($args);
+	$id_forum = intval(array_shift($args));
+	$afficher_texte = array_shift($args);
+	$statut = array_shift($args);
 
-	if ($ida) {
-		$titre = sql_fetsel('titre', 'spip_articles', "id_article = $ida");
-	} else {
-		if ($idb) {
-			$titre = sql_fetsel('titre', 'spip_breves', "id_breve = $idb");
-		} else if ($ids) {
-			$titre = sql_fetsel('nom_site AS titre', 'spip_syndic', "id_syndic = $ids");
-		} else if ($idr) {
-			$titre = sql_fetsel('titre', 'spip_rubriques', "id_rubrique = $idr");
-		} else if ($idm) {
-			$titre = sql_fetsel('titre', 'spip_messages', "id_message = $idm");
-		}
-	}
+	include_spip('balise/formulaire_forum');
+	$r = balise_forum_retrouve_objet($ido,$id_forum,$args,$context_compil);
+	if (!$r)
+		return false;
 
-	if ($idf>0) {
-		$titre_m = sql_fetsel('titre', 'spip_forum', "id_forum = $idf");
-		if (!$titre_m) return false; // URL fabriquee
-		$titre = $titre_m;
-	}
-
-	$titre = supprimer_numero($titre['titre']);
+	list($objet, $id_objet, $retour) = $r;
 
 	return
-		array($idr, $idf, $ida, $idb, $ids, $idm, $af, $st, $titre, $url);
+		array($objet, $id_objet, $id_forum, $afficher_texte, $statut, $retour);
 }
 
 ?>

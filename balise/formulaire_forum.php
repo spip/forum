@@ -20,17 +20,20 @@ include_spip('inc/forum');
 /* GESTION DU FORMULAIRE FORUM */
 /*******************************/
 
-// Contexte du formulaire
-// Mots-cles dans les forums :
-// Si la variable de personnalisation $afficher_groupe[] est definie
-// dans le fichier d'appel, et si la table de reference est OK, proposer
-// la liste des mots-cles
-
-// #FORMULAIRE_FORUM seul calcule (objet, id_objet) depuis la boucle parente
-// #FORMULAIRE_FORUM{#SELF} pour forcer l'url de retour
-// #FORMULAIRE_FORUM{#SELF, article, 3} pour forcer l'objet et son identifiant
-
-// http://doc.spip.org/@balise_FORMULAIRE_FORUM
+/**
+ * Contexte du formulaire
+ * Mots-cles dans les forums :
+ * Si la variable de personnalisation $afficher_groupe[] est definie
+ * dans le fichier d'appel, et si la table de reference est OK, proposer
+ * la liste des mots-cles
+ * #FORMULAIRE_FORUM seul calcule (objet, id_objet) depuis la boucle parente
+ * #FORMULAIRE_FORUM{#SELF} pour forcer l'url de retour
+ * #FORMULAIRE_FORUM{#SELF, article, 3} pour forcer l'objet et son identifiant
+ * http://doc.spip.org/@balise_FORMULAIRE_FORUM
+ *
+ * @param Object $p
+ * @return Object
+ */
 function balise_FORMULAIRE_FORUM ($p) {
 	/**
 	 * On recupere $objet et $id_objet depuis une boucle englobante si possible
@@ -75,12 +78,15 @@ function balise_FORMULAIRE_FORUM ($p) {
 	return $p;
 }
 
-//
-// Chercher le titre et la configuration d'un forum
-// valeurs possibles : 'pos'teriori, 'pri'ori, 'abo'nnement
-// Donner aussi la table de reference pour afficher_groupes[]
-
-// http://doc.spip.org/@balise_FORMULAIRE_FORUM_stat
+/**
+ * Chercher l'objet/id_objet et la configuration du forum
+ *
+ * http://doc.spip.org/@balise_FORMULAIRE_FORUM_stat
+ *
+ * @param array $args
+ * @param array $context_compil
+ * @return array|bool
+ */
 function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 	
 
@@ -91,23 +97,44 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 	// [(#FORMULAIRE_FORUM{#SELF, article, 8})]
 	//
 	// $args = (obtenir) + (ids) + (url, objet, id_objet)
-	$nb_args_debut = 5;
+	$ido = array_shift($args);
+	$id_forum = intval(array_shift($args));
+	$ajouter_mot = array_shift($args);
+	$ajouter_groupe = array_shift($args);
+	$afficher_texte = array_shift($args);
 
-	list ($ido, $idf, $am, $ag, $af) = $args;
-		$idf        = intval($idf);
-		$_objet     = $context_compil[5]; // type le la boucle deja calcule
-		$nb_ids_env = $context_compil[6]; // nombre d'elements id_xx recuperes
-		$nb         = $nb_args_debut + $nb_ids_env;
-		$url        = isset($args[$nb]) ? $args[$nb] : '';
-		$objet      = isset($args[++$nb]) ? $args[$nb] : '';
-		$id_objet   = isset($args[++$nb]) ? $args[$nb] : 0;
-		
+	$r = balise_forum_retrouve_objet($ido,$id_forum,$args,$context_compil);
+	if (!$r)
+		return false;
+
+	list($objet, $id_objet, $retour) = $r;
+
+	return
+		array($objet,
+		$id_objet, $id_forum, $ajouter_mot, $ajouter_groupe, $afficher_texte, $retour);
+}
+
+/**
+ * @param int $ido
+ * @param int $id_forum
+ * @param array $args
+ * @param array $context_compil
+ * @return array|bool
+ */
+function balise_forum_retrouve_objet($ido,$id_forum,$args,$context_compil){
+	$_objet     = $context_compil[5]; // type le la boucle deja calcule
+	$nb_ids_env = $context_compil[6]; // nombre d'elements id_xx recuperes
+	$nb         = $nb_ids_env;
+	$url        = isset($args[$nb]) ? $args[$nb] : '';
+	$objet      = isset($args[++$nb]) ? $args[$nb] : '';
+	$id_objet   = isset($args[++$nb]) ? $args[$nb] : 0;
+
 	// pas d'objet force ? on prend le type de boucle calcule
 	if (!$objet) {
-		$objet = $_objet;	
-		$id_objet = intval($ido); 
+		$objet = $_objet;
+		$id_objet = intval($ido);
 	} else {
-		$id_objet = intval($id_objet); 
+		$id_objet = intval($id_objet);
 	}
 	unset($_objet, $ido);
 
@@ -118,7 +145,7 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 		$objets = forum_get_objets_depuis_env();
 		$ids = array(); $i = 0;
 		foreach ($objets as $o => $ido) {
-			if ($id = $args[$nb_args_debut + $i]) {
+			if ($id = $args[$i]) {
 				$ids[$o] = $id;
 			}
 			$i++;
@@ -133,11 +160,11 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 			$id_objet = array_shift($ids);
 		}
 	}
-	unset ($i, $nb_args_debut);
+	unset($i);
 
 	// et si on n'a toujours pas ce qu'on souhaite, on tente de le trouver dans un forum existant...
-	if (($objet=='forum' OR !$id_objet) and $idf){
-		if ($objet = sql_fetsel(array('id_objet', 'objet'), 'spip_forum', 'id_forum=' . intval($idf))) {
+	if (($objet=='forum' OR !$id_objet) and $id_forum){
+		if ($objet = sql_fetsel(array('id_objet', 'objet'), 'spip_forum', 'id_forum=' . intval($id_forum))) {
 			$id_objet = $objet['id_objet'];
 			$objet = $objet['objet'];
 		} else {
@@ -149,29 +176,6 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 		return false;
 	}
 
-	return
-		array($objet,
-		$id_objet, $idf, $am, $ag, $af, $url);
+	return array($objet,$id_objet,$url);
 }
-
-// recuperer tous les objets dont on veut pouvoir obtenir l'identifiant
-// directement dans l'environnement
-function forum_get_objets_depuis_env() {
-	static $objets = null;
-	if ($objets === null) {
-		// on met une cle (le type d'objet) pour qu'un appel du pipeline
-		// puisse facilement soustraire un objet qu'il ne veut pas avec
-		// unset($objets['rubrique']) par exemple.
-		$objets = pipeline('forum_objets_depuis_env', array(
-			'article' => id_table_objet('article'),
-			'rubrique' => id_table_objet('rubrique'),
-			'site' => id_table_objet('site'),
-			'breve' => id_table_objet('breve')
-		));
-		asort($objets);
-	}
-
-	return $objets;
-}
-
 ?>
