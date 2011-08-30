@@ -10,8 +10,23 @@
  *  Pour plus de details voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
+/**
+ * Charger l'env du squelette de #FORMULAIRE_FORUM
+ * @param string $objet
+ * @param int $id_objet
+ * @param int $id_forum
+ * @param int|array $ajouter_mot
+ *   mots ajoutés cochés par defaut
+ * @param $ajouter_groupe
+ *   groupes ajoutables
+ * @param $afficher_previsu
+ *   previsu oui ou non
+ * @param $retour
+ *   url de retour
+ * @return array|bool
+ */
 function formulaires_forum_charger_dist($objet,$id_objet, $id_forum,
-$ajouter_mot, $ajouter_groupe, $afficher_texte, $retour) {
+$ajouter_mot, $ajouter_groupe, $afficher_previsu, $retour) {
 
 	if (!$titre = forum_recuperer_titre($objet,$id_objet,$id_forum))
 		return false;
@@ -95,7 +110,7 @@ $ajouter_mot, $ajouter_groupe, $afficher_texte, $retour) {
 	$script_hidden .= "<input type='hidden' name='arg' value='$arg' />";
 	$script_hidden .= "<input type='hidden' name='hash' value='$hash' />";
 	$script_hidden .= "<input type='hidden' name='verif_$hash' value='ok' />";
-	$script_hidden .= "<input type='hidden' name='afficher_texte' value='$afficher_texte' />";
+	$script_hidden .= "<input type='hidden' name='afficher_texte' value='$afficher_previsu' />";
 	$script_hidden .= "<input type='hidden' name='retour_forum' value='$retour_forum' />";
 
 	if ($formats = forum_documents_acceptes()) {
@@ -128,7 +143,13 @@ $ajouter_mot, $ajouter_groupe, $afficher_texte, $retour) {
 	));
 }
 
-
+/**
+ * Trouver le titre d'un objet publie
+ * @param string $objet
+ * @param int $id_objet
+ * @param int $id_forum
+ * @return bool|string
+ */
 function forum_recuperer_titre($objet, $id_objet, $id_forum=0) {
 	include_spip('inc/filtres');
 	$titre = "";
@@ -158,16 +179,21 @@ function forum_recuperer_titre($objet, $id_objet, $id_forum=0) {
 }
 
 
-// Une securite qui nous protege contre :
-// - les doubles validations de forums (derapages humains ou des brouteurs)
-// - les abus visant a mettre des forums malgre nous sur un article (??)
-// On installe un fichier temporaire dans _DIR_TMP (et pas _DIR_CACHE
-// afin de ne pas bugguer quand on vide le cache)
-// Le lock est leve au moment de l'insertion en base (inc-messforum)
-// Ce systeme n'est pas fonctionnel pour les forums sans previsu (notamment
-// si $afficher_texte = 'non')
-
-// http://doc.spip.org/@forum_fichier_tmp
+/**
+ * Une securite qui nous protege contre :
+ * - les doubles validations de forums (derapages humains ou des brouteurs)
+ * - les abus visant a mettre des forums malgre nous sur un article (??)
+ * On installe un fichier temporaire dans _DIR_TMP (et pas _DIR_CACHE
+ * afin de ne pas bugguer quand on vide le cache)
+ * Le lock est leve au moment de l'insertion en base (inc-messforum)
+ * Ce systeme n'est pas fonctionnel pour les forums sans previsu (notamment
+ * si $afficher_previsu = 'non')
+ *
+ * http://doc.spip.org/@forum_fichier_tmp
+ *
+ * @param $arg
+ * @return int
+ */
 function forum_fichier_tmp($arg)
 {
 # astuce : mt_rand pour autoriser les hits simultanes
@@ -186,8 +212,23 @@ function forum_fichier_tmp($arg)
 	return $alea;
 }
 
+/**
+ * Verifier la saisie de #FORMULAIRE_FORUM
+ * @param string $objet
+ * @param int $id_objet
+ * @param int $id_forum
+ * @param int|array $ajouter_mot
+ *   mots ajoutés cochés par defaut
+ * @param $ajouter_groupe
+ *   groupes ajoutables
+ * @param $afficher_previsu
+ *   previsu oui ou non
+ * @param $retour
+ *   url de retour
+ * @return array|bool
+ */
 function formulaires_forum_verifier_dist($objet,$id_objet, $id_forum,
-	$ajouter_mot, $ajouter_groupe, $afficher_texte, $retour)
+	$ajouter_mot, $ajouter_groupe, $afficher_previsu, $retour)
 {
 	include_spip('inc/acces');
 	include_spip('inc/texte');
@@ -275,7 +316,7 @@ function formulaires_forum_verifier_dist($objet,$id_objet, $id_forum,
 		$erreurs['titre'] = _T('forum:forum_attention_trois_caracteres');
 
 	if (!count($erreurs) AND !_request('confirmer_previsu_forum')){
-		if ($afficher_texte != 'non') {
+		if ($afficher_previsu != 'non') {
 			$previsu = inclure_previsu($texte, $titre, _request('url_site'), _request('nom_site'), _request('ajouter_mot'), $doc,
 				$objet, $id_objet, $id_forum);
 			$erreurs['previsu'] = $previsu;
@@ -285,6 +326,10 @@ function formulaires_forum_verifier_dist($objet,$id_objet, $id_forum,
 	return $erreurs;
 }
 
+/**
+ * Lister les formats de documents joints acceptes dans les forum
+ * @return array
+ */
 function forum_documents_acceptes()
 {
 	$formats = trim($GLOBALS['meta']['formats_documents_forum']);
@@ -299,7 +344,23 @@ function forum_documents_acceptes()
 	return $formats;
 }
 
-// http://doc.spip.org/@inclure_previsu
+
+/**
+ * Preparer la previsu d'un message de forum
+ *
+ * http://doc.spip.org/@inclure_previsu
+ *
+ * @param string $texte
+ * @param string $titre
+ * @param string $url_site
+ * @param string $nom_site
+ * @param array $ajouter_mot
+ * @param array $doc
+ * @param string $objet
+ * @param int $id_objet
+ * @param int $id_forum
+ * @return string
+ */
 function inclure_previsu($texte,$titre, $url_site, $nom_site, $ajouter_mot, $doc,
 $objet, $id_objet, $id_forum) {
 	global $table_des_traitements;
@@ -343,8 +404,25 @@ $objet, $id_objet, $id_forum) {
 }
 
 
+/**
+ * Traiter la saisie de #FORMULAIRE_FORUM
+ * tout est delegue a inc_forum_insert()
+ *
+ * @param string $objet
+ * @param int $id_objet
+ * @param int $id_forum
+ * @param int|array $ajouter_mot
+ *   mots ajoutés cochés par defaut
+ * @param $ajouter_groupe
+ *   groupes ajoutables
+ * @param $afficher_previsu
+ *   previsu oui ou non
+ * @param $retour
+ *   url de retour
+ * @return array|bool
+ */
 function formulaires_forum_traiter_dist($objet,$id_objet, $id_forum,
-	$ajouter_mot, $ajouter_groupe, $afficher_texte, $retour) {
+	$ajouter_mot, $ajouter_groupe, $afficher_previsu, $retour) {
 
 	$forum_insert = charger_fonction('forum_insert', 'inc');
 
