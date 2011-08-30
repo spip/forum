@@ -191,7 +191,6 @@ function calcul_parametres_forum(&$env, $reponse, $type, $primary) {
 }
 
 # retourne le champ 'accepter_forum' d'un article
-if(!function_exists('quete_accepter_forum')) {
 function quete_accepter_forum($id_article) {
 	// si la fonction est appelee en dehors d'une boucle
 	// article (forum de breves), $id_article est nul
@@ -205,7 +204,6 @@ function quete_accepter_forum($id_article) {
 
 	return $cache[$id_article] = sql_getfetsel('accepter_forum','spip_articles',"id_article=$id_article");
 }
-}
 
 // Ajouter "&lang=..." si la langue du forum n'est pas celle du site.
 // Si le 2e parametre n'est pas une chaine, c'est qu'on n'a pas pu
@@ -215,7 +213,6 @@ function quete_accepter_forum($id_article) {
 // et c'est signale par un message d'erreur abscons: "table inconnue forum".
 //
 // http://doc.spip.org/@lang_parametres_forum
-if(!function_exists('lang_parametres_forum')) {
 function lang_parametres_forum($qs, $lang) {
 	if (is_array($lang) AND preg_match(',id_([a-z_]+)=([0-9]+),', $qs, $r)) {
 		$id = 'id_' . $r[1];
@@ -228,7 +225,6 @@ function lang_parametres_forum($qs, $lang) {
 		return $qs . "&lang=" . $lang;
 
 	return $qs;
-}
 }
 
 // Pour que le compilo ajoute un invalideur a la balise #PARAMETRES_FORUM
