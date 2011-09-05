@@ -65,7 +65,7 @@
 		<label for='texte'><:forum:forum_texte|typo:></label>
 		[<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{texte})</span>]
 		<p class='explication'><:info_creation_paragraphe:></p>
-		<textarea name="texte" id="texte" rows="12" cols="60"[(#CONFIG{forums_afficher_barre}|=={non}|oui) class="no_barre"]>[(#ENV{texte})]</textarea>
+		<textarea name="texte" id="texte" rows="10" cols="60"[(#CONFIG{forums_afficher_barre}|=={non}|oui) class="no_barre"]>[(#ENV{texte})]</textarea>
 	</li>
 })]
 	</ul></fieldset>
