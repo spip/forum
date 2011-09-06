@@ -1,7 +1,7 @@
 <div class="formulaire_spip formulaire_forum ajax" id="formulaire_forum">
 
-[<p class="reponse_formulaire reponse_formulaire_ok">(#ENV*{message_ok})</p>]
-[<p class="reponse_formulaire reponse_formulaire_erreur">(#ENV*{message_erreur})</p>]
+[<p class="reponse_formulaire reponse_formulaire_ok success">(#ENV*{message_ok})</p>]
+[<p class="reponse_formulaire reponse_formulaire_erreur error">(#ENV*{message_erreur})</p>]
 
 [(#ENV{login_forum_abo})
 <INCLURE{fond=formulaires/inc-login_forum_abo, env} />
@@ -36,7 +36,7 @@
 [<input type="hidden" name="id_forum" value="(#ENV*{id_forum})" />]
 [<fieldset class="moderation_info">
 	<legend><:forum:bouton_radio_modere_priori:></legend>
-	<p class="explication">(#ENV{modere})<:forum:forum_info_modere:></p>
+	<p class="explication info">(#ENV{modere})<:forum:forum_info_modere:></p>
 </fieldset>]
 
 [(#ENV**{afficher_texte}|choixsiegal{'non', ' ',''})
@@ -44,6 +44,8 @@
 <p class="spip_bouton"><input type="submit" class="submit" value="<:forum:forum_valider:>" /></p>]
 
 [(#ENV**{afficher_texte}|choixsiegal{'non', '',' '})
+
+	<INCLURE{fond=formulaires/inc-login_forum, env} />
 
 	<fieldset>
 	<legend><:forum:form_pet_message_commentaire:></legend>[
@@ -64,25 +66,11 @@
 	<li class='editer saisie_texte[ (#ENV**{erreurs}|table_valeur{texte}|oui)erreur]'>
 		<label for='texte'><:forum:forum_texte|typo:></label>
 		[<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{texte})</span>]
-		<p class='explication'><:info_creation_paragraphe:></p>
 		<textarea name="texte" id="texte" rows="10" cols="60"[(#CONFIG{forums_afficher_barre}|=={non}|oui) class="no_barre"]>[(#ENV{texte})]</textarea>
+        [(#ENV**{config}|table_valeur{afficher_barre}|?{<p class='explication'><:info_creation_paragraphe:></p>,<p class="explication forum_saisie_texte_info"><:forum:forum_saisie_texte_info:></p>})]
 	</li>
 })]
 	</ul></fieldset>
-
-[(#CONFIG{forums_urlref}|!={non}|?{
-	<fieldset>
-	<legend><:forum:forum_lien_hyper:></legend>
-	<p class='explication'><:forum:forum_page_url:></p>
-	<ul>
-	<li class='editer saisie_nom_site[ (#ENV**{erreurs}|table_valeur{nom_site}|oui)erreur]'><label for="nom_site"><:forum:forum_titre:></label>
-	[<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{nom_site})</span>]
-	<input type="text" class="text" name="nom_site" id="nom_site" size="40" value="[(#ENV{nom_site})]" /></li>
-	<li class='editer saisie_url_site[ (#ENV**{erreurs}|table_valeur{url_site}|oui)erreur]'><label for="url_site"><:forum:forum_url:></label>
-	[<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{url_site})</span>]
-	<input type="text" class="text" name="url_site" id="url_site" style="text-align: left;" dir="ltr" size="40" value="[(#ENV{url_site})]" /></li>
-	</ul></fieldset>
-})]
 
 [
 	<fieldset>
@@ -115,8 +103,6 @@
 	</li>
 	</ul></fieldset>
 ]
-
-	<INCLURE{fond=formulaires/inc-login_forum, env} />
 
 	[(#REM) Piege a robots spammeurs, dont on change le nom a chaque fois,
 	][<p style="display: none;">

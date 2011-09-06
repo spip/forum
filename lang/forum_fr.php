@@ -48,20 +48,22 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_message_trop_long' => 'Votre message est trop long. La taille maximale est de 20000 caractères.',
 	'forum_ne_repondez_pas' => 'Ne répondez pas à ce mail mais sur le forum à l\'adresse suivante :',
 	'forum_page_url' => '(Si votre message se réfère à un article publié sur le Web, ou à une page fournissant plus d\'informations, vous pouvez indiquer ci-après le titre de la page et son adresse.)',
+	'forum_permalink' => 'Lien permanent vers le commentaire',
 	'forum_poste_par' => 'Message posté@parauteur@ à la suite de l\'article « @titre@ ».',
 	'forum_qui_etes_vous' => '<b>Qui êtes-vous ?</b> (optionnel)',
 	'forum_texte' => 'Texte de votre message :',
 	'forum_titre' => 'Titre :',
-	'forum_url' => 'URL :',
+	'forum_url' => 'Votre site web :',
 	'forum_valider' => 'Valider ce choix',
-	'forum_voir_avant' => 'Voir ce message avant de le poster',
+	'forum_voir_avant' => 'Prévisualiser',
 	'forum_votre_email' => 'Votre adresse email :',
-	'forum_votre_nom' => 'Votre nom (ou pseudonyme) :',
+	'forum_votre_nom' => 'Votre nom :',
 	'forum_vous_enregistrer' => 'Pour participer à
 		ce forum, vous devez vous enregistrer au préalable. Merci
 		d\'indiquer ci-dessous l\'identifiant personnel qui vous a
 		été fourni. Si vous n\'êtes pas enregistré, vous devez',
 	'forum_vous_inscrire' => 'vous inscrire.',
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.',
 
 	// I
 	'icone_bruler_message' => 'Signaler comme Spam',
