@@ -35,7 +35,6 @@ function formulaires_forum_charger_dist($objet,$id_objet, $id_forum,
 
 	// ca s'apparenterait presque a une autorisation...
 	// si on n'avait pas a envoyer la valeur $accepter_forum au formulaire
-	include_spip('inc/forum');
 	$accepter_forum = controler_forum($objet, $id_objet);
 	if ($accepter_forum == 'non') {
 		return false;
@@ -179,7 +178,6 @@ function formulaires_forum_verifier_dist($objet,$id_objet, $id_forum,
 {
 	include_spip('inc/acces');
 	include_spip('inc/texte');
-	include_spip('inc/forum');
 	include_spip('inc/session');
 	include_spip('base/abstract_sql');
 
@@ -290,7 +288,6 @@ function formulaires_forum_verifier_dist($objet,$id_objet, $id_forum,
 
 	//  Si forum avec previsu sans bon hash de securite, echec
 	if (!count($erreurs)){
-		include_spip('inc/forum');
 		if (!test_espace_prive()
 		  AND $afficher_previsu<>'non'
 		  AND forum_insert_noprevisu()) {
