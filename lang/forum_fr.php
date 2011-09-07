@@ -32,7 +32,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique',
 
 	// F
-	'form_pet_message_commentaire' => 'Un message, un commentaire ?',
+	'form_message_commentaire' => 'Un message, un commentaire ?',
 	'forum' => 'Forum',
 	'forum_acces_refuse' => 'Vous n\'avez plus accès à ces forums.',
 	'forum_attention_dix_caracteres' => '<b>Attention !</b> votre message doit contenir au moins dix caractères.',
@@ -43,21 +43,22 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Cliquez <a href=\'@retour_forum@\'>ici</a> pour continuer.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Ce forum est modéré à priori : votre contribution n\'apparaîtra qu\'après avoir été validée par un administrateur du site.',
-	'forum_lien_hyper' => '<b>Lien hypertexte</b> (optionnel)',
+	'forum_lien_hyper' => 'Lien hypertexte',
 	'forum_message_definitif' => 'Message définitif : envoyer au site',
 	'forum_message_trop_long' => 'Votre message est trop long. La taille maximale est de 20000 caractères.',
 	'forum_ne_repondez_pas' => 'Ne répondez pas à ce mail mais sur le forum à l\'adresse suivante :',
 	'forum_page_url' => '(Si votre message se réfère à un article publié sur le Web, ou à une page fournissant plus d\'informations, vous pouvez indiquer ci-après le titre de la page et son adresse.)',
 	'forum_permalink' => 'Lien permanent vers le commentaire',
 	'forum_poste_par' => 'Message posté@parauteur@ à la suite de l\'article « @titre@ ».',
-	'forum_qui_etes_vous' => '<b>Qui êtes-vous ?</b> (optionnel)',
-	'forum_texte' => 'Texte de votre message :',
-	'forum_titre' => 'Titre :',
-	'forum_url' => 'Votre site web :',
+	'forum_qui_etes_vous' => 'Qui êtes-vous&nbsp;?',
+	'forum_message' => 'Votre message',
+	'forum_texte' => 'Texte de votre message',
+	'forum_titre' => 'Titre',
+	'forum_url' => 'Votre site web',
 	'forum_valider' => 'Valider ce choix',
 	'forum_voir_avant' => 'Prévisualiser',
-	'forum_votre_email' => 'Votre adresse email :',
-	'forum_votre_nom' => 'Votre nom :',
+	'forum_votre_email' => 'Votre adresse email',
+	'forum_votre_nom' => 'Votre nom',
 	'forum_vous_enregistrer' => 'Pour participer à
 		ce forum, vous devez vous enregistrer au préalable. Merci
 		d\'indiquer ci-dessous l\'identifiant personnel qui vous a
