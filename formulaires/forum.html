@@ -63,8 +63,8 @@
 ]
 
 [(#CONFIG{forums_texte}|!={non}|?{
-	<li class='editer saisie_texte[ (#ENV**{erreurs}|table_valeur{texte}|oui)erreur]'>
-		<label for='texte'><:forum:forum_texte|typo:></label>
+	<li class='editer saisie_texte obligatoire[ (#ENV**{erreurs}|table_valeur{texte}|oui)erreur]'>
+		<label for='texte'><:forum:forum_texte|typo:><:required:></label>
 		[<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{texte})</span>]
 		<textarea name="texte" id="texte" rows="10" cols="60"[(#CONFIG{forums_afficher_barre}|=={non}|oui) class="no_barre"]>[(#ENV{texte})]</textarea>
         [(#ENV**{config}|table_valeur{afficher_barre}|?{<p class='explication'><:info_creation_paragraphe:></p>,<p class="explication forum_saisie_texte_info"><:forum:forum_saisie_texte_info:></p>})]
