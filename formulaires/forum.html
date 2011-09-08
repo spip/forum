@@ -56,7 +56,7 @@
 
 [(#CONFIG{forums_titre}|!={non}|oui)
 	<li class='editer saisie_titre obligatoire[ (#ENV**{erreurs}|table_valeur{titre}|oui)erreur]'>
-		<label for="titre"><:forum:forum_titre:></label>
+		<label for="titre"><:forum:forum_titre:> <:info_obligatoire_02:></label>
 		[<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{titre})</span>]
 		<input type="text" class="text" name="titre" id="titre"[ value="(#ENV{titre})"] size="60" />
 	</li>
