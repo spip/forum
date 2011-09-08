@@ -55,7 +55,7 @@
 	[<li class='editer saisie_mots_forum'>(#INCLURE{fond=formulaires/inc-forum_bloc_choix_mots, table=#ENV*{table}, ajouter_mot})</li>]
 
 [(#CONFIG{forums_titre}|!={non}|oui)
-	<li class='editer saisie_titre[ (#ENV**{erreurs}|table_valeur{titre}|oui)erreur]'>
+	<li class='editer saisie_titre obligatoire[ (#ENV**{erreurs}|table_valeur{titre}|oui)erreur]'>
 		<label for="titre"><:forum:forum_titre:></label>
 		[<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{titre})</span>]
 		<input type="text" class="text" name="titre" id="titre"[ value="(#ENV{titre})"] size="60" />
