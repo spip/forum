@@ -34,9 +34,9 @@
 <form action="#ENV{action}#formulaire_forum" method="post" enctype='multipart/form-data'><div>
 [(#ACTION_FORMULAIRE{#ENV{action}})]
 [<input type="hidden" name="id_forum" value="(#ENV*{id_forum})" />]
-[<fieldset class="moderation_info">
+[<fieldset class="moderation_info info">
 	<legend><:forum:bouton_radio_modere_priori:></legend>
-	<p class="explication info">(#ENV{modere})<:forum:forum_info_modere:></p>
+	<p class="explication">(#ENV{modere})<:forum:forum_info_modere:></p>
 </fieldset>]
 
 [(#ENV**{afficher_texte}|choixsiegal{'non', ' ',''})
