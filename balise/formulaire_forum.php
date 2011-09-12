@@ -176,6 +176,15 @@ function balise_forum_retrouve_objet($ido,$id_forum,$args,$context_compil){
 		return false;
 	}
 
+	// on verifie ici si on a le droit de poster sur ce forum
+	// doublonne le test dans le formulaire, mais permet d'utiliser la balise
+	// pour conditionner l'affichage d'un titre le precedant
+	// (ie compatibilite)
+	$accepter_forum = controler_forum($objet, $id_objet);
+	if ($accepter_forum == 'non')
+		return false;
+
+
 	return array($objet,$id_objet,$url);
 }
 ?>
