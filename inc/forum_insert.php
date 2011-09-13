@@ -100,7 +100,7 @@ function forum_insert_base($c, $id_forum, $objet, $id_objet, $statut, $ajouter_m
 {
 
 	// si le statut est vide, c'est qu'on ne veut pas de ce presume spam !
-	if (!$statut OR !$objet OR !$id_forum){
+	if (!$statut OR !$objet OR !$id_objet){
 		$args = func_get_args();
 		spip_log("Erreur sur forum_insert_base ".var_export($args,1),'forum.'. _LOG_ERREUR);
 		return false;
