@@ -55,7 +55,7 @@ if(!function_exists('revision_forum')){
 		// (non autorise en standard mais utile pour des crayons)
 		// on deplace tout le thread {sauf les originaux}.
 		if (count($cles)) {
-			spip_log("update thread id_thread=$t avec ".var_export($cles),'forum.'. _LOG_INFO_IMPORTANTE);
+			spip_log("update thread id_thread=$t avec ".var_export($cles,1),'forum.'. _LOG_INFO_IMPORTANTE);
 			sql_updateq("spip_forum", $cles, "id_thread=".intval($t)." AND statut!='original'");
 			// on n'affecte pas $r, car un deplacement ne change pas l'auteur
 		}
