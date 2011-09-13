@@ -54,6 +54,11 @@ function tracer_erreur_forum($type='') {
  */
 function inc_forum_insert_dist($objet, $id_objet, $id_forum, $force_statut = NULL) {
 
+	if (!strlen($objet)
+	  OR !intval($id_objet)){
+		spip_log("Erreur insertion forum sur objet='$objet', id_objet=$id_objet",'forum.'. _LOG_ERREUR);
+		return 0;
+	}
 	spip_log("insertion de forum sur $objet $id_objet (+$id_forum)", 'forum');
 
 	$c = array('statut'=>'off');
@@ -82,7 +87,7 @@ function inc_forum_insert_dist($objet, $id_objet, $id_forum, $force_statut = NUL
 	$id_reponse = forum_insert_base($c, $id_forum, $objet, $id_objet, $c['statut'], _request('ajouter_mot'));
 
 	if (!$id_reponse)
-		spip_log("Echec insertion forum sur $objet $id_objet (+$id_forum)", 'forum');
+		spip_log("Echec insertion forum sur $objet $id_objet (+$id_forum)", 'forum.'._LOG_ERREUR);
 	else
 		spip_log("forum insere' $id_reponse sur $objet $id_objet (+$id_forum)", 'forum');
 
@@ -95,8 +100,11 @@ function forum_insert_base($c, $id_forum, $objet, $id_objet, $statut, $ajouter_m
 {
 
 	// si le statut est vide, c'est qu'on ne veut pas de ce presume spam !
-	if (!$statut)
+	if (!$statut OR !$objet OR !$id_forum){
+		$args = func_get_args();
+		spip_log("Erreur sur forum_insert_base ".var_export($args,1),'forum.'. _LOG_ERREUR);
 		return false;
+	}
 
 	// Entrer le message dans la base
 	$id_reponse = sql_insertq('spip_forum', array(
@@ -105,44 +113,46 @@ function forum_insert_base($c, $id_forum, $objet, $id_objet, $statut, $ajouter_m
 		'id_auteur' => $GLOBALS['visiteur_session']['id_auteur']
 	));
 
-	if ($id_forum>0) {
-		$id_thread = sql_getfetsel("id_thread", "spip_forum", "id_forum = $id_forum");
+	if ($id_reponse){
+		if ($id_forum>0) {
+			$id_thread = sql_getfetsel("id_thread", "spip_forum", "id_forum =".intval($id_forum));
+		}
+		else
+			$id_thread = $id_reponse; # id_thread oblige INSERT puis UPDATE.
+
+		// Entrer les cles
+		sql_updateq('spip_forum', array('id_parent' => $id_forum, 'objet' => $objet, 'id_objet' => $id_objet, 'id_thread' => $id_thread, 'statut' => $statut), "id_forum=".intval($id_reponse));
+
+		// Entrer les mots-cles associes
+		if ($ajouter_mot) mots_du_forum($ajouter_mot, $id_reponse);
+
+		//
+		// Entree du contenu et invalidation des caches
+		//
+		include_spip('action/editer_forum');
+		revision_forum($id_reponse, $c);
+
+		// Ajouter un document
+		if (isset($_FILES['ajouter_document'])
+		AND $_FILES['ajouter_document']['tmp_name']) {
+			$files[] = array('tmp_name'=>$_FILES['ajouter_document']['tmp_name'],'name'=>$_FILES['ajouter_document']['name']);
+			$ajouter_documents = charger_fonction('ajouter_documents','action');
+			$ajouter_documents(
+				'new',
+				$files,
+				'forum',
+				$id_reponse,
+				'document');
+			// supprimer le temporaire et ses meta donnees
+			spip_unlink($_FILES['ajouter_document']['tmp_name']);
+			spip_unlink(preg_replace(',\.bin$,',
+				'.txt', $_FILES['ajouter_document']['tmp_name']));
+		}
+
+		// Notification
+		if ($notifications = charger_fonction('notifications', 'inc'))
+			$notifications('forumposte', $id_reponse);
 	}
-	else
-		$id_thread = $id_reponse; # id_thread oblige INSERT puis UPDATE.
-
-	// Entrer les cles
-	sql_updateq('spip_forum', array('id_parent' => $id_forum, 'objet' => $objet, 'id_objet' => $id_objet, 'id_thread' => $id_thread, 'statut' => $statut), "id_forum = $id_reponse");
-
-	// Entrer les mots-cles associes
-	if ($ajouter_mot) mots_du_forum($ajouter_mot, $id_reponse);
-
-	//
-	// Entree du contenu et invalidation des caches
-	//
-	include_spip('action/editer_forum');
-	revision_forum($id_reponse, $c);
-
-	// Ajouter un document
-	if (isset($_FILES['ajouter_document'])
-	AND $_FILES['ajouter_document']['tmp_name']) {
-		$files[] = array('tmp_name'=>$_FILES['ajouter_document']['tmp_name'],'name'=>$_FILES['ajouter_document']['name']);
-		$ajouter_documents = charger_fonction('ajouter_documents','action');
-		$ajouter_documents(
-			'new',
-			$files,
-			'forum',
-			$id_reponse,
-			'document');
-		// supprimer le temporaire et ses meta donnees
-		spip_unlink($_FILES['ajouter_document']['tmp_name']);
-		spip_unlink(preg_replace(',\.bin$,',
-			'.txt', $_FILES['ajouter_document']['tmp_name']));
-	}
-
-	// Notification
-	if ($notifications = charger_fonction('notifications', 'inc'))
-		$notifications('forumposte', $id_reponse);
 
 	return $id_reponse;
 }
