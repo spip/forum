@@ -45,20 +45,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Pokračujte klepnutím <a href=\'@retour_forum@\'>na tento odkaz</a>.',
 	'forum_forum' => 'diskusní skupina',
 	'forum_info_modere' => 'Tato diskusní skupina je moderovaná: vaše příspěvky se zobrazí až po schválení správcem tohoto webu.',
-	'forum_lien_hyper' => '<b>Hypertextový odkaz</b> (volitelné)',
+	'forum_lien_hyper' => '<b>Hypertextový odkaz</b> (volitelné)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Závěrečná zpráva: odesláno na web',
 	'forum_message_trop_long' => 'Zpráva je příliš dlouhá. Maximum je 20.000 znaků.',
 	'forum_ne_repondez_pas' => 'Neodpovídejte na tuto zprávu. Odpověď zveřejněte v rámci skupiny na adrese:', # MODIF
 	'forum_page_url' => '(Týká-li se zpráva článku zveřejněného na webu nebo stránky s doplňujícími informacemi, zadejte dále název stránky a její adresu).',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Zpráva od posted@parauteur@ na základě vašeho článku.', # MODIF
-	'forum_qui_etes_vous' => '<b>Kdo jste?</b> (volitelné)',
-	'forum_texte' => 'Text zprávy:',
-	'forum_titre' => 'Předmět:',
-	'forum_url' => 'Adresa URL:',
+	'forum_qui_etes_vous' => '<b>Kdo jste?</b> (volitelné)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Text zprávy:', # MODIF
+	'forum_titre' => 'Předmět:', # MODIF
+	'forum_url' => 'Adresa URL:', # MODIF
 	'forum_valider' => 'Potvrdit výběr',
-	'forum_voir_avant' => 'Před odesláním zprávu zobrazit',
-	'forum_votre_email' => 'Váš e-mail:',
-	'forum_votre_nom' => 'Vaše jméno (resp. přezdívka):',
+	'forum_voir_avant' => 'Před odesláním zprávu zobrazit', # MODIF
+	'forum_votre_email' => 'Váš e-mail:', # MODIF
+	'forum_votre_nom' => 'Vaše jméno (resp. přezdívka):', # MODIF
 	'forum_vous_enregistrer' => 'Této diskusní skupiny se můžete účastnit
   až po zaregistrování. Děkujeme vám
   za zadání identifikačních údajů.
@@ -119,8 +122,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'Odpověď na článek',
 	'lien_reponse_breve_2' => 'Odpověď na novinku',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Odpověď na sekci',
-	'lien_reponse_site_reference' => 'Odpověď na web, na nějž vede odkaz:',
+	'lien_reponse_site_reference' => 'Odpověď na web, na nějž vede odkaz:', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

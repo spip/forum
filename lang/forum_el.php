@@ -41,20 +41,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Πατήστε <a href=\'@retour_forum@\'>εδώ</a> για να συνεχίσετε.',
 	'forum_forum' => 'φόρουμ',
 	'forum_info_modere' => 'Αυτό το φόρουμ είναι moderated : το μήνυμά σας θα εμφανιστεί αφού επικυρωθεί από τον administrator του site.',
-	'forum_lien_hyper' => '<b>Ενεργός δεσμός</b> (προαιρετικό)',
+	'forum_lien_hyper' => '<b>Ενεργός δεσμός</b> (προαιρετικό)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Τελικό μήνυμα : αποστολή στο site',
 	'forum_message_trop_long' => 'Το μήνυμά σας είναι πολύ μεγάλο. Το μέγιστο μήκος είναι 20000 χαρακτήρες.',
 	'forum_ne_repondez_pas' => 'Μην απαντήσετε σε αυτό το mail αλλά στο φόρουμ στην παρακάτω διεύθυνση :', # MODIF
 	'forum_page_url' => '(Αν το μήνυμά σας αναφέρεται σε άρθρο που βρίσκεται στο Web, ή σε μία σελίδα που δίνει περισσότερες πληροφορίες, μπορείτε να εισάγετε τον τίτλο και τη διεύθυνση.)',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Μήνυμα του/της@parauteur@ στο τέλος του άρθρου « @titre@ ».',
-	'forum_qui_etes_vous' => '<b>Ποιός είστε ?</b> (προαιρετικό)',
-	'forum_texte' => 'Κείμενο του μηνύματός σας :',
-	'forum_titre' => 'Τίτλος :',
-	'forum_url' => 'URL :',
+	'forum_qui_etes_vous' => '<b>Ποιός είστε ?</b> (προαιρετικό)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Κείμενο του μηνύματός σας :', # MODIF
+	'forum_titre' => 'Τίτλος :', # MODIF
+	'forum_url' => 'URL :', # MODIF
 	'forum_valider' => 'Επικυρώστε την επιλογή σας',
-	'forum_voir_avant' => 'Δείτε το μήνυμα πριν την αποστολή του',
-	'forum_votre_email' => 'Διεύθνση ηλεκτρονικού ταχυδρομείου :',
-	'forum_votre_nom' => 'Ονομα (ή ψευδόνυμο) :',
+	'forum_voir_avant' => 'Δείτε το μήνυμα πριν την αποστολή του', # MODIF
+	'forum_votre_email' => 'Διεύθνση ηλεκτρονικού ταχυδρομείου :', # MODIF
+	'forum_votre_nom' => 'Ονομα (ή ψευδόνυμο) :', # MODIF
 	'forum_vous_enregistrer' => 'Για να συμμετέχετε σε
   αυτό το φόρουμ πρέπει να είστε εγγεγραμμένος χρήστης. Δώστε
   το προσωπικό σας κωδικό
@@ -114,8 +117,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'Reply to the article', # NEW
 	'lien_reponse_breve_2' => 'Reply to the news item', # NEW
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Reply to the section', # NEW
-	'lien_reponse_site_reference' => 'Reply to the referenced site:', # NEW
+	'lien_reponse_site_reference' => 'Reply to the referenced site:', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

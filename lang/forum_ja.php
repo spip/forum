@@ -43,20 +43,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => '<a href=\'@retour_forum@\'>ここ</a> を押して続けて下さい。',
 	'forum_forum' => '掲示板',
 	'forum_info_modere' => 'この掲示板への投稿はあらかじめ検査されます: あなたの投稿は、サイトの管理者によって適性検査されてから表示されます。',
-	'forum_lien_hyper' => '<b>リンク</b> (オプション)',
+	'forum_lien_hyper' => '<b>リンク</b> (オプション)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => '最後のメッセージ: サイトへ送る',
 	'forum_message_trop_long' => 'あなたのメッセージは長すぎます。最大20000文字(全角は２つ分)であるべきです。',
 	'forum_ne_repondez_pas' => 'このメールに返信しないで、次のアドレスの掲示板で:', # MODIF
 	'forum_page_url' => '(もしあなたのメッセージがウェブに公表されている記事、更なる情報が提供されているページを参照するなら、ページのタイトルとその下にURLを入力してください)。',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'あなたの記事の後に投稿された@parauteur@ メッセージ。', # MODIF
-	'forum_qui_etes_vous' => '<b>あなたはだれ?</b> (オプション)',
-	'forum_texte' => 'あなたのメッセージテキスト:',
-	'forum_titre' => '件名:',
-	'forum_url' => 'URL:',
+	'forum_qui_etes_vous' => '<b>あなたはだれ?</b> (オプション)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'あなたのメッセージテキスト:', # MODIF
+	'forum_titre' => '件名:', # MODIF
+	'forum_url' => 'URL:', # MODIF
 	'forum_valider' => 'この選択を確認',
-	'forum_voir_avant' => '投稿する前にメッセージをプレビュー',
-	'forum_votre_email' => 'あなたのe-mailアドレス:',
-	'forum_votre_nom' => 'あなたの名前（か仮名）:',
+	'forum_voir_avant' => '投稿する前にメッセージをプレビュー', # MODIF
+	'forum_votre_email' => 'あなたのe-mailアドレス:', # MODIF
+	'forum_votre_nom' => 'あなたの名前（か仮名）:', # MODIF
 	'forum_vous_enregistrer' => 'この掲示板に投稿する前に
   あなたは登録しなければなりません。あなたに与えられた個人的なIDを入力してくれてありがとう。もしまだ登録してないなら、あなたはするべきです。',
 	'forum_vous_inscrire' => '登録者。',
@@ -110,8 +113,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => '記事へ返信',
 	'lien_reponse_breve_2' => 'ニュースに返信',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'セクションに返信',
-	'lien_reponse_site_reference' => '参照されたサイトに返信:',
+	'lien_reponse_site_reference' => '参照されたサイトに返信:', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

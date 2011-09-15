@@ -45,20 +45,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Clicatz <a href=\'@retour_forum@\'>ací</a> tà contunhar.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Aqueste forum qu\'ei moderat a priòri: la vòsta contribucion que pareisherà sonque après qu\'un administrator deu sit l\'aja validada.',
-	'forum_lien_hyper' => '<b>Ligam ipertèxt</b> (opcionau)',
+	'forum_lien_hyper' => '<b>Ligam ipertèxt</b> (opcionau)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Messatge definitiu : mandar au sit',
 	'forum_message_trop_long' => 'Lo vòste messatge qu\'ei tròp long. La longor maximau qu\'ei de 20 000 caractèrs.',
 	'forum_ne_repondez_pas' => 'Non responiatz pas a aqueth e-mail mes peu forum a l\'adreiça seguenta: ', # MODIF
 	'forum_page_url' => '(se lo vòste messatge e\'s refereish a un article publicat peu web, o a ua pagina qui baile mei informacions, que podetz marcar ça devath lo títol de la pagina e la soa adreiça URL.)',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Messatge poste@parauteur@ qui hè seguida au vòste article.', # MODIF
-	'forum_qui_etes_vous' => '<b>Qui ètz?</b> (opcionau)',
-	'forum_texte' => 'Tèxt deu vòste messatge:',
-	'forum_titre' => 'Títol:',
-	'forum_url' => 'URL:',
+	'forum_qui_etes_vous' => '<b>Qui ètz?</b> (opcionau)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Tèxt deu vòste messatge:', # MODIF
+	'forum_titre' => 'Títol:', # MODIF
+	'forum_url' => 'URL:', # MODIF
 	'forum_valider' => 'Validar aquera causida',
-	'forum_voir_avant' => 'Véder lo messatge abans de\'u mandar',
-	'forum_votre_email' => 'La vòsta adreiça e-mail:',
-	'forum_votre_nom' => 'Lo vòste nom (o pseudonim):',
+	'forum_voir_avant' => 'Véder lo messatge abans de\'u mandar', # MODIF
+	'forum_votre_email' => 'La vòsta adreiça e-mail:', # MODIF
+	'forum_votre_nom' => 'Lo vòste nom (o pseudonim):', # MODIF
 	'forum_vous_enregistrer' => 'Entà participar a
   aqueth forum, en permèras que\'vs cau registrar. Mercés
   de marcar ça devath l\'identificant personau qui avetz recebut.
@@ -116,8 +119,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'Responsa a l\'article',
 	'lien_reponse_breve_2' => 'Responsa a la brèva',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Responsa a la rubrica',
-	'lien_reponse_site_reference' => 'Responsa au sit referenciat:',
+	'lien_reponse_site_reference' => 'Responsa au sit referenciat:', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

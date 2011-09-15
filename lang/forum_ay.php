@@ -41,20 +41,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Sarantaskakiñatakix limt\'am &lt;a href=\'@retour_forum@\'&gt;akjaru&lt;/a&gt;.   ',
 	'forum_forum' => 'Aruskipaña',
 	'forum_info_modere' => 'Nayraqatax aka aruskipañax t\'akutaw: Arst\'añamax janiw uñstkaniti iyawsan ukjakama qamawin apnaqiri jupanakampi.',
-	'forum_lien_hyper' => '&lt;b&gt;Jach\'a sawuta chinu mayachawi&lt;/b&gt; (ajlliñatakiwa)',
+	'forum_lien_hyper' => '&lt;b&gt;Jach\'a sawuta chinu mayachawi&lt;/b&gt; (ajlliñatakiwa)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Yatiyawi: qamawir apayaña',
 	'forum_message_trop_long' => 'Yatiyawimax sinti jach\'awa. Pä tunk waranq qillqanakaniñapawa',
 	'forum_ne_repondez_pas' => 'Aka aruskipayirirux jan jaysamti, jan ukjax aruskipañar jaysam aka utjawiru:', # MODIF
 	'forum_page_url' => '(Sitix yatiyawimax mä qillqat yatiyatar aytata internetan, jan ukjax kawkintix mä laphi uñnaqan kunantix juk\'amp yatiyawinak utjkisa, ukjarux laphi uñnaqan sutinchap ukhamarak URL utjawip uñachayam)',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Yatiyaw apayata @parauteur@ qillqatar jaysayañjama @titre@',
-	'forum_qui_etes_vous' => '&lt;b&gt;¿Khititasa?&lt;/b&gt;    (ajlliñatakiwa)',
-	'forum_texte' => 'Yatiyawiman sawu:',
-	'forum_titre' => 'Sutichata:',
-	'forum_url' => 'URL:',
+	'forum_qui_etes_vous' => '&lt;b&gt;¿Khititasa?&lt;/b&gt;    (ajlliñatakiwa)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Yatiyawiman sawu:', # MODIF
+	'forum_titre' => 'Sutichata:', # MODIF
+	'forum_url' => 'URL:', # MODIF
 	'forum_valider' => 'Ajllita yaw saña',
-	'forum_voir_avant' => 'Janir apaykasin aka yatiyaw uñjaña',
-	'forum_votre_email' => 'Aruskipayiriman utjawipa:',
-	'forum_votre_nom' => 'Sutima (jan ukjax sutichawima):',
+	'forum_voir_avant' => 'Janir apaykasin aka yatiyaw uñjaña', # MODIF
+	'forum_votre_email' => 'Aruskipayiriman utjawipa:', # MODIF
+	'forum_votre_nom' => 'Sutima (jan ukjax sutichawima):', # MODIF
 	'forum_vous_enregistrer' => 'Aka aruskipañan arsuñatakix, naraqatax qillqayasisma. Ukjarux juman uñt\'irim churapksma uñachawimatxa yuspagara. Jan qillqataktax ukjax, ',
 	'forum_vous_inscrire' => 'qillqayasiñama.',
 
@@ -108,8 +111,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'Réponse à l\'article', # NEW
 	'lien_reponse_breve_2' => 'Réponse à la brève', # NEW
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Réponse à la rubrique', # NEW
-	'lien_reponse_site_reference' => 'Réponse au site référencé :', # NEW
+	'lien_reponse_site_reference' => 'Réponse au site référencé', # NEW
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

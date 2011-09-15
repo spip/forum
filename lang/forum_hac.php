@@ -45,20 +45,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => ' </a> اينجا <a href=\'@retour_forum@\'>     را براى ادامه كليك كنيد     ',
 	'forum_forum' => 'سخنگاه',
 	'forum_info_modere' => 'سخنگاه  : پيامهاى شما پس از تأئيد گردانند گان سايت نمايان خواهند شد',
-	'forum_lien_hyper' => ' (اختيارى)  </b>پيوند هايپرتكست<b> ',
+	'forum_lien_hyper' => ' (اختيارى)  </b>پيوند هايپرتكست<b> ', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'پيام نهايى : به سايت بفرستيد',
 	'forum_message_trop_long' => 'پيامتان بيش از حد بلند است. حداكثر اندازه ٢٠٠٠٠ حرف است',
 	'forum_ne_repondez_pas' => 'به اين ايميل پاسخ ندهيد،  پاسختان را در سخنگاه به آدرس زير بفرستيد',
 	'forum_page_url' => 'اگر پيامتان راجع به يك مقاله چاپ شده يا به يك صفحه اى كه داراى اطلاعات سودمندى است مربوط ميشود، خواهشمند است عنوان صفحه وآدرس آنرا در زير مشخص كنيد ',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'پيام @parauteur@ بدنبال مقاله « @titre@ »  فرستاده شده. ',
-	'forum_qui_etes_vous' => '(اختيارى) <b> كى هستيد؟ </b>                                      ',
-	'forum_texte' => ':متن پيامتان',
-	'forum_titre' => ':عنوان',
-	'forum_url' => 'URL :',
+	'forum_qui_etes_vous' => '(اختيارى) <b> كى هستيد؟ </b>                                      ', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => ':متن پيامتان', # MODIF
+	'forum_titre' => ':عنوان', # MODIF
+	'forum_url' => 'URL :', # MODIF
 	'forum_valider' => 'اين انتخاب را معتبر كنيد',
-	'forum_voir_avant' => 'اين پيام را پيش از فرستادن آن بخوانيد',
-	'forum_votre_email' => ':آدرس ايميل تان',
-	'forum_votre_nom' => '(نام  يا (نام مستعارتان  ',
+	'forum_voir_avant' => 'اين پيام را پيش از فرستادن آن بخوانيد', # MODIF
+	'forum_votre_email' => ':آدرس ايميل تان', # MODIF
+	'forum_votre_nom' => '(نام  يا (نام مستعارتان  ', # MODIF
 	'forum_vous_enregistrer' => ' براى شركت در اين سخنگاه، شما بايد از پيش ثبت نام ميكرديد. خواهشمند است كلمه شناساييتان را كه دريافت كرده ايد در زير مشخص كنيد.اگر ثبت نشديد، بايد',
 	'forum_vous_inscrire' => 'ثبت نام كنيد.   ',
 
@@ -114,8 +117,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'Réponse à l\'article', # NEW
 	'lien_reponse_breve_2' => 'Réponse à la brève', # NEW
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Réponse à la rubrique', # NEW
-	'lien_reponse_site_reference' => 'Réponse au site référencé :', # NEW
+	'lien_reponse_site_reference' => 'Réponse au site référencé', # NEW
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

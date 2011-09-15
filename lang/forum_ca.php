@@ -44,20 +44,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Premeu <a href=\'@retour_forum@\'>ici</a> per continuar.',
 	'forum_forum' => 'fòrum',
 	'forum_info_modere' => 'Aquest fòrum és moderat a priori: la seva contribució no es mostrarà fins que no hagi estat validada per l\'administrador del lloc. ',
-	'forum_lien_hyper' => '<b>Enllaç hipertext</b> (opcional)',
+	'forum_lien_hyper' => '<b>Enllaç hipertext</b> (opcional)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Missatge definitiu: enviar al lloc',
 	'forum_message_trop_long' => 'El vostre missatge és massa llarg. La mida màxima són 20000 caràcters.',
 	'forum_ne_repondez_pas' => 'No respongueu a aquest correu electrònic, feu-ho al fòrum a la següent adreça: ',
 	'forum_page_url' => '(Si el vostre missatge fa referència a un article publicat a la Web, o a una pàgina que conté més informacions, podeu indicar a continuació el títol de la pàgina i la seva adreça URL.)',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Missatge enviat@parauteur@ a continuació de l\'article « @titre@ ».',
-	'forum_qui_etes_vous' => '<b>Qui sóu?</b> (opcional)',
-	'forum_texte' => 'Text del missatge:',
-	'forum_titre' => 'Titol:',
-	'forum_url' => 'URL:',
+	'forum_qui_etes_vous' => '<b>Qui sóu?</b> (opcional)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Text del missatge:', # MODIF
+	'forum_titre' => 'Titol:', # MODIF
+	'forum_url' => 'URL:', # MODIF
 	'forum_valider' => 'Validar l\'elecció',
-	'forum_voir_avant' => 'Veure el missatge abans d\'enviar-lo',
-	'forum_votre_email' => 'La seva adreça electrònica:',
-	'forum_votre_nom' => 'El vostre nom (o pseudònim):',
+	'forum_voir_avant' => 'Veure el missatge abans d\'enviar-lo', # MODIF
+	'forum_votre_email' => 'La seva adreça electrònica:', # MODIF
+	'forum_votre_nom' => 'El vostre nom (o pseudònim):', # MODIF
 	'forum_vous_enregistrer' => 'Per participar al fòrum, us heu de registrar prèviament.
 Si ja n\'esteu, escriviu a continuació l\'identifcador que us ha estat proporcionat. Si encara no ho heu fet, heu d\'',
 	'forum_vous_inscrire' => 'inscriure\'s.',
@@ -114,8 +117,9 @@ Si ja n\'esteu, escriviu a continuació l\'identifcador que us ha estat proporci
 	// L
 	'lien_reponse_article' => 'Resposta a l\'article',
 	'lien_reponse_breve_2' => 'Resposta a la breu',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Resposta a la secció',
-	'lien_reponse_site_reference' => 'Resposta al lloc referenciat:',
+	'lien_reponse_site_reference' => 'Resposta al lloc referenciat:', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

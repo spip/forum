@@ -39,20 +39,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Pinchar <a href=\'@retour_forum@\'>aquí</a> para continuar.',
 	'forum_forum' => 'foro',
 	'forum_info_modere' => 'Este foro está moderado a priori: tu contribución no aparecerá hasta haber sido validada por la administración del sitio.',
-	'forum_lien_hyper' => '<b>Enlace hipertexto</b> (opcional)',
+	'forum_lien_hyper' => '<b>Enlace hipertexto</b> (opcional)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Mensaje definitivo: enviar al sitio',
 	'forum_message_trop_long' => 'Tu mensaje es demasiado largo. Sólo se admite un máximo de 20.000 caracteres.',
 	'forum_ne_repondez_pas' => 'No conteste a este correo, sino el foro en la dirección siguiente:',
 	'forum_page_url' => '(Si tu mensaje se refiere a un artículo publicado en Internet, o a una página que contiene más informaciones, indica a continuación el título de la página y su dirección URL.)',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Mensaje enviado @parauteur@ a como respuesta al artículo <i>@titre@</i>.',
-	'forum_qui_etes_vous' => '<b>¿Quién eres?</b> (opcional)',
-	'forum_texte' => 'Texto de tu mensaje:',
-	'forum_titre' => 'Título:',
-	'forum_url' => 'URL:',
+	'forum_qui_etes_vous' => '<b>¿Quién eres?</b> (opcional)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Texto de tu mensaje:', # MODIF
+	'forum_titre' => 'Título:', # MODIF
+	'forum_url' => 'URL:', # MODIF
 	'forum_valider' => 'Validar la elección',
-	'forum_voir_avant' => 'Ver este mensaje antes de enviarlo',
-	'forum_votre_email' => 'Tu dirección de correo electrónico:',
-	'forum_votre_nom' => 'Tu nombre (o seudónimo):',
+	'forum_voir_avant' => 'Ver este mensaje antes de enviarlo', # MODIF
+	'forum_votre_email' => 'Tu dirección de correo electrónico:', # MODIF
+	'forum_votre_nom' => 'Tu nombre (o seudónimo):', # MODIF
 	'forum_vous_enregistrer' => 'Para participar en este foro, previamente debes registrarte.
 Gracias por indicar a continuación el identificador personal que se te ha
 suministrado. Si no estás inscrito/a, debes',
@@ -107,8 +110,9 @@ suministrado. Si no estás inscrito/a, debes',
 	// L
 	'lien_reponse_article' => 'Respuesta al artículo',
 	'lien_reponse_breve_2' => 'Respuesta a la breve',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Respuesta a la sección',
-	'lien_reponse_site_reference' => 'Respuesta al sitio referenciado',
+	'lien_reponse_site_reference' => 'Respuesta al sitio referenciado', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

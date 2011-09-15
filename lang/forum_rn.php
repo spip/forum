@@ -22,6 +22,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  administrateurs).',
 	'bouton_radio_modere_abonnement' => 'modéré sur abonnement',
 	'bouton_radio_modere_posteriori' => 'modéré à posteriori',
+	'bouton_radio_modere_priori' => 'modéré à priori',
 	'bouton_radio_publication_immediate' => 'Publication immédiate des messages
  (les contributions s\'affichent dès leur envoi, les administrateurs peuvent
  les supprimer ensuite).',
@@ -33,24 +34,34 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
+	'form_pet_message_commentaire' => 'Un message, un commentaire ?',
 	'forum' => 'Ikiyago',
 	'forum_acces_refuse' => 'Vous n\'avez plus accès à ces forums.',
 	'forum_attention_dix_caracteres' => '<b>Attention !</b> votre message fait moins de dix caractères.',
+	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Attention !</b> votre titre fait moins de trois caractères.',
 	'forum_attention_trop_caracteres' => '<b>Attention !</b> votre message est trop long (@compte@ caractères) : pour pouvoir être enregistré, il ne doit pas dépasser @max@ caractères.', # NEW
 	'forum_avez_selectionne' => 'Vous avez sélectionné :',
 	'forum_cliquer_retour' => 'Cliquez <a href=\'@retour_forum@\'>ici</a> pour continuer.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Ce forum est modéré à priori : votre contribution n\'apparaîtra qu\'après avoir été validée par un administrateur du site.',
-	'forum_lien_hyper' => '<b>Lien hypertexte</b> (optionnel)',
+	'forum_lien_hyper' => '<b>Lien hypertexte</b> (optionnel)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Message définitif : envoyer au site',
 	'forum_message_trop_long' => 'Votre message est trop long. La taille maximale est de 20000 caractères.',
 	'forum_ne_repondez_pas' => 'Ne repondez pas a ce mail mais sur le forum a l\'adresse suivante :', # MODIF
 	'forum_page_url' => '(Si votre message se réfère à un article publié sur le Web, ou à une page fournissant plus d\'informations, veuillez indiquer ci-après le titre de la page et son adresse URL.)',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Message poste@parauteur@ a la suite de votre article.',
-	'forum_texte' => 'Texte de votre message :',
-	'forum_titre' => 'Titre :', # NEW
-	'forum_voir_avant' => 'Voir ce message avant de le poster', # NEW
+	'forum_qui_etes_vous' => '<b>Qui êtes-vous ?</b> (optionnel)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Texte de votre message :', # MODIF
+	'forum_titre' => 'Titre :', # MODIF
+	'forum_url' => 'URL :', # MODIF
+	'forum_valider' => 'Valider ce choix', # NEW
+	'forum_voir_avant' => 'Voir ce message avant de le poster', # MODIF
+	'forum_votre_email' => 'Votre adresse email :', # MODIF
+	'forum_votre_nom' => 'Votre nom (ou pseudonyme) :', # MODIF
 	'forum_vous_enregistrer' => 'Pour participer à
 		ce forum, vous devez vous enregistrer au préalable. Merci
 		d\'indiquer ci-dessous l\'identifiant personnel qui vous a
@@ -63,6 +74,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Poster un message',
 	'icone_suivi_forum' => 'Suivi du forum public : @nb_forums@ contribution(s)',
+	'icone_suivi_forums' => 'Suivre/gérer les forums',
 	'icone_supprimer_message' => 'Supprimer ce message',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Valider ce message',
@@ -107,6 +119,13 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_config_forums_prive_global' => 'Désactiver le forum des rédacteurs', # NEW
 	'item_non_config_forums_prive_objets' => 'Désactiver ces forums', # NEW
 
+	// L
+	'lien_reponse_article' => 'Réponse à l\'article', # NEW
+	'lien_reponse_breve_2' => 'Réponse à la brève', # NEW
+	'lien_reponse_message' => 'Réponse au message', # NEW
+	'lien_reponse_rubrique' => 'Réponse à la rubrique', # NEW
+	'lien_reponse_site_reference' => 'Réponse au site référencé :', # MODIF
+
 	// M
 	'messages_aucun' => 'Aucun', # NEW
 	'messages_meme_auteur' => 'Tous les messages de cet auteur', # NEW
@@ -133,6 +152,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// S
 	'statut_off' => 'Supprimé', # NEW
+	'statut_original' => 'original', # NEW
 	'statut_prop' => 'Proposé', # NEW
 	'statut_publie' => 'Publié', # NEW
 	'statut_spam' => 'Spam', # NEW
@@ -148,6 +168,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_forum' => 'Forum', # NEW
 	'titre_forum_suivi' => 'Suivi des forums', # NEW
 	'titre_page_forum_suivi' => 'Suivi des forums', # NEW
+	'titre_selection_action' => 'Sélection', # NEW
 	'tout_voir' => 'Voir tous les messages', # NEW
 
 	// V

@@ -26,13 +26,17 @@
 	</langue>
 	<langue code="en">
 		<traducteur nom="squonk" />
+		<traducteur nom="davood" />
 	</langue>
 	<langue code="en_hx" />
 	<langue code="eo" />
-	<langue code="es" />
+	<langue code="es">
+		<traducteur nom="severo" />
+	</langue>
 	<langue code="eu" />
 	<langue code="fa">
 		<traducteur nom="kandalaft" />
+		<traducteur nom="davood" />
 	</langue>
 	<langue code="fon" />
 	<langue code="fr_tu">
@@ -74,6 +78,7 @@
 	<langue code="pt_br">
 		<traducteur nom="rporto" />
 	</langue>
+	<langue code="rn" />
 	<langue code="ro" />
 	<langue code="roa" />
 	<langue code="ru">

@@ -45,20 +45,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Calca <a href=\'@retour_forum@\'>equí</a> pa continuar.',
 	'forum_forum' => 'foru',
 	'forum_info_modere' => 'Esti foru ta llendáu de mano: la to aportación nun va apaecer fasta qu\'un alministrador del sitiu nun-y de el preste.',
-	'forum_lien_hyper' => '<b>Enllace d\'hipertestu</b> (opcional)',
+	'forum_lien_hyper' => '<b>Enllace d\'hipertestu</b> (opcional)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Mensaxe definitivu: unviar al sitiu',
 	'forum_message_trop_long' => 'El to mensaxe ye enforma llargu. El tamañu másimu ye de 20000 carauteres.',
 	'forum_ne_repondez_pas' => 'Nun responder a esti corréu sinón nel foru, nes señes darréu:',
 	'forum_page_url' => '(Si el to mensaxe refierse a un artículu espublizáu na Rede, o a una páxina que tenga más información, equí embaxo vas poder indicar el títulu de la páxina y les sos señes.)',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Mensaxe unviáu @parauteur@ tocante a l\'artículu «@titre@».',
-	'forum_qui_etes_vous' => '<b>¿Quién yes?</b> (opcional)',
-	'forum_texte' => 'Testu del to mensaxe:',
-	'forum_titre' => 'Títulu:',
-	'forum_url' => 'URL:',
+	'forum_qui_etes_vous' => '<b>¿Quién yes?</b> (opcional)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Testu del to mensaxe:', # MODIF
+	'forum_titre' => 'Títulu:', # MODIF
+	'forum_url' => 'URL:', # MODIF
 	'forum_valider' => 'Validar la escoyeta',
-	'forum_voir_avant' => 'Ver el mensaxe enantes de publicalu',
-	'forum_votre_email' => 'Les tos señes d\'email:',
-	'forum_votre_nom' => 'El to nome (o nomatu):',
+	'forum_voir_avant' => 'Ver el mensaxe enantes de publicalu', # MODIF
+	'forum_votre_email' => 'Les tos señes d\'email:', # MODIF
+	'forum_votre_nom' => 'El to nome (o nomatu):', # MODIF
 	'forum_vous_enregistrer' => 'Pa poder participar nesti
   foru, primero hai que rexistrase.
   Escribe embaxo l\'identificador personal que
@@ -117,8 +120,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'Respuesta a l\'artículu',
 	'lien_reponse_breve_2' => 'Respuesta a la breve',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Respuesta a la estaya',
-	'lien_reponse_site_reference' => 'Respuesta al sitiu referenciáu:',
+	'lien_reponse_site_reference' => 'Respuesta al sitiu referenciáu:', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

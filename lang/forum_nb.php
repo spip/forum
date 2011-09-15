@@ -45,20 +45,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Klikk  <a href=\'@retour_forum@\'>her</a> for å fortsette.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Dette forumet er overvåket: ditt innlegg vil vises etter å ha blitt sjekket av en administrator.',
-	'forum_lien_hyper' => '<b>Lenke</b> (valgfritt)',
+	'forum_lien_hyper' => '<b>Lenke</b> (valgfritt)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Siste melding: send til vev-sted',
 	'forum_message_trop_long' => 'Meldingen er for lang. Maksimal lengde er 20000 tegn.',
 	'forum_ne_repondez_pas' => 'Ikke svar på denne e-posten, men i forumet på følgende adresse:', # MODIF
 	'forum_page_url' => '(Dersom meldingen din refererer til en side på veven vennligst legg inn tittel og adressen til siden nedenfor).',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Melding kommet @parauteur@ til din artikkel "@titre@".',
-	'forum_qui_etes_vous' => '<b>Hvem er du?</b> (valgfritt)',
-	'forum_texte' => 'Meldingstekst:',
-	'forum_titre' => 'Emne:',
-	'forum_url' => 'URI:',
+	'forum_qui_etes_vous' => '<b>Hvem er du?</b> (valgfritt)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Meldingstekst:', # MODIF
+	'forum_titre' => 'Emne:', # MODIF
+	'forum_url' => 'URI:', # MODIF
 	'forum_valider' => 'Bekreft dette valget',
-	'forum_voir_avant' => 'Forhåndsvis melding først ',
-	'forum_votre_email' => 'Epostadresse:',
-	'forum_votre_nom' => 'Navn (eller kallenavn):',
+	'forum_voir_avant' => 'Forhåndsvis melding først ', # MODIF
+	'forum_votre_email' => 'Epostadresse:', # MODIF
+	'forum_votre_nom' => 'Navn (eller kallenavn):', # MODIF
 	'forum_vous_enregistrer' => 'Før man kan delta in
   dette forumet må man registrere seg.
   Vennligst logg inn.
@@ -119,8 +122,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'Svar på artikkelen',
 	'lien_reponse_breve_2' => 'Svar på nyheten',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Svar på seksjonen',
-	'lien_reponse_site_reference' => 'Réponse au site référencé :', # NEW
+	'lien_reponse_site_reference' => 'Réponse au site référencé :', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

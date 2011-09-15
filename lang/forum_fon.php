@@ -39,20 +39,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Mì zín @lɛkɔkplékplé@ mì yì',
 	'forum_forum' => 'kpléklpé',
 	'forum_info_modere' => 'Kpléklpé é lɔ ɖó jlɛɖɔtɔ, nú yé sɔ kɛn nú xògbè mì tɔn fó ɔ, é ná tɔn tà .',
-	'forum_lien_hyper' => 'cácádó',
+	'forum_lien_hyper' => 'cácádó', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'wɛn gùɖógùɖó tɔn, sɛɖó gblogblo ɔ jí',
 	'forum_message_trop_long' => 'wɛn mì tɔn ɖìga ɖín. kpìnkpɛn tɔn ɖó ná zɛ wěkwin càkìkò wú á ',
 	'forum_ne_repondez_pas' => 'mì mà yígbè nú e-mailù é lɔ ó, àmɔ ɖò kplékplé ɔ mɛ ɔ mì kpɔn nɔtɛn é lɔ ', # MODIF
 	'forum_page_url' => '(nú é nyí  ɖɔ wɛn mì tɔn tɛɖó wékpá é xlɛ ɖò àtɛ ɔ jí ɔ, kàbí wěmá é nɔ xlɛ xó gege ɔ, mì sìwú ɖè xótá àló nɔtɛn wěkpá tɔn ɖò fí.)',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => '@nyɔwlántɔ ɖókpóɖókpó sɛ wɛn ɖó@gbètákɛnxòkplé ɔ gbàfɔ, yè sìwú wlí wɛn mì tɔn hɛn á', # MODIF
-	'forum_qui_etes_vous' => 'mɛcé ká ɖyè',
-	'forum_texte' => 'xó é ɖò wɛn ɔ mɛ ɔ :',
-	'forum_titre' => 'xótá :',
-	'forum_url' => 'URLU:',
+	'forum_qui_etes_vous' => 'mɛcé ká ɖyè', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'xó é ɖò wɛn ɔ mɛ ɔ :', # MODIF
+	'forum_titre' => 'xótá :', # MODIF
+	'forum_url' => 'URLU:', # MODIF
 	'forum_valider' => 'sɔ kɛŋ ná  nù è mì cyán é',
-	'forum_voir_avant' => 'mí kpɔn wɛn é lɔ có bó sɛɖó',
-	'forum_votre_email' => 'e-mailù mi tɔn  :',
-	'forum_votre_nom' => 'nyìkɔ mi tɔn :',
+	'forum_voir_avant' => 'mí kpɔn wɛn é lɔ có bó sɛɖó', # MODIF
+	'forum_votre_email' => 'e-mailù mi tɔn  :', # MODIF
+	'forum_votre_nom' => 'nyìkɔ mi tɔn :', # MODIF
 	'forum_vous_enregistrer' => 'nú mi ná ɖó byɔ kplékplé é lɔ mɛ ɔ, mi ɖó ná ná nyìkɔ tɔn hwɛ. Mi zé sùnyíkɔ mi tɔn zé xlɛ. Nú mi mà kò nyìkɔ á, mi ɖó ná',
 	'forum_vous_inscrire' => 'mi ɖó ná ná nyìkɔ .',
 
@@ -105,8 +108,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'yígbjè nú wékpá é lɔ',
 	'lien_reponse_breve_2' => 'yígbjè nú xó kléwún é lɔ',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'yígbjè nú àkpáxwé  é lɔ',
-	'lien_reponse_site_reference' => 'yígbjè nú gblogblojí ɔ  é lɔ :',
+	'lien_reponse_site_reference' => 'yígbjè nú gblogblojí ɔ  é lɔ :', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

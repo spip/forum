@@ -40,20 +40,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_forum' => 'foroa',
 	'forum_info_modere' => 'Foro hau aurretiaz moderaturik dago : 
 Zure ekarpena gunearen administratzaileak onartu ondoren soilik agerian izango da.',
-	'forum_lien_hyper' => 'Hipertestu lotura (aukeratzekoa)',
+	'forum_lien_hyper' => 'Hipertestu lotura (aukeratzekoa)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Behin-betiko mezua : gunera igorri',
 	'forum_message_trop_long' => 'Zure mezua luzeegia da. Gehienez ere 20000 karaktere onartzen dira.',
 	'forum_ne_repondez_pas' => 'Ez erantzun mezu elektroniko honi, baizik eta hurrengo helbidean dagoen foroan:',
 	'forum_page_url' => '(Zure mezua interneten argitaratutako artikulu bati buruzkoa baldin bada, edo informazio gehiago duen orrialde bati buruzkoa, adieraz itzazu jarraian orrialdearen izena bai eta URL helbidea ere).',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => '« @titre@ » artikuluaren ondotik  @parauteur@-k bidalitako mezua.',
-	'forum_qui_etes_vous' => '<b>Nor zara zu?</b> (aukeratzekoa)',
-	'forum_texte' => 'Zure mezuaren testua:',
-	'forum_titre' => 'Izenburua :',
-	'forum_url' => 'URL :',
+	'forum_qui_etes_vous' => '<b>Nor zara zu?</b> (aukeratzekoa)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Zure mezuaren testua:', # MODIF
+	'forum_titre' => 'Izenburua :', # MODIF
+	'forum_url' => 'URL :', # MODIF
 	'forum_valider' => 'Aukera hori onartu',
-	'forum_voir_avant' => 'Igorri aurretik mezu hau ikusi',
-	'forum_votre_email' => 'Zure posta-elektronikoaren helbidea :',
-	'forum_votre_nom' => 'Zure izena (edo goitizena) :',
+	'forum_voir_avant' => 'Igorri aurretik mezu hau ikusi', # MODIF
+	'forum_votre_email' => 'Zure posta-elektronikoaren helbidea :', # MODIF
+	'forum_votre_nom' => 'Zure izena (edo goitizena) :', # MODIF
 	'forum_vous_enregistrer' => 'Aurretik inskribatzea beharrezkoa da foro honetan parte hartzeko.
 Hornitua izan zaizun identifikadore pertsonala jarraian adieraztea eskertuko dizugu.
 Inskribaturik ez bazaude, aurretik inskribatu behar duzu.',
@@ -108,8 +111,9 @@ Inskribaturik ez bazaude, aurretik inskribatu behar duzu.',
 	// L
 	'lien_reponse_article' => 'Artikuluari erantzuna',
 	'lien_reponse_breve_2' => 'Atalari erantzuna',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Atalari erantzuna',
-	'lien_reponse_site_reference' => 'Aipatutako lekuari erantzuna',
+	'lien_reponse_site_reference' => 'Aipatutako lekuari erantzuna', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

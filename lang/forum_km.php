@@ -39,20 +39,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'ចុច <a href=\'@retour_forum@\'>​ទី​នេះ​</a> ដើម្បី​បន្ដ ។',
 	'forum_forum' => 'វេទិកា',
 	'forum_info_modere' => 'វេទិកា​នេះ​ ត្រូវ​បានសំរបសំរួល ​ជាដំបូង ៖ ការរួម​ចំណែក របស់​អ្នក ​នឹង​លេច​ចេញ​ តែ​បន្ទាប់ពី​ត្រូវ​បាន​​មានសុពលភាព ​ដោយ​អ្នកអភិបាលសៃថ៍។',
-	'forum_lien_hyper' => '<b>តំណភ្ជាប់ ខ្ពស់</b> (​ជា​ជំរើស​)',
+	'forum_lien_hyper' => '<b>តំណភ្ជាប់ ខ្ពស់</b> (​ជា​ជំរើស​)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'សារ​ បញ្ចប់៖ ផ្ញើ​ទៅ​វ៉ែបសៃថ៍',
 	'forum_message_trop_long' => 'សារ​ របស់​អ្នក ​វែង​ពេក ។ ប្រវែង​អតិបរមា ត្រឹម ២០០០០ អក្សរ។',
 	'forum_ne_repondez_pas' => 'កុំ​ឆ្លើយ​ទៅ ​មែ​វល៍​នេះ ប៉ុន្ដែ​ លើ​វេទិកា តាម​អាសយដ្ឋាន​ខាងក្រោម៖', # MODIF
 	'forum_page_url' => '(​បើ​សារ​ របស់​អ្នក ​យោងទៅ មួយអត្ថបទ​ដែល​បាន​ផ្សព្វផ្សាយលើ​វ៉ែបសៃថ៍ ឬ នៅទំព័រ ​ដែល​ផ្ដល់​​ពត៌មាន​បន្ថែម, បញ្ចូល​បន្ទាប់នេះ ចំណងជើង​ទំព័រ និង អាសយដ្ឋាន URL របស់វា។)',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'បានដាក់សារ ដោយ @parauteur@ បន្ទាប់​ពី​អត្ថបទ​ "@titre@"។',
-	'forum_qui_etes_vous' => 'អ្នកជា អ្នកណា? </b> (​ជា ជំរើស​)', # b
-	'forum_texte' => '​សារ ​របស់​អ្នក៖',
-	'forum_titre' => 'ចំណងជើង៖',
-	'forum_url' => 'URL៖',
+	'forum_qui_etes_vous' => 'អ្នកជា អ្នកណា? </b> (​ជា ជំរើស​)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => '​សារ ​របស់​អ្នក៖', # MODIF
+	'forum_titre' => 'ចំណងជើង៖', # MODIF
+	'forum_url' => 'URL៖', # MODIF
 	'forum_valider' => 'ធ្វើ​អោយ​សុពលភាព ជំរើស នេះ',
-	'forum_voir_avant' => 'មើល​សារនេះ ​មុននឹងដាក់ប្រកាសវា',
-	'forum_votre_email' => 'អាសយដ្ឋាន​អ៊ីមែវល៍ ​របស់​អ្នក៖',
-	'forum_votre_nom' => 'ឈ្មោះ (​ឬ​ ឈ្មោះ​ហៅ​ក្រៅ​) របស់​អ្នក៖',
+	'forum_voir_avant' => 'មើល​សារនេះ ​មុននឹងដាក់ប្រកាសវា', # MODIF
+	'forum_votre_email' => 'អាសយដ្ឋាន​អ៊ីមែវល៍ ​របស់​អ្នក៖', # MODIF
+	'forum_votre_nom' => 'ឈ្មោះ (​ឬ​ ឈ្មោះ​ហៅ​ក្រៅ​) របស់​អ្នក៖', # MODIF
 	'forum_vous_enregistrer' => 'ដើម្បី​ចូលរួម ​វេទិកា​នេះ, អ្នក​ត្រូវតែជាដំបូង ​ចុះ​ឈ្មោះ​។ អរគុណ​ ដែល​បញ្ចូល​អត្តសញ្ញា​ផ្ទាល់ខ្លួន​ ដែលត្រូវ​បាន​ផ្ដល់​ជូន​អ្នក។ បើ​អ្នក​មិន​ទាន់​ចុះ​ឈ្មោះ​, អ្នក​ត្រូវតែ',
 	'forum_vous_inscrire' => 'ចុះ​ឈ្មោះ អ្នក។',
 
@@ -105,8 +108,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'ចំលើយ ទៅ​អត្ថបទ',
 	'lien_reponse_breve_2' => 'ចំលើយ ទៅ​ពត៌មានខ្លី',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'ចំលើយ ទៅផ្នែក',
-	'lien_reponse_site_reference' => 'ចំលើយ ទៅវ៉ែបសៃថ៍យោង៖',
+	'lien_reponse_site_reference' => 'ចំលើយ ទៅវ៉ែបសៃថ៍យោង៖', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

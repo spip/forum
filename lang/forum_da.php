@@ -41,20 +41,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Klik  <a href=\'@retour_forum@\'>her</a> for at fortsætte.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Dette forum benytter forhåndsgodkendelse: dit bidrag vil først blive offentliggjort, når det er godkendt af en administrator.',
-	'forum_lien_hyper' => '<b>Hypertekst link</b> (valgfrit)',
+	'forum_lien_hyper' => '<b>Hypertekst link</b> (valgfrit)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Endeligt indlæg: send til webstedet',
 	'forum_message_trop_long' => 'Dit indlæg er for langt. Maksimal længde er 20.000 tegn.',
 	'forum_ne_repondez_pas' => 'Undlad at besvare denne e-mail, men gå i stedet til forummet på denne adresse:', # MODIF
 	'forum_page_url' => '(Hvis dit indlæg henviser til en artikel, der er offentliggjort på Internettet, eller til en side der indeholder yderligere oplysninger, så angiv venligst sidens titel og dens adresse eller URL nedenfor).',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Indlæg @parauteur@ som svar på din artikel.', # MODIF
-	'forum_qui_etes_vous' => '<b>Hvem er du?</b> (valgfrit)',
-	'forum_texte' => 'Indlæggets tekst:',
-	'forum_titre' => 'Titel:',
-	'forum_url' => 'URL:',
+	'forum_qui_etes_vous' => '<b>Hvem er du?</b> (valgfrit)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Indlæggets tekst:', # MODIF
+	'forum_titre' => 'Titel:', # MODIF
+	'forum_url' => 'URL:', # MODIF
 	'forum_valider' => 'Kontroller gyldighed',
-	'forum_voir_avant' => 'Vis indlæg før indsendelse',
-	'forum_votre_email' => 'Din e-mail-adresse:',
-	'forum_votre_nom' => 'Dit navn (eller alias):',
+	'forum_voir_avant' => 'Vis indlæg før indsendelse', # MODIF
+	'forum_votre_email' => 'Din e-mail-adresse:', # MODIF
+	'forum_votre_nom' => 'Dit navn (eller alias):', # MODIF
 	'forum_vous_enregistrer' => 'Før du kan deltage i dette forum,
 		skal du tilmelde dig. Indtast venligst nedenfor de
 		personlige adgangsoplysninger, du har fået tilsendt.
@@ -111,8 +114,9 @@ De vil være lukkede i forhold til afsnit, meddelelser osv..',
 	// L
 	'lien_reponse_article' => 'Kommenter denne artikel',
 	'lien_reponse_breve_2' => 'Kommenter denne nyhed',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Kommenter dette afsnit',
-	'lien_reponse_site_reference' => 'Kommenter dette link:',
+	'lien_reponse_site_reference' => 'Kommenter dette link:', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

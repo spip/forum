@@ -45,20 +45,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Нажмите  <a href=\'@retour_forum@\'>сюда</a> для продолжения.',
 	'forum_forum' => 'форум',
 	'forum_info_modere' => 'Этот форум модерируется заранее: ваше сообщение появиться после того как его утвердит администратор.',
-	'forum_lien_hyper' => '<b>Ссылка</b> (необязательно)',
+	'forum_lien_hyper' => '<b>Ссылка</b> (необязательно)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Всё верно! Отправить!',
 	'forum_message_trop_long' => 'Ваше сообщение слишком длинно. Максимальная длина 20000 символов.',
 	'forum_ne_repondez_pas' => 'Не отвечайте на эту почту  на форуме в следующих адресеах:',
 	'forum_page_url' => '(Если ваше сообщение обращено к статьям изданным в сети или к странице, обеспечивающей дальнейшую информацию, пожалуйста введите заголовок страницы и ее URL ниже).',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => '@parauteur@ прокомментировал вашу статью.',
-	'forum_qui_etes_vous' => '<b>Кто вы?</b> (необязательно)',
-	'forum_texte' => 'Текст сообщения:',
-	'forum_titre' => 'Тема:',
-	'forum_url' => 'URL:',
+	'forum_qui_etes_vous' => '<b>Кто вы?</b> (необязательно)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Текст сообщения:', # MODIF
+	'forum_titre' => 'Тема:', # MODIF
+	'forum_url' => 'URL:', # MODIF
 	'forum_valider' => 'Подтвердите выбор',
-	'forum_voir_avant' => 'Предварительный просмотр сообщения перед отправлением',
-	'forum_votre_email' => 'Ваш e-mail адрес:',
-	'forum_votre_nom' => 'Ваше имя (или псевдоним):',
+	'forum_voir_avant' => 'Предварительный просмотр сообщения перед отправлением', # MODIF
+	'forum_votre_email' => 'Ваш e-mail адрес:', # MODIF
+	'forum_votre_nom' => 'Ваше имя (или псевдоним):', # MODIF
 	'forum_vous_enregistrer' => 'Для участия в
   этом форуме, вы должны зарегистрироваться. Введите персоналый  идентификатор,
   высланный вам.',
@@ -117,8 +120,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'Ответить на статью',
 	'lien_reponse_breve_2' => 'Ответить на новость',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Ответить на раздел',
-	'lien_reponse_site_reference' => 'Ответить на ссылающийся сайт:',
+	'lien_reponse_site_reference' => 'Ответить на ссылающийся сайт:', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

@@ -42,21 +42,24 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Cliccate <a href=\'@retour_forum@\'>quì</a> per cuntinuà.',
 	'forum_forum' => 'foru',
 	'forum_info_modere' => 'Stu foru hè muderatu prima : u vostru cuntributu cumpariscerà solu dopu esse statu accunsentutu da un amministratore di u situ.',
-	'forum_lien_hyper' => '<b>Lea ipertestu</b> (micca ubbligatoria)',
+	'forum_lien_hyper' => '<b>Lea ipertestu</b> (micca ubbligatoria)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Messagiu definitivu : mandà à u situ',
 	'forum_message_trop_long' => 'U vostru messagiu hè troppu longu. A taglia màsima hè di 20 000 caràtteri.',
 	'forum_ne_repondez_pas' => 'Ùn rispundite micca à stu mail ma piuttostu nant\'à u foru, à st\'indirizzu :', # MODIF
 	'forum_page_url' => '(Sì u vostru messagiu siriferisce à un artìculu pubblicatu nant\'à u web, o à una pàgina 
 	chì furnisce di più infurmazioni, pudete puru rinsignà custì u tìtulu di a pàgina cù u so indirizzu.)',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Messagiu postu@parauteur@ in coda di l\'artìculu « @titre@ ».',
-	'forum_qui_etes_vous' => '<b>Quale site ?</b> (micca ubbligatoriu)',
-	'forum_texte' => 'Testu di u vostru messagiu :',
-	'forum_titre' => 'Tìtulu :',
-	'forum_url' => 'URL :',
+	'forum_qui_etes_vous' => '<b>Quale site ?</b> (micca ubbligatoriu)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Testu di u vostru messagiu :', # MODIF
+	'forum_titre' => 'Tìtulu :', # MODIF
+	'forum_url' => 'URL :', # MODIF
 	'forum_valider' => 'Cunvalidà sta scelta',
-	'forum_voir_avant' => 'Vede u messagiu prima di pustà lu',
-	'forum_votre_email' => 'U vostru indirizzu email :',
-	'forum_votre_nom' => 'U vostru nome (o pseudo) :',
+	'forum_voir_avant' => 'Vede u messagiu prima di pustà lu', # MODIF
+	'forum_votre_email' => 'U vostru indirizzu email :', # MODIF
+	'forum_votre_nom' => 'U vostru nome (o pseudo) :', # MODIF
 	'forum_vous_enregistrer' => 'Per participà à stu foru, duvite esse digià arregistratu. 
 		Rinsignate puru quì sottu u còdice persunale chì v\'hè statu furnitu.
 		Sè vo ùn site ancu à arregistrà, vi tocca à',
@@ -120,8 +123,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'Risposta à l\'artìculu',
 	'lien_reponse_breve_2' => 'Risposta i dispacci',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Risposta à a rùbbrica',
-	'lien_reponse_site_reference' => 'Risposta à u situ riferitu :',
+	'lien_reponse_site_reference' => 'Risposta à u situ riferitu :', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

@@ -45,20 +45,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Kliknij <a href=\'@retour_forum@\'>tutaj</a> aby kontynuować.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'To forum jest moderowane : Twój wpis ukaże się dopiero po weryfikacji przez administratora strony.',
-	'forum_lien_hyper' => '<b>Link</b> (opcjonalny)',
+	'forum_lien_hyper' => '<b>Link</b> (opcjonalny)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Wiadomość końcowa: wyślij na stronę',
 	'forum_message_trop_long' => 'Twoja wiadomość jest za długa. Maksymalna długość to 20000 znaków.',
 	'forum_ne_repondez_pas' => 'Nie odpowiadaj na tego maila, lecz na forum, pod następującym adresem:', # MODIF
 	'forum_page_url' => '(Jeśli twoja wiadomość odnosi się jakiegoś artykuły opublikowanego w internecie, wpisz poniżej tytuł tej strony oraz jej adres).',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Wiadomość na temat twojego artykułu napisana przez@parauteur@.',
-	'forum_qui_etes_vous' => '<b>Kim jesteś?</b> (nieobowiązkowe)',
-	'forum_texte' => 'Tekst Twojej wiadomości:',
-	'forum_titre' => 'Temat:',
-	'forum_url' => 'URL:',
+	'forum_qui_etes_vous' => '<b>Kim jesteś?</b> (nieobowiązkowe)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Tekst Twojej wiadomości:', # MODIF
+	'forum_titre' => 'Temat:', # MODIF
+	'forum_url' => 'URL:', # MODIF
 	'forum_valider' => 'Zatwierdź ten wybór',
-	'forum_voir_avant' => 'Podgląd wiadomości przed umieszczeniem na forum',
-	'forum_votre_email' => 'Twój adres e-mail:',
-	'forum_votre_nom' => 'Twoje imię (lub alias):',
+	'forum_voir_avant' => 'Podgląd wiadomości przed umieszczeniem na forum', # MODIF
+	'forum_votre_email' => 'Twój adres e-mail:', # MODIF
+	'forum_votre_nom' => 'Twoje imię (lub alias):', # MODIF
 	'forum_vous_enregistrer' => 'Aby uczestniczyć w
   tym forum - musisz się zarejestrować Dziękuję
   za wprowadzenie loginu
@@ -118,8 +121,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'Odpowiedz na ten artykuł',
 	'lien_reponse_breve_2' => 'Odpowiedz na ten news',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Odpowiedz w tym dziale',
-	'lien_reponse_site_reference' => 'Odwołanie się do zlinkowanej strony :',
+	'lien_reponse_site_reference' => 'Odwołanie się do zlinkowanej strony :', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

@@ -39,20 +39,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Klicka <a href=\'@retour_forum@\'>här</a> för att fortsätta.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Detta forum är modererat: ditt bidrag kommer att synas först när någon moderator har godkänt  det.',
-	'forum_lien_hyper' => '<b>Länk</b> (valfritt)',
+	'forum_lien_hyper' => '<b>Länk</b> (valfritt)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Slutligt meddelande: skicka till sajten',
 	'forum_message_trop_long' => 'Ditt meddelande är för långt. Det får inte vara mer än 2000 tecken.',
 	'forum_ne_repondez_pas' => 'Svara inte på detta brev utan i forumet på denna adress:', # MODIF
 	'forum_page_url' => '(Om ditt meddelande refererar till en artikel publicerad på webben eller till en sida med mer information, ange namnet på sidan och dess adress nedan).',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Meddelande inskickat@parauteur@ efter din artikel',
-	'forum_qui_etes_vous' => '<b>Vem är du?</b> (valfritt)',
-	'forum_texte' => 'Texten i meddelandet:',
-	'forum_titre' => 'Ämne:',
-	'forum_url' => 'URL:',
+	'forum_qui_etes_vous' => '<b>Vem är du?</b> (valfritt)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Texten i meddelandet:', # MODIF
+	'forum_titre' => 'Ämne:', # MODIF
+	'forum_url' => 'URL:', # MODIF
 	'forum_valider' => 'Granska valet',
-	'forum_voir_avant' => 'Förhandsgranska meddelandet innan du skickar det',
-	'forum_votre_email' => 'Din epost-adress',
-	'forum_votre_nom' => 'Ditt namn (eller alias):',
+	'forum_voir_avant' => 'Förhandsgranska meddelandet innan du skickar det', # MODIF
+	'forum_votre_email' => 'Din epost-adress', # MODIF
+	'forum_votre_nom' => 'Ditt namn (eller alias):', # MODIF
 	'forum_vous_enregistrer' => 'För att delta
  i detta forum måste du vara registrerad. Var vänlig
   att skriv in ditt användarnamn som du fick.
@@ -112,8 +115,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'Svara på artikeln',
 	'lien_reponse_breve_2' => 'Skriv ett svar på nyheten',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Skriv ett svar till avdelningen',
-	'lien_reponse_site_reference' => 'Réponse au site référencé :', # NEW
+	'lien_reponse_site_reference' => 'Réponse au site référencé :', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

@@ -39,20 +39,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Kliknite <a href=\'@retour_forum@\'>ici</a> da bi ste nastavili.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Ovaj forum je vlasnistvo urednika: vas prijedlog ce biti postavljen tek nakon sto je ovjeren od strane administratora.',
-	'forum_lien_hyper' => '<b>Hipertekstualni link</b> (optionnel)',
+	'forum_lien_hyper' => '<b>Hipertekstualni link</b> (optionnel)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Definitivna poruka: posalji na stranicu',
 	'forum_message_trop_long' => 'Vasa poruka je preduga. Maksimalna velicina je 20000 karaktera.',
 	'forum_ne_repondez_pas' => 'Ne odgovarajte na ovu poruku osim u forumu na sljedecu adresu:', # MODIF
 	'forum_page_url' => '(Ako se vasa poruka odnosi na clanak objavljen na web-u, ili na stranicu koja pruza dodatne informacije, mozete na kraju naznaciti naziv i URL adresu stranice.)',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Poruku postavio/la@parauteur@; poruka slijedi nakon vaseg clanka.', # MODIF
-	'forum_qui_etes_vous' => '<b>Ko ste?</b> (optionnel)',
-	'forum_texte' => 'Tekst vase poruke:',
-	'forum_titre' => 'Tema:',
-	'forum_url' => 'URL:',
+	'forum_qui_etes_vous' => '<b>Ko ste?</b> (optionnel)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Tekst vase poruke:', # MODIF
+	'forum_titre' => 'Tema:', # MODIF
+	'forum_url' => 'URL:', # MODIF
 	'forum_valider' => 'Ptvrdite ovaj izbor',
-	'forum_voir_avant' => 'Pogledaj poruku',
-	'forum_votre_email' => 'Vasa e-mail adresa:',
-	'forum_votre_nom' => 'Vase ime (ili pseudonim):',
+	'forum_voir_avant' => 'Pogledaj poruku', # MODIF
+	'forum_votre_email' => 'Vasa e-mail adresa:', # MODIF
+	'forum_votre_nom' => 'Vase ime (ili pseudonim):', # MODIF
 	'forum_vous_enregistrer' => 'Da bi ste ucestvovali u ovom forumu, morate se prijaviti. Naznacite ispod licni identifikator koji vam je dodjeljen. Ako niste vec registrovani, trebate',
 	'forum_vous_inscrire' => 'se upisati.',
 
@@ -105,8 +108,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'Odgovori na clanak',
 	'lien_reponse_breve_2' => 'Odgovori na kratku poruku',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Odgovori na rubriku',
-	'lien_reponse_site_reference' => 'Odgovori na referenciranu stranicu:',
+	'lien_reponse_site_reference' => 'Odgovori na referenciranu stranicu:', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

@@ -41,20 +41,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Faceţi click <a href=\'@retour_forum@\'>aici</a> pentru a continua.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Acest forum este moderat: contribuţia dumneavoastră nu va apare decât după ce va fi validată de către un administrator al site-ului.',
-	'forum_lien_hyper' => '<b>Legătură hipertext</b> (opţională)',
+	'forum_lien_hyper' => '<b>Legătură hipertext</b> (opţională)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Mesaj definitiv : trimiteţi către site',
 	'forum_message_trop_long' => 'Mesajul dumneavoastră este prea lung. Puteți folosi maxim 20.000 caractere.',
 	'forum_ne_repondez_pas' => 'Nu răspundeţi acestui email, ci direct pe forum la adresa următoare :', # MODIF
 	'forum_page_url' => '(Dacă mesajul se referă la un articol publicat pe Web sau la o pagină cu informaţii suplimentare, indicaţi mai jos titlul şi adresa URL a paginii.)',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Mesaj publicat de @parauteur@ ca răspuns la articolul « @titre@ ».',
-	'forum_qui_etes_vous' => '<b>Cine sunteţi dumneavoastră ?</b> (opţional)',
-	'forum_texte' => 'Textul mesajului dumneavoastră :',
-	'forum_titre' => 'Titlu :',
-	'forum_url' => 'URL :',
+	'forum_qui_etes_vous' => '<b>Cine sunteţi dumneavoastră ?</b> (opţional)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Textul mesajului dumneavoastră :', # MODIF
+	'forum_titre' => 'Titlu :', # MODIF
+	'forum_url' => 'URL :', # MODIF
 	'forum_valider' => 'Validaţi această alegere',
-	'forum_voir_avant' => 'Vedeţi acest mesaj înainte de a-l trimite',
-	'forum_votre_email' => 'Adresa dumneavoastră de email :',
-	'forum_votre_nom' => 'Numele dumneavoastră (sau pseudonimul) :',
+	'forum_voir_avant' => 'Vedeţi acest mesaj înainte de a-l trimite', # MODIF
+	'forum_votre_email' => 'Adresa dumneavoastră de email :', # MODIF
+	'forum_votre_nom' => 'Numele dumneavoastră (sau pseudonimul) :', # MODIF
 	'forum_vous_enregistrer' => 'Pentru a participa
   la acest forum, trebuie să vă înregistraţi în prealabil. Vă rugăm să furnizaţi identificatorul personal care v-a fost furnizat.
   Dacă nu sunteţi deja înregistrat, va trebui',
@@ -112,8 +115,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'Răspuns la articol',
 	'lien_reponse_breve_2' => 'Răspuns la ştire',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Răspuns la rubrica',
-	'lien_reponse_site_reference' => 'Răspuns la site-ul referenţiat :',
+	'lien_reponse_site_reference' => 'Răspuns la site-ul referenţiat :', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

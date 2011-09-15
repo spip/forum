@@ -45,20 +45,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => '单击  <a href=\'@retour_forum@\'>这里</a> 继续.',
 	'forum_forum' => '论坛',
 	'forum_info_modere' => '论坛是预缓冲的: 您的投稿只有被站点管理员确认才能显示.',
-	'forum_lien_hyper' => '<MODIF><b>超链接</b> (可选)',
+	'forum_lien_hyper' => '<MODIF><b>超链接</b> (可选)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => '最后消息: 发送到站点',
 	'forum_message_trop_long' => '您的消息过长. 最大长度为20000个字符.',
 	'forum_ne_repondez_pas' => '请勿回复该信件,请到如下地址的论坛回复:', # MODIF
 	'forum_page_url' => '(如果您的消息引用了web上发表的文章请提供进一步的消息, 请输入页头和它的URL).',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => '您文章@parauteur@之后后发表的信息.', # MODIF
 	'forum_qui_etes_vous' => '<b>您是谁?</b> (可选)', # MODIF
-	'forum_texte' => '消息正文:',
-	'forum_titre' => '标题:',
-	'forum_url' => 'URL:',
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => '消息正文:', # MODIF
+	'forum_titre' => '标题:', # MODIF
+	'forum_url' => 'URL:', # MODIF
 	'forum_valider' => '使选择生效',
-	'forum_voir_avant' => '发表前预览',
-	'forum_votre_email' => '您的邮件地址:',
-	'forum_votre_nom' => '您的名字(或昵称):',
+	'forum_voir_avant' => '发表前预览', # MODIF
+	'forum_votre_email' => '您的邮件地址:', # MODIF
+	'forum_votre_nom' => '您的名字(或昵称):', # MODIF
 	'forum_vous_enregistrer' => '在参与论坛前,您必须注册. 谢谢您填写已经递交过的个人信息.
 如果你您尚未注册, 您必须',
 	'forum_vous_inscrire' => '请注册。',
@@ -116,8 +119,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => '回应文章',
 	'lien_reponse_breve_2' => '回应新闻',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => '回应专栏',
-	'lien_reponse_site_reference' => '回应到参考站点:',
+	'lien_reponse_site_reference' => '回应到参考站点:', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

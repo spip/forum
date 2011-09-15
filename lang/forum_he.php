@@ -45,20 +45,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'נא להקליק  <a href=\'@retour_forum@\'>כאן</a> כדי להמשיך.',
 	'forum_forum' => 'פורום',
 	'forum_info_modere' => 'הפורום מתצמצם מראש: התרומה שלך תופיע רק אחרי אישור מנהלי האתר.',
-	'forum_lien_hyper' => '<b>קישור</b> (אופציונלי)',
+	'forum_lien_hyper' => '<b>קישור</b> (אופציונלי)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'הודעה סופית : שלח לאתר',
 	'forum_message_trop_long' => 'ההודעה שלך ארוכה מדי. אורך מקסימלי של הודעה צריך להיות 20000 אותיות.',
 	'forum_ne_repondez_pas' => 'אל תחזיר תשובה לדוא"ל הזה אבל בפורום בכתובת הבאה:', # MODIF
 	'forum_page_url' => '(אם הודעתך מופנית למאמר שמפורסם ברשת או לדף המספק מידע נוסף, בבקשה רשום את הכותרת של הדף והכתובת הכללית שלו.)',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'הודעה נשלחה @parauteur@ העוסקת בכתבתך « @titre@ ».',
-	'forum_qui_etes_vous' => '<b>מי את / אתה?</b> (אופציונלי)',
-	'forum_texte' => 'טקסט של הודעתך :',
-	'forum_titre' => 'נושא:',
-	'forum_url' => 'כתובת כללית:',
+	'forum_qui_etes_vous' => '<b>מי את / אתה?</b> (אופציונלי)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'טקסט של הודעתך :', # MODIF
+	'forum_titre' => 'נושא:', # MODIF
+	'forum_url' => 'כתובת כללית:', # MODIF
 	'forum_valider' => 'תן תוקף לבחירה הזאת',
-	'forum_voir_avant' => 'הצגה מוקדמת של ההודעה לפני פרסומה',
-	'forum_votre_email' => 'כתובת הדוא"ל שלך:',
-	'forum_votre_nom' => ':(השם שלך (או הכינוי',
+	'forum_voir_avant' => 'הצגה מוקדמת של ההודעה לפני פרסומה', # MODIF
+	'forum_votre_email' => 'כתובת הדוא"ל שלך:', # MODIF
+	'forum_votre_nom' => ':(השם שלך (או הכינוי', # MODIF
 	'forum_vous_enregistrer' => 'כדי להשתתף
   לפורום זה, ההרשמה מחויבת
   נא להכנסי את הפרטים האישים
@@ -119,8 +122,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'Réponse à l\'article', # NEW
 	'lien_reponse_breve_2' => 'תגובה למבזק',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Réponse à la rubrique', # NEW
-	'lien_reponse_site_reference' => 'Réponse au site référencé :', # NEW
+	'lien_reponse_site_reference' => 'Réponse au site référencé :', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

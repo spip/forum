@@ -45,20 +45,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Click  <a href=\'@retour_forum@\'>here</a> to continue.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Posts in this forum are moderated before publication: your contribution will only appear after being validated by a site administrator.',
-	'forum_lien_hyper' => '<b>Hypertext link</b> (optional)',
+	'forum_lien_hyper' => '<b>Hypertext link</b> (optional)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Finished editing: submit message',
 	'forum_message_trop_long' => 'Your message is too long. Maximum length is  20000 characters.',
 	'forum_ne_repondez_pas' => 'Do not reply directly to this email - please use the online forum here:',
 	'forum_page_url' => '(If your message refers to an article published on the web or to a page providing further information, please enter the title of the page and its URL below).',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Message posted@parauteur@ following your article "@titre@".',
-	'forum_qui_etes_vous' => '<b>Who are you?</b> (optional)',
-	'forum_texte' => 'Text of your message:',
-	'forum_titre' => 'Subject:',
-	'forum_url' => 'URL:',
+	'forum_qui_etes_vous' => '<b>Who are you?</b> (optional)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Text of your message:', # MODIF
+	'forum_titre' => 'Subject:', # MODIF
+	'forum_url' => 'URL:', # MODIF
 	'forum_valider' => 'Validate your choice',
-	'forum_voir_avant' => 'Preview message before posting',
-	'forum_votre_email' => 'Your email address:',
-	'forum_votre_nom' => 'Your name (or alias):',
+	'forum_voir_avant' => 'Preview message before posting', # MODIF
+	'forum_votre_email' => 'Your email address:', # MODIF
+	'forum_votre_nom' => 'Your name (or alias):', # MODIF
 	'forum_vous_enregistrer' => 'You must be registered before participating in
   this forum. Please
   enter your personal identifier
@@ -116,8 +119,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'Comment on this article',
 	'lien_reponse_breve_2' => 'Comment on this news item',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Comment on this section',
-	'lien_reponse_site_reference' => 'Comment on this website:',
+	'lien_reponse_site_reference' => 'Comment on this website:', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

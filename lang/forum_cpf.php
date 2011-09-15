@@ -43,20 +43,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_info_modere' => 'Forom kozman lé modéré-dovan : lé néséser inn komander la finn konfirm ali pour out kontribusyon i aparé an liyn.
 
 ',
-	'forum_lien_hyper' => '<b>Gatiraz</b> (lé pa obligatwar)',
+	'forum_lien_hyper' => '<b>Gatiraz</b> (lé pa obligatwar)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Modékri-la lé fini : anvwa ali si lo sitwèb',
 	'forum_message_trop_long' => 'Out modékri lé tro lon. Li dwa pa dépas plid 20000 karaktèr-linprimri.',
 	'forum_ne_repondez_pas' => 'Pou réponn limél-la, anserv lo forom kozman ou sava trouv tèrla (réponn pa èk inn ot limèl mé zizt inn modékri sir lo sitwèb):', # MODIF
 	'forum_page_url' => '(Si out modékri li ranvwa si inn lartik si lo Wèb o inn ot paz pli konplé déor, mèrsi mèt anba lo non lapazwèb èk son ladrès URL.)',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Modékri-la, @parauteur@ la post ali pou réponn out lartik.', # MODIF
-	'forum_qui_etes_vous' => '<b>Kisa ou lé ?</b> (réponn lé pa obligatwar)',
-	'forum_texte' => 'Lo tèks out modékri :',
-	'forum_titre' => 'Non :',
-	'forum_url' => 'URL :',
+	'forum_qui_etes_vous' => '<b>Kisa ou lé ?</b> (réponn lé pa obligatwar)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Lo tèks out modékri :', # MODIF
+	'forum_titre' => 'Non :', # MODIF
+	'forum_url' => 'URL :', # MODIF
 	'forum_valider' => 'Konfirm out swa',
-	'forum_voir_avant' => 'Artourn gét modékri-la avann konfirm ali',
-	'forum_votre_email' => 'Out ladrès imèl  :',
-	'forum_votre_nom' => 'Out vrénon (ou ti-non-gaté) :',
+	'forum_voir_avant' => 'Artourn gét modékri-la avann konfirm ali', # MODIF
+	'forum_votre_email' => 'Out ladrès imèl  :', # MODIF
+	'forum_votre_nom' => 'Out vrénon (ou ti-non-gaté) :', # MODIF
 	'forum_vous_enregistrer' => 'Pou mèt ansanm dann forom-la, ifo anrozistr aou. Mersi pou mèt anba latèr nondkod-lidantité sak ni la donn aou. Si ou lé pa anrozistré, i dwa',
 	'forum_vous_inscrire' => 'inskri a ou </a>.',
 
@@ -111,8 +114,9 @@ sanm inn limèl. Indik tèrla si ou vé anserv lopsyon-la ?', # MODIF
 	// L
 	'lien_reponse_article' => 'Réponn lartik-la',
 	'lien_reponse_breve_2' => 'Répons pou tit-nouvèl',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Répons pou rubrik-la',
-	'lien_reponse_site_reference' => 'Répons pou sit-la:',
+	'lien_reponse_site_reference' => 'Répons pou sit-la:', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

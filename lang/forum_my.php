@@ -39,20 +39,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'ဤနေရာကို<a href=\'@retour_forum@\'>နှိပ်ပြီး</a>ဆက်သွားပါ',
 	'forum_forum' => 'ဖိုရမ်',
 	'forum_info_modere' => 'ဤဖိုရမ်သည် အတည်ပြုချက်လိုအပ်​သည်၊ သင့်ပါဝင်ရေးသားမှုသည် ဆိုက်ကြီးကြပ်သူမှ အတည်ပြုပြီးရင် ပေါ်လာပါလိမ့်မည်',
-	'forum_lien_hyper' => '<b>Hypertext ဆက်သွယ်မှု</b> (optional)',
+	'forum_lien_hyper' => '<b>Hypertext ဆက်သွယ်မှု</b> (optional)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'ဆိုက်သို့ပို့ပြီးကြောင်း နောက်ဆုံးအကြောင်းကြားခြင်း',
 	'forum_message_trop_long' => 'သင့်စာစောင် အလွန်ရှည်ပါသည်၊ အများဆုံး စာလုံး ၂ဝဝဝဝ သာရှိသင့်သည်',
 	'forum_ne_repondez_pas' => 'ဤမေးလ်ကို တိုက်ရိုက် အကြောင်းမပြန်ပါနှင့်၊ အောက်ပါလိပ်စာမှ ပြန်ပါ', # MODIF
 	'forum_page_url' => '(သင့်ဆောင်ပါး ထုတ်ဝေမှုကို ဒီစာစောင်မ ညွှန်းထားတယ်ဆိုရင်တော့၊ အောက်ဖော်ပြပါနေရာတွင် စာမျက်နှာခေါင်းစဉ်နှင့် လိပ်စာကိုထည့်သွင်းပါ။)',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'သင့်ဆောင်းပါး \\"@titre@\\" တင်သွင်းပြီးကြောင်း @parauteur@',
-	'forum_qui_etes_vous' => '<b>သင်ဘယ်သူလဲ?</b> (optional)',
-	'forum_texte' => 'သင့်စာစောင်၏ စာသားများ',
-	'forum_titre' => 'အကြောင်းအရာ',
-	'forum_url' => 'ဝက်ဘ်လိပ်စာ',
+	'forum_qui_etes_vous' => '<b>သင်ဘယ်သူလဲ?</b> (optional)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'သင့်စာစောင်၏ စာသားများ', # MODIF
+	'forum_titre' => 'အကြောင်းအရာ', # MODIF
+	'forum_url' => 'ဝက်ဘ်လိပ်စာ', # MODIF
 	'forum_valider' => 'ဤရွေးချယ်မှုကို အတည်ပြုရန်',
-	'forum_voir_avant' => 'စာစောင်မတင်သွင်းမှီ အရင်ကြည့်ရှုရန်',
-	'forum_votre_email' => 'သင့်အီးမေးလ်လိပ်စာ',
-	'forum_votre_nom' => 'သင့်နာမည်',
+	'forum_voir_avant' => 'စာစောင်မတင်သွင်းမှီ အရင်ကြည့်ရှုရန်', # MODIF
+	'forum_votre_email' => 'သင့်အီးမေးလ်လိပ်စာ', # MODIF
+	'forum_votre_nom' => 'သင့်နာမည်', # MODIF
 	'forum_vous_enregistrer' => 'သင့်ကိုပေးထားသော မှတ်ပုံတင်နံပါတ်နှင့်ဝင်ပါ သို့မဟုတ် ဤဖိုရမ်ထဲ အထူးနေရာမှ ပါဝင် ရန် အရင်မှတ်ပုံတင်ပါ',
 	'forum_vous_inscrire' => 'မှတ်ပုံတင်ရန်',
 
@@ -106,8 +109,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'ဆောင်းပါးသို့ ပြန်တုန့်ပြန်ပါ',
 	'lien_reponse_breve_2' => 'သတင်းအချက်သို့ အကြောင်းပြန်ပါ',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'အခန်းကဏ္ဍသို့ အကြောင်းပြန်ပါ',
-	'lien_reponse_site_reference' => 'ကိုးကားဝက်ဘ်ဆိုက်သို့ အကြောင်းပြန်ပါ',
+	'lien_reponse_site_reference' => 'ကိုးကားဝက်ဘ်ဆိုက်သို့ အကြောင်းပြန်ပါ', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

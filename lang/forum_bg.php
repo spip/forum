@@ -45,20 +45,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Изберете <a href=\'@retour_forum@\'>тук</a> за да продължите.',
 	'forum_forum' => 'форум',
 	'forum_info_modere' => 'Форумът се модерира предварително: Вашият принос ще се появи след одобрението от администратора.',
-	'forum_lien_hyper' => '<b>Хипертекстова препратка</b> (по избор)',
+	'forum_lien_hyper' => '<b>Хипертекстова препратка</b> (по избор)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Последно съобщение: изпращане до сайта',
 	'forum_message_trop_long' => 'Съобщението е прекалено дълго. Максимално можете да впишете 20000 знака.',
 	'forum_ne_repondez_pas' => 'Не отговаряйте на съобщението директно, а във форума на следния адрес:', # MODIF
 	'forum_page_url' => '(Ако съобщението Ви се отнася към вече публикувана статия или към Интернет страница с повече информация, моля впишете името на старницата и нейния URL адрес по-долу).',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Изпратено е съобщение @parauteur@, следващо статията.', # MODIF
-	'forum_qui_etes_vous' => '<b>Кой сте Вие?</b> (по избор)',
-	'forum_texte' => 'Текст на съобщението:',
-	'forum_titre' => 'Тема:',
-	'forum_url' => 'URL адрес:',
+	'forum_qui_etes_vous' => '<b>Кой сте Вие?</b> (по избор)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Текст на съобщението:', # MODIF
+	'forum_titre' => 'Тема:', # MODIF
+	'forum_url' => 'URL адрес:', # MODIF
 	'forum_valider' => 'Одобряване на избора',
-	'forum_voir_avant' => 'Преглед на съобщението преди изпращане',
-	'forum_votre_email' => 'Вашият електронен адрес:',
-	'forum_votre_nom' => 'Вашето име (или псевдоним):',
+	'forum_voir_avant' => 'Преглед на съобщението преди изпращане', # MODIF
+	'forum_votre_email' => 'Вашият електронен адрес:', # MODIF
+	'forum_votre_nom' => 'Вашето име (или псевдоним):', # MODIF
 	'forum_vous_enregistrer' => 'Преди да участвате в този форум
   е необходимо да се регистрирате. Благодарим,
   че отворихте личния си идентификатор,
@@ -118,8 +121,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'Отговор на статията',
 	'lien_reponse_breve_2' => 'Отговор на новината',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Отговор в рубриката',
-	'lien_reponse_site_reference' => 'Отговор на свързания сайт:',
+	'lien_reponse_site_reference' => 'Отговор на свързания сайт:', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

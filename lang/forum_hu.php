@@ -43,20 +43,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Kattintson <a href=\'@retour_forum@\'>ide</a> a folytatáshoz.',
 	'forum_forum' => 'fórum',
 	'forum_info_modere' => 'Ez a fórum előre moderált : az Ön hozzászólása csak azután jelenik meg, hogy a honlap egyik adminisztrátora jóváhagyta.',
-	'forum_lien_hyper' => '<b>Hiperhivatkozás</b> (választható)',
+	'forum_lien_hyper' => '<b>Hiperhivatkozás</b> (választható)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Végleges üzenet: küldés a honlapra',
 	'forum_message_trop_long' => 'Az Ön üzenete túl hosszú. A maximális méret 20 000 karakter.',
 	'forum_ne_repondez_pas' => 'Ne erre az emailre válaszoljon, hanem a fórumon a következő címen:', # MODIF
 	'forum_page_url' => '(Amennyiben az Ön üzenete egy interneten publikált, vagy további információt tartalmazó oldalra vonatkozik, akkor adja meg az oldal nevét, illetve URL címét.)',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Az üzenetet @parauteur@ küldte, "@titre@" című cikkére válaszul.',
-	'forum_qui_etes_vous' => '<b>Kicsoda Ön?</b> (nem kötelező)',
-	'forum_texte' => 'Üzenetének szövege:',
-	'forum_titre' => 'Tárgy:',
-	'forum_url' => 'URL:',
+	'forum_qui_etes_vous' => '<b>Kicsoda Ön?</b> (nem kötelező)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Üzenetének szövege:', # MODIF
+	'forum_titre' => 'Tárgy:', # MODIF
+	'forum_url' => 'URL:', # MODIF
 	'forum_valider' => 'Érvényesítse választását',
-	'forum_voir_avant' => 'Küldés előtti előnézet megtekintése',
-	'forum_votre_email' => 'Az Ön email címe:',
-	'forum_votre_nom' => 'Az Öne neve (vagy beceneve):',
+	'forum_voir_avant' => 'Küldés előtti előnézet megtekintése', # MODIF
+	'forum_votre_email' => 'Az Ön email címe:', # MODIF
+	'forum_votre_nom' => 'Az Öne neve (vagy beceneve):', # MODIF
 	'forum_vous_enregistrer' => 'A fórum használatához
   kérjük, először regisztráljon. Lentebb adja meg
   a személyes azonosítót,
@@ -116,8 +119,9 @@ amit kapott. Amennyiben nincs regisztrálva, akkor',
 	// L
 	'lien_reponse_article' => 'Hozzászólás a cikkről',
 	'lien_reponse_breve_2' => 'Hozzászólás a hírhez',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Hozzászólás a rubrikához',
-	'lien_reponse_site_reference' => 'Hozzászólás a felvett honlaphoz :',
+	'lien_reponse_site_reference' => 'Hozzászólás a felvett honlaphoz :', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

@@ -44,20 +44,23 @@ utilizadores devem ter uma assinatura ao fornecer o seu endereço e-mail antes d
 	'forum_cliquer_retour' => 'Clicar <a href=\'@retour_forum@\'>ici</a> para continuar.',
 	'forum_forum' => 'fórum',
 	'forum_info_modere' => 'Este fórum está moderado a priori : a sua contribuição só aparecerá depois de ser validada por um administrador do sítio.',
-	'forum_lien_hyper' => '<b>Link hipertexto</b> (opcional)',
+	'forum_lien_hyper' => '<b>Link hipertexto</b> (opcional)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Mensagem definitiva: mandar para o sítio',
 	'forum_message_trop_long' => 'A sua mensagem é demasiado comprida. O tamanho máximo é 20000 carácteres.',
 	'forum_ne_repondez_pas' => 'Não responder para este mail mas no fórum, para o endereço seguinte:', # MODIF
 	'forum_page_url' => '(Se a sua mensagem se refere a um artigo publicado na Web, ou a uma página que fornece mais informações, por favor indique a seguir o título da página e o seu endereço URL.)',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Mensagem posta@parauteur@ depois do seu artigo', # MODIF
-	'forum_qui_etes_vous' => '<b>Quem é você?</b> (opcional)',
-	'forum_texte' => 'Texto da sua mensagem:',
-	'forum_titre' => 'Título:',
-	'forum_url' => 'URL:',
+	'forum_qui_etes_vous' => '<b>Quem é você?</b> (opcional)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Texto da sua mensagem:', # MODIF
+	'forum_titre' => 'Título:', # MODIF
+	'forum_url' => 'URL:', # MODIF
 	'forum_valider' => 'Validar a sua escolha',
-	'forum_voir_avant' => 'Ver esta mensagem antes de mandar',
-	'forum_votre_email' => 'O seu endereço email:',
-	'forum_votre_nom' => 'O seu nome (pseudónimo):',
+	'forum_voir_avant' => 'Ver esta mensagem antes de mandar', # MODIF
+	'forum_votre_email' => 'O seu endereço email:', # MODIF
+	'forum_votre_nom' => 'O seu nome (pseudónimo):', # MODIF
 	'forum_vous_enregistrer' => 'Para participar
  nesse fórum, deve estar previamente registado. É favor
   indicar a seguir o identificador pessoal que lhe foi
@@ -118,8 +121,9 @@ utilizadores devem ter uma assinatura ao fornecer o seu endereço e-mail antes d
 	// L
 	'lien_reponse_article' => 'Resposta ao artigo',
 	'lien_reponse_breve_2' => 'Resposta à notícia',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Resposta à rubrica ',
-	'lien_reponse_site_reference' => 'Resposta ao sítio referenciado',
+	'lien_reponse_site_reference' => 'Resposta ao sítio referenciado', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

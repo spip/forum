@@ -45,20 +45,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Kliknite <a href=\'@retour_forum@\'>sem,</a> aby ste mohli pokračovať.',
 	'forum_forum' => 'diskusné fórum',
 	'forum_info_modere' => 'Toto diskusné fórum sa kontroluje pred zverejnením: váš príspevok sa zobrazí až potom, čo ho schváli administrátor stránky.',
-	'forum_lien_hyper' => '<b>Hypertextový odkaz</b> (nepovinné)',
+	'forum_lien_hyper' => '<b>Hypertextový odkaz</b> (nepovinné)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Koniec úprav: poslať príspevok',
 	'forum_message_trop_long' => 'Vaša správa je pridlhá. Maximálna dĺžka je 20000 znakov.',
 	'forum_ne_repondez_pas' => 'Neodpovedajte na tento mejl priamo - prosím, použite diskusné fórum:',
 	'forum_page_url' => '(If your message refers to an article published on the web or to a page providing further information, please enter the title of the page and its URL below).',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Príspevky @parauteur@ k vášmu článku "@titre@".',
-	'forum_qui_etes_vous' => '<b>Kto ste?</b> (voliteľné)',
-	'forum_texte' => 'Text vášho príspevku:',
-	'forum_titre' => 'Predmet:',
-	'forum_url' => 'Adresa stránky:',
+	'forum_qui_etes_vous' => '<b>Kto ste?</b> (voliteľné)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Text vášho príspevku:', # MODIF
+	'forum_titre' => 'Predmet:', # MODIF
+	'forum_url' => 'Adresa stránky:', # MODIF
 	'forum_valider' => 'Potvrdiť výber',
-	'forum_voir_avant' => 'Zobraziť príspevok pred odoslaním',
-	'forum_votre_email' => 'Vaša e-mailová adresa:',
-	'forum_votre_nom' => 'Vaše meno (alebo alias):',
+	'forum_voir_avant' => 'Zobraziť príspevok pred odoslaním', # MODIF
+	'forum_votre_email' => 'Vaša e-mailová adresa:', # MODIF
+	'forum_votre_nom' => 'Vaše meno (alebo alias):', # MODIF
 	'forum_vous_enregistrer' => 'Na to, aby ste mohli diskutovať v tomto diskusnom fóre, musíte byť zaregistrovaný.
  Prosím, zadajte svoj osobný identifikátor.
   ak ste sa ešte nezaregistrovali, musíte',
@@ -83,9 +86,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_config_forums_prive_admin' => 'Diskusné fórum vyhradené pre administrátorov:',
 	'info_config_forums_prive_global' => 'Globálne diskusné fórum otvorené všetkým autorom:',
 	'info_config_forums_prive_objets' => 'Diskusné fórum pripojené ku každému článku, každej novinke, odkazovanej stránke, atď.:',
-	'info_desactiver_forum_public' => 'Disable the use of public
-	forums. Public forums could be allowed on a case by case
-	basis for the articles; they will be forbidden for the sections, news, etc.',
+	'info_desactiver_forum_public' => 'Deaktivuje používanie verejných
+ diskusných fór. Verejné diskusné fóra sa dajú povoliť na individuálnej báze
+ pri článkoch; budú zakázané pre rubriky, novinky a pod.',
 	'info_envoi_forum' => 'Posielať príspevky z diskusného fóra príslušným autorom',
 	'info_fonctionnement_forum' => 'Operácia diskusného fóra:',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
@@ -115,8 +118,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'Komentovať tento článok',
 	'lien_reponse_breve_2' => 'Komentovať túto novinku',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Komentovať túto rubriku',
-	'lien_reponse_site_reference' => 'Komentovať túto webovú stránku:',
+	'lien_reponse_site_reference' => 'Komentovať túto webovú stránku:', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

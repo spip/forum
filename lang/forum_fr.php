@@ -44,6 +44,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Ce forum est modéré à priori : votre contribution n\'apparaîtra qu\'après avoir été validée par un administrateur du site.',
 	'forum_lien_hyper' => 'Lien hypertexte',
+	'forum_message' => 'Votre message',
 	'forum_message_definitif' => 'Message définitif : envoyer au site',
 	'forum_message_trop_long' => 'Votre message est trop long. La taille maximale est de 20000 caractères.',
 	'forum_ne_repondez_pas' => 'Ne répondez pas à ce mail mais sur le forum à l\'adresse suivante :',
@@ -51,7 +52,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_permalink' => 'Lien permanent vers le commentaire',
 	'forum_poste_par' => 'Message posté@parauteur@ à la suite de l\'article « @titre@ ».',
 	'forum_qui_etes_vous' => 'Qui êtes-vous&nbsp;?',
-	'forum_message' => 'Votre message',
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.',
 	'forum_texte' => 'Texte de votre message',
 	'forum_titre' => 'Titre',
 	'forum_url' => 'Votre site web',
@@ -64,7 +65,6 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 		d\'indiquer ci-dessous l\'identifiant personnel qui vous a
 		été fourni. Si vous n\'êtes pas enregistré, vous devez',
 	'forum_vous_inscrire' => 'vous inscrire.',
-	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.',
 
 	// I
 	'icone_bruler_message' => 'Signaler comme Spam',
@@ -118,9 +118,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'Réponse à l\'article',
 	'lien_reponse_breve_2' => 'Réponse à la brève',
+	'lien_reponse_message' => 'Réponse au message',
 	'lien_reponse_rubrique' => 'Réponse à la rubrique',
 	'lien_reponse_site_reference' => 'Réponse au site référencé',
-	'lien_reponse_message' => 'Réponse au message',
 
 	// M
 	'messages_aucun' => 'Aucun',

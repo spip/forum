@@ -45,20 +45,23 @@ cancellarli successivamente).',
 	'forum_cliquer_retour' => 'Clicca <a href=\'@retour_forum@\'>qui</a> per continuare.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Questo forum è moderato a priori: il tuo contributo apparirà solo dopo essere stato approvato da un\'amministratrice del sito.',
-	'forum_lien_hyper' => '<b>Link ipertestuale</b> (opzionale)',
+	'forum_lien_hyper' => '<b>Link ipertestuale</b> (opzionale)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Messaggio definitivo: invialo al sito',
 	'forum_message_trop_long' => 'Il tuo messaggio è troppo lungo. La dimensione massima è di 20000 caratteri.',
 	'forum_ne_repondez_pas' => 'Non rispondere a questo email ma intervieni sul forum all\'indirizzo seguente:', # MODIF
 	'forum_page_url' => '(Se il tuo messaggio si riferisce ad un articolo pubblicato sul Web o ad una pagina contenente maggiori informazioni, è possibile indicare di seguito il titolo della pagina ed il suo indirizzo URL.)',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Messaggio inviato da @parauteur@ in calce all\'articolo  « @titre@ ».',
-	'forum_qui_etes_vous' => '<b>Chi sei?</b> (opzionale)',
-	'forum_texte' => 'Testo del messaggio:',
-	'forum_titre' => 'Titolo:',
-	'forum_url' => 'URL:',
+	'forum_qui_etes_vous' => '<b>Chi sei?</b> (opzionale)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Testo del messaggio:', # MODIF
+	'forum_titre' => 'Titolo:', # MODIF
+	'forum_url' => 'URL:', # MODIF
 	'forum_valider' => 'Conferma la scelta',
-	'forum_voir_avant' => 'Vedi il messaggio prima di inviarlo',
-	'forum_votre_email' => 'Indirizzo email:',
-	'forum_votre_nom' => 'Nome (o pseudonimo):',
+	'forum_voir_avant' => 'Vedi il messaggio prima di inviarlo', # MODIF
+	'forum_votre_email' => 'Indirizzo email:', # MODIF
+	'forum_votre_nom' => 'Nome (o pseudonimo):', # MODIF
 	'forum_vous_enregistrer' => 'È necessario iscriversi
 per partecipare a questo forum.  Indica qui sotto l\'ID personale
 che ti è stato fornito.  Se non sei registrata, devi',
@@ -118,8 +121,9 @@ avvertite via email. Per ogni tipo di forum, indica se desideri utilizzare quest
 	// L
 	'lien_reponse_article' => 'Risposta all\'articolo',
 	'lien_reponse_breve_2' => 'Risposta alla breve',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Risposta alla rubrica',
-	'lien_reponse_site_reference' => 'Risposta al sito repertoriato:',
+	'lien_reponse_site_reference' => 'Risposta al sito repertoriato:', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

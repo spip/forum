@@ -45,20 +45,23 @@ patisipasyon yo zitilizatè tout ke pa afiche sou sitwèb piblik si yon komandé
 	'forum_cliquer_retour' => 'Klik <a href=\'@retour_forum@\'>isit</a> pou kontinye.',
 	'forum_forum' => 'fowom',
 	'forum_info_modere' => 'Fowom la se modéwé-avann : patisipasyon demoun ke aparèt sèlman apré yon komandèr  sit te valide ali.',
-	'forum_lien_hyper' => '<b>Lyen ipèrtèks</b> (w pa oblijé)',
+	'forum_lien_hyper' => '<b>Lyen ipèrtèks</b> (w pa oblijé)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Mesaj fin fini : anvway anndan sit la',
 	'forum_message_trop_long' => 'Mesaj ou se tro lon. Pli gran tay se 20000 kawaktè.',
 	'forum_ne_repondez_pas' => 'Reponn pa limèl la. Reponn anndan fowom-an sou ladrès la :', # MODIF
 	'forum_page_url' => '(Si mesaj ou ka voye sou yon tik sou Wèb déò ou yon lòt paj pli konplé, mèsi mèt anba kouman paj la  ka rele èk ladrès URL.)',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Mesaj te poste @parauteur@ anba atik ou-a.', # MODIF
-	'forum_qui_etes_vous' => '<b>Kouman w rele ?</b> (pa oblijé)',
-	'forum_texte' => 'Teks mesaj ou :',
-	'forum_titre' => 'Kouman i rele mesaj ou :',
-	'forum_url' => 'URL :',
+	'forum_qui_etes_vous' => '<b>Kouman w rele ?</b> (pa oblijé)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Teks mesaj ou :', # MODIF
+	'forum_titre' => 'Kouman i rele mesaj ou :', # MODIF
+	'forum_url' => 'URL :', # MODIF
 	'forum_valider' => 'Apiyé chwa-a',
-	'forum_voir_avant' => 'Gad mesaj la avan post ali',
-	'forum_votre_email' => 'Ladrès limèl ou :',
-	'forum_votre_nom' => 'Kouman w rele (ousinon kouman w vlé rele isit) :',
+	'forum_voir_avant' => 'Gad mesaj la avan post ali', # MODIF
+	'forum_votre_email' => 'Ladrès limèl ou :', # MODIF
+	'forum_votre_nom' => 'Kouman w rele (ousinon kouman w vlé rele isit) :', # MODIF
 	'forum_vous_enregistrer' => 'Pou soutni andan
  fowom-nan, fòk w enskri avan. Mési
  mèt enba lidantifyan pèsonèl ou-a 
@@ -118,8 +121,9 @@ ak yon limèl. W vle itilize opsyon nan ?', # MODIF
 	// L
 	'lien_reponse_article' => 'Réponn atik-la',
 	'lien_reponse_breve_2' => 'Réponn tinouvèl-la',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Réponn ribrik-la',
-	'lien_reponse_site_reference' => 'Reponn sit referanse-a :',
+	'lien_reponse_site_reference' => 'Reponn sit referanse-a :', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

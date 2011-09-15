@@ -41,20 +41,23 @@ forviŝi ilin poste).',
 	'forum_cliquer_retour' => 'Musklaku <a href=\'@retour_forum@\'>ĉi tie</a> por daŭrigi.',
 	'forum_forum' => 'forumo',
 	'forum_info_modere' => 'Tiu ĉi forumo estas apriore moderigata: via kontribuo aperos nur post validigo far de mastrumanto de la forumo.',
-	'forum_lien_hyper' => '<b>Hiperligo</b> (nedeviga)',
+	'forum_lien_hyper' => '<b>Hiperligo</b> (nedeviga)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Definitiva mesaĝo: sendu al la forumo',
 	'forum_message_trop_long' => 'Via mesaĝo estas tro longa. La maksimuma longeco estas 20.000 signojn.',
 	'forum_ne_repondez_pas' => 'Ne respondu al tiu ĉi retletero, sed en la forumo ĉe la jena adreso:', # MODIF
 	'forum_page_url' => '(Se via mesaĝo rilatas al artikolo publikigita ĉe la reto, aŭ al paĝo donanta pli da informoj, bonvolu indiki ĉi-poste la titolon de la paĝo kaj ties ret-adreson.)',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Mesaĝo posté@parauteur@ reage al via artikolo « @titre@ ».',
-	'forum_qui_etes_vous' => '<b>Kiu vi estas?</b> (nedeviga)',
-	'forum_texte' => 'Teksto de via mesaĝo:',
-	'forum_titre' => 'Titolo:',
-	'forum_url' => 'URL:',
+	'forum_qui_etes_vous' => '<b>Kiu vi estas?</b> (nedeviga)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Teksto de via mesaĝo:', # MODIF
+	'forum_titre' => 'Titolo:', # MODIF
+	'forum_url' => 'URL:', # MODIF
 	'forum_valider' => 'Validigi tiun elekton',
-	'forum_voir_avant' => 'Vidi tiun ĉi mesaĝon antaŭ ol sendi ĝin',
-	'forum_votre_email' => 'Via retpoŝtadreso:',
-	'forum_votre_nom' => 'Via nomo (aŭ salutnomo):',
+	'forum_voir_avant' => 'Vidi tiun ĉi mesaĝon antaŭ ol sendi ĝin', # MODIF
+	'forum_votre_email' => 'Via retpoŝtadreso:', # MODIF
+	'forum_votre_nom' => 'Via nomo (aŭ salutnomo):', # MODIF
 	'forum_vous_enregistrer' => 'Por partopreni en ;
   tiu ĉi forumo, vi devas antaŭe registriĝi. Bonvolu
   indiki ĉi-sube la personan ensalutilon kiu estis
@@ -114,8 +117,9 @@ La publikaj forumoj estos laŭkaze unu post la alia permesitaj
 	// L
 	'lien_reponse_article' => 'Respondo al la artikolo',
 	'lien_reponse_breve_2' => 'Respondo al la fulm-informo',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Respondo al la rubriko',
-	'lien_reponse_site_reference' => 'Respondo al la referencigita retejo:',
+	'lien_reponse_site_reference' => 'Respondo al la referencigita retejo:', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

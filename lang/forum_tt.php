@@ -45,20 +45,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Cliquez <a href=\'@retour_forum@\'>ici</a> pour continuer.', # NEW
 	'forum_forum' => 'forum', # NEW
 	'forum_info_modere' => 'Ce forum est modéré à priori : votre contribution n\'apparaîtra qu\'après avoir été validée par un administrateur du site.', # NEW
-	'forum_lien_hyper' => '<b>Lien hypertexte</b> (optionnel)', # NEW
+	'forum_lien_hyper' => 'Lien hypertexte', # NEW
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Message définitif : envoyer au site', # NEW
 	'forum_message_trop_long' => 'Votre message est trop long. La taille maximale est de 20000 caractères.', # NEW
 	'forum_ne_repondez_pas' => 'Ne répondez pas à ce mail mais sur le forum à l\'adresse suivante :', # NEW
 	'forum_page_url' => '(Si votre message se réfère à un article publié sur le Web, ou à une page fournissant plus d\'informations, vous pouvez indiquer ci-après le titre de la page et son adresse.)', # NEW
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Message posté@parauteur@ à la suite de l\'article « @titre@ ».', # NEW
-	'forum_qui_etes_vous' => '<b>Qui êtes-vous ?</b> (optionnel)', # NEW
-	'forum_texte' => 'Texte de votre message :', # NEW
-	'forum_titre' => 'Titre :', # NEW
-	'forum_url' => 'URL :', # NEW
+	'forum_qui_etes_vous' => 'Qui êtes-vous&nbsp;?', # NEW
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Texte de votre message', # NEW
+	'forum_titre' => 'Titre', # NEW
+	'forum_url' => 'Votre site web', # NEW
 	'forum_valider' => 'Valider ce choix', # NEW
-	'forum_voir_avant' => 'Voir ce message avant de le poster', # NEW
-	'forum_votre_email' => 'Votre adresse email :', # NEW
-	'forum_votre_nom' => 'Votre nom (ou pseudonyme) :', # NEW
+	'forum_voir_avant' => 'Prévisualiser', # NEW
+	'forum_votre_email' => 'Votre adresse email', # NEW
+	'forum_votre_nom' => 'Votre nom', # NEW
 	'forum_vous_enregistrer' => 'Pour participer à
 		ce forum, vous devez vous enregistrer au préalable. Merci
 		d\'indiquer ci-dessous l\'identifiant personnel qui vous a
@@ -117,8 +120,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'Réponse à l\'article', # NEW
 	'lien_reponse_breve_2' => 'Réponse à la brève', # NEW
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Réponse à la rubrique', # NEW
-	'lien_reponse_site_reference' => 'Réponse au site référencé :', # NEW
+	'lien_reponse_site_reference' => 'Réponse au site référencé', # NEW
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

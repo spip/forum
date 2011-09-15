@@ -39,20 +39,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => '<a href=\'@retour_forum@\'>Hei klicken</a> fir weider.',
 	'forum_forum' => 'Forum',
 	'forum_info_modere' => 'Dëse Forum ass à priori moderéiert: äre Beitrag geet eréischt online wann e vun engem Administrateur vum Site validéiert ass.',
-	'forum_lien_hyper' => '<b>Link</b> (optionnel)',
+	'forum_lien_hyper' => '<b>Link</b> (optionnel)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Definitive Message: op de Site schécken',
 	'forum_message_trop_long' => 'Äre Message ass ze laang. D\'maximal Gréisst sin 20.000 Buchstawen.',
 	'forum_ne_repondez_pas' => 'Äntwert nët op dësen Email, mais um Forum op dëser Adress:', # MODIF
 	'forum_page_url' => '(Wann äre Message sech op en Artikel vum Internet bezitt oder op eng Säit déi méi Informatiounen gët, kënnt dir hei den Titel an d\'Adress vun der Säit uginn.)',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Message geschéckt vun @parauteur@ als Suite vum Artikel "@titre@".',
-	'forum_qui_etes_vous' => '<b>Wie sidd Dir?</b> (optionnel)',
-	'forum_texte' => 'Text vun ärem Message:',
-	'forum_titre' => 'Titel:',
-	'forum_url' => 'URL:',
+	'forum_qui_etes_vous' => '<b>Wie sidd Dir?</b> (optionnel)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Text vun ärem Message:', # MODIF
+	'forum_titre' => 'Titel:', # MODIF
+	'forum_url' => 'URL:', # MODIF
 	'forum_valider' => 'Är Wiel validéieren',
-	'forum_voir_avant' => 'Dëse Message kucken ier e geschéckt gët',
-	'forum_votre_email' => 'Är Email-Adress:',
-	'forum_votre_nom' => 'Äre Numm (oder Pseudo):',
+	'forum_voir_avant' => 'Dëse Message kucken ier e geschéckt gët', # MODIF
+	'forum_votre_email' => 'Är Email-Adress:', # MODIF
+	'forum_votre_nom' => 'Äre Numm (oder Pseudo):', # MODIF
 	'forum_vous_enregistrer' => 'Fir bei dësem Forum matzemaachen, muss dir Iech fir d\'éischt umelden. Gidd hei är perséinlech Identifikatioun un déi der krut. Wann dir nët ugemelt sidd, da musst dir',
 	'forum_vous_inscrire' => 'Iech aschreiwen.',
 
@@ -105,8 +108,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'Äntwert op den Artikel',
 	'lien_reponse_breve_2' => 'Äntwert op d\'Kuerzmeldung',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Äntwert op d\'Rubrik',
-	'lien_reponse_site_reference' => 'Äntwert op de referenzéierten Site:',
+	'lien_reponse_site_reference' => 'Äntwert op de referenzéierten Site:', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

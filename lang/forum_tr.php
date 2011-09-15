@@ -41,20 +41,23 @@ sonradan yok edebilir).',
 	'forum_cliquer_retour' => 'Devam etmek için <a href=\'@retour_forum@\'>buraya tıklayınız</a>.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Bu forum önceden onayla yönetilmektedir : katkınız ancak bir yönetici tarafından onaylandıktan sonra görülebilecektir.',
-	'forum_lien_hyper' => '<b>Hipermetin bağı</b> (seçimlik)',
+	'forum_lien_hyper' => '<b>Hipermetin bağı</b> (seçimlik)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'İletinin son hali : siteye gönder',
 	'forum_message_trop_long' => 'İletiniz çok uzun. Bir ileti en fazla 20000 karakter içerebilir.',
 	'forum_ne_repondez_pas' => 'Bu e-postaya yanıt vermeyin, yanıt için forumu kullanın :', # MODIF
 	'forum_page_url' => '(Eğer mesajınız Web\'de yayınlanan bir makaleye, ya da daha fazla bilgi içeren bir sayfaya atıfta bulunuyorsa, lütfen buraya sayfanın başlığını ve URL adresini belirtiniz.)',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Makalenize @parauteur@ ileti gönderildi.',
-	'forum_qui_etes_vous' => '<b>Sizi tanıyalım ?</b> (seçimlik)',
-	'forum_texte' => 'İletinizin metni :',
-	'forum_titre' => 'Başlık :',
-	'forum_url' => 'URL :',
+	'forum_qui_etes_vous' => '<b>Sizi tanıyalım ?</b> (seçimlik)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'İletinizin metni :', # MODIF
+	'forum_titre' => 'Başlık :', # MODIF
+	'forum_url' => 'URL :', # MODIF
 	'forum_valider' => 'Bu seçimi onayla',
-	'forum_voir_avant' => 'Göndermeden önce iletiyi göster',
-	'forum_votre_email' => 'E-posta adresiniz :',
-	'forum_votre_nom' => 'İsminiz (veya takma isminiz) :',
+	'forum_voir_avant' => 'Göndermeden önce iletiyi göster', # MODIF
+	'forum_votre_email' => 'E-posta adresiniz :', # MODIF
+	'forum_votre_nom' => 'İsminiz (veya takma isminiz) :', # MODIF
 	'forum_vous_enregistrer' => 'Bu foruma katılmak için, 
 önce kaydolmanız gerekmektedir.
  Lütfen aşağıya size verilmiş olan tanımlayıcıyı giriniz.
@@ -114,8 +117,9 @@ sonradan yok edebilir).',
 	// L
 	'lien_reponse_article' => 'Bu makaleye yanıt ',
 	'lien_reponse_breve_2' => 'Bu kısa habere yanıt',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Bu bölüme yanıt ',
-	'lien_reponse_site_reference' => 'Atıfta bulunan siteye yanıt : ',
+	'lien_reponse_site_reference' => 'Atıfta bulunan siteye yanıt : ', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

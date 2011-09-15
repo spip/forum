@@ -45,20 +45,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Klik  <a href=\'@retour_forum@\'>di sini</a> untuk lanjut.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Forum ini telah dimoderasi: kontribusi anda hanya akan muncul setelah divalidasi oleh administrator situs.',
-	'forum_lien_hyper' => '<b>Tautan web</b> (opsional)',
+	'forum_lien_hyper' => '<b>Tautan web</b> (opsional)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Pesan akhir: kirim ke situs',
 	'forum_message_trop_long' => 'Pesan anda terlalu panjang. Panjang maksimum adalah 20000 karakter.',
 	'forum_ne_repondez_pas' => 'Jangan balas ke e-mail ini tapi ke forum yang terdapat di alamat berikut:', # MODIF
 	'forum_page_url' => '(Jika pesan anda merujuk pada sebuah artikel yang dipublikasi di web atau halaman yang memberikan informasi lebih lanjut, silakan masukkan judul halaman dan URL-nya di bawah).',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Pesan dikirim@parauteur@ mengikuti artikel anda.',
-	'forum_qui_etes_vous' => '<b>Siapa anda?</b> (opsional)',
-	'forum_texte' => 'Teks pesan anda:',
-	'forum_titre' => 'Subyek:',
-	'forum_url' => 'URL:',
+	'forum_qui_etes_vous' => '<b>Siapa anda?</b> (opsional)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Teks pesan anda:', # MODIF
+	'forum_titre' => 'Subyek:', # MODIF
+	'forum_url' => 'URL:', # MODIF
 	'forum_valider' => 'Validasi pilihan ini',
-	'forum_voir_avant' => 'Lihat pesan sebelum dikirim',
-	'forum_votre_email' => 'Alamat e-mail anda:',
-	'forum_votre_nom' => 'Nama anda (atau alias):',
+	'forum_voir_avant' => 'Lihat pesan sebelum dikirim', # MODIF
+	'forum_votre_email' => 'Alamat e-mail anda:', # MODIF
+	'forum_votre_nom' => 'Nama anda (atau alias):', # MODIF
 	'forum_vous_enregistrer' => 'Sebelum berpartisipasi di
 		forum ini, anda harus mendaftarkan diri. Terima kasih
 		telah memasukkan pengidentifikasi pribadi yang
@@ -118,8 +121,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'Balasan pada artikel',
 	'lien_reponse_breve_2' => 'Balasan pada artikel berita',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Balasan pada bagian',
-	'lien_reponse_site_reference' => 'Balasan pada situs-situs referensi:',
+	'lien_reponse_site_reference' => 'Balasan pada situs-situs referensi:', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

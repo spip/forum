@@ -39,20 +39,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Bấm <a href=\'@retour_forum@\'>vô đây</a> để tiếp tục.',
 	'forum_forum' => 'diễn đàn',
 	'forum_info_modere' => 'Diễn đàn này được điều hợp trước: bài vở đóng góp sẽ xuất hiện sau khi được quản trị viên chấp thuận.',
-	'forum_lien_hyper' => '<b>Điểm nối hypertext</b> (không bắt buộc)',
+	'forum_lien_hyper' => '<b>Điểm nối hypertext</b> (không bắt buộc)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Thư tín đã xong: gửi đi',
 	'forum_message_trop_long' => 'Thư tín dài quá. Độ dài tối đa 20000 mẫu tự.',
 	'forum_ne_repondez_pas' => 'Đừng hồi âm email này, hồi âm trong diễn đàn ở địa chỉ sau đây:', # MODIF
 	'forum_page_url' => '(Nếu thư tín của bạn có đề cập đến một bài khác trên web, xin điền vào tựa đề và địa chỉ URL của nó dưới đây).',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Có thư tín @parauteur@ đi sau bài của bạn.', # MODIF
-	'forum_qui_etes_vous' => '<b>Chi tiết về bạn</b> (không bắt buộc)',
-	'forum_texte' => 'Thân bài của thư tín:',
-	'forum_titre' => 'Tựa đề:',
-	'forum_url' => 'URL:',
+	'forum_qui_etes_vous' => '<b>Chi tiết về bạn</b> (không bắt buộc)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Thân bài của thư tín:', # MODIF
+	'forum_titre' => 'Tựa đề:', # MODIF
+	'forum_url' => 'URL:', # MODIF
 	'forum_valider' => 'Xác nhận lựa chọn này',
-	'forum_voir_avant' => 'Xem lại thư tín trước khi đăng',
-	'forum_votre_email' => 'Địa chỉ email của bạn:',
-	'forum_votre_nom' => 'Tên (hay bí danh):',
+	'forum_voir_avant' => 'Xem lại thư tín trước khi đăng', # MODIF
+	'forum_votre_email' => 'Địa chỉ email của bạn:', # MODIF
+	'forum_votre_nom' => 'Tên (hay bí danh):', # MODIF
 	'forum_vous_enregistrer' => 'Trước khi tham gia vào diễn đàn này, bạn phải ghi danh. Nếu chưa ghi danh, bạn phải',
 	'forum_vous_inscrire' => 'ghi danh.',
 
@@ -105,8 +108,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'Hồi âm bài này',
 	'lien_reponse_breve_2' => 'Hồi âm tin ngắn',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Hồi âm đề mục này',
-	'lien_reponse_site_reference' => 'Hồi âm website nối kết:',
+	'lien_reponse_site_reference' => 'Hồi âm website nối kết:', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

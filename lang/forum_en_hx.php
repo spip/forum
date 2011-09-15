@@ -46,19 +46,22 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_forum' => 'f0rum',
 	'forum_info_modere' => '7h15 f0rum 15 m0d3r473d b3f0r3h4nd: y0ur c0n7r1bu710n w111 0n1y 4pp34r 4f73r b31ng v411d473d by 4 5173 4dm1n157r470r.',
 	'forum_lien_hyper' => '<b>Hyp3r73x7 11nk</b> (0p710n41)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'F1n41 m3554g3: 53nd 70 7h3 5173',
 	'forum_message_trop_long' => 'Y0ur m3554g3 15 700 10ng. M4x1mum 13ng7h 5h0u1d b3 20000 ch4r4c73r5.',
 	'forum_ne_repondez_pas' => 'D0 n07 r3p1y 70 7h15 m411 bu7 1n 7h3 f0rum 47 7h3 f0110w1ng 4ddr355:', # MODIF
 	'forum_page_url' => '(1f y0ur m3554g3 r3f3r5 70 4n 4r71c13 pub115h3d 0n 7h3 w3b 0r 70 4 p4g3 pr0v1d1ng fur7h3r 1nf0rm4710n, p13453 3n73r 7h3 71713 0f 7h3 p4g3 4nd 175 UR1 b310w).',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'M3554g3 p0573d@parauteur@ f0110w1ng y0ur 4r71c13.', # MODIF
 	'forum_qui_etes_vous' => '<b>Wh0 4r3 y0u?</b> (0p710n41)', # MODIF
-	'forum_texte' => '73x7 0f y0ur m3554g3:',
-	'forum_titre' => '5ubj3c7:',
-	'forum_url' => 'UR1:',
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => '73x7 0f y0ur m3554g3:', # MODIF
+	'forum_titre' => '5ubj3c7:', # MODIF
+	'forum_url' => 'UR1:', # MODIF
 	'forum_valider' => 'V411d473 7h15 ch01c3',
-	'forum_voir_avant' => 'Pr3v13w m3554g3 b3f0r3 p0571ng',
-	'forum_votre_email' => 'Y0ur 3-m411 4ddr355:',
-	'forum_votre_nom' => 'Y0ur n4m3 (0r 41145):',
+	'forum_voir_avant' => 'Pr3v13w m3554g3 b3f0r3 p0571ng', # MODIF
+	'forum_votre_email' => 'Y0ur 3-m411 4ddr355:', # MODIF
+	'forum_votre_nom' => 'Y0ur n4m3 (0r 41145):', # MODIF
 	'forum_vous_enregistrer' => 'Pr10r 70 p4r71c1p471ng 1n
 		7h15 f0rum, y0u mu57 r3g1573r. 7h4nk y0u
 		f0r 3n73r1ng 7h3 p3r50n41 1d3n71f13r
@@ -118,8 +121,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'R3p1y 70 7h3 4r71c13',
 	'lien_reponse_breve_2' => 'R3p1y 70 7h3 n3w5 173m',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'R3p1y 70 7h3 53c710n',
-	'lien_reponse_site_reference' => 'R3p1y 70 7h3 r3f3r3nc3d 5173:',
+	'lien_reponse_site_reference' => 'R3p1y 70 7h3 r3f3r3nc3d 5173:', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

@@ -43,20 +43,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Klik <a href=\'@retour_forum@\'>hier</a> om door te gaan.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Dit forum wordt vooraf gemodereerd: je bijdrage zal pas verschijnen nadat een redacteur van de website het heeft goedgekeurd.',
-	'forum_lien_hyper' => '<b>webverwijzing</b> (optioneel)',
+	'forum_lien_hyper' => '<b>webverwijzing</b> (optioneel)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Definitief bericht : versturen',
 	'forum_message_trop_long' => 'Je bericht is te lang. De maximale lengte is 20.000 tekens.',
 	'forum_ne_repondez_pas' => 'Niet reageren op deze mail, maar op het forum om het volgende adres :',
 	'forum_page_url' => '(Als je bericht naar een artikel op het web verwijst of naar een pagina die meer informatie bevat, kunt u hier de titel en de URL van deze webverwijzing invoeren.)',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Bericht poste@parauteur@ als vervolg op je artikel « @titre@ » .',
-	'forum_qui_etes_vous' => '<b>Wie ben je ?</b> (optioneel)',
-	'forum_texte' => 'Tekst van je bericht :',
-	'forum_titre' => 'Titel :',
-	'forum_url' => 'URL :',
+	'forum_qui_etes_vous' => '<b>Wie ben je ?</b> (optioneel)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Tekst van je bericht :', # MODIF
+	'forum_titre' => 'Titel :', # MODIF
+	'forum_url' => 'URL :', # MODIF
 	'forum_valider' => 'Keuze bevestigen',
-	'forum_voir_avant' => 'Bericht bekijken alvorens te posten',
-	'forum_votre_email' => 'Je e-mailadres :',
-	'forum_votre_nom' => 'Je naam (of alias) :',
+	'forum_voir_avant' => 'Bericht bekijken alvorens te posten', # MODIF
+	'forum_votre_email' => 'Je e-mailadres :', # MODIF
+	'forum_votre_nom' => 'Je naam (of alias) :', # MODIF
 	'forum_vous_enregistrer' => 'Om deel te nemen aan
   dit forum, dien je op voorhand te registreren. Gelieve
   hieronder je logingegevens in te vullen die je bezorgd werden
@@ -115,8 +118,9 @@ De publieke forums kunnen per artikel toegestaan worden
 	// L
 	'lien_reponse_article' => 'Beantwoord dit artikel',
 	'lien_reponse_breve_2' => 'Beantwoord dit nieuwsbericht',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Beantwoord deze rubriek',
-	'lien_reponse_site_reference' => 'Antwoord op gekoppelde site :',
+	'lien_reponse_site_reference' => 'Antwoord op gekoppelde site :', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

@@ -39,20 +39,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Klikit <a href=\'@retour_forum@\'>amañ</a> evit kenderc\'hel.',
 	'forum_forum' => 'forom',
 	'forum_info_modere' => 'Habaskaet eo ar forom-mañ a-raok embann ar pennadoù : ne vo ket gwelet ho kemennadenn a-raok na vefe lennet hag asantet gant unan eus merourien al lec\'hienn.',
-	'forum_lien_hyper' => '<b>liamm gourskrid</b> (Diret)',
+	'forum_lien_hyper' => '<b>liamm gourskrid</b> (Diret)', # MODIF
+	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Kemennadenn echu : kas d\'al lec\'hienn',
 	'forum_message_trop_long' => 'Re hir eo ho kemennadenn. 20000 arouezenn a c\'heller lakaat d\'ar muiañ.',
 	'forum_ne_repondez_pas' => 'Na respontit ket d\'ar postel-mañ, met war ar forom, d\'ar chomlec\'h da-heul :', # MODIF
 	'forum_page_url' => '(Ma ra ho kemmennadenn anv eus ur pennad all war Internet pe eus ur bajenn warni muioc\'h a ditouroù e c\'hellit skrivañ amañ goude titl ar bajenn hag ar chomlec\'h anezhi.)',
+	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Kemennadenn kaset @parauteur@ da-heul ar pennad « @titre@ ».',
-	'forum_qui_etes_vous' => '<b>Piv oc\'h-hu ?</b> (Diret)',
-	'forum_texte' => 'Testenn ho kemennadenn :',
-	'forum_titre' => 'Titl :',
-	'forum_url' => 'URL :',
+	'forum_qui_etes_vous' => '<b>Piv oc\'h-hu ?</b> (Diret)', # MODIF
+	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_texte' => 'Testenn ho kemennadenn :', # MODIF
+	'forum_titre' => 'Titl :', # MODIF
+	'forum_url' => 'URL :', # MODIF
 	'forum_valider' => 'Kadarnaat an dibab-mañ',
-	'forum_voir_avant' => 'Rakwelet ar gemennadenn a-raok kas anezhi',
-	'forum_votre_email' => 'Ho postel :',
-	'forum_votre_nom' => 'Hoc\'h anv (pe lesanv) :',
+	'forum_voir_avant' => 'Rakwelet ar gemennadenn a-raok kas anezhi', # MODIF
+	'forum_votre_email' => 'Ho postel :', # MODIF
+	'forum_votre_nom' => 'Hoc\'h anv (pe lesanv) :', # MODIF
 	'forum_vous_enregistrer' => 'Evit kemer perzh er forom-mañ e rankit bezañ enrollet en a-raok.
   Trugarez da skrivañ amañ dindan an titouroù hiniennel zo bet roet deoc\'h.
   Ma n\'oc\'h ket enrollet c\'hoazh e rankit ',
@@ -109,8 +112,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'Respont d\'ar pennad',
 	'lien_reponse_breve_2' => 'Respont d\'ar berrskrid',
+	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Respont d\'ar rubrikenn',
-	'lien_reponse_site_reference' => 'Respont d\'al lec\'hienn menegeret :',
+	'lien_reponse_site_reference' => 'Respont d\'al lec\'hienn menegeret :', # MODIF
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW
