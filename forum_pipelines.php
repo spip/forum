@@ -255,8 +255,8 @@ function forum_optimiser_base_disparus($flux){
 			$res = sql_select("forum.id_forum AS id",
 							"spip_forum AS forum
 								LEFT JOIN $spip_table_objet AS O
-									ON O.$id_table_objet=forum.id_objet AND forum.objet=".sql_quote($type),
-					"O.$id_table_objet IS NULL AND forum.id_objet>0");
+									ON O.$id_table_objet=forum.id_objet",
+					"forum.objet=".sql_quote($type)." AND O.$id_table_objet IS NULL AND forum.id_objet>0");
 
 			$n+= optimiser_sansref('spip_forum', 'id_forum', $res);
 		}
