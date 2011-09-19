@@ -245,28 +245,26 @@ function forum_configurer_liste_metas($metas){
 function forum_optimiser_base_disparus($flux){
 	$n = &$flux['data'];
 	$mydate = $flux['args']['date'];
-
 	# les forums lies a une id_objet inexistant
 	$r = sql_select("DISTINCT objet",'spip_forum');
 	while ($t = sql_fetch($r)){
-		$type = $t['objet'];
-		$spip_table_objet = table_objet_sql($type);
-		$id_table_objet = id_table_objet($type);	
-		# les forums lies a un objet inexistant
-		$res = sql_select("forum.id_forum AS id",
-						"spip_forum AS forum
-							LEFT JOIN $spip_table_objet AS O
-								ON O.$id_table_objet=forum.id_objet AND forum.objet=".sql_quote($type),
-				"O.$id_table_objet IS NULL AND forum.id_objet>0");
+		if ($type = $t['objet']) {
+			$spip_table_objet = table_objet_sql($type);
+			$id_table_objet = id_table_objet($type);
+			# les forums lies a un objet inexistant
+			$res = sql_select("forum.id_forum AS id",
+							"spip_forum AS forum
+								LEFT JOIN $spip_table_objet AS O
+									ON O.$id_table_objet=forum.id_objet AND forum.objet=".sql_quote($type),
+					"O.$id_table_objet IS NULL AND forum.id_objet>0");
 
-	$n+= optimiser_sansref('spip_forum', 'id_forum', $res);
+			$n+= optimiser_sansref('spip_forum', 'id_forum', $res);
+		}
 	}
 
-	
 	//
 	// Forums
 	//
-
 	sql_delete("spip_forum", "statut='redac' AND maj < $mydate");
 
 	// nettoyer les documents des forums en spam&poubelle pour eviter de sortir des quota disques
