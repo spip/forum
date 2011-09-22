@@ -57,7 +57,10 @@
 	</p>
 	]
 </div>
-]
+][(#ENV{id_forum}|oui)
+<div class='source'>
+	<:forum:info_message_numero:> ##ENV{id_forum}
+</div>]
 
 [(#INCLURE{fond=prive/listes/inc-boutons-filtres-statut-forum}{env})]
 

@@ -19,6 +19,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'interface_onglets' => 'Tabbed interface',
 	'interface_formulaire' => 'Form interface',
 	'info_1_message_forum' => '1 forum post',
+	'info_message_numero' => 'Post number:',
 	'info_nb_messages_forum' => '@nb@ forum posts',
 
 	// L
