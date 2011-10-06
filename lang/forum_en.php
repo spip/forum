@@ -29,6 +29,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'lien_reponse_objet' => 'Reply to (@objet@)',
 	
 	// M
+	'message_lie_objets' => 'Linked to the "@objet@" objects.',
+	'message_lie_objet_id_objet' => 'Linked to the object "@objet@" #@id@ : <a href="@url@" class="spip_in">@titre@</a>.',
 	'message_marque_comme_spam' => 'One post marked as spam',
 	'message_publie' => 'One published post',
 	'message_rien_a_faire' => 'No post has been selected',

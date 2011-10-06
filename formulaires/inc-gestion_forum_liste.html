@@ -21,7 +21,7 @@
 	|oui)<a class='annule_filtre ajax' href='#GET{self}' title="<:forum:tout_voir|attribut_html:>">[(#CHEMIN{images/annuler-recherche.png}|balise_img|inserer_attribut{alt,<:forum:tout_voir:>})]</a>
 </p>]
 
-[(#ENV{ip}|ou{#ENV{email_auteur}}|ou{#ENV{auteur}}|ou{#ENV{id_auteur}})
+[(#ENV{ip}|ou{#ENV{email_auteur}}|ou{#ENV{auteur}}|ou{#ENV{id_auteur}}|oui)
 <div class='source'>
 <div class='par'><:par:>
 [
@@ -31,6 +31,22 @@
 </div>
 </div>
 ]
+
+[(#ENV{id_objet}|ou{#ENV{objet}}|oui)
+<div class='source'>
+<div class='lie_a'>
+[(#ENV{id_objet}|intval|>{0}|et{#ENV{objet}}|oui)
+[(#SET{url,[(#ID_OBJET|generer_url_entite{#OBJET})]})]
+[(#SET{titre,[(#INFO_TITRE{#ENV{objet},#ENV{id_objet}})]})]
+<:forum:message_lie_objet_id_objet{objet=#ENV{objet},id=#ENV{id_objet},url=#GET{url},titre=#GET{titre}}:>
+]
+[(#ENV{id_objet}|intval|>{0}|non|et{#ENV{objet}}|oui)
+<:forum:message_lie_objets{objet=#ENV{objet}}:>
+]
+</div>
+</div>
+]
+
 [(#REM) désactiver l'ancre de pagination qui est déjà présente dans le squelette appelant ]
 #SET{virer_ancre,#ANCRE_PAGINATION}
 [<p class='pagination'>(#PAGINATION)</p>]
@@ -108,6 +124,21 @@
 (#ENV{id_auteur,''}|oui)<a href='[(#REM|test_espace_prive|?{[(#URL_ECRIRE{auteur_infos,id_auteur=#ENV{id_auteur}})],[(#URL_AUTEUR{#ENV{id_auteur}})]})]'>#MODELE{auteur_nom,id_auteur=#ENV{id_auteur}}</a>
 ][(#ENV{id_auteur,''}|?{'',#ENV{auteur,''}})
 ][<a href='mailto:#ENV{email_auteur}'>(#ENV{email_auteur,''})</a>][IP (#ENV{ip,''})] 
+</div>
+</div>
+]
+
+[(#ENV{id_objet}|ou{#ENV{objet}}|oui)
+<div class='source'>
+<div class='lie_a'>
+[(#ENV{id_objet}|intval|>{0}|et{#ENV{objet}}|oui)
+[(#SET{url,[(#ID_OBJET|generer_url_entite{#OBJET})]})]
+[(#SET{titre,[(#INFO_TITRE{#ENV{objet},#ENV{id_objet}})]})]
+<:forum:message_lie_objet_id_objet{objet=#ENV{objet},id=#ENV{id_objet},url=#GET{url},titre=#GET{titre}}:>
+]
+[(#ENV{id_objet}|intval|>{0}|non|et{#ENV{objet}}|oui)
+<:forum:message_lie_objets{objet=#ENV{objet}}:>
+]
 </div>
 </div>
 ]

@@ -51,9 +51,9 @@
 	#SET{selection,#ENV{ip}|concat{'/',#ENV{email_auteur},'/',#ENV{id_auteur},'/',#ENV{auteur}}}
 	[(#ENV{type_message,public}|=={public}|et{#AUTORISER{instituer,forum,0}}|et{#ENV{recherche,''}|non}|et{#ENV{id_article,''}|non})
 	<p class='actions'>
-	 &#91;<a class='ajax valider' href='#URL_ACTION_AUTEUR{instituer_lot_forum,publie-#GET{selection},#SELF}'><:forum:icone_valider_messages:></a>&#93;
-	 &#91;<a class='bruler' href='#URL_ACTION_AUTEUR{instituer_lot_forum,spam-#GET{selection},#SELF}'><:forum:icone_bruler_messages:></a>&#93;
-	 &#91;<a class='ajax supprimer' href='#URL_ACTION_AUTEUR{instituer_lot_forum,off-#GET{selection},#SELF}'><:forum:icone_supprimer_messages:></a>&#93;
+	 <a class='ajax valider' href='#URL_ACTION_AUTEUR{instituer_lot_forum,publie-#GET{selection},#SELF}'><:forum:icone_valider_messages:></a><span class="sep"> | </span>
+	 <a class='bruler' href='#URL_ACTION_AUTEUR{instituer_lot_forum,spam-#GET{selection},#SELF}'><:forum:icone_bruler_messages:></a><span class="sep"> | </span>
+	 <a class='ajax supprimer' href='#URL_ACTION_AUTEUR{instituer_lot_forum,off-#GET{selection},#SELF}'><:forum:icone_supprimer_messages:></a>
 	</p>
 	]
 </div>
