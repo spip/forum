@@ -10,6 +10,7 @@
  *  Pour plus de details voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
+if (!defined("_ECRIRE_INC_VERSION")) return;
 
 function urls_generer_url_forum_dist($id_forum, $args='', $ancre='') {
 	if ($id_forum = intval($id_forum)) {

@@ -10,6 +10,8 @@
  *  Pour plus de details voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
+if (!defined("_ECRIRE_INC_VERSION")) return;
+
 include_spip('inc/forum');
 
 /**
@@ -18,7 +20,7 @@ include_spip('inc/forum');
  * @param int $id_objet
  * @param int $id_forum
  * @param int|array $ajouter_mot
- *   mots ajoutés cochés par defaut
+ *   mots ajoutÃ©s cochÃ©s par defaut
  * @param $ajouter_groupe
  *   groupes ajoutables
  * @param $afficher_previsu
@@ -42,7 +44,7 @@ function formulaires_forum_charger_dist($objet,$id_objet, $id_forum,
 
 	$primary = id_table_objet($objet);
 
-	// table a laquelle sont associés les mots :
+	// table a laquelle sont associï¿½s les mots :
 	if ($GLOBALS['meta']["mots_cles_forums"] != "oui")
 		$table = '';
 	else
@@ -164,7 +166,7 @@ function forum_fichier_tmp($arg)
  * @param int $id_objet
  * @param int $id_forum
  * @param int|array $ajouter_mot
- *   mots ajoutés cochés par defaut
+ *   mots ajoutï¿½s cochï¿½s par defaut
  * @param $ajouter_groupe
  *   groupes ajoutables
  * @param $afficher_previsu
@@ -385,7 +387,7 @@ $objet, $id_objet, $id_forum) {
  * @param int $id_objet
  * @param int $id_forum
  * @param int|array $ajouter_mot
- *   mots ajoutés cochés par defaut
+ *   mots ajoutï¿½s cochï¿½s par defaut
  * @param $ajouter_groupe
  *   groupes ajoutables
  * @param $afficher_previsu
