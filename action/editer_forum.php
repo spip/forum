@@ -38,7 +38,7 @@ if(!function_exists('revision_forum')){
 			$c['url_site'] = vider_url($c['url_site'], false);
 		}
 
-		$r = modifier_contenu('forum', $id_forum,
+		$err = objet_modifier_champs('forum', $id_forum,
 			array(
 				'nonvide' => array('titre' => _T('info_sans_titre')),
 				'invalideur' => $invalideur
@@ -62,7 +62,7 @@ if(!function_exists('revision_forum')){
 
 		// s'il y a vraiment eu une modif, on
 		// enregistre le nouveau date_thread
-		if ($r) {
+		if ($err==='') {
 			// on ne stocke ni le numero IP courant ni le nouvel id_auteur
 			// dans le message modifie (trop penible a l'usage) ; mais du
 			// coup attention a la responsabilite editoriale
