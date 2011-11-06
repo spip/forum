@@ -45,23 +45,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'انقر <a href=\'@retour_forum@\'>هنا</a> للمتابعة.',
 	'forum_forum' => 'منتدى',
 	'forum_info_modere' => 'هذا المنتدى مراقب استباقياً: لن تظهر مشاركتك إلا بعد التصديق عليها من قبل أحد مديري الموقع.',
-	'forum_lien_hyper' => '<b>وصلة هايبرتكست</b>  (اختيارية)', # MODIF
-	'forum_message' => 'Votre message', # NEW
+	'forum_lien_hyper' => 'رابط هايبرتكست',
+	'forum_message' => 'مشاركتك',
 	'forum_message_definitif' => 'مشاركة نهائية: إرسال إلى الموقع',
 	'forum_message_trop_long' => 'مشاركتك طويلة جداً. لا يجب أن تتعدى الحد الأقصى 20000 حرف.',
 	'forum_ne_repondez_pas' => 'لا ترد على هذه الرسالة بل في المنتدى على العنوان التالي:',
 	'forum_page_url' => '(إذا كانت مشاركتك تشير إلى مقال منشور على النسيج أو صفحة توفر المزيد من المعلومات، الرجاء إدخال اسم هذه الصفحة وعنوانها أدناه).',
-	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
+	'forum_permalink' => 'رابط دائم الى التعليق',
 	'forum_poste_par' => 'مشاركة مرسلة@parauteur@ تعقيباً على المقال «@titre@».',
-	'forum_qui_etes_vous' => '<b>من أنت؟</b>  (اختياري)', # MODIF
-	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
-	'forum_texte' => 'نص المشاركة:', # MODIF
-	'forum_titre' => 'الموضوع:', # MODIF
-	'forum_url' => 'عنوان URL:', # MODIF
+	'forum_qui_etes_vous' => 'من أنت؟',
+	'forum_saisie_texte_info' => 'تدعم هذه الاستمارة اختصارات SPIP <code>[-&gt;url] {{أسود}} {مائل} &lt;quote&gt; &lt;code&gt;</code> وعلامات HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. لإنشاء فقرات أترك اسطر فارغة.',
+	'forum_texte' => 'نص المشاركة',
+	'forum_titre' => 'الموضوع',
+	'forum_url' => 'موقعك',
 	'forum_valider' => 'التصديق على هذا الخيار',
-	'forum_voir_avant' => 'معاينة هذه المشاركة قبل إرسالها', # MODIF
-	'forum_votre_email' => 'عنوانك الإلكتروني:', # MODIF
-	'forum_votre_nom' => 'اسمك (أو لقبك):', # MODIF
+	'forum_voir_avant' => 'معاينة',
+	'forum_votre_email' => 'عنوانك الإلكتروني',
+	'forum_votre_nom' => 'اسمك',
 	'forum_vous_enregistrer' => 'قبل الاشتراك في
   هذا المنتدى، يجب أن تسجل نفسك. الرجاء
   إدخال أدناه المعرّف الشخصي الذي
@@ -120,9 +120,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'الرد على المقال',
 	'lien_reponse_breve_2' => 'الرد على الخبر',
-	'lien_reponse_message' => 'Réponse au message', # NEW
+	'lien_reponse_message' => 'الرد على المشاركة',
 	'lien_reponse_rubrique' => 'الرد على القسم',
-	'lien_reponse_site_reference' => 'الرد على الموقع المبوب:', # MODIF
+	'lien_reponse_site_reference' => 'الرد على الموقع المبوب',
 
 	// M
 	'messages_aucun' => 'غير موجود',
