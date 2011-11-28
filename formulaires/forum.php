@@ -348,6 +348,7 @@ $objet, $id_objet, $id_forum) {
 	// comme on voit c'est complique... y a peut-etre plus simple ?
 	// recuperer les filtres eventuels de 'mes_fonctions.php' sur les balises
 	include_spip('public/parametrer');
+	$tmptexte = "";
 	$evaltexte = isset($table_des_traitements['TEXTE']['forums'])
 		? $table_des_traitements['TEXTE']['forums']
 		: $table_des_traitements['TEXTE'][0];
@@ -434,7 +435,7 @@ function formulaires_forum_traiter_dist($objet,$id_objet, $id_forum,
 			}
 		}
 
-		$res = array('redirect'=>$retour,'id_forum'=>$id_forum);
+		$res = array('redirect'=>$retour,'id_forum'=>$id_reponse);
 	}
 	else
 		$res = array('message_erreur'=>_T('forum:erreur_enregistrement_message'));
