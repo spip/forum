@@ -77,7 +77,7 @@ sonradan yok edebilir).',
 	'icone_valider_messages' => 'Valider ces messages', # NEW
 	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message', # NEW
 	'info_1_message_forum' => '1 message de forum', # NEW
-	'info_activer_forum_public' => 'Kamu forumlarını çalıştırmak için, lütfen varsayılan bir yönetim kipi seçiniz :',
+	'info_activer_forum_public' => 'Kamu forumlarını çalıştırmak için, lütfen varsayılan bir yönetim kipi seçiniz :', # MODIF
 	'info_appliquer_choix_moderation' => 'Bu yönetim seçeneğinin uygulanması :',
 	'info_config_forums_prive' => 'Sitenin özel alanında bir çok farklı tipteki forumu aktive edebilirsiniz  :',
 	'info_config_forums_prive_admin' => 'Site yöneticilierine ayrılmış bir forum :',
@@ -103,8 +103,8 @@ sonradan yok edebilir).',
            makale yazarları e-posta ile bu iletiden haberdar edilebilirler.
            Her bir forum için bu seçeneği kullanmak isteyip istemediğinizi belirtiniz.',
 	'info_pas_de_forum' => 'Forum yok',
-	'info_question_visiteur_ajout_document_forum' => 'Ziyaretçilerin forum mesajlarına belge (fotoğraf, ses...) eklemelerine izin vermek isterseniz, aşağıda hangi soyadlarına izin verildiğini belirtiniz (örnek: gif, jpg, png, mp3).',
-	'info_question_visiteur_ajout_document_forum_format' => 'SPIP tarafından güvenilir bulunan tüm belgelere izin vermek isterseniz bir yıldız koyunuz. Hiçbir şeye izin vermemek için hiçbir şey yazmayınız.',
+	'info_question_visiteur_ajout_document_forum' => 'Ziyaretçilerin forum mesajlarına belge (fotoğraf, ses...) eklemelerine izin vermek isterseniz, aşağıda hangi soyadlarına izin verildiğini belirtiniz (örnek: gif, jpg, png, mp3).', # MODIF
+	'info_question_visiteur_ajout_document_forum_format' => 'SPIP tarafından güvenilir bulunan tüm belgelere izin vermek isterseniz bir yıldız koyunuz. Hiçbir şeye izin vermemek için hiçbir şey yazmayınız.', # MODIF
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW
 	'item_activer_forum_administrateur' => 'Yöneticiler forumunun etkinleştirilmesi',

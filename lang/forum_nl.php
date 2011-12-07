@@ -80,7 +80,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message', # NEW
 	'info_1_message_forum' => '1 message de forum', # NEW
 	'info_activer_forum_public' => '<i>Om de openbare forums te activeren, dien je een standaardinstelling
- voor het modereren te kiezen :</i>',
+ voor het modereren te kiezen :</i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Pas deze moderatievorm toe ::',
 	'info_config_forums_prive' => 'In de particuliere ruimte van de site, kunt u verschillende soorten forums activeren :',
 	'info_config_forums_prive_admin' => 'Een forum dat voor de beheerders van de site is gereserveerd :',
@@ -104,8 +104,8 @@ De publieke forums kunnen per artikel toegestaan worden
 	'info_nb_messages_forum' => '@nb@ messages de forum', # NEW
 	'info_option_email' => 'Wanneer een bezoeker van de site een nieuw bericht in het forum opstelt dat met een artikel wordt verenigd, kunnen de auteurs van het artikel van dit bericht per e-mail verwittigd worden. Voor elk soort forum aangeven als men deze keuze moet gebruiken.',
 	'info_pas_de_forum' => 'geen forum',
-	'info_question_visiteur_ajout_document_forum' => 'Als u de bezoekers wilt machtigen om documenten (beelden, klanken…) samen te voegen aan hun berichten van forum, de lijst van de uitbreidingen van documenten hieronder aangeven toegelaten voor de ex forums (: gif, jpg, png, mp3).',
-	'info_question_visiteur_ajout_document_forum_format' => 'Als u alle soorten documenten toestaan wilt die als betrouwbaar door SPIP, een ster worden beschouwd, zetten. Om niets toe te staan, niets aangeven.',
+	'info_question_visiteur_ajout_document_forum' => 'Als u de bezoekers wilt machtigen om documenten (beelden, klanken…) samen te voegen aan hun berichten van forum, de lijst van de uitbreidingen van documenten hieronder aangeven toegelaten voor de ex forums (: gif, jpg, png, mp3).', # MODIF
+	'info_question_visiteur_ajout_document_forum_format' => 'Als u alle soorten documenten toestaan wilt die als betrouwbaar door SPIP, een ster worden beschouwd, zetten. Om niets toe te staan, niets aangeven.', # MODIF
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW
 	'item_activer_forum_administrateur' => 'Forum van beheerders activeren',

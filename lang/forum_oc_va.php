@@ -81,7 +81,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_valider_messages' => 'Valider ces messages', # NEW
 	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message', # NEW
 	'info_1_message_forum' => '1 message de forum', # NEW
-	'info_activer_forum_public' => '<i>Per activar los forums publics, volhatz chausir lor mòde de moderacion predefinit:</i>',
+	'info_activer_forum_public' => '<i>Per activar los forums publics, volhatz chausir lor mòde de moderacion predefinit:</i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Aplicar aquela chausia de moderacion:',
 	'info_config_forums_prive' => 'Dans l’espace privé du site, vous pouvez activer plusieurs types de forums :', # NEW
 	'info_config_forums_prive_admin' => 'Un forum réservé aux administrateurs du site :', # NEW
@@ -105,8 +105,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  associat a un article, se\'n pòt avisar los autors
  de l\'article per e-mail. Desiratz d\'utilizar aquela opcion?', # MODIF
 	'info_pas_de_forum' => 'Ges de forum',
-	'info_question_visiteur_ajout_document_forum' => 'Si vous souhaitez autoriser les visiteurs à joindre des documents (images, sons...) à leurs messages de forum, indiquer ci-dessous la liste des extensions de documents autorisés pour les forums (ex: gif, jpg, png, mp3).', # NEW
-	'info_question_visiteur_ajout_document_forum_format' => 'Si vous souhaitez autoriser tous les types de documents considérés comme fiables par SPIP, mettre une étoile. Pour ne rien autoriser, ne rien indiquer.', # NEW
+	'info_question_visiteur_ajout_document_forum' => 'Si vous souhaitez autoriser les visiteurs à joindre des documents (images, sons...) à leurs messages de forum, indiquez ci-dessous la liste des extensions de documents autorisés pour les forums (ex: gif, jpg, png, mp3).', # NEW
+	'info_question_visiteur_ajout_document_forum_format' => 'Si vous souhaitez autoriser tous les types de documents considérés comme fiables par SPIP, mettez une étoile. Pour ne rien autoriser, n\'indiquez rien.', # NEW
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW
 	'item_activer_forum_administrateur' => 'Activar lo forum dels administrators',

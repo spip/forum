@@ -77,7 +77,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message', # NEW
 	'info_1_message_forum' => '1 message de forum', # NEW
 	'info_activer_forum_public' => '<i>Pentru a activa forum-urile publice, vă rugăm să alegeţi modul
- lor de operare implicit:</i>',
+ lor de operare implicit:</i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Aplicaţi această alegere de moderare :',
 	'info_config_forums_prive' => 'În cadrul spaţiului privat al site-ului, puteţi activa mai multe tipuri de forumuri :',
 	'info_config_forums_prive_admin' => 'Un forum rezervat administratorilor site-ului :',
@@ -101,8 +101,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
   asociat unui articol, autorii articolului pot fi
   preveniţi de acest mesaj printr-un email. Indicaţi pentru fiecare tip de forum dacă această opţiune este utilizabilă.',
 	'info_pas_de_forum' => 'fără forum',
-	'info_question_visiteur_ajout_document_forum' => 'Dacă dorii s autorizai vizitatorii să ataşeze documente (imagini, sunete, etc.) la mesajele din forum-uri, indicai mai jos lista de extensii de documente autorizate pentru forum-uri  (de exemplu: gif, jpg, png, mp3).',
-	'info_question_visiteur_ajout_document_forum_format' => 'Dacă doriţi să autorizaţi toate tipurile de documente considerate ca sigure de către SPIP, puneţi o steluţă. Pentru a nu autoriza nimic, lasaţi selecţia goală.',
+	'info_question_visiteur_ajout_document_forum' => 'Dacă dorii s autorizai vizitatorii să ataşeze documente (imagini, sunete, etc.) la mesajele din forum-uri, indicai mai jos lista de extensii de documente autorizate pentru forum-uri  (de exemplu: gif, jpg, png, mp3).', # MODIF
+	'info_question_visiteur_ajout_document_forum_format' => 'Dacă doriţi să autorizaţi toate tipurile de documente considerate ca sigure de către SPIP, puneţi o steluţă. Pentru a nu autoriza nimic, lasaţi selecţia goală.', # MODIF
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW
 	'item_activer_forum_administrateur' => 'Activaţi forum-ul administratorilor',

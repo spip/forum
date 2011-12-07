@@ -77,7 +77,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_valider_messages' => 'Valider ces messages', # NEW
 	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message', # NEW
 	'info_1_message_forum' => '1 message de forum', # NEW
-	'info_activer_forum_public' => '<i>To enable public forums, please choose their default mode of moderation:</i>', # NEW
+	'info_activer_forum_public' => '<i>To enable public forums, please choose their default mode of moderation:</i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Apply this choice of moderation:', # NEW
 	'info_config_forums_prive' => 'You can activate various tupes of forums in the site\'s private area:', # NEW
 	'info_config_forums_prive_admin' => 'A forum reserved for site administrators:', # NEW
@@ -103,8 +103,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 		associated with an article, the article\'s authors can be
 		informed of this message by e-mail. Do you wish to use this option?', # MODIF
 	'info_pas_de_forum' => 'no forum', # NEW
-	'info_question_visiteur_ajout_document_forum' => 'If you wish to allow visitors to attach documents (images, sound files, ...) to their forum messages, indicate below the list of file extensions which are authorised (e.g. gif, jpg, png, mp3).', # NEW
-	'info_question_visiteur_ajout_document_forum_format' => 'If you wish to authorise all document types which SPIP allows, then put an asterisk. To allow no file-types, leave empty.', # NEW
+	'info_question_visiteur_ajout_document_forum' => 'If you wish to allow visitors to attach documents (images, sound files, ...) to their forum messages, indicate below the list of file extensions which are authorised (e.g. gif, jpg, png, mp3).', # MODIF
+	'info_question_visiteur_ajout_document_forum_format' => 'If you wish to authorise all document types which SPIP allows, then put an asterisk. To allow no file-types, leave empty.', # MODIF
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW
 	'item_activer_forum_administrateur' => 'Enable administrators forum', # NEW

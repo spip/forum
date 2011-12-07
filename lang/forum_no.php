@@ -82,7 +82,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message', # NEW
 	'info_1_message_forum' => '1 message de forum', # NEW
 	'info_activer_forum_public' => '<NEW> <i>Pour activer les forums publics, veuillez choisir leur mode
-	de modération par défaut:</i>',
+	de modération par défaut:</i>', # MODIF
 	'info_appliquer_choix_moderation' => '<NEW> Appliquer ce choix de modération :',
 	'info_config_forums_prive' => 'In the editing area of the site several differnt kinds of forum may be activated:', # NEW
 	'info_config_forums_prive_admin' => 'A forum reserved for site administrators:', # NEW
@@ -108,8 +108,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 		associé à un article, les auteurs de l\'article peuvent être
 		prévenus de ce message par e-mail. Souhaitez-vous utiliser cette option ?', # MODIF
 	'info_pas_de_forum' => '<NEW> pas de forum',
-	'info_question_visiteur_ajout_document_forum' => 'If you wish to allow visitors to attach documents (images, sound files, ...) to their forum messages, indicate below the list of file extensions which are authorised (e.g. gif, jpg, png, mp3).', # NEW
-	'info_question_visiteur_ajout_document_forum_format' => 'If you wish to authorise all document types which SPIP allows, then put an asterisk. To allow no file-types, leave empty.', # NEW
+	'info_question_visiteur_ajout_document_forum' => 'If you wish to allow visitors to attach documents (images, sound files, ...) to their forum messages, indicate below the list of file extensions which are authorised (e.g. gif, jpg, png, mp3).', # MODIF
+	'info_question_visiteur_ajout_document_forum_format' => 'If you wish to authorise all document types which SPIP allows, then put an asterisk. To allow no file-types, leave empty.', # MODIF
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW
 	'item_activer_forum_administrateur' => '<NEW> Activer le forum des administrateurs',

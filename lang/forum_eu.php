@@ -75,7 +75,7 @@ Inskribaturik ez bazaude, aurretik inskribatu behar duzu.',
 	'icone_valider_messages' => 'Valider ces messages', # NEW
 	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message', # NEW
 	'info_1_message_forum' => '1 message de forum', # NEW
-	'info_activer_forum_public' => 'Foru publikoak aktibatzeko, aukeratu moderazio erabat',
+	'info_activer_forum_public' => 'Foru publikoak aktibatzeko, aukeratu moderazio erabat', # MODIF
 	'info_appliquer_choix_moderation' => 'Moderazio mota hau ezarri',
 	'info_config_forums_prive' => 'Eremu pribatuan foro mota desberdinak aktibatzen ahal dituzu',
 	'info_config_forums_prive_admin' => 'gunearen administratzaileei erreserbatutako foroa :',
@@ -97,7 +97,7 @@ Inskribaturik ez bazaude, aurretik inskribatu behar duzu.',
 	'info_nb_messages_forum' => '@nb@ messages de forum', # NEW
 	'info_option_email' => 'Guneko bisitari batek artikulu batekin erlazionatutako mezu berri bat bidaltzen duenean foroan, artikuluaren idazleak mezu honetaz abisatuakizan ahal dira e-mailez. Aukera hau erabili nahi duzu ?',
 	'info_pas_de_forum' => 'fororik ez',
-	'info_question_visiteur_ajout_document_forum' => 'Si vous souhaitez autoriser les visiteurs à joindre des documents (images, sons...) à leurs messages de forum, indiquer ci-dessous la liste des extensions de documents autorisés pour les forums (ex: gif, jpg, png, mp3).',
+	'info_question_visiteur_ajout_document_forum' => 'Si vous souhaitez autoriser les visiteurs à joindre des documents (images, sons...) à leurs messages de forum, indiquer ci-dessous la liste des extensions de documents autorisés pour les forums (ex: gif, jpg, png, mp3).', # MODIF
 	'info_question_visiteur_ajout_document_forum_format' => 'Le cas échéant, indiquer ci-dessous la liste des extensions de documents autorisés pour les forums (ex: gif, jpg, png, mp3).', # MODIF
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW

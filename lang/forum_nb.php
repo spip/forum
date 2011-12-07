@@ -82,7 +82,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message', # NEW
 	'info_1_message_forum' => '1 message de forum', # NEW
 	'info_activer_forum_public' => '<i>Pour activer les forums publics, veuillez choisir leur mode
-	de modération par défaut:</i>', # NEW
+	de modération par défaut:</i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Appliquer ce choix de modération :', # NEW
 	'info_config_forums_prive' => 'Dans l’espace privé du site, vous pouvez activer plusieurs types de forums :', # NEW
 	'info_config_forums_prive_admin' => 'Un forum réservé aux administrateurs du site :', # NEW

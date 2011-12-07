@@ -79,7 +79,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message', # NEW
 	'info_1_message_forum' => '1 message de forum', # NEW
 	'info_activer_forum_public' => '<i>Para activar os foros p&amp;uacute;blicos, escolla o xeito
-  de moderaci&amp;oacute;n predeterminado:</i>',
+  de moderaci&amp;oacute;n predeterminado:</i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Aplicar esta opción de moderación:',
 	'info_config_forums_prive' => 'No espazo privado do web, pode activar varios tipos de foros :',
 	'info_config_forums_prive_admin' => 'Un foro reservado aos administradores do web :',
@@ -105,8 +105,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
   vencellado a un artigo, os autores relacionados co artigo poden recibir
   aviso desta mensaxe por correo-e. Quere preguntar para cada tipo de foro se cómpre empregar esta opción?',
 	'info_pas_de_forum' => 'non hai foro',
-	'info_question_visiteur_ajout_document_forum' => 'Se quere autorizar os visitantes para que poidan anexar documentos (imaxes, sons...) nas súas mensaxes dos foros, indique a seguir a lista de extensións autorizadas para os foros (ex: gif, jpg, png, mp3).',
-	'info_question_visiteur_ajout_document_forum_format' => 'Se quere autorizar todos os tipos de documentos considerados como fiables por SPIP, marque unha estrela. Para non autorizar nada, non indique nada.',
+	'info_question_visiteur_ajout_document_forum' => 'Se quere autorizar os visitantes para que poidan anexar documentos (imaxes, sons...) nas súas mensaxes dos foros, indique a seguir a lista de extensións autorizadas para os foros (ex: gif, jpg, png, mp3).', # MODIF
+	'info_question_visiteur_ajout_document_forum_format' => 'Se quere autorizar todos os tipos de documentos considerados como fiables por SPIP, marque unha estrela. Para non autorizar nada, non indique nada.', # MODIF
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW
 	'item_activer_forum_administrateur' => 'Activar o foro do equipo de xestión',

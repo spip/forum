@@ -73,7 +73,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_valider_repondre_message' => 'Bestätigung; Diesen Beitrag beantworten',
 	'info_1_message_forum' => '1 Beitrag im Forum',
 	'info_activer_forum_public' => '<i>Um die öffentlichen Foren zu aktivieren, wählen Sie bitte
- die Moderation im Standardmodus:</i>',
+ die Moderation im Standardmodus:</i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Moderationstyp anwenden:',
 	'info_config_forums_prive' => 'Im Redaktionsbereich können Sie verschiedene Foren aktivieren:',
 	'info_config_forums_prive_admin' => 'Ein Forum nur für Administratoren der Site:',
@@ -95,8 +95,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_nb_messages_forum' => '@nb@ Beiträge im Forum',
 	'info_option_email' => 'Wenn ein Besucher einen Beitrag im Forum eines Artikels postet, kann SPIP ihn an den Autor des Artikels schicken. Bitte geben Sie für jeden Inhaltstyp an, ob sie diese Funktion nutzen möchten.',
 	'info_pas_de_forum' => 'kein Forum',
-	'info_question_visiteur_ajout_document_forum' => 'Wenn Sie den Besuchern gestatten, ihren Forumsbeiträgen Dokumente (Töne, Bilder, ...) beizufügen, wählen Sie bitte aus der Liste die erlaubten Formate (z.B. gif, jpg, png, mp3).',
-	'info_question_visiteur_ajout_document_forum_format' => 'Wenn Sie alle von SPIP akzeptierten Dateitypen zulassen möchten, geben Sie bitte einen Asterisk (*) ein. Wenn Sie keine Dokumente zulassen möchten, tragen Sie keinen Wert ein.',
+	'info_question_visiteur_ajout_document_forum' => 'Wenn Sie den Besuchern gestatten, ihren Forumsbeiträgen Dokumente (Töne, Bilder, ...) beizufügen, wählen Sie bitte aus der Liste die erlaubten Formate (z.B. gif, jpg, png, mp3).', # MODIF
+	'info_question_visiteur_ajout_document_forum_format' => 'Wenn Sie alle von SPIP akzeptierten Dateitypen zulassen möchten, geben Sie bitte einen Asterisk (*) ein. Wenn Sie keine Dokumente zulassen möchten, tragen Sie keinen Wert ein.', # MODIF
 	'interface_formulaire' => 'Interface als Formular',
 	'interface_onglets' => 'Interface mit Reitern',
 	'item_activer_forum_administrateur' => 'Admin-Forum aktivieren',

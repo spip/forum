@@ -79,7 +79,7 @@ Si ja n\'esteu, escriviu a continuació l\'identifcador que us ha estat proporci
 	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message', # NEW
 	'info_1_message_forum' => '1 message de forum', # NEW
 	'info_activer_forum_public' => '<i>Per activar els fòrums públics, escolliu el seu mode
- de moderació per defecte:</i>',
+ de moderació per defecte:</i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Aplicar aquesta opció de moderació:',
 	'info_config_forums_prive' => 'A l\'espai privat del lloc Web, podeu activar diversos models de fòrums:',
 	'info_config_forums_prive_admin' => 'Un fòrum reservat als administradors del lloc:',
@@ -103,8 +103,8 @@ Si ja n\'esteu, escriviu a continuació l\'identifcador que us ha estat proporci
 	'info_nb_messages_forum' => '@nb@ messages de forum', # NEW
 	'info_option_email' => 'Quan un visitant del lloc envia un nou missatge al fòrum associat a un article, els autors de l\'article poden ser informats d\'aquest missatge per correu electrònic. Indiqueu per cada tipus de fòrum si és necessari utilitzar aquesta opció.',
 	'info_pas_de_forum' => 'sense fòrum',
-	'info_question_visiteur_ajout_document_forum' => 'Si voleu permetre que els visitants puguin adjuntar documents (imatges, sons...) als seus missatges dels fòrums, indiqueu, més avall, la llista de documents permesos pels fòrums (ex. gif, jpg, png, mp3).',
-	'info_question_visiteur_ajout_document_forum_format' => 'Si voleu autoritzar tots els tipus de documents considerats com a fiables per SPIP, poseu una estrella. No indiqueu res, si no voleu autoritzar res.',
+	'info_question_visiteur_ajout_document_forum' => 'Si voleu permetre que els visitants puguin adjuntar documents (imatges, sons...) als seus missatges dels fòrums, indiqueu, més avall, la llista de documents permesos pels fòrums (ex. gif, jpg, png, mp3).', # MODIF
+	'info_question_visiteur_ajout_document_forum_format' => 'Si voleu autoritzar tots els tipus de documents considerats com a fiables per SPIP, poseu una estrella. No indiqueu res, si no voleu autoritzar res.', # MODIF
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW
 	'item_activer_forum_administrateur' => 'Activar el fòrum dels administradors',

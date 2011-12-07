@@ -82,7 +82,7 @@ patisipasyon yo zitilizatè tout ke pa afiche sou sitwèb piblik si yon komandé
 	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message', # NEW
 	'info_1_message_forum' => '1 message de forum', # NEW
 	'info_activer_forum_public' => '<i>Pou fowom piblik mache, mési chwazi manyir modèr a y otomatikman
-:</i>',
+:</i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Fè mache chwa nan pou modéwasyon :',
 	'info_config_forums_prive' => 'Dans l’espace privé du site, vous pouvez activer plusieurs types de forums :', # NEW
 	'info_config_forums_prive_admin' => 'Un forum réservé aux administrateurs du site :', # NEW

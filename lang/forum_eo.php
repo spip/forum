@@ -78,7 +78,7 @@ forviŝi ilin poste).',
 	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message', # NEW
 	'info_1_message_forum' => '1 message de forum', # NEW
 	'info_activer_forum_public' => '<i>Por aktivigi la publikajn forumojn, bonvolu elekti ilian
- defaŭltan moderig-reĝimon:</i>',
+ defaŭltan moderig-reĝimon:</i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Apliki tiun moderig-elekton :',
 	'info_config_forums_prive' => 'En la privata spaco de la retejo, vi povas aktivigi plurajn tipojn de forumoj :',
 	'info_config_forums_prive_admin' => 'Forumo rezervita al retejaj mastrumantoj :',

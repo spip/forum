@@ -82,7 +82,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message', # NEW
 	'info_1_message_forum' => '1 message de forum', # NEW
 	'info_activer_forum_public' => '<i>Pa activar los foros públicos, has d\'escoyer el tipu
- de moderación por omisión:</i>',
+ de moderación por omisión:</i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Aplicar esta escoyeta pal llendamientu:',
 	'info_config_forums_prive' => 'Nel espaciu priváu del sitiu, puedes activar dellos tipos de foros:',
 	'info_config_forums_prive_admin' => 'Un foru acutáu pa los alministradores del sitiu:',
@@ -106,8 +106,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_nb_messages_forum' => '@nb@ messages de forum', # NEW
 	'info_option_email' => 'Cuando un visitante del sitiu unvía un mensaxe nuevu al foru venceyáu a un artículu, puede avisase a los o les autores del mesmu por e-mail. Escoyer pa cada tipu de foru si va emplegase esta opción.',
 	'info_pas_de_forum' => 'ensin foru',
-	'info_question_visiteur_ajout_document_forum' => 'Si quiés autorizar que los visitantes amesten documentos (imáxenes, sones...) nos sos mensaxes del foru, indica embaxo la llista d\'estensiones de documentu permitíes nos foros (p. ex: gif, jpg, png, mp3).',
-	'info_question_visiteur_ajout_document_forum_format' => 'Si quiés autorizar tolos tipos de documentu que SPIP considera fiables, pon un asteriscu. Pa nun autorizar na, déxalo en blancu,',
+	'info_question_visiteur_ajout_document_forum' => 'Si quiés autorizar que los visitantes amesten documentos (imáxenes, sones...) nos sos mensaxes del foru, indica embaxo la llista d\'estensiones de documentu permitíes nos foros (p. ex: gif, jpg, png, mp3).', # MODIF
+	'info_question_visiteur_ajout_document_forum_format' => 'Si quiés autorizar tolos tipos de documentu que SPIP considera fiables, pon un asteriscu. Pa nun autorizar na, déxalo en blancu,', # MODIF
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW
 	'item_activer_forum_administrateur' => 'Activar el foru de los alministradores',

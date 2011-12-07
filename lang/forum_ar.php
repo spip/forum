@@ -82,7 +82,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_valider_repondre_message' => 'التصديق على هذه المشاركة والرد عليها',
 	'info_1_message_forum' => 'مشاركة منتدى واحدة',
 	'info_activer_forum_public' => 'لتفعيل المنتديات العامة، الرجاء إختيار وضعية
-المراقبة الافتراضية:',
+المراقبة الافتراضية:', # MODIF
 	'info_appliquer_choix_moderation' => 'تطبيق خيار المراقبة هذا:',
 	'info_config_forums_prive' => 'في المجال الخاص، يمكنك تفعيل عدة انواع من المنتديات:',
 	'info_config_forums_prive_admin' => 'منتدى مخصص لمدراء الموقع:',
@@ -103,11 +103,11 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_liens_texte' => 'الرابط او الروابط الموجودة في نص المشاركة',
 	'info_liens_titre' => 'الرتبط او الروابط الموجودة في عنوان المشاركة',
 	'info_mode_fonctionnement_defaut_forum_public' => 'الوضعية الافتراضية لتشغيل المنتديات العامة',
-	'info_nb_messages_forum' => '@nb@مشركة منتدى',
+	'info_nb_messages_forum' => '@nb@ مشاركة منتدى',
 	'info_option_email' => 'عندما يبعث احد زوار الموقع بمشاركة الى المنتدى المرتبط بأحد المقالات، يمكن إعلام مؤلفي المقال بهذه المشاركة بواسطة البريد الالكتروني. عليك بتحديد استخدام هذا الخيار ام لا لكل نوع من المنتديات.',
 	'info_pas_de_forum' => 'بدون منتديات',
-	'info_question_visiteur_ajout_document_forum' => 'اذا اردت السماح للزوار بإرفاق مستندات (صور، اصوات،...) بمشاركاتهم في المنتدى، حدد هنا لائحة لواحق المستندات المسموح بها في المنتديات (مثلاً: gif او jpg او png او mp3).',
-	'info_question_visiteur_ajout_document_forum_format' => 'اذا اردت السماح بكل انواع المستندات التي يعتبرها SPIP آمنة، ضع نجمة (*).اما اذا اردت عدم السماح بأي نوع، فلا تصع أي شيء.',
+	'info_question_visiteur_ajout_document_forum' => 'اذا اردت السماح للزوار بإرفاق مستندات (صور، اصوات،...) بمشاركاتهم في المنتدى، حدد هنا لائحة لواحق المستندات المسموح بها في المنتديات (مثلاً: gif او jpg او png او mp3).', # MODIF
+	'info_question_visiteur_ajout_document_forum_format' => 'اذا اردت السماح بكل انواع المستندات التي يعتبرها SPIP آمنة، ضع نجمة (*).اما اذا اردت عدم السماح بأي نوع، فلا تصع أي شيء.', # MODIF
 	'interface_formulaire' => 'واجهة الاستمارة',
 	'interface_onglets' => 'واجهة مقسّمة',
 	'item_activer_forum_administrateur' => 'تفعيل منتدى المدراء',

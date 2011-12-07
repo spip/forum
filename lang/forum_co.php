@@ -79,7 +79,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message', # NEW
 	'info_1_message_forum' => '1 message de forum', # NEW
 	'info_activer_forum_public' => '<i>Per attivà i fori pùbblichi, sceglite puru u tippu 
-	di muderazione predefinitu :</i>',
+	di muderazione predefinitu :</i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Serà appiecata sta scelta di muderazione :',
 	'info_config_forums_prive' => 'In u spaziu riservatu di u situ, pudete puru attivà diversi tippi di fori :',
 	'info_config_forums_prive_admin' => 'Un foru riservatu à l\'amministratori di u situ :',
@@ -108,9 +108,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	avvisati da un email. Signalate puru per ogni tippu di foru s\'ellu ci vole à usà st\'opzione.',
 	'info_pas_de_forum' => 'Nisunu foru',
 	'info_question_visiteur_ajout_document_forum' => 'Sè vo vulete auturizà i visitori à alleà ducumenti (imàgini, mùsiche ...) à i so messagi di u foru, 
-		rinsignate quì sottu a lista di \'estensioni di i ducumenti auturizati pè i fori (per esempiu : gif, jpg, png, mp3).',
+		rinsignate quì sottu a lista di \'estensioni di i ducumenti auturizati pè i fori (per esempiu : gif, jpg, png, mp3).', # MODIF
 	'info_question_visiteur_ajout_document_forum_format' => 'Sè vo vulete auturizà tutti i tippi di ducumenti cunsiderati da affidati da SPIP, mettite una 
-		stelluccia. Per ùn auturizà nunda, ùn mettite nunda.',
+		stelluccia. Per ùn auturizà nunda, ùn mettite nunda.', # MODIF
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW
 	'item_activer_forum_administrateur' => 'Attivà u foru di l\'amministratori',

@@ -80,7 +80,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_valider_messages' => 'Valider ces messages', # NEW
 	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message', # NEW
 	'info_1_message_forum' => '1 message de forum', # NEW
-	'info_activer_forum_public' => '<i>Для включения публичных форумов, пожалуйста выберите модерацию: </i>',
+	'info_activer_forum_public' => '<i>Для включения публичных форумов, пожалуйста выберите модерацию: </i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Применить этот тип модерации:',
 	'info_config_forums_prive' => 'В области редактирования сайта может быть включено несколько видов форума:',
 	'info_config_forums_prive_admin' => 'Форум для администраторов сайта:',
@@ -106,8 +106,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  форуме  связанного со статьей, автор статьи может быть 
  проинформирован о нем по электронной почте. Укажите для каждого вида форума, если эта опция должна быть включена.',
 	'info_pas_de_forum' => 'нет форума',
-	'info_question_visiteur_ajout_document_forum' => 'Если Вы хотите разрешить Вашим посетителям прикреплять документы (изображения, звуковые файлы, ...) к ихним сообщениям форума, укажите ниже список расширения имени файла, которые являются авторизованными(e.g. gif, jpg, png, mp3).',
-	'info_question_visiteur_ajout_document_forum_format' => 'Если Вы хотите включить все типы документов, которые позволяет SPIP, тогда поставьте звездочку. Чтобы не разрешить типы файлов - оставьте пустым.',
+	'info_question_visiteur_ajout_document_forum' => 'Если Вы хотите разрешить Вашим посетителям прикреплять документы (изображения, звуковые файлы, ...) к ихним сообщениям форума, укажите ниже список расширения имени файла, которые являются авторизованными(e.g. gif, jpg, png, mp3).', # MODIF
+	'info_question_visiteur_ajout_document_forum_format' => 'Если Вы хотите включить все типы документов, которые позволяет SPIP, тогда поставьте звездочку. Чтобы не разрешить типы файлов - оставьте пустым.', # MODIF
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW
 	'item_activer_forum_administrateur' => 'Включить форум администраторов',
