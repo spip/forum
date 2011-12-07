@@ -89,6 +89,7 @@ function balise_FORMULAIRE_FORUM_PRIVE_stat($args, $context_compil) {
 	// deux autres a la suite pour forcer objet et id_objet
 	// [(#FORMULAIRE_FORUM_PRIVE{#SELF, article, 8})]
 	//
+
 	// $args = (obtenir) + (ids) + (url, objet, id_objet)
 	$ido = array_shift($args);
 	$id_forum = intval(array_shift($args));
@@ -97,7 +98,8 @@ function balise_FORMULAIRE_FORUM_PRIVE_stat($args, $context_compil) {
 
 	include_spip('balise/formulaire_forum');
 	$r = balise_forum_retrouve_objet($ido,$id_forum,$args,$context_compil);
-	if (!$r)
+	// si statut privrac ou privadm, pas besoin d'objet !
+	if ($statut=='prive' AND !$r)
 		return false;
 
 	list($objet, $id_objet, $retour) = $r;

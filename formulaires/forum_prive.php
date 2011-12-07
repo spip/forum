@@ -16,7 +16,8 @@ include_spip('inc/forum');
 
 function formulaires_forum_prive_charger_dist($objet, $id_objet, $id_forum, $afficher_previsu, $statut, $retour='') {
 
-	if (!$titre = forum_recuperer_titre($objet,$id_objet,$id_forum,false))
+	// si objet, il faut un titre, sinon on est dans un statut privrac/privadm qui permet un forum sans objet
+	if ($objet AND $id_objet AND !$titre = forum_recuperer_titre($objet,$id_objet,$id_forum,false))
 		return false;
 
 	$primary = id_table_objet($objet);
