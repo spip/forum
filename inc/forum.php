@@ -201,9 +201,10 @@ function enregistre_et_modifie_forum($id_forum, $c=false) {
  * @param string $objet
  * @param int $id_objet
  * @param int $id_forum
+ * @param bool $publie
  * @return bool|string
  */
-function forum_recuperer_titre($objet, $id_objet, $id_forum=0, $publie = true) {
+function forum_recuperer_titre_dist($objet, $id_objet, $id_forum=0, $publie = true) {
 	include_spip('inc/filtres');
 	$titre = "";
 

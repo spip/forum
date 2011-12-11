@@ -32,7 +32,9 @@ include_spip('inc/forum');
 function formulaires_forum_charger_dist($objet,$id_objet, $id_forum,
   $ajouter_mot, $ajouter_groupe, $afficher_previsu, $retour) {
 
-	if (!$titre = forum_recuperer_titre($objet,$id_objet,$id_forum))
+	if (!function_exists($f='forum_recuperer_titre'))
+		$f = 'forum_recuperer_titre_dist';
+	if (!$titre = $f($objet,$id_objet,$id_forum))
 		return false;
 
 	// ca s'apparenterait presque a une autorisation...
