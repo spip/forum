@@ -1,6 +1,6 @@
 <?php
 // This is a SPIP language file  --  Ceci est un fichier langue de SPIP
-// extrait automatiquement de http://www.spip.net/trad-lang/
+// extrait automatiquement de http://trad.spip.org
 // ** ne pas modifier le fichier **
 
 if (!defined('_ECRIRE_INC_VERSION')) return;
@@ -76,10 +76,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Validar a mensaxe',
 	'icone_valider_messages' => 'Valider ces messages', # NEW
-	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message', # NEW
+	'icone_valider_repondre_message' => 'Valider & Répondre à ce message', # NEW
 	'info_1_message_forum' => '1 message de forum', # NEW
-	'info_activer_forum_public' => '<i>Para activar os foros p&amp;uacute;blicos, escolla o xeito
-  de moderaci&amp;oacute;n predeterminado:</i>', # MODIF
+	'info_activer_forum_public' => '<i>Para activar os foros p&uacute;blicos, escolla o xeito
+  de moderaci&oacute;n predeterminado:</i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Aplicar esta opción de moderación:',
 	'info_config_forums_prive' => 'No espazo privado do web, pode activar varios tipos de foros :',
 	'info_config_forums_prive_admin' => 'Un foro reservado aos administradores do web :',
@@ -91,7 +91,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_envoi_forum' => 'Envío de foros ás/ós autoras/es dos artigos',
 	'info_fonctionnement_forum' => 'Funcionamento do foro:',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
-	'info_gauche_suivi_forum_2' => 'A p&amp;acute;xina de <i>seguimento dos foros</i>  &amp;eeacute; unha ferramenta de xesti&amp;oacute;n do web (e non un espazo de discusi&amp;oacute;n ou de redacci&amp;oacute;n). Mostra todas as contribuci&amp;oacute;ns nos foros do web, tanto as do espazo p&amp;uacute;blico coma as do espazo privado e permite xestionar estas contribuci&amp;oacute;ns.',
+	'info_gauche_suivi_forum_2' => 'A p&acute;xina de <i>seguimento dos foros</i>  &eeacute; unha ferramenta de xesti&oacute;n do web (e non un espazo de discusi&oacute;n ou de redacci&oacute;n). Mostra todas as contribuci&oacute;ns nos foros do web, tanto as do espazo p&uacute;blico coma as do espazo privado e permite xestionar estas contribuci&oacute;ns.',
 	'info_liens_syndiques_3' => 'foros',
 	'info_liens_syndiques_4' => 'están',
 	'info_liens_syndiques_5' => 'foro',
@@ -158,7 +158,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'text_article_propose_publication_forum' => 'Non dubide avisar a través do foro asociado a este artigo (a pé de páxina).',
 	'texte_en_cours_validation' => 'Les articles, brèves, forums ci dessous sont proposés à la publication.', # NEW
 	'texte_en_cours_validation_forum' => 'Non dubide avisar a través dos foros que levan engadidos.',
-	'texte_messages_publics' => 'Messages publics sur&nbsp;:', # NEW
+	'texte_messages_publics' => 'Messages publics sur :', # NEW
 	'titre_cadre_forum_administrateur' => 'Foro privado de xestión',
 	'titre_cadre_forum_interne' => 'Foro interno',
 	'titre_config_forums_prive' => 'Foros do espazo privado',

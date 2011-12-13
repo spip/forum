@@ -1,6 +1,6 @@
 <?php
 // This is a SPIP language file  --  Ceci est un fichier langue de SPIP
-// extrait automatiquement de http://www.spip.net/trad-lang/
+// extrait automatiquement de http://trad.spip.org
 // ** ne pas modifier le fichier **
 
 if (!defined('_ECRIRE_INC_VERSION')) return;
@@ -73,7 +73,7 @@ Inskribaturik ez bazaude, aurretik inskribatu behar duzu.',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Mezu hau onartu',
 	'icone_valider_messages' => 'Valider ces messages', # NEW
-	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message', # NEW
+	'icone_valider_repondre_message' => 'Valider & Répondre à ce message', # NEW
 	'info_1_message_forum' => '1 message de forum', # NEW
 	'info_activer_forum_public' => 'Foru publikoak aktibatzeko, aukeratu moderazio erabat', # MODIF
 	'info_appliquer_choix_moderation' => 'Moderazio mota hau ezarri',
@@ -150,7 +150,7 @@ Inskribaturik ez bazaude, aurretik inskribatu behar duzu.',
 	'text_article_propose_publication_forum' => 'Ez beldurtu zure iritzia emateaz. Artikuluari foro bat lotua zaio (orri beherean).',
 	'texte_en_cours_validation' => 'Les articles, brèves, forums ci dessous sont proposés à la publication.', # NEW
 	'texte_en_cours_validation_forum' => 'Ez izan zalantzarik zure iritzia emateko beraiei erantsitako foroei esker.',
-	'texte_messages_publics' => 'Messages publics sur&nbsp;:', # NEW
+	'texte_messages_publics' => 'Messages publics sur :', # NEW
 	'titre_cadre_forum_administrateur' => 'Administrarien foroa',
 	'titre_cadre_forum_interne' => 'Barneko foroa',
 	'titre_config_forums_prive' => 'Forums de l’espace privé', # NEW

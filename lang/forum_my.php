@@ -1,6 +1,6 @@
 <?php
 // This is a SPIP language file  --  Ceci est un fichier langue de SPIP
-// extrait automatiquement de http://www.spip.net/trad-lang/
+// extrait automatiquement de http://trad.spip.org
 // ** ne pas modifier le fichier **
 
 if (!defined('_ECRIRE_INC_VERSION')) return;
@@ -70,7 +70,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'ဤစာစောင်ကို အတည်ပြုရန်',
 	'icone_valider_messages' => 'Valider ces messages', # NEW
-	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message', # NEW
+	'icone_valider_repondre_message' => 'Valider & Répondre à ce message', # NEW
 	'info_1_message_forum' => '1 message de forum', # NEW
 	'info_activer_forum_public' => '<i>အများသုံးဖိုရမ်သို့ ဝင်ရောက်ရန်အတွက် အခြားထိန်းချုပ်မှုပုံစံကို ရွေးချယ်ပေးပါ</i>', # MODIF
 	'info_appliquer_choix_moderation' => 'ဆုံးဖြတ်ခြင်းအတွက် သည်ရွေးချယ်မှုကိုပြုလုပ်ပါ',
@@ -148,7 +148,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'text_article_propose_publication_forum' => 'N\'hésitez pas à donner votre avis grâce au forum attaché à cet article (en bas de page).', # NEW
 	'texte_en_cours_validation' => 'Les articles, brèves, forums ci dessous sont proposés à la publication.', # NEW
 	'texte_en_cours_validation_forum' => 'N\'hésitez pas à donner votre avis grâce aux forums qui leur sont attachés.', # NEW
-	'texte_messages_publics' => 'Messages publics sur&nbsp;:', # NEW
+	'texte_messages_publics' => 'Messages publics sur :', # NEW
 	'titre_cadre_forum_administrateur' => 'ကြီးကြပ်သူ၏ ကိုယ်ပိုင်ဖိုရမ်',
 	'titre_cadre_forum_interne' => 'ဖိုရမ်အတွင်းပိုင်း',
 	'titre_config_forums_prive' => 'Forums de l’espace privé', # NEW

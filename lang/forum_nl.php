@@ -1,6 +1,6 @@
 <?php
 // This is a SPIP language file  --  Ceci est un fichier langue de SPIP
-// extrait automatiquement de http://www.spip.net/trad-lang/
+// extrait automatiquement de http://trad.spip.org
 // ** ne pas modifier le fichier **
 
 if (!defined('_ECRIRE_INC_VERSION')) return;
@@ -77,7 +77,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Bericht goedkeuren',
 	'icone_valider_messages' => 'Valider ces messages', # NEW
-	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message', # NEW
+	'icone_valider_repondre_message' => 'Valider & Répondre à ce message', # NEW
 	'info_1_message_forum' => '1 message de forum', # NEW
 	'info_activer_forum_public' => '<i>Om de openbare forums te activeren, dien je een standaardinstelling
  voor het modereren te kiezen :</i>', # MODIF
@@ -157,7 +157,7 @@ De publieke forums kunnen per artikel toegestaan worden
 	'text_article_propose_publication_forum' => 'Aarzelt niet om uw advies te geven dank zij het forum dat aan dit artikel wordt vastgemaakt (beneden van bladzijde).',
 	'texte_en_cours_validation' => 'Les articles, brèves, forums ci dessous sont proposés à la publication.', # NEW
 	'texte_en_cours_validation_forum' => 'Aarzelt niet om uw advies te geven dank zij de forums die hun worden vastgemaakt.',
-	'texte_messages_publics' => 'Messages publics sur&nbsp;:', # NEW
+	'texte_messages_publics' => 'Messages publics sur :', # NEW
 	'titre_cadre_forum_administrateur' => 'Privé-forum voor de beheerders',
 	'titre_cadre_forum_interne' => 'Intern forum',
 	'titre_config_forums_prive' => 'Forums van de particuliere ruimte',

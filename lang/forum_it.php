@@ -1,6 +1,6 @@
 <?php
 // This is a SPIP language file  --  Ceci est un fichier langue de SPIP
-// extrait automatiquement de http://www.spip.net/trad-lang/
+// extrait automatiquement de http://trad.spip.org
 // ** ne pas modifier le fichier **
 
 if (!defined('_ECRIRE_INC_VERSION')) return;
@@ -78,7 +78,7 @@ che ti è stato fornito.  Se non sei registrato, devi',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Convalida il messaggio',
 	'icone_valider_messages' => 'Valider ces messages', # NEW
-	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message', # NEW
+	'icone_valider_repondre_message' => 'Valider & Répondre à ce message', # NEW
 	'info_1_message_forum' => '1 message de forum', # NEW
 	'info_activer_forum_public' => '<i>Per attivare i forum pubblici, scegli il tipo
 di moderazione predefinito:</i>', # MODIF
@@ -158,7 +158,7 @@ sui singoli articoli; saranno invece proibiti nelle rubriche, nelle brevi, ecc',
 	'text_article_propose_publication_forum' => 'Non esitare ad esprimere il tuo punto di vista nel forum di questo articolo (a fondo pagina).',
 	'texte_en_cours_validation' => 'Les articles, brèves, forums ci dessous sont proposés à la publication.', # NEW
 	'texte_en_cours_validation_forum' => 'Non esitare ad esprimere il tuo punto di vista utilizzando i forum ad essi dedicati.',
-	'texte_messages_publics' => 'Messages publics sur&nbsp;:', # NEW
+	'texte_messages_publics' => 'Messages publics sur :', # NEW
 	'titre_cadre_forum_administrateur' => 'Forum privato degli amministratori',
 	'titre_cadre_forum_interne' => 'Forum interno',
 	'titre_config_forums_prive' => 'Forum dell\'area riservata',

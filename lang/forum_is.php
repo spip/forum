@@ -1,6 +1,6 @@
 <?php
 // This is a SPIP language file  --  Ceci est un fichier langue de SPIP
-// extrait automatiquement de http://www.spip.net/trad-lang/
+// extrait automatiquement de http://trad.spip.org
 // ** ne pas modifier le fichier **
 
 if (!defined('_ECRIRE_INC_VERSION')) return;
@@ -79,7 +79,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Staðfesta skilaboðin',
 	'icone_valider_messages' => 'Valider ces messages', # NEW
-	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message', # NEW
+	'icone_valider_repondre_message' => 'Valider & Répondre à ce message', # NEW
 	'info_1_message_forum' => '1 message de forum', # NEW
 	'info_activer_forum_public' => '<NEW> <i>Pour activer les forums publics, veuillez choisir leur mode
 	de modération par défaut:</i>', # MODIF
@@ -121,7 +121,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// L
 	'lien_reponse_article' => '<NEW> Réponse à l\'article',
-	'lien_reponse_breve_2' => '<NEW> Réponse à la brève',
+	'lien_reponse_breve_2' => 'Réponse à la brève', # NEW
 	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => '<NEW> Réponse à la rubrique',
 	'lien_reponse_site_reference' => '<NEW> Réponse au site référencé :', # MODIF
@@ -161,7 +161,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'text_article_propose_publication_forum' => 'N\'hésitez pas à donner votre avis grâce au forum attaché à cet article (en bas de page).', # NEW
 	'texte_en_cours_validation' => 'Les articles, brèves, forums ci dessous sont proposés à la publication.', # NEW
 	'texte_en_cours_validation_forum' => 'N\'hésitez pas à donner votre avis grâce aux forums qui leur sont attachés.', # NEW
-	'texte_messages_publics' => 'Messages publics sur&nbsp;:', # NEW
+	'texte_messages_publics' => 'Messages publics sur :', # NEW
 	'titre_cadre_forum_administrateur' => '<NEW> Forum privé des administrateurs',
 	'titre_cadre_forum_interne' => '<NEW> Forum interne',
 	'titre_config_forums_prive' => 'Forums de l’espace privé', # NEW

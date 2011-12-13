@@ -1,6 +1,6 @@
 <?php
 // This is a SPIP language file  --  Ceci est un fichier langue de SPIP
-// extrait automatiquement de http://www.spip.net/trad-lang/
+// extrait automatiquement de http://trad.spip.org
 // ** ne pas modifier le fichier **
 
 if (!defined('_ECRIRE_INC_VERSION')) return;
@@ -75,7 +75,7 @@ sonradan yok edebilir).',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'İletiyi onayla',
 	'icone_valider_messages' => 'Valider ces messages', # NEW
-	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message', # NEW
+	'icone_valider_repondre_message' => 'Valider & Répondre à ce message', # NEW
 	'info_1_message_forum' => '1 message de forum', # NEW
 	'info_activer_forum_public' => 'Kamu forumlarını çalıştırmak için, lütfen varsayılan bir yönetim kipi seçiniz :', # MODIF
 	'info_appliquer_choix_moderation' => 'Bu yönetim seçeneğinin uygulanması :',
@@ -156,7 +156,7 @@ sonradan yok edebilir).',
 	'text_article_propose_publication_forum' => 'Sayfanın alt kısmındaki forum yoluyla bu makale hakkındaki görüşünüzü belirtmekten kaçınmayınız.',
 	'texte_en_cours_validation' => 'Les articles, brèves, forums ci dessous sont proposés à la publication.', # NEW
 	'texte_en_cours_validation_forum' => 'İlgili forumlar aracılığıyla görüşünüzü belirtmekten kaçınmayınız.',
-	'texte_messages_publics' => 'Messages publics sur&nbsp;:', # NEW
+	'texte_messages_publics' => 'Messages publics sur :', # NEW
 	'titre_cadre_forum_administrateur' => 'Yöneticiler için özel forum',
 	'titre_cadre_forum_interne' => 'İç forum',
 	'titre_config_forums_prive' => 'Özel alan forumları',

@@ -1,11 +1,10 @@
-<traduction module="forum" gestionnaire="salvatore" reference="fr">
+<traduction module="forum" gestionnaire="salvatore" url="http://trad.spip.org" source="svn://zone.spip.org/spip-zone/_core_/plugins/forum/lang/" reference="fr">
 	<langue code="ar">
 		<traducteur nom="kandalaft" />
 	</langue>
 	<langue code="ast">
 		<traducteur nom="xuacu" />
 	</langue>
-	<langue code="ay" />
 	<langue code="bg" />
 	<langue code="br" />
 	<langue code="bs" />
@@ -20,9 +19,6 @@
 	<langue code="de">
 		<traducteur nom="klaus" />
 		<traducteur nom="jaro" />
-	</langue>
-	<langue code="el">
-		<traducteur nom="yann7" />
 	</langue>
 	<langue code="en">
 		<traducteur nom="squonk" />
@@ -42,24 +38,16 @@
 	<langue code="fr_tu">
 		<traducteur nom="beatnick" />
 	</langue>
-	<langue code="ft_tu" />
 	<langue code="gl" />
-	<langue code="grecgr" />
-	<langue code="hac" />
 	<langue code="he" />
 	<langue code="hu" />
 	<langue code="id" />
-	<langue code="is" />
-	<langue code="isl" />
 	<langue code="it" />
 	<langue code="it_fem" />
 	<langue code="ja" />
 	<langue code="km" />
 	<langue code="lb" />
-	<langue code="lt" />
 	<langue code="my" />
-	<langue code="nap" />
-	<langue code="nb" />
 	<langue code="nl">
 		<traducteur nom="michelpossoz" />
 	</langue>
@@ -74,28 +62,20 @@
 	<langue code="oc_va" />
 	<langue code="pl" />
 	<langue code="pt">
-		<traducteur nom="fernando" />
 		<traducteur nom="rporto" />
 	</langue>
 	<langue code="pt_br">
 		<traducteur nom="rporto" />
 	</langue>
-	<langue code="rn" />
 	<langue code="ro" />
-	<langue code="roa" />
 	<langue code="ru">
 		<traducteur nom="papa_troll" />
 	</langue>
 	<langue code="sk">
 		<traducteur nom="jaro" />
 	</langue>
-	<langue code="ss" />
 	<langue code="sv" />
-	<langue code="tl" />
 	<langue code="tr" />
-	<langue code="tt" />
 	<langue code="vi" />
-	<langue code="zh">
-		<traducteur nom="jing_yan" />
-	</langue>
+	<langue code="zh" />
 </traduction>

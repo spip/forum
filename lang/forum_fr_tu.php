@@ -1,6 +1,6 @@
 <?php
 // This is a SPIP language file  --  Ceci est un fichier langue de SPIP
-// extrait automatiquement de http://www.spip.net/trad-lang/
+// extrait automatiquement de http://trad.spip.org
 // ** ne pas modifier le fichier **
 
 if (!defined('_ECRIRE_INC_VERSION')) return;
@@ -79,12 +79,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_supprimer_messages' => 'Supprimer ces messages',
 	'icone_valider_message' => 'Valider ce message',
 	'icone_valider_messages' => 'Valider ces messages',
-	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message',
+	'icone_valider_repondre_message' => 'Valider & Répondre à ce message',
 	'info_1_message_forum' => '1 message de forum',
 	'info_activer_forum_public' => '<i>Pour activer les forums publics, choisis leur mode
  de modération par défaut:</i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Appliquer ce choix de modération :',
-	'info_config_forums_prive' => 'Dans l’espace priv&eacute; du site, tu peux activer plusieurs types de forums&nbsp;:',
+	'info_config_forums_prive' => 'Dans l’espace privé du site, tu peux activer plusieurs types de forums :',
 	'info_config_forums_prive_admin' => 'Un forum réservé aux administrateurs du site :',
 	'info_config_forums_prive_global' => 'Un forum global, ouvert à tous les rédacteurs :',
 	'info_config_forums_prive_objets' => 'Un forum sous chaque article, brève, site référencé, etc. :',
@@ -162,7 +162,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'texte_messages_publics' => 'Messages publics sur :',
 	'titre_cadre_forum_administrateur' => 'Forum privé des administrateurs',
 	'titre_cadre_forum_interne' => 'Forum interne',
-	'titre_config_forums_prive' => 'Forums de l’espace priv&eacute;',
+	'titre_config_forums_prive' => 'Forums de l’espace privé',
 	'titre_forum' => 'Forum',
 	'titre_forum_suivi' => 'Suivi des forums',
 	'titre_page_forum_suivi' => 'Suivi des forums',

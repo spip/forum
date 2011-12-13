@@ -1,6 +1,6 @@
 <?php
 // This is a SPIP language file  --  Ceci est un fichier langue de SPIP
-// extrait automatiquement de http://www.spip.net/trad-lang/
+// extrait automatiquement de http://trad.spip.org
 // ** ne pas modifier le fichier **
 
 if (!defined('_ECRIRE_INC_VERSION')) return;
@@ -79,7 +79,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Validar esti mensaxe',
 	'icone_valider_messages' => 'Valider ces messages', # NEW
-	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message', # NEW
+	'icone_valider_repondre_message' => 'Valider & Répondre à ce message', # NEW
 	'info_1_message_forum' => '1 message de forum', # NEW
 	'info_activer_forum_public' => '<i>Pa activar los foros públicos, has d\'escoyer el tipu
  de moderación por omisión:</i>', # MODIF
@@ -159,10 +159,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'text_article_propose_publication_forum' => 'Encamentamoste a dar la to opinión nel foru axuntu a esti artículu (embaxo de la páxina).',
 	'texte_en_cours_validation' => 'Les articles, brèves, forums ci dessous sont proposés à la publication.', # NEW
 	'texte_en_cours_validation_forum' => 'Encamentámoste que opines usando los foros que tien xuníos.',
-	'texte_messages_publics' => 'Messages publics sur&nbsp;:', # NEW
+	'texte_messages_publics' => 'Messages publics sur :', # NEW
 	'titre_cadre_forum_administrateur' => 'Foru privau de los alministradores',
 	'titre_cadre_forum_interne' => 'Foru internu',
-	'titre_config_forums_prive' => 'Foros de l’espaciu priv&aacute;u',
+	'titre_config_forums_prive' => 'Foros de l’espaciu priváu',
 	'titre_forum' => 'Foru',
 	'titre_forum_suivi' => 'Siguir foros',
 	'titre_page_forum_suivi' => 'Siguir los foros',

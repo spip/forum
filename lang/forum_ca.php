@@ -1,6 +1,6 @@
 <?php
 // This is a SPIP language file  --  Ceci est un fichier langue de SPIP
-// extrait automatiquement de http://www.spip.net/trad-lang/
+// extrait automatiquement de http://trad.spip.org
 // ** ne pas modifier le fichier **
 
 if (!defined('_ECRIRE_INC_VERSION')) return;
@@ -76,7 +76,7 @@ Si ja n\'esteu, escriviu a continuació l\'identifcador que us ha estat proporci
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Validar aquest missatge',
 	'icone_valider_messages' => 'Valider ces messages', # NEW
-	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message', # NEW
+	'icone_valider_repondre_message' => 'Valider & Répondre à ce message', # NEW
 	'info_1_message_forum' => '1 message de forum', # NEW
 	'info_activer_forum_public' => '<i>Per activar els fòrums públics, escolliu el seu mode
  de moderació per defecte:</i>', # MODIF
@@ -156,7 +156,7 @@ Si ja n\'esteu, escriviu a continuació l\'identifcador que us ha estat proporci
 	'text_article_propose_publication_forum' => 'No dubteu a donar la vostra opinió per mitjà del fòrum agregat a aquest article (al capdavall de la pàgina).',
 	'texte_en_cours_validation' => 'Les articles, brèves, forums ci dessous sont proposés à la publication.', # NEW
 	'texte_en_cours_validation_forum' => 'No dubteu a donar la vostra opinió per mitjà dels fòrums que porten agregats. ',
-	'texte_messages_publics' => 'Messages publics sur&nbsp;:', # NEW
+	'texte_messages_publics' => 'Messages publics sur :', # NEW
 	'titre_cadre_forum_administrateur' => 'Fòrum privat dels administradors',
 	'titre_cadre_forum_interne' => 'Fòrum intern',
 	'titre_config_forums_prive' => 'Fòrums de l\'espai privat',

@@ -1,6 +1,6 @@
 <?php
 // This is a SPIP language file  --  Ceci est un fichier langue de SPIP
-// extrait automatiquement de http://www.spip.net/trad-lang/
+// extrait automatiquement de http://trad.spip.org
 // ** ne pas modifier le fichier **
 
 if (!defined('_ECRIRE_INC_VERSION')) return;
@@ -45,7 +45,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Click  <a href=\'@retour_forum@\'>here</a> to continue.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Posts in this forum are moderated before publication: your contribution will only appear after being validated by a site administrator.',
-	'forum_lien_hyper' => '<b>Hypertext link</b> (optional)', # MODIF
+	'forum_lien_hyper' => 'Hypertext link',
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Finished editing: submit message',
 	'forum_message_trop_long' => 'Your message is too long. Maximum length is  20000 characters.',
@@ -53,15 +53,15 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_page_url' => '(If your message refers to an article published on the web or to a page providing further information, please enter the title of the page and its URL below).',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Message posted@parauteur@ following your article "@titre@".',
-	'forum_qui_etes_vous' => '<b>Who are you?</b> (optional)', # MODIF
+	'forum_qui_etes_vous' => 'Who are you?',
 	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
-	'forum_texte' => 'Text of your message:', # MODIF
-	'forum_titre' => 'Subject:', # MODIF
-	'forum_url' => 'URL:', # MODIF
+	'forum_texte' => 'Text of your message',
+	'forum_titre' => 'Subject',
+	'forum_url' => 'URL',
 	'forum_valider' => 'Validate your choice',
-	'forum_voir_avant' => 'Preview message before posting', # MODIF
-	'forum_votre_email' => 'Your email address:', # MODIF
-	'forum_votre_nom' => 'Your name (or alias):', # MODIF
+	'forum_voir_avant' => 'Preview',
+	'forum_votre_email' => 'Your email address',
+	'forum_votre_nom' => 'Your name',
 	'forum_vous_enregistrer' => 'You must be registered before participating in
   this forum. Please
   enter your personal identifier
@@ -79,9 +79,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Validate message',
 	'icone_valider_messages' => 'Valider ces messages', # NEW
-	'icone_valider_repondre_message' => 'Valider &amp; Répondre à ce message', # NEW
+	'icone_valider_repondre_message' => 'Valider & Répondre à ce message', # NEW
 	'info_1_message_forum' => '1 message de forum', # NEW
-	'info_activer_forum_public' => '<i>To enable public forums, please choose the default type of moderation:</i>', # MODIF
+	'info_activer_forum_public' => 'To enable public forums, please choose the default type of moderation:',
 	'info_appliquer_choix_moderation' => 'Apply this choice for moderation:',
 	'info_config_forums_prive' => 'You can activate various types of forum in the private area:',
 	'info_config_forums_prive_admin' => 'A forum reserved for site administrators:',
@@ -105,8 +105,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_nb_messages_forum' => '@nb@ messages de forum', # NEW
 	'info_option_email' => 'When a visitor posts a message to the forum of an article, the article\'s author(s) can be informed of this by email. Indicate for each type of forum if this option should be activated.',
 	'info_pas_de_forum' => 'no forum',
-	'info_question_visiteur_ajout_document_forum' => 'If you want to allow visitors to attach documents (images, sound files, etc.) to their forum messages, indicate which file extensions are accepted (e.g. gif, jpg, png, mp3).', # MODIF
-	'info_question_visiteur_ajout_document_forum_format' => 'If you want to authorise all document types considered safe by SPIP, use an asterisk. Leave empty to block everything.', # MODIF
+	'info_question_visiteur_ajout_document_forum' => 'If you want to allow visitors to attach documents (images, sound files, etc.) to their forum messages, indicate which file extensions are accepted (e.g. gif, jpg, png, mp3).',
+	'info_question_visiteur_ajout_document_forum_format' => 'If you want to authorise all document types considered safe by SPIP, use an asterisk. Leave empty to block everything.',
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW
 	'item_activer_forum_administrateur' => 'Enable administrators\' forum',
@@ -121,7 +121,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'lien_reponse_breve_2' => 'Comment on this news item',
 	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Comment on this section',
-	'lien_reponse_site_reference' => 'Comment on this website:', # MODIF
+	'lien_reponse_site_reference' => 'Comment on this website',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW
@@ -132,11 +132,11 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'messages_perso' => 'Personnels', # NEW
 	'messages_privadm' => 'Administrateurs', # NEW
 	'messages_prive' => 'Privés', # NEW
-	'messages_privoff' => 'Supprimés', # NEW
+	'messages_privoff' => 'Deleted',
 	'messages_privrac' => 'Généraux', # NEW
 	'messages_prop' => 'Proposés', # NEW
 	'messages_publie' => 'Publiés', # NEW
-	'messages_spam' => 'Spam', # NEW
+	'messages_spam' => 'Spam',
 	'messages_tous' => 'Tous', # NEW
 
 	// O
@@ -148,17 +148,17 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'repondre_message' => 'Reply to this message',
 
 	// S
-	'statut_off' => 'Supprimé', # NEW
+	'statut_off' => 'Deleted',
 	'statut_original' => 'original',
 	'statut_prop' => 'Proposé', # NEW
 	'statut_publie' => 'Publié', # NEW
-	'statut_spam' => 'Spam', # NEW
+	'statut_spam' => 'Spam',
 
 	// T
 	'text_article_propose_publication_forum' => 'You can comment on this article via the forum below.',
 	'texte_en_cours_validation' => 'Les articles, brèves, forums ci dessous sont proposés à la publication.', # NEW
 	'texte_en_cours_validation_forum' => 'You can comment freely in the forums attached.',
-	'texte_messages_publics' => 'Messages publics sur&nbsp;:', # NEW
+	'texte_messages_publics' => 'Messages publics sur :', # NEW
 	'titre_cadre_forum_administrateur' => 'Administrators\' private forum',
 	'titre_cadre_forum_interne' => 'Internal forum',
 	'titre_config_forums_prive' => 'Forums in the private area',

@@ -1,6 +1,6 @@
 <?php
 // This is a SPIP language file  --  Ceci est un fichier langue de SPIP
-// extrait automatiquement de http://www.spip.net/trad-lang/
+// extrait automatiquement de http://trad.spip.org
 // ** ne pas modifier le fichier **
 
 if (!defined('_ECRIRE_INC_VERSION')) return;
@@ -71,7 +71,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_supprimer_messages' => 'حذف اين پيام‌ها',
 	'icone_valider_message' => 'اين پيام را معتبر كنيد',
 	'icone_valider_messages' => 'معبرساختن اين پيام‌ها',
-	'icone_valider_repondre_message' => 'معتبر كردن &amp; پاسخ به اين پيام',
+	'icone_valider_repondre_message' => 'معتبر كردن & پاسخ به اين پيام',
 	'info_1_message_forum' => '1 پيام از سخنگاه',
 	'info_activer_forum_public' => '<i>براى فعال كردن سخنگاه همگانى، خواهشمند است شيوه اعتبار پس از تأئيد را انتخاب نمائيد</i>', # MODIF
 	'info_appliquer_choix_moderation' => ': اين انتخاب معتدل را بكار بريد',
