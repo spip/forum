@@ -8,7 +8,7 @@ if (!defined('_ECRIRE_INC_VERSION')) return;
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// A
-	'aucun_message_forum' => 'Aucun message de forum', # NEW
+	'aucun_message_forum' => 'No forum message',
 
 	// B
 	'bouton_radio_articles_futurs' => 'only to future articles (no change to the database).',
@@ -46,12 +46,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Posts in this forum are moderated before publication: your contribution will only appear after being validated by a site administrator.',
 	'forum_lien_hyper' => 'Hypertext link',
-	'forum_message' => 'Votre message', # NEW
+	'forum_message' => 'Your message',
 	'forum_message_definitif' => 'Finished editing: submit message',
 	'forum_message_trop_long' => 'Your message is too long. Maximum length is  20000 characters.',
 	'forum_ne_repondez_pas' => 'Do not reply directly to this email - please use the online forum here:',
 	'forum_page_url' => '(If your message refers to an article published on the web or to a page providing further information, please enter the title of the page and its URL below).',
-	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
+	'forum_permalink' => 'Permalink to the comment',
 	'forum_poste_par' => 'Message posted@parauteur@ following your article "@titre@".',
 	'forum_qui_etes_vous' => 'Who are you?',
 	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
@@ -69,18 +69,18 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_vous_inscrire' => 'register.',
 
 	// I
-	'icone_bruler_message' => 'Signaler comme Spam', # NEW
-	'icone_bruler_messages' => 'Signaler comme Spam', # NEW
+	'icone_bruler_message' => 'Report as SPAM',
+	'icone_bruler_messages' => 'Report as Spam',
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Post a message',
 	'icone_suivi_forum' => 'Follow public forum: @nb_forums@ contribution(s)',
 	'icone_suivi_forums' => 'Manage forums',
 	'icone_supprimer_message' => 'Delete this message',
-	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
+	'icone_supprimer_messages' => 'Delete these messages',
 	'icone_valider_message' => 'Validate message',
-	'icone_valider_messages' => 'Valider ces messages', # NEW
-	'icone_valider_repondre_message' => 'Valider & Répondre à ce message', # NEW
-	'info_1_message_forum' => '1 message de forum', # NEW
+	'icone_valider_messages' => 'Confirm these messages',
+	'icone_valider_repondre_message' => 'Confirm & Reply to this message',
+	'info_1_message_forum' => '1 forum message',
 	'info_activer_forum_public' => 'To enable public forums, please choose the default type of moderation:',
 	'info_appliquer_choix_moderation' => 'Apply this choice for moderation:',
 	'info_config_forums_prive' => 'You can activate various types of forum in the private area:',
@@ -102,13 +102,13 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_liens_texte' => 'Lien(s) contenu(s) dans le texte du message', # NEW
 	'info_liens_titre' => 'Lien(s) contenu(s) dans le titre du message', # NEW
 	'info_mode_fonctionnement_defaut_forum_public' => 'Default mode for public forums',
-	'info_nb_messages_forum' => '@nb@ messages de forum', # NEW
+	'info_nb_messages_forum' => '@nb@ forum messages',
 	'info_option_email' => 'When a visitor posts a message to the forum of an article, the article\'s author(s) can be informed of this by email. Indicate for each type of forum if this option should be activated.',
 	'info_pas_de_forum' => 'no forum',
 	'info_question_visiteur_ajout_document_forum' => 'If you want to allow visitors to attach documents (images, sound files, etc.) to their forum messages, indicate which file extensions are accepted (e.g. gif, jpg, png, mp3).',
 	'info_question_visiteur_ajout_document_forum_format' => 'If you want to authorise all document types considered safe by SPIP, use an asterisk. Leave empty to block everything.',
-	'interface_formulaire' => 'Interface formulaire', # NEW
-	'interface_onglets' => 'Interface avec onglets', # NEW
+	'interface_formulaire' => 'Form interface',
+	'interface_onglets' => 'Interface with tabs',
 	'item_activer_forum_administrateur' => 'Enable administrators\' forum',
 	'item_config_forums_prive_global' => 'Activate the authors\' forum',
 	'item_config_forums_prive_objets' => 'Activate these forums',
@@ -124,20 +124,20 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'lien_reponse_site_reference' => 'Comment on this website',
 
 	// M
-	'messages_aucun' => 'Aucun', # NEW
+	'messages_aucun' => 'None',
 	'messages_meme_auteur' => 'Tous les messages de cet auteur', # NEW
-	'messages_meme_email' => 'Tous les messages de cet email', # NEW
-	'messages_meme_ip' => 'Tous les messages de cette IP', # NEW
-	'messages_off' => 'Supprimés', # NEW
+	'messages_meme_email' => 'All messages from this email',
+	'messages_meme_ip' => 'All messages by this IP',
+	'messages_off' => 'Deleted',
 	'messages_perso' => 'Personnels', # NEW
 	'messages_privadm' => 'Administrateurs', # NEW
-	'messages_prive' => 'Privés', # NEW
+	'messages_prive' => 'Private',
 	'messages_privoff' => 'Deleted',
 	'messages_privrac' => 'Généraux', # NEW
-	'messages_prop' => 'Proposés', # NEW
-	'messages_publie' => 'Publiés', # NEW
+	'messages_prop' => 'Proposed',
+	'messages_publie' => 'Published',
 	'messages_spam' => 'Spam',
-	'messages_tous' => 'Tous', # NEW
+	'messages_tous' => 'All',
 
 	// O
 	'onglet_messages_internes' => 'Private messages',
@@ -150,8 +150,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// S
 	'statut_off' => 'Deleted',
 	'statut_original' => 'original',
-	'statut_prop' => 'Proposé', # NEW
-	'statut_publie' => 'Publié', # NEW
+	'statut_prop' => 'Proposed',
+	'statut_publie' => 'Published',
 	'statut_spam' => 'Spam',
 
 	// T
@@ -165,11 +165,11 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_forum' => 'Forum',
 	'titre_forum_suivi' => 'Forums follow-up',
 	'titre_page_forum_suivi' => 'Forums follow-up',
-	'titre_selection_action' => 'Sélection', # NEW
+	'titre_selection_action' => 'Selection',
 	'tout_voir' => 'Voir tous les messages', # NEW
 
 	// V
-	'voir_messages_objet' => 'voir les messages' # NEW
+	'voir_messages_objet' => 'see the messages'
 );
 
 ?>
