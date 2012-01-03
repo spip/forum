@@ -1,4 +1,7 @@
 <traduction module="paquet-forum" gestionnaire="salvatore" url="http://trad.spip.org" source="svn://zone.spip.org/spip-zone/_core_/plugins/forum/lang/" reference="fr">
 	<langue code="de" />
 	<langue code="fr" />
+	<langue code="sk">
+		<traducteur nom="jaro" />
+	</langue>
 </traduction>
