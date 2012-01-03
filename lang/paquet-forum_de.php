@@ -1,17 +1,15 @@
 <?php
-
-// Ceci est un fichier langue de SPIP -- This is a SPIP language file
-// Fichier produit par PlugOnet
-// Module: paquet-forum
-// Langue: de
-// Date: 30-07-2011 15:01:37
-// Items: 1
+// This is a SPIP language file  --  Ceci est un fichier langue de SPIP
+// extrait automatiquement de http://trad.spip.org
+// ** ne pas modifier le fichier **
 
 if (!defined('_ECRIRE_INC_VERSION')) return;
 
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
-// F
+	// F
 	'forum_description' => 'Foren in SPIP (Redaktionsbereich und öffentliche Website)',
+	'forum_slogan' => 'Gestion des forums privés et publics dans SPIP' # NEW
 );
+
 ?>
