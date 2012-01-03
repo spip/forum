@@ -166,7 +166,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_forum_suivi' => 'Forums follow-up',
 	'titre_page_forum_suivi' => 'Forums follow-up',
 	'titre_selection_action' => 'Selection',
-	'tout_voir' => 'Voir tous les messages', # NEW
+	'tout_voir' => 'See all messages',
 
 	// V
 	'voir_messages_objet' => 'see the messages'

@@ -8,7 +8,7 @@ if (!defined('_ECRIRE_INC_VERSION')) return;
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// A
-	'aucun_message_forum' => 'Aucun message de forum', # NEW
+	'aucun_message_forum' => 'Žiaden príspevok v diskusnom fóre',
 
 	// B
 	'bouton_radio_articles_futurs' => 'len pre budúce články (žiadna zmena databázy).',
@@ -31,56 +31,56 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'documents_interdits_forum' => 'Dokumenty nie sú v tomto diskusnom fóre povolené',
 
 	// E
-	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
+	'erreur_enregistrement_message' => 'Váš príspevok sa z technických príčin nepodarilo uložiť.',
 
 	// F
 	'form_pet_message_commentaire' => 'Nejaký príspevok alebo komentáre?',
 	'forum' => 'Diskusné fórum',
 	'forum_acces_refuse' => 'K týmto diskusným fóram už viac nemáte prístup.',
 	'forum_attention_dix_caracteres' => '<b>Upozornenie!</b> Váš príspevok musí mať aspoň 10 znakok.',
-	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
+	'forum_attention_message_non_poste' => 'Pozor, neodoslali ste svoj príspevok!',
 	'forum_attention_trois_caracteres' => '<b>Upozornenie!</b> Názov musí mať aspoň 3 znaky.',
 	'forum_attention_trop_caracteres' => '<b>Warning !</b> your message is too long (@compte@ characters) : to be able to save it, the message should not contain more than @max@ characters.',
 	'forum_avez_selectionne' => 'Vybrali ste:',
 	'forum_cliquer_retour' => 'Kliknite <a href=\'@retour_forum@\'>sem,</a> aby ste mohli pokračovať.',
 	'forum_forum' => 'diskusné fórum',
 	'forum_info_modere' => 'Toto diskusné fórum sa kontroluje pred zverejnením: váš príspevok sa zobrazí až potom, čo ho schváli administrátor stránky.',
-	'forum_lien_hyper' => '<b>Hypertextový odkaz</b> (nepovinné)', # MODIF
-	'forum_message' => 'Votre message', # NEW
+	'forum_lien_hyper' => 'Hypertextový odkaz',
+	'forum_message' => 'Váš príspevok',
 	'forum_message_definitif' => 'Koniec úprav: poslať príspevok',
 	'forum_message_trop_long' => 'Vaša správa je pridlhá. Maximálna dĺžka je 20000 znakov.',
 	'forum_ne_repondez_pas' => 'Neodpovedajte na tento mejl priamo - prosím, použite diskusné fórum:',
 	'forum_page_url' => '(If your message refers to an article published on the web or to a page providing further information, please enter the title of the page and its URL below).',
-	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
+	'forum_permalink' => 'Trvalý odkaz na komentár',
 	'forum_poste_par' => 'Príspevky @parauteur@ k vášmu článku "@titre@".',
-	'forum_qui_etes_vous' => '<b>Kto ste?</b> (voliteľné)', # MODIF
-	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
-	'forum_texte' => 'Text vášho príspevku:', # MODIF
-	'forum_titre' => 'Predmet:', # MODIF
-	'forum_url' => 'Adresa stránky:', # MODIF
+	'forum_qui_etes_vous' => 'Kto ste?',
+	'forum_saisie_texte_info' => 'Tento formulár akceptuje skratky SPIPu <code>[-&gt;url] {{tučné}} {kurzíva} &lt;citácia&gt; &lt;kód&gt;</code> a kód HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;.</code> Ak chcete vytvoriť odseky, jednoducho vynechajte niekoľko riadkov.',
+	'forum_texte' => 'Text vášho príspevku',
+	'forum_titre' => 'Nadpis',
+	'forum_url' => 'Vaša internetová stránka',
 	'forum_valider' => 'Potvrdiť výber',
-	'forum_voir_avant' => 'Zobraziť príspevok pred odoslaním', # MODIF
-	'forum_votre_email' => 'Vaša e-mailová adresa:', # MODIF
-	'forum_votre_nom' => 'Vaše meno (alebo alias):', # MODIF
+	'forum_voir_avant' => 'Ukážka',
+	'forum_votre_email' => 'Vaša e-mailová adresa',
+	'forum_votre_nom' => 'Vaše meno',
 	'forum_vous_enregistrer' => 'Na to, aby ste mohli diskutovať v tomto diskusnom fóre, musíte byť zaregistrovaný.
  Prosím, zadajte svoj osobný identifikátor.
   ak ste sa ešte nezaregistrovali, musíte',
 	'forum_vous_inscrire' => 'sa zaregistrovať.',
 
 	// I
-	'icone_bruler_message' => 'Signaler comme Spam', # NEW
-	'icone_bruler_messages' => 'Signaler comme Spam', # NEW
-	'icone_legitimer_message' => 'Signaler comme licite', # NEW
+	'icone_bruler_message' => 'Označiť ako spam',
+	'icone_bruler_messages' => 'Označiť ako spam',
+	'icone_legitimer_message' => 'Označiť ako prípustný',
 	'icone_poster_message' => 'Poslať príspevok',
 	'icone_suivi_forum' => 'Sledovanie verejného diskusného fóra: @nb_forums@ príspevok (-kov)',
 	'icone_suivi_forums' => 'Riadiť diskusné fóra',
 	'icone_supprimer_message' => 'Odstrániť tento príspevok',
-	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
+	'icone_supprimer_messages' => 'Vymazať tieto príspevky',
 	'icone_valider_message' => 'Schváliť príspevok',
-	'icone_valider_messages' => 'Valider ces messages', # NEW
-	'icone_valider_repondre_message' => 'Valider & Répondre à ce message', # NEW
-	'info_1_message_forum' => '1 message de forum', # NEW
-	'info_activer_forum_public' => '<i>Ak chcete povoliť verejné diskusné fóra, prosím, uveďte typ ich riadenia:</i>', # MODIF
+	'icone_valider_messages' => 'Potvrdiť tieto príspevky',
+	'icone_valider_repondre_message' => 'Potvrdiť a zareagovať na tento príspevok',
+	'info_1_message_forum' => '1 príspevok v diskusnom fóre',
+	'info_activer_forum_public' => '<i>Ak chcete povoliť verejné diskusné fóra, prosím, uveďte predvolený spôsob ich riadenia:</i>',
 	'info_appliquer_choix_moderation' => 'Použiť tento výber riadenia:',
 	'info_config_forums_prive' => 'V súkromnej zóne môžete aktivovať rôzne typy diskusných fór:',
 	'info_config_forums_prive_admin' => 'Diskusné fórum vyhradené pre administrátorov:',
@@ -91,23 +91,23 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  pri článkoch; budú zakázané pre rubriky, novinky a pod.',
 	'info_envoi_forum' => 'Posielať príspevky z diskusného fóra príslušným autorom',
 	'info_fonctionnement_forum' => 'Operácia diskusného fóra:',
-	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
+	'info_forums_liees_mot' => 'Príspevky v diskusnom fóre s týmto slovom',
 	'info_gauche_suivi_forum_2' => 'Stránka na <i>sledovanie diskusných fór</i> je nástroj na riadenie vašej stránky (nie diskusií alebo úprav). Zobrazuje všetky príspevky do diskusných fór (tak na verejnej stránke, ako aj v súkromnej zóne) a umožňuje vám rozhodovať o týchto príspevkoch.',
 	'info_liens_syndiques_3' => 'diskusné fóra',
 	'info_liens_syndiques_4' => 'je/sú',
 	'info_liens_syndiques_5' => 'diskusné fórum',
 	'info_liens_syndiques_6' => 'je',
 	'info_liens_syndiques_7' => 'čaká na schválenie.',
-	'info_liens_texte' => 'Lien(s) contenu(s) dans le texte du message', # NEW
-	'info_liens_titre' => 'Lien(s) contenu(s) dans le titre du message', # NEW
+	'info_liens_texte' => 'Obsah odkazu (-ov) v texte príspevku',
+	'info_liens_titre' => 'Obsah odkazu (-ov) v názve príspevku',
 	'info_mode_fonctionnement_defaut_forum_public' => 'Predvolený režim verejných diskusných fór',
-	'info_nb_messages_forum' => '@nb@ messages de forum', # NEW
+	'info_nb_messages_forum' => '@nb@ príspevkov v diskusnom fóre',
 	'info_option_email' => 'Keď návštevník pošle príspevok do diskusného fóra článku, autor článku môže byť o tom informovaný e-mailom. Pre každý typ diskusného fóra uveďte, či sa má táto možnosť aktivovať.',
 	'info_pas_de_forum' => 'žiadne diskusné fórum',
-	'info_question_visiteur_ajout_document_forum' => 'Ak chcete povoliť návštevníkom pripájať dokumenty (a obrázky, zvukové súbory,...) k diskusným príspevkom, určte, ktoré prípony súborov budú akceptované (napr. gif, jpg, png, mp3).', # MODIF
-	'info_question_visiteur_ajout_document_forum_format' => 'Ak chcete povoliť dokumenty všetkých typov, ktoré SPIP považuje za bezpečné, použite hviezdičku. Ak chcete všetky zablokovať, nechajte pole prázdne.', # MODIF
-	'interface_formulaire' => 'Interface formulaire', # NEW
-	'interface_onglets' => 'Interface avec onglets', # NEW
+	'info_question_visiteur_ajout_document_forum' => 'Ak chcete povoliť návštevníkom pripájať súbory (obrázky, zvukové súbory,...) k diskusným príspevkom, určte, ktoré prípony súborov budú akceptované (napr. gif, jpg, png, mp3).',
+	'info_question_visiteur_ajout_document_forum_format' => 'Ak chcete povoliť všetky typy súborov, ktoré SPIP považuje za bezpečné, použite hviezdičku. Ak nechcete povoliť žiadne, nerobte nič.',
+	'interface_formulaire' => 'Rozhranie formulára',
+	'interface_onglets' => 'Rozhranie s tabulátormi',
 	'item_activer_forum_administrateur' => 'Povoliť diskusné fórum administrátorov',
 	'item_config_forums_prive_global' => 'Aktivovať diskusné fórum autorov',
 	'item_config_forums_prive_objets' => 'Aktivovať tieto diskusné fóra',
@@ -118,25 +118,25 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'Komentovať tento článok',
 	'lien_reponse_breve_2' => 'Komentovať túto novinku',
-	'lien_reponse_message' => 'Réponse au message', # NEW
+	'lien_reponse_message' => 'Reagovať na príspevok',
 	'lien_reponse_rubrique' => 'Komentovať túto rubriku',
-	'lien_reponse_site_reference' => 'Komentovať túto webovú stránku:', # MODIF
+	'lien_reponse_site_reference' => 'Reakcia na odkazovanú stránku',
 
 	// M
-	'messages_aucun' => 'Aucun', # NEW
-	'messages_meme_auteur' => 'Tous les messages de cet auteur', # NEW
-	'messages_meme_email' => 'Tous les messages de cet email', # NEW
-	'messages_meme_ip' => 'Tous les messages de cette IP', # NEW
-	'messages_off' => 'Supprimés', # NEW
-	'messages_perso' => 'Personnels', # NEW
-	'messages_privadm' => 'Administrateurs', # NEW
-	'messages_prive' => 'Privés', # NEW
-	'messages_privoff' => 'Supprimés', # NEW
-	'messages_privrac' => 'Généraux', # NEW
-	'messages_prop' => 'Proposés', # NEW
-	'messages_publie' => 'Publiés', # NEW
-	'messages_spam' => 'Spam', # NEW
-	'messages_tous' => 'Tous', # NEW
+	'messages_aucun' => 'Žiadne',
+	'messages_meme_auteur' => 'Všetky príspevky od tohto autora',
+	'messages_meme_email' => 'Všetky príspevky z tohto e-mailu',
+	'messages_meme_ip' => 'Všetky príspevky z tejto IP',
+	'messages_off' => 'Vymazané',
+	'messages_perso' => 'Súkromné',
+	'messages_privadm' => 'Administrátori',
+	'messages_prive' => 'Súkromné',
+	'messages_privoff' => 'Vymazané',
+	'messages_privrac' => 'Všeobecné',
+	'messages_prop' => 'Odoslané',
+	'messages_publie' => 'Publikované',
+	'messages_spam' => 'Spam',
+	'messages_tous' => 'Všetky',
 
 	// O
 	'onglet_messages_internes' => 'Súkromné správy',
@@ -147,28 +147,28 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'repondre_message' => 'Odpovedať na túto správu',
 
 	// S
-	'statut_off' => 'Supprimé', # NEW
+	'statut_off' => 'Vymazaný',
 	'statut_original' => 'pôvodný',
-	'statut_prop' => 'Proposé', # NEW
-	'statut_publie' => 'Publié', # NEW
-	'statut_spam' => 'Spam', # NEW
+	'statut_prop' => 'Odoslaný',
+	'statut_publie' => 'Publikovaný',
+	'statut_spam' => 'Spam',
 
 	// T
 	'text_article_propose_publication_forum' => 'K tomuto článku môžete napísať komentár v diskusnom fóre, ktoré sa nachádza pod ním.',
-	'texte_en_cours_validation' => 'Les articles, brèves, forums ci dessous sont proposés à la publication.', # NEW
+	'texte_en_cours_validation' => 'Články, novinky, diskusné fóra uvedené nižšie boli odoslané na publikovanie.',
 	'texte_en_cours_validation_forum' => 'V pripojených diskusných fórach môžete smelo napísať komentár.',
-	'texte_messages_publics' => 'Messages publics sur :', # NEW
+	'texte_messages_publics' => 'Verejné príspevky na:',
 	'titre_cadre_forum_administrateur' => 'Súkromné diskusné fórum administrátorov',
 	'titre_cadre_forum_interne' => 'Interné diskusné fórum',
 	'titre_config_forums_prive' => 'Diskusné fóra v súkromnej zóne',
 	'titre_forum' => 'Diskusné fórum',
 	'titre_forum_suivi' => 'Sledovanie diskusných fór',
 	'titre_page_forum_suivi' => 'Sledovanie diskusných fór',
-	'titre_selection_action' => 'Sélection', # NEW
-	'tout_voir' => 'Voir tous les messages', # NEW
+	'titre_selection_action' => 'Výber',
+	'tout_voir' => 'Zobraziť všetky príspevky',
 
 	// V
-	'voir_messages_objet' => 'voir les messages' # NEW
+	'voir_messages_objet' => 'Zobraziť príspevky'
 );
 
 ?>
