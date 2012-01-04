@@ -105,6 +105,7 @@ lang/forum_tt.php -text
 lang/forum_vi.php -text
 lang/forum_zh.php -text
 lang/paquet-forum.xml -text
+lang/paquet-forum_en.php -text
 lang/paquet-forum_sk.php -text
 modeles/auteur_nom.html -text
 notifications/forum_poste.html -text
