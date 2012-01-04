@@ -1,15 +1,15 @@
 <traduction module="forum" gestionnaire="salvatore" url="http://trad.spip.org" source="svn://zone.spip.org/spip-zone/_core_/plugins/forum/lang/" reference="fr">
 	<langue code="ar">
-		<traducteur nom="George" />
+		<traducteur nom="George" lien="http://trad.spip.org/auteur/جورج-قندلفت" />
 	</langue>
 	<langue code="ast">
-		<traducteur nom="Xuacu" />
+		<traducteur nom="Xuacu" lien="http://trad.spip.org/auteur/xuacu" />
 	</langue>
 	<langue code="bg" />
 	<langue code="br" />
 	<langue code="bs" />
 	<langue code="ca">
-		<traducteur nom="merce" />
+		<traducteur nom="merce" lien="http://trad.spip.org/auteur/merce" />
 	</langue>
 	<langue code="co" />
 	<langue code="cpf" />
@@ -17,26 +17,26 @@
 	<langue code="cs" />
 	<langue code="da" />
 	<langue code="de">
-		<traducteur nom="klaus++" />
-		<traducteur nom="jaro" />
+		<traducteur nom="klaus++" lien="http://trad.spip.org/auteur/klaus" />
+		<traducteur nom="jaro" lien="http://trad.spip.org/auteur/jaro" />
 	</langue>
 	<langue code="en">
-		<traducteur nom="sQuonk" />
-		<traducteur nom="kent1" />
-		<traducteur nom="Davood Hossein" />
+		<traducteur nom="sQuonk" lien="http://trad.spip.org/auteur/squonk" />
+		<traducteur nom="kent1" lien="http://trad.spip.org/auteur/kent1" />
+		<traducteur nom="Davood Hossein" lien="http://trad.spip.org/auteur/davood-hossein" />
 	</langue>
 	<langue code="en_hx" />
 	<langue code="eo" />
 	<langue code="es" />
 	<langue code="eu" />
 	<langue code="fa">
-		<traducteur nom="George" />
-		<traducteur nom="Davood Hossein" />
+		<traducteur nom="George" lien="http://trad.spip.org/auteur/جورج-قندلفت" />
+		<traducteur nom="Davood Hossein" lien="http://trad.spip.org/auteur/davood-hossein" />
 	</langue>
 	<langue code="fon" />
 	<langue code="fr" />
 	<langue code="fr_tu">
-		<traducteur nom="beatnick" />
+		<traducteur nom="beatnick" lien="http://trad.spip.org/auteur/beatnick" />
 	</langue>
 	<langue code="gl" />
 	<langue code="he" />
@@ -49,7 +49,7 @@
 	<langue code="lb" />
 	<langue code="my" />
 	<langue code="nl">
-		<traducteur nom="mpossoz" />
+		<traducteur nom="mpossoz" lien="http://trad.spip.org/auteur/mpossoz" />
 	</langue>
 	<langue code="no" />
 	<langue code="oc_auv" />
@@ -62,17 +62,17 @@
 	<langue code="oc_va" />
 	<langue code="pl" />
 	<langue code="pt">
-		<traducteur nom="Ricardo Porto" />
+		<traducteur nom="Ricardo Porto" lien="http://trad.spip.org/auteur/ricardo-porto" />
 	</langue>
 	<langue code="pt_br">
-		<traducteur nom="Ricardo Porto" />
+		<traducteur nom="Ricardo Porto" lien="http://trad.spip.org/auteur/ricardo-porto" />
 	</langue>
 	<langue code="ro" />
 	<langue code="ru">
-		<traducteur nom="Serge Markitanenko" />
+		<traducteur nom="Serge Markitanenko" lien="http://trad.spip.org/auteur/serge-markitanenko" />
 	</langue>
 	<langue code="sk">
-		<traducteur nom="jaro" />
+		<traducteur nom="jaro" lien="http://trad.spip.org/auteur/jaro" />
 	</langue>
 	<langue code="sv" />
 	<langue code="tr" />
