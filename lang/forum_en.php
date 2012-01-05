@@ -31,14 +31,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'documents_interdits_forum' => 'Documents not allowed in this forum',
 
 	// E
-	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
+	'erreur_enregistrement_message' => 'Your post could not be saved due to technical problem',
 
 	// F
 	'form_pet_message_commentaire' => 'Any message or comments?',
 	'forum' => 'Forum',
 	'forum_acces_refuse' => 'You no longer have access to these forums.',
-	'forum_attention_dix_caracteres' => '<b>Warning!</b> Your message must be at least ten characters long.',
-	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
+	'forum_attention_dix_caracteres' => '<b>Warning!</b> Your post must be at least ten characters long.',
+	'forum_attention_message_non_poste' => 'Be careful, you did not post your message!',
 	'forum_attention_trois_caracteres' => '<b>Warning!</b> Your title must be at least three characters long.',
 	'forum_attention_trop_caracteres' => '<b>Warning !</b> Your message is too long (@compte@ characters) : a message cannot contain more than @max@ characters.',
 	'forum_avez_selectionne' => 'You have selected:',
@@ -46,7 +46,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Posts in this forum are moderated before publication: your contribution will only appear after being validated by a site administrator.',
 	'forum_lien_hyper' => 'Hypertext link',
-	'forum_message' => 'Your message',
+	'forum_message' => 'Your post',
 	'forum_message_definitif' => 'Finished editing: submit message',
 	'forum_message_trop_long' => 'Your message is too long. Maximum length is  20000 characters.',
 	'forum_ne_repondez_pas' => 'Do not reply directly to this email - please use the online forum here:',
@@ -54,7 +54,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_permalink' => 'Permalink to the comment',
 	'forum_poste_par' => 'Message posted@parauteur@ following your article "@titre@".',
 	'forum_qui_etes_vous' => 'Who are you?',
-	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
+	'forum_saisie_texte_info' => 'This form accepts SPIP shortcuts <code>[-&gt;url] {{bold}} {italic} &lt;quote&gt; &lt;code&gt;</code> and the HTML code <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. To create paragraphs, simply leave blank lines.',
 	'forum_texte' => 'Text of your message',
 	'forum_titre' => 'Subject',
 	'forum_url' => 'URL',
@@ -70,16 +70,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// I
 	'icone_bruler_message' => 'Report as SPAM',
-	'icone_bruler_messages' => 'Report as Spam',
-	'icone_legitimer_message' => 'Signaler comme licite', # NEW
+	'icone_bruler_messages' => 'Report as SPAM',
+	'icone_legitimer_message' => 'Report as lawful',
 	'icone_poster_message' => 'Post a message',
 	'icone_suivi_forum' => 'Follow public forum: @nb_forums@ contribution(s)',
 	'icone_suivi_forums' => 'Manage forums',
-	'icone_supprimer_message' => 'Delete this message',
-	'icone_supprimer_messages' => 'Delete these messages',
+	'icone_supprimer_message' => 'Delete this post',
+	'icone_supprimer_messages' => 'Delete these posts',
 	'icone_valider_message' => 'Validate message',
-	'icone_valider_messages' => 'Confirm these messages',
-	'icone_valider_repondre_message' => 'Confirm & Reply to this message',
+	'icone_valider_messages' => 'Confirm these posts',
+	'icone_valider_repondre_message' => 'Confirm & reply to this post',
 	'info_1_message_forum' => '1 forum message',
 	'info_activer_forum_public' => 'To enable public forums, please choose the default type of moderation:',
 	'info_appliquer_choix_moderation' => 'Apply this choice for moderation:',
@@ -92,20 +92,20 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  basis for articles; they will be permanently disabled for sections, news, etc.',
 	'info_envoi_forum' => 'Send article forums to the respective authors',
 	'info_fonctionnement_forum' => 'Forum operation:',
-	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
+	'info_forums_liees_mot' => 'Forum posts related to this keyword',
 	'info_gauche_suivi_forum_2' => 'The <i>forums management</i> page is a site management tool, not a discussion or editing area. It displays all contributions to the forums (both on the public site and in the private area) and allows you to manage these contributions.',
 	'info_liens_syndiques_3' => 'forums',
 	'info_liens_syndiques_4' => 'are',
 	'info_liens_syndiques_5' => 'forum',
 	'info_liens_syndiques_6' => 'is',
 	'info_liens_syndiques_7' => 'awaiting validation.',
-	'info_liens_texte' => 'Lien(s) contenu(s) dans le texte du message', # NEW
-	'info_liens_titre' => 'Lien(s) contenu(s) dans le titre du message', # NEW
+	'info_liens_texte' => 'Link(s) in the post text',
+	'info_liens_titre' => 'Link(s) in the post title',
 	'info_mode_fonctionnement_defaut_forum_public' => 'Default mode for public forums',
-	'info_nb_messages_forum' => '@nb@ forum messages',
+	'info_nb_messages_forum' => '@nb@ forum posts',
 	'info_option_email' => 'When a visitor posts a message to the forum of an article, the article\'s author(s) can be informed of this by email. Indicate for each type of forum if this option should be activated.',
 	'info_pas_de_forum' => 'no forum',
-	'info_question_visiteur_ajout_document_forum' => 'If you want to allow visitors to attach documents (images, sound files, etc.) to their forum messages, indicate which file extensions are accepted (e.g. gif, jpg, png, mp3).',
+	'info_question_visiteur_ajout_document_forum' => 'If you want to allow visitors to attach documents (images, sound files, etc.) to their forum posts, indicate which file extensions are accepted (e.g. gif, jpg, png, mp3).',
 	'info_question_visiteur_ajout_document_forum_format' => 'If you want to authorise all document types considered safe by SPIP, use an asterisk. Leave empty to block everything.',
 	'interface_formulaire' => 'Form interface',
 	'interface_onglets' => 'Interface with tabs',
@@ -119,30 +119,30 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lien_reponse_article' => 'Comment on this article',
 	'lien_reponse_breve_2' => 'Comment on this news item',
-	'lien_reponse_message' => 'Réponse au message', # NEW
+	'lien_reponse_message' => 'Reply to the post',
 	'lien_reponse_rubrique' => 'Comment on this section',
 	'lien_reponse_site_reference' => 'Comment on this website',
 
 	// M
 	'messages_aucun' => 'None',
-	'messages_meme_auteur' => 'Tous les messages de cet auteur', # NEW
-	'messages_meme_email' => 'All messages from this email',
-	'messages_meme_ip' => 'All messages by this IP',
+	'messages_meme_auteur' => 'All posts by this author',
+	'messages_meme_email' => 'All posts from this email',
+	'messages_meme_ip' => 'All posts by this IP',
 	'messages_off' => 'Deleted',
-	'messages_perso' => 'Personnels', # NEW
-	'messages_privadm' => 'Administrateurs', # NEW
+	'messages_perso' => 'Personal',
+	'messages_privadm' => 'Administrators',
 	'messages_prive' => 'Private',
 	'messages_privoff' => 'Deleted',
-	'messages_privrac' => 'Généraux', # NEW
+	'messages_privrac' => 'General',
 	'messages_prop' => 'Proposed',
 	'messages_publie' => 'Published',
 	'messages_spam' => 'Spam',
 	'messages_tous' => 'All',
 
 	// O
-	'onglet_messages_internes' => 'Private messages',
-	'onglet_messages_publics' => 'Public messages',
-	'onglet_messages_vide' => 'Messages without text',
+	'onglet_messages_internes' => 'Private posts',
+	'onglet_messages_publics' => 'Public posts',
+	'onglet_messages_vide' => 'Posts without text',
 
 	// R
 	'repondre_message' => 'Reply to this message',
@@ -156,9 +156,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// T
 	'text_article_propose_publication_forum' => 'You can comment on this article via the forum below.',
-	'texte_en_cours_validation' => 'Les articles, brèves, forums ci dessous sont proposés à la publication.', # NEW
+	'texte_en_cours_validation' => 'Articles, news items, forums below are submitted for publication.',
 	'texte_en_cours_validation_forum' => 'You can comment freely in the forums attached.',
-	'texte_messages_publics' => 'Messages publics sur :', # NEW
+	'texte_messages_publics' => 'Public posts on:',
 	'titre_cadre_forum_administrateur' => 'Administrators\' private forum',
 	'titre_cadre_forum_interne' => 'Internal forum',
 	'titre_config_forums_prive' => 'Forums in the private area',
@@ -166,10 +166,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_forum_suivi' => 'Forums follow-up',
 	'titre_page_forum_suivi' => 'Forums follow-up',
 	'titre_selection_action' => 'Selection',
-	'tout_voir' => 'See all messages',
+	'tout_voir' => 'See all posts',
 
 	// V
-	'voir_messages_objet' => 'see the messages'
+	'voir_messages_objet' => 'see the posts'
 );
 
 ?>
