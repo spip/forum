@@ -8,7 +8,7 @@ if (!defined('_ECRIRE_INC_VERSION')) return;
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// A
-	'aucun_message_forum' => 'Aucun message de forum', # NEW
+	'aucun_message_forum' => 'Geen bericht in het forum',
 
 	// B
 	'bouton_radio_articles_futurs' => 'voor toekomstige artikels alleen (geen bewerking op de databank).',
@@ -29,37 +29,37 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'documents_interdits_forum' => 'Verboden documenten in het forum',
 
 	// E
-	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
+	'erreur_enregistrement_message' => 'Wegens technische problemen kon je bericht niet opgeslaagd worden',
 
 	// F
 	'form_pet_message_commentaire' => 'Een bericht, een commentaar?',
 	'forum' => 'Forum',
 	'forum_acces_refuse' => 'Je hebt geen toegang meer tot deze forums.',
 	'forum_attention_dix_caracteres' => '<b>Opgelet!</b> : je bericht moet minstens 10 tekens bevatten.',
-	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
+	'forum_attention_message_non_poste' => 'Opgelet, je hebt je bericht niet gepost !',
 	'forum_attention_trois_caracteres' => '<b>Opgelet!</b> : je bericht moet minstens 3 tekens bevatten.',
 	'forum_attention_trop_caracteres' => '<b>Opgelet !</b> uw bericht is te lang (@compte@ caractères) : om registratie mogelijk te maken, mag het niet meer dan @max@ karakters tellen.',
 	'forum_avez_selectionne' => 'Je hebt gekozen:',
 	'forum_cliquer_retour' => 'Klik <a href=\'@retour_forum@\'>hier</a> om door te gaan.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Dit forum wordt vooraf gemodereerd: je bijdrage zal pas verschijnen nadat een redacteur van de website het heeft goedgekeurd.',
-	'forum_lien_hyper' => '<b>webverwijzing</b> (optioneel)', # MODIF
-	'forum_message' => 'Votre message', # NEW
+	'forum_lien_hyper' => 'webverwijzing',
+	'forum_message' => 'Je bericht',
 	'forum_message_definitif' => 'Definitief bericht : versturen',
 	'forum_message_trop_long' => 'Je bericht is te lang. De maximale lengte is 20.000 tekens.',
 	'forum_ne_repondez_pas' => 'Niet reageren op deze mail, maar op het forum om het volgende adres :',
 	'forum_page_url' => '(Als je bericht naar een artikel op het web verwijst of naar een pagina die meer informatie bevat, kunt u hier de titel en de URL van deze webverwijzing invoeren.)',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Bericht poste@parauteur@ als vervolg op je artikel « @titre@ » .',
-	'forum_qui_etes_vous' => '<b>Wie ben je ?</b> (optioneel)', # MODIF
+	'forum_qui_etes_vous' => 'Wie ben je ?',
 	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
-	'forum_texte' => 'Tekst van je bericht :', # MODIF
-	'forum_titre' => 'Titel :', # MODIF
-	'forum_url' => 'URL :', # MODIF
+	'forum_texte' => 'Tekst van je bericht',
+	'forum_titre' => 'Titel',
+	'forum_url' => 'Je website',
 	'forum_valider' => 'Keuze bevestigen',
-	'forum_voir_avant' => 'Bericht bekijken alvorens te posten', # MODIF
-	'forum_votre_email' => 'Je e-mailadres :', # MODIF
-	'forum_votre_nom' => 'Je naam (of alias) :', # MODIF
+	'forum_voir_avant' => 'Bericht bekijken alvorens te posten',
+	'forum_votre_email' => 'Je e-mailadres',
+	'forum_votre_nom' => 'Je naam',
 	'forum_vous_enregistrer' => 'Om deel te nemen aan
   dit forum, dien je op voorhand te registreren. Gelieve
   hieronder je logingegevens in te vullen die je bezorgd werden
@@ -76,11 +76,11 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_supprimer_message' => 'Dit bericht wissen',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
 	'icone_valider_message' => 'Bericht goedkeuren',
-	'icone_valider_messages' => 'Valider ces messages', # NEW
+	'icone_valider_messages' => 'Deze berichten goedkeuren',
 	'icone_valider_repondre_message' => 'Valider & Répondre à ce message', # NEW
 	'info_1_message_forum' => '1 message de forum', # NEW
-	'info_activer_forum_public' => '<i>Om de openbare forums te activeren, dien je een standaardinstelling
- voor het modereren te kiezen :</i>', # MODIF
+	'info_activer_forum_public' => 'Om de openbare forums te activeren, dien je een standaardinstelling
+ voor het modereren te kiezen :',
 	'info_appliquer_choix_moderation' => 'Pas deze moderatievorm toe ::',
 	'info_config_forums_prive' => 'In de particuliere ruimte van de site, kunt u verschillende soorten forums activeren :',
 	'info_config_forums_prive_admin' => 'Een forum dat voor de beheerders van de site is gereserveerd :',
@@ -104,8 +104,8 @@ De publieke forums kunnen per artikel toegestaan worden
 	'info_nb_messages_forum' => '@nb@ messages de forum', # NEW
 	'info_option_email' => 'Wanneer een bezoeker van de site een nieuw bericht in het forum opstelt dat met een artikel wordt verenigd, kunnen de auteurs van het artikel van dit bericht per e-mail verwittigd worden. Voor elk soort forum aangeven als men deze keuze moet gebruiken.',
 	'info_pas_de_forum' => 'geen forum',
-	'info_question_visiteur_ajout_document_forum' => 'Als u de bezoekers wilt machtigen om documenten (beelden, klanken…) samen te voegen aan hun berichten van forum, de lijst van de uitbreidingen van documenten hieronder aangeven toegelaten voor de ex forums (: gif, jpg, png, mp3).', # MODIF
-	'info_question_visiteur_ajout_document_forum_format' => 'Als u alle soorten documenten toestaan wilt die als betrouwbaar door SPIP, een ster worden beschouwd, zetten. Om niets toe te staan, niets aangeven.', # MODIF
+	'info_question_visiteur_ajout_document_forum' => 'Als u de bezoekers wilt machtigen om documenten (beelden, klanken…) samen te voegen aan hun berichten van forum, de lijst van de toegelaten uitbreidingen van documenten hieronder aangeven  (bv.: gif, jpg, png, mp3).',
+	'info_question_visiteur_ajout_document_forum_format' => 'Als u alle soorten documenten wilt toestaan die als betrouwbaar door SPIP worden beschouwd, een ster zetten. Om niets toe te staan, niets aangeven.',
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW
 	'item_activer_forum_administrateur' => 'Forum van beheerders activeren',
@@ -118,9 +118,9 @@ De publieke forums kunnen per artikel toegestaan worden
 	// L
 	'lien_reponse_article' => 'Beantwoord dit artikel',
 	'lien_reponse_breve_2' => 'Beantwoord dit nieuwsbericht',
-	'lien_reponse_message' => 'Réponse au message', # NEW
+	'lien_reponse_message' => 'Het bericht antwoorden',
 	'lien_reponse_rubrique' => 'Beantwoord deze rubriek',
-	'lien_reponse_site_reference' => 'Antwoord op gekoppelde site :', # MODIF
+	'lien_reponse_site_reference' => 'Antwoord op gekoppelde site',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW
@@ -133,7 +133,7 @@ De publieke forums kunnen per artikel toegestaan worden
 	'messages_prive' => 'Privés', # NEW
 	'messages_privoff' => 'Supprimés', # NEW
 	'messages_privrac' => 'Généraux', # NEW
-	'messages_prop' => 'Proposés', # NEW
+	'messages_prop' => 'Voorgestelde',
 	'messages_publie' => 'Publiés', # NEW
 	'messages_spam' => 'Spam', # NEW
 	'messages_tous' => 'Tous', # NEW
@@ -149,7 +149,7 @@ De publieke forums kunnen per artikel toegestaan worden
 	// S
 	'statut_off' => 'Supprimé', # NEW
 	'statut_original' => 'origineel',
-	'statut_prop' => 'Proposé', # NEW
+	'statut_prop' => 'Voorgesteld',
 	'statut_publie' => 'Publié', # NEW
 	'statut_spam' => 'Spam', # NEW
 

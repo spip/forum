@@ -49,6 +49,7 @@
 	<langue code="lb" />
 	<langue code="my" />
 	<langue code="nl">
+		<traducteur nom="Suske" lien="http://trad.spip.org/auteur/suske" />
 		<traducteur nom="mpossoz" lien="http://trad.spip.org/auteur/mpossoz" />
 	</langue>
 	<langue code="no" />
