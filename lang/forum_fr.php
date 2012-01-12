@@ -15,12 +15,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_enregistrement_obligatoire' => 'Enregistrement obligatoire (les
 		utilisateurs doivent s\'abonner en fournissant leur adresse e-mail avant de
 		pouvoir poster des contributions).',
-	'bouton_radio_moderation_priori' => 'Modération à priori (les
+	'bouton_radio_moderation_priori' => 'Modération a priori (les
 	contributions ne s\'affichent publiquement qu\'après validation par les
 	administrateurs).',
 	'bouton_radio_modere_abonnement' => 'sur abonnement',
-	'bouton_radio_modere_posteriori' => 'modération à posteriori',
-	'bouton_radio_modere_priori' => 'modération à priori',
+	'bouton_radio_modere_posteriori' => 'modération a posteriori',
+	'bouton_radio_modere_priori' => 'modération a priori',
 	'bouton_radio_publication_immediate' => 'Publication immédiate des messages
 	(les contributions s\'affichent dès leur envoi, les administrateurs peuvent
 	les supprimer ensuite).',
@@ -38,15 +38,15 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_dix_caracteres' => '<b>Attention !</b> votre message doit contenir au moins dix caractères.',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !',
 	'forum_attention_trois_caracteres' => '<b>Attention !</b> votre titre doit contenir au moins trois caractères.',
-	'forum_attention_trop_caracteres' => '<b>Attention !</b> votre message est trop long (@compte@ caractères) : pour pouvoir être enregistré, il ne doit pas dépasser @max@ caractères.',
+	'forum_attention_trop_caracteres' => '<b>Attention !</b> votre message est trop long (@compte@ caractères) pour pouvoir être enregistré, il ne doit pas dépasser @max@ caractères.',
 	'forum_avez_selectionne' => 'Vous avez sélectionné :',
 	'forum_cliquer_retour' => 'Cliquez <a href=\'@retour_forum@\'>ici</a> pour continuer.',
 	'forum_forum' => 'forum',
-	'forum_info_modere' => 'Ce forum est modéré à priori : votre contribution n\'apparaîtra qu\'après avoir été validée par un administrateur du site.',
+	'forum_info_modere' => 'Ce forum est modéré a priori : votre contribution n\'apparaîtra qu\'après avoir été validée par un administrateur du site.',
 	'forum_lien_hyper' => 'Lien hypertexte',
 	'forum_message' => 'Votre message',
 	'forum_message_definitif' => 'Message définitif : envoyer au site',
-	'forum_message_trop_long' => 'Votre message est trop long. La taille maximale est de 20000 caractères.',
+	'forum_message_trop_long' => 'Votre message est trop long. La taille maximale est de 20 000 caractères.',
 	'forum_ne_repondez_pas' => 'Ne répondez pas à ce mail mais sur le forum à l\'adresse suivante :',
 	'forum_page_url' => '(Si votre message se réfère à un article publié sur le Web, ou à une page fournissant plus d\'informations, vous pouvez indiquer ci-après le titre de la page et son adresse.)',
 	'forum_permalink' => 'Lien permanent vers le commentaire',
@@ -77,12 +77,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_supprimer_messages' => 'Supprimer ces messages',
 	'icone_valider_message' => 'Valider ce message',
 	'icone_valider_messages' => 'Valider ces messages',
-	'icone_valider_repondre_message' => 'Valider & Répondre à ce message',
+	'icone_valider_repondre_message' => 'Valider et Répondre à ce message',
 	'info_1_message_forum' => '1 message de forum',
 	'info_activer_forum_public' => 'Pour activer les forums publics, veuillez choisir leur mode
 	de modération par défaut :',
 	'info_appliquer_choix_moderation' => 'Appliquer ce choix de modération :',
-	'info_config_forums_prive' => 'Dans l’espace privé du site, vous pouvez activer plusieurs types de forums :',
+	'info_config_forums_prive' => 'Dans l\'espace privé du site, vous pouvez activer plusieurs types de forums :',
 	'info_config_forums_prive_admin' => 'Un forum réservé aux administrateurs du site :',
 	'info_config_forums_prive_global' => 'Un forum global, ouvert à tous les rédacteurs :',
 	'info_config_forums_prive_objets' => 'Un forum sous chaque article, brève, site référencé, etc. :',
@@ -92,7 +92,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_envoi_forum' => 'Envoi des forums aux auteurs des articles',
 	'info_fonctionnement_forum' => 'Fonctionnement du forum :',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot',
-	'info_gauche_suivi_forum_2' => 'La page de <i>suivi des forums</i> est un outil de gestion de votre site (et non un espace de discussion ou de rédaction). Elle affiche toutes les contributions des forums du site, aussi bien celles du site public que de l\'espace privé et vous permet de gérer ces contributions.',
+	'info_gauche_suivi_forum_2' => 'La page de <i>suivi des forums</i> est un outil de gestion de votre site (et non un espace de discussion ou de rédaction). Elle affiche toutes les contributions des forums du site, aussi bien celles du site public que celles de l\'espace privé et vous permet de gérer ces contributions.',
 	'info_liens_syndiques_3' => 'forums',
 	'info_liens_syndiques_4' => 'sont',
 	'info_liens_syndiques_5' => 'forum',
@@ -104,7 +104,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_nb_messages_forum' => '@nb@ messages de forum',
 	'info_option_email' => 'Lorsqu\'un visiteur du site poste un nouveau message dans le forum associé à un article, les auteurs de l\'article peuvent être prévenus de ce message par e-mail. Indiquer pour chaque type de forum s\'il faut utiliser cette option.',
 	'info_pas_de_forum' => 'pas de forum',
-	'info_question_visiteur_ajout_document_forum' => 'Si vous souhaitez autoriser les visiteurs à joindre des documents (images, sons...) à leurs messages de forum, indiquez ci-dessous la liste des extensions de documents autorisés pour les forums (ex: gif, jpg, png, mp3).',
+	'info_question_visiteur_ajout_document_forum' => 'Si vous souhaitez autoriser les visiteurs à joindre des documents (images, sons…) à leurs messages de forum, indiquez ci-dessous la liste des extensions de documents autorisés pour les forums (ex: gif, jpg, png, mp3).',
 	'info_question_visiteur_ajout_document_forum_format' => 'Si vous souhaitez autoriser tous les types de documents considérés comme fiables par SPIP, mettez une étoile. Pour ne rien autoriser, n\'indiquez rien.',
 	'interface_formulaire' => 'Interface formulaire',
 	'interface_onglets' => 'Interface avec onglets',
@@ -155,7 +155,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// T
 	'text_article_propose_publication_forum' => 'N\'hésitez pas à donner votre avis grâce au forum attaché à cet article (en bas de page).',
-	'texte_en_cours_validation' => 'Les articles, brèves, forums ci dessous sont proposés à la publication.',
+	'texte_en_cours_validation' => 'Les articles, brèves, forums ci-dessous sont proposés à la publication.',
 	'texte_en_cours_validation_forum' => 'N\'hésitez pas à donner votre avis grâce aux forums qui leur sont attachés.',
 	'texte_messages_publics' => 'Messages publics sur :',
 	'titre_cadre_forum_administrateur' => 'Forum privé des administrateurs',
