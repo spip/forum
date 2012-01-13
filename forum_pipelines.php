@@ -83,7 +83,7 @@ function forum_accueil_informations($texte){
 		$texte .= "<h4>$plus" ._T('forum:onglet_messages_publics') ."</h4>";
 		$texte .= "<ul class='liste-items'>";
 		if (isset($cpt['prop'])) $texte .= "<li class='item'>"._T("texte_statut_attente_validation").": ".$cpt2['prop'] .$cpt['prop'] . '</li>';
-		if (isset($cpt['publie'])) $texte .= "<li class='item on'>"._T("texte_statut_publies").": ".$cpt2['publie'] .$cpt['publie'] .'</li>';
+		if (isset($cpt['publie'])) $texte .= "<li class='item'>"._T("texte_statut_publies").": ".$cpt2['publie'] .$cpt['publie'] .'</li>';
 		$texte .= "</ul>";
 		$texte .= "</div>";
 	}
@@ -382,18 +382,6 @@ function forum_trig_supprimer_objets_lies($objets){
 			sql_delete("spip_forum", "id_message=".intval($objet['id']));
 	}
 	return $objets;
-}
-
-/**
- * Ajouter jquery.autosave.js
- * (Uniquement pour SPIP 2.1, par defaut dans SPIP 2.2)
- * @param unknown_type $array
- */
-function forum_jquery_plugins($array){
-	if(!in_array('javascript/jquery.autosave.js',$array)){
-		$array[] = 'javascript/jquery.autosave.js';
-	}
-	return $array;
 }
 
 ?>
