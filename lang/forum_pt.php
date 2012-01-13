@@ -19,10 +19,10 @@ utilizadores devem ter uma assinatura ao fornecer o seu endereço e-mail antes d
  poderem enviar contribuições).',
 	'bouton_radio_moderation_priori' => 'Moderação a  priori (as
  contribuições aparecem publicamente só depois da validação pelos
- administradores). ',
+ administradores). ', # MODIF
 	'bouton_radio_modere_abonnement' => 'moderado com assinatura',
-	'bouton_radio_modere_posteriori' => 'moderado a posteriori',
-	'bouton_radio_modere_priori' => 'moderado a priori',
+	'bouton_radio_modere_posteriori' => 'moderado a posteriori', # MODIF
+	'bouton_radio_modere_priori' => 'moderado a priori', # MODIF
 	'bouton_radio_publication_immediate' => 'Publicação imediata das mensagens
  (as contribuições afixam-se logo que são enviadas, os administradores podem suprimi-las depois).',
 
@@ -43,11 +43,11 @@ utilizadores devem ter uma assinatura ao fornecer o seu endereço e-mail antes d
 	'forum_avez_selectionne' => 'Seleccionou :',
 	'forum_cliquer_retour' => 'Clicar <a href=\'@retour_forum@\'>ici</a> para continuar.',
 	'forum_forum' => 'fórum',
-	'forum_info_modere' => 'Este fórum está moderado a priori : a sua contribuição só aparecerá depois de ser validada por um administrador do sítio.',
+	'forum_info_modere' => 'Este fórum está moderado a priori : a sua contribuição só aparecerá depois de ser validada por um administrador do sítio.', # MODIF
 	'forum_lien_hyper' => '<b>Link hipertexto</b> (opcional)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Mensagem definitiva: mandar para o sítio',
-	'forum_message_trop_long' => 'A sua mensagem é demasiado comprida. O tamanho máximo é 20000 carácteres.',
+	'forum_message_trop_long' => 'A sua mensagem é demasiado comprida. O tamanho máximo é 20000 carácteres.', # MODIF
 	'forum_ne_repondez_pas' => 'Não responder para este mail mas no fórum, para o endereço seguinte:', # MODIF
 	'forum_page_url' => '(Se a sua mensagem se refere a um artigo publicado na Web, ou a uma página que fornece mais informações, por favor indique a seguir o título da página e o seu endereço URL.)',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW

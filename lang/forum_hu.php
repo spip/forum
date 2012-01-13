@@ -18,10 +18,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
   felhasználóknak be kell iratkozniuk azzal, hogy adják email címüket mielőbb
   küldhessenek anyagokat).',
 	'bouton_radio_moderation_priori' => 'Előzetes moderálás (a
- küldött anyagok csak az adminisztrátorok adta jováhagyást kerülnek nyilvánosságra).',
+ küldött anyagok csak az adminisztrátorok adta jováhagyást kerülnek nyilvánosságra).', # MODIF
 	'bouton_radio_modere_abonnement' => 'moderálva beiratkozásnál',
-	'bouton_radio_modere_posteriori' => 'utólag moderált',
-	'bouton_radio_modere_priori' => 'elözőleg moderálva',
+	'bouton_radio_modere_posteriori' => 'utólag moderált', # MODIF
+	'bouton_radio_modere_priori' => 'elözőleg moderálva', # MODIF
 	'bouton_radio_publication_immediate' => 'Üzenetek azonnali publikálása
  (a küldött anyagok már küldéskor megjelennek, az adminisztrátorok későb tudják törölni).',
 
@@ -38,15 +38,15 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_dix_caracteres' => '<b>Vigyázat !</b> Az üzenetének legalább 10 karaktert kell tartalmaznia.',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Vigyázat !</b> A címnek legalább három karaktert kell tartalmaznia.',
-	'forum_attention_trop_caracteres' => '<b>Figyelem !</b> az üzenete túl hosszú (@compte@ karakter) : legfeljebb @max@ karakterből állhat.',
+	'forum_attention_trop_caracteres' => '<b>Figyelem !</b> az üzenete túl hosszú (@compte@ karakter) : legfeljebb @max@ karakterből állhat.', # MODIF
 	'forum_avez_selectionne' => 'Kijelölt :',
 	'forum_cliquer_retour' => 'Kattintson <a href=\'@retour_forum@\'>ide</a> a folytatáshoz.',
 	'forum_forum' => 'fórum',
-	'forum_info_modere' => 'Ez a fórum előre moderált : az Ön hozzászólása csak azután jelenik meg, hogy a honlap egyik adminisztrátora jóváhagyta.',
+	'forum_info_modere' => 'Ez a fórum előre moderált : az Ön hozzászólása csak azután jelenik meg, hogy a honlap egyik adminisztrátora jóváhagyta.', # MODIF
 	'forum_lien_hyper' => '<b>Hiperhivatkozás</b> (választható)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Végleges üzenet: küldés a honlapra',
-	'forum_message_trop_long' => 'Az Ön üzenete túl hosszú. A maximális méret 20 000 karakter.',
+	'forum_message_trop_long' => 'Az Ön üzenete túl hosszú. A maximális méret 20 000 karakter.', # MODIF
 	'forum_ne_repondez_pas' => 'Ne erre az emailre válaszoljon, hanem a fórumon a következő címen:', # MODIF
 	'forum_page_url' => '(Amennyiben az Ön üzenete egy interneten publikált, vagy további információt tartalmazó oldalra vonatkozik, akkor adja meg az oldal nevét, illetve URL címét.)',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW

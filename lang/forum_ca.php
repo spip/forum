@@ -20,10 +20,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_moderation_priori' => 'Moderat a priori (les
  contribucions no apareixen públicament fins que no han estat
  validades des de l\'adminsitració del
- lloc).',
+ lloc).', # MODIF
 	'bouton_radio_modere_abonnement' => 'per subscripció',
-	'bouton_radio_modere_posteriori' => 'moderació a posteriori',
-	'bouton_radio_modere_priori' => 'moderació a priori',
+	'bouton_radio_modere_posteriori' => 'moderació a posteriori', # MODIF
+	'bouton_radio_modere_priori' => 'moderació a priori', # MODIF
 	'bouton_radio_publication_immediate' => 'Publicació immediata dels missatges (es poden suprimir posteriorment des de l\'administració). ',
 
 	// D
@@ -39,15 +39,15 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_dix_caracteres' => '<b>Atenció!</b> el vostre missatge ha de tenir almenys deu caràcters.',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Atenció!</b> el vostre títol ha de tenir almenys tres caràcters.',
-	'forum_attention_trop_caracteres' => '<b>Atenció!</b> el vostre missatge és massa llarg (@compte@ caràcters) : per a poder-vos enregistrar no pot sobrepassar els @max@ caràcters.',
+	'forum_attention_trop_caracteres' => '<b>Atenció!</b> el vostre missatge és massa llarg (@compte@ caràcters) : per a poder-vos enregistrar no pot sobrepassar els @max@ caràcters.', # MODIF
 	'forum_avez_selectionne' => 'Heu seleccionat:',
 	'forum_cliquer_retour' => 'Premeu <a href=\'@retour_forum@\'>ici</a> per continuar.',
 	'forum_forum' => 'fòrum',
-	'forum_info_modere' => 'Aquest fòrum és moderat a priori: la seva contribució no es mostrarà fins que no hagi estat validada per l\'administrador del lloc. ',
+	'forum_info_modere' => 'Aquest fòrum és moderat a priori: la seva contribució no es mostrarà fins que no hagi estat validada per l\'administrador del lloc. ', # MODIF
 	'forum_lien_hyper' => '<b>Enllaç hipertext</b> (opcional)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Missatge definitiu: enviar al lloc',
-	'forum_message_trop_long' => 'El vostre missatge és massa llarg. La mida màxima són 20000 caràcters.',
+	'forum_message_trop_long' => 'El vostre missatge és massa llarg. La mida màxima són 20000 caràcters.', # MODIF
 	'forum_ne_repondez_pas' => 'No respongueu a aquest correu electrònic, feu-ho al fòrum a la següent adreça: ',
 	'forum_page_url' => '(Si el vostre missatge fa referència a un article publicat a la Web, o a una pàgina que conté més informacions, podeu indicar a continuació el títol de la pàgina i la seva adreça URL.)',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
@@ -81,7 +81,7 @@ Si ja n\'esteu, escriviu a continuació l\'identifcador que us ha estat proporci
 	'info_activer_forum_public' => '<i>Per activar els fòrums públics, escolliu el seu mode
  de moderació per defecte:</i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Aplicar aquesta opció de moderació:',
-	'info_config_forums_prive' => 'A l\'espai privat del lloc Web, podeu activar diversos models de fòrums:',
+	'info_config_forums_prive' => 'A l\'espai privat del lloc Web, podeu activar diversos models de fòrums:', # MODIF
 	'info_config_forums_prive_admin' => 'Un fòrum reservat als administradors del lloc:',
 	'info_config_forums_prive_global' => 'Un fòrum global, obert a tots els redactors:',
 	'info_config_forums_prive_objets' => 'Un fòrum a sota de cada article, breu, lloc referenciat, etc.:',
@@ -91,7 +91,7 @@ Si ja n\'esteu, escriviu a continuació l\'identifcador que us ha estat proporci
 	'info_envoi_forum' => 'Enviar els fòrums als autors dels articles',
 	'info_fonctionnement_forum' => 'Funcionament del fòrum :',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
-	'info_gauche_suivi_forum_2' => 'La pàgina de <i>seguiment dels fòrums</i> és una eina de gestió del vostre lloc Web (i no un espai de discussió o de redacció). Mostra totes les contribucions dels fòrums del lloc, tant les de l\'espai públic com les de l\'espai privat i us permet gestionar aquestes contribucions.',
+	'info_gauche_suivi_forum_2' => 'La pàgina de <i>seguiment dels fòrums</i> és una eina de gestió del vostre lloc Web (i no un espai de discussió o de redacció). Mostra totes les contribucions dels fòrums del lloc, tant les de l\'espai públic com les de l\'espai privat i us permet gestionar aquestes contribucions.', # MODIF
 	'info_liens_syndiques_3' => 'fòrums',
 	'info_liens_syndiques_4' => 'són',
 	'info_liens_syndiques_5' => 'fòrum',

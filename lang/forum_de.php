@@ -15,10 +15,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_articles_tous' => 'für ausnahmslos alle Artikel.',
 	'bouton_radio_articles_tous_sauf_forum_desactive' => 'nur für Artikel mit aktiviertem Forum.',
 	'bouton_radio_enregistrement_obligatoire' => 'Obligatorische Anmeldung (Besucher müssen sich mit einer gültigen E-Mail Adresse anmelden, um Forumsbeiträge schreiben zu können).',
-	'bouton_radio_moderation_priori' => 'Vorgeschaltete Moderation (Die Benutzerkommentare werden erst nach Bestätigung durch einen Administrator sichtbar). ',
+	'bouton_radio_moderation_priori' => 'Vorgeschaltete Moderation (Die Benutzerkommentare werden erst nach Bestätigung durch einen Administrator sichtbar). ', # MODIF
 	'bouton_radio_modere_abonnement' => 'Mit Anmeldung',
-	'bouton_radio_modere_posteriori' => 'Nachträgliche Moderation',
-	'bouton_radio_modere_priori' => 'Vorgeschaltete Moderation',
+	'bouton_radio_modere_posteriori' => 'Nachträgliche Moderation', # MODIF
+	'bouton_radio_modere_priori' => 'Vorgeschaltete Moderation', # MODIF
 	'bouton_radio_publication_immediate' => 'Sofortige Veröffentlichung von Beiträgen (sie werden sofort nach dem Absenden angezeigt und können von Administratoren nachträglich gelöscht werden).',
 
 	// D
@@ -34,15 +34,15 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_dix_caracteres' => '<b>Achtung!</b> Ihr Beitrag ist muss mindestens 10 Zeichen lang sein.',
 	'forum_attention_message_non_poste' => 'Pozor, neposlali ste svoj príspevok!',
 	'forum_attention_trois_caracteres' => '<b>Achtung!</b> Ihr Titel muss mindestens drei Zeichen lang sein.',
-	'forum_attention_trop_caracteres' => '<b>Achtung!</b> Ihr Beitrag ist zu lang (@compte@ Zeichen). Damit er gespeichert werden kann, darf er maximal @max@ Zeichen lang sein.',
+	'forum_attention_trop_caracteres' => '<b>Achtung!</b> Ihr Beitrag ist zu lang (@compte@ Zeichen). Damit er gespeichert werden kann, darf er maximal @max@ Zeichen lang sein.', # MODIF
 	'forum_avez_selectionne' => 'Sie haben ausgewählt:',
 	'forum_cliquer_retour' => '<a href=\'@retour_forum@\'>Weiter</a>',
 	'forum_forum' => 'Forum',
-	'forum_info_modere' => 'Dieses Forum ist moderiert. Ihr Beitrag erscheint erst nach Freischaltung durch einen Administrator der Website.',
+	'forum_info_modere' => 'Dieses Forum ist moderiert. Ihr Beitrag erscheint erst nach Freischaltung durch einen Administrator der Website.', # MODIF
 	'forum_lien_hyper' => '<b>Hyperlink</b> (optional)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Beitrag fertiggestellt: Endgültig eintragen.',
-	'forum_message_trop_long' => 'Ihr Beitrag ist zu lang. Sie können maximal 20.000 Zeichen schreiben.',
+	'forum_message_trop_long' => 'Ihr Beitrag ist zu lang. Sie können maximal 20.000 Zeichen schreiben.', # MODIF
 	'forum_ne_repondez_pas' => 'Antworten Sie nicht auf diese Mail, sondern im Forum mit dieser Adresse:',
 	'forum_page_url' => '(Wenn sich Ihr Beitrag auf einen Artikel im Internet oder auf eine Seite mit Zusatzinformationen bezieht, geben Sie hier bitte den Titel der Seite und ihre Adresse bzw. URL an.)',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
@@ -70,12 +70,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_supprimer_messages' => 'Diese Beiträge löschen',
 	'icone_valider_message' => 'Beitrag freigeben',
 	'icone_valider_messages' => 'Diese Beiträge freischalten',
-	'icone_valider_repondre_message' => 'Bestätigung; Diesen Beitrag beantworten',
+	'icone_valider_repondre_message' => 'Bestätigung; Diesen Beitrag beantworten', # MODIF
 	'info_1_message_forum' => '1 Beitrag im Forum',
 	'info_activer_forum_public' => '<i>Um die öffentlichen Foren zu aktivieren, wählen Sie bitte
  die Moderation im Standardmodus:</i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Moderationstyp anwenden:',
-	'info_config_forums_prive' => 'Im Redaktionsbereich können Sie verschiedene Foren aktivieren:',
+	'info_config_forums_prive' => 'Im Redaktionsbereich können Sie verschiedene Foren aktivieren:', # MODIF
 	'info_config_forums_prive_admin' => 'Ein Forum nur für Administratoren der Site:',
 	'info_config_forums_prive_global' => 'Ein allgemeines Forum für alle Redakteure:',
 	'info_config_forums_prive_objets' => 'Ein Forum unter jedem Artikel, Meldung, verlinkten Website, etc.:',
@@ -83,7 +83,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_envoi_forum' => 'Forumsbeiträge an Autoren der Artikel schicken',
 	'info_fonctionnement_forum' => 'Funktionsweise des Forums:',
 	'info_forums_liees_mot' => 'Beiträge mit diesem Schlagwort',
-	'info_gauche_suivi_forum_2' => 'Die Seite zum <i>Verwalten der Foren</i> hat eine administrative Funktion und dient nicht zum Diskutieren mit den Lesern. Es werden alle Einträge in öffentlichen und internen Foren gezeigt, so dass Sie diese einzeln ein- und ausschalten können.',
+	'info_gauche_suivi_forum_2' => 'Die Seite zum <i>Verwalten der Foren</i> hat eine administrative Funktion und dient nicht zum Diskutieren mit den Lesern. Es werden alle Einträge in öffentlichen und internen Foren gezeigt, so dass Sie diese einzeln ein- und ausschalten können.', # MODIF
 	'info_liens_syndiques_3' => 'Foren',
 	'info_liens_syndiques_4' => 'sind',
 	'info_liens_syndiques_5' => 'Forum',
@@ -146,7 +146,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// T
 	'text_article_propose_publication_forum' => 'Bitte schreiben Sie Ihren Kommentar in das Forum zu diesem Artikel (unten auf der Seite).',
-	'texte_en_cours_validation' => 'Diese Artikel, Meldungen und Forumsbeiträge sind zur Veröffentlichung vorgeschlagen',
+	'texte_en_cours_validation' => 'Diese Artikel, Meldungen und Forumsbeiträge sind zur Veröffentlichung vorgeschlagen', # MODIF
 	'texte_en_cours_validation_forum' => 'Bitte schreiben Sie Ihre Kommentare in die entsprechenden Foren.',
 	'texte_messages_publics' => 'Öffentliche Beiträge zu:',
 	'titre_cadre_forum_administrateur' => 'Administratorforum',

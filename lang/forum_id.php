@@ -19,10 +19,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
   sebelum dapat berkontribusi).',
 	'bouton_radio_moderation_priori' => 'Moderasi awal (
  kontribusi hanya akan ditampilkan setelah validasi
- oleh administrator).',
+ oleh administrator).', # MODIF
 	'bouton_radio_modere_abonnement' => 'registrasi diperlukan',
-	'bouton_radio_modere_posteriori' => 'moderasi akhir',
-	'bouton_radio_modere_priori' => 'moderasi awal',
+	'bouton_radio_modere_posteriori' => 'moderasi akhir', # MODIF
+	'bouton_radio_modere_priori' => 'moderasi awal', # MODIF
 	'bouton_radio_publication_immediate' => 'Publikasi pesan segera
  (kontribusi akan ditampilkan sesegera mungkin setelah dikirimkan, kemudian
  administrator dapat menghapusnya).',
@@ -40,15 +40,15 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_dix_caracteres' => '<b>Peringatan!</b> Pesan anda hendaknya terdiri dari sepuluh karakter atau lebih.',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Peringatan!</b> Judul anda hendaknya terdiri dari tiga karakter atau lebih.',
-	'forum_attention_trop_caracteres' => '<b>Peringatan !</b> pesan anda terlalu panjang (@compte@ karakter) : untuk dapat menyimpannya, pesan tidak boleh lebih dari @max@ karakter.',
+	'forum_attention_trop_caracteres' => '<b>Peringatan !</b> pesan anda terlalu panjang (@compte@ karakter) : untuk dapat menyimpannya, pesan tidak boleh lebih dari @max@ karakter.', # MODIF
 	'forum_avez_selectionne' => 'Anda telah memilih:',
 	'forum_cliquer_retour' => 'Klik  <a href=\'@retour_forum@\'>di sini</a> untuk lanjut.',
 	'forum_forum' => 'forum',
-	'forum_info_modere' => 'Forum ini telah dimoderasi: kontribusi anda hanya akan muncul setelah divalidasi oleh administrator situs.',
+	'forum_info_modere' => 'Forum ini telah dimoderasi: kontribusi anda hanya akan muncul setelah divalidasi oleh administrator situs.', # MODIF
 	'forum_lien_hyper' => '<b>Tautan web</b> (opsional)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Pesan akhir: kirim ke situs',
-	'forum_message_trop_long' => 'Pesan anda terlalu panjang. Panjang maksimum adalah 20000 karakter.',
+	'forum_message_trop_long' => 'Pesan anda terlalu panjang. Panjang maksimum adalah 20000 karakter.', # MODIF
 	'forum_ne_repondez_pas' => 'Jangan balas ke e-mail ini tapi ke forum yang terdapat di alamat berikut:', # MODIF
 	'forum_page_url' => '(Jika pesan anda merujuk pada sebuah artikel yang dipublikasi di web atau halaman yang memberikan informasi lebih lanjut, silakan masukkan judul halaman dan URL-nya di bawah).',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
@@ -93,7 +93,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_envoi_forum' => 'Kirim forum ke penulis artikel',
 	'info_fonctionnement_forum' => 'Operasi forum:',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
-	'info_gauche_suivi_forum_2' => 'Halaman <i>tindak lanjut forum</i> adalah alat bantu pengelola situs anda (bukan area diskusi atau pengeditan). Halaman ini menampilkan semua kontribusi forum umum artikel ini dan mengizinkan anda untuk mengelola kontribusi-kontribusi ini.',
+	'info_gauche_suivi_forum_2' => 'Halaman <i>tindak lanjut forum</i> adalah alat bantu pengelola situs anda (bukan area diskusi atau pengeditan). Halaman ini menampilkan semua kontribusi forum umum artikel ini dan mengizinkan anda untuk mengelola kontribusi-kontribusi ini.', # MODIF
 	'info_liens_syndiques_3' => 'forum',
 	'info_liens_syndiques_4' => 'adalah',
 	'info_liens_syndiques_5' => 'forum',

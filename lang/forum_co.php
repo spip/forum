@@ -16,10 +16,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_articles_tous_sauf_forum_desactive' => 'à tutti l\'artìculi salvu quelli per chì hè disattivatu u foru.',
 	'bouton_radio_enregistrement_obligatoire' => 'Arregistramenu ubbligatoriu (l\'utilizatori 
 		devenu abbunà si rinsignendu u so indirizzu e-mail prima di pudè mandà cuntributi).',
-	'bouton_radio_moderation_priori' => 'Muderazione in antìcipu (i cuntributi ùn sò pubblicati chè dopu accunsentu da l\'amministratori).',
+	'bouton_radio_moderation_priori' => 'Muderazione in antìcipu (i cuntributi ùn sò pubblicati chè dopu accunsentu da l\'amministratori).', # MODIF
 	'bouton_radio_modere_abonnement' => 'Solu cù abbunamentu',
-	'bouton_radio_modere_posteriori' => 'Muderazione dopu',
-	'bouton_radio_modere_priori' => 'muderazione in antìcipu',
+	'bouton_radio_modere_posteriori' => 'Muderazione dopu', # MODIF
+	'bouton_radio_modere_priori' => 'muderazione in antìcipu', # MODIF
 	'bouton_radio_publication_immediate' => 'Pubblicazione à l\'istante di i messagi
 (e cuntribuzioni sò pubblicate subbitu dopu mandate, l\'amministradori i ponu sguassà dopu).',
 
@@ -37,15 +37,15 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Attenti !</b> U vostru tìtulu deve cuntene à u mìnimu trè caràtteri.',
 	'forum_attention_trop_caracteres' => '<b>Attention !</b> U vostru messagiu hè troppu longu (@compte@ caràtteri) : pè pudè esse arregistratu, 
-	ùn deve superà @max@ caràtteri.',
+	ùn deve superà @max@ caràtteri.', # MODIF
 	'forum_avez_selectionne' => 'Avete sceltu :',
 	'forum_cliquer_retour' => 'Cliccate <a href=\'@retour_forum@\'>quì</a> per cuntinuà.',
 	'forum_forum' => 'foru',
-	'forum_info_modere' => 'Stu foru hè muderatu prima : u vostru cuntributu cumpariscerà solu dopu esse statu accunsentutu da un amministratore di u situ.',
+	'forum_info_modere' => 'Stu foru hè muderatu prima : u vostru cuntributu cumpariscerà solu dopu esse statu accunsentutu da un amministratore di u situ.', # MODIF
 	'forum_lien_hyper' => '<b>Lea ipertestu</b> (micca ubbligatoria)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Messagiu definitivu : mandà à u situ',
-	'forum_message_trop_long' => 'U vostru messagiu hè troppu longu. A taglia màsima hè di 20 000 caràtteri.',
+	'forum_message_trop_long' => 'U vostru messagiu hè troppu longu. A taglia màsima hè di 20 000 caràtteri.', # MODIF
 	'forum_ne_repondez_pas' => 'Ùn rispundite micca à stu mail ma piuttostu nant\'à u foru, à st\'indirizzu :', # MODIF
 	'forum_page_url' => '(Sì u vostru messagiu siriferisce à un artìculu pubblicatu nant\'à u web, o à una pàgina 
 	chì furnisce di più infurmazioni, pudete puru rinsignà custì u tìtulu di a pàgina cù u so indirizzu.)',
@@ -81,7 +81,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_activer_forum_public' => '<i>Per attivà i fori pùbblichi, sceglite puru u tippu 
 	di muderazione predefinitu :</i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Serà appiecata sta scelta di muderazione :',
-	'info_config_forums_prive' => 'In u spaziu riservatu di u situ, pudete puru attivà diversi tippi di fori :',
+	'info_config_forums_prive' => 'In u spaziu riservatu di u situ, pudete puru attivà diversi tippi di fori :', # MODIF
 	'info_config_forums_prive_admin' => 'Un foru riservatu à l\'amministratori di u situ :',
 	'info_config_forums_prive_global' => 'Un foru generale, apertu à tutti i scrittori :',
 	'info_config_forums_prive_objets' => 'Un foru per ogni artìculu, dispacciu, situ riferitu, etc. :',
@@ -93,7 +93,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
 	'info_gauche_suivi_forum_2' => 'A pàgina di <i>guardia di i fori</i> hè un arnese di gestione di u situ (è micca un spaziu di ragiunata o di scrittura). 
 		Nentru ci venenu pubblicati tutti i cuntributi di i fori di u situ, ch\'elli sianu quelli di u situ pùbblicu o quelli di u spaziu privatu, 
-		è vi permette a gestione di sti cuntributi.',
+		è vi permette a gestione di sti cuntributi.', # MODIF
 	'info_liens_syndiques_3' => 'fori',
 	'info_liens_syndiques_4' => 'stanu',
 	'info_liens_syndiques_5' => 'foru',

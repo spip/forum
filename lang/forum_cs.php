@@ -19,10 +19,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
   a teprve potom mohou zasílat své příspěvky).',
 	'bouton_radio_moderation_priori' => 'Moderovaná skupina (příspěvky
  budou zveřejněny až po schválení jedním
- ze správců).',
+ ze správců).', # MODIF
 	'bouton_radio_modere_abonnement' => 'na základě přihlášení',
-	'bouton_radio_modere_posteriori' => 'moderování ex post',
-	'bouton_radio_modere_priori' => 'moderování předem',
+	'bouton_radio_modere_posteriori' => 'moderování ex post', # MODIF
+	'bouton_radio_modere_priori' => 'moderování předem', # MODIF
 	'bouton_radio_publication_immediate' => 'Okamžité zveřejňování zpráv
  (příspěvky se zobrazují okamžitě,
  správci je mohou odstranit dodatečně).',
@@ -40,15 +40,15 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_dix_caracteres' => '<b>Varování!</b> Zpráva musí obsahovat minimálně deset znaků.',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Varování!</b> Název musí obsahovat minimálně deset znaků.',
-	'forum_attention_trop_caracteres' => '<b>Varování !</b> vaše zpráva je příliš dlouhá(@compte@ znaků) : aby jí bylo možné uložit, nesmí obsahovat více než  @max@ znaků.',
+	'forum_attention_trop_caracteres' => '<b>Varování !</b> vaše zpráva je příliš dlouhá(@compte@ znaků) : aby jí bylo možné uložit, nesmí obsahovat více než  @max@ znaků.', # MODIF
 	'forum_avez_selectionne' => 'Zvolili jste:',
 	'forum_cliquer_retour' => 'Pokračujte klepnutím <a href=\'@retour_forum@\'>na tento odkaz</a>.',
 	'forum_forum' => 'diskusní skupina',
-	'forum_info_modere' => 'Tato diskusní skupina je moderovaná: vaše příspěvky se zobrazí až po schválení správcem tohoto webu.',
+	'forum_info_modere' => 'Tato diskusní skupina je moderovaná: vaše příspěvky se zobrazí až po schválení správcem tohoto webu.', # MODIF
 	'forum_lien_hyper' => '<b>Hypertextový odkaz</b> (volitelné)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Závěrečná zpráva: odesláno na web',
-	'forum_message_trop_long' => 'Zpráva je příliš dlouhá. Maximum je 20.000 znaků.',
+	'forum_message_trop_long' => 'Zpráva je příliš dlouhá. Maximum je 20.000 znaků.', # MODIF
 	'forum_ne_repondez_pas' => 'Neodpovídejte na tuto zprávu. Odpověď zveřejněte v rámci skupiny na adrese:', # MODIF
 	'forum_page_url' => '(Týká-li se zpráva článku zveřejněného na webu nebo stránky s doplňujícími informacemi, zadejte dále název stránky a její adresu).',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW

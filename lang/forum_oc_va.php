@@ -19,10 +19,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  poer mandar de contribucions).',
 	'bouton_radio_moderation_priori' => 'Moderacion a priòri (las
  contribucions apareisson en public mas que se los administrators
- las an validaas).',
+ las an validaas).', # MODIF
 	'bouton_radio_modere_abonnement' => 'moderat amb abonament',
-	'bouton_radio_modere_posteriori' => 'moderat a posteriòri',
-	'bouton_radio_modere_priori' => 'moderat a priòri',
+	'bouton_radio_modere_posteriori' => 'moderat a posteriòri', # MODIF
+	'bouton_radio_modere_priori' => 'moderat a priòri', # MODIF
 	'bouton_radio_publication_immediate' => 'Publicar los messatges sus lo còp
  (las contribucions apareisson tre mandaas, los administrators las pòon
  suprimir puei).',
@@ -44,11 +44,11 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_avez_selectionne' => 'Avètz seleccionat:',
 	'forum_cliquer_retour' => 'Clicatz <a href=\'@retour_forum@\'>aicí</a> per contunhar.',
 	'forum_forum' => 'forum',
-	'forum_info_modere' => 'Aquest forum es moderat a priòri: vòstra contribucion pareisserà mas qu\'après qu\'un administrator dau sit l\'aia validaa.',
+	'forum_info_modere' => 'Aquest forum es moderat a priòri: vòstra contribucion pareisserà mas qu\'après qu\'un administrator dau sit l\'aia validaa.', # MODIF
 	'forum_lien_hyper' => '<b>Liam ipertèxt</b> (opcionau)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Messatge definitiu : mandar au sit',
-	'forum_message_trop_long' => 'Vòstre messatge es tròp lòng. La lonjor maximala es de 20 000 caractèrs.',
+	'forum_message_trop_long' => 'Vòstre messatge es tròp lòng. La lonjor maximala es de 20 000 caractèrs.', # MODIF
 	'forum_ne_repondez_pas' => 'Respondatz pas a aquel e-mail mas per lo forum a l\'adreiça seguenta: ', # MODIF
 	'forum_page_url' => '(se vòstre messatge se referís a un article publicat per lo web, o a una pagina que baile mai d\'informacions, volhatz marcar çai sos lo títol de la pagina e son adreiça URL.)',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
@@ -91,7 +91,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_envoi_forum' => 'Mandaís dels forums als autors dels articles',
 	'info_fonctionnement_forum' => 'Foncionament dau forum:',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
-	'info_gauche_suivi_forum_2' => 'La pagina de <i>seguit dels forums</i> es un esplech de gestion dau vòstre sit (mas es pas un espaci per discutir o per redigir). Aficha totas las contribucions dau forum public d\'aquel article e vos permet de gerir aquelas contribucions.',
+	'info_gauche_suivi_forum_2' => 'La pagina de <i>seguit dels forums</i> es un esplech de gestion dau vòstre sit (mas es pas un espaci per discutir o per redigir). Aficha totas las contribucions dau forum public d\'aquel article e vos permet de gerir aquelas contribucions.', # MODIF
 	'info_liens_syndiques_3' => 'forums',
 	'info_liens_syndiques_4' => 'son',
 	'info_liens_syndiques_5' => 'forum',

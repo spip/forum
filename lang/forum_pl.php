@@ -19,10 +19,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
   aby mieć możliwość zamieszczania postów).',
 	'bouton_radio_moderation_priori' => 'Uprzednia moderacja (
  posty będą się ukazywać dopiero po ich zatwierdzeniu przez
- administratorów).',
+ administratorów).', # MODIF
 	'bouton_radio_modere_abonnement' => 'na abonament',
-	'bouton_radio_modere_posteriori' => 'moderacja a posteriori',
-	'bouton_radio_modere_priori' => 'moderacja a priori',
+	'bouton_radio_modere_posteriori' => 'moderacja a posteriori', # MODIF
+	'bouton_radio_modere_priori' => 'moderacja a priori', # MODIF
 	'bouton_radio_publication_immediate' => 'Natychmiastowa publikacja wiadomości
  (posty będą się ukazywać w momencie ich wysłania, administratorzy mogą
  je później usunąć).',
@@ -40,15 +40,15 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_dix_caracteres' => '<b>Uwaga!</b> Twoja wiadomość powinna mieć conajmniej 10 znaków.',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Uwaga!</b> Twój temat powinien mieć conajmniej 3 znaki.',
-	'forum_attention_trop_caracteres' => '<b>Uwaga !</b> Twoja wiadomość jest za długa(@compte@ znaków) : aby mogła zostać przyjęta nie może przekraczać @max@ znaków.',
+	'forum_attention_trop_caracteres' => '<b>Uwaga !</b> Twoja wiadomość jest za długa(@compte@ znaków) : aby mogła zostać przyjęta nie może przekraczać @max@ znaków.', # MODIF
 	'forum_avez_selectionne' => 'Wybrałeś:',
 	'forum_cliquer_retour' => 'Kliknij <a href=\'@retour_forum@\'>tutaj</a> aby kontynuować.',
 	'forum_forum' => 'forum',
-	'forum_info_modere' => 'To forum jest moderowane : Twój wpis ukaże się dopiero po weryfikacji przez administratora strony.',
+	'forum_info_modere' => 'To forum jest moderowane : Twój wpis ukaże się dopiero po weryfikacji przez administratora strony.', # MODIF
 	'forum_lien_hyper' => '<b>Link</b> (opcjonalny)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Wiadomość końcowa: wyślij na stronę',
-	'forum_message_trop_long' => 'Twoja wiadomość jest za długa. Maksymalna długość to 20000 znaków.',
+	'forum_message_trop_long' => 'Twoja wiadomość jest za długa. Maksymalna długość to 20000 znaków.', # MODIF
 	'forum_ne_repondez_pas' => 'Nie odpowiadaj na tego maila, lecz na forum, pod następującym adresem:', # MODIF
 	'forum_page_url' => '(Jeśli twoja wiadomość odnosi się jakiegoś artykuły opublikowanego w internecie, wpisz poniżej tytuł tej strony oraz jej adres).',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
@@ -93,7 +93,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_envoi_forum' => 'Wysyłka forum do autorów artykułów',
 	'info_fonctionnement_forum' => 'Funkcjonowanie forum :',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
-	'info_gauche_suivi_forum_2' => 'Strona  <i>archiwum forum</i> jest narzędziem administracji stroną (a nie miejscem dyskusji czy redagowania). Wyświetla ona wszystkie komentarze forum z całego serwisu, zarówno te ze stron publicznych i strefy prywatnej i pozwala na zarządzanie tymi komentarzami.',
+	'info_gauche_suivi_forum_2' => 'Strona  <i>archiwum forum</i> jest narzędziem administracji stroną (a nie miejscem dyskusji czy redagowania). Wyświetla ona wszystkie komentarze forum z całego serwisu, zarówno te ze stron publicznych i strefy prywatnej i pozwala na zarządzanie tymi komentarzami.', # MODIF
 	'info_liens_syndiques_3' => 'forum',
 	'info_liens_syndiques_4' => 'są',
 	'info_liens_syndiques_5' => 'forum',

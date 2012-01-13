@@ -19,10 +19,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  poder mandar de contribucions).',
 	'bouton_radio_moderation_priori' => 'Moderacion a priòri (las
  contribucions apareisson en public sonque se los administrators
- las an validadas).',
+ las an validadas).', # MODIF
 	'bouton_radio_modere_abonnement' => 'amb abonament',
-	'bouton_radio_modere_posteriori' => 'moderacion a posteriòri',
-	'bouton_radio_modere_priori' => 'moderacion a priòri',
+	'bouton_radio_modere_posteriori' => 'moderacion a posteriòri', # MODIF
+	'bouton_radio_modere_priori' => 'moderacion a priòri', # MODIF
 	'bouton_radio_publication_immediate' => 'Publicar los messatges sul pic
  (las contribucions apareisson tre mandadas, los administrators las pòdon
  suprimir puèi).',
@@ -40,15 +40,15 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_dix_caracteres' => '<b>Atencion!</b> vòstre messatge deu téner almens dètz caractèrs.',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Atencion!</b> vòstre títol deu téner almens tres caractèrs.',
-	'forum_attention_trop_caracteres' => '<b>Atencion !</b> vòstre messatge es tròp long (@compte@ caractèrs) : per se poder  registrar, cal pas que passe @max@ caractèrs.',
+	'forum_attention_trop_caracteres' => '<b>Atencion !</b> vòstre messatge es tròp long (@compte@ caractèrs) : per se poder  registrar, cal pas que passe @max@ caractèrs.', # MODIF
 	'forum_avez_selectionne' => 'Avètz seleccionat :',
 	'forum_cliquer_retour' => 'Clicatz <a href=\'@retour_forum@\'>aicí</a> per contunhar.',
 	'forum_forum' => 'forum',
-	'forum_info_modere' => 'Aqueste forum es moderat a priòri: vòstra contribucion pareisserà pas qu\'aprèp qu\'un administrator del sit l\'aja validada.',
+	'forum_info_modere' => 'Aqueste forum es moderat a priòri: vòstra contribucion pareisserà pas qu\'aprèp qu\'un administrator del sit l\'aja validada.', # MODIF
 	'forum_lien_hyper' => '<b>Ligam ipertèxt</b> (opcional)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => ' Messatge definitiu : mandar al sit',
-	'forum_message_trop_long' => 'Vòstre messatge es tròp long. La longor maximala es de 20 000 caractèrs.',
+	'forum_message_trop_long' => 'Vòstre messatge es tròp long. La longor maximala es de 20 000 caractèrs.', # MODIF
 	'forum_ne_repondez_pas' => 'Respondatz pas a aquel e-mail mas pel forum a l\'adreiça seguenta: ', # MODIF
 	'forum_page_url' => '(se vòstre messatge se referís a un article publicat pel web, o a una pagina que baile mai d\'informacions, podètz marcar çai sota lo títol de la pagina e son adreiça URL.)',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
@@ -91,7 +91,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_envoi_forum' => 'Mandadís dels forums als autors dels articles',
 	'info_fonctionnement_forum' => 'Foncionament del forum:',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
-	'info_gauche_suivi_forum_2' => 'La pagina de <i>seguit dels forums</i> es una aisina de gestion del vòstre sit (mas es pas un espaci per discutir o per redigir). Aficha totas las contribucions dels forums del sit, tant las del sit public coma las de l\'espaci privat e vos permet de gerir aquelas contribucions.',
+	'info_gauche_suivi_forum_2' => 'La pagina de <i>seguit dels forums</i> es una aisina de gestion del vòstre sit (mas es pas un espaci per discutir o per redigir). Aficha totas las contribucions dels forums del sit, tant las del sit public coma las de l\'espaci privat e vos permet de gerir aquelas contribucions.', # MODIF
 	'info_liens_syndiques_3' => 'forums',
 	'info_liens_syndiques_4' => 'son',
 	'info_liens_syndiques_5' => 'forum',

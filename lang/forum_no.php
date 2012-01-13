@@ -19,10 +19,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 		pouvoir poster des contributions).',
 	'bouton_radio_moderation_priori' => '<NEW> Modération à priori (les
 	contributions ne s\'affichent publiquement qu\'après validation par les
-	administrateurs).',
+	administrateurs).', # MODIF
 	'bouton_radio_modere_abonnement' => '<NEW> modéré sur abonnement',
-	'bouton_radio_modere_posteriori' => '<NEW> modéré à posteriori',
-	'bouton_radio_modere_priori' => '<NEW> modéré à priori',
+	'bouton_radio_modere_posteriori' => '<NEW> modéré à posteriori', # MODIF
+	'bouton_radio_modere_priori' => '<NEW> modéré à priori', # MODIF
 	'bouton_radio_publication_immediate' => '<NEW> Publication immédiate des messages
 	(les contributions s\'affichent dès leur envoi, les administrateurs peuvent
 	les supprimer ensuite).',
@@ -44,11 +44,11 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_avez_selectionne' => '<NEW> Vous avez sélectionné :',
 	'forum_cliquer_retour' => '<NEW> Cliquez <a href=\'@retour_forum@\'>ici</a> pour continuer.',
 	'forum_forum' => '<NEW> forum',
-	'forum_info_modere' => '<NEW> Ce forum est modéré à priori : votre contribution n\'apparaîtra qu\'après avoir été validée par un administrateur du site.',
+	'forum_info_modere' => '<NEW> Ce forum est modéré à priori : votre contribution n\'apparaîtra qu\'après avoir été validée par un administrateur du site.', # MODIF
 	'forum_lien_hyper' => '<NEW> <b>Lien hypertexte</b> (optionnel)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => '<NEW> Message définitif : envoyer au site',
-	'forum_message_trop_long' => '<NEW> Votre message est trop long. La taille maximale est de 20000 caractères.',
+	'forum_message_trop_long' => '<NEW> Votre message est trop long. La taille maximale est de 20000 caractères.', # MODIF
 	'forum_ne_repondez_pas' => '<NEW> Ne repondez pas a ce mail mais sur le forum a l\'adresse suivante :', # MODIF
 	'forum_page_url' => '<NEW> (Si votre message se réfère à un article publié sur le Web, ou à une page fournissant plus d\'informations, veuillez indiquer ci-après le titre de la page et son adresse URL.)',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
@@ -94,7 +94,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_envoi_forum' => '<NEW> Envoi des forums aux auteurs des articles',
 	'info_fonctionnement_forum' => '<NEW> Fonctionnement du forum :',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
-	'info_gauche_suivi_forum_2' => '<NEW> La page de <i>suivi des forums</i> est un outil de gestion de votre site (et non un espace de discussion ou de rédaction). Elle affiche toutes les contributions des forums du site, aussi bien celles du site public que de l\'espace privé et vous permet de gérer ces contributions.',
+	'info_gauche_suivi_forum_2' => '<NEW> La page de <i>suivi des forums</i> est un outil de gestion de votre site (et non un espace de discussion ou de rédaction). Elle affiche toutes les contributions des forums du site, aussi bien celles du site public que de l\'espace privé et vous permet de gérer ces contributions.', # MODIF
 	'info_liens_syndiques_3' => '<NEW> forums',
 	'info_liens_syndiques_4' => '<NEW> sont',
 	'info_liens_syndiques_5' => '<NEW> forum',

@@ -15,10 +15,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_articles_tous' => 'bez iznimke za sve clanke.',
 	'bouton_radio_articles_tous_sauf_forum_desactive' => 'za sve clanke osim onih ciji forum je dezaktiviran.',
 	'bouton_radio_enregistrement_obligatoire' => 'Obavezno registrovanje (korisnici trebaju upisati svoju e-mail adresu prije mogucnosti postavljanja svojih prijedloga).',
-	'bouton_radio_moderation_priori' => '\\f1 Pre-moderation\\f0  (prijedlozi se ne prikazuju na javnoj stranici prije ovjere od strane administratora).',
+	'bouton_radio_moderation_priori' => '\\f1 Pre-moderation\\f0  (prijedlozi se ne prikazuju na javnoj stranici prije ovjere od strane administratora).', # MODIF
 	'bouton_radio_modere_abonnement' => 'registracija obavezna',
-	'bouton_radio_modere_posteriori' => '\\f1 post-moderation\\f0 ',
-	'bouton_radio_modere_priori' => '\\f1 pre-moderation\\f0 ',
+	'bouton_radio_modere_posteriori' => '\\f1 post-moderation\\f0 ', # MODIF
+	'bouton_radio_modere_priori' => '\\f1 pre-moderation\\f0 ', # MODIF
 	'bouton_radio_publication_immediate' => 'Direktna publikacija poruka (prijedlozi se prikazuju nakon slanja, administratori ih  odmah mogu izbrisati).',
 
 	// D
@@ -38,11 +38,11 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_avez_selectionne' => 'Izabrali ste:',
 	'forum_cliquer_retour' => 'Kliknite <a href=\'@retour_forum@\'>ici</a> da bi ste nastavili.',
 	'forum_forum' => 'forum',
-	'forum_info_modere' => 'Ovaj forum je vlasnistvo urednika: vas prijedlog ce biti postavljen tek nakon sto je ovjeren od strane administratora.',
+	'forum_info_modere' => 'Ovaj forum je vlasnistvo urednika: vas prijedlog ce biti postavljen tek nakon sto je ovjeren od strane administratora.', # MODIF
 	'forum_lien_hyper' => '<b>Hipertekstualni link</b> (optionnel)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Definitivna poruka: posalji na stranicu',
-	'forum_message_trop_long' => 'Vasa poruka je preduga. Maksimalna velicina je 20000 karaktera.',
+	'forum_message_trop_long' => 'Vasa poruka je preduga. Maksimalna velicina je 20000 karaktera.', # MODIF
 	'forum_ne_repondez_pas' => 'Ne odgovarajte na ovu poruku osim u forumu na sljedecu adresu:', # MODIF
 	'forum_page_url' => '(Ako se vasa poruka odnosi na clanak objavljen na web-u, ili na stranicu koja pruza dodatne informacije, mozete na kraju naznaciti naziv i URL adresu stranice.)',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW

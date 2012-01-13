@@ -19,10 +19,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
   возможностью публикации статьи).',
 	'bouton_radio_moderation_priori' => 'Пре-модерация(
  статьи будут показываться только после утверждения 
- администраторами).',
+ администраторами).', # MODIF
 	'bouton_radio_modere_abonnement' => 'запрос на регистрацию',
-	'bouton_radio_modere_posteriori' => 'пост-модерация',
-	'bouton_radio_modere_priori' => 'пре-модерация',
+	'bouton_radio_modere_posteriori' => 'пост-модерация', # MODIF
+	'bouton_radio_modere_priori' => 'пре-модерация', # MODIF
 	'bouton_radio_publication_immediate' => 'Немедленная публикация сообщений 
 (статьи будут показываться, как только они будут отправлены. Администраторы могут 
  потом удалить их).',
@@ -40,15 +40,15 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_dix_caracteres' => '<b>Внимание!</b> Сообщение должно быть не менее десяти символов.',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Внимание!</b> Заголовок должен быть не менее трех символов.',
-	'forum_attention_trop_caracteres' => '<b>Внимание !</b> Ваше сообщение слишком длинно (@compte@ букв) : чтобы было можно его сохранить, сообщение должно состоять не  более чем из @max@ букв.',
+	'forum_attention_trop_caracteres' => '<b>Внимание !</b> Ваше сообщение слишком длинно (@compte@ букв) : чтобы было можно его сохранить, сообщение должно состоять не  более чем из @max@ букв.', # MODIF
 	'forum_avez_selectionne' => 'Вы выбрали:',
 	'forum_cliquer_retour' => 'Нажмите  <a href=\'@retour_forum@\'>сюда</a> для продолжения.',
 	'forum_forum' => 'форум',
-	'forum_info_modere' => 'Этот форум модерируется заранее: ваше сообщение появиться после того как его утвердит администратор.',
+	'forum_info_modere' => 'Этот форум модерируется заранее: ваше сообщение появиться после того как его утвердит администратор.', # MODIF
 	'forum_lien_hyper' => '<b>Ссылка</b> (необязательно)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Всё верно! Отправить!',
-	'forum_message_trop_long' => 'Ваше сообщение слишком длинно. Максимальная длина 20000 символов.',
+	'forum_message_trop_long' => 'Ваше сообщение слишком длинно. Максимальная длина 20000 символов.', # MODIF
 	'forum_ne_repondez_pas' => 'Не отвечайте на эту почту  на форуме в следующих адресеах:',
 	'forum_page_url' => '(Если ваше сообщение обращено к статьям изданным в сети или к странице, обеспечивающей дальнейшую информацию, пожалуйста введите заголовок страницы и ее URL ниже).',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
@@ -82,7 +82,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_1_message_forum' => '1 message de forum', # NEW
 	'info_activer_forum_public' => '<i>Для включения публичных форумов, пожалуйста выберите модерацию: </i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Применить этот тип модерации:',
-	'info_config_forums_prive' => 'В области редактирования сайта может быть включено несколько видов форума:',
+	'info_config_forums_prive' => 'В области редактирования сайта может быть включено несколько видов форума:', # MODIF
 	'info_config_forums_prive_admin' => 'Форум для администраторов сайта:',
 	'info_config_forums_prive_global' => 'Общий форум, открыт для всех авторов:',
 	'info_config_forums_prive_objets' => 'Форум, прикрепленный к каждой статье, новости, ссылочному сайту, и т. д.:',
@@ -92,7 +92,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_envoi_forum' => 'Отправлять сообщения форумов авторам статей',
 	'info_fonctionnement_forum' => 'Работа форума:',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
-	'info_gauche_suivi_forum_2' => '<i>Продолжение форумов </i> страница - инструмент управления Вашего сайта (не обсуждается или редактируется). Она показывает все записи основного форума этой статьи и позволяет Вам управлять этими записями.',
+	'info_gauche_suivi_forum_2' => '<i>Продолжение форумов </i> страница - инструмент управления Вашего сайта (не обсуждается или редактируется). Она показывает все записи основного форума этой статьи и позволяет Вам управлять этими записями.', # MODIF
 	'info_liens_syndiques_3' => 'форумы',
 	'info_liens_syndiques_4' => 'есть',
 	'info_liens_syndiques_5' => 'форум',

@@ -17,10 +17,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_enregistrement_obligatoire' => 'Tvungen registrering (
 		brugere skal give sig til kende ved at oplyse deres e-mail-adresse
 		for at kunne komme med indlæg).',
-	'bouton_radio_moderation_priori' => 'Forhåndsgodkendelse (bidrag vises først efter at de er godkendt af administratorer).',
+	'bouton_radio_moderation_priori' => 'Forhåndsgodkendelse (bidrag vises først efter at de er godkendt af administratorer).', # MODIF
 	'bouton_radio_modere_abonnement' => 'Kun for abonnenter (bidragydere skal oplyse e-mail-adresse, før de kan indsende bidrag)',
-	'bouton_radio_modere_posteriori' => 'Efterfølgende godkendelse (bidrag er straks synlige men en administrator kan senere slette dem)',
-	'bouton_radio_modere_priori' => 'Forhåndsgodkendelse',
+	'bouton_radio_modere_posteriori' => 'Efterfølgende godkendelse (bidrag er straks synlige men en administrator kan senere slette dem)', # MODIF
+	'bouton_radio_modere_priori' => 'Forhåndsgodkendelse', # MODIF
 	'bouton_radio_publication_immediate' => 'Indlæg offentliggøres straks (bidrag vises straks efter at de er sendt, administratorer kan slette dem senere).',
 
 	// D
@@ -40,11 +40,11 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_avez_selectionne' => 'Du har valgt:',
 	'forum_cliquer_retour' => 'Klik  <a href=\'@retour_forum@\'>her</a> for at fortsætte.',
 	'forum_forum' => 'forum',
-	'forum_info_modere' => 'Dette forum benytter forhåndsgodkendelse: dit bidrag vil først blive offentliggjort, når det er godkendt af en administrator.',
+	'forum_info_modere' => 'Dette forum benytter forhåndsgodkendelse: dit bidrag vil først blive offentliggjort, når det er godkendt af en administrator.', # MODIF
 	'forum_lien_hyper' => '<b>Hypertekst link</b> (valgfrit)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Endeligt indlæg: send til webstedet',
-	'forum_message_trop_long' => 'Dit indlæg er for langt. Maksimal længde er 20.000 tegn.',
+	'forum_message_trop_long' => 'Dit indlæg er for langt. Maksimal længde er 20.000 tegn.', # MODIF
 	'forum_ne_repondez_pas' => 'Undlad at besvare denne e-mail, men gå i stedet til forummet på denne adresse:', # MODIF
 	'forum_page_url' => '(Hvis dit indlæg henviser til en artikel, der er offentliggjort på Internettet, eller til en side der indeholder yderligere oplysninger, så angiv venligst sidens titel og dens adresse eller URL nedenfor).',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
@@ -88,7 +88,7 @@ De vil være lukkede i forhold til afsnit, meddelelser osv..',
 	'info_envoi_forum' => 'Send indlæg i forummer til artiklernes forfattere',
 	'info_fonctionnement_forum' => 'Forummets funktionsmåde:',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
-	'info_gauche_suivi_forum_2' => '<i>Forumopfølgning</i> er et administrationsværktøj (ikke et diskussions- eller redigeringsområde). Siden viser alle indlæg i webstedets forummer, både på det offentlige og det private område, og giver dig mulighed for at administrere indlæggene.',
+	'info_gauche_suivi_forum_2' => '<i>Forumopfølgning</i> er et administrationsværktøj (ikke et diskussions- eller redigeringsområde). Siden viser alle indlæg i webstedets forummer, både på det offentlige og det private område, og giver dig mulighed for at administrere indlæggene.', # MODIF
 	'info_liens_syndiques_3' => 'forummer',
 	'info_liens_syndiques_4' => 'er',
 	'info_liens_syndiques_5' => 'forum',

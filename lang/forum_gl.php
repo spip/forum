@@ -18,10 +18,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
   ten que se rexistrar co seu enderezo de correo-e. antes de
   poder achegar contribucións).',
 	'bouton_radio_moderation_priori' => 'Moderado a priori (as
-  contribucións serán publicadas trala aprobación do grupo xestor).',
+  contribucións serán publicadas trala aprobación do grupo xestor).', # MODIF
 	'bouton_radio_modere_abonnement' => 'con subscrición',
-	'bouton_radio_modere_posteriori' => 'moderación a posteriori',
-	'bouton_radio_modere_priori' => 'moderación a priori',
+	'bouton_radio_modere_posteriori' => 'moderación a posteriori', # MODIF
+	'bouton_radio_modere_priori' => 'moderación a priori', # MODIF
 	'bouton_radio_publication_immediate' => 'Publicación inmediata das mensaxes
 		(as contribucións amósanse dende o seu envío, o equipo de xestión pódeas borrar).',
 
@@ -38,15 +38,15 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_dix_caracteres' => '<b>Atención!</b> a súa mensaxe debe conter máis de dez caracteres.',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Atención!</b> o seu título debe ter máis de tres caracteres.',
-	'forum_attention_trop_caracteres' => '<b>Atencion !</b> a mensaxe é demasiado longa (@compte@ caracteres) : para poder ser rexistrada, non debe sobrepasar  @max@ caracteres.',
+	'forum_attention_trop_caracteres' => '<b>Atencion !</b> a mensaxe é demasiado longa (@compte@ caracteres) : para poder ser rexistrada, non debe sobrepasar  @max@ caracteres.', # MODIF
 	'forum_avez_selectionne' => 'Seleccionou :',
 	'forum_cliquer_retour' => 'Preme <a href=\'@retour_forum@\'>aquí</a> para seguir.',
 	'forum_forum' => 'foro',
-	'forum_info_modere' => 'Este foro é moderado a priori : a súa contribución non aparecerá namentres non sexa aprobada por un administrador do web.',
+	'forum_info_modere' => 'Este foro é moderado a priori : a súa contribución non aparecerá namentres non sexa aprobada por un administrador do web.', # MODIF
 	'forum_lien_hyper' => '<b>Ligazón de hipertexto</b> (opcional)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Mensaxe definitiva: enviala ao web',
-	'forum_message_trop_long' => 'A mensaxe é longa de máis. O tamaño máximo permitido é de 20000 caractéres.',
+	'forum_message_trop_long' => 'A mensaxe é longa de máis. O tamaño máximo permitido é de 20000 caractéres.', # MODIF
 	'forum_ne_repondez_pas' => 'Non responda a este correo senón no foro do enderezo seguinte:',
 	'forum_page_url' => '(Se a súa mensaxe se refire a un artigo publicado en Internet, ou a unha páxina que contén máis informacións, indique a continuación o título da páxina e o seu enderezo URL)',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
@@ -81,7 +81,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_activer_forum_public' => '<i>Para activar os foros p&uacute;blicos, escolla o xeito
   de moderaci&oacute;n predeterminado:</i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Aplicar esta opción de moderación:',
-	'info_config_forums_prive' => 'No espazo privado do web, pode activar varios tipos de foros :',
+	'info_config_forums_prive' => 'No espazo privado do web, pode activar varios tipos de foros :', # MODIF
 	'info_config_forums_prive_admin' => 'Un foro reservado aos administradores do web :',
 	'info_config_forums_prive_global' => 'Un foro global, aberto a todos os redactores :',
 	'info_config_forums_prive_objets' => 'Un foro sobre cada artigo, breve, web referido, etc. :',
@@ -91,7 +91,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_envoi_forum' => 'Envío de foros ás/ós autoras/es dos artigos',
 	'info_fonctionnement_forum' => 'Funcionamento do foro:',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
-	'info_gauche_suivi_forum_2' => 'A p&acute;xina de <i>seguimento dos foros</i>  &eeacute; unha ferramenta de xesti&oacute;n do web (e non un espazo de discusi&oacute;n ou de redacci&oacute;n). Mostra todas as contribuci&oacute;ns nos foros do web, tanto as do espazo p&uacute;blico coma as do espazo privado e permite xestionar estas contribuci&oacute;ns.',
+	'info_gauche_suivi_forum_2' => 'A p&acute;xina de <i>seguimento dos foros</i>  &eeacute; unha ferramenta de xesti&oacute;n do web (e non un espazo de discusi&oacute;n ou de redacci&oacute;n). Mostra todas as contribuci&oacute;ns nos foros do web, tanto as do espazo p&uacute;blico coma as do espazo privado e permite xestionar estas contribuci&oacute;ns.', # MODIF
 	'info_liens_syndiques_3' => 'foros',
 	'info_liens_syndiques_4' => 'están',
 	'info_liens_syndiques_5' => 'foro',

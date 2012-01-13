@@ -19,10 +19,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
   de que puedan escribir les sos contribuciones).',
 	'bouton_radio_moderation_priori' => 'Moderación a priori (les contribuciones
  nun apaecerán en públicu hasta que les validen
- los alministradores).',
+ los alministradores).', # MODIF
 	'bouton_radio_modere_abonnement' => 'pa abonáos',
-	'bouton_radio_modere_posteriori' => 'moderación a posteriori',
-	'bouton_radio_modere_priori' => 'moderación a priori',
+	'bouton_radio_modere_posteriori' => 'moderación a posteriori', # MODIF
+	'bouton_radio_modere_priori' => 'moderación a priori', # MODIF
 	'bouton_radio_publication_immediate' => 'Espublizar d\'inmediatu los mensaxes
  (les contribuciones s\'amuesen desque s\'unvíen, los alministradores pueden
  desaniciales llueu).',
@@ -40,15 +40,15 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_dix_caracteres' => '<b>¡Atención!</b> el mensaxe tien que tener polo menos diez carauteres.',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>¡Atención!</b> el títulu tien que tener polo menos tres carauteres.',
-	'forum_attention_trop_caracteres' => '<b>¡Atención!</b> esti mensaxe ye enforma llargu (@compte@ carauteres): pa que pueda rexistrase, nun tien que pasar de @max@ carauteres.',
+	'forum_attention_trop_caracteres' => '<b>¡Atención!</b> esti mensaxe ye enforma llargu (@compte@ carauteres): pa que pueda rexistrase, nun tien que pasar de @max@ carauteres.', # MODIF
 	'forum_avez_selectionne' => 'Seleicionasti:',
 	'forum_cliquer_retour' => 'Calca <a href=\'@retour_forum@\'>equí</a> pa continuar.',
 	'forum_forum' => 'foru',
-	'forum_info_modere' => 'Esti foru ta llendáu de mano: la to aportación nun va apaecer fasta qu\'un alministrador del sitiu nun-y de el preste.',
+	'forum_info_modere' => 'Esti foru ta llendáu de mano: la to aportación nun va apaecer fasta qu\'un alministrador del sitiu nun-y de el preste.', # MODIF
 	'forum_lien_hyper' => '<b>Enllace d\'hipertestu</b> (opcional)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Mensaxe definitivu: unviar al sitiu',
-	'forum_message_trop_long' => 'El to mensaxe ye enforma llargu. El tamañu másimu ye de 20000 carauteres.',
+	'forum_message_trop_long' => 'El to mensaxe ye enforma llargu. El tamañu másimu ye de 20000 carauteres.', # MODIF
 	'forum_ne_repondez_pas' => 'Nun responder a esti corréu sinón nel foru, nes señes darréu:',
 	'forum_page_url' => '(Si el to mensaxe refierse a un artículu espublizáu na Rede, o a una páxina que tenga más información, equí embaxo vas poder indicar el títulu de la páxina y les sos señes.)',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
@@ -84,7 +84,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_activer_forum_public' => '<i>Pa activar los foros públicos, has d\'escoyer el tipu
  de moderación por omisión:</i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Aplicar esta escoyeta pal llendamientu:',
-	'info_config_forums_prive' => 'Nel espaciu priváu del sitiu, puedes activar dellos tipos de foros:',
+	'info_config_forums_prive' => 'Nel espaciu priváu del sitiu, puedes activar dellos tipos de foros:', # MODIF
 	'info_config_forums_prive_admin' => 'Un foru acutáu pa los alministradores del sitiu:',
 	'info_config_forums_prive_global' => 'Un foru global, abiertu pa tolos redactores:',
 	'info_config_forums_prive_objets' => 'Un foru pa cada artículu, breve, sitiu referenciáu, etc.:',
@@ -94,7 +94,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_envoi_forum' => 'Unvíu de los foros a los autores de los artículos',
 	'info_fonctionnement_forum' => 'Funcionamientu del foru:',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
-	'info_gauche_suivi_forum_2' => 'La páxina de <i>siguimientu de los foros</i> ye una ferramienta de xestión del sitiu Web (y non un espaciu pal discutiniu o la redaición). Amuesa toles contribuciones de los foros del sitiu, lo mesmo de la parte pública que del espaciu priváu y te permite remanar eses contribuciones.',
+	'info_gauche_suivi_forum_2' => 'La páxina de <i>siguimientu de los foros</i> ye una ferramienta de xestión del sitiu Web (y non un espaciu pal discutiniu o la redaición). Amuesa toles contribuciones de los foros del sitiu, lo mesmo de la parte pública que del espaciu priváu y te permite remanar eses contribuciones.', # MODIF
 	'info_liens_syndiques_3' => 'foros',
 	'info_liens_syndiques_4' => 'tan',
 	'info_liens_syndiques_5' => 'foru',

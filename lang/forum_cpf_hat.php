@@ -19,10 +19,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 .',
 	'bouton_radio_moderation_priori' => 'Modèwasyon avan (
 patisipasyon yo zitilizatè tout ke pa afiche sou sitwèb piblik si yon komandé te pa konfime y
-).',
+).', # MODIF
 	'bouton_radio_modere_abonnement' => 'Fòk yon abònman',
-	'bouton_radio_modere_posteriori' => 'Modewe dèyè',
-	'bouton_radio_modere_priori' => 'modewe avan',
+	'bouton_radio_modere_posteriori' => 'Modewe dèyè', # MODIF
+	'bouton_radio_modere_priori' => 'modewe avan', # MODIF
 	'bouton_radio_publication_immediate' => 'Piblikasyon imedyat pout tout mesaj
  (patisipasyon ke afiche dirèkman yo te voye, komandè rès kapab kraze y aprè
 ).',
@@ -40,15 +40,15 @@ patisipasyon yo zitilizatè tout ke pa afiche sou sitwèb piblik si yon komandé
 	'forum_attention_dix_caracteres' => '<b>Atansyon !</b> mesaj ou li se mwen di lèt.',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Atansyon !</b> Kouman i rele sit-la se mwen trwa lèt. Fôk w mèt trwa lèt omwen',
-	'forum_attention_trop_caracteres' => '<b>Atansyon !</b> mesaje a w se tro lon (@compte@ caractères) : fòk w respek @max@ karaktèr pou enskri ali.',
+	'forum_attention_trop_caracteres' => '<b>Atansyon !</b> mesaje a w se tro lon (@compte@ caractères) : fòk w respek @max@ karaktèr pou enskri ali.', # MODIF
 	'forum_avez_selectionne' => 'W te chwazi :',
 	'forum_cliquer_retour' => 'Klik <a href=\'@retour_forum@\'>isit</a> pou kontinye.',
 	'forum_forum' => 'fowom',
-	'forum_info_modere' => 'Fowom la se modéwé-avann : patisipasyon demoun ke aparèt sèlman apré yon komandèr  sit te valide ali.',
+	'forum_info_modere' => 'Fowom la se modéwé-avann : patisipasyon demoun ke aparèt sèlman apré yon komandèr  sit te valide ali.', # MODIF
 	'forum_lien_hyper' => '<b>Lyen ipèrtèks</b> (w pa oblijé)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Mesaj fin fini : anvway anndan sit la',
-	'forum_message_trop_long' => 'Mesaj ou se tro lon. Pli gran tay se 20000 kawaktè.',
+	'forum_message_trop_long' => 'Mesaj ou se tro lon. Pli gran tay se 20000 kawaktè.', # MODIF
 	'forum_ne_repondez_pas' => 'Reponn pa limèl la. Reponn anndan fowom-an sou ladrès la :', # MODIF
 	'forum_page_url' => '(Si mesaj ou ka voye sou yon tik sou Wèb déò ou yon lòt paj pli konplé, mèsi mèt anba kouman paj la  ka rele èk ladrès URL.)',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
@@ -93,7 +93,7 @@ anba atik yo ; y ke entèdi pou tout ribrik yo, é tinouvèl yo...',
 	'info_envoi_forum' => 'Voye fowom yo pou tout loté atik yo',
 	'info_fonctionnement_forum' => 'Kouman fowom i mache :',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
-	'info_gauche_suivi_forum_2' => 'Paj <i>swivi fowom yo</i> se outiy pou sit w (kontrè yon espas pou soutni ek ekri ant zot itlizatè. Li afich tout patispasyon nan fowom sou sit piblik tankou espas privé ak li ran aw kapab okipe yo.',
+	'info_gauche_suivi_forum_2' => 'Paj <i>swivi fowom yo</i> se outiy pou sit w (kontrè yon espas pou soutni ek ekri ant zot itlizatè. Li afich tout patispasyon nan fowom sou sit piblik tankou espas privé ak li ran aw kapab okipe yo.', # MODIF
 	'info_liens_syndiques_3' => 'fowom yo',
 	'info_liens_syndiques_4' => 'se',
 	'info_liens_syndiques_5' => 'fowom',

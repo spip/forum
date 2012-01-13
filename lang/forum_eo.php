@@ -15,10 +15,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_articles_tous' => 'al ĉiuj artikoloj senescepte.',
 	'bouton_radio_articles_tous_sauf_forum_desactive' => 'al ĉiuj artikoloj, escepte tiuj, kies forumo estas fermita.',
 	'bouton_radio_enregistrement_obligatoire' => 'Deviga memregistriĝo (la uzantoj devas aboniĝi, entajpante sian retpoŝtadreson antaŭ ol sendi kontribuaĵojn).',
-	'bouton_radio_moderation_priori' => 'Apriora moderigado (kontribuaĵoj estas publikigataj nur post validigo far de mastrumantoj).',
+	'bouton_radio_moderation_priori' => 'Apriora moderigado (kontribuaĵoj estas publikigataj nur post validigo far de mastrumantoj).', # MODIF
 	'bouton_radio_modere_abonnement' => 'per abono',
-	'bouton_radio_modere_posteriori' => 'aposteriore moderigata',
-	'bouton_radio_modere_priori' => 'apriore moderigata',
+	'bouton_radio_modere_posteriori' => 'aposteriore moderigata', # MODIF
+	'bouton_radio_modere_priori' => 'apriore moderigata', # MODIF
 	'bouton_radio_publication_immediate' => 'Tujpublikigo de mesaĝoj
  (la kontribuaĵoj afiŝiĝas tuj post ties sendo, la mastrumantoj povas
 forviŝi ilin poste).',
@@ -36,15 +36,15 @@ forviŝi ilin poste).',
 	'forum_attention_dix_caracteres' => '<b>Atentu !</b> via mesaĝo devas enhavi almenaŭ dek signojn.',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Atentu !</b> via titolo devas enhavi almenaŭ tri signojn.',
-	'forum_attention_trop_caracteres' => '<b>Atentu !</b> via mesaĝo estas tro longa (@compte@ signoj) : por esti registrita, ĝi ne preteratingu @max@ signojn.',
+	'forum_attention_trop_caracteres' => '<b>Atentu !</b> via mesaĝo estas tro longa (@compte@ signoj) : por esti registrita, ĝi ne preteratingu @max@ signojn.', # MODIF
 	'forum_avez_selectionne' => 'Vi selektis :',
 	'forum_cliquer_retour' => 'Musklaku <a href=\'@retour_forum@\'>ĉi tie</a> por daŭrigi.',
 	'forum_forum' => 'forumo',
-	'forum_info_modere' => 'Tiu ĉi forumo estas apriore moderigata: via kontribuo aperos nur post validigo far de mastrumanto de la forumo.',
+	'forum_info_modere' => 'Tiu ĉi forumo estas apriore moderigata: via kontribuo aperos nur post validigo far de mastrumanto de la forumo.', # MODIF
 	'forum_lien_hyper' => '<b>Hiperligo</b> (nedeviga)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Definitiva mesaĝo: sendu al la forumo',
-	'forum_message_trop_long' => 'Via mesaĝo estas tro longa. La maksimuma longeco estas 20.000 signojn.',
+	'forum_message_trop_long' => 'Via mesaĝo estas tro longa. La maksimuma longeco estas 20.000 signojn.', # MODIF
 	'forum_ne_repondez_pas' => 'Ne respondu al tiu ĉi retletero, sed en la forumo ĉe la jena adreso:', # MODIF
 	'forum_page_url' => '(Se via mesaĝo rilatas al artikolo publikigita ĉe la reto, aŭ al paĝo donanta pli da informoj, bonvolu indiki ĉi-poste la titolon de la paĝo kaj ties ret-adreson.)',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
@@ -80,7 +80,7 @@ forviŝi ilin poste).',
 	'info_activer_forum_public' => '<i>Por aktivigi la publikajn forumojn, bonvolu elekti ilian
  defaŭltan moderig-reĝimon:</i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Apliki tiun moderig-elekton :',
-	'info_config_forums_prive' => 'En la privata spaco de la retejo, vi povas aktivigi plurajn tipojn de forumoj :',
+	'info_config_forums_prive' => 'En la privata spaco de la retejo, vi povas aktivigi plurajn tipojn de forumoj :', # MODIF
 	'info_config_forums_prive_admin' => 'Forumo rezervita al retejaj mastrumantoj :',
 	'info_config_forums_prive_global' => 'Ĝenerala forumo, malfermita al ĉiuj redaktantoj :',
 	'info_config_forums_prive_objets' => 'Forumo sub ĉiu artikolo, fulminformo, referencigita retejo, ktp :',
@@ -90,7 +90,7 @@ La publikaj forumoj estos laŭkaze unu post la alia permesitaj
 	'info_envoi_forum' => 'Sendo de la forumoj al aŭtoroj de la artikoloj',
 	'info_fonctionnement_forum' => 'Funkciado de la forumo :',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
-	'info_gauche_suivi_forum_2' => 'La paĝo pri <i>superkontrolo de la forumoj</i> estas mastrumilo por via retejo (kaj ne diskutejo aŭ redaktejo). Ĝi afiŝas ĉiujn kontribuaĵojn de la forumoj (de la publika spaco same kiel de la privata), kaj ebligas al vi mastrumi tiujn kontribuaĵojn.',
+	'info_gauche_suivi_forum_2' => 'La paĝo pri <i>superkontrolo de la forumoj</i> estas mastrumilo por via retejo (kaj ne diskutejo aŭ redaktejo). Ĝi afiŝas ĉiujn kontribuaĵojn de la forumoj (de la publika spaco same kiel de la privata), kaj ebligas al vi mastrumi tiujn kontribuaĵojn.', # MODIF
 	'info_liens_syndiques_3' => 'forumoj',
 	'info_liens_syndiques_4' => 'estas',
 	'info_liens_syndiques_5' => 'forumo',

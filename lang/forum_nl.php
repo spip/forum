@@ -17,10 +17,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_enregistrement_obligatoire' => 'Registratie verplicht (om bijdragen te kunnen
   posten, dienen gebruikers zich eerst in te schrijven en hun e-mail adres te bezorgen).',
 	'bouton_radio_moderation_priori' => 'Vooraf modereren (de
- bijdragen worden pas gepubliceerd na goedkeuring door een van de beheerders).',
+ bijdragen worden pas gepubliceerd na goedkeuring door een van de beheerders).', # MODIF
 	'bouton_radio_modere_abonnement' => 'op aanvraag',
-	'bouton_radio_modere_posteriori' => 'nadien modereren',
-	'bouton_radio_modere_priori' => 'vooraf modereren',
+	'bouton_radio_modere_posteriori' => 'nadien modereren', # MODIF
+	'bouton_radio_modere_priori' => 'vooraf modereren', # MODIF
 	'bouton_radio_publication_immediate' => 'Onmiddellijke publicatie van berichten
  (bijdragen worden zichtbaar zodra ze verstuurd worden; beheerders kunnen nadien nog steeds
  berichten schrappen).',
@@ -38,15 +38,15 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_dix_caracteres' => '<b>Opgelet!</b> : je bericht moet minstens 10 tekens bevatten.',
 	'forum_attention_message_non_poste' => 'Opgelet, je hebt je bericht niet gepost !',
 	'forum_attention_trois_caracteres' => '<b>Opgelet!</b> : je bericht moet minstens 3 tekens bevatten.',
-	'forum_attention_trop_caracteres' => '<b>Opgelet !</b> uw bericht is te lang (@compte@ caractères) : om registratie mogelijk te maken, mag het niet meer dan @max@ karakters tellen.',
+	'forum_attention_trop_caracteres' => '<b>Opgelet !</b> uw bericht is te lang (@compte@ caractères) : om registratie mogelijk te maken, mag het niet meer dan @max@ karakters tellen.', # MODIF
 	'forum_avez_selectionne' => 'Je hebt gekozen:',
 	'forum_cliquer_retour' => 'Klik <a href=\'@retour_forum@\'>hier</a> om door te gaan.',
 	'forum_forum' => 'forum',
-	'forum_info_modere' => 'Dit forum wordt vooraf gemodereerd: je bijdrage zal pas verschijnen nadat een redacteur van de website het heeft goedgekeurd.',
+	'forum_info_modere' => 'Dit forum wordt vooraf gemodereerd: je bijdrage zal pas verschijnen nadat een redacteur van de website het heeft goedgekeurd.', # MODIF
 	'forum_lien_hyper' => 'webverwijzing',
 	'forum_message' => 'Je bericht',
 	'forum_message_definitif' => 'Definitief bericht : versturen',
-	'forum_message_trop_long' => 'Je bericht is te lang. De maximale lengte is 20.000 tekens.',
+	'forum_message_trop_long' => 'Je bericht is te lang. De maximale lengte is 20.000 tekens.', # MODIF
 	'forum_ne_repondez_pas' => 'Niet reageren op deze mail, maar op het forum om het volgende adres :',
 	'forum_page_url' => '(Als je bericht naar een artikel op het web verwijst of naar een pagina die meer informatie bevat, kunt u hier de titel en de URL van deze webverwijzing invoeren.)',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
@@ -82,7 +82,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_activer_forum_public' => 'Om de openbare forums te activeren, dien je een standaardinstelling
  voor het modereren te kiezen :',
 	'info_appliquer_choix_moderation' => 'Pas deze moderatievorm toe ::',
-	'info_config_forums_prive' => 'In de particuliere ruimte van de site, kunt u verschillende soorten forums activeren :',
+	'info_config_forums_prive' => 'In de particuliere ruimte van de site, kunt u verschillende soorten forums activeren :', # MODIF
 	'info_config_forums_prive_admin' => 'Een forum dat voor de beheerders van de site is gereserveerd :',
 	'info_config_forums_prive_global' => 'Een globaal forum, open voor alle redacteuren :',
 	'info_config_forums_prive_objets' => 'Een forum onder elk artikel, kort, verwezen site, enz. :',
@@ -92,7 +92,7 @@ De publieke forums kunnen per artikel toegestaan worden
 	'info_envoi_forum' => 'Versturen van de forums aan de auteurs van de artikels',
 	'info_fonctionnement_forum' => 'Werking van het forum:',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
-	'info_gauche_suivi_forum_2' => 'De bladzijde van <i>gevolgd door de forums</i> is een werktuig van beleid van uw site (en niet een ruimte van discussie of opstellen). Zij geeft alle bijdragen van de forums van de site te kennen, evengoed laten deze van de openbare site als van de particuliere ruimte toe en u om deze bijdragen te beheren.',
+	'info_gauche_suivi_forum_2' => 'De bladzijde van <i>gevolgd door de forums</i> is een werktuig van beleid van uw site (en niet een ruimte van discussie of opstellen). Zij geeft alle bijdragen van de forums van de site te kennen, evengoed laten deze van de openbare site als van de particuliere ruimte toe en u om deze bijdragen te beheren.', # MODIF
 	'info_liens_syndiques_3' => 'forums',
 	'info_liens_syndiques_4' => 'zijn',
 	'info_liens_syndiques_5' => 'forum',
@@ -104,7 +104,7 @@ De publieke forums kunnen per artikel toegestaan worden
 	'info_nb_messages_forum' => '@nb@ messages de forum', # NEW
 	'info_option_email' => 'Wanneer een bezoeker van de site een nieuw bericht in het forum opstelt dat met een artikel wordt verenigd, kunnen de auteurs van het artikel van dit bericht per e-mail verwittigd worden. Voor elk soort forum aangeven als men deze keuze moet gebruiken.',
 	'info_pas_de_forum' => 'geen forum',
-	'info_question_visiteur_ajout_document_forum' => 'Als u de bezoekers wilt machtigen om documenten (beelden, klanken…) samen te voegen aan hun berichten van forum, de lijst van de toegelaten uitbreidingen van documenten hieronder aangeven  (bv.: gif, jpg, png, mp3).',
+	'info_question_visiteur_ajout_document_forum' => 'Als u de bezoekers wilt machtigen om documenten (beelden, klanken…) samen te voegen aan hun berichten van forum, de lijst van de toegelaten uitbreidingen van documenten hieronder aangeven  (bv.: gif, jpg, png, mp3).', # MODIF
 	'info_question_visiteur_ajout_document_forum_format' => 'Als u alle soorten documenten wilt toestaan die als betrouwbaar door SPIP worden beschouwd, een ster zetten. Om niets toe te staan, niets aangeven.',
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW

@@ -19,10 +19,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  שהם יוכלו לשלוח את תרומותיהם).',
 	'bouton_radio_moderation_priori' => 'בוררות מוקדמת (ה
  תורמים מופיעים בציבור רק לאחר שהם מאושרים על ידי
- האדמיניסטרטורים).',
+ האדמיניסטרטורים).', # MODIF
 	'bouton_radio_modere_abonnement' => 'צמצום על ידי מנוי',
-	'bouton_radio_modere_posteriori' => 'צמצום לאחר מכן',
-	'bouton_radio_modere_priori' => 'צמצום מראש',
+	'bouton_radio_modere_posteriori' => 'צמצום לאחר מכן', # MODIF
+	'bouton_radio_modere_priori' => 'צמצום מראש', # MODIF
 	'bouton_radio_publication_immediate' => 'פרסום מיידי של הודעות
  (התרומות מופיעות מרגע שליחתן, האדמיניסטרטורים יכולים
  למחקן לאחר מכן).',
@@ -40,15 +40,15 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_dix_caracteres' => '<b>שים לב!</b> ההודעה שלך צריכה לכלול לפחות עשר אותיות.',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>שים לב!</b> הנושא שלך צריך לכלול לפחות שלוש אותיות.',
-	'forum_attention_trop_caracteres' => '<b>זהירות !</b> הודעתך ארוכה מדי (@compte@ caractères) : על מנת להישמר. היא צריכה לכולל פחות מ@max@ אותיות.',
+	'forum_attention_trop_caracteres' => '<b>זהירות !</b> הודעתך ארוכה מדי (@compte@ caractères) : על מנת להישמר. היא צריכה לכולל פחות מ@max@ אותיות.', # MODIF
 	'forum_avez_selectionne' => 'הינך בחרת:',
 	'forum_cliquer_retour' => 'נא להקליק  <a href=\'@retour_forum@\'>כאן</a> כדי להמשיך.',
 	'forum_forum' => 'פורום',
-	'forum_info_modere' => 'הפורום מתצמצם מראש: התרומה שלך תופיע רק אחרי אישור מנהלי האתר.',
+	'forum_info_modere' => 'הפורום מתצמצם מראש: התרומה שלך תופיע רק אחרי אישור מנהלי האתר.', # MODIF
 	'forum_lien_hyper' => '<b>קישור</b> (אופציונלי)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'הודעה סופית : שלח לאתר',
-	'forum_message_trop_long' => 'ההודעה שלך ארוכה מדי. אורך מקסימלי של הודעה צריך להיות 20000 אותיות.',
+	'forum_message_trop_long' => 'ההודעה שלך ארוכה מדי. אורך מקסימלי של הודעה צריך להיות 20000 אותיות.', # MODIF
 	'forum_ne_repondez_pas' => 'אל תחזיר תשובה לדוא"ל הזה אבל בפורום בכתובת הבאה:', # MODIF
 	'forum_page_url' => '(אם הודעתך מופנית למאמר שמפורסם ברשת או לדף המספק מידע נוסף, בבקשה רשום את הכותרת של הדף והכתובת הכללית שלו.)',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
@@ -94,7 +94,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_envoi_forum' => 'שלח פורומים למחברי המאמרים',
 	'info_fonctionnement_forum' => ':פעולת הפורום',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
-	'info_gauche_suivi_forum_2' => 'ה<i>forums follow-up</i> דף הוא לא אמצעי ניהול של אתרך (לא דיון או עריכה). הוא מציג את כל התרומות של הפורום הציבורי של המאמר הזה ומאפשר לך לנהל את התרומות האלה',
+	'info_gauche_suivi_forum_2' => 'ה<i>forums follow-up</i> דף הוא לא אמצעי ניהול של אתרך (לא דיון או עריכה). הוא מציג את כל התרומות של הפורום הציבורי של המאמר הזה ומאפשר לך לנהל את התרומות האלה', # MODIF
 	'info_liens_syndiques_3' => 'פורומים',
 	'info_liens_syndiques_4' => ' ',
 	'info_liens_syndiques_5' => 'פורום',

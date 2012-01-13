@@ -15,10 +15,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_articles_tous' => 'artikulu guztieisalbuespenik gabe.',
 	'bouton_radio_articles_tous_sauf_forum_desactive' => 'artikuluguztiei, desaktibatutako foroan daudenei izan ezik.',
 	'bouton_radio_enregistrement_obligatoire' => 'Izena ematea derrigorrezkoa da (foroanparte hartu ahal izateko, inskripzioa egin behar da posta elektronikoaren helbideaemanez).',
-	'bouton_radio_moderation_priori' => 'Aurretiaz moderatua (ekarpenak agerian egongodira lekuaren administrazio-eskubideak dituen pertsona batek onartu eta gero).',
+	'bouton_radio_moderation_priori' => 'Aurretiaz moderatua (ekarpenak agerian egongodira lekuaren administrazio-eskubideak dituen pertsona batek onartu eta gero).', # MODIF
 	'bouton_radio_modere_abonnement' => 'Moderatua (harpidedunentzat soilik)',
-	'bouton_radio_modere_posteriori' => 'gerora moderatua',
-	'bouton_radio_modere_priori' => 'aurretiaz moderatua',
+	'bouton_radio_modere_posteriori' => 'gerora moderatua', # MODIF
+	'bouton_radio_modere_priori' => 'aurretiaz moderatua', # MODIF
 	'bouton_radio_publication_immediate' => 'Mezuen bat-batekoargitaratzea (erakarpenak agerian egongo dira igorri bezain laister, gero administraziotikkendu daitezke).',
 
 	// D
@@ -34,16 +34,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_dix_caracteres' => '<b>Adi!</b> zure mezuak hamar karaktere baino gutxiago ditu',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Adi!</b> zure izenburuak hiru karaktere baino gutxiago ditu.',
-	'forum_attention_trop_caracteres' => '<b>kontuz !</b> zure mezua luzeegi da (@compte@ caractères) : grabatua izateko, ez ditu @max@ karaktero baino gehiago izan behar.',
+	'forum_attention_trop_caracteres' => '<b>kontuz !</b> zure mezua luzeegi da (@compte@ caractères) : grabatua izateko, ez ditu @max@ karaktero baino gehiago izan behar.', # MODIF
 	'forum_avez_selectionne' => 'Aukeratu egin duzu:',
 	'forum_cliquer_retour' => 'Jarraitzeko hemen klik egin.',
 	'forum_forum' => 'foroa',
 	'forum_info_modere' => 'Foro hau aurretiaz moderaturik dago : 
-Zure ekarpena gunearen administratzaileak onartu ondoren soilik agerian izango da.',
+Zure ekarpena gunearen administratzaileak onartu ondoren soilik agerian izango da.', # MODIF
 	'forum_lien_hyper' => 'Hipertestu lotura (aukeratzekoa)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Behin-betiko mezua : gunera igorri',
-	'forum_message_trop_long' => 'Zure mezua luzeegia da. Gehienez ere 20000 karaktere onartzen dira.',
+	'forum_message_trop_long' => 'Zure mezua luzeegia da. Gehienez ere 20000 karaktere onartzen dira.', # MODIF
 	'forum_ne_repondez_pas' => 'Ez erantzun mezu elektroniko honi, baizik eta hurrengo helbidean dagoen foroan:',
 	'forum_page_url' => '(Zure mezua interneten argitaratutako artikulu bati buruzkoa baldin bada, edo informazio gehiago duen orrialde bati buruzkoa, adieraz itzazu jarraian orrialdearen izena bai eta URL helbidea ere).',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
@@ -77,7 +77,7 @@ Inskribaturik ez bazaude, aurretik inskribatu behar duzu.',
 	'info_1_message_forum' => '1 message de forum', # NEW
 	'info_activer_forum_public' => 'Foru publikoak aktibatzeko, aukeratu moderazio erabat', # MODIF
 	'info_appliquer_choix_moderation' => 'Moderazio mota hau ezarri',
-	'info_config_forums_prive' => 'Eremu pribatuan foro mota desberdinak aktibatzen ahal dituzu',
+	'info_config_forums_prive' => 'Eremu pribatuan foro mota desberdinak aktibatzen ahal dituzu', # MODIF
 	'info_config_forums_prive_admin' => 'gunearen administratzaileei erreserbatutako foroa :',
 	'info_config_forums_prive_global' => 'Foro orokor bat, idazle guziei irekia :',
 	'info_config_forums_prive_objets' => 'Foro bat artikulu, berri-labur edo erreferentzitutako gune bakoitzaren azpian :',
@@ -85,7 +85,7 @@ Inskribaturik ez bazaude, aurretik inskribatu behar duzu.',
 	'info_envoi_forum' => 'Foroen jarraipena',
 	'info_fonctionnement_forum' => 'Foroarenfuntzionamendua',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
-	'info_gauche_suivi_forum_2' => 'Foroak jarraitzeko orrialdea zureguneko kudeaketa-tresna bat da (eta ez eztabaida edo idazketa-eremu bat). Guneko foroetako kontribuzio guztiak bistaratzen ditu, bai gune publikokoak bai eremu pribatukoak eta kontribuzio hauek administratzen uzten dizu.',
+	'info_gauche_suivi_forum_2' => 'Foroak jarraitzeko orrialdea zureguneko kudeaketa-tresna bat da (eta ez eztabaida edo idazketa-eremu bat). Guneko foroetako kontribuzio guztiak bistaratzen ditu, bai gune publikokoak bai eremu pribatukoak eta kontribuzio hauek administratzen uzten dizu.', # MODIF
 	'info_liens_syndiques_3' => 'foroak',
 	'info_liens_syndiques_4' => 'daude',
 	'info_liens_syndiques_5' => 'foroa',

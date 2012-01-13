@@ -15,10 +15,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_articles_tous' => 'makalelerin hepsine. ',
 	'bouton_radio_articles_tous_sauf_forum_desactive' => 'forumu kapalı olan makaleler dışında hepsine.',
 	'bouton_radio_enregistrement_obligatoire' => 'Kayıt zorunlu (kullanıcılar katılabilmek için önceden e-posta adreslerini vererek kayıt olmalı).',
-	'bouton_radio_moderation_priori' => 'Önceden onayla yönetim (yazılan iletiler onaylandıktan sonra yayınlanıyor).',
+	'bouton_radio_moderation_priori' => 'Önceden onayla yönetim (yazılan iletiler onaylandıktan sonra yayınlanıyor).', # MODIF
 	'bouton_radio_modere_abonnement' => 'abonelik sistemiyle yönetim',
-	'bouton_radio_modere_posteriori' => 'sonradan onayla yönetim',
-	'bouton_radio_modere_priori' => 'önceden onayla yönetim',
+	'bouton_radio_modere_posteriori' => 'sonradan onayla yönetim', # MODIF
+	'bouton_radio_modere_priori' => 'önceden onayla yönetim', # MODIF
 	'bouton_radio_publication_immediate' => 'İletilerin anında yayınlanması 
 (katılımlar gönderildiklerinde anında görüntülenir, yöneticiler onları 
 sonradan yok edebilir).',
@@ -36,15 +36,15 @@ sonradan yok edebilir).',
 	'forum_attention_dix_caracteres' => '<b>Dikkat !</b> iletiniz on karakterden kısa.',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Dikkat !</b> başlığınız üç karakterden kısa.',
-	'forum_attention_trop_caracteres' => '<b>Dikkat !</b> mesajınız çok uzun (@compte@ caractères) : kaydedilebilmesi için @max@ karakteri aşmamalı.',
+	'forum_attention_trop_caracteres' => '<b>Dikkat !</b> mesajınız çok uzun (@compte@ caractères) : kaydedilebilmesi için @max@ karakteri aşmamalı.', # MODIF
 	'forum_avez_selectionne' => 'Şunu seçtiniz :',
 	'forum_cliquer_retour' => 'Devam etmek için <a href=\'@retour_forum@\'>buraya tıklayınız</a>.',
 	'forum_forum' => 'forum',
-	'forum_info_modere' => 'Bu forum önceden onayla yönetilmektedir : katkınız ancak bir yönetici tarafından onaylandıktan sonra görülebilecektir.',
+	'forum_info_modere' => 'Bu forum önceden onayla yönetilmektedir : katkınız ancak bir yönetici tarafından onaylandıktan sonra görülebilecektir.', # MODIF
 	'forum_lien_hyper' => '<b>Hipermetin bağı</b> (seçimlik)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'İletinin son hali : siteye gönder',
-	'forum_message_trop_long' => 'İletiniz çok uzun. Bir ileti en fazla 20000 karakter içerebilir.',
+	'forum_message_trop_long' => 'İletiniz çok uzun. Bir ileti en fazla 20000 karakter içerebilir.', # MODIF
 	'forum_ne_repondez_pas' => 'Bu e-postaya yanıt vermeyin, yanıt için forumu kullanın :', # MODIF
 	'forum_page_url' => '(Eğer mesajınız Web\'de yayınlanan bir makaleye, ya da daha fazla bilgi içeren bir sayfaya atıfta bulunuyorsa, lütfen buraya sayfanın başlığını ve URL adresini belirtiniz.)',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
@@ -79,7 +79,7 @@ sonradan yok edebilir).',
 	'info_1_message_forum' => '1 message de forum', # NEW
 	'info_activer_forum_public' => 'Kamu forumlarını çalıştırmak için, lütfen varsayılan bir yönetim kipi seçiniz :', # MODIF
 	'info_appliquer_choix_moderation' => 'Bu yönetim seçeneğinin uygulanması :',
-	'info_config_forums_prive' => 'Sitenin özel alanında bir çok farklı tipteki forumu aktive edebilirsiniz  :',
+	'info_config_forums_prive' => 'Sitenin özel alanında bir çok farklı tipteki forumu aktive edebilirsiniz  :', # MODIF
 	'info_config_forums_prive_admin' => 'Site yöneticilierine ayrılmış bir forum :',
 	'info_config_forums_prive_global' => 'Tüm yazarlara açık genel forum :',
 	'info_config_forums_prive_objets' => 'Her makalenin, kısa naberin ve atıfta bulunulan sitenin altında bir forum, vs. :',
@@ -89,7 +89,7 @@ sonradan yok edebilir).',
 	'info_envoi_forum' => 'Forumların makale yazarlarına gönderilmesi',
 	'info_fonctionnement_forum' => 'Forumun işleyişi :',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
-	'info_gauche_suivi_forum_2' => '<i>Forumları izleme</i> sayfası sitenizi yönetme aracıdır (sohbet, ya da yazı yazma alanı değildir). Bir makaleye kamu forumundan yapılan tüm katkılarını gösterir ve bu katkıları yönetmenizi sağlar.',
+	'info_gauche_suivi_forum_2' => '<i>Forumları izleme</i> sayfası sitenizi yönetme aracıdır (sohbet, ya da yazı yazma alanı değildir). Bir makaleye kamu forumundan yapılan tüm katkılarını gösterir ve bu katkıları yönetmenizi sağlar.', # MODIF
 	'info_liens_syndiques_3' => 'Forumlar  ',
 	'info_liens_syndiques_4' => ' - ',
 	'info_liens_syndiques_5' => 'forum',

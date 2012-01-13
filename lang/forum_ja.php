@@ -18,10 +18,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
   ユーザは、寄稿することができる前に彼らのe-mailアドレスを提供することによって、
   定期受信すべきです)。',
 	'bouton_radio_moderation_priori' => '事前に適正検査 (
- 投稿物は、管理者によって適正検査された後、表示されます)。',
+ 投稿物は、管理者によって適正検査された後、表示されます)。', # MODIF
 	'bouton_radio_modere_abonnement' => '会員だけ投稿可能',
-	'bouton_radio_modere_posteriori' => 'コメントを投稿後に検査',
-	'bouton_radio_modere_priori' => '検査したコメントのみ表示',
+	'bouton_radio_modere_posteriori' => 'コメントを投稿後に検査', # MODIF
+	'bouton_radio_modere_priori' => '検査したコメントのみ表示', # MODIF
 	'bouton_radio_publication_immediate' => '投稿と同時に表示
 （投稿すると瞬時に表示するため、管理者は投稿を削除することは可能ですが投稿後になるでしょう）。',
 
@@ -38,15 +38,15 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_dix_caracteres' => '<b>警告 !</b> あなたのメッセージは長さが１０文字以下です。',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>警告 !</b> あなたの題名は長さが３文字以下です。',
-	'forum_attention_trop_caracteres' => '<b>‚²’ˆÓ !</b> ‚±‚ÌƒƒbƒZ[ƒW‚Í’·‰ß‚¬‚Ü‚·i@compte@ •¶ŽšjBƒƒbƒZ[ƒW‚ðo˜ ‚·‚é‚½‚ß‚É@max@•¶ŽšˆÈ‰º‚É‚µ‚Ä‰º‚³‚¢B',
+	'forum_attention_trop_caracteres' => '<b>‚²’ˆÓ !</b> ‚±‚ÌƒƒbƒZ[ƒW‚Í’·‰ß‚¬‚Ü‚·i@compte@ •¶ŽšjBƒƒbƒZ[ƒW‚ðo˜ ‚·‚é‚½‚ß‚É@max@•¶ŽšˆÈ‰º‚É‚µ‚Ä‰º‚³‚¢B', # MODIF
 	'forum_avez_selectionne' => 'あなたの選択:',
 	'forum_cliquer_retour' => '<a href=\'@retour_forum@\'>ここ</a> を押して続けて下さい。',
 	'forum_forum' => '掲示板',
-	'forum_info_modere' => 'この掲示板への投稿はあらかじめ検査されます: あなたの投稿は、サイトの管理者によって適性検査されてから表示されます。',
+	'forum_info_modere' => 'この掲示板への投稿はあらかじめ検査されます: あなたの投稿は、サイトの管理者によって適性検査されてから表示されます。', # MODIF
 	'forum_lien_hyper' => '<b>リンク</b> (オプション)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => '最後のメッセージ: サイトへ送る',
-	'forum_message_trop_long' => 'あなたのメッセージは長すぎます。最大20000文字(全角は２つ分)であるべきです。',
+	'forum_message_trop_long' => 'あなたのメッセージは長すぎます。最大20000文字(全角は２つ分)であるべきです。', # MODIF
 	'forum_ne_repondez_pas' => 'このメールに返信しないで、次のアドレスの掲示板で:', # MODIF
 	'forum_page_url' => '(もしあなたのメッセージがウェブに公表されている記事、更なる情報が提供されているページを参照するなら、ページのタイトルとその下にURLを入力してください)。',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
@@ -87,7 +87,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_envoi_forum' => '記事の著者たちに掲示板を送る',
 	'info_fonctionnement_forum' => '掲示板の操作:',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
-	'info_gauche_suivi_forum_2' => '<i>掲示板の続報</i>ページはあなたのサイトの管理道具です。（議論したり編集できません）。この記事の公開掲示板のすべての投稿を表示して、それらの投稿を管理することが可能です。',
+	'info_gauche_suivi_forum_2' => '<i>掲示板の続報</i>ページはあなたのサイトの管理道具です。（議論したり編集できません）。この記事の公開掲示板のすべての投稿を表示して、それらの投稿を管理することが可能です。', # MODIF
 	'info_liens_syndiques_3' => '掲示板',
 	'info_liens_syndiques_4' => 'are',
 	'info_liens_syndiques_5' => '掲示板',

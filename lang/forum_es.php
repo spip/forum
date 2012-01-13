@@ -15,10 +15,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_articles_tous' => 'a todos los artículos sin excepción.',
 	'bouton_radio_articles_tous_sauf_forum_desactive' => 'a todos los artículos, salvo aquellos cuyo foro está desactivado.',
 	'bouton_radio_enregistrement_obligatoire' => 'Inscripción obligatoria (es necesario inscribirse dando su correo electrónico antes de poder participar en el foro).',
-	'bouton_radio_moderation_priori' => 'Moderado a priori (las contribuciones no aparecen hasta ser validadas por una persona con derechos de administración en el sitio).',
+	'bouton_radio_moderation_priori' => 'Moderado a priori (las contribuciones no aparecen hasta ser validadas por una persona con derechos de administración en el sitio).', # MODIF
 	'bouton_radio_modere_abonnement' => 'sólo para inscritos',
-	'bouton_radio_modere_posteriori' => 'moderado a posteriori',
-	'bouton_radio_modere_priori' => 'moderado a priori',
+	'bouton_radio_modere_posteriori' => 'moderado a posteriori', # MODIF
+	'bouton_radio_modere_priori' => 'moderado a priori', # MODIF
 	'bouton_radio_publication_immediate' => 'Publicación inmediata de los mensajes (las contribuciones aparecen en cuanto enviadas, pueden suprimirse posteriormente desde la administración).',
 
 	// D
@@ -34,15 +34,15 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_dix_caracteres' => '<b>¡Atención!</b> tu mensaje debe tener al menos diez caracteres.',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>¡Atención!</b> el título debe tener al menos tres caracteres.',
-	'forum_attention_trop_caracteres' => '<b>¡Atención!</b> el mensaje es demasiado largo (@compte@ caracteres): para poder guardarlo, no debe sobrepasar los @max@ caracteres.',
+	'forum_attention_trop_caracteres' => '<b>¡Atención!</b> el mensaje es demasiado largo (@compte@ caracteres): para poder guardarlo, no debe sobrepasar los @max@ caracteres.', # MODIF
 	'forum_avez_selectionne' => 'Has seleccionado:',
 	'forum_cliquer_retour' => 'Pinchar <a href=\'@retour_forum@\'>aquí</a> para continuar.',
 	'forum_forum' => 'foro',
-	'forum_info_modere' => 'Este foro está moderado a priori: tu contribución no aparecerá hasta haber sido validada por la administración del sitio.',
+	'forum_info_modere' => 'Este foro está moderado a priori: tu contribución no aparecerá hasta haber sido validada por la administración del sitio.', # MODIF
 	'forum_lien_hyper' => '<b>Enlace hipertexto</b> (opcional)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Mensaje definitivo: enviar al sitio',
-	'forum_message_trop_long' => 'Tu mensaje es demasiado largo. Sólo se admite un máximo de 20.000 caracteres.',
+	'forum_message_trop_long' => 'Tu mensaje es demasiado largo. Sólo se admite un máximo de 20.000 caracteres.', # MODIF
 	'forum_ne_repondez_pas' => 'No conteste a este correo, sino el foro en la dirección siguiente:',
 	'forum_page_url' => '(Si tu mensaje se refiere a un artículo publicado en Internet, o a una página que contiene más informaciones, indica a continuación el título de la página y su dirección URL.)',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
@@ -76,7 +76,7 @@ suministrado. Si no estás inscrito/a, debes',
 	'info_1_message_forum' => '1 message de forum', # NEW
 	'info_activer_forum_public' => '<i>Para activar los foros públicos, seleccionar un modo de moderación por omisión:</i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Aplicar este tipo de moderación',
-	'info_config_forums_prive' => 'En el espacio privado del sitio, se pueden activar varios tipos de foros :',
+	'info_config_forums_prive' => 'En el espacio privado del sitio, se pueden activar varios tipos de foros :', # MODIF
 	'info_config_forums_prive_admin' => 'Un foro reservado a los administradores del sitio :',
 	'info_config_forums_prive_global' => 'Un foro global, abierto a todos los redactores :',
 	'info_config_forums_prive_objets' => 'Un foro para cada artículo, breve, sitio referenciado, etc. :',
@@ -84,7 +84,7 @@ suministrado. Si no estás inscrito/a, debes',
 	'info_envoi_forum' => 'Seguimiento de los foros',
 	'info_fonctionnement_forum' => 'Funcionamiento del foro:',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
-	'info_gauche_suivi_forum_2' => 'La página de <i>seguimiento de los foros</i> es una herramienta de gestión de tu sitio (y no un espacio de diálogo o de redacción). Muestra todas las contribuciones del foro público de este artículo y te permite gestionar administrarlas.',
+	'info_gauche_suivi_forum_2' => 'La página de <i>seguimiento de los foros</i> es una herramienta de gestión de tu sitio (y no un espacio de diálogo o de redacción). Muestra todas las contribuciones del foro público de este artículo y te permite gestionar administrarlas.', # MODIF
 	'info_liens_syndiques_3' => 'foros',
 	'info_liens_syndiques_4' => 'están',
 	'info_liens_syndiques_5' => 'foro',

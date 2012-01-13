@@ -15,10 +15,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_articles_tous' => 'på alla artiklar utan undantag.',
 	'bouton_radio_articles_tous_sauf_forum_desactive' => 'på alla artiklar utom de utan forum.',
 	'bouton_radio_enregistrement_obligatoire' => 'Krav på registrering (användare måste registrera sig genom att tillhandahålla sin e-postadress innan de kan bidra).  being able to post contributions).',
-	'bouton_radio_moderation_priori' => 'Moderering i förhand (bidrag visas endast efter att de godkänts av en administatör).',
+	'bouton_radio_moderation_priori' => 'Moderering i förhand (bidrag visas endast efter att de godkänts av en administatör).', # MODIF
 	'bouton_radio_modere_abonnement' => 'registrering krävs',
-	'bouton_radio_modere_posteriori' => 'moderering i efterhand',
-	'bouton_radio_modere_priori' => 'moderering i förhand',
+	'bouton_radio_modere_posteriori' => 'moderering i efterhand', # MODIF
+	'bouton_radio_modere_priori' => 'moderering i förhand', # MODIF
 	'bouton_radio_publication_immediate' => 'Omedelbar publicering av meddelanden (bidrag visas direkt efter att de skickas, administratörer kan radera dom senare):',
 
 	// D
@@ -34,15 +34,15 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_dix_caracteres' => '<b>Varning!</b> Ditt meddelande måste vara minst 10 tecken långt.',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Varning!</b> Din rubrik måste vara minst tre tecken lång.',
-	'forum_attention_trop_caracteres' => '<b>Warning !</b> Ditt meddelande är för långt (@compte@ characters) : För att det skall kunna skrivas får meddelandet inte innehålla mer än @max@ tecken.',
+	'forum_attention_trop_caracteres' => '<b>Warning !</b> Ditt meddelande är för långt (@compte@ characters) : För att det skall kunna skrivas får meddelandet inte innehålla mer än @max@ tecken.', # MODIF
 	'forum_avez_selectionne' => 'Du har valt:',
 	'forum_cliquer_retour' => 'Klicka <a href=\'@retour_forum@\'>här</a> för att fortsätta.',
 	'forum_forum' => 'forum',
-	'forum_info_modere' => 'Detta forum är modererat: ditt bidrag kommer att synas först när någon moderator har godkänt  det.',
+	'forum_info_modere' => 'Detta forum är modererat: ditt bidrag kommer att synas först när någon moderator har godkänt  det.', # MODIF
 	'forum_lien_hyper' => '<b>Länk</b> (valfritt)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Slutligt meddelande: skicka till sajten',
-	'forum_message_trop_long' => 'Ditt meddelande är för långt. Det får inte vara mer än 2000 tecken.',
+	'forum_message_trop_long' => 'Ditt meddelande är för långt. Det får inte vara mer än 2000 tecken.', # MODIF
 	'forum_ne_repondez_pas' => 'Svara inte på detta brev utan i forumet på denna adress:', # MODIF
 	'forum_page_url' => '(Om ditt meddelande refererar till en artikel publicerad på webben eller till en sida med mer information, ange namnet på sidan och dess adress nedan).',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW

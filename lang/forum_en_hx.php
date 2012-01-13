@@ -19,10 +19,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
   b31ng 4b13 70 p057 c0n7r1bu710n5).',
 	'bouton_radio_moderation_priori' => 'B3f0r3h4nd m0d3r4710n (
 	c0n7r1bu710n5 w111 b3 5h0wn 0n1y 4f73r v411d4710n by
-	4dm1n157r470r5).',
+	4dm1n157r470r5).', # MODIF
 	'bouton_radio_modere_abonnement' => 'm0d3r4710n by 5ub5cr1p710n',
-	'bouton_radio_modere_posteriori' => '4f73rw4rd5 m0d3r4710n',
-	'bouton_radio_modere_priori' => 'b3f0r3h4nd m0d3r4710n',
+	'bouton_radio_modere_posteriori' => '4f73rw4rd5 m0d3r4710n', # MODIF
+	'bouton_radio_modere_priori' => 'b3f0r3h4nd m0d3r4710n', # MODIF
 	'bouton_radio_publication_immediate' => '1mm3d1473 pub11c4710n 0f m3554g35
 	(c0n7r1bu710n5 w111 b3 5h0wn 7h3 m0m3n7 7h3y 4r3 53n7, 4dm1n157r470r5 c4n
 	d31373 7h3m 7h3n).',
@@ -44,11 +44,11 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_avez_selectionne' => 'Y0u h4v3 5313c73d:',
 	'forum_cliquer_retour' => 'C11ck  <4 hr3f=\'@retour_forum@\'>h3r3</4> 70 c0n71nu3.',
 	'forum_forum' => 'f0rum',
-	'forum_info_modere' => '7h15 f0rum 15 m0d3r473d b3f0r3h4nd: y0ur c0n7r1bu710n w111 0n1y 4pp34r 4f73r b31ng v411d473d by 4 5173 4dm1n157r470r.',
+	'forum_info_modere' => '7h15 f0rum 15 m0d3r473d b3f0r3h4nd: y0ur c0n7r1bu710n w111 0n1y 4pp34r 4f73r b31ng v411d473d by 4 5173 4dm1n157r470r.', # MODIF
 	'forum_lien_hyper' => '<b>Hyp3r73x7 11nk</b> (0p710n41)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'F1n41 m3554g3: 53nd 70 7h3 5173',
-	'forum_message_trop_long' => 'Y0ur m3554g3 15 700 10ng. M4x1mum 13ng7h 5h0u1d b3 20000 ch4r4c73r5.',
+	'forum_message_trop_long' => 'Y0ur m3554g3 15 700 10ng. M4x1mum 13ng7h 5h0u1d b3 20000 ch4r4c73r5.', # MODIF
 	'forum_ne_repondez_pas' => 'D0 n07 r3p1y 70 7h15 m411 bu7 1n 7h3 f0rum 47 7h3 f0110w1ng 4ddr355:', # MODIF
 	'forum_page_url' => '(1f y0ur m3554g3 r3f3r5 70 4n 4r71c13 pub115h3d 0n 7h3 w3b 0r 70 4 p4g3 pr0v1d1ng fur7h3r 1nf0rm4710n, p13453 3n73r 7h3 71713 0f 7h3 p4g3 4nd 175 UR1 b310w).',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
@@ -93,7 +93,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_envoi_forum' => '53nd f0rum5 70 4r71c135 4u7h0r5',
 	'info_fonctionnement_forum' => 'F0rum 0p3r4710n:',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
-	'info_gauche_suivi_forum_2' => '7h3 <1>f0rum5 f0110w-up</1> p4g3 15 4 m4n4g3m3n7 7001 0f y0ur 5173 (n07 4 d15cu5510n 0r 3d171ng). 17 d15p14y5 411 7h3 c0n7r1bu710n5 0f 7h3 pub11c f0rum 0f 7h15 4r71c13 4nd 4110w5 y0u 70 m4n4g3 7h353 c0n7r1bu710n5.',
+	'info_gauche_suivi_forum_2' => '7h3 <1>f0rum5 f0110w-up</1> p4g3 15 4 m4n4g3m3n7 7001 0f y0ur 5173 (n07 4 d15cu5510n 0r 3d171ng). 17 d15p14y5 411 7h3 c0n7r1bu710n5 0f 7h3 pub11c f0rum 0f 7h15 4r71c13 4nd 4110w5 y0u 70 m4n4g3 7h353 c0n7r1bu710n5.', # MODIF
 	'info_liens_syndiques_3' => 'f0rum5',
 	'info_liens_syndiques_4' => '4r3',
 	'info_liens_syndiques_5' => 'f0rum',

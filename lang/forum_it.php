@@ -19,10 +19,10 @@ utenti devono abbonarsi fornendo il loro indirizzo email prima di
 poter inviare contributi).',
 	'bouton_radio_moderation_priori' => 'Moderazione a priori (i
 contributi saranno pubblicati previa autorizzazione degli
-amministratori).',
+amministratori).', # MODIF
 	'bouton_radio_modere_abonnement' => 'solo su abbonamento',
-	'bouton_radio_modere_posteriori' => 'moderato a posteriori',
-	'bouton_radio_modere_priori' => 'moderato a priori',
+	'bouton_radio_modere_posteriori' => 'moderato a posteriori', # MODIF
+	'bouton_radio_modere_priori' => 'moderato a priori', # MODIF
 	'bouton_radio_publication_immediate' => 'Pubblicazione immediata dei messaggi
 (i contributi sono pubblicati subito dopo il loro invio, gli amministratori possono
 cancellarli successivamente).',
@@ -40,15 +40,15 @@ cancellarli successivamente).',
 	'forum_attention_dix_caracteres' => '<b>Attenzione!</b> il messaggio deve contenere almeno dieci caratteri.',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Attenzione!</b> il titolo deve contenere almeno tre caratteri.',
-	'forum_attention_trop_caracteres' => '<b>Attenzione!</b> il messaggio è troppo lungo (@compte@ caratteri): per poter essere registrato esso non deve essere più lungo di @max@ caratteri.',
+	'forum_attention_trop_caracteres' => '<b>Attenzione!</b> il messaggio è troppo lungo (@compte@ caratteri): per poter essere registrato esso non deve essere più lungo di @max@ caratteri.', # MODIF
 	'forum_avez_selectionne' => 'Hai selezionato:',
 	'forum_cliquer_retour' => 'Clicca <a href=\'@retour_forum@\'>qui</a> per continuare.',
 	'forum_forum' => 'forum',
-	'forum_info_modere' => 'Questo forum è moderato a priori: il tuo contributo apparirà solo dopo essere stato approvato da un amministratore del sito.',
+	'forum_info_modere' => 'Questo forum è moderato a priori: il tuo contributo apparirà solo dopo essere stato approvato da un amministratore del sito.', # MODIF
 	'forum_lien_hyper' => '<b>Link ipertestuale</b> (opzionale)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Messaggio definitivo: invialo al sito',
-	'forum_message_trop_long' => 'Il tuo messaggio è troppo lungo. La dimensione massima è di 20000 caratteri.',
+	'forum_message_trop_long' => 'Il tuo messaggio è troppo lungo. La dimensione massima è di 20000 caratteri.', # MODIF
 	'forum_ne_repondez_pas' => 'Non rispondere a questa email ma intervieni sul forum all\'indirizzo seguente:',
 	'forum_page_url' => '(Se il tuo messaggio si riferisce ad un articolo pubblicato sul Web o ad una pagina contenente maggiori informazioni, è possibile indicare di seguito il titolo della pagina ed il suo indirizzo URL.)',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
@@ -83,7 +83,7 @@ che ti è stato fornito.  Se non sei registrato, devi',
 	'info_activer_forum_public' => '<i>Per attivare i forum pubblici, scegli il tipo
 di moderazione predefinito:</i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Questa scelta di moderazione verrà applicata:',
-	'info_config_forums_prive' => 'Nell\'area riservata del sito è possibile attivare diversi tipi di forum:',
+	'info_config_forums_prive' => 'Nell\'area riservata del sito è possibile attivare diversi tipi di forum:', # MODIF
 	'info_config_forums_prive_admin' => 'Un forum riservato agli amministratori del sito:',
 	'info_config_forums_prive_global' => 'Un forum globale, aperto a tutti i redattori:',
 	'info_config_forums_prive_objets' => 'Un forum per ogni articolo, breve, sito repertoriato, ecc.:',
@@ -93,7 +93,7 @@ sui singoli articoli; saranno invece proibiti nelle rubriche, nelle brevi, ecc',
 	'info_envoi_forum' => 'Notifica dei forum agli autori degli articoli',
 	'info_fonctionnement_forum' => 'Funzionamento del forum:',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
-	'info_gauche_suivi_forum_2' => 'La pagina di <i>monitoraggio dei forum</i> è uno strumento di gestione del sito (e non uno spazio di discussione o di redazione). In essa sono pubblicati tutti i contributi dei forum del sito, sia quelli del sito pubblico che quelli dell\'area riservata, permettendone la gestione.',
+	'info_gauche_suivi_forum_2' => 'La pagina di <i>monitoraggio dei forum</i> è uno strumento di gestione del sito (e non uno spazio di discussione o di redazione). In essa sono pubblicati tutti i contributi dei forum del sito, sia quelli del sito pubblico che quelli dell\'area riservata, permettendone la gestione.', # MODIF
 	'info_liens_syndiques_3' => 'forum',
 	'info_liens_syndiques_4' => 'sono',
 	'info_liens_syndiques_5' => 'forum',

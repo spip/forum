@@ -19,10 +19,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 التمكن من إرسال المشاركات).',
 	'bouton_radio_moderation_priori' => 'مراقبة استباقية (
 لا تظهر المشاركات إلا بعد تصديقها من قبل
-المدراء).',
+المدراء).', # MODIF
 	'bouton_radio_modere_abonnement' => 'اشتراك إجباري',
-	'bouton_radio_modere_posteriori' => 'مراقبة بعدية',
-	'bouton_radio_modere_priori' => 'مراقبة استباقية',
+	'bouton_radio_modere_posteriori' => 'مراقبة بعدية', # MODIF
+	'bouton_radio_modere_priori' => 'مراقبة استباقية', # MODIF
 	'bouton_radio_publication_immediate' => 'نشر فوري للمشاركات
 (ستظهر المشاركات حال إرسالها، ويمكن للمدراء
 حذفها وقتذاك).',
@@ -40,15 +40,15 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_dix_caracteres' => '<b>تحذير!</b> يجب أن تحتوي رسالتك على عشرة حروف على الأقل.',
 	'forum_attention_message_non_poste' => 'تحذير، لم تقم ببعث رسالتك!',
 	'forum_attention_trois_caracteres' => '<b>تحذير!</b> يجب أن يحتوي موضوعك على ثلاثة حروف على الأقل.',
-	'forum_attention_trop_caracteres' => '<b>تحذير!</b> رسالتك طويلة جداً (@compte@ حرف): لكي يتم تسجيلها، لا يجب ان تتعدى @max@ حرف.',
+	'forum_attention_trop_caracteres' => '<b>تحذير!</b> رسالتك طويلة جداً (@compte@ حرف): لكي يتم تسجيلها، لا يجب ان تتعدى @max@ حرف.', # MODIF
 	'forum_avez_selectionne' => 'لقد حددت:',
 	'forum_cliquer_retour' => 'انقر <a href=\'@retour_forum@\'>هنا</a> للمتابعة.',
 	'forum_forum' => 'منتدى',
-	'forum_info_modere' => 'هذا المنتدى مراقب استباقياً: لن تظهر مشاركتك إلا بعد التصديق عليها من قبل أحد مديري الموقع.',
+	'forum_info_modere' => 'هذا المنتدى مراقب استباقياً: لن تظهر مشاركتك إلا بعد التصديق عليها من قبل أحد مديري الموقع.', # MODIF
 	'forum_lien_hyper' => 'رابط هايبرتكست',
 	'forum_message' => 'مشاركتك',
 	'forum_message_definitif' => 'مشاركة نهائية: إرسال إلى الموقع',
-	'forum_message_trop_long' => 'مشاركتك طويلة جداً. لا يجب أن تتعدى الحد الأقصى 20000 حرف.',
+	'forum_message_trop_long' => 'مشاركتك طويلة جداً. لا يجب أن تتعدى الحد الأقصى 20000 حرف.', # MODIF
 	'forum_ne_repondez_pas' => 'لا ترد على هذه الرسالة بل في المنتدى على العنوان التالي:',
 	'forum_page_url' => '(إذا كانت مشاركتك تشير إلى مقال منشور على النسيج أو صفحة توفر المزيد من المعلومات، الرجاء إدخال اسم هذه الصفحة وعنوانها أدناه).',
 	'forum_permalink' => 'رابط دائم الى التعليق',
@@ -79,12 +79,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_supprimer_messages' => 'خذف هذه المشاركات',
 	'icone_valider_message' => 'التصديق على هذه المشاركة',
 	'icone_valider_messages' => 'التصديق على هذه المشاركات',
-	'icone_valider_repondre_message' => 'التصديق على هذه المشاركة والرد عليها',
+	'icone_valider_repondre_message' => 'التصديق على هذه المشاركة والرد عليها', # MODIF
 	'info_1_message_forum' => 'مشاركة منتدى واحدة',
 	'info_activer_forum_public' => 'لتفعيل المنتديات العامة، الرجاء إختيار وضعية
 المراقبة الافتراضية:', # MODIF
 	'info_appliquer_choix_moderation' => 'تطبيق خيار المراقبة هذا:',
-	'info_config_forums_prive' => 'في المجال الخاص، يمكنك تفعيل عدة انواع من المنتديات:',
+	'info_config_forums_prive' => 'في المجال الخاص، يمكنك تفعيل عدة انواع من المنتديات:', # MODIF
 	'info_config_forums_prive_admin' => 'منتدى مخصص لمدراء الموقع:',
 	'info_config_forums_prive_global' => 'منتدى شامل، مفتوح لجميع المحررين:',
 	'info_config_forums_prive_objets' => 'منتدى تحت كل مقال او خبر او موقع مبوّب الخ:',
@@ -94,7 +94,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_envoi_forum' => 'إرسال المنتديات الى مؤلفي المقالات',
 	'info_fonctionnement_forum' => 'تشغيل المنتدى:',
 	'info_forums_liees_mot' => 'مشاركات المنتدى المرتبطة بهذا المفتاح',
-	'info_gauche_suivi_forum_2' => 'صفحة <b>متابعة المنتديات</b> هي أداة إدارية في موقعك (وليست للنقاش او التحرير). وتعرض هذه الصفحة كل مشاركات المنتدى العمومي لهذا المقال وتتيح لك التحكم بهذه المشاركات.',
+	'info_gauche_suivi_forum_2' => 'صفحة <b>متابعة المنتديات</b> هي أداة إدارية في موقعك (وليست للنقاش او التحرير). وتعرض هذه الصفحة كل مشاركات المنتدى العمومي لهذا المقال وتتيح لك التحكم بهذه المشاركات.', # MODIF
 	'info_liens_syndiques_3' => 'منتدى',
 	'info_liens_syndiques_4' => 'هي',
 	'info_liens_syndiques_5' => 'منتدى',
@@ -157,7 +157,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// T
 	'text_article_propose_publication_forum' => 'لا تتردد في إبداء رأيك عليه من خلال المنتدى المرتبط به (في أسفل الصفحة).',
-	'texte_en_cours_validation' => 'المقالات، الأخبار، المنتديات أدناه معروضة للنشر.',
+	'texte_en_cours_validation' => 'المقالات، الأخبار، المنتديات أدناه معروضة للنشر.', # MODIF
 	'texte_en_cours_validation_forum' => 'لا تتردد في إبداء رأيك من خلال المنتديات المرتبطة بها.',
 	'texte_messages_publics' => 'مشاركات عمومية في:',
 	'titre_cadre_forum_administrateur' => 'منتدى المدراء الخاص',

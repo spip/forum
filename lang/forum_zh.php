@@ -19,7 +19,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 用户必须提供电子邮件订阅).',
 	'bouton_radio_moderation_priori' => '预存 (
  出版物只能管理员确认
- 才能显示出来).',
+ 才能显示出来).', # MODIF
 	'bouton_radio_modere_abonnement' => '通过订阅预存', # MODIF
 	'bouton_radio_modere_posteriori' => '预存后', # MODIF
 	'bouton_radio_modere_priori' => '预存前', # MODIF
@@ -44,11 +44,11 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_avez_selectionne' => '您已选择:',
 	'forum_cliquer_retour' => '单击  <a href=\'@retour_forum@\'>这里</a> 继续.',
 	'forum_forum' => '论坛',
-	'forum_info_modere' => '论坛是预缓冲的: 您的投稿只有被站点管理员确认才能显示.',
+	'forum_info_modere' => '论坛是预缓冲的: 您的投稿只有被站点管理员确认才能显示.', # MODIF
 	'forum_lien_hyper' => '<MODIF><b>超链接</b> (可选)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => '最后消息: 发送到站点',
-	'forum_message_trop_long' => '您的消息过长. 最大长度为20000个字符.',
+	'forum_message_trop_long' => '您的消息过长. 最大长度为20000个字符.', # MODIF
 	'forum_ne_repondez_pas' => '请勿回复该信件,请到如下地址的论坛回复:', # MODIF
 	'forum_page_url' => '(如果您的消息引用了web上发表的文章请提供进一步的消息, 请输入页头和它的URL).',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW

@@ -17,10 +17,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_enregistrement_obligatoire' => 'Aou lé néséser fé zwé lanrozistroman po anvwa out komisyon (bann zitilzatèr i dwa mèt ladrès imèl pou abonn azot).',
 	'bouton_radio_moderation_priori' => 'Modèr-dovan (bann komisyon lé publyé dann figirwèb piblik, sèlman kan komandèr la apiyé).
 
-',
+', # MODIF
 	'bouton_radio_modere_abonnement' => 'In labonman lé nesèsèr',
-	'bouton_radio_modere_posteriori' => 'lé modèré apré konfirmasyon ',
-	'bouton_radio_modere_priori' => 'lé modèré-dovan',
+	'bouton_radio_modere_posteriori' => 'lé modèré apré konfirmasyon ', # MODIF
+	'bouton_radio_modere_priori' => 'lé modèré-dovan', # MODIF
 	'bouton_radio_publication_immediate' => 'Modékri lé publyé sir losan (bann komisyon lé visib toutswit apré zot la anvway ali ; bann komander sitwèb i pé dégrèn ali aprè).',
 
 	// D
@@ -36,17 +36,17 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_dix_caracteres' => '<b>Tansyon pangar !</b> out modékri néna mwin 10 karaktèr-linprimri. Lé pa asé pou anrozistr ali.',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
 	'forum_attention_trois_caracteres' => '<b>Tansyon pangar !</b> Lo non ou la doné nana mwin 3 karactèr-linprimri.Sa lé pa asé pou anrozistr ali.',
-	'forum_attention_trop_caracteres' => '<b>TANSYON@circ@!</b> out\' mèzaz lé tro long\' (@compte@ karaktèr-linprimri)@circ@: pour giny anrozistré, li doi pa fé pli dé @max@ karaktèr-linprimri',
+	'forum_attention_trop_caracteres' => '<b>TANSYON@circ@!</b> out\' mèzaz lé tro long\' (@compte@ karaktèr-linprimri)@circ@: pour giny anrozistré, li doi pa fé pli dé @max@ karaktèr-linprimri', # MODIF
 	'forum_avez_selectionne' => 'Ou la swazi :',
 	'forum_cliquer_retour' => 'Klik <a href=\'@retour_forum@\'>tèrla</a> pour asévé.',
 	'forum_forum' => 'forom kozman',
 	'forum_info_modere' => 'Forom kozman lé modéré-dovan : lé néséser inn komander la finn konfirm ali pour out kontribusyon i aparé an liyn.
 
-',
+', # MODIF
 	'forum_lien_hyper' => '<b>Gatiraz</b> (lé pa obligatwar)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Modékri-la lé fini : anvwa ali si lo sitwèb',
-	'forum_message_trop_long' => 'Out modékri lé tro lon. Li dwa pa dépas plid 20000 karaktèr-linprimri.',
+	'forum_message_trop_long' => 'Out modékri lé tro lon. Li dwa pa dépas plid 20000 karaktèr-linprimri.', # MODIF
 	'forum_ne_repondez_pas' => 'Pou réponn limél-la, anserv lo forom kozman ou sava trouv tèrla (réponn pa èk inn ot limèl mé zizt inn modékri sir lo sitwèb):', # MODIF
 	'forum_page_url' => '(Si out modékri li ranvwa si inn lartik si lo Wèb o inn ot paz pli konplé déor, mèrsi mèt anba lo non lapazwèb èk son ladrès URL.)',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
@@ -86,7 +86,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_envoi_forum' => 'Anvwa tout bann modékri sak i sort dann bann forom , pou tout bann lotèr lartik lyé ',
 	'info_fonctionnement_forum' => 'Koman forom-la i pé roul ron :',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
-	'info_gauche_suivi_forum_2' => 'Paz <i>swivi bann forom</i> lé inn zoutiy pou zèr an liyn out sit (pa inn léspas kozman o lékritir). Li afis tout bann kontribusyon sak lé prézanté dann tout bann forom out sit i ébèrz (kiswa forom-dodan, forom-déor, tousala...). Li permé zèr bann kontribusyon-la.',
+	'info_gauche_suivi_forum_2' => 'Paz <i>swivi bann forom</i> lé inn zoutiy pou zèr an liyn out sit (pa inn léspas kozman o lékritir). Li afis tout bann kontribusyon sak lé prézanté dann tout bann forom out sit i ébèrz (kiswa forom-dodan, forom-déor, tousala...). Li permé zèr bann kontribusyon-la.', # MODIF
 	'info_liens_syndiques_3' => 'bann forom',
 	'info_liens_syndiques_4' => 'lé',
 	'info_liens_syndiques_5' => 'forom',
