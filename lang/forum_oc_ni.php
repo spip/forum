@@ -98,16 +98,16 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_nb_messages_forum' => '@nb@ messages de forum', # NEW
 	'info_option_email' => 'Quora un visitaire dau sit poasta un messatge novèu dins lo fòro associat à un article, lu autors de l\'article poadon èstre avertits d\'aqueu messatge per corrier electronic. Indicatz per cada tipe de fòro se cau utilisar aquela opcion.',
 	'info_pas_de_forum' => 'Minga de fòro',
-	'info_question_visiteur_ajout_document_forum' => '<NEW>Si vous souhaitez autoriser les visiteurs à joindre des documents (images, sons...) à leurs messages de forum, indiquer ci-dessous la liste des extensions de documents autorisés pour les forums (ex: gif, jpg, png, mp3).', # MODIF
+	'info_question_visiteur_ajout_document_forum' => 'Si vous souhaitez autoriser les visiteurs à joindre des documents (images, sons...) à leurs messages de forum, indiquer ci-dessous la liste des extensions de documents autorisés pour les forums (ex: gif, jpg, png, mp3).', # NEW
 	'info_question_visiteur_ajout_document_forum_format' => 'Si vous souhaitez autoriser tous les types de documents considérés comme fiables par SPIP, mettre une étoile. Pour ne rien autoriser, ne rien indiquer.', # MODIF
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW
 	'item_activer_forum_administrateur' => 'Activar lo fòro dei administrators',
-	'item_config_forums_prive_global' => '<NEW>Activer le forum des rédacteurs',
+	'item_config_forums_prive_global' => 'Activer le forum des rédacteurs', # NEW
 	'item_config_forums_prive_objets' => 'Activer ces forums', # NEW
 	'item_desactiver_forum_administrateur' => 'Desactivar lo fòro dei administrators',
-	'item_non_config_forums_prive_global' => '<NEW>Désactiver le forum des rédacteurs',
-	'item_non_config_forums_prive_objets' => '<NEW>Désactiver ces forums',
+	'item_non_config_forums_prive_global' => 'Désactiver le forum des rédacteurs', # NEW
+	'item_non_config_forums_prive_objets' => 'Désactiver ces forums', # NEW
 
 	// L
 	'lien_reponse_article' => 'Respoasta à l\'article',

@@ -86,9 +86,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_config_forums_prive_admin' => 'Форум для администраторов сайта:',
 	'info_config_forums_prive_global' => 'Общий форум, открыт для всех авторов:',
 	'info_config_forums_prive_objets' => 'Форум, прикрепленный к каждой статье, новости, ссылочному сайту, и т. д.:',
-	'info_desactiver_forum_public' => '<MODIF>Отключить основные 
+	'info_desactiver_forum_public' => 'Отключить основные 
  форумы. Основные форумы могут быть разрешены в зависимости от конкретного случая 
-  основы статей; они будут запрещены для разделов, новостей, и т.д.',
+  основы статей; они будут запрещены для разделов, новостей, и т.д.', # MODIF
 	'info_envoi_forum' => 'Отправлять сообщения форумов авторам статей',
 	'info_fonctionnement_forum' => 'Работа форума:',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW

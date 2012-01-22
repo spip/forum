@@ -45,7 +45,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => '单击  <a href=\'@retour_forum@\'>这里</a> 继续.',
 	'forum_forum' => '论坛',
 	'forum_info_modere' => '论坛是预缓冲的: 您的投稿只有被站点管理员确认才能显示.', # MODIF
-	'forum_lien_hyper' => '<MODIF><b>超链接</b> (可选)', # MODIF
+	'forum_lien_hyper' => '<b>超链接</b> (可选)', # MODIF
 	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => '最后消息: 发送到站点',
 	'forum_message_trop_long' => '您的消息过长. 最大长度为20000个字符.', # MODIF
