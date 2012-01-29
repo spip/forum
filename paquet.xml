@@ -33,6 +33,7 @@
 	<pipeline nom="prepare_recherche" inclure="forum_pipelines.php" />
 	<pipeline nom="rubrique_encours" inclure="forum_pipelines.php" />
 	<pipeline nom="trig_supprimer_objets_lies" inclure="forum_pipelines.php" />
+	<pipeline nom="ieconfig_metas" inclure="forum_ieconfig.php" />
 
 	<menu nom="forum_reactions" titre="forum:icone_suivi_forums" parent="menu_activite" icone="images/forum-16.png" action="controler_forum" />
 	<menu nom="configurer_forum" titre="forum:titre_forum" parent="menu_configuration" icone="images/forum-16.png" />
