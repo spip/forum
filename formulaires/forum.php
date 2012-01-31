@@ -411,6 +411,11 @@ function formulaires_forum_traiter_dist($objet,$id_objet, $id_forum,
 		return array('message_erreur'=>_T('forum:erreur_enregistrement_message'));
 	}
 
+	if (defined('_FORUM_AUTORISER_POST_ID_FORUM')
+		AND _FORUM_AUTORISER_POST_ID_FORUM
+	  AND _request('id_forum'))
+		$id_forum = _request('id_forum');
+
 	$id_reponse = $forum_insert($objet, $id_objet, $id_forum);
 
 
