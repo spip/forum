@@ -390,7 +390,7 @@ $objet, $id_objet, $id_forum) {
  * @param int $id_objet
  * @param int $id_forum
  * @param int|array $ajouter_mot
- *   mots ajout�s coch�s par defaut
+ *   mots ajoutes coches par defaut
  * @param $ajouter_groupe
  *   groupes ajoutables
  * @param $afficher_previsu
