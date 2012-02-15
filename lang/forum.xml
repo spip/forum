@@ -1,6 +1,6 @@
 <traduction module="forum" gestionnaire="salvatore" url="http://trad.spip.org" source="svn://zone.spip.org/spip-zone/_core_/plugins/forum/lang/" reference="fr">
 	<langue code="ar">
-		<traducteur nom="George" lien="http://trad.spip.org/auteur/george" />
+		<traducteur nom="George" lien="http://trad.spip.org/auteur/جورج-قندلفت" />
 	</langue>
 	<langue code="ast">
 		<traducteur nom="Xuacu" lien="http://trad.spip.org/auteur/xuacu" />
@@ -30,7 +30,7 @@
 	<langue code="es" />
 	<langue code="eu" />
 	<langue code="fa">
-		<traducteur nom="George" lien="http://trad.spip.org/auteur/george" />
+		<traducteur nom="George" lien="http://trad.spip.org/auteur/جورج-قندلفت" />
 		<traducteur nom="Davood Hossein" lien="http://trad.spip.org/auteur/davood-hossein" />
 	</langue>
 	<langue code="fon" />
