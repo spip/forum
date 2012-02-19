@@ -322,7 +322,7 @@ function forum_optimiser_base_disparus($flux){
  */
 function forum_pre_insertion($flux){
 	if ($flux['args']['table']=='spip_articles'){
-		$flux['args']['data']['accepter_forum'] =	substr($GLOBALS['meta']['forums_publics'],0,3);
+		$flux['data']['accepter_forum'] =	substr($GLOBALS['meta']['forums_publics'],0,3);
 	}
 	return $flux;
 }
