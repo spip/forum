@@ -47,12 +47,6 @@ function forum_declarer_tables_interfaces($interfaces){
 	$interfaces['table_des_traitements']['AUTEUR']['forums']= 'safehtml(vider_url(%s))';
 	$interfaces['table_des_traitements']['EMAIL_AUTEUR']['forums']= 'safehtml(vider_url(%s))';
 
-	// gerer les sauts de ligne dans les textes des forums
-	$interfaces['table_des_traitements']['TEXTE']['forums'] =
-		str_replace('interdit_html(%s)', 'post_autobr(interdit_html(%s))',
-		$interfaces['table_des_traitements']['TEXTE']['forums']
-	);
-
 	return $interfaces;
 }
 
