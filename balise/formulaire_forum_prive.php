@@ -99,8 +99,10 @@ function balise_FORMULAIRE_FORUM_PRIVE_stat($args, $context_compil) {
 	include_spip('balise/formulaire_forum');
 	$r = balise_forum_retrouve_objet($ido,$id_forum,$args,$context_compil);
 	// si statut privrac ou privadm, pas besoin d'objet !
-	if ($statut=='prive' AND !$r)
-		return false;
+	if (!in_array($statut,array('privrac','privadm'))){
+		if (!$r)
+			return false;
+	}
 
 	list($objet, $id_objet, $retour) = $r;
 

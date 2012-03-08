@@ -54,12 +54,14 @@ function tracer_erreur_forum($type='') {
  */
 function inc_forum_insert_dist($objet, $id_objet, $id_forum, $force_statut = NULL) {
 
-	if (!strlen($objet)
-	  OR !intval($id_objet)){
-		spip_log("Erreur insertion forum sur objet='$objet', id_objet=$id_objet",'forum.'. _LOG_ERREUR);
-		return 0;
+	if (!in_array($force_statut,array('privrac','privadm'))){
+		if (!strlen($objet)
+		  OR !intval($id_objet)){
+			spip_log("Erreur insertion forum sur objet='$objet', id_objet=$id_objet",'forum.'. _LOG_ERREUR);
+			return 0;
+		}
 	}
-	spip_log("insertion de forum sur $objet $id_objet (+$id_forum)", 'forum');
+	spip_log("insertion de forum $force_statut sur $objet $id_objet (+$id_forum)", 'forum');
 
 	$c = array('statut'=>'off');
 	$c['objet'] = $objet;
@@ -99,11 +101,13 @@ function inc_forum_insert_dist($objet, $id_objet, $id_forum, $force_statut = NUL
 function forum_insert_base($c, $id_forum, $objet, $id_objet, $statut, $ajouter_mot = false)
 {
 
-	// si le statut est vide, c'est qu'on ne veut pas de ce presume spam !
-	if (!$statut OR !$objet OR !$id_objet){
-		$args = func_get_args();
-		spip_log("Erreur sur forum_insert_base ".var_export($args,1),'forum.'. _LOG_ERREUR);
-		return false;
+	if (!in_array($statut,array('privrac','privadm'))){
+		// si le statut est vide, c'est qu'on ne veut pas de ce presume spam !
+		if (!$statut OR !$objet OR !$id_objet){
+			$args = func_get_args();
+			spip_log("Erreur sur forum_insert_base ".var_export($args,1),'forum.'. _LOG_ERREUR);
+			return false;
+		}
 	}
 
 	// Entrer le message dans la base
