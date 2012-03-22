@@ -1,8 +1,8 @@
-[(#AUTORISER{bouton,foruminternesuivi}|sinon_interdire_acces)]
+[(#AUTORISER{menu,foruminternesuivi}|sinon_interdire_acces)]
 #SET{self,#SELF}
 #SET{quoi,interne}
 [(#AUTORISER{participer,forumadmin}|non)
-<h1><:forum:titre_cadre_forum_interne:></h1>
+<h1 class="grostitre"><:forum:titre_cadre_forum_interne:></h1>
 ]
 [(#AUTORISER{participer,forumadmin}|oui)
 	#SET{quoi,#ENV{quoi,interne}}
