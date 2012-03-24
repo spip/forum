@@ -33,6 +33,7 @@ formulaires/inc-login_forum_abo.html -text
 /forum_autoriser.php -text
 /forum_fonctions.php -text
 /forum_ieconfig.php -text
+/forum_options.php -text
 /forum_pipelines.php -text
 inc/article_accepter_forums_publics.php -text
 inc/email_notification_forum.php -text

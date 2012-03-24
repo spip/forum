@@ -294,7 +294,7 @@ function forum_optimiser_base_disparus($flux){
 	//
 	## date de reference = 4 mois
 	## definir a 0 pour desactiver
-	define('_CNIL_PERIODE', 3600*24*31*4);
+	
 
 	if (_CNIL_PERIODE) {
 		$critere_cnil = 'date_heure<"'.date('Y-m-d', time()-_CNIL_PERIODE).'"'
