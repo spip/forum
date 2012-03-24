@@ -292,8 +292,6 @@ function forum_optimiser_base_disparus($flux){
 	//
 	// masquer le numero IP des vieux forums
 	//
-	## date de reference = 4 mois
-	## definir a 0 pour desactiver
 	
 
 	if (_CNIL_PERIODE) {

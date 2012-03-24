@@ -11,5 +11,13 @@
 \***************************************************************************/
 
 if (!defined("_ECRIRE_INC_VERSION")) return;
+
+//
+// CNIL -- Informatique et libertes
+//
+// masquer le numero IP des vieux forums
+//
+## date de reference = 4 mois
+## definir a 0 pour desactiver
 define('_CNIL_PERIODE', 3600*24*31*4);
 ?>
