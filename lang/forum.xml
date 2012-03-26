@@ -30,8 +30,8 @@
 	<langue code="es" />
 	<langue code="eu" />
 	<langue code="fa" url="http://trad.spip.org/tradlang_module/forum?lang_cible=fa">
-		<traducteur nom="George" lien="http://trad.spip.org/auteur/جورج-قندلفت" />
 		<traducteur nom="Davood Hossein" lien="http://trad.spip.org/auteur/davood-hossein" />
+		<traducteur nom="George" lien="http://trad.spip.org/auteur/جورج-قندلفت" />
 	</langue>
 	<langue code="fon" />
 	<langue code="fr" />
