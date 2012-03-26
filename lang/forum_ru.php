@@ -16,9 +16,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_articles_tous_sauf_forum_desactive' => 'для всех статей, кроме тех, в которых комментирование отключено.',
 	'bouton_radio_enregistrement_obligatoire' => 'Только для зарегистрированных пользователей. Посетитель должен зарегистрироваться перед тем как оставить комментарий.',
 	'bouton_radio_moderation_priori' => 'Комментарии публикуются на сайте после проверки администратором (пре-модерация).',
-	'bouton_radio_modere_abonnement' => 'необходимо зарегистрироваться',
-	'bouton_radio_modere_posteriori' => 'пост-модерация', # MODIF
-	'bouton_radio_modere_priori' => 'пре-модерация', # MODIF
+	'bouton_radio_modere_abonnement' => 'только пользователи сайта',
+	'bouton_radio_modere_posteriori' => 'размещать без проверки',
+	'bouton_radio_modere_priori' => 'проверять перед размещением',
 	'bouton_radio_publication_immediate' => 'Новые комментарии сразу публикуются на сайте без проверки (пост-модерация). Администраторы потом могут удалить комментарии.',
 
 	// D
@@ -28,7 +28,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'erreur_enregistrement_message' => 'Votre message n\'a pas pu être enregistré en raison d\'un problème technique', # NEW
 
 	// F
-	'form_pet_message_commentaire' => 'Любое сообщение или комментарий?',
+	'form_pet_message_commentaire' => 'Комментарии',
 	'forum' => 'Форум',
 	'forum_acces_refuse' => 'Вы больше не имеете доступа к этим форумам.',
 	'forum_attention_dix_caracteres' => '<b>Внимание!</b> Сообщение должно быть не менее десяти символов.',
@@ -38,10 +38,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_avez_selectionne' => 'Вы выбрали:',
 	'forum_cliquer_retour' => 'Нажмите  <a href=\'@retour_forum@\'>сюда</a> для продолжения.',
 	'forum_forum' => 'форум',
-	'forum_info_modere' => 'Этот форум модерируется заранее: ваше сообщение появиться после того как его утвердит администратор.', # MODIF
+	'forum_info_modere' => 'Комментарии проверяются администрацией сайта. Ваше сообщение появится после проверки администратором.',
 	'forum_lien_hyper' => 'Ссылка',
 	'forum_message' => 'Votre message', # NEW
-	'forum_message_definitif' => 'Всё верно! Отправить!',
+	'forum_message_definitif' => 'Всё верно. Отправить!',
 	'forum_message_trop_long' => 'Ваше сообщение слишком длинно. Максимальная длина 20000 символов.', # MODIF
 	'forum_ne_repondez_pas' => 'Не отвечайте на это письмо - перейдите по ссылке:',
 	'forum_page_url' => '(Если ваше сообщение обращено к статьям изданным в сети или к странице, обеспечивающей дальнейшую информацию, пожалуйста введите заголовок страницы и ее URL ниже).',
@@ -50,23 +50,21 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_qui_etes_vous' => 'Кто вы?',
 	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
 	'forum_texte' => 'Комментарий:',
-	'forum_titre' => 'Тема:', # MODIF
-	'forum_url' => 'URL:', # MODIF
+	'forum_titre' => 'Тема:',
+	'forum_url' => 'URL:',
 	'forum_valider' => 'Подтвердите выбор',
 	'forum_voir_avant' => 'Предварительный просмотр',
-	'forum_votre_email' => 'Ваш e-mail адрес:', # MODIF
-	'forum_votre_nom' => 'Ваше имя (или псевдоним):', # MODIF
-	'forum_vous_enregistrer' => 'Для участия в
-  этом форуме, вы должны зарегистрироваться. Введите персоналый  идентификатор,
-  высланный вам.',
-	'forum_vous_inscrire' => 'регистрация.',
+	'forum_votre_email' => 'Ваш e-mail',
+	'forum_votre_nom' => 'Ваше имя',
+	'forum_vous_enregistrer' => 'Оставлять комментарии могут только зарегистрированные пользователи. Если вы еще не зарегистрировались на сайте, вы можете',
+	'forum_vous_inscrire' => 'зарегистрироваться.',
 
 	// I
 	'icone_bruler_message' => 'Signaler comme Spam', # NEW
 	'icone_bruler_messages' => 'Signaler comme Spam', # NEW
 	'icone_legitimer_message' => 'Signaler comme licite', # NEW
 	'icone_poster_message' => 'Разместить сообщение',
-	'icone_suivi_forum' => 'Продолжение общественного форума: @nb_forums@ статья (статьи)',
+	'icone_suivi_forum' => 'Комментарии: @nb_forums@',
 	'icone_suivi_forums' => 'Управление форумами',
 	'icone_supprimer_message' => 'Удалить это сообщение',
 	'icone_supprimer_messages' => 'Supprimer ces messages', # NEW
@@ -82,7 +80,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_config_forums_prive_objets' => 'Форум, прикрепленный к каждой статье, новости, ссылочному сайту, и т. д.:',
 	'info_desactiver_forum_public' => 'Отключить комментарии по сайту. Вы можете отдельно разрешить комментировать конкретные статьи, но в целом комментарии на сайте отключены.',
 	'info_envoi_forum' => 'Отправлять сообщения форумов авторам статей',
-	'info_fonctionnement_forum' => 'Работа форума:',
+	'info_fonctionnement_forum' => 'Модерация комментариев:',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot', # NEW
 	'info_gauche_suivi_forum_2' => '<i>Продолжение форумов </i> страница - инструмент управления Вашего сайта (не обсуждается или редактируется). Она показывает все записи основного форума этой статьи и позволяет Вам управлять этими записями.', # MODIF
 	'info_liens_syndiques_3' => 'форумы',
@@ -97,9 +95,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_option_email' => 'Когда посетитель сайта размещает сообщение на 
  форуме  связанного со статьей, автор статьи может быть 
  проинформирован о нем по электронной почте. Укажите для каждого вида форума, если эта опция должна быть включена.',
-	'info_pas_de_forum' => 'нет форума',
+	'info_pas_de_forum' => 'отключить комментарии',
 	'info_question_visiteur_ajout_document_forum' => 'Если Вы хотите разрешить Вашим посетителям прикреплять документы (изображения, звуковые файлы, ...) к ихним сообщениям форума, укажите ниже список расширения имени файла, которые являются авторизованными(e.g. gif, jpg, png, mp3).', # MODIF
-	'info_question_visiteur_ajout_document_forum_format' => 'Если Вы хотите включить все типы документов, которые позволяет SPIP, тогда поставьте звездочку. Чтобы не разрешить типы файлов - оставьте пустым.', # MODIF
+	'info_question_visiteur_ajout_document_forum_format' => 'Если вы хотите разрешить загрузку всех типов файлов - поставьте звездочку. Что бы запретить загрузку файлов - оставьте поле пустым.
+',
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW
 	'item_activer_forum_administrateur' => 'Включить форум администраторов',
@@ -114,7 +113,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'lien_reponse_breve_2' => 'Ответить на новость',
 	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Ответить на раздел',
-	'lien_reponse_site_reference' => 'Ответить на ссылающийся сайт:', # MODIF
+	'lien_reponse_site_reference' => 'Комментировать сайт:',
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW
@@ -155,7 +154,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_cadre_forum_administrateur' => 'Административный форум администраторов',
 	'titre_cadre_forum_interne' => 'Внутренний форум',
 	'titre_config_forums_prive' => 'Форумы в редакторской части',
-	'titre_forum' => 'Форум',
+	'titre_forum' => 'Комментарии',
 	'titre_forum_suivi' => 'Дополнительные форумы',
 	'titre_page_forum_suivi' => 'Дополнительные форумы',
 	'titre_selection_action' => 'Sélection', # NEW
