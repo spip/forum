@@ -61,6 +61,10 @@ actiongroup.updateChecklist = function(value,checked,update_status){
 				.hide();
 			$('#actiongroup .action')
 				.addClass('hidden');
+			if ($(".checkable").length)
+				$('#actiongroup').closest('.box:hidden').show('fast');
+			else
+				$('#actiongroup').closest('.box:visible').hide('fast');
 		}
 		else {
 			$('#actiongroup .action')
@@ -138,10 +142,11 @@ actiongroup.activate = function(sel){
 				.trigger('change');
 		})
 		.addClass('checkable')
-		.find('input.actiongroup')
+		.find('input.actiongroup, form, a')
 		.click(function(e){
 			e.stopPropagation();
 		})
+		.filter('input.actiongroup')
 		.change(function(){
 			actiongroup.updateChecklist($(this).attr('value'),$(this).attr('checked'));
 		});

@@ -135,6 +135,7 @@ prive/rss/forums_vide.html -text
 prive/squelettes/contenu/configurer_forum.html -text
 prive/squelettes/contenu/controler_forum.html -text
 prive/squelettes/contenu/forum.html -text
+prive/squelettes/hierarchie/controler_forum.html -text
 prive/squelettes/inclure/boutons-filtres-statut-forum.html -text
 prive/squelettes/inclure/discuter_forum.html -text
 prive/squelettes/navigation/controler_forum.html -text
