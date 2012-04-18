@@ -127,9 +127,10 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
  * @param int $id_forum
  * @param array $args
  * @param array $context_compil
+ * @param bool $objet_obligatoire
  * @return array|bool
  */
-function balise_forum_retrouve_objet($ido,$id_forum,$args,$context_compil){
+function balise_forum_retrouve_objet($ido,$id_forum,$args,$context_compil, $objet_obligatoire = true){
 	$_objet     = $context_compil[5]; // type le la boucle deja calcule
 	$nb_ids_env = $context_compil[6]; // nombre d'elements id_xx recuperes
 	$nb         = $nb_ids_env;
@@ -176,11 +177,12 @@ function balise_forum_retrouve_objet($ido,$id_forum,$args,$context_compil){
 			$id_objet = $objet['id_objet'];
 			$objet = $objet['objet'];
 		} else {
-			return false;
+			if ($objet_obligatoire)
+				return false;
 		}
 	}
 	// vraiment la... faut pas exagerer !
-	if (!$id_objet) {
+	if ($objet_obligatoire AND !$id_objet) {
 		return false;
 	}
 
