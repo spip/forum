@@ -32,7 +32,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum' => 'Форум',
 	'forum_acces_refuse' => 'Вы больше не имеете доступа к этим форумам.',
 	'forum_attention_dix_caracteres' => '<b>Внимание!</b> Сообщение должно быть не менее десяти символов.',
-	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
+	'forum_attention_message_non_poste' => 'Внимание, ваш комментарий не опубликован на сайте.',
 	'forum_attention_trois_caracteres' => '<b>Внимание!</b> Заголовок должен быть не менее трех символов.',
 	'forum_attention_trop_caracteres' => '<b>Внимание!</b> Ваше сообщение содержит @compte@ символов, мы можем добавить ваш комментарий только если его размер не превышает @max@ символов.',
 	'forum_avez_selectionne' => 'Вы выбрали:',
@@ -92,9 +92,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_liens_titre' => 'Lien(s) contenu(s) dans le titre du message', # NEW
 	'info_mode_fonctionnement_defaut_forum_public' => 'Настройки комментариев на сайте',
 	'info_nb_messages_forum' => '@nb@ комментария(ев)',
-	'info_option_email' => 'Когда посетитель сайта размещает сообщение на 
- форуме  связанного со статьей, автор статьи может быть 
- проинформирован о нем по электронной почте. Укажите для каждого вида форума, если эта опция должна быть включена.', # MODIF
+	'info_option_email' => 'Оповещение о новом комментарии. Автор статьи может получать оповещение на емейл о новых комментариях к его статье. Укажите, для каких случаев необходимо включить эту возможность.',
 	'info_pas_de_forum' => 'отключить комментарии',
 	'info_question_visiteur_ajout_document_forum' => 'Если Вы хотите разрешить посетителям добавлять  файлы к комментариям - укажите список расширений файлов, которые можно добавлять (gif, jpg, png, mp3 и т.д.).',
 	'info_question_visiteur_ajout_document_forum_format' => 'Если вы хотите разрешить загрузку всех типов файлов - поставьте звездочку. Что бы запретить загрузку файлов - оставьте поле пустым.
