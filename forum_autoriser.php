@@ -17,13 +17,14 @@ function forum_autoriser(){}
 
 
 function autoriser_foruminternesuivi_menu_dist($faire, $type='', $id=0, $qui = NULL, $opt = NULL){
-	if(($GLOBALS['meta']['forum_prive'] == 'non') && ($GLOBALS['meta']['forum_prive_admin'] == 'non'))
+	if ((($GLOBALS['meta']['forum_prive'] == 'non') && ($GLOBALS['meta']['forum_prive_admin'] == 'non'))
+		OR (($GLOBALS['meta']['forum_prive'] == 'non') && ($qui['statut'] == '1comite')))
 		return false;
 	return true;
 }
 
 function autoriser_forumreactions_menu_dist($faire, $type='', $id=0, $qui = NULL, $opt = NULL){
-	return autoriser('publierdans','rubrique',_request('id_rubrique'));
+	return (sql_countsel('spip_forum') && autoriser('publierdans','rubrique',_request('id_rubrique')));
 }
 
 
@@ -65,19 +66,6 @@ function autoriser_forum_moderer_dist($faire, $type, $id, $qui, $opt){
 // http://doc.spip.org/@autoriser_forum_modifier_dist
 function autoriser_forum_modifier_dist($faire, $type, $id, $qui, $opt) {
 	return false;
-}
-
-
-function autoriser_bouton_forum_dist($faire, $type, $id, $qui, $opt){
-	return 	($GLOBALS['meta']['forum_prive'] != 'non' OR sql_countsel('spip_forum'));
-}
-
-function autoriser_bouton_forum_admin_dist($faire, $type, $id, $qui, $opt){
-	return 	($GLOBALS['meta']['forum_prive_admin'] == 'oui');
-}
-
-function autoriser_bouton_controle_forum_dist($faire, $type, $id, $qui, $opt){
-	return 	(sql_countsel('spip_forum'));
 }
 
 // Consulter le forum des admins ?
