@@ -138,7 +138,7 @@ actiongroup.activate = function(sel){
 		.click(function(){
 			var check = $('input.actiongroup',this);
 			check
-				.attr('checked',!check.attr('checked'))
+				.prop('checked',!check.prop('checked'))
 				.trigger('change');
 		})
 		.addClass('checkable')
@@ -148,7 +148,7 @@ actiongroup.activate = function(sel){
 		})
 		.filter('input.actiongroup')
 		.change(function(){
-			actiongroup.updateChecklist($(this).attr('value'),$(this).attr('checked'));
+			actiongroup.updateChecklist($(this).attr('value'),$(this).prop('checked'));
 		});
 
 	$('#actiongroup .action')
