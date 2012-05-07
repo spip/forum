@@ -182,7 +182,7 @@ function calcul_parametres_forum(&$env, $reponse, $type, $primary) {
 	// dernier recours, on regarde pour chacun des objets forumables
 	// ce que nous propose le contexte #ENV
 	foreach ($env as $k => $v) {
-		if (preg_match(',^id_([a_z_]+)$,S', $k)
+		if (preg_match(',^id_([a-z_]+)$,S', $k)
 		AND $id = intval($v)) {
 			return id_table_objet($k).'='.$v;
 		}
