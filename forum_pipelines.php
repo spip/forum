@@ -76,8 +76,8 @@ function forum_accueil_informations($texte){
 		$texte .= "<div class='accueil_informations forum liste'>";
 		$titre = _T('forum:onglet_messages_publics');
 		if (autoriser('modererforum')) {
-			$plus = generer_url_ecrire("controler_forum");
-			$texte .= "<h4><a href='$plus'>$titre</a></h4>";
+			$plus = afficher_plus_info(generer_url_ecrire("controler_forum"), "", $titre);
+			$texte .= "<h4>$plus</h4>";
 		} else {
 			$texte .= "<h4>$titre</h4>";
 		}
