@@ -74,13 +74,13 @@ function forum_accueil_informations($texte){
 		}
 
 		$texte .= "<div class='accueil_informations forum liste'>";
-		$afficher_plus = 'afficher_plus_info';
-		$plus = "";
-		if (!function_exists($afficher_plus))
-			$afficher_plus = 'afficher_plus';
-		if (autoriser('modererforum'))
-			$plus = $afficher_plus(generer_url_ecrire("controler_forum",""));
-		$texte .= "<h4>$plus" ._T('forum:onglet_messages_publics') ."</h4>";
+		$titre = _T('forum:onglet_messages_publics');
+		if (autoriser('modererforum')) {
+			$plus = generer_url_ecrire("controler_forum");
+			$texte .= "<h4><a href='$plus'>$titre</a></h4>";
+		} else {
+			$texte .= "<h4>$titre</h4>";
+		}
 		$texte .= "<ul class='liste-items'>";
 		if (isset($cpt['prop'])) $texte .= "<li class='item'>"._T("texte_statut_attente_validation").": ".$cpt2['prop'] .$cpt['prop'] . '</li>';
 		if (isset($cpt['publie'])) $texte .= "<li class='item'>"._T("texte_statut_publies").": ".$cpt2['publie'] .$cpt['publie'] .'</li>';
