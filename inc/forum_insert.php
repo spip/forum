@@ -154,8 +154,9 @@ function forum_insert_base($c, $id_forum, $objet, $id_objet, $statut, $ajouter_m
 		}
 
 		// Notification
+		$quoi = (strncmp($statut,'priv',4)==0?'forumprive':'forumposte');
 		if ($notifications = charger_fonction('notifications', 'inc'))
-			$notifications('forumposte', $id_reponse);
+			$notifications($quoi, $id_reponse);
 	}
 
 	return $id_reponse;
