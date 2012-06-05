@@ -87,6 +87,8 @@ function formulaires_forum_charger_dist($objet,$id_objet, $id_forum,
 		$securiser_action = charger_fonction('securiser_action', 'inc');
 		// on sait que cette fonction est dans le fichier associe
 		$hash = calculer_action_auteur("ajout_forum-$arg");
+	} else {
+		$arg = $hash = '';
 	}
 
 	// pour les hidden
@@ -101,7 +103,10 @@ function formulaires_forum_charger_dist($objet,$id_objet, $id_forum,
 	if ($formats = forum_documents_acceptes()) {
 		include_spip('inc/securiser_action');
 		$cle = calculer_cle_action('ajouter-document-'.$objet.'-'.$id_objet);
+	} else {
+		$cle = null;
 	}
+
 	// Valeurs par defaut du formulaire
 	// si le formulaire a ete sauvegarde, restituer les valeurs de session
 	$vals = array(
@@ -118,7 +123,7 @@ function formulaires_forum_charger_dist($objet,$id_objet, $id_forum,
 		'_hidden' => $script_hidden, # pour les variables hidden qui seront inserees dans le form et dans le form de previsu
 		'cle_ajouter_document' => $cle,
 		'formats_documents_forum' => forum_documents_acceptes(),
-		'ajouter_document' => $_FILES['ajouter_document']['name'],
+		'ajouter_document' => isset($_FILES['ajouter_document']['name']) ? $_FILES['ajouter_document']['name'] : '',
 		'nobot' => ($cle ? _request($cle) : _request('nobot')),
 		'ajouter_groupe' => $ajouter_groupe,
 		'ajouter_mot' => (is_array($ajouter_mot) ? $ajouter_mot : array($ajouter_mot)),
@@ -356,6 +361,10 @@ $objet, $id_objet, $id_forum) {
 		: $table_des_traitements['TEXTE'][0];
 	$evaltexte = '$tmptexte = '.str_replace('%s', '$texte', $evaltexte).';';
 	// evaluer...
+	// [fixme]
+	// $connect et $Pile ne sont pas definis ici :/
+	// mais font souvent partie des variables appelees par les traitements
+	$connect = ""; $Pile = array(0 => array());
 	eval($evaltexte);
 
 	// supprimer les <form> de la previsualisation
@@ -372,7 +381,7 @@ $objet, $id_objet, $id_forum) {
 			'nom_site' => safehtml(typo($nom_site)),
 			'ajouter_mot' => (is_array($ajouter_mot) ? $ajouter_mot : array($ajouter_mot)),
 			'ajouter_document' => $doc,
-			'erreur' => $erreur,
+#			'erreur' => $erreur, // non definie ?
 			'bouton' => $bouton,
 		    'objet' => $objet,
 			'id_objet' => $id_objet,
