@@ -109,6 +109,7 @@ ak yon limèl. W vle itilize opsyon nan ?', # MODIF
 	'info_pas_de_forum' => 'Okenn fowom',
 	'info_question_visiteur_ajout_document_forum' => 'Souhaitez-vous autoriser les visiteurs à joindre des documents (images, sons...) à leurs messages de forums ?', # MODIF
 	'info_question_visiteur_ajout_document_forum_format' => 'Le cas échéant, indiquer ci-dessous la liste des extensions de documents autorisés pour les forums (ex: gif, jpg, png, mp3).', # MODIF
+	'info_selectionner_message' => 'Sélectionner les messages :', # NEW
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW
 	'item_activer_forum_administrateur' => 'Fé mache fowom pou komandé yo ',
@@ -119,11 +120,13 @@ ak yon limèl. W vle itilize opsyon nan ?', # MODIF
 	'item_non_config_forums_prive_objets' => 'Désactiver ces forums', # NEW
 
 	// L
+	'label_selectionner' => 'Sélectionner :', # NEW
 	'lien_reponse_article' => 'Réponn atik-la',
 	'lien_reponse_breve_2' => 'Réponn tinouvèl-la',
 	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Réponn ribrik-la',
 	'lien_reponse_site_reference' => 'Reponn sit referanse-a :', # MODIF
+	'lien_vider_selection' => 'Vider la selection', # NEW
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

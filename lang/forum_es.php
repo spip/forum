@@ -100,6 +100,7 @@ suministrado. Si no estás inscrito/a, debes',
 	'info_pas_de_forum' => 'sin foro',
 	'info_question_visiteur_ajout_document_forum' => 'Para que los visitantes puedan depositar documentos (imágenes, sonidos...) al participar en los foros, indica aquí  la lista de extensiones de documentos autorizados en los foros (por ejemplo: gif, jpg, png, mp3).',
 	'info_question_visiteur_ajout_document_forum_format' => 'Para autorizar todos los tipos de documentos considerados como fiables por SPIP, marca un asterisco. Para no autorizar ninguno, no indiques nada.',
+	'info_selectionner_message' => 'Sélectionner les messages :', # NEW
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW
 	'item_activer_forum_administrateur' => 'Activar el foro del equipo de administración.',
@@ -110,11 +111,13 @@ suministrado. Si no estás inscrito/a, debes',
 	'item_non_config_forums_prive_objets' => 'Desactivar estos foros',
 
 	// L
+	'label_selectionner' => 'Sélectionner :', # NEW
 	'lien_reponse_article' => 'Respuesta al artículo',
 	'lien_reponse_breve_2' => 'Respuesta a la breve',
 	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Respuesta a la sección',
 	'lien_reponse_site_reference' => 'Respuesta al sitio referenciado',
+	'lien_vider_selection' => 'Vider la selection', # NEW
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

@@ -111,6 +111,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 		rinsignate quì sottu a lista di \'estensioni di i ducumenti auturizati pè i fori (per esempiu : gif, jpg, png, mp3).', # MODIF
 	'info_question_visiteur_ajout_document_forum_format' => 'Sè vo vulete auturizà tutti i tippi di ducumenti cunsiderati da affidati da SPIP, mettite una 
 		stelluccia. Per ùn auturizà nunda, ùn mettite nunda.', # MODIF
+	'info_selectionner_message' => 'Sélectionner les messages :', # NEW
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW
 	'item_activer_forum_administrateur' => 'Attivà u foru di l\'amministratori',
@@ -121,11 +122,13 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_config_forums_prive_objets' => 'Disattivà sti fori',
 
 	// L
+	'label_selectionner' => 'Sélectionner :', # NEW
 	'lien_reponse_article' => 'Risposta à l\'artìculu',
 	'lien_reponse_breve_2' => 'Risposta i dispacci',
 	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Risposta à a rùbbrica',
 	'lien_reponse_site_reference' => 'Risposta à u situ riferitu :', # MODIF
+	'lien_vider_selection' => 'Vider la selection', # NEW
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

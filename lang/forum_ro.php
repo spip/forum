@@ -103,6 +103,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_pas_de_forum' => 'fără forum',
 	'info_question_visiteur_ajout_document_forum' => 'Dacă dorii s autorizai vizitatorii să ataşeze documente (imagini, sunete, etc.) la mesajele din forum-uri, indicai mai jos lista de extensii de documente autorizate pentru forum-uri  (de exemplu: gif, jpg, png, mp3).', # MODIF
 	'info_question_visiteur_ajout_document_forum_format' => 'Dacă doriţi să autorizaţi toate tipurile de documente considerate ca sigure de către SPIP, puneţi o steluţă. Pentru a nu autoriza nimic, lasaţi selecţia goală.', # MODIF
+	'info_selectionner_message' => 'Sélectionner les messages :', # NEW
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW
 	'item_activer_forum_administrateur' => 'Activaţi forum-ul administratorilor',
@@ -113,11 +114,13 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_config_forums_prive_objets' => 'Dezactivaţi aceste forum-uri',
 
 	// L
+	'label_selectionner' => 'Sélectionner :', # NEW
 	'lien_reponse_article' => 'Răspuns la articol',
 	'lien_reponse_breve_2' => 'Răspuns la ştire',
 	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Răspuns la rubrica',
 	'lien_reponse_site_reference' => 'Răspuns la site-ul referenţiat :', # MODIF
+	'lien_vider_selection' => 'Vider la selection', # NEW
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

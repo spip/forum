@@ -105,6 +105,7 @@ sonradan yok edebilir).',
 	'info_pas_de_forum' => 'Forum yok',
 	'info_question_visiteur_ajout_document_forum' => 'Ziyaretçilerin forum mesajlarına belge (fotoğraf, ses...) eklemelerine izin vermek isterseniz, aşağıda hangi soyadlarına izin verildiğini belirtiniz (örnek: gif, jpg, png, mp3).', # MODIF
 	'info_question_visiteur_ajout_document_forum_format' => 'SPIP tarafından güvenilir bulunan tüm belgelere izin vermek isterseniz bir yıldız koyunuz. Hiçbir şeye izin vermemek için hiçbir şey yazmayınız.', # MODIF
+	'info_selectionner_message' => 'Sélectionner les messages :', # NEW
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW
 	'item_activer_forum_administrateur' => 'Yöneticiler forumunun etkinleştirilmesi',
@@ -115,11 +116,13 @@ sonradan yok edebilir).',
 	'item_non_config_forums_prive_objets' => 'Bu forumları dezaktive et',
 
 	// L
+	'label_selectionner' => 'Sélectionner :', # NEW
 	'lien_reponse_article' => 'Bu makaleye yanıt ',
 	'lien_reponse_breve_2' => 'Bu kısa habere yanıt',
 	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Bu bölüme yanıt ',
 	'lien_reponse_site_reference' => 'Atıfta bulunan siteye yanıt : ', # MODIF
+	'lien_vider_selection' => 'Vider la selection', # NEW
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

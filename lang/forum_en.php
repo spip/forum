@@ -103,6 +103,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_pas_de_forum' => 'no forum',
 	'info_question_visiteur_ajout_document_forum' => 'If you want to allow visitors to attach documents (images, sound files, etc.) to their forum posts, indicate which file extensions are accepted (e.g. gif, jpg, png, mp3).',
 	'info_question_visiteur_ajout_document_forum_format' => 'If you want to authorise all document types considered safe by SPIP, use an asterisk. Leave empty to block everything.',
+	'info_selectionner_message' => 'Sélectionner les messages :', # NEW
 	'interface_formulaire' => 'Form interface',
 	'interface_onglets' => 'Interface with tabs',
 	'item_activer_forum_administrateur' => 'Enable administrators\' forum',
@@ -113,11 +114,13 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_config_forums_prive_objets' => 'Disable these forums',
 
 	// L
+	'label_selectionner' => 'Sélectionner :', # NEW
 	'lien_reponse_article' => 'Comment on this article',
 	'lien_reponse_breve_2' => 'Comment on this news item',
 	'lien_reponse_message' => 'Reply to the post',
 	'lien_reponse_rubrique' => 'Comment on this section',
 	'lien_reponse_site_reference' => 'Comment on this website',
+	'lien_vider_selection' => 'Vider la selection', # NEW
 
 	// M
 	'messages_aucun' => 'None',

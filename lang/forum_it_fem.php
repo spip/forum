@@ -109,6 +109,7 @@ avvertite via email. Per ogni tipo di forum, indica se desideri utilizzare quest
 	'info_pas_de_forum' => 'nessun forum',
 	'info_question_visiteur_ajout_document_forum' => 'Se si desidera autorizzare i visitatori ad allegare dei documenti (immagini, musiche, ecc.) ai propri messaggi nel forum, indicare qui sotto l\'elenco delle estensioni dei documenti autorizzati per i forum (per es.: gif, jpg, png, mp3).', # MODIF
 	'info_question_visiteur_ajout_document_forum_format' => 'Se si desidera autorizzare tutti i tipi di documenti considerati affidabili da SPIP, mettere un asterisco. Per non autorizzare nulla, non indicare nulla.', # MODIF
+	'info_selectionner_message' => 'Sélectionner les messages :', # NEW
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW
 	'item_activer_forum_administrateur' => 'Attiva il forum delle amministratrici',
@@ -119,11 +120,13 @@ avvertite via email. Per ogni tipo di forum, indica se desideri utilizzare quest
 	'item_non_config_forums_prive_objets' => 'Disattiva questi forum',
 
 	// L
+	'label_selectionner' => 'Sélectionner :', # NEW
 	'lien_reponse_article' => 'Risposta all\'articolo',
 	'lien_reponse_breve_2' => 'Risposta alla breve',
 	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Risposta alla rubrica',
 	'lien_reponse_site_reference' => 'Risposta al sito repertoriato:', # MODIF
+	'lien_vider_selection' => 'Vider la selection', # NEW
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

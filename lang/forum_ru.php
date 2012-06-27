@@ -97,6 +97,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_question_visiteur_ajout_document_forum' => 'Если Вы хотите разрешить посетителям добавлять  файлы к комментариям - укажите список расширений файлов, которые можно добавлять (gif, jpg, png, mp3 и т.д.).',
 	'info_question_visiteur_ajout_document_forum_format' => 'Если вы хотите разрешить загрузку всех типов файлов - поставьте звездочку. Что бы запретить загрузку файлов - оставьте поле пустым.
 ',
+	'info_selectionner_message' => 'Sélectionner les messages :', # NEW
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW
 	'item_activer_forum_administrateur' => 'Включить форум администраторов',
@@ -107,11 +108,13 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_config_forums_prive_objets' => 'отключить эти форумы',
 
 	// L
+	'label_selectionner' => 'Sélectionner :', # NEW
 	'lien_reponse_article' => 'Комментарий к статье',
 	'lien_reponse_breve_2' => 'Комментарий к новости',
 	'lien_reponse_message' => 'Ответить на сообщение',
 	'lien_reponse_rubrique' => 'Комментарий к разделу',
 	'lien_reponse_site_reference' => 'Комментарий к сайту',
+	'lien_vider_selection' => 'Vider la selection', # NEW
 
 	// M
 	'messages_aucun' => 'Нет',

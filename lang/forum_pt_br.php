@@ -97,6 +97,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_pas_de_forum' => 'sem fórum',
 	'info_question_visiteur_ajout_document_forum' => 'Se você deseja autorizar os visitantes a anexarem documentos (imagens, áudios...) às suas mensagens em fóruns, indique abaixo a lista das extensões de arquivos permitidos para os fóruns (ex.: gif, jpg, png, mp3).',
 	'info_question_visiteur_ajout_document_forum_format' => 'Se você deseja permitir todos os tipos de documentos considerados como seguros pelo SPIP, digite * (asterisco). Para não permitir nenhum, deixe em branco.',
+	'info_selectionner_message' => 'Sélectionner les messages :', # NEW
 	'interface_formulaire' => 'Interface de formulário',
 	'interface_onglets' => 'Interface com abas',
 	'item_activer_forum_administrateur' => 'Ativar o fórum dos administradores',
@@ -107,11 +108,13 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_config_forums_prive_objets' => 'Desativar estes fóruns',
 
 	// L
+	'label_selectionner' => 'Sélectionner :', # NEW
 	'lien_reponse_article' => 'Resposta à matéria',
 	'lien_reponse_breve_2' => 'Resposta à nota',
 	'lien_reponse_message' => 'Resposta à mensagem',
 	'lien_reponse_rubrique' => 'Resposta à seção',
 	'lien_reponse_site_reference' => 'resposta ao site referenciado',
+	'lien_vider_selection' => 'Vider la selection', # NEW
 
 	// M
 	'messages_aucun' => 'Nenhuma',

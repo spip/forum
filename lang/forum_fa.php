@@ -97,6 +97,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_pas_de_forum' => 'بدون سخنگاه',
 	'info_question_visiteur_ajout_document_forum' => 'اگر مايليد به بازديد‌كنندگان اجازه دهيد كه سند‌هايي (تصوير، صدا و . . . ) را به پيام‌هايشان در سخنگاه بچسبانند، فهرست توسعه‌هاي مجاز براي سند‌ها را براي سخنگاه‌ها، در زير، مشخص كنيد (ex: gif, jpg, png, mp3).',
 	'info_question_visiteur_ajout_document_forum_format' => 'اگر مايليد به تمام انواع سند‌هايي كه با اسپيپ منطبق است اجازه بدهيد، يك ستاره بگذاريد. اگر اجازه نمي‌دهيد هيچ كار نكنيد.',
+	'info_selectionner_message' => 'Sélectionner les messages :', # NEW
 	'interface_formulaire' => 'فرم ميانجي',
 	'interface_onglets' => 'فرم‌ها با تب‌ها',
 	'item_activer_forum_administrateur' => 'سخنگاه گردانندگان سايت را فعال كنيد',
@@ -107,11 +108,13 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_config_forums_prive_objets' => 'غيرفعال سازي اين سخنگاه‌ها',
 
 	// L
+	'label_selectionner' => 'Sélectionner :', # NEW
 	'lien_reponse_article' => 'پاسخ به مقاله',
 	'lien_reponse_breve_2' => 'پاسخ به مقاله كوتاه',
 	'lien_reponse_message' => 'پاسخ به يك پيام',
 	'lien_reponse_rubrique' => 'پاسخ به بخش',
 	'lien_reponse_site_reference' => ':پاسخ به سايت مرجع',
+	'lien_vider_selection' => 'Vider la selection', # NEW
 
 	// M
 	'messages_aucun' => 'هيچ',

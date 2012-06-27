@@ -100,6 +100,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_pas_de_forum' => 'forom ebet',
 	'info_question_visiteur_ajout_document_forum' => 'M\'hoc\'h eus c\'hoant da aotren ar weladennerien da stagañ restroù (skeudennoù, son, ...) ouzh o c\'hemennadennoù war ar foromoù, neuze eo dav skrivañ amañ peseurt astennoù teulioù a vo aotreet war ar foromoù (da skouer : gif, png, jpg, mp3).', # MODIF
 	'info_question_visiteur_ajout_document_forum_format' => 'M\'hoc\'h eus c\'hoant da aotren an holl seurtoù restroù en deus SPIP fiziañs enno, neuze lakait ur steredennig. Kuit da aotren tra ebet, na lakait netra !', # MODIF
+	'info_selectionner_message' => 'Sélectionner les messages :', # NEW
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW
 	'item_activer_forum_administrateur' => 'Gweredekaat forom ar verourien',
@@ -110,11 +111,13 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_config_forums_prive_objets' => 'Diweredekaat ar foromoù-mañ',
 
 	// L
+	'label_selectionner' => 'Sélectionner :', # NEW
 	'lien_reponse_article' => 'Respont d\'ar pennad',
 	'lien_reponse_breve_2' => 'Respont d\'ar berrskrid',
 	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Respont d\'ar rubrikenn',
 	'lien_reponse_site_reference' => 'Respont d\'al lec\'hienn menegeret :', # MODIF
+	'lien_vider_selection' => 'Vider la selection', # NEW
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

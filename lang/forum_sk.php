@@ -105,6 +105,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_pas_de_forum' => 'žiadne diskusné fórum',
 	'info_question_visiteur_ajout_document_forum' => 'Ak chcete povoliť návštevníkom pripájať súbory (obrázky, zvuky a i.) k diskusným príspevkom, určte, ktoré prípony súborov budú akceptované (napr. gif, jpg, png, mp3).',
 	'info_question_visiteur_ajout_document_forum_format' => 'Ak chcete povoliť všetky typy súborov, ktoré SPIP považuje za bezpečné, použite hviezdičku. Ak nechcete povoliť žiadne, nerobte nič.',
+	'info_selectionner_message' => 'Sélectionner les messages :', # NEW
 	'interface_formulaire' => 'Rozhranie formulára',
 	'interface_onglets' => 'Rozhranie s tabulátormi',
 	'item_activer_forum_administrateur' => 'Povoliť diskusné fórum administrátorov',
@@ -115,11 +116,13 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_config_forums_prive_objets' => 'Deaktivovať tieto diskusné fóra',
 
 	// L
+	'label_selectionner' => 'Sélectionner :', # NEW
 	'lien_reponse_article' => 'Komentovať tento článok',
 	'lien_reponse_breve_2' => 'Komentovať túto novinku',
 	'lien_reponse_message' => 'Reagovať na príspevok',
 	'lien_reponse_rubrique' => 'Komentovať túto rubriku',
 	'lien_reponse_site_reference' => 'Reakcia na odkazovanú stránku',
+	'lien_vider_selection' => 'Vider la selection', # NEW
 
 	// M
 	'messages_aucun' => 'Žiadne',

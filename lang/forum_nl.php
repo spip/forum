@@ -106,6 +106,7 @@ De publieke forums kunnen per artikel toegestaan worden
 	'info_pas_de_forum' => 'geen forum',
 	'info_question_visiteur_ajout_document_forum' => 'Als u de bezoekers wilt machtigen om documenten (beelden, klanken…) samen te voegen aan hun berichten van forum, de lijst van de toegelaten uitbreidingen van documenten hieronder aangeven  (bv.: gif, jpg, png, mp3).', # MODIF
 	'info_question_visiteur_ajout_document_forum_format' => 'Als u alle soorten documenten wilt toestaan die als betrouwbaar door SPIP worden beschouwd, een ster zetten. Om niets toe te staan, niets aangeven.',
+	'info_selectionner_message' => 'Sélectionner les messages :', # NEW
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW
 	'item_activer_forum_administrateur' => 'Forum van beheerders activeren',
@@ -116,11 +117,13 @@ De publieke forums kunnen per artikel toegestaan worden
 	'item_non_config_forums_prive_objets' => 'Deze forums desactiveren',
 
 	// L
+	'label_selectionner' => 'Sélectionner :', # NEW
 	'lien_reponse_article' => 'Beantwoord dit artikel',
 	'lien_reponse_breve_2' => 'Beantwoord dit nieuwsbericht',
 	'lien_reponse_message' => 'Het bericht antwoorden',
 	'lien_reponse_rubrique' => 'Beantwoord deze rubriek',
 	'lien_reponse_site_reference' => 'Antwoord op gekoppelde site',
+	'lien_vider_selection' => 'Vider la selection', # NEW
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW

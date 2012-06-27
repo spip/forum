@@ -106,6 +106,7 @@ sui singoli articoli; saranno invece proibiti nelle rubriche, nelle brevi, ecc',
 	'info_pas_de_forum' => 'nessun forum',
 	'info_question_visiteur_ajout_document_forum' => 'Se si desidera autorizzare i visitatori ad allegare dei documenti (immagini, musiche, ecc.) ai propri messaggi nel forum, indicare qui sotto l\'elenco delle estensioni dei documenti autorizzati per i forum (per es.: gif, jpg, png, mp3).',
 	'info_question_visiteur_ajout_document_forum_format' => 'Se si desidera autorizzare tutti i tipi di documenti considerati affidabili da SPIP, mettere un asterisco. Per non autorizzare nulla lasciate il campo vuoto.',
+	'info_selectionner_message' => 'Selezionare i messaggi:',
 	'interface_formulaire' => 'Interfaccia form',
 	'interface_onglets' => 'Interfaccia a tab',
 	'item_activer_forum_administrateur' => 'Attiva il forum degli amministratori',
@@ -116,11 +117,13 @@ sui singoli articoli; saranno invece proibiti nelle rubriche, nelle brevi, ecc',
 	'item_non_config_forums_prive_objets' => 'Disattiva questi forum',
 
 	// L
+	'label_selectionner' => 'Selezionare :',
 	'lien_reponse_article' => 'Risposta all\'articolo',
 	'lien_reponse_breve_2' => 'Risposta alla breve',
 	'lien_reponse_message' => 'Rispondi al messaggio',
 	'lien_reponse_rubrique' => 'Risposta alla rubrica',
 	'lien_reponse_site_reference' => 'Commenti su questo sito',
+	'lien_vider_selection' => 'Selezione vuota',
 
 	// M
 	'messages_aucun' => 'Nessuno',

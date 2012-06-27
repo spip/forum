@@ -107,6 +107,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_pas_de_forum' => 'non hai foro',
 	'info_question_visiteur_ajout_document_forum' => 'Se quere autorizar os visitantes para que poidan anexar documentos (imaxes, sons...) nas súas mensaxes dos foros, indique a seguir a lista de extensións autorizadas para os foros (ex: gif, jpg, png, mp3).', # MODIF
 	'info_question_visiteur_ajout_document_forum_format' => 'Se quere autorizar todos os tipos de documentos considerados como fiables por SPIP, marque unha estrela. Para non autorizar nada, non indique nada.', # MODIF
+	'info_selectionner_message' => 'Sélectionner les messages :', # NEW
 	'interface_formulaire' => 'Interface formulaire', # NEW
 	'interface_onglets' => 'Interface avec onglets', # NEW
 	'item_activer_forum_administrateur' => 'Activar o foro do equipo de xestión',
@@ -117,11 +118,13 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_config_forums_prive_objets' => 'Desactivar estes foros',
 
 	// L
+	'label_selectionner' => 'Sélectionner :', # NEW
 	'lien_reponse_article' => 'Responder ao artigo',
 	'lien_reponse_breve_2' => 'Resposta á breve',
 	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Resposta ó tema',
 	'lien_reponse_site_reference' => 'Resposta ao web referido:', # MODIF
+	'lien_vider_selection' => 'Vider la selection', # NEW
 
 	// M
 	'messages_aucun' => 'Aucun', # NEW
