@@ -33,6 +33,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_acces_refuse' => 'Bạn không có quyền vào các diễn đàn này nữa.',
 	'forum_attention_dix_caracteres' => '<b>Cảnh báo!</b> Thư tín quá ngắn - Phải hơn 10 mẫu tự.',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
+	'forum_attention_nb_caracteres_mini' => '<b>Attention !</b> votre message doit contenir au moins @min@ caractères.', # NEW
 	'forum_attention_trois_caracteres' => '<b>Cảnh báo!</b> Tựa đề quá ngắn - Phải hơn 3 mẫu tự.',
 	'forum_attention_trop_caracteres' => '<b>Cảnh báo !</b> nội dung thư tín của bạn quá dài (@compte@ mẫu tự) : để có thể lưu trữ, độ dài của nội dung thư tín không được quá @max@ mẫu tự.', # MODIF
 	'forum_avez_selectionne' => 'Bạn đã chọn:',

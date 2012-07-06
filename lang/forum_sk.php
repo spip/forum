@@ -38,6 +38,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_acces_refuse' => 'K týmto diskusným fóram už viac nemáte prístup.',
 	'forum_attention_dix_caracteres' => '<b>Upozornenie!</b> Váš príspevok musí mať aspoň 10 znakok.',
 	'forum_attention_message_non_poste' => 'Pozor, neodoslali ste svoj príspevok!',
+	'forum_attention_nb_caracteres_mini' => '<b>Attention !</b> votre message doit contenir au moins @min@ caractères.', # NEW
 	'forum_attention_trois_caracteres' => '<b>Upozornenie!</b> Názov musí mať aspoň 3 znaky.',
 	'forum_attention_trop_caracteres' => '<b>Pozor!</b> váš príspevok je pridlhý (@compte@ znamkov): aby ste ho mohli uložiť, príspevok nesmie mať viac ako @max@ znakov.',
 	'forum_avez_selectionne' => 'Vybrali ste:',

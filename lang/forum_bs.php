@@ -33,6 +33,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_acces_refuse' => 'Nemate vise pristup ovim forumima.',
 	'forum_attention_dix_caracteres' => '<b>Upozorenje!</b> Vasa poruka mora sadrzati najmanje deset karaktera.',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
+	'forum_attention_nb_caracteres_mini' => '<b>Attention !</b> votre message doit contenir au moins @min@ caractères.', # NEW
 	'forum_attention_trois_caracteres' => '<b>Upozorenje!</b> Vas naslov mora sadrzati najmanje tri karaktera.',
 	'forum_attention_trop_caracteres' => '<b>Attention !</b> votre message est trop long (@compte@ caractères) : pour pouvoir être enregistré, il ne doit pas dépasser @max@ caractères.', # NEW
 	'forum_avez_selectionne' => 'Izabrali ste:',

@@ -37,6 +37,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_acces_refuse' => 'Je hebt geen toegang meer tot deze forums.',
 	'forum_attention_dix_caracteres' => '<b>Opgelet!</b> : je bericht moet minstens 10 tekens bevatten.',
 	'forum_attention_message_non_poste' => 'Opgelet, je hebt je bericht niet gepost !',
+	'forum_attention_nb_caracteres_mini' => '<b>Attention !</b> votre message doit contenir au moins @min@ caractères.', # NEW
 	'forum_attention_trois_caracteres' => '<b>Opgelet!</b> : je bericht moet minstens 3 tekens bevatten.',
 	'forum_attention_trop_caracteres' => '<b>Opgelet !</b> uw bericht is te lang (@compte@ caractères) : om registratie mogelijk te maken, mag het niet meer dan @max@ karakters tellen.', # MODIF
 	'forum_avez_selectionne' => 'Je hebt gekozen:',

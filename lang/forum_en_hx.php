@@ -39,6 +39,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_acces_refuse' => 'Y0u h4v3 n07 4cc355 70 7h353 f0rum5 4nym0r3.',
 	'forum_attention_dix_caracteres' => '<b>W4rn1ng!</b> y0ur m3554g3 15 1355 7h4n 73n ch4r4c73r5 1n 13ng7h.', # MODIF
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
+	'forum_attention_nb_caracteres_mini' => '<b>Attention !</b> votre message doit contenir au moins @min@ caractères.', # NEW
 	'forum_attention_trois_caracteres' => '<b>W4rn1ng!</b> y0ur 5ubj3c7 15 1355 7h4n 7hr33 ch4r4c73r5 1n 13ng7h.', # MODIF
 	'forum_attention_trop_caracteres' => '<b>Attention !</b> votre message est trop long (@compte@ caractères) : pour pouvoir être enregistré, il ne doit pas dépasser @max@ caractères.', # NEW
 	'forum_avez_selectionne' => 'Y0u h4v3 5313c73d:',

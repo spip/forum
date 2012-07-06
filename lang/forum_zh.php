@@ -39,6 +39,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_acces_refuse' => '您已经无权访问这些论坛.',
 	'forum_attention_dix_caracteres' => '<b>警告!</b> 您的消息少于十个字符.', # MODIF
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
+	'forum_attention_nb_caracteres_mini' => '<b>Attention !</b> votre message doit contenir au moins @min@ caractères.', # NEW
 	'forum_attention_trois_caracteres' => '<b>警告!</b> 您的标题少于三个字符.', # MODIF
 	'forum_attention_trop_caracteres' => '<b>Attention !</b> votre message est trop long (@compte@ caractères) : pour pouvoir être enregistré, il ne doit pas dépasser @max@ caractères.', # NEW
 	'forum_avez_selectionne' => '您已选择:',

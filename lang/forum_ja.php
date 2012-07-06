@@ -37,6 +37,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_acces_refuse' => 'あなたはもうこれらの掲示板にアクセスできません。',
 	'forum_attention_dix_caracteres' => '<b>警告 !</b> あなたのメッセージは長さが１０文字以下です。',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
+	'forum_attention_nb_caracteres_mini' => '<b>Attention !</b> votre message doit contenir au moins @min@ caractères.', # NEW
 	'forum_attention_trois_caracteres' => '<b>警告 !</b> あなたの題名は長さが３文字以下です。',
 	'forum_attention_trop_caracteres' => '<b>‚²’ˆÓ !</b> ‚±‚ÌƒƒbƒZ[ƒW‚Í’·‰ß‚¬‚Ü‚·i@compte@ •¶ŽšjBƒƒbƒZ[ƒW‚ðo˜ ‚·‚é‚½‚ß‚É@max@•¶ŽšˆÈ‰º‚É‚µ‚Ä‰º‚³‚¢B', # MODIF
 	'forum_avez_selectionne' => 'あなたの選択:',

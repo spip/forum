@@ -39,6 +39,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_acces_refuse' => 'Tu n\'as plus accès à ces forums.',
 	'forum_attention_dix_caracteres' => '<b>Attention !</b> ton message doit contenir au moins dix caractères.',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
+	'forum_attention_nb_caracteres_mini' => '<b>Attention !</b> votre message doit contenir au moins @min@ caractères.', # NEW
 	'forum_attention_trois_caracteres' => '<b>Attention !</b> ton titre doit contenir au moins trois caractères.',
 	'forum_attention_trop_caracteres' => '<b>Attention !</b> ton message est trop long (@compte@ caractères) : pour pouvoir être enregistré, il ne doit pas dépasser @max@ caractères.', # MODIF
 	'forum_avez_selectionne' => 'Tu as sélectionné :',

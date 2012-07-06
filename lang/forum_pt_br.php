@@ -34,6 +34,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_acces_refuse' => 'Você não tem mais acesso a estes fóruns.',
 	'forum_attention_dix_caracteres' => '<b>Atenção!</b> Sua mensagem precisa ter pelo menos dez caracteres.',
 	'forum_attention_message_non_poste' => 'Atenção, você não postou a sua mensagem!',
+	'forum_attention_nb_caracteres_mini' => '<b>Attention !</b> votre message doit contenir au moins @min@ caractères.', # NEW
 	'forum_attention_trois_caracteres' => '<b>Atenção!</b> Seu título precisa ter pelo menos três caracteres.',
 	'forum_attention_trop_caracteres' => '<b>Atenção!</b> sua mensagem é muito longa (@compte@ caracteres): para que ela seja gravada, ela não pode ultrapassar @max@ caracteres.',
 	'forum_avez_selectionne' => 'Você selecionou:',

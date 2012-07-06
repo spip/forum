@@ -33,6 +33,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_acces_refuse' => 'អ្នក​គ្មានអាចទៀត ចូលទៅ វេទិកា​ទាំងនេះ។',
 	'forum_attention_dix_caracteres' => '<b>​ប្រយ័ត្ន  !</b> សារ ​របស់​អ្នក ត្រូវtE​មាន​ប្រវែង​យ៉ាងតិច ១០ អក្សរ។',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
+	'forum_attention_nb_caracteres_mini' => '<b>Attention !</b> votre message doit contenir au moins @min@ caractères.', # NEW
 	'forum_attention_trois_caracteres' => '<b>​ប្រយ័ត្ន !</b> ចំណងជើង ​របស់​អ្នក ត្រូវ​តែមាន​ប្រវែង​យ៉ាងតិច ៣ អក្សរ។',
 	'forum_attention_trop_caracteres' => '<b>​ប្រយ័ត្ន​ !</b> សារ​របស់​អ្នក ​វែង​ពេក (@compte@ ​អក្សរ​) ៖ ដើម្បី​អាចត្រូវបាន​រក្សា​វា​ទុក, វាមិនត្រូវ លើសពី @max@ អក្សរ​។', # MODIF
 	'forum_avez_selectionne' => 'អ្នក​បាន ​ជ្រើសយក ៖',

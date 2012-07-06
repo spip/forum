@@ -34,6 +34,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_acces_refuse' => '.شما ديگر اجازه استفاده از اين سخنگاه را نداريد',
 	'forum_attention_dix_caracteres' => '</b>! توجه<b>   پيامتان بايد بيش از ده حرف باشد.',
 	'forum_attention_message_non_poste' => 'تنبيه، لم تبعث برسالتك!',
+	'forum_attention_nb_caracteres_mini' => '<b>Attention !</b> votre message doit contenir au moins @min@ caractères.', # NEW
 	'forum_attention_trois_caracteres' => '</b>! توجه<b> عنوانتان بايد بيش از سه حرف باشد. ',
 	'forum_attention_trop_caracteres' => '<b>توجه!</b>(@compte@ كاراكتر براي آنكه ثبت شود، نبايد از @max@ كاراكتر بيشتر شود. )  پيام شما زياد طولاني است ',
 	'forum_avez_selectionne' => ': شما انتخاب كرده ايد',

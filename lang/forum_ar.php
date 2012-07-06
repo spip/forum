@@ -39,6 +39,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_acces_refuse' => 'لم تعد تتمتع بحق الدخول إلى هذه المنتديات.',
 	'forum_attention_dix_caracteres' => '<b>تحذير!</b> يجب أن تحتوي رسالتك على عشرة حروف على الأقل.',
 	'forum_attention_message_non_poste' => 'تحذير، لم تقم ببعث رسالتك!',
+	'forum_attention_nb_caracteres_mini' => '<b>Attention !</b> votre message doit contenir au moins @min@ caractères.', # NEW
 	'forum_attention_trois_caracteres' => '<b>تحذير!</b> يجب أن يحتوي موضوعك على ثلاثة حروف على الأقل.',
 	'forum_attention_trop_caracteres' => '<b>تحذير!</b> رسالتك طويلة جداً (@compte@ حرف): لكي يتم تسجيلها، لا يجب ان تتعدى @max@ حرف.',
 	'forum_avez_selectionne' => 'لقد حددت:',

@@ -39,6 +39,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_acces_refuse' => 'Вече нямате достъп до тези форуми.',
 	'forum_attention_dix_caracteres' => '<b>Предупреждение!</b> съобщението трябва да е по-дълго от 10 знака.',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
+	'forum_attention_nb_caracteres_mini' => '<b>Attention !</b> votre message doit contenir au moins @min@ caractères.', # NEW
 	'forum_attention_trois_caracteres' => '<b>Предупреждение!</b> полето Относно трябва да е по-дълго от 3 знака.',
 	'forum_attention_trop_caracteres' => '<b>Attention !</b> votre message est trop long (@compte@ caractères) : pour pouvoir être enregistré, il ne doit pas dépasser @max@ caractères.', # NEW
 	'forum_avez_selectionne' => 'Вие сте избрали:',

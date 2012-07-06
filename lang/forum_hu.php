@@ -37,6 +37,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_acces_refuse' => 'Már nincs hozzáférése ezekhez a fórumokhoz.',
 	'forum_attention_dix_caracteres' => '<b>Vigyázat !</b> Az üzenetének legalább 10 karaktert kell tartalmaznia.',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
+	'forum_attention_nb_caracteres_mini' => '<b>Attention !</b> votre message doit contenir au moins @min@ caractères.', # NEW
 	'forum_attention_trois_caracteres' => '<b>Vigyázat !</b> A címnek legalább három karaktert kell tartalmaznia.',
 	'forum_attention_trop_caracteres' => '<b>Figyelem !</b> az üzenete túl hosszú (@compte@ karakter) : legfeljebb @max@ karakterből állhat.', # MODIF
 	'forum_avez_selectionne' => 'Kijelölt :',

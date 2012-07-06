@@ -33,6 +33,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_acces_refuse' => 'N\'oc\'h ket aotreet da vont war ar foromoù-mañ ken .',
 	'forum_attention_dix_caracteres' => '<b>Diwallit !</b> Dek arouezenn d\'an nebeutañ a rank bezañ en ho kemennadenn.',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
+	'forum_attention_nb_caracteres_mini' => '<b>Attention !</b> votre message doit contenir au moins @min@ caractères.', # NEW
 	'forum_attention_trois_caracteres' => '<b>Diwallit !</b> Teir arouezenn d\'an nebeutañ a rank bezañ en ho titl.',
 	'forum_attention_trop_caracteres' => '<b>Diwallit !</b> re hir eo ho kemennadenn (@compte@ arouez) : arabat e vefe ouzhpenn @max@ arouezenn enni evit gallout bezañ kaset.', # MODIF
 	'forum_avez_selectionne' => 'Diuzet hoc\'h eus :',

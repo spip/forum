@@ -35,6 +35,7 @@ sonradan yok edebilir).',
 	'forum_acces_refuse' => 'Artık bu forumlara erişiminiz yok.',
 	'forum_attention_dix_caracteres' => '<b>Dikkat !</b> iletiniz on karakterden kısa.',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
+	'forum_attention_nb_caracteres_mini' => '<b>Attention !</b> votre message doit contenir au moins @min@ caractères.', # NEW
 	'forum_attention_trois_caracteres' => '<b>Dikkat !</b> başlığınız üç karakterden kısa.',
 	'forum_attention_trop_caracteres' => '<b>Dikkat !</b> mesajınız çok uzun (@compte@ caractères) : kaydedilebilmesi için @max@ karakteri aşmamalı.', # MODIF
 	'forum_avez_selectionne' => 'Şunu seçtiniz :',

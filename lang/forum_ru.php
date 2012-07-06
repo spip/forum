@@ -33,6 +33,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_acces_refuse' => 'Вы больше не имеете доступа к этим форумам.',
 	'forum_attention_dix_caracteres' => '<b>Внимание!</b> Сообщение должно быть не менее десяти символов.',
 	'forum_attention_message_non_poste' => 'Внимание, ваш комментарий не опубликован на сайте.',
+	'forum_attention_nb_caracteres_mini' => '<b>Attention !</b> votre message doit contenir au moins @min@ caractères.', # NEW
 	'forum_attention_trois_caracteres' => '<b>Внимание!</b> Заголовок должен быть не менее трех символов.',
 	'forum_attention_trop_caracteres' => '<b>Внимание!</b> Ваше сообщение содержит @compte@ символов, мы можем добавить ваш комментарий только если его размер не превышает @max@ символов.',
 	'forum_avez_selectionne' => 'Вы выбрали:',

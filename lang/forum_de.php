@@ -33,6 +33,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_acces_refuse' => 'Sie haben keinen Zugang mehr zu diesen Foren.',
 	'forum_attention_dix_caracteres' => '<b>Achtung!</b> Ihr Beitrag ist muss mindestens 10 Zeichen lang sein.',
 	'forum_attention_message_non_poste' => 'Pozor, neposlali ste svoj príspevok!',
+	'forum_attention_nb_caracteres_mini' => '<b>Attention !</b> votre message doit contenir au moins @min@ caractères.', # NEW
 	'forum_attention_trois_caracteres' => '<b>Achtung!</b> Ihr Titel muss mindestens drei Zeichen lang sein.',
 	'forum_attention_trop_caracteres' => '<b>Achtung!</b> Ihr Beitrag ist zu lang (@compte@ Zeichen). Damit er gespeichert werden kann, darf er maximal @max@ Zeichen lang sein.',
 	'forum_avez_selectionne' => 'Sie haben ausgewählt:',

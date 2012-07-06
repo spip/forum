@@ -33,6 +33,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_acces_refuse' => 'Dir hutt keen Zougang méi zu dëse Forum\'en.',
 	'forum_attention_dix_caracteres' => '<b>Opgepasst!</b> Äre Message muss op manst 10 Buchstawen hun.',
 	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
+	'forum_attention_nb_caracteres_mini' => '<b>Attention !</b> votre message doit contenir au moins @min@ caractères.', # NEW
 	'forum_attention_trois_caracteres' => '<b>Opgepasst!</b> Ären Titel muss op manst 3 Buchstawen hun.',
 	'forum_attention_trop_caracteres' => '<b>Opgepasst!</b> Äre Message ass ze laang (@compte@ Buchstawen): fir enregistréiert ze ginn därf hien nët méi wéi @max@ Buchstawen hun.', # MODIF
 	'forum_avez_selectionne' => 'Dir hutt gewielt:',
