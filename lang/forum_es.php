@@ -159,7 +159,7 @@ suministrado. Si no estás inscrito/a, debes',
 	'titre_cadre_forum_administrateur' => 'Foro administradores',
 	'titre_cadre_forum_interne' => 'Foro interno',
 	'titre_config_forums_prive' => 'Foros del espacio privado',
-	'titre_forum' => 'Foro interno',
+	'titre_forum' => 'Foros',
 	'titre_forum_suivi' => 'Gestión de los foros',
 	'titre_page_forum_suivi' => 'Seguimiento de los foros',
 	'titre_selection_action' => 'Sélection', # NEW
