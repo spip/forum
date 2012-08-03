@@ -121,7 +121,7 @@ function inclure_forum_prive_previsu($texte,$titre, $url_site, $nom_site, $ajout
 			'nom_site' => safehtml(typo($nom_site)),
 			'ajouter_mot' => (is_array($ajouter_mot) ? $ajouter_mot : array($ajouter_mot)),
 			'ajouter_document' => $doc,
-			'erreur' => $erreur,
+			#'erreur' => $erreur, // kesako ? non définie ?
 			'bouton' => $bouton
 			)
 					       ),
