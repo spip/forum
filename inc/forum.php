@@ -145,7 +145,7 @@ function parent_forum($id_forum) {
  */
 function generer_url_forum_dist($id_forum, $args='', $ancre='') {
 	$generer_url_forum = charger_fonction('generer_url_forum','urls');
-	return $generer_url_forum($id, $args, $ancre);
+	return $generer_url_forum($id_forum, $args, $ancre);
 }
 
 
