@@ -109,7 +109,7 @@ function balise_PARAMETRES_FORUM_dist($p) {
 	AND isset($p->boucles[$p->id_boucle])
 	AND $primary = $p->boucles[$p->id_boucle]->primary
 	) {
-		$_type = $p->boucles[$p->id_boucle]->type_requete;
+		$_type = _q($p->boucles[$p->id_boucle]->type_requete);
 		$_primary = champ_sql($primary, $p);
 	} else {
 		$_type = "null";
