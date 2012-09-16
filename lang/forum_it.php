@@ -39,7 +39,7 @@ cancellarli successivamente).',
 	'forum_acces_refuse' => 'Non hai accesso a questi forum.',
 	'forum_attention_dix_caracteres' => '<b>Attenzione!</b> il messaggio deve contenere almeno dieci caratteri.',
 	'forum_attention_message_non_poste' => 'Attenzione, non puoi postare il tuo messaggio!',
-	'forum_attention_nb_caracteres_mini' => '<b>Attention !</b> votre message doit contenir au moins @min@ caractères.', # NEW
+	'forum_attention_nb_caracteres_mini' => '<b>Attenzione!</b> Il vostro messaggio deve contenere almeno @min@ caratteri.',
 	'forum_attention_trois_caracteres' => '<b>Attenzione!</b> il titolo deve contenere almeno tre caratteri.',
 	'forum_attention_trop_caracteres' => '<b>Attenzione!</b> il messaggio è troppo lungo (@compte@ caratteri): per poter essere registrato esso non deve essere più lungo di @max@ caratteri.',
 	'forum_avez_selectionne' => 'Hai selezionato:',
