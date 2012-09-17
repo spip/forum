@@ -38,7 +38,7 @@ function inc_email_notification_forum_dist ($t, $email, $contexte=array()) {
 		}
 		else if ($t['statut'] == 'privadm') # forum des admins
 		{
-			$url = generer_url_ecrire('forum_admin').'#id'.$id_forum;
+			$url = generer_url_ecrire('forum','quoi=admin').'#id'.$id_forum;
 		}
 		else if ($t['statut'] == 'publie') # forum publie
 		{
