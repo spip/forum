@@ -67,9 +67,9 @@ function inc_forum_insert_dist($objet, $id_objet, $id_forum, $force_statut = NUL
 	$c['objet'] = $objet;
 	$c['id_objet'] = $id_objet;
 
-	foreach (array(
-		'titre', 'texte', 'nom_site', 'url_site'
-	) as $champ)
+	include_spip('inc/filtres');
+	$champs = objet_info('forum','champs_editables');
+	foreach ($champs as $champ)
 		$c[$champ] = _request($champ);
 
 	$c['auteur'] = sinon($GLOBALS['visiteur_session']['nom'],

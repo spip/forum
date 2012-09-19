@@ -75,6 +75,8 @@ function forum_declarer_tables_objets_sql($tables){
 		'titre' => "titre, '' AS lang",
 		'date' => 'date_heure',
 
+		'champs_editables' => array('titre', 'texte', 'nom_site', 'url_site'),
+
 		'field'=> array(
 			"id_forum"	=> "bigint(21) NOT NULL",
 			"id_objet"	=> "bigint(21) DEFAULT '0' NOT NULL",
