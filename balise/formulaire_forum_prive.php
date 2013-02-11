@@ -10,29 +10,42 @@
  *  Pour plus de details voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
+/**
+ * Gestion du formulaire Forum Privé et de sa balise
+ *
+ * @package SPIP\Forum\Balises
+**/
 if (!defined("_ECRIRE_INC_VERSION")) return;	#securite
 
 include_spip('inc/acces');
 include_spip('inc/texte');
 include_spip('inc/forum');
 
-/*******************************/
-/* GESTION DU FORMULAIRE FORUM */
-/*******************************/
 
 /**
- * Contexte du formulaire
- * Mots-cles dans les forums :
- * Si la variable de personnalisation $afficher_groupe[] est definie
- * dans le fichier d'appel, et si la table de reference est OK, proposer
- * la liste des mots-cles
- * #FORMULAIRE_FORUM_PRIVE seul calcule (objet, id_objet) depuis la boucle parente
- * #FORMULAIRE_FORUM_PRIVE{#SELF} pour forcer l'url de retour
- * #FORMULAIRE_FORUM_PRIVE{#SELF, article, 3} pour forcer l'objet et son identifiant
- * http://doc.spip.org/@balise_FORMULAIRE_FORUM_PRIVE
+ * Compile la balise `#FORMULAIRE_FORUM_PRIVE` qui affiche un formulaire d'ajout
+ * de commentaire pour l'espace privé
  *
- * @param Object $p
- * @return Object
+ * Signature : `#FORMULAIRE_FORUM_PRIVE{[redirection[, objet, id_objet]]}`
+ *
+ * Particularité du contexte du formulaire pour permettre une saisie
+ * de mots-clés dans les forums : si la variable de personnalisation
+ * `$afficher_groupe[]` est définie dans le fichier d'appel, et si la table
+ * de référence est OK, la liste des mots-clés est alors proposée.
+ * 
+ * @balise FORMULAIRE_FORUM_PRIVE
+ * @see balise_FORMULAIRE_FORUM()
+ * @example
+ *     ```
+ *     #FORMULAIRE_FORUM_PRIVE seul calcule (objet, id_objet) depuis la boucle parente
+ *     #FORMULAIRE_FORUM_PRIVE{#SELF} pour forcer l'url de retour
+ *     #FORMULAIRE_FORUM_PRIVE{#SELF, article, 3} pour forcer l'objet et son identifiant
+ *     ```
+ *
+ * @param Champ $p
+ *     Pile au niveau de la balise
+ * @return Champ
+ *     Pile complétée par le code à générer
  */
 function balise_FORMULAIRE_FORUM_PRIVE ($p) {
 
@@ -78,8 +91,6 @@ function balise_FORMULAIRE_FORUM_PRIVE ($p) {
 
 /**
  * Chercher l'objet/id_objet et la configuration du forum
- *
- * http://doc.spip.org/@balise_FORMULAIRE_FORUM_PRIVE_stat
  *
  * @param array $args
  * @param array $context_compil

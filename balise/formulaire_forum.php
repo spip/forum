@@ -10,29 +10,42 @@
  *  Pour plus de details voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
+/**
+ * Gestion du formulaire Forum et de sa balise
+ *
+ * @package SPIP\Forum\Balises
+**/
 if (!defined("_ECRIRE_INC_VERSION")) return;	#securite
 
 include_spip('inc/acces');
 include_spip('inc/texte');
 include_spip('inc/forum');
 
-/*******************************/
-/* GESTION DU FORMULAIRE FORUM */
-/*******************************/
-
 /**
- * Contexte du formulaire
- * Mots-cles dans les forums :
- * Si la variable de personnalisation $afficher_groupe[] est definie
- * dans le fichier d'appel, et si la table de reference est OK, proposer
- * la liste des mots-cles
- * #FORMULAIRE_FORUM seul calcule (objet, id_objet) depuis la boucle parente
- * #FORMULAIRE_FORUM{#SELF} pour forcer l'url de retour
- * #FORMULAIRE_FORUM{#SELF, article, 3} pour forcer l'objet et son identifiant
- * http://doc.spip.org/@balise_FORMULAIRE_FORUM
+ * Compile la balise `#FORMULAIRE_FORUM` qui affiche un formulaire d'ajout
+ * de commentaire
  *
- * @param Object $p
- * @return Object
+ * Signature : `#FORMULAIRE_FORUM{[redirection[, objet, id_objet]]}`
+ *
+ * Particularité du contexte du formulaire pour permettre une saisie
+ * de mots-clés dans les forums : si la variable de personnalisation
+ * `$afficher_groupe[]` est définie dans le fichier d'appel, et si la table
+ * de référence est OK, la liste des mots-clés est alors proposée.
+ * 
+ * @balise FORMULAIRE_FORUM
+ * @link http://www.spip.net/3969 Balise `#FORMULAIRE_FORUM`
+ * @link http://www.spip.net/1827 Les formulaires
+ * @example
+ *     ```
+ *     #FORMULAIRE_FORUM seul calcule (objet, id_objet) depuis la boucle parente
+ *     #FORMULAIRE_FORUM{#SELF} pour forcer l'url de retour
+ *     #FORMULAIRE_FORUM{#SELF, article, 3} pour forcer l'objet et son identifiant
+ *     ```
+ *
+ * @param Champ $p
+ *     Pile au niveau de la balise
+ * @return Champ
+ *     Pile complétée par le code à générer
  */
 function balise_FORMULAIRE_FORUM ($p) {
 	/**
@@ -81,8 +94,6 @@ function balise_FORMULAIRE_FORUM ($p) {
 /**
  * Chercher l'objet/id_objet et la configuration du forum
  *
- * http://doc.spip.org/@balise_FORMULAIRE_FORUM_stat
- *
  * @param array $args
  * @param array $context_compil
  * @return array|bool
@@ -123,6 +134,12 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 }
 
 /**
+ * Retrouve l'objet et id_objet d'un forum
+ *
+ * S'il n'est pas transmis, on le prend dans la boucle englobante, sinon
+ * dans l'environnement, sinon on tente de le retrouver depuis un autre
+ * message de forum
+ * 
  * @param int $ido
  * @param int $id_forum
  * @param array $args
