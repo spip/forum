@@ -10,10 +10,22 @@
  *  Pour plus de details voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
+/**
+ * Gestion du formulaire de configuration indiquant où les forums peuvent
+ * être activés
+ *
+ * @package SPIP\Forum\Formulaires
+**/
 if (!defined("_ECRIRE_INC_VERSION")) return;
 
-// Recuperer le reglage des forums publics de l'article x
-// http://doc.spip.org/@get_forums_publics
+/**
+ * Récupérer le réglage des forums publics d'un objet
+ *
+ * @param int $id_objet
+ * @param string $objet
+ * @return bool
+ *     true si les forums publics sont autorisés, false sinon
+**/
 function get_forums_publics($id_objet=0, $objet='article') {
 
 	if ($objet=='article' AND $id_objet) {
@@ -29,8 +41,10 @@ function get_forums_publics($id_objet=0, $objet='article') {
 /**
  * Charger
  *
- * @param int $id_article
+ * @param int $id_objet
+ * @param string $objet
  * @return array
+ *     Contexte du squelette du formulaire
  */
 function formulaires_activer_forums_objet_charger_dist($id_objet, $objet='article'){
 	if (!autoriser('modererforum', $objet, $id_objet))
@@ -59,6 +73,7 @@ function formulaires_activer_forums_objet_charger_dist($id_objet, $objet='articl
  * @param int $id_objet
  * @param string $objet
  * @return array
+ *     Retours des traitements
  */
 function formulaires_activer_forums_objet_traiter_dist($id_objet, $objet='article'){
 	include_spip('inc/autoriser');

@@ -10,6 +10,12 @@
  *  Pour plus de details voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
+/**
+ * Utilisation des pipelines
+ *
+ * @package SPIP\Forum\Pipelines
+**/
+
 if (!defined("_ECRIRE_INC_VERSION")) return;
 
 /**
@@ -240,10 +246,10 @@ function forum_configurer_liste_metas($metas){
 
 
 /**
- * Optimiser la base de donnee en supprimant les forums orphelins
+ * Optimiser la base de donnée en supprimant les forums orphelins
  *
- * @param int $n
- * @return int
+ * @param array $flux
+ * @return array
  */
 function forum_optimiser_base_disparus($flux){
 	$n = &$flux['data'];
