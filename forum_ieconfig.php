@@ -1,8 +1,23 @@
 <?php
 
+/**
+ * Déclarations des configurations qui peuvent être sauvegardées
+ * 
+ * @package SPIP\Forum\Pipelines
+**/
+
 if (!defined("_ECRIRE_INC_VERSION")) return;
 
-// On déclare ici la config du core
+/**
+ * Ajoute les metas sauvegardables de Forum pour le plugin IEConfig
+ *
+ * @pipeline ieconfig_metas
+ *
+ * @param array $table
+ *     Déclaration des sauvegardes
+ * @return array 
+ *     Déclaration des sauvegardes complétées
+**/
 function forum_ieconfig_metas($table){
 	$table['forums_contenu']['titre'] = _T('forum:titre_forum');
 	$table['forums_contenu']['icone'] = 'forum-public-16.png';

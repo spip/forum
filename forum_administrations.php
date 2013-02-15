@@ -10,6 +10,12 @@
  *  Pour plus de details voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
+/**
+ * Fichier gérant l'installation et désinstallation du plugin
+ *
+ * @package SPIP\Forum\Installation
+**/
+
 if (!defined("_ECRIRE_INC_VERSION")) return;
 
 /**
@@ -79,7 +85,7 @@ function forum_upgrade($nom_meta_base_version,$version_cible){
 }
 
 /**
- * Desinstallation/suppression des tables forum
+ * Désinstallation/suppression des tables forum
  *
  * @param string $nom_meta_base_version
  */

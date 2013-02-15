@@ -10,11 +10,18 @@
  *  Pour plus de details voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
+/**
+ * Déclarations des tables et objets au compilateur
+ *
+ * @package SPIP\Core\Pipelines
+**/
+
 if (!defined('_ECRIRE_INC_VERSION')) return;
 
 /**
  * Interfaces de la table forum pour le compilateur
  *
+ * @pipeline declarer_tables_interfaces
  * @param array $interfaces
  * @return array $interfaces
  */
@@ -53,6 +60,7 @@ function forum_declarer_tables_interfaces($interfaces){
 /**
  * Déclaration de la table spip_forum et de l'objet forum
  *
+ * @pipeline declarer_tables_objets_sql
  * @param array $tables Tableau des objets déclarés
  * @return array $tables Tableau des objets complété
  */
