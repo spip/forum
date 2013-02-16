@@ -6,13 +6,20 @@
  *
  */
 
+/**
+ * Notification de message de forum posté
+ *
+ * @package SPIP\Forum\Notifications
+**/
+
 if (!defined("_ECRIRE_INC_VERSION")) return;
 
 /**
- * cette notification s'execute quand un message est poste,
+ * Cette notification s'exécute quand un message est posté
  *
  * @param string $quoi
  * @param int $id_forum
+ * @param array $options
  */
 function notifications_forumposte_dist($quoi, $id_forum, $options) {
 	$t = sql_fetsel("*", "spip_forum", "id_forum=".intval($id_forum));

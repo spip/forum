@@ -6,17 +6,26 @@
  *
  */
 
+/**
+ * Notification de message de forum proposé
+ *
+ * @package SPIP\Forum\Notifications
+**/
+
 if (!defined("_ECRIRE_INC_VERSION")) return;
 
 /**
- * cette notification s'execute quand on valide un message 'prop'ose,
- * dans ecrire/inc/forum_insert.php ; ici on va notifier ceux qui ne l'ont
- * pas ete a la notification forumposte (sachant que les deux peuvent se
- * suivre si le forum est valide directement ('pos' ou 'abo')
- * http://doc.spip.org/@notifications_forumvalide_dist
+ * Cette notification s'exécute quand on valide un message 'prop'osé.
+ * 
+ * On va notifier ceux qui ne l'ont
+ * pas été à la notification forumposte (sachant que les deux peuvent se
+ * suivre si le forum est validé directement ('pos' ou 'abo')
  *
+ * @see inc/forum_insert.php
+ * 
  * @param string $quoi
  * @param int $id_forum
+ * @param array $options
  */
 function notifications_forumvalide_dist($quoi, $id_forum, $options) {
 
