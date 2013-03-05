@@ -103,9 +103,14 @@ function inc_email_notification_forum_dist ($t, $email, $contexte=array()) {
 		 ($t['email_auteur'] ? ' <' . $t['email_auteur'] . '>' : ''));
 
 	$titre = textebrut(typo($t['titre_source']));
-	$forum_poste_par = _T(
-		$t['objet']=='article'?'forum:forum_poste_par':'forum:forum_poste_par_generique',
-		array('parauteur' => $parauteur, 'titre' => $titre));
+	if ($titre){
+		$forum_poste_par = _T(
+			$t['objet']=='article'?'forum:forum_poste_par':'forum:forum_poste_par_generique',
+			array('parauteur' => $parauteur, 'titre' => $titre, 'objet'=>$t['objet'])
+		);
+	}
+	else
+		$forum_poste_par = _T('forum:forum_poste_par_court',array('parauteur' => $parauteur));
 
 	$t['par_auteur'] = $forum_poste_par;
 
