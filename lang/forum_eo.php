@@ -57,7 +57,7 @@ forviŝi ilin poste).',
 	'forum_url' => 'URL:', # MODIF
 	'forum_valider' => 'Validigi tiun elekton',
 	'forum_voir_avant' => 'Vidi tiun ĉi mesaĝon antaŭ ol sendi ĝin', # MODIF
-	'forum_votre_email' => 'Via retpoŝtadreso:', # MODIF
+	'forum_votre_email' => 'Via retpoŝtadreso',
 	'forum_votre_nom' => 'Via nomo (aŭ salutnomo):', # MODIF
 	'forum_vous_enregistrer' => 'Por partopreni en ;
   tiu ĉi forumo, vi devas antaŭe registriĝi. Bonvolu
