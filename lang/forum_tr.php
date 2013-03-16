@@ -49,7 +49,9 @@ sonradan yok edebilir).',
 	'forum_ne_repondez_pas' => 'Bu e-postaya yanıt vermeyin, yanıt için forumu kullanın :', # MODIF
 	'forum_page_url' => '(Eğer mesajınız Web\'de yayınlanan bir makaleye, ya da daha fazla bilgi içeren bir sayfaya atıfta bulunuyorsa, lütfen buraya sayfanın başlığını ve URL adresini belirtiniz.)',
 	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
-	'forum_poste_par' => 'Makalenize @parauteur@ ileti gönderildi.',
+	'forum_poste_par' => 'Makalenize @parauteur@ ileti gönderildi.', # MODIF
+	'forum_poste_par_court' => 'Message posté@parauteur@.', # NEW
+	'forum_poste_par_generique' => 'Message posté@parauteur@ (@objet@ « @titre@ »).', # NEW
 	'forum_qui_etes_vous' => '<b>Sizi tanıyalım ?</b> (seçimlik)', # MODIF
 	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
 	'forum_texte' => 'İletinizin metni :', # MODIF
