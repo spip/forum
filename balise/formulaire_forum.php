@@ -56,8 +56,12 @@ function balise_FORMULAIRE_FORUM ($p) {
 	 */
 
 	$i_boucle  = $p->nom_boucle ? $p->nom_boucle : $p->id_boucle;
-	$_id_objet = $p->boucles[$i_boucle]->primary;
-	$_type     = $p->boucles[$i_boucle]->id_table;
+	if ($i_boucle) { // La balise peut aussi être utilisée hors boucle.
+		$_id_objet = $p->boucles[$i_boucle]->primary;
+		$_type     = $p->boucles[$i_boucle]->id_table;
+	} else {
+		$_id_objet = $_type = null;
+	}
 
 	/**
 	 * On essaye de trouver les forums en fonction de l'environnement
