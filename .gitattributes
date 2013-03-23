@@ -1,4 +1,5 @@
 * text=auto !eol
+/LISEZ_MOI.TXT -text
 action/editer_forum.php -text
 action/instituer_forum.php -text
 action/instituer_lot_forum.php -text
