@@ -178,7 +178,7 @@ function forum_fichier_tmp($arg){
  * @param int $id_objet
  * @param int $id_forum
  * @param int|array $ajouter_mot
- *   mots ajout�s coch�s par defaut
+ *   mots ajoutés cochés par defaut
  * @param $ajouter_groupe
  *   groupes ajoutables
  * @param $afficher_previsu
