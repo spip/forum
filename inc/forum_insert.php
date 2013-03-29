@@ -65,11 +65,11 @@ function inc_forum_insert_dist($objet, $id_objet, $id_forum, $force_statut = NUL
 
 
 
-	include_spip('base/objets');
 	include_spip('inc/filtres');
 	include_spip('inc/modifier');
 	$champs = objet_info('forum','champs_editables');
 	$c = collecter_requests($champs, array());
+	
 	$c['statut'] = 'off';
 	$c['objet'] = $objet;
 	$c['id_objet'] = $id_objet;
