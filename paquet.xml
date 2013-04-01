@@ -15,7 +15,7 @@
 
 	<traduire module="forum" reference="fr" gestionnaire="salvatore" />
 
-	<pipeline nom="forum_objets_depuis_env" />
+	<pipeline nom="forum_objets_depuis_env" action="" />
 	<pipeline nom="declarer_tables_objets_sql" inclure="base/forum.php" />
 	<pipeline nom="declarer_tables_interfaces" inclure="base/forum.php" />
 	<pipeline nom="autoriser" inclure="forum_autoriser.php" />
