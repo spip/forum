@@ -28,7 +28,7 @@
         <li class='editer saisie_url_site[ (#ENV**{erreurs}|table_valeur{url_site}|oui)erreur]'>
             <label for="url_site"><:forum:forum_url:></label>
             [<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{url_site})</span>]
-            <input type="[(#HTML5|?{email,url})]" class="text url" name="url_site" id="url_site" style="text-align: left;" dir="ltr" size="40" value="[(#ENV{url_site})]" autocapitalize="off" autocorrect="off" />
+            <input type="[(#HTML5|?{url,text})]" class="text url" name="url_site" id="url_site" style="text-align: left;" dir="ltr" size="40" value="[(#ENV{url_site})]" autocapitalize="off" autocorrect="off" />
         </li>
 })]
 	</ul>
