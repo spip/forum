@@ -4,6 +4,9 @@ var actiongroup={
 	countCurrent:0
 }
 
+/**
+ * Position fixe lors du scroll
+ */
 actiongroup.followScroll = function(){
 	var container = $("#actiongroup").parents('.box.raccourcis');
 	var limite = container.offset().top;
