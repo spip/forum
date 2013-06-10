@@ -3,6 +3,18 @@ var actiongroup={
 	countchecked:0,
 	countCurrent:0
 }
+
+actiongroup.followScroll = function(){
+	var container = $("#actiongroup").parents('.box.raccourcis');
+	var limite = container.offset().top;
+	$(window).scroll(function() {
+		if($(this).scrollTop() > limite)
+			container.css({'position': 'fixed', 'top': 0, 'width': container.width()+'px'});
+		if($(this).scrollTop() < limite)
+			container.css({'position': 'static', 'width': 'auto'});	
+	});
+}
+
 /**
  * Vider completement la selection
  */
@@ -192,4 +204,5 @@ actiongroup.activate = function(sel){
 			}
 		});
 	actiongroup.updateHtmlFromChecklist();
+	actiongroup.followScroll();
 }
