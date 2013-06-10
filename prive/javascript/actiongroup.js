@@ -3,7 +3,6 @@ var actiongroup={
 	countchecked:0,
 	countCurrent:0
 }
-
 /**
  * Position fixe lors du scroll
  */
@@ -17,7 +16,6 @@ actiongroup.followScroll = function(){
 			container.css({'position': 'static', 'width': 'auto'});	
 	});
 }
-
 /**
  * Vider completement la selection
  */
