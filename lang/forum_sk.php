@@ -92,7 +92,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  diskusných fór. Verejné diskusné fóra sa dajú povoliť na individuálnej báze
  pri článkoch; budú zakázané pre rubriky, novinky a pod.',
 	'info_envoi_forum' => 'Posielať príspevky z diskusného fóra príslušným autorom',
-	'info_fonctionnement_forum' => 'Operácia diskusného fóra:',
+	'info_fonctionnement_forum' => 'Nastavenie diskusného fóra:',
 	'info_forums_liees_mot' => 'Príspevky v diskusnom fóre s týmto slovom',
 	'info_gauche_suivi_forum_2' => 'Stránka na <i>sledovanie diskusných fór</i> je nástroj na riadenie vašej stránky (nie diskusií alebo úprav). Zobrazuje všetky príspevky do diskusných fór (tak na verejnej stránke, ako aj v súkromnej zóne) a umožňuje vám o týchto príspevkoch rozhodovať.',
 	'info_liens_syndiques_3' => 'diskusné fóra',
