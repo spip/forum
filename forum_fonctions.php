@@ -34,7 +34,7 @@ include_spip('public/forum');
  *      </p>]
  *      ```
  *
- * @filtre url_rss_forum
+ * @filtre url_reponse_forum
  * @see balise_PARAMETRES_FORUM_dist()
  * 
  * @param string $parametres
