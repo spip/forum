@@ -34,7 +34,7 @@ include_spip('public/forum');
  *      </p>]
  *      ```
  *
- * @filtre url_reponse_forum
+ * @filtre
  * @see balise_PARAMETRES_FORUM_dist()
  * 
  * @param string $parametres
@@ -52,7 +52,7 @@ function filtre_url_reponse_forum($parametres) {
  * Attention : appliqué à un `#PARAMETRES_FORUM` complexe (`id_article=x&id_forum=y`)
  * ça retourne une URL de suivi du thread `y` (que le thread existe ou non)
  *
- * @filtre url_rss_forum
+ * @filtre
  * @see balise_PARAMETRES_FORUM_dist()
  * 
  * @param string $param

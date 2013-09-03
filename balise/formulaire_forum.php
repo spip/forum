@@ -32,7 +32,7 @@ include_spip('inc/forum');
  * `$afficher_groupe[]` est définie dans le fichier d'appel, et si la table
  * de référence est OK, la liste des mots-clés est alors proposée.
  * 
- * @balise FORMULAIRE_FORUM
+ * @balise
  * @link http://www.spip.net/3969 Balise `#FORMULAIRE_FORUM`
  * @link http://www.spip.net/1827 Les formulaires
  * @example
