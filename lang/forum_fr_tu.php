@@ -38,8 +38,6 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum' => 'Forum',
 	'forum_acces_refuse' => 'Tu n\'as plus accès à ces forums.',
 	'forum_attention_dix_caracteres' => '<b>Attention !</b> ton message doit contenir au moins dix caractères.',
-	'forum_attention_message_non_poste' => 'Attention, vous n\'avez pas posté votre message !', # NEW
-	'forum_attention_nb_caracteres_mini' => '<b>Attention !</b> votre message doit contenir au moins @min@ caractères.', # NEW
 	'forum_attention_trois_caracteres' => '<b>Attention !</b> ton titre doit contenir au moins trois caractères.',
 	'forum_attention_trop_caracteres' => '<b>Attention !</b> ton message est trop long (@compte@ caractères) : pour pouvoir être enregistré, il ne doit pas dépasser @max@ caractères.', # MODIF
 	'forum_avez_selectionne' => 'Tu as sélectionné :',
@@ -47,17 +45,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Ce forum est modéré à priori : ta contribution n\'apparaîtra qu\'après avoir été validée par un administrateur du site.', # MODIF
 	'forum_lien_hyper' => '<b>Lien hypertexte</b> (optionnel)', # MODIF
-	'forum_message' => 'Votre message', # NEW
 	'forum_message_definitif' => 'Message définitif : envoyer au site',
 	'forum_message_trop_long' => 'Ton message est trop long. La taille maximale est de 20000 caractères.', # MODIF
 	'forum_ne_repondez_pas' => 'Ne réponds pas à ce mail, mais sur le forum à l\'adresse suivante:',
 	'forum_page_url' => '(Si ton message se réfère à un article publié sur le Web, ou à une page fournissant plus d\'informations, indique ci-après le titre de la page et son adresse.)',
-	'forum_permalink' => 'Lien permanent vers le commentaire', # NEW
 	'forum_poste_par' => 'Message posté@parauteur@ à la suite de ton article « @titre@ ».', # MODIF
-	'forum_poste_par_court' => 'Message posté@parauteur@.', # NEW
-	'forum_poste_par_generique' => 'Message posté@parauteur@ (@objet@ « @titre@ »).', # NEW
 	'forum_qui_etes_vous' => '<b>Qui es-tu ?</b> (optionnel)', # MODIF
-	'forum_saisie_texte_info' => 'Ce formulaire accepte les raccourcis SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> et le code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Pour créer des paragraphes, laissez simplement des lignes vides.', # NEW
 	'forum_texte' => 'Texte de ton message :', # MODIF
 	'forum_titre' => 'Titre :', # MODIF
 	'forum_url' => 'URL :', # MODIF
@@ -111,7 +104,6 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_pas_de_forum' => 'pas de forum',
 	'info_question_visiteur_ajout_document_forum' => 'Si tu souhaites autoriser les visiteurs à joindre des documents (images, sons...) à leurs messages de forums, indique ci-dessous la liste des extensions de documents autorisés pour les forums (ex: gif, jpg, png, mp3).', # MODIF
 	'info_question_visiteur_ajout_document_forum_format' => 'Si tu souhaites autoriser tous les types de documents considérés comme fiables par SPIP, mettre une étoile. Pour ne rien autoriser, ne rien indiquer', # MODIF
-	'info_selectionner_message' => 'Sélectionner les messages :', # NEW
 	'interface_formulaire' => 'Interface formulaire',
 	'interface_onglets' => 'Interface avec onglets',
 	'item_activer_forum_administrateur' => 'Activer le forum des administrateurs',
@@ -122,13 +114,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'item_non_config_forums_prive_objets' => 'Désactiver ces forums',
 
 	// L
-	'label_selectionner' => 'Sélectionner :', # NEW
 	'lien_reponse_article' => 'Réponse à l\'article',
 	'lien_reponse_breve_2' => 'Réponse à la brève',
-	'lien_reponse_message' => 'Réponse au message', # NEW
 	'lien_reponse_rubrique' => 'Réponse à la rubrique',
 	'lien_reponse_site_reference' => 'Réponse au site référencé :', # MODIF
-	'lien_vider_selection' => 'Vider la selection', # NEW
 
 	// M
 	'messages_aucun' => 'Aucun',
@@ -172,7 +161,6 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_forum' => 'Forum',
 	'titre_forum_suivi' => 'Suivi des forums',
 	'titre_page_forum_suivi' => 'Suivi des forums',
-	'titre_selection_action' => 'Sélection', # NEW
 	'tout_voir' => '>Voir tous les messages',
 
 	// V
