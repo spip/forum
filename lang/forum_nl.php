@@ -41,7 +41,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trois_caracteres' => '<b>Opgelet!</b> : je bericht moet minstens 3 tekens bevatten.',
 	'forum_attention_trop_caracteres' => '<b>Opgelet !</b> uw bericht is te lang (@compte@ karakters) : om opgeslagen te worden, mag het niet meer dan @max@ karakters tellen.',
 	'forum_avez_selectionne' => 'Je hebt gekozen:',
-	'forum_cliquer_retour' => 'Klik <a href=\'@retour_forum@\'>hier</a> om door te gaan.',
+	'forum_cliquer_retour' => 'Klik <a href=’@retour_forum@’>hier</a> om door te gaan.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Dit forum wordt vooraf gemodereerd: je bijdrage zal pas verschijnen nadat een redacteur van de website het heeft goedgekeurd.',
 	'forum_lien_hyper' => 'webverwijzing',

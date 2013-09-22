@@ -31,14 +31,14 @@ sonradan yok edebilir).',
 	'forum_attention_trois_caracteres' => '<b>Dikkat !</b> başlığınız üç karakterden kısa.',
 	'forum_attention_trop_caracteres' => '<b>Dikkat !</b> mesajınız çok uzun (@compte@ caractères) : kaydedilebilmesi için @max@ karakteri aşmamalı.', # MODIF
 	'forum_avez_selectionne' => 'Şunu seçtiniz :',
-	'forum_cliquer_retour' => 'Devam etmek için <a href=\'@retour_forum@\'>buraya tıklayınız</a>.',
+	'forum_cliquer_retour' => 'Devam etmek için <a href=’@retour_forum@’>buraya tıklayınız</a>.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Bu forum önceden onayla yönetilmektedir : katkınız ancak bir yönetici tarafından onaylandıktan sonra görülebilecektir.', # MODIF
 	'forum_lien_hyper' => '<b>Hipermetin bağı</b> (seçimlik)', # MODIF
 	'forum_message_definitif' => 'İletinin son hali : siteye gönder',
 	'forum_message_trop_long' => 'İletiniz çok uzun. Bir ileti en fazla 20000 karakter içerebilir.', # MODIF
 	'forum_ne_repondez_pas' => 'Bu e-postaya yanıt vermeyin, yanıt için forumu kullanın :', # MODIF
-	'forum_page_url' => '(Eğer mesajınız Web\'de yayınlanan bir makaleye, ya da daha fazla bilgi içeren bir sayfaya atıfta bulunuyorsa, lütfen buraya sayfanın başlığını ve URL adresini belirtiniz.)',
+	'forum_page_url' => '(Eğer mesajınız Web’de yayınlanan bir makaleye, ya da daha fazla bilgi içeren bir sayfaya atıfta bulunuyorsa, lütfen buraya sayfanın başlığını ve URL adresini belirtiniz.)',
 	'forum_poste_par' => 'Makalenize @parauteur@ ileti gönderildi.', # MODIF
 	'forum_qui_etes_vous' => '<b>Sizi tanıyalım ?</b> (seçimlik)', # MODIF
 	'forum_texte' => 'İletinizin metni :', # MODIF
@@ -62,7 +62,7 @@ sonradan yok edebilir).',
 	'icone_valider_message' => 'İletiyi onayla',
 	'info_activer_forum_public' => 'Kamu forumlarını çalıştırmak için, lütfen varsayılan bir yönetim kipi seçiniz :', # MODIF
 	'info_appliquer_choix_moderation' => 'Bu yönetim seçeneğinin uygulanması :',
-	'info_config_forums_prive' => 'Sitenin özel alanında bir çok farklı tipteki forumu aktive edebilirsiniz  :', # MODIF
+	'info_config_forums_prive' => 'Sitenin özel alanında bir çok farklı tipteki forumu aktive edebilirsiniz :', # MODIF
 	'info_config_forums_prive_admin' => 'Site yöneticilierine ayrılmış bir forum :',
 	'info_config_forums_prive_global' => 'Tüm yazarlara açık genel forum :',
 	'info_config_forums_prive_objets' => 'Her makalenin, kısa naberin ve atıfta bulunulan sitenin altında bir forum, vs. :',

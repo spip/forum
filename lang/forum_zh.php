@@ -31,7 +31,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_dix_caracteres' => '<b>警告!</b> 您的消息少于十个字符.', # MODIF
 	'forum_attention_trois_caracteres' => '<b>警告!</b> 您的标题少于三个字符.', # MODIF
 	'forum_avez_selectionne' => '您已选择:',
-	'forum_cliquer_retour' => '单击  <a href=\'@retour_forum@\'>这里</a> 继续.',
+	'forum_cliquer_retour' => '单击  <a href=’@retour_forum@’>这里</a> 继续.',
 	'forum_forum' => '论坛',
 	'forum_info_modere' => '论坛是预缓冲的: 您的投稿只有被站点管理员确认才能显示.', # MODIF
 	'forum_lien_hyper' => '<b>超链接</b> (可选)', # MODIF

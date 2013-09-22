@@ -42,7 +42,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trois_caracteres' => '<b>Upozornenie!</b> Názov musí mať aspoň 3 znaky.',
 	'forum_attention_trop_caracteres' => '<b>Pozor!</b> váš príspevok je pridlhý (@compte@ znamkov): aby ste ho mohli uložiť, príspevok nesmie mať viac ako @max@ znakov.',
 	'forum_avez_selectionne' => 'Vybrali ste:',
-	'forum_cliquer_retour' => 'Kliknite <a href=\'@retour_forum@\'>sem,</a> aby ste mohli pokračovať.',
+	'forum_cliquer_retour' => 'Kliknite <a href=’@retour_forum@’>sem,</a> aby ste mohli pokračovať.',
 	'forum_forum' => 'diskusné fórum',
 	'forum_info_modere' => 'Toto diskusné fórum sa kontroluje pred zverejnením: váš príspevok sa zobrazí až potom, čo ho potvrdí administrátor stránky.',
 	'forum_lien_hyper' => 'Hypertextový odkaz',

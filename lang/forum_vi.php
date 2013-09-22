@@ -26,7 +26,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trois_caracteres' => '<b>Cảnh báo!</b> Tựa đề quá ngắn - Phải hơn 3 mẫu tự.',
 	'forum_attention_trop_caracteres' => '<b>Cảnh báo !</b> nội dung thư tín của bạn quá dài (@compte@ mẫu tự) : để có thể lưu trữ, độ dài của nội dung thư tín không được quá @max@ mẫu tự.', # MODIF
 	'forum_avez_selectionne' => 'Bạn đã chọn:',
-	'forum_cliquer_retour' => 'Bấm <a href=\'@retour_forum@\'>vô đây</a> để tiếp tục.',
+	'forum_cliquer_retour' => 'Bấm <a href=’@retour_forum@’>vô đây</a> để tiếp tục.',
 	'forum_forum' => 'diễn đàn',
 	'forum_info_modere' => 'Diễn đàn này được điều hợp trước: bài vở đóng góp sẽ xuất hiện sau khi được quản trị viên chấp thuận.', # MODIF
 	'forum_lien_hyper' => '<b>Điểm nối hypertext</b> (không bắt buộc)', # MODIF

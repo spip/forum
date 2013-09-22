@@ -37,7 +37,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trois_caracteres' => '</b>! توجه<b> عنوانتان بايد بيش از سه حرف باشد. ',
 	'forum_attention_trop_caracteres' => '<b>توجه!</b>(@compte@ كاراكتر براي آنكه ثبت شود، نبايد از @max@ كاراكتر بيشتر شود. )  پيام شما زياد طولاني است ',
 	'forum_avez_selectionne' => ': شما انتخاب كرده ايد',
-	'forum_cliquer_retour' => ' </a> اينجا <a href=\'@retour_forum@\'>     را براى ادامه كليك كنيد     ',
+	'forum_cliquer_retour' => ' </a> اينجا <a href=’@retour_forum@’>     را براى ادامه كليك كنيد     ',
 	'forum_forum' => 'سخنگاه',
 	'forum_info_modere' => 'اين سخنگاه از پيش تعديل مي‌شود: نظر شما پيش از تأييد مديران سايت ظاهر نخواهد شد.',
 	'forum_lien_hyper' => ' پيوند هايپرتكست  ',

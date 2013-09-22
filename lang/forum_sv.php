@@ -29,7 +29,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trois_caracteres' => '<b>Varning!</b> Din rubrik måste vara minst tre tecken lång.',
 	'forum_attention_trop_caracteres' => '<b>Warning !</b> Ditt meddelande är för långt (@compte@ characters) : För att det skall kunna skrivas får meddelandet inte innehålla mer än @max@ tecken.', # MODIF
 	'forum_avez_selectionne' => 'Du har valt:',
-	'forum_cliquer_retour' => 'Klicka <a href=\'@retour_forum@\'>här</a> för att fortsätta.',
+	'forum_cliquer_retour' => 'Klicka <a href=’@retour_forum@’>här</a> för att fortsätta.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Detta forum är modererat: ditt bidrag kommer att synas först när någon moderator har godkänt  det.', # MODIF
 	'forum_lien_hyper' => '<b>Länk</b> (valfritt)', # MODIF
@@ -71,7 +71,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_liens_syndiques_7' => 'i väntan på validering.',
 	'info_mode_fonctionnement_defaut_forum_public' => 'Valt funktionssätt för de publika forumen',
 	'info_option_email' => 'When a site visitor posts a message to the forum
-		associated with an article, the article\'s authors can be
+		associated with an article, the article’s authors can be
 		informed of this message by e-mail. Do you wish to use this option?', # MODIF
 	'info_pas_de_forum' => 'inget forum',
 	'info_question_visiteur_ajout_document_forum' => 'Do you wish to authorise visitors to attach documenst (images, sound files, ...) to their forum messages?', # MODIF

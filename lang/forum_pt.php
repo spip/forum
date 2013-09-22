@@ -40,7 +40,7 @@ utilizadores devem ter uma assinatura ao fornecer o seu endereço e-mail antes d
 	'forum_attention_trois_caracteres' => '<b>Atenção !</b> o seu título deve conter pelo menos três carácteres.',
 	'forum_attention_trop_caracteres' => '<b>Atenção !</b> A sua mensagem é demasiado longa (@compte@ caracteres) : para poder ser guardada não pode conter mais de @max@ caracteres.',
 	'forum_avez_selectionne' => 'Seleccionou :',
-	'forum_cliquer_retour' => 'Clique <a href=\'@retour_forum@\'>ici</a> para continuar.',
+	'forum_cliquer_retour' => 'Clique <a href=’@retour_forum@’>ici</a> para continuar.',
 	'forum_forum' => 'fórum',
 	'forum_info_modere' => 'Este fórum é moderado antes da publicação : a sua contribuição só aparecerá depois de ser validada por um administrador do sítio.',
 	'forum_lien_hyper' => '<b>Link hipertexto</b> (opcional)',

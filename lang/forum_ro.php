@@ -31,7 +31,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trois_caracteres' => '<b>Atenţie !</b> titlul dumneavoastră trebuie să conţină cel puţin trei caractere.',
 	'forum_attention_trop_caracteres' => '<b>Atenţie !</b> mesajul dumneavoastră este prea lung(@compte@ caractere) : pentru a-l putea înregistra, mesajul nu trebuie să depăşească @max@ caractere.', # MODIF
 	'forum_avez_selectionne' => 'Aţi selecţionat :',
-	'forum_cliquer_retour' => 'Faceţi click <a href=\'@retour_forum@\'>aici</a> pentru a continua.',
+	'forum_cliquer_retour' => 'Faceţi click <a href=’@retour_forum@’>aici</a> pentru a continua.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Acest forum este moderat: contribuţia dumneavoastră nu va apare decât după ce va fi validată de către un administrator al site-ului.', # MODIF
 	'forum_lien_hyper' => '<b>Legătură hipertext</b> (opţională)', # MODIF

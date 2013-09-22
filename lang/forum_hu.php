@@ -30,7 +30,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trois_caracteres' => '<b>Vigyázat !</b> A címnek legalább három karaktert kell tartalmaznia.',
 	'forum_attention_trop_caracteres' => '<b>Figyelem !</b> az üzenete túl hosszú (@compte@ karakter) : legfeljebb @max@ karakterből állhat.', # MODIF
 	'forum_avez_selectionne' => 'Kijelölt :',
-	'forum_cliquer_retour' => 'Kattintson <a href=\'@retour_forum@\'>ide</a> a folytatáshoz.',
+	'forum_cliquer_retour' => 'Kattintson <a href=’@retour_forum@’>ide</a> a folytatáshoz.',
 	'forum_forum' => 'fórum',
 	'forum_info_modere' => 'Ez a fórum előre moderált : az Ön hozzászólása csak azután jelenik meg, hogy a honlap egyik adminisztrátora jóváhagyta.', # MODIF
 	'forum_lien_hyper' => '<b>Hiperhivatkozás</b> (választható)', # MODIF

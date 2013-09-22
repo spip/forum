@@ -8,7 +8,7 @@ if (!defined('_ECRIRE_INC_VERSION')) return;
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// B
-	'bouton_radio_articles_futurs' => 'basta ai articles futurs (minga d\'accion sus la basa de donadas).',
+	'bouton_radio_articles_futurs' => 'basta ai articles futurs (minga d’accion sus la basa de donadas).',
 	'bouton_radio_articles_tous' => 'ai articles toi sensa excepcion',
 	'bouton_radio_articles_tous_sauf_forum_desactive' => 'a toi lu articles, exceptat aquelu que lo sieu forum es desactivat.',
 	'bouton_radio_enregistrement_obligatoire' => 'Registrament obligatòri (lu
@@ -31,14 +31,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_dix_caracteres' => '<b>Atencion!</b> lo vòstre messatge deu tenir aumens dètz caractèrs.',
 	'forum_attention_trois_caracteres' => '<b>Atencion!</b> lo vòstre títol deu tenir aumens tres caractèrs.',
 	'forum_avez_selectionne' => 'Avètz seleccionat:',
-	'forum_cliquer_retour' => 'Clicatz <a href=\'@retour_forum@\'>aicí</a> per contunhar.',
+	'forum_cliquer_retour' => 'Clicatz <a href=’@retour_forum@’>aicí</a> per contunhar.',
 	'forum_forum' => 'forum',
-	'forum_info_modere' => 'Aquest forum es moderat a priòri: la vòstra contribucion pareisserà basta après qu\'un administrator dau sit l\'auga validada.', # MODIF
+	'forum_info_modere' => 'Aquest forum es moderat a priòri: la vòstra contribucion pareisserà basta après qu’un administrator dau sit l’auga validada.', # MODIF
 	'forum_lien_hyper' => '<b>Ligam ipertèxt</b> (opcionau)', # MODIF
 	'forum_message_definitif' => 'Messatge definitiu: mandar au sit',
 	'forum_message_trop_long' => 'Lo vòstre messatge es tròup lòng. La longor maximala es de 20 000 caractèrs.', # MODIF
-	'forum_ne_repondez_pas' => 'Non respondatz a aquel e-mail mas per lo forum a l\'adreiça seguenta: ', # MODIF
-	'forum_page_url' => '(Se lo vòstre messatge si referisse a un article publicat per lo web, ò a una pàgina que done mai d\'informacions, podètz marcar çai sota lo títol de la pàgina e la sieu adreiça.)',
+	'forum_ne_repondez_pas' => 'Non respondatz a aquel e-mail mas per lo forum a l’adreiça seguenta: ', # MODIF
+	'forum_page_url' => '(Se lo vòstre messatge si referisse a un article publicat per lo web, ò a una pàgina que done mai d’informacions, podètz marcar çai sota lo títol de la pàgina e la sieu adreiça.)',
 	'forum_poste_par' => 'Messatge poste@parauteur@ que fa seguda au vòstre article.', # MODIF
 	'forum_qui_etes_vous' => '<b>Cu siatz?</b> (opcionau)', # MODIF
 	'forum_texte' => 'Tèxt dau vòstre messatge:', # MODIF
@@ -49,10 +49,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_votre_email' => 'La vòstra adreiça e-mail:', # MODIF
 	'forum_votre_nom' => 'Lo vòstre nom (ò pseudonim):', # MODIF
 	'forum_vous_enregistrer' => 'Per participar a
-  aqueu forum, d\'en primier vos cau registrar. Mercé
-  de marcar çai sota l\'identificant personau qu\'avètz recebut.
+  aqueu forum, d’en primier vos cau registrar. Mercé
+  de marcar çai sota l’identificant personau qu’avètz recebut.
  Se non siatz registrat/ada, avètz de',
-	'forum_vous_inscrire' => 'v\'inscriure.',
+	'forum_vous_inscrire' => 'v’inscriure.',
 
 	// I
 	'icone_poster_message' => 'Postar un messatge',
@@ -62,10 +62,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_valider_message' => 'Validar aqueu messatge',
 	'info_activer_forum_public' => '<i>Per activar lu forums publics, vorgatz chausir lo sieu mòde de moderacion predefinit:</i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Aplicar aquela chausida de moderacion:',
-	'info_desactiver_forum_public' => 'Desactivar l\'utilizacion dei forums publics. Lu forums publics porràn èstre autorizats au cas per cas sobre lu articles; seràn proïbits sobre li rubricas, brèvas, etc.',
+	'info_desactiver_forum_public' => 'Desactivar l’utilizacion dei forums publics. Lu forums publics porràn èstre autorizats au cas per cas sobre lu articles; seràn proïbits sobre li rubricas, brèvas, etc.',
 	'info_envoi_forum' => 'Mandadís dei forums ai autors dei articles',
 	'info_fonctionnement_forum' => 'Foncionament dau forum:',
-	'info_gauche_suivi_forum_2' => 'La pàgina de <i>segut dei forums</i> es una aisina de gestion dau vòstre sit (mas non es un espaci per discutir ò per redigir). Aficha toti li contribucions dau forum public d\'aquel article e vos permete de gerir aqueli contribucions.', # MODIF
+	'info_gauche_suivi_forum_2' => 'La pàgina de <i>segut dei forums</i> es una aisina de gestion dau vòstre sit (mas non es un espaci per discutir ò per redigir). Aficha toti li contribucions dau forum public d’aquel article e vos permete de gerir aqueli contribucions.', # MODIF
 	'info_liens_syndiques_3' => 'forums',
 	'info_liens_syndiques_4' => 'son',
 	'info_liens_syndiques_5' => 'forum',
@@ -73,14 +73,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_liens_syndiques_7' => 'en espèra de validacion',
 	'info_mode_fonctionnement_defaut_forum_public' => 'Mòde de foncionament predefinit dei forums publics',
 	'info_option_email' => 'Quora un vesitaire dau sit manda un messatge nòu au forum
- associat a un article, se\'n pòu avisar lu autors
- de l\'article per e-mail. Desiratz d\'utilizar aquela opcion?', # MODIF
+ associat a un article, se’n pòu avisar lu autors
+ de l’article per e-mail. Desiratz d’utilizar aquela opcion?', # MODIF
 	'info_pas_de_forum' => 'Minga de forum',
 	'item_activer_forum_administrateur' => 'Activar lo forum dei administrators',
 	'item_desactiver_forum_administrateur' => 'Desactivar lo forum dei administrators',
 
 	// L
-	'lien_reponse_article' => 'Respòsta a l\'article',
+	'lien_reponse_article' => 'Respòsta a l’article',
 	'lien_reponse_breve_2' => 'Respòsta a la brèva',
 	'lien_reponse_rubrique' => 'Respòsta a la rubrica',
 	'lien_reponse_site_reference' => 'Respòsta au sit referenciat:', # MODIF

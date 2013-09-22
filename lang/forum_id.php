@@ -32,7 +32,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trois_caracteres' => '<b>Peringatan!</b> Judul anda hendaknya terdiri dari tiga karakter atau lebih.',
 	'forum_attention_trop_caracteres' => '<b>Peringatan !</b> pesan anda terlalu panjang (@compte@ karakter) : untuk dapat menyimpannya, pesan tidak boleh lebih dari @max@ karakter.', # MODIF
 	'forum_avez_selectionne' => 'Anda telah memilih:',
-	'forum_cliquer_retour' => 'Klik  <a href=\'@retour_forum@\'>di sini</a> untuk lanjut.',
+	'forum_cliquer_retour' => 'Klik  <a href=’@retour_forum@’>di sini</a> untuk lanjut.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Forum ini telah dimoderasi: kontribusi anda hanya akan muncul setelah divalidasi oleh administrator situs.', # MODIF
 	'forum_lien_hyper' => '<b>Tautan web</b> (opsional)', # MODIF

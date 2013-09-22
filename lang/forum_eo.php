@@ -31,24 +31,24 @@ forviŝi ilin poste).',
 	'forum_attention_trois_caracteres' => '<b>Atentu !</b> via titolo devas enhavi almenaŭ tri signojn.',
 	'forum_attention_trop_caracteres' => '<b>Atentu !</b> via mesaĝo estas tro longa (@compte@ signoj) : por esti registrita, ĝi ne preteratingu @max@ signojn.', # MODIF
 	'forum_avez_selectionne' => 'Vi selektis :',
-	'forum_cliquer_retour' => 'Musklaku <a href=\'@retour_forum@\'>ĉi tie</a> por daŭrigi.',
+	'forum_cliquer_retour' => 'Musklaku <a href=’@retour_forum@’>ĉi tie</a> por daŭrigi.',
 	'forum_forum' => 'forumo',
-	'forum_info_modere' => 'Tiu ĉi forumo estas apriore moderigata: via kontribuo aperos nur post validigo far de mastrumanto de la forumo.', # MODIF
+	'forum_info_modere' => 'Tiu ĉi forumo estas apriore moderigata : via kontribuo aperos nur post validigo far de mastrumanto de la forumo.', # MODIF
 	'forum_lien_hyper' => '<b>Hiperligo</b> (nedeviga)', # MODIF
-	'forum_message_definitif' => 'Definitiva mesaĝo: sendu al la forumo',
+	'forum_message_definitif' => 'Definitiva mesaĝo : sendu al la forumo',
 	'forum_message_trop_long' => 'Via mesaĝo estas tro longa. La maksimuma longeco estas 20.000 signojn.', # MODIF
-	'forum_ne_repondez_pas' => 'Ne respondu al tiu ĉi retletero, sed en la forumo ĉe la jena adreso:', # MODIF
+	'forum_ne_repondez_pas' => 'Ne respondu al tiu ĉi retletero, sed en la forumo ĉe la jena adreso :', # MODIF
 	'forum_page_url' => '(Se via mesaĝo rilatas al artikolo publikigita ĉe la reto, aŭ al paĝo donanta pli da informoj, bonvolu indiki ĉi-poste la titolon de la paĝo kaj ties ret-adreson.)',
-	'forum_poste_par' => 'Mesaĝo posté@parauteur@ reage al via artikolo « @titre@ ».', # MODIF
-	'forum_qui_etes_vous' => '<b>Kiu vi estas?</b> (nedeviga)', # MODIF
-	'forum_texte' => 'Teksto de via mesaĝo:', # MODIF
-	'forum_titre' => 'Titolo:', # MODIF
-	'forum_url' => 'URL:', # MODIF
+	'forum_poste_par' => 'Mesaĝo posté@parauteur@ reage al via artikolo « @titre@ ».', # MODIF
+	'forum_qui_etes_vous' => '<b>Kiu vi estas ?</b> (nedeviga)', # MODIF
+	'forum_texte' => 'Teksto de via mesaĝo :', # MODIF
+	'forum_titre' => 'Titolo :', # MODIF
+	'forum_url' => 'URL :', # MODIF
 	'forum_valider' => 'Validigi tiun elekton',
 	'forum_voir_avant' => 'Vidi tiun ĉi mesaĝon antaŭ ol sendi ĝin', # MODIF
 	'forum_votre_email' => 'Via retpoŝtadreso',
-	'forum_votre_nom' => 'Via nomo (aŭ salutnomo):', # MODIF
-	'forum_vous_enregistrer' => 'Por partopreni en ;
+	'forum_votre_nom' => 'Via nomo (aŭ salutnomo) :', # MODIF
+	'forum_vous_enregistrer' => 'Por partopreni en ;
   tiu ĉi forumo, vi devas antaŭe registriĝi. Bonvolu
   indiki ĉi-sube la personan ensalutilon kiu estis
   sendita al vi. Se vi ne estas registrita, vi devas',
@@ -61,7 +61,7 @@ forviŝi ilin poste).',
 	'icone_supprimer_message' => 'Forigi tiun mesaĝon',
 	'icone_valider_message' => 'Validigi tiun mesaĝon',
 	'info_activer_forum_public' => '<i>Por aktivigi la publikajn forumojn, bonvolu elekti ilian
- defaŭltan moderig-reĝimon:</i>', # MODIF
+ defaŭltan moderig-reĝimon :</i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Apliki tiun moderig-elekton :',
 	'info_config_forums_prive' => 'En la privata spaco de la retejo, vi povas aktivigi plurajn tipojn de forumoj :', # MODIF
 	'info_config_forums_prive_admin' => 'Forumo rezervita al retejaj mastrumantoj :',
@@ -69,7 +69,7 @@ forviŝi ilin poste).',
 	'info_config_forums_prive_objets' => 'Forumo sub ĉiu artikolo, fulminformo, referencigita retejo, ktp :',
 	'info_desactiver_forum_public' => 'Malaktivigi la uzon de la publikaj forumoj.
 La publikaj forumoj estos laŭkaze unu post la alia permesitaj
- laŭ la artikoloj; ili estos malpermesataj koncerne rubrikojn, fulm-informojn, ktp.',
+ laŭ la artikoloj ; ili estos malpermesataj koncerne rubrikojn, fulm-informojn, ktp.',
 	'info_envoi_forum' => 'Sendo de la forumoj al aŭtoroj de la artikoloj',
 	'info_fonctionnement_forum' => 'Funkciado de la forumo :',
 	'info_gauche_suivi_forum_2' => 'La paĝo pri <i>superkontrolo de la forumoj</i> estas mastrumilo por via retejo (kaj ne diskutejo aŭ redaktejo). Ĝi afiŝas ĉiujn kontribuaĵojn de la forumoj (de la publika spaco same kiel de la privata), kaj ebligas al vi mastrumi tiujn kontribuaĵojn.', # MODIF
@@ -83,7 +83,7 @@ La publikaj forumoj estos laŭkaze unu post la alia permesitaj
  ligitan kun artikolo, eblas retpoŝte sciigi pri tiu mesaĝo al la aŭtoroj de la artikolo. Indiku por ĉia forumo, ĉu tiun eblecon oni uzu.',
 	'info_pas_de_forum' => 'neniu forumo',
 	'info_question_visiteur_ajout_document_forum' => 'Ĉu vi permesas al vizitantoj kunsendi dokumentojn (bildojn, sonaĵojn...) al siaj forumaj mesaĝoj ?', # MODIF
-	'info_question_visiteur_ajout_document_forum_format' => 'Laŭkaze, bonvolu indiki ĉi-sube la liston de dosiernomaj sufiksoj permesitaj por la forumoj (ekz: gif, jpg, png, mp3).', # MODIF
+	'info_question_visiteur_ajout_document_forum_format' => 'Laŭkaze, bonvolu indiki ĉi-sube la liston de dosiernomaj sufiksoj permesitaj por la forumoj (ekz : gif, jpg, png, mp3).', # MODIF
 	'item_activer_forum_administrateur' => 'Aktivigi la forumon de la mastrumantoj',
 	'item_config_forums_prive_global' => 'Aktivigi la forumon de redaktantoj',
 	'item_config_forums_prive_objets' => 'Aktivigi tiujn ĉi forumojn',
@@ -95,7 +95,7 @@ La publikaj forumoj estos laŭkaze unu post la alia permesitaj
 	'lien_reponse_article' => 'Respondo al la artikolo',
 	'lien_reponse_breve_2' => 'Respondo al la fulm-informo',
 	'lien_reponse_rubrique' => 'Respondo al la rubriko',
-	'lien_reponse_site_reference' => 'Respondo al la referencigita retejo:', # MODIF
+	'lien_reponse_site_reference' => 'Respondo al la referencigita retejo :', # MODIF
 
 	// O
 	'onglet_messages_internes' => 'Internaj mesaĝoj',

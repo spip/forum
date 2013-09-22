@@ -37,7 +37,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trois_caracteres' => '<b>Achtung!</b> Ihr Titel muss mindestens drei Zeichen lang sein.',
 	'forum_attention_trop_caracteres' => '<b>Achtung!</b> Ihr Beitrag ist zu lang (@compte@ Zeichen). Damit er gespeichert werden kann, darf er maximal @max@ Zeichen lang sein.',
 	'forum_avez_selectionne' => 'Sie haben ausgewählt:',
-	'forum_cliquer_retour' => '<a href=\'@retour_forum@\'>Weiter</a>',
+	'forum_cliquer_retour' => '<a href=’@retour_forum@’>Weiter</a>',
 	'forum_forum' => 'Forum',
 	'forum_info_modere' => 'Dieses Forum ist moderiert. Ihr Beitrag erscheint erst nach Freischaltung durch einen Administrator der Website.',
 	'forum_lien_hyper' => 'Hyperlink',

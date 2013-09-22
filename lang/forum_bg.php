@@ -31,7 +31,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_dix_caracteres' => '<b>Предупреждение!</b> съобщението трябва да е по-дълго от 10 знака.',
 	'forum_attention_trois_caracteres' => '<b>Предупреждение!</b> полето Относно трябва да е по-дълго от 3 знака.',
 	'forum_avez_selectionne' => 'Вие сте избрали:',
-	'forum_cliquer_retour' => 'Изберете <a href=\'@retour_forum@\'>тук</a> за да продължите.',
+	'forum_cliquer_retour' => 'Изберете <a href=’@retour_forum@’>тук</a> за да продължите.',
 	'forum_forum' => 'форум',
 	'forum_info_modere' => 'Форумът се модерира предварително: Вашият принос ще се появи след одобрението от администратора.', # MODIF
 	'forum_lien_hyper' => '<b>Хипертекстова препратка</b> (по избор)', # MODIF

@@ -33,7 +33,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trois_caracteres' => '<b>Atención!</b> o seu título debe ter máis de tres caracteres.',
 	'forum_attention_trop_caracteres' => '<b>Atencion !</b> a mensaxe é demasiado longa (@compte@ caracteres) : para poder ser rexistrada, non debe sobrepasar  @max@ caracteres.', # MODIF
 	'forum_avez_selectionne' => 'Seleccionou :',
-	'forum_cliquer_retour' => 'Preme <a href=\'@retour_forum@\'>aquí</a> para seguir.',
+	'forum_cliquer_retour' => 'Preme <a href=’@retour_forum@’>aquí</a> para seguir.',
 	'forum_forum' => 'foro',
 	'forum_info_modere' => 'Este foro é moderado a priori : a súa contribución non aparecerá namentres non sexa aprobada por un administrador do web.', # MODIF
 	'forum_lien_hyper' => '<b>Ligazón de hipertexto</b> (opcional)', # MODIF
