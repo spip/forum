@@ -61,8 +61,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_suivi_forums' => 'Seguir/xestionar os foros',
 	'icone_supprimer_message' => 'Borrar esta mensaxe',
 	'icone_valider_message' => 'Validar a mensaxe',
-	'info_activer_forum_public' => '<i>Para activar os foros p&uacute;blicos, escolla o xeito
-  de moderaci&oacute;n predeterminado:</i>', # MODIF
+	'info_activer_forum_public' => '<i>Para activar os foros públicos, escolla o xeito
+  de moderación predeterminado:</i>', # MODIF
 	'info_appliquer_choix_moderation' => 'Aplicar esta opción de moderación:',
 	'info_config_forums_prive' => 'No espazo privado do web, pode activar varios tipos de foros :', # MODIF
 	'info_config_forums_prive_admin' => 'Un foro reservado aos administradores do web :',
@@ -73,7 +73,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
   nos artigos; serán prohibidos nos temas, nas breves, etc.',
 	'info_envoi_forum' => 'Envío de foros ás/ós autoras/es dos artigos',
 	'info_fonctionnement_forum' => 'Funcionamento do foro:',
-	'info_gauche_suivi_forum_2' => 'A p&acute;xina de <i>seguimento dos foros</i>  &eeacute; unha ferramenta de xesti&oacute;n do web (e non un espazo de discusi&oacute;n ou de redacci&oacute;n). Mostra todas as contribuci&oacute;ns nos foros do web, tanto as do espazo p&uacute;blico coma as do espazo privado e permite xestionar estas contribuci&oacute;ns.', # MODIF
+	'info_gauche_suivi_forum_2' => 'A p´xina de <i>seguimento dos foros</i>  &eeacute; unha ferramenta de xestión do web (e non un espazo de discusión ou de redacción). Mostra todas as contribucións nos foros do web, tanto as do espazo público coma as do espazo privado e permite xestionar estas contribucións.', # MODIF
 	'info_liens_syndiques_3' => 'foros',
 	'info_liens_syndiques_4' => 'están',
 	'info_liens_syndiques_5' => 'foro',
