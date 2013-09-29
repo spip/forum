@@ -31,7 +31,7 @@ forviŝi ilin poste).',
 	'forum_attention_trois_caracteres' => '<b>Atentu !</b> via titolo devas enhavi almenaŭ tri signojn.',
 	'forum_attention_trop_caracteres' => '<b>Atentu !</b> via mesaĝo estas tro longa (@compte@ signoj) : por esti registrita, ĝi ne preteratingu @max@ signojn.', # MODIF
 	'forum_avez_selectionne' => 'Vi selektis :',
-	'forum_cliquer_retour' => 'Musklaku <a href=’@retour_forum@’>ĉi tie</a> por daŭrigi.',
+	'forum_cliquer_retour' => 'Musklaku <a href=\'@retour_forum@\'>ĉi tie</a> por daŭrigi.',
 	'forum_forum' => 'forumo',
 	'forum_info_modere' => 'Tiu ĉi forumo estas apriore moderigata : via kontribuo aperos nur post validigo far de mastrumanto de la forumo.', # MODIF
 	'forum_lien_hyper' => '<b>Hiperligo</b> (nedeviga)', # MODIF

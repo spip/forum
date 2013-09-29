@@ -27,7 +27,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_dix_caracteres' => '<b>Advarsel!</b> dit indlæg er mindre end ti tegn langt.', # MODIF
 	'forum_attention_trois_caracteres' => '<b>Advarsel!</b> dit emne er mindre end tre tegn langt.', # MODIF
 	'forum_avez_selectionne' => 'Du har valgt:',
-	'forum_cliquer_retour' => 'Klik  <a href=’@retour_forum@’>her</a> for at fortsætte.',
+	'forum_cliquer_retour' => 'Klik <a href=\'@retour_forum@\'>her</a> for at fortsætte.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Dette forum benytter forhåndsgodkendelse: dit bidrag vil først blive offentliggjort, når det er godkendt af en administrator.', # MODIF
 	'forum_lien_hyper' => '<b>Hypertekst link</b> (valgfrit)', # MODIF

@@ -34,7 +34,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trois_caracteres' => '<b>Atenció!</b> el vostre títol ha de tenir almenys tres caràcters.',
 	'forum_attention_trop_caracteres' => '<b>Atenció!</b> el vostre missatge és massa llarg (@compte@ caràcters) : per a poder-vos enregistrar no pot sobrepassar els @max@ caràcters.', # MODIF
 	'forum_avez_selectionne' => 'Heu seleccionat:',
-	'forum_cliquer_retour' => 'Premeu <a href=’@retour_forum@’>ici</a> per continuar.',
+	'forum_cliquer_retour' => 'Premeu <a href=\'@retour_forum@\'>ici</a> per continuar.',
 	'forum_forum' => 'fòrum',
 	'forum_info_modere' => 'Aquest fòrum és moderat a priori: la seva contribució no es mostrarà fins que no hagi estat validada per l’administrador del lloc. ', # MODIF
 	'forum_lien_hyper' => '<b>Enllaç hipertext</b> (opcional)', # MODIF

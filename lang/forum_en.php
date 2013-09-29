@@ -39,7 +39,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trois_caracteres' => '<b>Warning!</b> Your title must be at least three characters long.',
 	'forum_attention_trop_caracteres' => '<b>Warning !</b> Your message is too long (@compte@ characters) to be saved, it cannot contain more than @max@ characters.',
 	'forum_avez_selectionne' => 'You have selected:',
-	'forum_cliquer_retour' => 'Click  <a href=’@retour_forum@’>here</a> to continue.',
+	'forum_cliquer_retour' => 'Click <a href=\'@retour_forum@\'>here</a> to continue.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'This forum is moderated before publication: your contribution will only appear after being validated by an administrator.',
 	'forum_lien_hyper' => 'Hypertext link',

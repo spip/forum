@@ -32,7 +32,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trois_caracteres' => '<b>Uwaga!</b> Twój temat powinien mieć conajmniej 3 znaki.',
 	'forum_attention_trop_caracteres' => '<b>Uwaga !</b> Twoja wiadomość jest za długa(@compte@ znaków) : aby mogła zostać przyjęta nie może przekraczać @max@ znaków.', # MODIF
 	'forum_avez_selectionne' => 'Wybrałeś:',
-	'forum_cliquer_retour' => 'Kliknij <a href=’@retour_forum@’>tutaj</a> aby kontynuować.',
+	'forum_cliquer_retour' => 'Kliknij <a href=\'@retour_forum@\'>tutaj</a> aby kontynuować.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'To forum jest moderowane : Twój wpis ukaże się dopiero po weryfikacji przez administratora strony.', # MODIF
 	'forum_lien_hyper' => '<b>Link</b> (opcjonalny)', # MODIF

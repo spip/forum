@@ -29,7 +29,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trois_caracteres' => '<b>Diwallit !</b> Teir arouezenn d’an nebeutañ a rank bezañ en ho titl.',
 	'forum_attention_trop_caracteres' => '<b>Diwallit !</b> re hir eo ho kemennadenn (@compte@ arouez) : arabat e vefe ouzhpenn @max@ arouezenn enni evit gallout bezañ kaset.', # MODIF
 	'forum_avez_selectionne' => 'Diuzet hoc’h eus :',
-	'forum_cliquer_retour' => 'Klikit <a href=’@retour_forum@’>amañ</a> evit kenderc’hel.',
+	'forum_cliquer_retour' => 'Klikit <a href=\'@retour_forum@\'>amañ</a> evit kenderc’hel.',
 	'forum_forum' => 'forom',
 	'forum_info_modere' => 'Habaskaet eo ar forom-mañ a-raok embann ar pennadoù : ne vo ket gwelet ho kemennadenn a-raok na vefe lennet hag asantet gant unan eus merourien al lec’hienn.', # MODIF
 	'forum_lien_hyper' => '<b>liamm gourskrid</b> (Diret)', # MODIF

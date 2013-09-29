@@ -26,7 +26,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trois_caracteres' => '<b>သတိပေးချက်!</b> သင့်ခေါင်းစဉ်သည် အနည်းဆုံး စာလုံး၃လုံးနှင့် အထက်ပါဝင်သင့်သည်',
 	'forum_attention_trop_caracteres' => '<b>သတိပေးချက် !</b> သင့်စာစောင် (@compte@ characters) သည် သိမ်းဆည်းရန် ရှည်လွန်းသည်၊ ​အများဆုံး စာလုံး @max@သာ ပါဝင်သင့်သည်', # MODIF
 	'forum_avez_selectionne' => 'သင်ရွေးချယ်ခဲ့ပြီးပြီ',
-	'forum_cliquer_retour' => 'ဤနေရာကို<a href=’@retour_forum@’>နှိပ်ပြီး</a>ဆက်သွားပါ',
+	'forum_cliquer_retour' => 'ဤနေရာကို <a href=\'@retour_forum@\'>နှိပ်ပြီး</a> ဆက်သွားပါ',
 	'forum_forum' => 'ဖိုရမ်',
 	'forum_info_modere' => 'ဤဖိုရမ်သည် အတည်ပြုချက်လိုအပ်​သည်၊ သင့်ပါဝင်ရေးသားမှုသည် ဆိုက်ကြီးကြပ်သူမှ အတည်ပြုပြီးရင် ပေါ်လာပါလိမ့်မည်', # MODIF
 	'forum_lien_hyper' => '<b>Hypertext ဆက်သွယ်မှု</b> (optional)', # MODIF

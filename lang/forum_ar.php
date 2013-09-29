@@ -43,7 +43,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trois_caracteres' => '<b>تحذير!</b> يجب أن يحتوي موضوعك على ثلاثة حروف على الأقل.',
 	'forum_attention_trop_caracteres' => '<b>تحذير!</b> رسالتك طويلة جداً (@compte@ حرف): لكي يتم تسجيلها، لا يجب ان تتعدى @max@ حرف.',
 	'forum_avez_selectionne' => 'لقد حددت:',
-	'forum_cliquer_retour' => 'انقر <a href=’@retour_forum@’>هنا</a> للمتابعة.',
+	'forum_cliquer_retour' => 'انقر <a href=\'@retour_forum@\'>هنا</a> للمتابعة.',
 	'forum_forum' => 'منتدى',
 	'forum_info_modere' => 'هذا المنتدى مراقب استباقياً: لن تظهر مشاركتك إلا بعد التصديق عليها من قبل أحد المدراء.',
 	'forum_lien_hyper' => 'رابط هايبرتكست',

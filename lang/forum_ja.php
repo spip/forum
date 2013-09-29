@@ -30,7 +30,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trois_caracteres' => '<b>警告 !</b> あなたの題名は長さが３文字以下です。',
 	'forum_attention_trop_caracteres' => '<b>‚²’ˆÓ !</b> ‚±‚ÌƒƒbƒZ[ƒW‚Í’·‰ß‚¬‚Ü‚·i@compte@ •¶ŽšjBƒƒbƒZ[ƒW‚ðo˜ ‚·‚é‚½‚ß‚É@max@•¶ŽšˆÈ‰º‚É‚µ‚Ä‰º‚³‚¢B', # MODIF
 	'forum_avez_selectionne' => 'あなたの選択:',
-	'forum_cliquer_retour' => '<a href=’@retour_forum@’>ここ</a> を押して続けて下さい。',
+	'forum_cliquer_retour' => '<a href=\'@retour_forum@\'>ここ</a> を押して続けて下さい。',
 	'forum_forum' => '掲示板',
 	'forum_info_modere' => 'この掲示板への投稿はあらかじめ検査されます: あなたの投稿は、サイトの管理者によって適性検査されてから表示されます。', # MODIF
 	'forum_lien_hyper' => '<b>リンク</b> (オプション)', # MODIF

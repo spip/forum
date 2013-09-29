@@ -28,7 +28,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trois_caracteres' => '<b>Tansyon pangar !</b> Lo non ou la doné nana mwin 3 karactèr-linprimri.Sa lé pa asé pou anrozistr ali.',
 	'forum_attention_trop_caracteres' => '<b>TANSYON@circ@ !</b> out’ mèzaz lé tro long’ (@compte@ karaktèr-linprimri)@circ@ : pour giny anrozistré, li doi pa fé pli dé @max@ karaktèr-linprimri', # MODIF
 	'forum_avez_selectionne' => 'Ou la swazi :',
-	'forum_cliquer_retour' => 'Klik <a href=’@retour_forum@’>tèrla</a> pour asévé.',
+	'forum_cliquer_retour' => 'Klik <a href=\'@retour_forum@\'>tèrla</a> pour asévé.',
 	'forum_forum' => 'forom kozman',
 	'forum_info_modere' => 'Forom kozman lé modéré-dovan : lé néséser inn komander la finn konfirm ali pour out kontribusyon i aparé an liyn.
 

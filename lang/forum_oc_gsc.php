@@ -31,7 +31,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_dix_caracteres' => '<b>Atencion!</b> lo vòste messatge que deu tiéner aumensh dètz caractèrs.',
 	'forum_attention_trois_caracteres' => '<b>Atencion!</b> lo vòste títol que deu tiéner aumensh de tres caractèrs.',
 	'forum_avez_selectionne' => 'Qu’avetz seleccionat:',
-	'forum_cliquer_retour' => 'Clicatz <a href=’@retour_forum@’>ací</a> tà contunhar.',
+	'forum_cliquer_retour' => 'Clicatz <a href=\'@retour_forum@\'>ací</a> tà contunhar.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Aqueste forum qu’ei moderat a priòri: la vòsta contribucion que pareisherà sonque après qu’un administrator deu sit l’aja validada.', # MODIF
 	'forum_lien_hyper' => '<b>Ligam ipertèxt</b> (opcionau)', # MODIF

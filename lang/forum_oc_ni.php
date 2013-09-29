@@ -29,7 +29,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trois_caracteres' => '<b>Dàida !</b> lo voastre titre deu aver au manco tres caractèrs.',
 	'forum_attention_trop_caracteres' => '<b>Atencion !</b> lo voastre messatge es tròp long (@compte@ caractèrs) : per si poder registrar, cau pas que passe @max@ caractèrs.', # MODIF
 	'forum_avez_selectionne' => 'Avètz seleccionat :',
-	'forum_cliquer_retour' => 'Clicatz <a href=’@retour_forum@’>aquí</a> per continuar.',
+	'forum_cliquer_retour' => 'Clicatz <a href=\'@retour_forum@\'>aquí</a> per continuar.',
 	'forum_forum' => 'fòro',
 	'forum_info_modere' => 'Aqueu fòro es moderat à priòri : la voastra contribucion apareisserà après èstre estada validada d’un administrator dau sit.', # MODIF
 	'forum_lien_hyper' => '<b>Ligam ipertèxt</b> (opcionau)', # MODIF

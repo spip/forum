@@ -29,7 +29,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trois_caracteres' => '<b>Varning!</b> Din rubrik måste vara minst tre tecken lång.',
 	'forum_attention_trop_caracteres' => '<b>Warning !</b> Ditt meddelande är för långt (@compte@ characters) : För att det skall kunna skrivas får meddelandet inte innehålla mer än @max@ tecken.', # MODIF
 	'forum_avez_selectionne' => 'Du har valt:',
-	'forum_cliquer_retour' => 'Klicka <a href=’@retour_forum@’>här</a> för att fortsätta.',
+	'forum_cliquer_retour' => 'Klicka <a href=\'@retour_forum@\'>här</a> för att fortsätta.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Detta forum är modererat: ditt bidrag kommer att synas först när någon moderator har godkänt  det.', # MODIF
 	'forum_lien_hyper' => '<b>Länk</b> (valfritt)', # MODIF

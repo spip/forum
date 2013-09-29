@@ -35,7 +35,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trois_caracteres' => '<b>Varování!</b> Název musí obsahovat minimálně deset znaků.',
 	'forum_attention_trop_caracteres' => '<b>Varování !</b> vaše zpráva je příliš dlouhá(@compte@ znaků) : aby jí bylo možné uložit, nesmí obsahovat více než  @max@ znaků.', # MODIF
 	'forum_avez_selectionne' => 'Zvolili jste:',
-	'forum_cliquer_retour' => 'Pokračujte klepnutím <a href=’@retour_forum@’>na tento odkaz</a>.',
+	'forum_cliquer_retour' => 'Pokračujte klepnutím <a href=\'@retour_forum@\'>na tento odkaz</a>.',
 	'forum_forum' => 'diskusní skupina',
 	'forum_info_modere' => 'Tato diskusní skupina je moderovaná: vaše příspěvky se zobrazí až po schválení správcem tohoto webu.', # MODIF
 	'forum_lien_hyper' => '<b>Hypertextový odkaz</b> (volitelné)', # MODIF

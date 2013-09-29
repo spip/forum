@@ -35,7 +35,7 @@ cancellarli successivamente).',
 	'forum_attention_trois_caracteres' => '<b>Attenzione!</b> il titolo deve contenere almeno tre caratteri.',
 	'forum_attention_trop_caracteres' => '<b>Attenzione!</b> il messaggio è troppo lungo (@compte@ caratteri): per poter essere registrato esso non deve essere più lungo di @max@ caratteri.', # MODIF
 	'forum_avez_selectionne' => 'Hai selezionato:',
-	'forum_cliquer_retour' => 'Clicca <a href=’@retour_forum@’>qui</a> per continuare.',
+	'forum_cliquer_retour' => 'Clicca <a href=\'@retour_forum@\'>qui</a> per continuare.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Questo forum è moderato a priori: il tuo contributo apparirà solo dopo essere stato approvato da un’amministratrice del sito.', # MODIF
 	'forum_lien_hyper' => '<b>Link ipertestuale</b> (opzionale)', # MODIF

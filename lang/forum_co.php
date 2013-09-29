@@ -32,7 +32,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trop_caracteres' => '<b>Attention !</b> U vostru messagiu hè troppu longu (@compte@ caràtteri) : pè pudè esse arregistratu, 
 	ùn deve superà @max@ caràtteri.', # MODIF
 	'forum_avez_selectionne' => 'Avete sceltu :',
-	'forum_cliquer_retour' => 'Cliccate <a href=’@retour_forum@’>quì</a> per cuntinuà.',
+	'forum_cliquer_retour' => 'Cliccate <a href=\'@retour_forum@\'>quì</a> per cuntinuà.',
 	'forum_forum' => 'foru',
 	'forum_info_modere' => 'Stu foru hè muderatu prima : u vostru cuntributu cumpariscerà solu dopu esse statu accunsentutu da un amministratore di u situ.', # MODIF
 	'forum_lien_hyper' => '<b>Lea ipertestu</b> (micca ubbligatoria)', # MODIF

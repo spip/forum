@@ -29,7 +29,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trois_caracteres' => '<b>​ប្រយ័ត្ន !</b> ចំណងជើង ​របស់​អ្នក ត្រូវ​តែមាន​ប្រវែង​យ៉ាងតិច ៣ អក្សរ។',
 	'forum_attention_trop_caracteres' => '<b>​ប្រយ័ត្ន​ !</b> សារ​របស់​អ្នក ​វែង​ពេក (@compte@ ​អក្សរ​) ៖ ដើម្បី​អាចត្រូវបាន​រក្សា​វា​ទុក, វាមិនត្រូវ លើសពី @max@ អក្សរ​។', # MODIF
 	'forum_avez_selectionne' => 'អ្នក​បាន ​ជ្រើសយក ៖',
-	'forum_cliquer_retour' => 'ចុច <a href=’@retour_forum@’>​ទី​នេះ​</a> ដើម្បី​បន្ដ ។',
+	'forum_cliquer_retour' => 'ចុច <a href=\'@retour_forum@\'>ទី​នេះ​</a> ដើម្បី​បន្ដ ។',
 	'forum_forum' => 'វេទិកា',
 	'forum_info_modere' => 'វេទិកា​នេះ​ ត្រូវ​បានសំរបសំរួល ​ជាដំបូង ៖ ការរួម​ចំណែក របស់​អ្នក ​នឹង​លេច​ចេញ​ តែ​បន្ទាប់ពី​ត្រូវ​បាន​​មានសុពលភាព ​ដោយ​អ្នកអភិបាលសៃថ៍។', # MODIF
 	'forum_lien_hyper' => '<b>តំណភ្ជាប់ ខ្ពស់</b> (​ជា​ជំរើស​)', # MODIF

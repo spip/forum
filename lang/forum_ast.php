@@ -35,7 +35,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trois_caracteres' => '<b>¡Atención!</b> el títulu tien que tener polo menos tres carauteres.',
 	'forum_attention_trop_caracteres' => '<b>¡Atención!</b> esti mensaxe ye enforma llargu (@compte@ carauteres): pa que pueda rexistrase, nun tien que pasar de @max@ carauteres.', # MODIF
 	'forum_avez_selectionne' => 'Seleicionasti:',
-	'forum_cliquer_retour' => 'Calca <a href=’@retour_forum@’>equí</a> pa continuar.',
+	'forum_cliquer_retour' => 'Calca <a href=\'@retour_forum@\'>equí</a> pa continuar.',
 	'forum_forum' => 'foru',
 	'forum_info_modere' => 'Esti foru ta llendáu de mano: la to aportación nun va apaecer fasta qu’un alministrador del sitiu nun-y de el preste.', # MODIF
 	'forum_lien_hyper' => '<b>Enllace d’hipertestu</b> (opcional)', # MODIF

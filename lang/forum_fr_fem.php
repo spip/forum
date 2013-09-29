@@ -43,7 +43,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trois_caracteres' => '<b>Attention !</b> votre titre doit contenir au moins trois caractères.',
 	'forum_attention_trop_caracteres' => '<b>Attention !</b> votre message est trop long (@compte@ caractères) pour pouvoir être enregistré, il ne doit pas dépasser @max@ caractères.',
 	'forum_avez_selectionne' => 'Vous avez sélectionné :',
-	'forum_cliquer_retour' => 'Cliquez <a href=’@retour_forum@’>ici</a> pour continuer.',
+	'forum_cliquer_retour' => 'Cliquez <a href=\'@retour_forum@\'>ici</a> pour continuer.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Ce forum est modéré a priori : votre contribution n’apparaîtra qu’après avoir été validée par une administratrice du site.',
 	'forum_lien_hyper' => 'Lien hypertexte',

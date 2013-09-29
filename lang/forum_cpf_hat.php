@@ -32,7 +32,7 @@ patisipasyon yo zitilizatè tout ke pa afiche sou sitwèb piblik si yon komandé
 	'forum_attention_trois_caracteres' => '<b>Atansyon !</b> Kouman i rele sit-la se mwen trwa lèt. Fôk w mèt trwa lèt omwen',
 	'forum_attention_trop_caracteres' => '<b>Atansyon !</b> mesaje a w se tro lon (@compte@ caractères) : fòk w respek @max@ karaktèr pou enskri ali.', # MODIF
 	'forum_avez_selectionne' => 'W te chwazi :',
-	'forum_cliquer_retour' => 'Klik <a href=’@retour_forum@’>isit</a> pou kontinye.',
+	'forum_cliquer_retour' => 'Klik <a href=\'@retour_forum@\'>isit</a> pou kontinye.',
 	'forum_forum' => 'fowom',
 	'forum_info_modere' => 'Fowom la se modéwé-avann : patisipasyon demoun ke aparèt sèlman apré yon komandèr  sit te valide ali.', # MODIF
 	'forum_lien_hyper' => '<b>Lyen ipèrtèks</b> (w pa oblijé)', # MODIF

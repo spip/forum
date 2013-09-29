@@ -37,7 +37,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trois_caracteres' => '<b>Opgepasst!</b> Ären Titel muss op mannst 3 Buschtawen hunn.',
 	'forum_attention_trop_caracteres' => '<b>Opgepasst!</b> Äre Message ass ze laang (@compte@ Buschtawen). Fir gespäichert ze ginn däerf e net méi wéi @max@ Buschtawen hunn.',
 	'forum_avez_selectionne' => 'Dir hutt gewielt:',
-	'forum_cliquer_retour' => '<a href=’@retour_forum@’>Hei klicken</a> fir weider.',
+	'forum_cliquer_retour' => '<a href=\'@retour_forum@\'>Hei klicken</a> fir weider.',
 	'forum_forum' => 'Forum',
 	'forum_info_modere' => 'Dëse Forum ass "à priori" moderéiert: äre Beitrag geet eréischt verëffentlecht wann e vun engem Administrateur vum Site bestätegt ass.',
 	'forum_lien_hyper' => 'Link',

@@ -31,7 +31,7 @@ sonradan yok edebilir).',
 	'forum_attention_trois_caracteres' => '<b>Dikkat !</b> başlığınız üç karakterden kısa.',
 	'forum_attention_trop_caracteres' => '<b>Dikkat !</b> mesajınız çok uzun (@compte@ caractères) : kaydedilebilmesi için @max@ karakteri aşmamalı.', # MODIF
 	'forum_avez_selectionne' => 'Şunu seçtiniz :',
-	'forum_cliquer_retour' => 'Devam etmek için <a href=’@retour_forum@’>buraya tıklayınız</a>.',
+	'forum_cliquer_retour' => 'Devam etmek için <a href=\'@retour_forum@\'>buraya tıklayınız</a>.',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Bu forum önceden onayla yönetilmektedir : katkınız ancak bir yönetici tarafından onaylandıktan sonra görülebilecektir.', # MODIF
 	'forum_lien_hyper' => '<b>Hipermetin bağı</b> (seçimlik)', # MODIF
