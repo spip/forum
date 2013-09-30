@@ -11,9 +11,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_articles_futurs' => 'pouze k budoucím článkům (žádná akce v databázi).',
 	'bouton_radio_articles_tous' => 'ke všem článkům bez výjimky.',
 	'bouton_radio_articles_tous_sauf_forum_desactive' => 'ke všem článkům s výjimkou těch, kde je vypnutá diskusní skupina.',
-	'bouton_radio_enregistrement_obligatoire' => 'Povinná registrace (uživatelé se musí
-  nejprve přihlásit zadáním své elektronické adresy
-  a teprve potom mohou zasílat své příspěvky).',
+	'bouton_radio_enregistrement_obligatoire' => 'Povinná registrace (uživatelé se musí nejprve přihlásit zadáním své elektronické adresy a teprve potom mohou zasílat své příspěvky).',
 	'bouton_radio_moderation_priori' => 'Moderovaná skupina (příspěvky
  budou zveřejněny až po schválení jedním
  ze správců).', # MODIF

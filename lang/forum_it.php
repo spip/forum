@@ -14,9 +14,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_articles_futurs' => 'solo agli articoli inseriti dopo questa modifica (nessuna modifica al database attuale).',
 	'bouton_radio_articles_tous' => 'a tutti gli articoli senza eccezioni.',
 	'bouton_radio_articles_tous_sauf_forum_desactive' => 'a tutti gli articoli salvo quelli per cui il forum è disattivato.',
-	'bouton_radio_enregistrement_obligatoire' => 'Registrazione obbligatoria (gli
-utenti devono abbonarsi fornendo il loro indirizzo email prima di
-poter inviare contributi).',
+	'bouton_radio_enregistrement_obligatoire' => 'Registrazione obbligatoria (gli utenti devono abbonarsi fornendo il loro indirizzo email prima di poter inviare contributi).',
 	'bouton_radio_moderation_priori' => 'Moderazione a priori (i
 contributi saranno pubblicati dopo validazione da parte degli
 amministratori).',

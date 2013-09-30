@@ -11,9 +11,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_articles_futurs' => 'untuk artikel yang akan dipublikasikan di masa depan saja (tidak ada aksi di database).',
 	'bouton_radio_articles_tous' => 'untuk semua artikel tanpa pengecualian.',
 	'bouton_radio_articles_tous_sauf_forum_desactive' => 'untuk semua artikel, terkecuali artikel yang forumnya dinonaktifkan.',
-	'bouton_radio_enregistrement_obligatoire' => 'Registrasi diperlukan (
-  pengguna harus mendaftarkan diri dengan memberikan alamat e-mailnya
-  sebelum dapat berkontribusi).',
+	'bouton_radio_enregistrement_obligatoire' => 'Registrasi diperlukan (pengguna harus mendaftarkan diri dengan memberikan alamat e-mailnya sebelum dapat berkontribusi).',
 	'bouton_radio_moderation_priori' => 'Moderasi awal (
  kontribusi hanya akan ditampilkan setelah validasi
  oleh administrator).', # MODIF

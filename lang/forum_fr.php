@@ -12,9 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_articles_futurs' => 'aux articles futurs uniquement (pas d’action sur la base de données).',
 	'bouton_radio_articles_tous' => 'à tous les articles sans exception.',
 	'bouton_radio_articles_tous_sauf_forum_desactive' => 'à tous les articles, sauf ceux dont le forum est désactivé.',
-	'bouton_radio_enregistrement_obligatoire' => 'Enregistrement obligatoire (les
-		utilisateurs doivent s’abonner en fournissant leur adresse e-mail avant de
-		pouvoir poster des contributions).',
+	'bouton_radio_enregistrement_obligatoire' => 'Enregistrement obligatoire (les utilisateurs doivent s’abonner en fournissant leur adresse email avant de pouvoir poster des contributions).',
 	'bouton_radio_moderation_priori' => 'Modération a priori (les
 	contributions ne s’affichent publiquement qu’après validation par les
 	administrateurs).',
@@ -105,7 +103,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_liens_titre' => 'Lien(s) contenu(s) dans le titre du message',
 	'info_mode_fonctionnement_defaut_forum_public' => 'Mode de fonctionnement par défaut des forums publics',
 	'info_nb_messages_forum' => '@nb@ messages de forum',
-	'info_option_email' => 'Lorsqu’un visiteur du site poste un nouveau message dans le forum associé à un article, les auteurs de l’article peuvent être prévenus de ce message par e-mail. Indiquer pour chaque type de forum s’il faut utiliser cette option.',
+	'info_option_email' => 'Lorsqu’un visiteur du site poste un nouveau message dans le forum associé à un article, les auteurs de l’article peuvent être prévenus de ce message par email. Indiquer pour chaque type de forum s’il faut utiliser cette option.',
 	'info_pas_de_forum' => 'pas de forum',
 	'info_question_visiteur_ajout_document_forum' => 'Si vous souhaitez autoriser les visiteurs à joindre des documents (images, sons…) à leurs messages de forum, indiquez ci-dessous la liste des extensions de documents autorisés pour les forums (ex : gif, jpg, png, mp3).',
 	'info_question_visiteur_ajout_document_forum_format' => 'Si vous souhaitez autoriser tous les types de documents considérés comme fiables par SPIP, mettez une étoile. Pour ne rien autoriser, n’indiquez rien.',
@@ -126,7 +124,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'lien_reponse_message' => 'Réponse au message',
 	'lien_reponse_rubrique' => 'Réponse à la rubrique',
 	'lien_reponse_site_reference' => 'Réponse au site référencé',
-	'lien_vider_selection' => 'Vider la selection',
+	'lien_vider_selection' => 'Vider la sélection',
 
 	// M
 	'messages_aucun' => 'Aucun',

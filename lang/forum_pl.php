@@ -11,9 +11,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_articles_futurs' => 'wyłącznie do przyszłych artykułów (brak działania na bazie danych).',
 	'bouton_radio_articles_tous' => 'do wszystkich artykułów bez wyjątków.',
 	'bouton_radio_articles_tous_sauf_forum_desactive' => 'do wszystkich artykułów z wyjątkiem tych z nieczynnym forum.',
-	'bouton_radio_enregistrement_obligatoire' => 'Obowiązkowa rejestracja (
-  użytkownicy muszą się zapisać przez podanie adresu e-mail
-  aby mieć możliwość zamieszczania postów).',
+	'bouton_radio_enregistrement_obligatoire' => 'Obowiązkowa rejestracja (użytkownicy muszą się zapisać przez podanie adresu e-mail aby mieć możliwość zamieszczania postów).',
 	'bouton_radio_moderation_priori' => 'Uprzednia moderacja (
  posty będą się ukazywać dopiero po ich zatwierdzeniu przez
  administratorów).', # MODIF

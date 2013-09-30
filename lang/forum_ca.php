@@ -11,9 +11,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_articles_futurs' => 'només als futurs articles (no afecta a la base de dades).',
 	'bouton_radio_articles_tous' => 'a tots els articles sense cap excepció.',
 	'bouton_radio_articles_tous_sauf_forum_desactive' => 'a tots els articles, excepte aquells que tenen el fòrum desactivat. ',
-	'bouton_radio_enregistrement_obligatoire' => 'Enregistrament obligatori (els usuaris
-  s’han d’inscriure facilitant la seva adreça electrònica abans de poder
-  afegir les seves contribucions).',
+	'bouton_radio_enregistrement_obligatoire' => 'Enregistrament obligatori (els usuaris s’han d’inscriure facilitant la seva adreça electrònica abans de poder afegir les seves contribucions).',
 	'bouton_radio_moderation_priori' => 'Moderat a priori (les
  contribucions no apareixen públicament fins que no han estat
  validades des de l’adminsitració del

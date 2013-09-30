@@ -11,9 +11,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_articles_futurs' => 'alene for fremtidige artikler (ingen opdatering af databasen).',
 	'bouton_radio_articles_tous' => 'for alle artikler uden undtagelse.',
 	'bouton_radio_articles_tous_sauf_forum_desactive' => 'for alle artikler med aktivt tilknyttet forum.',
-	'bouton_radio_enregistrement_obligatoire' => 'Tvungen registrering (
-		brugere skal give sig til kende ved at oplyse deres e-mail-adresse
-		for at kunne komme med indlæg).',
+	'bouton_radio_enregistrement_obligatoire' => 'Tvungen registrering (brugere skal give sig til kende ved at oplyse deres e-mail-adresse for at kunne komme med indlæg).',
 	'bouton_radio_moderation_priori' => 'Forhåndsgodkendelse (bidrag vises først efter at de er godkendt af administratorer).', # MODIF
 	'bouton_radio_modere_abonnement' => 'Kun for abonnenter (bidragydere skal oplyse e-mail-adresse, før de kan indsende bidrag)',
 	'bouton_radio_modere_posteriori' => 'Efterfølgende godkendelse (bidrag er straks synlige men en administrator kan senere slette dem)', # MODIF

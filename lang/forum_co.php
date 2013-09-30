@@ -11,8 +11,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_articles_futurs' => 'solu à l’artìculi futuri (nisuna mudìfica à a basa attuale).',
 	'bouton_radio_articles_tous' => 'à tutti l’artìculi quant’elli sò.',
 	'bouton_radio_articles_tous_sauf_forum_desactive' => 'à tutti l’artìculi salvu quelli per chì hè disattivatu u foru.',
-	'bouton_radio_enregistrement_obligatoire' => 'Arregistramenu ubbligatoriu (l’utilizatori 
-		devenu abbunà si rinsignendu u so indirizzu e-mail prima di pudè mandà cuntributi).',
+	'bouton_radio_enregistrement_obligatoire' => 'Arregistramenu ubbligatoriu (l’utilizatori devenu abbunà si rinsignendu u so indirizzu e-mail prima di pudè mandà cuntributi).',
 	'bouton_radio_moderation_priori' => 'Muderazione in antìcipu (i cuntributi ùn sò pubblicati chè dopu accunsentu da l’amministratori).', # MODIF
 	'bouton_radio_modere_abonnement' => 'Solu cù abbunamentu',
 	'bouton_radio_modere_posteriori' => 'Muderazione dopu', # MODIF

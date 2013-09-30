@@ -11,9 +11,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_articles_futurs' => '70 fu7ur3 4r71c135 0n1y (n0 4c710n 0n 7h3 d474b453).',
 	'bouton_radio_articles_tous' => '70 411 4r71c135 w17h0u7 4ny 3xc3p710n.',
 	'bouton_radio_articles_tous_sauf_forum_desactive' => '70 411 4r71c135, 3xc3p7 7h053 w17h d154b13d f0rum5.',
-	'bouton_radio_enregistrement_obligatoire' => 'R3qu1r3d r3g157r4710n (
-  u53r5 mu57 5ub5cr1b3 by pr0v1d1ng 7h31r 3-m411 4ddr355 b3f0r3
-  b31ng 4b13 70 p057 c0n7r1bu710n5).',
+	'bouton_radio_enregistrement_obligatoire' => 'R3qu1r3d r3g157r4710n (u53r5 mu57 5ub5cr1b3 by pr0v1d1ng 7h31r 3-m411 4ddr355 b3f0r3 b31ng 4b13 70 p057 c0n7r1bu710n5).',
 	'bouton_radio_moderation_priori' => 'B3f0r3h4nd m0d3r4710n (
 	c0n7r1bu710n5 w111 b3 5h0wn 0n1y 4f73r v411d4710n by
 	4dm1n157r470r5).', # MODIF

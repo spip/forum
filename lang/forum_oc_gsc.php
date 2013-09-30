@@ -11,9 +11,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_articles_futurs' => 'aus articles futurs sonque (nada accion sus la basa de dadas).',
 	'bouton_radio_articles_tous' => 'aus articles tots shens excepcion',
 	'bouton_radio_articles_tous_sauf_forum_desactive' => 'a tots los articles, sauv los qui lo lor forum ei desactivat.',
-	'bouton_radio_enregistrement_obligatoire' => 'Registrament obligatòri (los
- utilizaires que’s deven abonar en dar la lor adreiça e-mail abans de
- poder mandar contribucions).',
+	'bouton_radio_enregistrement_obligatoire' => 'Registrament obligatòri (los utilizaires que’s deven abonar en dar la lor adreiça e-mail abans de poder mandar contribucions).',
 	'bouton_radio_moderation_priori' => 'Moderacion a priòri (las
  contribucions qu’apareishen en public sonque se los administrators
  las an validadas).', # MODIF

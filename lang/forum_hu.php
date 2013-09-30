@@ -11,9 +11,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_articles_futurs' => 'csak a leendő cikkek részére (nincs hatás az adatbázisban).',
 	'bouton_radio_articles_tous' => 'minden cikknek, kivétel nélkül.',
 	'bouton_radio_articles_tous_sauf_forum_desactive' => 'minden cikknek, kivéve azokat, melynek nincs aktiválva a fóruma.',
-	'bouton_radio_enregistrement_obligatoire' => 'Beíratkozás kötelező (a
-  felhasználóknak be kell iratkozniuk azzal, hogy adják email címüket mielőbb
-  küldhessenek anyagokat).',
+	'bouton_radio_enregistrement_obligatoire' => 'Beíratkozás kötelező (a felhasználóknak be kell iratkozniuk azzal, hogy adják email címüket mielőbb küldhessenek anyagokat).',
 	'bouton_radio_moderation_priori' => 'Előzetes moderálás (a
  küldött anyagok csak az adminisztrátorok adta jováhagyást kerülnek nyilvánosságra).', # MODIF
 	'bouton_radio_modere_abonnement' => 'moderálva beiratkozásnál',
