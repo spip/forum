@@ -18,8 +18,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  nun apaecerán en públicu hasta que les validen
  los alministradores).', # MODIF
 	'bouton_radio_modere_abonnement' => 'pa abonáos',
-	'bouton_radio_modere_posteriori' => 'moderación a posteriori', # MODIF
-	'bouton_radio_modere_priori' => 'moderación a priori', # MODIF
+	'bouton_radio_modere_posteriori' => 'moderación a posteriori',
+	'bouton_radio_modere_priori' => 'moderación a priori',
 	'bouton_radio_publication_immediate' => 'Espublizar d’inmediatu los mensaxes
  (les contribuciones s’amuesen desque s’unvíen, los alministradores pueden
  desaniciales llueu).',
@@ -46,7 +46,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_poste_par' => 'Mensaxe unviáu @parauteur@ tocante a l’artículu «@titre@».', # MODIF
 	'forum_qui_etes_vous' => '<b>¿Quién yes?</b> (opcional)', # MODIF
 	'forum_texte' => 'Testu del to mensaxe:', # MODIF
-	'forum_titre' => 'Títulu:', # MODIF
+	'forum_titre' => 'Títulu',
 	'forum_url' => 'URL:', # MODIF
 	'forum_valider' => 'Validar la escoyeta',
 	'forum_voir_avant' => 'Ver el mensaxe enantes de publicalu', # MODIF

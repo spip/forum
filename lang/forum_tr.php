@@ -14,8 +14,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_enregistrement_obligatoire' => 'Kayıt zorunlu (kullanıcılar katılabilmek için önceden e-posta adreslerini vererek kayıt olmalı).',
 	'bouton_radio_moderation_priori' => 'Önceden onayla yönetim (yazılan iletiler onaylandıktan sonra yayınlanıyor).', # MODIF
 	'bouton_radio_modere_abonnement' => 'abonelik sistemiyle yönetim',
-	'bouton_radio_modere_posteriori' => 'sonradan onayla yönetim', # MODIF
-	'bouton_radio_modere_priori' => 'önceden onayla yönetim', # MODIF
+	'bouton_radio_modere_posteriori' => 'sonradan onayla yönetim',
+	'bouton_radio_modere_priori' => 'önceden onayla yönetim',
 	'bouton_radio_publication_immediate' => 'İletilerin anında yayınlanması 
 (katılımlar gönderildiklerinde anında görüntülenir, yöneticiler onları 
 sonradan yok edebilir).',
@@ -42,7 +42,7 @@ sonradan yok edebilir).',
 	'forum_poste_par' => 'Makalenize @parauteur@ ileti gönderildi.', # MODIF
 	'forum_qui_etes_vous' => '<b>Sizi tanıyalım ?</b> (seçimlik)', # MODIF
 	'forum_texte' => 'İletinizin metni :', # MODIF
-	'forum_titre' => 'Başlık :', # MODIF
+	'forum_titre' => 'Başlık',
 	'forum_url' => 'URL :', # MODIF
 	'forum_valider' => 'Bu seçimi onayla',
 	'forum_voir_avant' => 'Göndermeden önce iletiyi göster', # MODIF

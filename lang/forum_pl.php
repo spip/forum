@@ -77,8 +77,6 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
   związaną z artykułem, autorzy artykułu mogą zostać
   poinformowani o tym przez e-mail. Czy chcesz zastosować tę opcję?', # MODIF
 	'info_pas_de_forum' => 'brak forum',
-	'info_question_visiteur_ajout_document_forum' => 'Si vous souhaitez autoriser les visiteurs à joindre des documents (images, sons...) à leurs messages de forum, indiquer ci-dessous la liste des extensions de documents autorisés pour les forums (ex: gif, jpg, png, mp3).', # MODIF
-	'info_question_visiteur_ajout_document_forum_format' => 'Si vous souhaitez autoriser tous les types de documents considérés comme fiables par SPIP, mettre une étoile. Pour ne rien autoriser, ne rien indiquer.', # MODIF
 	'item_activer_forum_administrateur' => 'Aktywuj forum administratorów',
 	'item_desactiver_forum_administrateur' => 'Wyłącz forum administratorów',
 

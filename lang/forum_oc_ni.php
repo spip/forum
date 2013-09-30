@@ -73,7 +73,6 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_mode_fonctionnement_defaut_forum_public' => 'Mòde de foncionament predefinit dei fòros publics',
 	'info_option_email' => 'Quora un visitaire dau sit poasta un messatge novèu dins lo fòro associat à un article, lu autors de l’article poadon èstre avertits d’aqueu messatge per corrier electronic. Indicatz per cada tipe de fòro se cau utilisar aquela opcion.',
 	'info_pas_de_forum' => 'Minga de fòro',
-	'info_question_visiteur_ajout_document_forum_format' => 'Si vous souhaitez autoriser tous les types de documents considérés comme fiables par SPIP, mettre une étoile. Pour ne rien autoriser, ne rien indiquer.', # MODIF
 	'item_activer_forum_administrateur' => 'Activar lo fòro dei administrators',
 	'item_desactiver_forum_administrateur' => 'Desactivar lo fòro dei administrators',
 

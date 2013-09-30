@@ -15,8 +15,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_moderation_priori' => 'Moderado a priori (as
   contribucións serán publicadas trala aprobación do grupo xestor).', # MODIF
 	'bouton_radio_modere_abonnement' => 'con subscrición',
-	'bouton_radio_modere_posteriori' => 'moderación a posteriori', # MODIF
-	'bouton_radio_modere_priori' => 'moderación a priori', # MODIF
+	'bouton_radio_modere_posteriori' => 'moderación a posteriori',
+	'bouton_radio_modere_priori' => 'moderación a priori',
 	'bouton_radio_publication_immediate' => 'Publicación inmediata das mensaxes
 		(as contribucións amósanse dende o seu envío, o equipo de xestión pódeas borrar).',
 
@@ -34,15 +34,15 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Preme <a href=\'@retour_forum@\'>aquí</a> para seguir.',
 	'forum_forum' => 'foro',
 	'forum_info_modere' => 'Este foro é moderado a priori : a súa contribución non aparecerá namentres non sexa aprobada por un administrador do web.', # MODIF
-	'forum_lien_hyper' => '<b>Ligazón de hipertexto</b> (opcional)', # MODIF
+	'forum_lien_hyper' => 'Ligazón de hipertexto',
 	'forum_message_definitif' => 'Mensaxe definitiva: enviala ao web',
 	'forum_message_trop_long' => 'A mensaxe é longa de máis. O tamaño máximo permitido é de 20000 caractéres.', # MODIF
 	'forum_ne_repondez_pas' => 'Non responda a este correo senón no foro do enderezo seguinte:',
 	'forum_page_url' => '(Se a súa mensaxe se refire a un artigo publicado en Internet, ou a unha páxina que contén máis informacións, indique a continuación o título da páxina e o seu enderezo URL)',
 	'forum_poste_par' => 'Mensaxe de @parauteur@ relacionada co artigo « @titre@ ».', # MODIF
-	'forum_qui_etes_vous' => '<b>Quen é vostede?</b> (opcional)', # MODIF
-	'forum_texte' => 'Texto da súa mensaxe:', # MODIF
-	'forum_titre' => 'Título:', # MODIF
+	'forum_qui_etes_vous' => 'Quen é vostede?',
+	'forum_texte' => 'Texto da súa mensaxe',
+	'forum_titre' => 'Título',
 	'forum_url' => 'URL:', # MODIF
 	'forum_valider' => 'Validar a elección',
 	'forum_voir_avant' => 'Ver a mensaxe antes de enviala', # MODIF

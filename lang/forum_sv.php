@@ -70,12 +70,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_liens_syndiques_6' => 'är',
 	'info_liens_syndiques_7' => 'i väntan på validering.',
 	'info_mode_fonctionnement_defaut_forum_public' => 'Valt funktionssätt för de publika forumen',
-	'info_option_email' => 'When a site visitor posts a message to the forum
-		associated with an article, the article’s authors can be
-		informed of this message by e-mail. Do you wish to use this option?', # MODIF
 	'info_pas_de_forum' => 'inget forum',
-	'info_question_visiteur_ajout_document_forum' => 'Do you wish to authorise visitors to attach documenst (images, sound files, ...) to their forum messages?', # MODIF
-	'info_question_visiteur_ajout_document_forum_format' => 'If so, give below the list of extensions for the file types which are to be authorised (e.g. gif, jpg, png, mp3).', # MODIF
 	'item_activer_forum_administrateur' => 'Aktivera administratörernas forum',
 	'item_config_forums_prive_global' => 'Aktivera redaktörernas forum',
 	'item_config_forums_prive_objets' => 'Aktivera dessa forum',
@@ -87,7 +82,6 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'lien_reponse_article' => 'Svara på artikeln',
 	'lien_reponse_breve_2' => 'Skriv ett svar på nyheten',
 	'lien_reponse_rubrique' => 'Skriv ett svar till avdelningen',
-	'lien_reponse_site_reference' => 'Réponse au site référencé :', # MODIF
 
 	// O
 	'onglet_messages_internes' => 'Interna meddelanden',

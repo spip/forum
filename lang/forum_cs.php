@@ -81,8 +81,6 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
   webu poslali zprávu do diskusní skupiny, týkající se
   jejich článku. Chcete tuto možnost použít?', # MODIF
 	'info_pas_de_forum' => 'bez diskusní skupiny',
-	'info_question_visiteur_ajout_document_forum' => 'If you wish to allow visitors to attach documents (images, sound files, ...) to their forum messages, indicate below the list of file extensions which are authorised (e.g. gif, jpg, png, mp3).', # MODIF
-	'info_question_visiteur_ajout_document_forum_format' => 'If you wish to authorise all document types which SPIP allows, then put an asterisk. To allow no file-types, leave empty.', # MODIF
 	'item_activer_forum_administrateur' => 'Zapnout diskusní skupinu správců',
 	'item_desactiver_forum_administrateur' => 'Vypnout diskusní skupinu správců',
 

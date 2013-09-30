@@ -65,8 +65,6 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_mode_fonctionnement_defaut_forum_public' => 'Standardni nacin funkcionisanja javnih foruma',
 	'info_option_email' => 'Kada posjetioc sranice postavi novu poruku u forum vezan za neki clanak, autori clanka mogu biti o tome upozoreni putem e-maila. Zelite li koristiti ovu opciju?', # MODIF
 	'info_pas_de_forum' => 'nema foruma',
-	'info_question_visiteur_ajout_document_forum' => 'Si vous souhaitez autoriser les visiteurs à joindre des documents (images, sons...) à leurs messages de forum, indiquer ci-dessous la liste des extensions de documents autorisés pour les forums (ex: gif, jpg, png, mp3).', # MODIF
-	'info_question_visiteur_ajout_document_forum_format' => 'Si vous souhaitez autoriser tous les types de documents considérés comme fiables par SPIP, mettre une étoile. Pour ne rien autoriser, ne rien indiquer.', # MODIF
 	'item_activer_forum_administrateur' => 'Aktiviraj forum administratora',
 	'item_desactiver_forum_administrateur' => 'Dezaktiviraj forum za administratore',
 

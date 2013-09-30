@@ -75,8 +75,6 @@ amit kapott. Amennyiben nincs regisztrálva, akkor',
 	'info_option_email' => 'Ha egy látogató üzenetet küld egy új üzenetet a cikkhez csatolt fórumba,
   akkor a szerzők erről az üzenetről értesülhetnek emailen. Szeretne használni ezt az opciót ?', # MODIF
 	'info_pas_de_forum' => 'Nincs fórum',
-	'info_question_visiteur_ajout_document_forum' => 'Souhaitez-vous autoriser les visiteurs à joindre des documents (images, sons...) à leurs messages de forums ?', # MODIF
-	'info_question_visiteur_ajout_document_forum_format' => 'Le cas échéant, indiquer ci-dessous la liste des extensions de documents autorisés pour les forums (ex: gif, jpg, png, mp3).', # MODIF
 	'item_activer_forum_administrateur' => 'Admninisztrátori fórum aktiválása',
 	'item_desactiver_forum_administrateur' => 'Az adminisztrátori fórumok inaktiválása',
 

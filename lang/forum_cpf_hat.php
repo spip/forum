@@ -79,8 +79,6 @@ anba atik yo ; y ke entèdi pou tout ribrik yo, é tinouvèl yo...',
 se posib alèt tout lotè atik la
 ak yon limèl. W vle itilize opsyon nan ?', # MODIF
 	'info_pas_de_forum' => 'Okenn fowom',
-	'info_question_visiteur_ajout_document_forum' => 'Souhaitez-vous autoriser les visiteurs à joindre des documents (images, sons...) à leurs messages de forums ?', # MODIF
-	'info_question_visiteur_ajout_document_forum_format' => 'Le cas échéant, indiquer ci-dessous la liste des extensions de documents autorisés pour les forums (ex: gif, jpg, png, mp3).', # MODIF
 	'item_activer_forum_administrateur' => 'Fé mache fowom pou komandé yo ',
 	'item_desactiver_forum_administrateur' => 'Rete fowom pou komandé yo',
 

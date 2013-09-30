@@ -17,8 +17,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  validades des de l’adminsitració del
  lloc).', # MODIF
 	'bouton_radio_modere_abonnement' => 'per subscripció',
-	'bouton_radio_modere_posteriori' => 'moderació a posteriori', # MODIF
-	'bouton_radio_modere_priori' => 'moderació a priori', # MODIF
+	'bouton_radio_modere_posteriori' => 'moderació a posteriori',
+	'bouton_radio_modere_priori' => 'moderació a priori',
 	'bouton_radio_publication_immediate' => 'Publicació immediata dels missatges (es poden suprimir posteriorment des de l’administració). ',
 
 	// D
@@ -43,7 +43,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_poste_par' => 'Missatge enviat@parauteur@ a continuació de l’article « @titre@ ».', # MODIF
 	'forum_qui_etes_vous' => '<b>Qui sóu?</b> (opcional)', # MODIF
 	'forum_texte' => 'Text del missatge:', # MODIF
-	'forum_titre' => 'Titol:', # MODIF
+	'forum_titre' => 'Titol',
 	'forum_url' => 'URL:', # MODIF
 	'forum_valider' => 'Validar l’elecció',
 	'forum_voir_avant' => 'Veure el missatge abans d’enviar-lo', # MODIF
