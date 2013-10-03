@@ -12,10 +12,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_articles_tous' => 'bez iznimke za sve clanke.',
 	'bouton_radio_articles_tous_sauf_forum_desactive' => 'za sve clanke osim onih ciji forum je dezaktiviran.',
 	'bouton_radio_enregistrement_obligatoire' => 'Obavezno registrovanje (korisnici trebaju upisati svoju e-mail adresu prije mogucnosti postavljanja svojih prijedloga).',
-	'bouton_radio_moderation_priori' => '\\f1 Pre-moderation\\f0  (prijedlozi se ne prikazuju na javnoj stranici prije ovjere od strane administratora).', # MODIF
+	'bouton_radio_moderation_priori' => 'Pre-moderation (prijedlozi se ne prikazuju na javnoj stranici prije ovjere od strane administratora).', # MODIF
 	'bouton_radio_modere_abonnement' => 'registracija obavezna',
-	'bouton_radio_modere_posteriori' => '\\f1 post-moderation\\f0 ', # MODIF
-	'bouton_radio_modere_priori' => '\\f1 pre-moderation\\f0 ', # MODIF
+	'bouton_radio_modere_posteriori' => 'post-moderation', # MODIF
+	'bouton_radio_modere_priori' => 'pre-moderation', # MODIF
 	'bouton_radio_publication_immediate' => 'Direktna publikacija poruka (prijedlozi se prikazuju nakon slanja, administratori ih  odmah mogu izbrisati).',
 
 	// F

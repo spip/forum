@@ -85,8 +85,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	assuciatu à un artìculu, l’autori di st’artìculu ne ponu esse
 	avvisati da un email. Signalate puru per ogni tippu di foru s’ellu ci vole à usà st’opzione.',
 	'info_pas_de_forum' => 'Nisunu foru',
-	'info_question_visiteur_ajout_document_forum' => 'Sè vo vulete auturizà i visitori à alleà ducumenti (imàgini, mùsiche ...) à i so messagi di u foru, 
-		rinsignate quì sottu a lista di ’estensioni di i ducumenti auturizati pè i fori (per esempiu : gif, jpg, png, mp3).', # MODIF
+	'info_question_visiteur_ajout_document_forum' => 'Sè vo vulete auturizà i visitori à alleà ducumenti (imàgini, mùsiche ...) à i so messagi di u foru, rinsignate quì sottu a lista di ’estensioni di i ducumenti auturizati pè i fori (per esempiu : gif, jpg, png, mp3).', # MODIF
 	'info_question_visiteur_ajout_document_forum_format' => 'Sè vo vulete auturizà tutti i tippi di ducumenti cunsiderati da affidati da SPIP, mettite una 
 		stelluccia. Per ùn auturizà nunda, ùn mettite nunda.', # MODIF
 	'item_activer_forum_administrateur' => 'Attivà u foru di l’amministratori',
