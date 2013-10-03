@@ -101,8 +101,6 @@
 		<traducteur nom="mpossoz" lien="http://trad.spip.net/auteur/mpossoz" />
 		<traducteur nom="Suske" lien="http://trad.spip.net/auteur/suske" />
 	</langue>
-	<langue code="no" url="http://trad.spip.net/tradlang_module/forum?lang_cible=no" total="133" traduits="15" relire="0" modifs="12" nouveaux="106" pourcent="11.28">
-	</langue>
 	<langue code="oc_auv" url="http://trad.spip.net/tradlang_module/forum?lang_cible=oc_auv" total="133" traduits="49" relire="0" modifs="19" nouveaux="65" pourcent="36.84">
 	</langue>
 	<langue code="oc_gsc" url="http://trad.spip.net/tradlang_module/forum?lang_cible=oc_gsc" total="133" traduits="49" relire="0" modifs="19" nouveaux="65" pourcent="36.84">
