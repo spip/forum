@@ -14,9 +14,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_articles_futurs' => 'len pre budúce články (žiadna zmena databázy).',
 	'bouton_radio_articles_tous' => 'pre všetky články bez výnimky.',
 	'bouton_radio_articles_tous_sauf_forum_desactive' => 'pre všetky články, okrem tých s deaktivovanými diskusnými fórami.',
-	'bouton_radio_enregistrement_obligatoire' => 'Vyžaduje sa registrácia (
-  používatelia sa musia zaregistrovať uvedením svojej e-mailovej adresy predtým,
-  ako budú môcť posielať príspevky).',
+	'bouton_radio_enregistrement_obligatoire' => 'Vyžaduje sa registrácia (používatelia sa musia zaregistrovať uvedením svojej e-mailovej adresy predtým, ako budú môcť posielať príspevky).',
 	'bouton_radio_moderation_priori' => 'Kontrola pred zverejnením (príspevky sa zobrazia až potom, čo ich
  schvália administrátori).',
 	'bouton_radio_modere_abonnement' => 'Vyžaduje sa registrácia',
