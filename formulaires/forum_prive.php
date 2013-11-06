@@ -54,7 +54,7 @@ function formulaires_forum_prive_charger_dist($objet, $id_objet, $id_forum, $aff
 		'table' => $table,
 		'texte' => '',
 		'config' => $config,
-		'titre' => $titre,
+		'titre' => isset($titre) ? $titre : '',
 		'_hidden' => $script_hidden, # pour les variables hidden
 		'url_site' => "http://",
 		'id_forum' => $id_forum, // passer id_forum au formulaire pour lui permettre d'afficher a quoi l'internaute repond
