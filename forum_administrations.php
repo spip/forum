@@ -97,6 +97,7 @@ function forum_vider_tables($nom_meta_base_version) {
 	effacer_meta("forums_texte");
 	effacer_meta("forums_urlref");
 	effacer_meta("forums_afficher_barre");
+	effacer_meta("forums_forcer_previsu");
 	effacer_meta("formats_documents_forum");
 	effacer_meta("forums_publics");
 	effacer_meta("forum_prive");
