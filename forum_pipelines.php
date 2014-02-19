@@ -229,6 +229,7 @@ function forum_configurer_liste_metas($metas){
 	$metas['forums_texte'] = 'oui';
 	$metas['forums_urlref'] = 'non';
 	$metas['forums_afficher_barre'] = 'oui';
+	$metas['forums_forcer_previsu'] = 'oui';
 	$metas['formats_documents_forum'] = '';
 	$metas['forums_publics'] = 'posteriori';
 	$metas['forum_prive'] = 'oui'; # forum global dans l'espace prive
