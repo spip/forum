@@ -19,6 +19,7 @@ function formulaires_configurer_forums_contenu_charger_dist(){
 		'forums_texte' => $GLOBALS['meta']["forums_texte"],
 		'forums_urlref' => $GLOBALS['meta']["forums_urlref"],
 		'forums_afficher_barre' => $GLOBALS['meta']["forums_afficher_barre"],
+		'forums_forcer_previsu' => $GLOBALS['meta']["forums_forcer_previsu"],
 		'formats_documents_forum' => $GLOBALS['meta']['formats_documents_forum'],
 	);
 	
@@ -30,7 +31,7 @@ function formulaires_configurer_forums_contenu_verifier_dist(){
 	if (!_request('forums_titre') AND !_request('forums_texte') AND !_request('forums_urlref'))
 		$erreurs['forums_titre'] = _T('info_obligatoire');
 
-	foreach(array('forums_titre', 'forums_texte',	'forums_urlref','forums_afficher_barre') as $champ)
+	foreach(array('forums_titre','forums_texte','forums_urlref','forums_afficher_barre','forums_forcer_previsu') as $champ)
 		if (_request($champ)!=='oui')
 			set_request($champ,'non');
 	
