@@ -92,8 +92,6 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	sur les articles ; ils seront interdits sur les rubriques, brèves, etc.',
 	'info_envoi_forum' => 'Envoi des forums aux auteurs des articles',
 	'info_fonctionnement_forum' => 'Fonctionnement du forum :',
-	'info_forcer_previsualisation_court' => 'Forcer la prévisualisation',
-	'info_forcer_previsualisation_long' => 'Forcer la prévisualisation avant envoi du message',
 	'info_forums_liees_mot' => 'Les messages de forum liés à ce mot',
 	'info_gauche_suivi_forum_2' => 'La page de <i>suivi des forums</i> est un outil de gestion de votre site (et non un espace de discussion ou de rédaction). Elle affiche toutes les contributions des forums du site, aussi bien celles du site public que celles de l’espace privé et vous permet de gérer ces contributions.',
 	'info_liens_syndiques_3' => 'forums',

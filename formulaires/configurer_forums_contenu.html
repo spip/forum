@@ -29,15 +29,6 @@
 					<label for="forums_urlref"><:info_urlref:></label>
 				</div>
 			</li>
-			<li class='editer configurer_previsu_forums[ (#ENV**{erreurs}|table_valeur{forums_forcer_previsu}|oui)erreur]'>
-				<label><:forum:info_forcer_previsualisation_court:></label>[
-				<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{forcer_previsu})</span>
-				]
-				<div class='choix'>
-					<input class='checkbox' type="checkbox" name="forums_forcer_previsu" value='oui' [checked="(#ENV{forums_forcer_previsu}|=={non}|non|?{checked})"] id="forums_forcer_previsu"/>
-					<label for="forums_forcer_previsu"><:forum:info_forcer_previsualisation_long:></label>
-				</div>
-			</li>
 			[(#PLUGIN{medias}|oui)
 			<li class='editer configurer_documents_forums[ (#ENV**{erreurs}|table_valeur{formats_documents_forum}|oui)erreur]'>
 				<label for="formats_documents_forum"><:medias:titre_documents_joints:></label>
