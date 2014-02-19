@@ -13,7 +13,6 @@
 if (!defined("_ECRIRE_INC_VERSION")) return;
 
 function formulaires_configurer_forums_contenu_charger_dist(){
-spip_log($GLOBALS['meta']["forums_forcer_previsu"], "memoria");
 	return array(
 		'forums_titre' => $GLOBALS['meta']["forums_titre"],
 		'forums_texte' => $GLOBALS['meta']["forums_texte"],
