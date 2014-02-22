@@ -94,6 +94,8 @@ De publieke forums kunnen per artikel toegestaan worden
 ; Ze worden niet toegestaan op de rubrieken en berichten, enz.',
 	'info_envoi_forum' => 'Versturen van de forums aan de auteurs van de artikels',
 	'info_fonctionnement_forum' => 'Werking van het forum:',
+	'info_forcer_previsualisation_court' => 'Forceer een vooruitblik',
+	'info_forcer_previsualisation_long' => 'Forceer een vooruitblik voordat een bericht verzonden wordt',
 	'info_forums_liees_mot' => 'De forumboodschappen met dit trefwoord',
 	'info_gauche_suivi_forum_2' => 'De pagina <i>Forums opvolgen/beheren</i> is een werktuig van beleid van uw site (en niet een ruimte van discussie of opstellen). Zij geeft alle bijdragen van de forums van de site te kennen, evengoed laten deze van de openbare site als van de particuliere ruimte toe en u om deze bijdragen te beheren.', # A revoir
 	'info_liens_syndiques_3' => 'forums',
