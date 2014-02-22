@@ -91,6 +91,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
  basis for articles; they will be permanently disabled for sections, news, etc.',
 	'info_envoi_forum' => 'Send article forums to the respective authors',
 	'info_fonctionnement_forum' => 'Forum operation:',
+	'info_forcer_previsualisation_court' => 'Force a preview',
+	'info_forcer_previsualisation_long' => 'Force a preview before sending a message',
 	'info_forums_liees_mot' => 'Forum posts related to this keyword',
 	'info_gauche_suivi_forum_2' => 'The <i>forums management</i> page is a site management tool, not a discussion or editing area. It displays all contributions to the forums, both on the public site and in the private area and allows you to manage these contributions.',
 	'info_liens_syndiques_3' => 'forums',
