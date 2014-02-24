@@ -39,12 +39,6 @@
 	<p class="explication">(#ENV{modere})<:forum:forum_info_modere:></p>
 </fieldset>]
 
-[(#ENV**{afficher_texte}|choixsiegal{'non', ' ',''})
-[<input type="hidden" name="titre" value="(#ENV{titre})" />]
-<p class="spip_bouton"><input type="submit" class="submit" value="<:forum:forum_valider:>" /></p>]
-
-[(#ENV**{afficher_texte}|choixsiegal{'non', '',' '})
-
 	<INCLURE{fond=formulaires/inc-login_forum, env} />
 
 	<fieldset>
@@ -114,7 +108,6 @@
 	</p>
 	]
 	<p class="boutons"><input type="submit" class="submit" value="<:forum:forum_voir_avant:>" /></p>
-]
 </div>
 </form>
 
