@@ -24,7 +24,7 @@ include_spip('inc/forum');
  * @param $ajouter_groupe
  *   groupes ajoutables
  * @param $forcer_previsu
- *   previsu oui ou non
+ *   forcer la previsualisation du message oui ou non
  * @param $retour
  *   url de retour
  * @return array|bool
@@ -78,8 +78,11 @@ function formulaires_forum_charger_dist($objet, $id_objet, $id_forum,
 	$ids['objet'] = $objet;
 	$ids['id_forum'] = ($x = intval($id_forum)) ? $x : '';
 
-	// ne pas mettre '', sinon le squelette n'affichera rien.
-	$previsu = ' ';
+	// par défaut, on force la prévisualisation du message avant de le poster
+	if (($forcer_previsu=='non') OR (empty($forcer_previsu) AND $GLOBALS['meta']["forums_forcer_previsu"]=="non"))
+		$forcer_previsu = 'non';
+	else
+		$forcer_previsu = 'oui';
 
 	if (_request('formulaire_action')){
 		$arg = forum_fichier_tmp(join('', $ids));
@@ -129,6 +132,7 @@ function formulaires_forum_charger_dist($objet, $id_objet, $id_forum,
 		'nobot' => ($cle ? _request($cle) : _request('nobot')),
 		'ajouter_groupe' => $ajouter_groupe,
 		'ajouter_mot' => (is_array($ajouter_mot) ? $ajouter_mot : array($ajouter_mot)),
+		'forcer_previsu' => $forcer_previsu,
 		'id_forum' => $id_forum, // passer id_forum au formulaire pour lui permettre d'afficher a quoi l'internaute repond
 		'_sign' => implode('_', $ids),
 		'_autosave_id' => $ids,
