@@ -40,6 +40,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trop_caracteres' => '<b>Attention !</b> votre message est trop long (@compte@ caractères) pour pouvoir être enregistré, il ne doit pas dépasser @max@ caractères.',
 	'forum_avez_selectionne' => 'Vous avez sélectionné :',
 	'forum_cliquer_retour' => 'Cliquez <a href=\'@retour_forum@\'>ici</a> pour continuer.',
+	'forum_envoyer' => 'Envoyer',
 	'forum_forum' => 'forum',
 	'forum_info_modere' => 'Ce forum est modéré a priori : votre contribution n’apparaîtra qu’après avoir été validée par un administrateur du site.',
 	'forum_lien_hyper' => 'Lien hypertexte',
