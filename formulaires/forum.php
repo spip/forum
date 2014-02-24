@@ -186,7 +186,7 @@ function forum_fichier_tmp($arg){
  * @param $ajouter_groupe
  *   groupes ajoutables
  * @param $forcer_previsu
- *   previsu oui ou non
+ *   forcer la previsualisation du message oui ou non
  * @param $retour
  *   url de retour
  * @return array|bool
@@ -425,7 +425,7 @@ function inclure_previsu($texte, $titre, $url_site, $nom_site, $ajouter_mot, $do
  * @param $ajouter_groupe
  *   groupes ajoutables
  * @param $forcer_previsu
- *   previsu oui ou non
+ *   forcer la previsualisation du message oui ou non
  * @param $retour
  *   url de retour
  * @return array|bool
