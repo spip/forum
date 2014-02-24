@@ -37,8 +37,11 @@ function formulaires_forum_prive_charger_dist($objet, $id_objet, $id_forum, $for
 	$ids['objet'] = $objet;
 	$ids['id_forum'] = ($x = intval($id_forum)) ? $x : '';
 
-	// ne pas mettre '', sinon le squelette n'affichera rien.
-	$previsu = ' ';
+	// par défaut, on force la prévisualisation du message avant de le poster
+	if (($forcer_previsu=='non') OR (empty($forcer_previsu) AND $GLOBALS['meta']["forums_forcer_previsu"]=="non"))
+		$forcer_previsu = 'non';
+	else
+		$forcer_previsu = 'oui';
 
 	// pour les hidden
 	$script_hidden = "";
@@ -57,6 +60,7 @@ function formulaires_forum_prive_charger_dist($objet, $id_objet, $id_forum, $for
 		'titre' => isset($titre) ? $titre : '',
 		'_hidden' => $script_hidden, # pour les variables hidden
 		'url_site' => "http://",
+		'forcer_previsu' => $forcer_previsu,
 		'id_forum' => $id_forum, // passer id_forum au formulaire pour lui permettre d'afficher a quoi l'internaute repond
 		'_sign'=>implode('_',$ids),
 		'_autosave_id' => $ids,
@@ -92,11 +96,9 @@ function formulaires_forum_prive_verifier_dist($objet, $id_objet, $id_forum, $fo
 		$erreurs['erreur_message'] = _T('forum:forum_message_trop_long');
 	}
 
-	if (!count($erreurs) AND !_request('confirmer_previsu_forum')){
-		if ($forcer_previsu != 'non') {
-			$previsu = inclure_forum_prive_previsu($texte, $titre, _request('url_site'), _request('nom_site'), _request('ajouter_mot'));
-			$erreurs['previsu'] = $previsu;
-		}
+	if (!count($erreurs) AND !_request('envoyer_message') AND !_request('confirmer_previsu_forum')){
+		$previsu = inclure_forum_prive_previsu($texte, $titre, _request('url_site'), _request('nom_site'), _request('ajouter_mot'));
+		$erreurs['previsu'] = $previsu;
 	}
 
 	return $erreurs;
