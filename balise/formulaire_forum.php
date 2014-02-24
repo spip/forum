@@ -75,7 +75,7 @@ function balise_FORMULAIRE_FORUM ($p) {
 		'id_forum',
 		'ajouter_mot',
 		'ajouter_groupe',
-		'afficher_texte'
+		'forcer_previsu'
 	);
 	
 	if ($ids) {
@@ -116,7 +116,7 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 	$id_forum = intval(array_shift($args));
 	$ajouter_mot = array_shift($args);
 	$ajouter_groupe = array_shift($args);
-	$afficher_texte = array_shift($args);
+	$forcer_previsu = array_shift($args);
 
 	$r = balise_forum_retrouve_objet($ido,$id_forum,$args,$context_compil);
 	if (!$r)
@@ -134,7 +134,7 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 
 	return
 		array($objet,
-		$id_objet, $id_forum, $ajouter_mot, $ajouter_groupe, $afficher_texte, $retour);
+		$id_objet, $id_forum, $ajouter_mot, $ajouter_groupe, $forcer_previsu, $retour);
 }
 
 /**

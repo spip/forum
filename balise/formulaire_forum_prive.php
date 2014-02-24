@@ -73,7 +73,7 @@ function balise_FORMULAIRE_FORUM_PRIVE ($p) {
 	$obtenir = array(
 		$_id_objet,
 		'id_forum',
-		'afficher_texte',
+		'forcer_previsu',
 		'statut',
 	);
 
@@ -107,7 +107,7 @@ function balise_FORMULAIRE_FORUM_PRIVE_stat($args, $context_compil) {
 	// $args = (obtenir) + (ids) + (url, objet, id_objet)
 	$ido = array_shift($args);
 	$id_forum = intval(array_shift($args));
-	$afficher_texte = array_shift($args);
+	$forcer_previsu = array_shift($args);
 	$statut = array_shift($args);
 
 	include_spip('balise/formulaire_forum');
@@ -119,7 +119,7 @@ function balise_FORMULAIRE_FORUM_PRIVE_stat($args, $context_compil) {
 	list($objet, $id_objet, $retour) = $r;
 
 	return
-		array($objet, $id_objet, $id_forum, $afficher_texte, $statut, $retour);
+		array($objet, $id_objet, $id_forum, $forcer_previsu, $statut, $retour);
 }
 
 ?>
