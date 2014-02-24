@@ -23,14 +23,14 @@ include_spip('inc/forum');
  *   mots ajoutés cochés par defaut
  * @param $ajouter_groupe
  *   groupes ajoutables
- * @param $afficher_previsu
+ * @param $forcer_previsu
  *   previsu oui ou non
  * @param $retour
  *   url de retour
  * @return array|bool
  */
 function formulaires_forum_charger_dist($objet, $id_objet, $id_forum,
-                                        $ajouter_mot, $ajouter_groupe, $afficher_previsu, $retour){
+                                        $ajouter_mot, $ajouter_groupe, $forcer_previsu, $retour){
 
 	if (!function_exists($f = 'forum_recuperer_titre'))
 		$f = 'forum_recuperer_titre_dist';
@@ -144,7 +144,7 @@ function formulaires_forum_charger_dist($objet, $id_objet, $id_forum,
  * afin de ne pas bugguer quand on vide le cache)
  * Le lock est leve au moment de l'insertion en base (inc-messforum)
  * Ce systeme n'est pas fonctionnel pour les forums sans previsu (notamment
- * si $afficher_previsu = 'non')
+ * si $forcer_previsu = 'non')
  *
  * http://doc.spip.org/@forum_fichier_tmp
  *
@@ -181,14 +181,14 @@ function forum_fichier_tmp($arg){
  *   mots ajoutés cochés par defaut
  * @param $ajouter_groupe
  *   groupes ajoutables
- * @param $afficher_previsu
+ * @param $forcer_previsu
  *   previsu oui ou non
  * @param $retour
  *   url de retour
  * @return array|bool
  */
 function formulaires_forum_verifier_dist($objet, $id_objet, $id_forum,
-                                         $ajouter_mot, $ajouter_groupe, $afficher_previsu, $retour){
+                                         $ajouter_mot, $ajouter_groupe, $forcer_previsu, $retour){
 	include_spip('inc/acces');
 	include_spip('inc/texte');
 	include_spip('inc/session');
@@ -301,7 +301,7 @@ function formulaires_forum_verifier_dist($objet, $id_objet, $id_forum,
 	}
 
 	if (!count($erreurs) AND !_request('confirmer_previsu_forum')){
-		if ($afficher_previsu!='non'){
+		if ($forcer_previsu!='non'){
 			$previsu = inclure_previsu($texte, $titre, _request('url_site'), _request('nom_site'), _request('ajouter_mot'), $doc,
 				$objet, $id_objet, $id_forum);
 			$erreurs['previsu'] = $previsu;
@@ -311,7 +311,7 @@ function formulaires_forum_verifier_dist($objet, $id_objet, $id_forum,
 	//  Si forum avec previsu sans bon hash de securite, echec
 	if (!count($erreurs)){
 		if (!test_espace_prive()
-		  AND $afficher_previsu<>'non'
+		  AND $forcer_previsu<>'non'
 		  AND forum_insert_noprevisu()){
 			$erreurs['erreur_message'] = _T('forum:forum_acces_refuse');
 		}
@@ -416,14 +416,14 @@ function inclure_previsu($texte, $titre, $url_site, $nom_site, $ajouter_mot, $do
  *   mots ajoutes coches par defaut
  * @param $ajouter_groupe
  *   groupes ajoutables
- * @param $afficher_previsu
+ * @param $forcer_previsu
  *   previsu oui ou non
  * @param $retour
  *   url de retour
  * @return array|bool
  */
 function formulaires_forum_traiter_dist($objet, $id_objet, $id_forum,
-                                        $ajouter_mot, $ajouter_groupe, $afficher_previsu, $retour){
+                                        $ajouter_mot, $ajouter_groupe, $forcer_previsu, $retour){
 
 	$forum_insert = charger_fonction('forum_insert', 'inc');
 

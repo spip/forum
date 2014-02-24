@@ -14,7 +14,7 @@ if (!defined("_ECRIRE_INC_VERSION")) return;
 
 include_spip('inc/forum');
 
-function formulaires_forum_prive_charger_dist($objet, $id_objet, $id_forum, $afficher_previsu, $statut, $retour='') {
+function formulaires_forum_prive_charger_dist($objet, $id_objet, $id_forum, $forcer_previsu, $statut, $retour='') {
 
 	if (!function_exists($f='forum_recuperer_titre'))
 		$f = 'forum_recuperer_titre_dist';
@@ -64,7 +64,7 @@ function formulaires_forum_prive_charger_dist($objet, $id_objet, $id_forum, $aff
 }
 
 
-function formulaires_forum_prive_verifier_dist($objet, $id_objet, $id_forum, $afficher_previsu, $statut, $retour='') {
+function formulaires_forum_prive_verifier_dist($objet, $id_objet, $id_forum, $forcer_previsu, $statut, $retour='') {
 	include_spip('inc/acces');
 	include_spip('inc/texte');
 	include_spip('inc/forum');
@@ -93,7 +93,7 @@ function formulaires_forum_prive_verifier_dist($objet, $id_objet, $id_forum, $af
 	}
 
 	if (!count($erreurs) AND !_request('confirmer_previsu_forum')){
-		if ($afficher_previsu != 'non') {
+		if ($forcer_previsu != 'non') {
 			$previsu = inclure_forum_prive_previsu($texte, $titre, _request('url_site'), _request('nom_site'), _request('ajouter_mot'));
 			$erreurs['previsu'] = $previsu;
 		}
@@ -129,7 +129,7 @@ function inclure_forum_prive_previsu($texte,$titre, $url_site, $nom_site, $ajout
 }
 
 
-function formulaires_forum_prive_traiter_dist($objet, $id_objet, $id_forum, $afficher_previsu, $statut, $retour='') {
+function formulaires_forum_prive_traiter_dist($objet, $id_objet, $id_forum, $forcer_previsu, $statut, $retour='') {
 
 	$forum_insert = charger_fonction('forum_insert', 'inc');
 	$id_reponse = $forum_insert($objet, $id_objet, $id_forum,$statut);
