@@ -1,5 +1,6 @@
 * text=auto !eol
 /README.md -text
+/TODO.md -text
 action/editer_forum.php -text
 action/instituer_forum.php -text
 action/instituer_lot_forum.php -text
