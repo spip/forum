@@ -310,10 +310,12 @@ function formulaires_forum_verifier_dist($objet, $id_objet, $id_forum,
 		$erreurs['titre'] = _T('forum:forum_attention_trois_caracteres');
 	}
 
-	if (!count($erreurs) AND !_request('envoyer_message') AND !_request('confirmer_previsu_forum')){
-		$previsu = inclure_previsu($texte, $titre, _request('url_site'), _request('nom_site'), _request('ajouter_mot'), $doc,
-			$objet, $id_objet, $id_forum);
-		$erreurs['previsu'] = $previsu;
+	if (!count($erreurs) AND !_request('confirmer_previsu_forum')){
+		if (!_request('envoyer_message') OR $forcer_previsu<>'non') {
+			$previsu = inclure_previsu($texte, $titre, _request('url_site'), _request('nom_site'), _request('ajouter_mot'), $doc,
+				$objet, $id_objet, $id_forum);
+			$erreurs['previsu'] = $previsu;
+		}
 	}
 
 	//  Si forum avec previsu sans bon hash de securite, echec
