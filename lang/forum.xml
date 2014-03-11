@@ -138,7 +138,7 @@
 	<langue code="ru" url="http://trad.spip.net/tradlang_module/forum?lang_cible=ru" total="136" traduits="133" relire="0" modifs="0" nouveaux="3" pourcent="97.79">
 		<traducteur nom="Serge Markitanenko" lien="http://trad.spip.net/auteur/serge-markitanenko" />
 	</langue>
-	<langue code="sk" url="http://trad.spip.net/tradlang_module/forum?lang_cible=sk" total="136" traduits="133" relire="0" modifs="0" nouveaux="3" pourcent="97.79">
+	<langue code="sk" url="http://trad.spip.net/tradlang_module/forum?lang_cible=sk" total="136" traduits="136" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 		<traducteur nom="jaro" lien="http://trad.spip.net/auteur/jaro" />
 	</langue>
 	<langue code="sv" url="http://trad.spip.net/tradlang_module/forum?lang_cible=sv" total="136" traduits="52" relire="0" modifs="17" nouveaux="67" pourcent="38.24">
