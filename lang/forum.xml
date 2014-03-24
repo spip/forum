@@ -61,11 +61,13 @@
 	</langue>
 	<langue code="fr" url="http://trad.spip.net/tradlang_module/forum?lang_cible=fr" total="136" traduits="136" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 	</langue>
-	<langue code="fr_fem" url="http://trad.spip.net/tradlang_module/forum?lang_cible=fr_fem" total="136" traduits="133" relire="0" modifs="0" nouveaux="3" pourcent="97.79">
+	<langue code="fr_fem" url="http://trad.spip.net/tradlang_module/forum?lang_cible=fr_fem" total="136" traduits="136" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
+		<traducteur nom="Cerf" lien="http://trad.spip.net/auteur/cerf" />
 		<traducteur nom="denisb" lien="http://trad.spip.net/auteur/denisb" />
 	</langue>
-	<langue code="fr_tu" url="http://trad.spip.net/tradlang_module/forum?lang_cible=fr_tu" total="136" traduits="133" relire="0" modifs="0" nouveaux="3" pourcent="97.79">
+	<langue code="fr_tu" url="http://trad.spip.net/tradlang_module/forum?lang_cible=fr_tu" total="136" traduits="136" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 		<traducteur nom="beatnick" lien="http://trad.spip.net/auteur/beatnick" />
+		<traducteur nom="Cerf" lien="http://trad.spip.net/auteur/cerf" />
 	</langue>
 	<langue code="gl" url="http://trad.spip.net/tradlang_module/forum?lang_cible=gl" total="136" traduits="69" relire="0" modifs="15" nouveaux="52" pourcent="50.74">
 	</langue>
