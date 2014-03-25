@@ -9,7 +9,8 @@
 	</langue>
 	<langue code="bg" url="http://trad.spip.net/tradlang_module/forum?lang_cible=bg" total="136" traduits="49" relire="0" modifs="19" nouveaux="68" pourcent="36.03">
 	</langue>
-	<langue code="br" url="http://trad.spip.net/tradlang_module/forum?lang_cible=br" total="136" traduits="63" relire="0" modifs="21" nouveaux="52" pourcent="46.32">
+	<langue code="br" url="http://trad.spip.net/tradlang_module/forum?lang_cible=br" total="136" traduits="115" relire="0" modifs="21" nouveaux="0" pourcent="84.56">
+		<traducteur nom="kerivo" lien="http://trad.spip.net/auteur/kerivo" />
 	</langue>
 	<langue code="bs" url="http://trad.spip.net/tradlang_module/forum?lang_cible=bs" total="136" traduits="49" relire="0" modifs="19" nouveaux="68" pourcent="36.03">
 	</langue>
