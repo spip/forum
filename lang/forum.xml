@@ -73,6 +73,7 @@
 	<langue code="gl" url="http://trad.spip.net/tradlang_module/forum?lang_cible=gl" total="136" traduits="69" relire="0" modifs="15" nouveaux="52" pourcent="50.74">
 	</langue>
 	<langue code="hac" url="http://trad.spip.net/tradlang_module/forum?lang_cible=hac" total="136" traduits="20" relire="0" modifs="12" nouveaux="104" pourcent="14.71">
+		<traducteur nom="akomarani" lien="http://trad.spip.net/auteur/akomarani" />
 	</langue>
 	<langue code="he" url="http://trad.spip.net/tradlang_module/forum?lang_cible=he" total="136" traduits="43" relire="0" modifs="18" nouveaux="75" pourcent="31.62">
 	</langue>
