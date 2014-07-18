@@ -32,13 +32,18 @@
 
 
 <form action="#ENV{action}#formulaire_forum" method="post" enctype='multipart/form-data'><div>
-	[(#ACTION_FORMULAIRE{#ENV{action}})]
-	[<input type="hidden" name="id_forum" value="(#ENV*{id_forum})" />]
-	[<fieldset class="moderation_info info">
-		<legend><:forum:bouton_radio_modere_priori:></legend>
-		<p class="explication">(#ENV{modere})<:forum:forum_info_modere:></p>
-	</fieldset>]
+[(#ACTION_FORMULAIRE{#ENV{action}})]
+[<input type="hidden" name="id_forum" value="(#ENV*{id_forum})" />]
+[<fieldset class="moderation_info info">
+	<legend><:forum:bouton_radio_modere_priori:></legend>
+	<p class="explication">(#ENV{modere})<:forum:forum_info_modere:></p>
+</fieldset>]
 
+[(#ENV**{afficher_texte}|choixsiegal{'non', ' ',''})
+[<input type="hidden" name="titre" value="(#ENV{titre})" />]
+<p class="spip_bouton"><input type="submit" class="submit" value="<:forum:forum_valider:>" /></p>]
+
+[(#ENV**{afficher_texte}|choixsiegal{'non', '',' '})
 	<INCLURE{fond=formulaires/inc-login_forum, env} />
 
 	<fieldset>
@@ -128,8 +133,7 @@
 		<input type="text" class="text" name="nobot" id="nobot_forum" value="#ENV{nobot}" size="10" />
 	</p>
 	]
-	<p class="boutons"><input type="submit" class="submit" name="previsualiser_message" value="<:forum:forum_voir_avant:>" />[
-	(#ENV{forcer_previsu}|=={non}|et{#ENV*{erreurs}|table_valeur{previsu}|non}|oui)<input type="submit" class="submit" name="envoyer_message" value="<:forum:forum_envoyer:>" />]</p>
+  <p class="boutons"><input type="submit" class="submit" value="<:forum:forum_voir_avant:>" /></p> 
 </div>
 </form>
 

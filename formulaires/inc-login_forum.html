@@ -8,7 +8,7 @@
 <fieldset class="qui[ (#SESSION{auth}|?{session_qui,saisie_qui})]">
 <legend><:forum:forum_qui_etes_vous:></legend>
 [(#SESSION{auth}|oui)
-	[<p class='explication'><:forum:forum_votre_nom:> <strong>(#SESSION{nom}|supprimer_numero|typo)</strong> <span class="details"><a href="#URL_LOGOUT" rel="nofollow"><:icone_deconnecter:></a></span></p>]
+	[<p class='explication'><:forum:forum_votre_nom:> <strong>(#SESSION{nom}|typo)</strong> <span class="details"><a href="#URL_LOGOUT" rel="nofollow"><:icone_deconnecter:></a></span></p>]
 	
 ]
 [(#SESSION{auth}|non)
