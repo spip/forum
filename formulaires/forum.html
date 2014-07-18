@@ -65,6 +65,27 @@
 	</li>
 })]
 	</ul></fieldset>
+  
+[(#CONFIG{forums_urlref}|!={non}|?{
+	<ul><li class='fieldset'>
+  <fieldset>
+  	<legend><:forum:forum_lien_hyper:></legend>
+  	<p class='explication'><:forum:forum_page_url:></p>
+  	<ul>
+  	<li class='editer saisie_nom_site[ (#ENV**{erreurs}|table_valeur{nom_site}|oui)erreur]'>
+        <label for="nom_site"><:forum:forum_titre:></label>
+      	[<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{nom_site})</span>]
+      	<input type="text" class="text" name="nom_site" id="nom_site" size="40" value="[(#ENV{nom_site})]" />
+    </li>
+  	<li class='editer saisie_url_site[ (#ENV**{erreurs}|table_valeur{url_site}|oui)erreur]'>
+      <label for="url_site"><:forum:forum_lien_hyper:></label>
+    	[<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{url_site})</span>]
+    	<input type="text" class="text url" name="url_site" id="url_site" style="text-align: left;" dir="ltr" size="40" value="[(#ENV{url_site})]" autocapitalize="off" autocorrect="off" />
+    </li>
+  </fieldset>
+  </li>
+  </ul>
+})]  
 
 [
 	<fieldset>
