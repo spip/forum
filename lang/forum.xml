@@ -95,7 +95,8 @@
 	<langue code="lb" url="http://trad.spip.net/tradlang_module/forum?lang_cible=lb" total="136" traduits="130" relire="0" modifs="1" nouveaux="5" pourcent="95.59">
 		<traducteur nom="Jim Wanderscheid" lien="http://trad.spip.net/auteur/jwander" />
 	</langue>
-	<langue code="lt" url="http://trad.spip.net/tradlang_module/forum?lang_cible=lt" total="136" traduits="27" relire="0" modifs="10" nouveaux="99" pourcent="19.85">
+	<langue code="lt" url="http://trad.spip.net/tradlang_module/forum?lang_cible=lt" total="136" traduits="29" relire="3" modifs="5" nouveaux="99" pourcent="21.32">
+		<traducteur nom="kent1" lien="http://trad.spip.net/auteur/kent1" />
 	</langue>
 	<langue code="my" url="http://trad.spip.net/tradlang_module/forum?lang_cible=my" total="136" traduits="50" relire="0" modifs="20" nouveaux="66" pourcent="36.76">
 	</langue>
