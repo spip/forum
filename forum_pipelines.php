@@ -104,12 +104,10 @@ function forum_accueil_informations($texte){
  * @return array
  */
 function forum_afficher_fiche_objet($flux){
-
-	if (in_array($type = $flux['args']['type'],array('article','breve','site'))
-	  AND $GLOBALS['meta']['forum_prive_objets'] != 'non'){
+	if ($type = $flux['args']['type']
+	  AND $table_sql = table_objet_sql($type)
+		AND in_array($table_sql,explode(',',$GLOBALS['meta']['forum_prive_objets']))){
 		$id = $flux['args']['id'];
-		$table = table_objet($type);
-		$id_table_objet = id_table_objet($type);
 		$contexte = array_merge($flux['args']['contexte'],
 			array(
 				'objet'=>$type,

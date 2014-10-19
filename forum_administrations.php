@@ -79,6 +79,11 @@ function forum_upgrade($nom_meta_base_version,$version_cible){
 		array('sql_alter',"TABLE spip_forum DROP id_message"),
 		array('sql_alter',"TABLE spip_forum DROP id_rubrique"),
 	);
+	$maj['1.2.2'] = array(
+		array('ecrire_meta','forum_prive_objets',($GLOBALS['meta']['forum_prive_objets']=='non')?'':'spip_articles,spip_breves,spip_syndic'),
+	);
+
+
 
 	include_spip('base/upgrade');
 	maj_plugin($nom_meta_base_version, $version_cible, $maj);
