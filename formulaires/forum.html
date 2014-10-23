@@ -108,8 +108,9 @@
 		accept="(#ENV{formats_documents_forum}|join{','})"] />
 		</div>
 
+		[(#ENV{formats_documents_forum}|oui)
 		<style type="text/css">
-			#formats_docs_autorises.actif{ height: 1.5em; margin-bottom: 20px; overflow: hidden; position: relative; }
+			#formats_docs_autorises.actif{ height: 1.5em; margin-bottom: 1em; overflow: hidden; position: relative; }
 			#plus_de_docs{height: 1.5em;}
 				#formats_docs_autorises label.avec_bouton{padding-right: 35px;}
 				#plus_de_docs{display: none;position: absolute;top: 0;right: 0;}
@@ -148,6 +149,7 @@
 			f_docs_autorises();
 		});
 		/*\]\]>*/</script>
+		]
 	</li>
 	</ul></fieldset>
 ]
