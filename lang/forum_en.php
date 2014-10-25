@@ -28,6 +28,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// E
 	'erreur_enregistrement_message' => 'Your post could not be saved due to technical problem',
+	'extensions_autorisees' => 'Authorized extensions:',
+	'extensions_autorisees_lien' => 'Show all authorized file extensions',
 
 	// F
 	'form_pet_message_commentaire' => 'Any message or comments?',
