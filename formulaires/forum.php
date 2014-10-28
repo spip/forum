@@ -331,6 +331,7 @@ function formulaires_forum_verifier_dist($objet, $id_objet, $id_forum,
 			$previsu = inclure_previsu($texte, $titre, _request('url_site'), _request('nom_site'), _request('ajouter_mot'), $doc,
 				$objet, $id_objet, $id_forum);
 			$erreurs['previsu'] = $previsu;
+			$erreurs['message_erreur'] = ''; // on ne veut pas du message_erreur automatique
 		}
 	}
 
