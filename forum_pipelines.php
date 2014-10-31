@@ -274,7 +274,7 @@ function forum_optimiser_base_disparus($flux){
 	//
 	// Forums
 	//
-	sql_delete("spip_forum", "statut='redac' AND maj < $mydate");
+	sql_delete("spip_forum", "statut=".sql_quote('redac')." AND maj < ".sql_quote($mydate));
 
 	// nettoyer les documents des forums en spam&poubelle pour eviter de sortir des quota disques
 	// bizarrement on ne nettoie jamais les messages eux meme ?
