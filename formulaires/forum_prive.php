@@ -73,12 +73,8 @@ function formulaires_forum_prive_verifier_dist($objet, $id_objet, $id_forum, $af
 
 	$erreurs = array();
 
-	$min_length = (defined('_FORUM_LONGUEUR_MINI') ? _FORUM_LONGUEUR_MINI : 10);
-	if (strlen($texte = _request('texte'))<$min_length
-		AND !$ajouter_mot AND $GLOBALS['meta']['forums_texte']=='oui'
-	){
-		$erreurs['texte'] = _T($min_length==10 ? 'forum:forum_attention_dix_caracteres' : 'forum:forum_attention_nb_caracteres_mini', array('min' => $min_length));
-	}
+	if (strlen($texte = _request('texte')) < 10 AND $GLOBALS['meta']['forums_texte'] == 'oui')
+		$erreurs['texte'] = _T('forum:forum_attention_dix_caracteres');
 	else if (defined('_FORUM_LONGUEUR_MAXI')
 	AND _FORUM_LONGUEUR_MAXI > 0
 	AND strlen($texte) > _FORUM_LONGUEUR_MAXI)
