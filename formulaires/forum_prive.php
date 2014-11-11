@@ -14,7 +14,7 @@ if (!defined("_ECRIRE_INC_VERSION")) return;
 
 include_spip('inc/forum');
 
-function formulaires_forum_prive_charger_dist($objet, $id_objet, $id_forum, $forcer_previsu, $statut, $retour='') {
+function formulaires_forum_prive_charger_dist($objet, $id_objet, $id_forum, $afficher_previsu, $statut, $retour='') {
 
 	if (!function_exists($f='forum_recuperer_titre'))
 		$f = 'forum_recuperer_titre_dist';
@@ -37,11 +37,8 @@ function formulaires_forum_prive_charger_dist($objet, $id_objet, $id_forum, $for
 	$ids['objet'] = $objet;
 	$ids['id_forum'] = ($x = intval($id_forum)) ? $x : '';
 
-	// par défaut, on force la prévisualisation du message avant de le poster
-	if (($forcer_previsu=='non') OR (empty($forcer_previsu) AND $GLOBALS['meta']["forums_forcer_previsu"]=="non"))
-		$forcer_previsu = 'non';
-	else
-		$forcer_previsu = 'oui';
+	// ne pas mettre '', sinon le squelette n'affichera rien.
+	$previsu = ' ';
 
 	// pour les hidden
 	$script_hidden = "";
@@ -57,10 +54,9 @@ function formulaires_forum_prive_charger_dist($objet, $id_objet, $id_forum, $for
 		'table' => $table,
 		'texte' => '',
 		'config' => $config,
-		'titre' => isset($titre) ? $titre : '',
+		'titre' => $titre,
 		'_hidden' => $script_hidden, # pour les variables hidden
 		'url_site' => "http://",
-		'forcer_previsu' => $forcer_previsu,
 		'id_forum' => $id_forum, // passer id_forum au formulaire pour lui permettre d'afficher a quoi l'internaute repond
 		'_sign'=>implode('_',$ids),
 		'_autosave_id' => $ids,
@@ -68,7 +64,7 @@ function formulaires_forum_prive_charger_dist($objet, $id_objet, $id_forum, $for
 }
 
 
-function formulaires_forum_prive_verifier_dist($objet, $id_objet, $id_forum, $forcer_previsu, $statut, $retour='') {
+function formulaires_forum_prive_verifier_dist($objet, $id_objet, $id_forum, $afficher_previsu, $statut, $retour='') {
 	include_spip('inc/acces');
 	include_spip('inc/texte');
 	include_spip('inc/forum');
@@ -77,8 +73,12 @@ function formulaires_forum_prive_verifier_dist($objet, $id_objet, $id_forum, $fo
 
 	$erreurs = array();
 
-	if (strlen($texte = _request('texte')) < 10 AND $GLOBALS['meta']['forums_texte'] == 'oui')
-		$erreurs['texte'] = _T('forum:forum_attention_dix_caracteres');
+	$min_length = (defined('_FORUM_LONGUEUR_MINI') ? _FORUM_LONGUEUR_MINI : 10);
+	if (strlen($texte = _request('texte'))<$min_length
+		AND !$ajouter_mot AND $GLOBALS['meta']['forums_texte']=='oui'
+	){
+		$erreurs['texte'] = _T($min_length==10 ? 'forum:forum_attention_dix_caracteres' : 'forum:forum_attention_nb_caracteres_mini', array('min' => $min_length));
+	}
 	else if (defined('_FORUM_LONGUEUR_MAXI')
 	AND _FORUM_LONGUEUR_MAXI > 0
 	AND strlen($texte) > _FORUM_LONGUEUR_MAXI)
@@ -96,9 +96,11 @@ function formulaires_forum_prive_verifier_dist($objet, $id_objet, $id_forum, $fo
 		$erreurs['erreur_message'] = _T('forum:forum_message_trop_long');
 	}
 
-	if (!count($erreurs) AND !_request('envoyer_message') AND !_request('confirmer_previsu_forum')){
-		$previsu = inclure_forum_prive_previsu($texte, $titre, _request('url_site'), _request('nom_site'), _request('ajouter_mot'));
-		$erreurs['previsu'] = $previsu;
+	if (!count($erreurs) AND !_request('confirmer_previsu_forum')){
+		if ($afficher_previsu != 'non') {
+			$previsu = inclure_forum_prive_previsu($texte, $titre, _request('url_site'), _request('nom_site'), _request('ajouter_mot'));
+			$erreurs['previsu'] = $previsu;
+		}
 	}
 
 	return $erreurs;
@@ -123,7 +125,7 @@ function inclure_forum_prive_previsu($texte,$titre, $url_site, $nom_site, $ajout
 			'nom_site' => safehtml(typo($nom_site)),
 			'ajouter_mot' => (is_array($ajouter_mot) ? $ajouter_mot : array($ajouter_mot)),
 			'ajouter_document' => $doc,
-			#'erreur' => $erreur, // kesako ? non définie ?
+			'erreur' => $erreur,
 			'bouton' => $bouton
 			)
 					       ),
@@ -131,7 +133,7 @@ function inclure_forum_prive_previsu($texte,$titre, $url_site, $nom_site, $ajout
 }
 
 
-function formulaires_forum_prive_traiter_dist($objet, $id_objet, $id_forum, $forcer_previsu, $statut, $retour='') {
+function formulaires_forum_prive_traiter_dist($objet, $id_objet, $id_forum, $afficher_previsu, $statut, $retour='') {
 
 	$forum_insert = charger_fonction('forum_insert', 'inc');
 	$id_reponse = $forum_insert($objet, $id_objet, $id_forum,$statut);
