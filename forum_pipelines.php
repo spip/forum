@@ -390,7 +390,7 @@ function forum_trig_supprimer_objets_lies($objets){
 		if ($objet['type']=='message')
 			sql_delete("spip_forum", "id_message=".intval($objet['id']));
 		else
-			sql_delete("spip_forum", array("id_objet=".intval($objet['id']),"objet=".$objet['type']));
+			sql_delete("spip_forum", array("id_objet=".intval($objet['id']),"objet=".sql_quote($objet['type'])));
 	}
 	return $objets;
 }
