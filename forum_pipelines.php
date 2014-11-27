@@ -389,8 +389,10 @@ function forum_trig_supprimer_objets_lies($objets){
 	foreach($objets as $objet){
 		if ($objet['type']=='message')
 			sql_delete("spip_forum", "id_message=".intval($objet['id']));
+/*  A revoir completement, en l'état cela supprime les forums d'articles publiés que l'on lie à une newsletter en cours de rédaction
+
 		else
-			sql_delete("spip_forum", array("id_objet=".intval($objet['id']),"objet=".sql_quote($objet['type'])));
+			sql_delete("spip_forum", array("id_objet=".intval($objet['id']),"objet=".sql_quote($objet['type']))); */
 	}
 	return $objets;
 }
