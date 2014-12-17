@@ -103,6 +103,7 @@ function formulaires_forum_prive_verifier_dist($objet, $id_objet, $id_forum, $fo
 	if (!count($erreurs) AND !_request('envoyer_message') AND !_request('confirmer_previsu_forum')){
 		$previsu = inclure_forum_prive_previsu($texte, $titre, _request('url_site'), _request('nom_site'), _request('ajouter_mot'));
 		$erreurs['previsu'] = $previsu;
+		$erreurs['message_erreur'] = ''; // on ne veut pas du message_erreur automatique
 	}
 
 	return $erreurs;
