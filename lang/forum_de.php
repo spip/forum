@@ -26,6 +26,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// E
 	'erreur_enregistrement_message' => 'Fehler: Ihr Beitrag konnte nicht gespeichert werden.',
+	'extensions_autorisees' => 'Erlaubte Endungen:',
+	'extensions_autorisees_lien' => 'Alle erlaubten Dateiendungen anzeigen',
 
 	// F
 	'form_pet_message_commentaire' => 'Eine Nachricht, ein Kommentar?',
@@ -38,6 +40,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_trop_caracteres' => '<b>Achtung!</b> Ihr Beitrag ist zu lang (@compte@ Zeichen). Damit er gespeichert werden kann, darf er maximal @max@ Zeichen lang sein.',
 	'forum_avez_selectionne' => 'Sie haben ausgewählt:',
 	'forum_cliquer_retour' => '<a href=\'@retour_forum@\'>Weiter</a>',
+	'forum_envoyer' => 'Abschicken',
 	'forum_forum' => 'Forum',
 	'forum_info_modere' => 'Dieses Forum ist moderiert. Ihr Beitrag erscheint erst nach Freischaltung durch einen Administrator der Website.',
 	'forum_lien_hyper' => 'Hyperlink',
@@ -48,6 +51,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_page_url' => '(Wenn sich Ihr Beitrag auf einen Artikel im Internet oder auf eine Seite mit Zusatzinformationen bezieht, geben Sie hier bitte den Titel der Seite und ihre Adresse bzw. URL an.)',
 	'forum_permalink' => 'Permalink des Beitrags',
 	'forum_poste_par' => 'Beitrag von @parauteur@ als Antwort auf den Artikel « @titre@ ».', # MODIF
+	'forum_poste_par_court' => 'Nachricht gesendet@parauteur@.',
+	'forum_poste_par_generique' => 'Nachricht gesendet@parauteur@ (@objet@ « @titre@ »).',
 	'forum_qui_etes_vous' => 'Wer sind Sie?',
 	'forum_saisie_texte_info' => 'In diesem Formular können Sie die SPIP-Tags <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code>sowie die HTML-Codes <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code> verwenden.Absätze fügen Sie mit Leerzeilen ein.',
 	'forum_texte' => 'Text Ihres Beitrags',
@@ -83,6 +88,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_desactiver_forum_public' => 'Öffentliche Foren abschalten. Es ist immer noch möglich, ein Forum für einen Artikel einzurichten. Für Rubriken, Meldungen, etc. stehen dann keine Foren zur Verfügung.',
 	'info_envoi_forum' => 'Forumsbeiträge an Autoren der Artikel schicken',
 	'info_fonctionnement_forum' => 'Funktionsweise des Forums:',
+	'info_forcer_previsualisation_court' => 'Vorschaue erzwingen',
+	'info_forcer_previsualisation_long' => 'Vorschau vor dem Versenden der Nachricht erzwingen',
 	'info_forums_liees_mot' => 'Beiträge mit diesem Schlagwort',
 	'info_gauche_suivi_forum_2' => 'Die Seite zum <i>Verwalten der Foren</i> hat eine administrative Funktion und dient nicht zum Diskutieren mit den Lesern. Es werden alle Einträge in öffentlichen und internen Foren gezeigt, so dass Sie diese einzeln autorisieren und ablehnen können.',
 	'info_liens_syndiques_3' => 'Foren',

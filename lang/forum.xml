@@ -27,9 +27,10 @@
 	</langue>
 	<langue code="da" url="http://trad.spip.net/tradlang_module/forum?lang_cible=da" total="138" traduits="46" relire="0" modifs="22" nouveaux="70" pourcent="33.33">
 	</langue>
-	<langue code="de" url="http://trad.spip.net/tradlang_module/forum?lang_cible=de" total="138" traduits="130" relire="0" modifs="1" nouveaux="7" pourcent="94.20">
+	<langue code="de" url="http://trad.spip.net/tradlang_module/forum?lang_cible=de" total="138" traduits="137" relire="0" modifs="1" nouveaux="0" pourcent="99.28">
 		<traducteur nom="jaro" lien="http://trad.spip.net/auteur/jaro" />
 		<traducteur nom="klaus++" lien="http://trad.spip.net/auteur/klaus" />
+		<traducteur nom="Torsten Willmann" lien="http://trad.spip.net/auteur/torsten-willmann" />
 	</langue>
 	<langue code="el" url="http://trad.spip.net/tradlang_module/forum?lang_cible=el" total="138" traduits="34" relire="0" modifs="13" nouveaux="91" pourcent="24.64">
 		<traducteur nom="Yannick Bailly" lien="http://trad.spip.net/auteur/yannick-bailly" />
