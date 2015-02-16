@@ -122,6 +122,9 @@
 	</langue>
 	<langue code="oc_ni_la" url="http://trad.spip.net/tradlang_module/forum?lang_cible=oc_ni_la" total="138" traduits="49" relire="0" modifs="19" nouveaux="70" pourcent="35.51">
 	</langue>
+	<langue code="oc_ni_mis" url="http://trad.spip.net/tradlang_module/forum?lang_cible=oc_ni_mis" total="138" traduits="112" relire="2" modifs="0" nouveaux="24" pourcent="81.16">
+		<traducteur nom="sylvain" lien="http://trad.spip.net/auteur/sylvain" />
+	</langue>
 	<langue code="oc_prv" url="http://trad.spip.net/tradlang_module/forum?lang_cible=oc_prv" total="138" traduits="49" relire="0" modifs="19" nouveaux="70" pourcent="35.51">
 	</langue>
 	<langue code="oc_va" url="http://trad.spip.net/tradlang_module/forum?lang_cible=oc_va" total="138" traduits="49" relire="0" modifs="19" nouveaux="70" pourcent="35.51">
