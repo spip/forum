@@ -13,45 +13,50 @@
 if (!defined("_ECRIRE_INC_VERSION")) return;
 include_spip('inc/actions');
 
-// recuperer le critere SQL qui selectionne nos forums
-// http://doc.spip.org/@critere_statut_controle_forum
-function critere_statut_controle_forum($type, $id_rubrique=0, $recherche='') {
+/**
+ * recuperer le critere SQL qui selectionne nos forums
+ * http://doc.spip.org/@critere_statut_controle_forum
+ *
+ * @param string $type
+ * @param int|array $id_secteur
+ * @param string $recherche
+ * @return array
+ */
+function critere_statut_controle_forum($type, $id_secteur=0, $recherche='') {
 
-	if (is_array($id_rubrique))   $id_rubrique = join(',',$id_rubrique);
-	if (!$id_rubrique) {
+	if (!$id_secteur) {
 		$from = 'spip_forum AS F';
 		$where = "";
 		$and = "";
 	} else {
-		if (strpos($id_rubrique,','))
-		  $eq = " IN ($id_rubrique)";
-		else $eq = "=$id_rubrique";
-	      
+		if (!is_array($id_secteur)){
+			$id_secteur = explode(',',$id_secteur);
+		}
 		$from = 'spip_forum AS F, spip_articles AS A';
-		$where = "A.id_secteur$eq AND F.objet='article' AND F.id_objet=A.id_article";
+		$where = sql_in("A.id_secteur",$id_secteur)." AND F.objet='article' AND F.id_objet=A.id_article";
 		$and = ' AND ';
 	}
    
 	switch ($type) {
-	case 'public':
-		$and .= "F.statut IN ('publie', 'off', 'prop', 'spam') AND F.texte!=''";
-		break;
-	case 'prop':
-		$and .= "F.statut='prop'";
-		break;
-	case 'spam':
-		$and .= "F.statut='spam'";
-		break;
-	case 'interne':
-		$and .= "F.statut IN ('prive', 'privrac', 'privoff', 'privadm') AND F.texte!=''";
-		break;
-	case 'vide':
-		$and .= "F.statut IN ('publie', 'off', 'prive', 'privrac', 'privoff', 'privadm') AND F.texte=''";
-		break;
-	default:
-		$where = '0=1';
-		$and ='';
-		break;
+		case 'public':
+			$and .= "F.statut IN ('publie', 'off', 'prop', 'spam') AND F.texte!=''";
+			break;
+		case 'prop':
+			$and .= "F.statut='prop'";
+			break;
+		case 'spam':
+			$and .= "F.statut='spam'";
+			break;
+		case 'interne':
+			$and .= "F.statut IN ('prive', 'privrac', 'privoff', 'privadm') AND F.texte!=''";
+			break;
+		case 'vide':
+			$and .= "F.statut IN ('publie', 'off', 'prive', 'privrac', 'privoff', 'privadm') AND F.texte=''";
+			break;
+		default:
+			$where = '0=1';
+			$and ='';
+			break;
 	}
 
 	if ($recherche) {
