@@ -118,11 +118,12 @@
 	</langue>
 	<langue code="oc_lnc" url="http://trad.spip.net/tradlang_module/forum?lang_cible=oc_lnc" total="138" traduits="50" relire="0" modifs="20" nouveaux="68" pourcent="36.23">
 	</langue>
-	<langue code="oc_ni" url="http://trad.spip.net/tradlang_module/forum?lang_cible=oc_ni" total="138" traduits="52" relire="0" modifs="19" nouveaux="67" pourcent="37.68">
+	<langue code="oc_ni" url="http://trad.spip.net/tradlang_module/forum?lang_cible=oc_ni" total="138" traduits="60" relire="1" modifs="10" nouveaux="67" pourcent="43.48">
+		<traducteur nom="sylvain" lien="http://trad.spip.net/auteur/sylvain" />
 	</langue>
 	<langue code="oc_ni_la" url="http://trad.spip.net/tradlang_module/forum?lang_cible=oc_ni_la" total="138" traduits="49" relire="0" modifs="19" nouveaux="70" pourcent="35.51">
 	</langue>
-	<langue code="oc_ni_mis" url="http://trad.spip.net/tradlang_module/forum?lang_cible=oc_ni_mis" total="138" traduits="112" relire="2" modifs="0" nouveaux="24" pourcent="81.16">
+	<langue code="oc_ni_mis" url="http://trad.spip.net/tradlang_module/forum?lang_cible=oc_ni_mis" total="138" traduits="131" relire="2" modifs="0" nouveaux="5" pourcent="94.93">
 		<traducteur nom="sylvain" lien="http://trad.spip.net/auteur/sylvain" />
 	</langue>
 	<langue code="oc_prv" url="http://trad.spip.net/tradlang_module/forum?lang_cible=oc_prv" total="138" traduits="49" relire="0" modifs="19" nouveaux="70" pourcent="35.51">
