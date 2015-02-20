@@ -92,11 +92,15 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_config_forums_prive_admin' => 'Un forou reservat ai aministratour dau sit :',
 	'info_config_forums_prive_global' => 'Un forou toutal, dubert en toui lu redatour :',
 	'info_config_forums_prive_objets' => 'Un forou souta cada article, brèva, sit referençat, eca. :',
+	'info_desactiver_forum_public' => 'Desativà l’utilisacioun dei forou
+	public. Lu forou public pouran estre autourisat au cas per cas
+	sus lu article ; seran interdich sus lu rùbrica, li brèva, eca.',
 	'info_envoi_forum' => 'Spedissioun dei forou ai autour dei article',
 	'info_fonctionnement_forum' => 'Founciounamen dóu forou :',
 	'info_forcer_previsualisation_court' => 'Fourçà la previsualisacioun',
 	'info_forcer_previsualisation_long' => 'Fourcà la previsualisacioun denant de mandà lou message',
 	'info_forums_liees_mot' => 'Lu message ligat en aquèu mot',
+	'info_gauche_suivi_forum_2' => 'La pàgina de <i>segut dei forou</i> es un autis de gestioun dóu vouòstre sit (e noun un espaci de discussioun o de redacioun). Aficha touti li countribucioun dei forou dóu sit, aqueli dóu sit public o aqueli dóu sit privat, e vous permet de gerà esti countribucioun.',
 	'info_liens_syndiques_3' => 'forou',
 	'info_liens_syndiques_4' => 'soun',
 	'info_liens_syndiques_5' => 'forou',
@@ -106,7 +110,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_liens_titre' => 'Estac coutengut en lou titre dóu message',
 	'info_mode_fonctionnement_defaut_forum_public' => 'Mode de founciounamen predefinit dei forou public',
 	'info_nb_messages_forum' => '@nb@ message de forou',
+	'info_option_email' => 'Coura un visitaire dóu sit pouòsta un message nouvèu en lou forou assouciat a un article, lu autour de l’article pouòdon estre prevengut d’aqueu message per e-mail. Endicàs per cada tìpou de forou se si cau utilisà aquela oupcioun.',
 	'info_pas_de_forum' => 'mìnga forou',
+	'info_question_visiteur_ajout_document_forum' => 'Se voulès autourisà lu visitaire a jougne dei doucumen (image, soun…) dau siéu message de forou, endicàs aquì souta la lista dei estensioun de doucumen autourisat per lu forou (ex : gif, jpg, png, mp3).',
+	'info_question_visiteur_ajout_document_forum_format' => 'Se voulès autourisà toui lu tìpou de doucumen counsiderat couma segur da SPIP, metès una estela. Per ren autourisà, endicàs ren.',
 	'info_selectionner_message' => 'Seleciounà lu message :',
 	'interface_formulaire' => 'Interfaça fourmulari',
 	'interface_onglets' => 'Interfaça embé ounglet',
@@ -143,7 +150,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'messages_tous' => 'Toui',
 
 	// O
-	'onglet_messages_internes' => 'Message interna', # RELIRE
+	'onglet_messages_internes' => 'Message interna',
 	'onglet_messages_publics' => 'Message public',
 	'onglet_messages_vide' => 'Message sensa tèst',
 
@@ -163,11 +170,11 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'texte_en_cours_validation_forum' => 'Noun esitàs de dounà lou vouòstre avis gauch ai forou que lì soun atacat.',
 	'texte_messages_publics' => 'Message public sus :',
 	'titre_cadre_forum_administrateur' => 'Forou privat dei aministratour',
-	'titre_cadre_forum_interne' => 'Forou interna', # RELIRE
+	'titre_cadre_forum_interne' => 'Forou interna',
 	'titre_config_forums_prive' => 'Forou de l’espaci privat',
 	'titre_forum' => 'Forou',
-	'titre_forum_suivi' => 'Seguit dei forou',
-	'titre_page_forum_suivi' => 'Seguit dei forou',
+	'titre_forum_suivi' => 'Segut dei forou',
+	'titre_page_forum_suivi' => 'Segut dei forou',
 	'titre_selection_action' => 'Selecioun',
 	'tout_voir' => 'Veire toui lu message',
 
