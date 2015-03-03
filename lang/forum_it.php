@@ -30,6 +30,8 @@ cancellarli successivamente).',
 
 	// E
 	'erreur_enregistrement_message' => 'Il tuo messaggio non può essere salvato a causa di un problema tecnico.',
+	'extensions_autorisees' => 'Estensioni autorizzate :',
+	'extensions_autorisees_lien' => 'Visionare tutte le estensioni autorizzate per i file',
 
 	// F
 	'form_pet_message_commentaire' => 'Un messaggio, un commento?',
