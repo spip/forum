@@ -8,8 +8,8 @@ if (!defined('_ECRIRE_INC_VERSION')) return;
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// F
-	'forum_description' => 'Forou de SPIP (privat e public)',
-	'forum_slogan' => 'Gestioun dei forou privat e public en SPIP'
+	'forum_description' => 'Fòrou de SPIP (privat e public)',
+	'forum_slogan' => 'Gestioun dei fòrou privat e public en SPIP'
 );
 
 ?>
