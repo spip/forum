@@ -14,7 +14,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_articles_futurs' => 'basta ai article futur (mìnga d’acioun sus la basa de dounada).',
 	'bouton_radio_articles_tous' => 'a toui lu article sensa echecioun',
 	'bouton_radio_articles_tous_sauf_forum_desactive' => 'a toui lu article, levat aquelu que lou fòrou es desativat.',
-	'bouton_radio_enregistrement_obligatoire' => 'Registramen obligatori (lu utilisaire si devon abounà en dounant li sieu adressa e-mail denant de poudé poustà li countribucioun).',
+	'bouton_radio_enregistrement_obligatoire' => 'Registramen oubligatori (lu utilisaire si devon abounà en dounant li sieu adressa e-mail denant de poudé poustà li countribucioun).',
 	'bouton_radio_moderation_priori' => 'Mouderacioun <i>a priòri</i> (li
 	countribucioun aparèisson publicamen après validacioun dei
 	aministratour).',
