@@ -66,11 +66,11 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_voir_avant' => 'Previsualisà',
 	'forum_votre_email' => 'La vouòstra adressa e-mail',
 	'forum_votre_nom' => 'Lou vouòstre noum',
-	'forum_vous_enregistrer' => 'Per participà à
-  aqueu fòrou, devès d’en premier vous registrà. Mercì
-  d’endicà aquì souta l’identificant persounal que vous es
+	'forum_vous_enregistrer' => 'Da participà à
+  aqueu fòrou, devès d’en premier vi registrà. Mercì
+  d’endicà aquì souta l’identificant persounal que v’es
   estat fournit. Se noun sias registrat, devès',
-	'forum_vous_inscrire' => 'vous inscriéure.',
+	'forum_vous_inscrire' => 'v’inscriéure.',
 
 	// I
 	'icone_bruler_message' => 'Signalà couma Spam',
@@ -93,14 +93,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_config_forums_prive_global' => 'Un fòrou toutal, dubert en toui lu redatour :',
 	'info_config_forums_prive_objets' => 'Un fòrou souta cada article, brèva, sit referençat, eca. :',
 	'info_desactiver_forum_public' => 'Desativà l’utilisacioun dei fòrou
-	public. Lu fòrou public pouran estre autourisat au cas per cas
-	sus lu article ; seran interdich sus lu rùbrica, li brèva, eca.',
-	'info_envoi_forum' => 'Spedissioun dei fòrou ai autour dei article',
+	pùblicou. Lu fòrou pùblicou pouran estre autourisat au cas per cas
+	soubre lu article ; seran interdich soubre li rùbrica, li brèva, eca.',
+	'info_envoi_forum' => 'Espedissioun dei fòrou ai autour dei article',
 	'info_fonctionnement_forum' => 'Founciounamen dóu fòrou :',
 	'info_forcer_previsualisation_court' => 'Fourçà la previsualisacioun',
 	'info_forcer_previsualisation_long' => 'Fourcà la previsualisacioun denant de mandà lou message',
 	'info_forums_liees_mot' => 'Lu message ligat en aquèu mot',
-	'info_gauche_suivi_forum_2' => 'La pàgina de <i>segut dei fòrou</i> es un autis de gestioun dóu vouòstre sit (e noun un espaci de discussioun o de redacioun). Aficha touti li countribucioun dei fòrou dóu sit, aqueli dóu sit public o aqueli dóu sit privat, e vous permet de gerà esti countribucioun.',
+	'info_gauche_suivi_forum_2' => 'La pàgina de <i>segut dei fòrou</i> es un autis de gestioun dóu vouòstre sit (e noun un espaci de discussioun o de redacioun). Aficha touti li countribucioun dei fòrou dóu sit, aqueli dóu sit pùblicou o aqueli dóu sit privat, e vi permete de gerà aquesti countribucioun.',
 	'info_liens_syndiques_3' => 'fòrou',
 	'info_liens_syndiques_4' => 'soun',
 	'info_liens_syndiques_5' => 'fòrou',
@@ -151,7 +151,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// O
 	'onglet_messages_internes' => 'Message interna',
-	'onglet_messages_publics' => 'Message public',
+	'onglet_messages_publics' => 'Message pùblicou',
 	'onglet_messages_vide' => 'Message sensa tèst',
 
 	// R
@@ -168,7 +168,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'text_article_propose_publication_forum' => 'Noun esitàs de dounà lou vouòstre avis gauch au fòrou atacat en aquel article (davau de la pàgina).',
 	'texte_en_cours_validation' => 'Lu article, brèva, fòrou aquì souta soun proupausat a la publicacioun.',
 	'texte_en_cours_validation_forum' => 'Noun esitàs de dounà lou vouòstre avis gauch ai fòrou que lì soun atacat.',
-	'texte_messages_publics' => 'Message public sus :',
+	'texte_messages_publics' => 'Message pùblicou soubre :',
 	'titre_cadre_forum_administrateur' => 'Fòrou privat dei aministratour',
 	'titre_cadre_forum_interne' => 'fòrou interna',
 	'titre_config_forums_prive' => 'Fòrou de l’espaci privat',
