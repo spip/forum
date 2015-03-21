@@ -94,7 +94,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_config_forums_prive_objets' => 'Un fòrou souta cada article, brèva, sit referençat, eca. :',
 	'info_desactiver_forum_public' => 'Desativà l’utilisacioun dei fòrou
 	pùblicou. Lu fòrou pùblicou pouran estre autourisat au cas per cas
-	soubre lu article ; seran interdich soubre li rùbrica, li brèva, eca.',
+	soubre lu article ; seran prouhibit soubre li rùbrica, li brèva, eca.',
 	'info_envoi_forum' => 'Espedissioun dei fòrou ai autour dei article',
 	'info_fonctionnement_forum' => 'Founciounamen dóu fòrou :',
 	'info_forcer_previsualisation_court' => 'Fourçà la previsualisacioun',
