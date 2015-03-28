@@ -66,16 +66,15 @@ function inc_forum_insert_dist($objet, $id_objet, $id_forum, $force_statut = NUL
 
 	include_spip('inc/filtres');
 	include_spip('inc/modifier');
+	include_spip('inc/session');
 	$champs = objet_info('forum','champs_editables');
 	$c = collecter_requests($champs, array());
 	
 	$c['statut'] = 'off';
 	$c['objet'] = $objet;
 	$c['id_objet'] = $id_objet;
-	$c['auteur'] = sinon($GLOBALS['visiteur_session']['nom'],
-		$GLOBALS['visiteur_session']['session_nom']);
-	$c['email_auteur'] = sinon($GLOBALS['visiteur_session']['email'],
-		$GLOBALS['visiteur_session']['session_email']);
+	$c['auteur'] = sinon(session_get('nom'), session_get('session_nom'));
+	$c['email_auteur'] = sinon(session_get('email'), session_get('session_email'));
 
 	$c = pipeline('pre_edition',array(
 		'args'=>array(
