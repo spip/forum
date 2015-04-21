@@ -68,9 +68,10 @@
 		<traducteur nom="Cerf" lien="http://trad.spip.net/auteur/cerf" />
 		<traducteur nom="denisb" lien="http://trad.spip.net/auteur/denisb" />
 	</langue>
-	<langue code="fr_tu" url="http://trad.spip.net/tradlang_module/forum?lang_cible=fr_tu" total="138" traduits="136" relire="0" modifs="0" nouveaux="2" pourcent="98.55">
+	<langue code="fr_tu" url="http://trad.spip.net/tradlang_module/forum?lang_cible=fr_tu" total="138" traduits="138" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 		<traducteur nom="beatnick" lien="http://trad.spip.net/auteur/beatnick" />
 		<traducteur nom="Cerf" lien="http://trad.spip.net/auteur/cerf" />
+		<traducteur nom="RealET" lien="http://trad.spip.net/auteur/realet" />
 	</langue>
 	<langue code="gl" url="http://trad.spip.net/tradlang_module/forum?lang_cible=gl" total="138" traduits="69" relire="0" modifs="15" nouveaux="54" pourcent="50.00">
 	</langue>
