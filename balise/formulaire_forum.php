@@ -30,7 +30,7 @@ include_spip('inc/forum');
 // #FORMULAIRE_FORUM{#SELF} pour forcer l'url de retour
 // #FORMULAIRE_FORUM{#SELF, article, 3} pour forcer l'objet et son identifiant
 
-// http://doc.spip.org/@balise_FORMULAIRE_FORUM
+// http://code.spip.net/@balise_FORMULAIRE_FORUM
 function balise_FORMULAIRE_FORUM ($p) {
 	/**
 	 * On recupere $objet et $id_objet depuis une boucle englobante si possible
@@ -80,7 +80,7 @@ function balise_FORMULAIRE_FORUM ($p) {
 // valeurs possibles : 'pos'teriori, 'pri'ori, 'abo'nnement
 // Donner aussi la table de reference pour afficher_groupes[]
 
-// http://doc.spip.org/@balise_FORMULAIRE_FORUM_stat
+// http://code.spip.net/@balise_FORMULAIRE_FORUM_stat
 function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 	
 

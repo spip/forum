@@ -10,7 +10,7 @@
 if (!defined("_ECRIRE_INC_VERSION")) return;
 include_spip('inc/presentation');
 
-// http://doc.spip.org/@exec_articles_forum_dist
+// http://code.spip.net/@exec_articles_forum_dist
 function exec_articles_forum_dist()
 {
 	$controle_forum = charger_fonction('controle_forum','exec');

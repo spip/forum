@@ -26,7 +26,7 @@ function autoriser_forum_reactions_bouton_dist($faire, $type='', $id=0, $qui = N
 // Moderer le forum ?
 // = modifier l'objet correspondant (si forum attache a un objet)
 // = droits par defaut sinon (admin complet pour moderation complete)
-// http://doc.spip.org/@autoriser_modererforum_dist
+// http://code.spip.net/@autoriser_modererforum_dist
 function autoriser_modererforum_dist($faire, $type, $id, $qui, $opt) {
 	return
 		autoriser('modifier', $type, $id, $qui, $opt);
@@ -35,7 +35,7 @@ function autoriser_modererforum_dist($faire, $type, $id, $qui, $opt) {
 
 // Modifier un forum ?
 // = jamais !
-// http://doc.spip.org/@autoriser_forum_modifier_dist
+// http://code.spip.net/@autoriser_forum_modifier_dist
 function autoriser_forum_modifier_dist($faire, $type, $id, $qui, $opt) {
 	return
 		false;
@@ -56,7 +56,7 @@ function autoriser_bouton_controle_forum_dist($faire, $type, $id, $qui, $opt){
 
 // Consulter le forum des admins ?
 // admins y compris restreints
-// http://doc.spip.org/@autoriser_forum_admin_dist
+// http://code.spip.net/@autoriser_forum_admin_dist
 function autoriser_forum_admin_dist($faire, $type, $id, $qui, $opt) {
 	return
 		$qui['statut'] == '0minirezo'
