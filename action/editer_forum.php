@@ -45,7 +45,7 @@ if(!function_exists('revision_forum')){
 			),
 			$c);
 
-		$t = $t["id_thread"];
+		$id_thread = $t["id_thread"];
 		$cles = array();
 		foreach (array('id_objet', 'objet') as $k) {
 			if (isset($c[$k]) AND $c[$k]) $cles[$k] = $c[$k];
@@ -54,9 +54,9 @@ if(!function_exists('revision_forum')){
 		// Modification des id_article etc
 		// (non autorise en standard mais utile pour des crayons)
 		// on deplace tout le thread {sauf les originaux}.
-		if (count($cles) AND $t) {
-			spip_log("update thread id_thread=$t avec ".var_export($cles,1),'forum.'. _LOG_INFO_IMPORTANTE);
-			sql_updateq("spip_forum", $cles, "id_thread=".intval($t)." AND statut!='original'");
+		if (count($cles) AND $id_thread) {
+			spip_log("update thread id_thread=$id_thread avec ".var_export($cles,1),'forum.'. _LOG_INFO_IMPORTANTE);
+			sql_updateq("spip_forum", $cles, "id_thread=".$id_thread." AND statut!='original'");
 			// on n'affecte pas $r, car un deplacement ne change pas l'auteur
 		}
 
@@ -71,7 +71,7 @@ if(!function_exists('revision_forum')){
 			*/
 
 			// & meme ca ca pourrait etre optionnel
-			sql_updateq("spip_forum", array("date_thread" => date('Y-m-d H:i:s')), "id_thread=".$t);
+			sql_updateq("spip_forum", array("date_thread" => date('Y-m-d H:i:s')), "id_thread=".$id_thread);
 		}
 	}
 }
