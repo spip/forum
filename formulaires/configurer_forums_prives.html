@@ -7,7 +7,7 @@
 	<form action="#ENV{action}#formulaire_configurer_forums_prives" method="post"><div>
 		[(#ACTION_FORMULAIRE{#ENV{action}})]
 		<p class='explication'><:forum:info_config_forums_prive:></p>
-		<ul>
+		<ul class="editer-groupe">
 			#SET{name,forum_prive_objets}#SET{erreurs,#ENV**{erreurs}|table_valeur{#GET{name}}}
 			<li class="editer long_label editer_[(#GET{name})][ (#GET{obli})][ (#GET{erreurs}|oui)erreur]">
 				<label><:forum:item_config_forums_prive_objets:></label>[

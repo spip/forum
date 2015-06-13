@@ -45,7 +45,7 @@
 	<legend><:forum:forum_message:></legend>[
 	(#CONFIG{forums_titre}|!={non}|non)
 		<input type="hidden" name="titre" id="titre"[ value="(#ENV{titre})"] />
-	]<ul>
+	]<ul class="editer-groupe">
 	[<li class='editer saisie_mots_forum'>(#INCLURE{fond=formulaires/inc-forum_bloc_choix_mots, table=#ENV*{table}, ajouter_mot})</li>]
 
 [(#CONFIG{forums_titre}|!={non}|oui)
@@ -67,11 +67,11 @@
 	</ul></fieldset>
   
 [(#CONFIG{forums_urlref}|!={non}|?{
-	<ul><li class='fieldset'>
+	<ul class="editer-groupe"><li class='fieldset'>
   <fieldset>
   	<legend><:forum:forum_lien_hyper:></legend>
   	<p class='explication'><:forum:forum_page_url:></p>
-  	<ul>
+  	<ul class="editer-groupe">
   	<li class='editer saisie_nom_site[ (#ENV**{erreurs}|table_valeur{nom_site}|oui)erreur]'>
         <label for="nom_site"><:forum:forum_titre:></label>
       	[<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{nom_site})</span>]
@@ -91,7 +91,7 @@
 [
 	<fieldset>
 	<legend><:medias:bouton_ajouter_document:></legend>
-	<ul>
+	<ul class="editer-groupe">
 	<li class='editer saisie_document_forum[ (#ENV**{erreurs}|table_valeur{document_forum}|oui)erreur]'>
 		[<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{document_forum})</span>]
 		<input type="hidden" name="cle_ajouter_document" value="(#ENV{cle_ajouter_document})" />

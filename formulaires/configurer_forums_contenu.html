@@ -6,7 +6,7 @@
 
 	<form action="#ENV{action}#formulaire_configurer_contenu_forums" method="post"><div>
 		[(#ACTION_FORMULAIRE{#ENV{action}})]
-		<ul>
+		<ul class="editer-groupe">
 			<li class='editer configurer_champs_forums[ (#ENV**{erreurs}|table_valeur{forums_titre}|oui)erreur]'>
 				<label><:config_activer_champs:></label>[
 				<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{forums_titre})</span>

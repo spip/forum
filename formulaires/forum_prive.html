@@ -30,7 +30,7 @@
 
 [(#ENV{config}|table_valeur{forums_titre})
 		<input type="hidden" name="titre" id="titre"[ value="(#ENV{titre})"] />
-	]<ul>
+	]<ul class="editer-groupe">
 
 [(#ENV{config}|table_valeur{forums_titre}|!={non}|oui)
 	<li class='editer saisie_titre[ (#ENV**{erreurs}|table_valeur{titre}|oui)erreur] obligatoire'>
@@ -53,7 +53,7 @@
 	<li class='fieldset'><fieldset>
 	<legend><:forum:forum_lien_hyper:></legend>
 	<p class='explication'><:forum:forum_page_url:></p>
-	<ul>
+	<ul class="editer-groupe">
 	<li class='editer saisie_nom_site[ (#ENV**{erreurs}|table_valeur{nom_site}|oui)erreur]'><label for="nom_site"><:forum:forum_titre:></label>
 	[<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{nom_site})</span>]
 	<input type="text" class="text" name="nom_site" id="nom_site" size="40" value="[(#ENV{nom_site})]" /></li>

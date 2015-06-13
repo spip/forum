@@ -12,7 +12,7 @@
 	
 ]
 [(#SESSION{auth}|non)
-	<ul>
+	<ul class="editer-groupe">
 		<li class='editer saisie_session_nom'>
 			<label for="session_nom"><:forum:forum_votre_nom:></label>
 			<input type="text" class="text" name="session_nom" id="session_nom" value="[(#SESSION**{nom}|sinon{#SESSION**{session_nom}}|entites_html)]" size="40" autocapitalize="off" autocorrect="off" />

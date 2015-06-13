@@ -6,7 +6,7 @@
 
 	<form action="#ENV{action}#formulaire_configurer_forums_participants" method="post"><div>
 		[(#ACTION_FORMULAIRE{#ENV{action}})]
-		<ul>
+		<ul class="editer-groupe">
 			<li class='editer configurer_forums_publics[ (#ENV**{erreurs}|table_valeur{forums_publics}|oui)erreur]'>
 				[
 				<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{forums_publics})</span>
@@ -31,7 +31,7 @@
 			<li id='config-options-' class='fieldset'>
 				<fieldset>
 					<legend><:info_options_avancees:></legend>
-					<ul>
+					<ul class="editer-groupe">
 						<li class='editer configurer_forums_publics_appliquer[ (#ENV**{erreurs}|table_valeur{forums_publics_appliquer}|oui)erreur]'>
 							<label><:forum:info_appliquer_choix_moderation:></label>[
 							<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{forums_publics_appliquer})</span>
