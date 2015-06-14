@@ -45,54 +45,54 @@
 	<legend><:forum:forum_message:></legend>[
 	(#CONFIG{forums_titre}|!={non}|non)
 		<input type="hidden" name="titre" id="titre"[ value="(#ENV{titre})"] />
-	]<ul class="editer-groupe">
-	[<li class='editer saisie_mots_forum'>(#INCLURE{fond=formulaires/inc-forum_bloc_choix_mots, table=#ENV*{table}, ajouter_mot})</li>]
+	]<div class="editer-groupe">
+	[<div class='editer saisie_mots_forum'>(#INCLURE{fond=formulaires/inc-forum_bloc_choix_mots, table=#ENV*{table}, ajouter_mot})</div>]
 
 [(#CONFIG{forums_titre}|!={non}|oui)
-	<li class='editer saisie_titre obligatoire[ (#ENV**{erreurs}|table_valeur{titre}|oui)erreur]'>
+	<div class='editer saisie_titre obligatoire[ (#ENV**{erreurs}|table_valeur{titre}|oui)erreur]'>
 		<label for="titre"><:forum:forum_titre:> <:info_obligatoire_02:></label>
 		[<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{titre})</span>]
 		<input type="text" class="text" name="titre" id="titre"[ value="(#ENV{titre})"] size="60" />
-	</li>
+	</div>
 ]
 
 [(#CONFIG{forums_texte}|!={non}|?{
-	<li class='editer saisie_texte obligatoire[ (#ENV**{erreurs}|table_valeur{texte}|oui)erreur]'>
+	<div class='editer saisie_texte obligatoire[ (#ENV**{erreurs}|table_valeur{texte}|oui)erreur]'>
 		<label for='texte'><:forum:forum_texte|typo:> <:info_obligatoire_02:></label>
 		[<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{texte})</span>]
 		<textarea name="texte" id="texte" rows="10" cols="60"[(#CONFIG{forums_afficher_barre}|=={non}|oui) class="no_barre"]>[(#ENV{texte})]</textarea>
         [(#ENV**{config}|table_valeur{afficher_barre}|?{<p class='explication'><:info_creation_paragraphe:></p>,<p class="explication forum_saisie_texte_info"><:forum:forum_saisie_texte_info:></p>})]
-	</li>
+	</div>
 })]
-	</ul></fieldset>
+	</div></fieldset>
   
 [(#CONFIG{forums_urlref}|!={non}|?{
-	<ul class="editer-groupe"><li class='fieldset'>
+	<div class="editer-groupe"><div class='fieldset'>
   <fieldset>
   	<legend><:forum:forum_lien_hyper:></legend>
   	<p class='explication'><:forum:forum_page_url:></p>
-  	<ul class="editer-groupe">
-  	<li class='editer saisie_nom_site[ (#ENV**{erreurs}|table_valeur{nom_site}|oui)erreur]'>
+  	<div class="editer-groupe">
+  	<div class='editer saisie_nom_site[ (#ENV**{erreurs}|table_valeur{nom_site}|oui)erreur]'>
         <label for="nom_site"><:forum:forum_titre:></label>
       	[<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{nom_site})</span>]
       	<input type="text" class="text" name="nom_site" id="nom_site" size="40" value="[(#ENV{nom_site})]" />
-    </li>
-  	<li class='editer saisie_url_site[ (#ENV**{erreurs}|table_valeur{url_site}|oui)erreur]'>
+    </div>
+  	<div class='editer saisie_url_site[ (#ENV**{erreurs}|table_valeur{url_site}|oui)erreur]'>
       <label for="url_site"><:forum:forum_lien_hyper:></label>
     	[<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{url_site})</span>]
     	<input type="text" class="text url" name="url_site" id="url_site" style="text-align: left;" dir="ltr" size="40" value="[(#ENV{url_site})]" autocapitalize="off" autocorrect="off" />
-    </li>
-    </ul>
+    </div>
+    </div>
   </fieldset>
-  </li>
-  </ul>
+  </div>
+  </div>
 })]  
 
 [
 	<fieldset>
 	<legend><:medias:bouton_ajouter_document:></legend>
-	<ul class="editer-groupe">
-	<li class='editer saisie_document_forum[ (#ENV**{erreurs}|table_valeur{document_forum}|oui)erreur]'>
+	<div class="editer-groupe">
+	<div class='editer saisie_document_forum[ (#ENV**{erreurs}|table_valeur{document_forum}|oui)erreur]'>
 		[<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{document_forum})</span>]
 		<input type="hidden" name="cle_ajouter_document" value="(#ENV{cle_ajouter_document})" />
 		[<div id="ajouter_document_up">(#ENV{ajouter_document})
@@ -150,8 +150,8 @@
 		});
 		/*\]\]>*/</script>
 		]
-	</li>
-	</ul></fieldset>
+	</div>
+	</div></fieldset>
 ]
 
 	[(#REM) Piege a robots spammeurs, dont on change le nom a chaque fois,

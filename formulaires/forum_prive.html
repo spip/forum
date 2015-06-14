@@ -30,39 +30,39 @@
 
 [(#ENV{config}|table_valeur{forums_titre})
 		<input type="hidden" name="titre" id="titre"[ value="(#ENV{titre})"] />
-	]<ul class="editer-groupe">
+	]<div class="editer-groupe">
 
 [(#ENV{config}|table_valeur{forums_titre}|!={non}|oui)
-	<li class='editer saisie_titre[ (#ENV**{erreurs}|table_valeur{titre}|oui)erreur] obligatoire'>
+	<div class='editer saisie_titre[ (#ENV**{erreurs}|table_valeur{titre}|oui)erreur] obligatoire'>
 		<label for="titre"><:forum:forum_titre:></label>
 		[<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{titre})</span>]
 		<input type="text" class="text" name="titre" id="titre"[ value="(#ENV{titre})"] size="60" />
-	</li>
+	</div>
 ]
 
 [(#ENV{config}|table_valeur{forums_texte}|?{
-	<li class='editer saisie_texte[ (#ENV**{erreurs}|table_valeur{texte}|oui)erreur] '>
+	<div class='editer saisie_texte[ (#ENV**{erreurs}|table_valeur{texte}|oui)erreur] '>
 		<label for='texte'><:forum:forum_texte|typo:></label>
 		[<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{texte})</span>]
 		<p class='explication'><:info_creation_paragraphe:></p>
 		<textarea name="texte" id="texte" rows="12" cols="60">[(#ENV{texte})]</textarea>
-	</li>
+	</div>
 })]
 
 [(#ENV{config}|table_valeur{forums_urlref}|?{
-	<li class='fieldset'><fieldset>
+	<div class='fieldset'><fieldset>
 	<legend><:forum:forum_lien_hyper:></legend>
 	<p class='explication'><:forum:forum_page_url:></p>
-	<ul class="editer-groupe">
-	<li class='editer saisie_nom_site[ (#ENV**{erreurs}|table_valeur{nom_site}|oui)erreur]'><label for="nom_site"><:forum:forum_titre:></label>
+	<div class="editer-groupe">
+	<div class='editer saisie_nom_site[ (#ENV**{erreurs}|table_valeur{nom_site}|oui)erreur]'><label for="nom_site"><:forum:forum_titre:></label>
 	[<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{nom_site})</span>]
-	<input type="text" class="text" name="nom_site" id="nom_site" size="40" value="[(#ENV{nom_site})]" /></li>
-	<li class='editer saisie_url_site[ (#ENV**{erreurs}|table_valeur{url_site}|oui)erreur]'><label for="url_site"><:forum:forum_url:></label>
+	<input type="text" class="text" name="nom_site" id="nom_site" size="40" value="[(#ENV{nom_site})]" /></div>
+	<div class='editer saisie_url_site[ (#ENV**{erreurs}|table_valeur{url_site}|oui)erreur]'><label for="url_site"><:forum:forum_url:></label>
 	[<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{url_site})</span>]
-	<input type="text" class="text" name="url_site" id="url_site" style="text-align: left;" dir="ltr" size="40" value="[(#ENV{url_site})]" /></li>
-	</ul></fieldset></li>
+	<input type="text" class="text" name="url_site" id="url_site" style="text-align: left;" dir="ltr" size="40" value="[(#ENV{url_site})]" /></div>
+	</div></fieldset></div>
 })]
-	</ul>
+	</div>
 
 	<p class="boutons"><input type="submit" class="submit" name="previsualiser_message" value="<:forum:forum_voir_avant:>" />[
 	(#ENV{forcer_previsu}|=={non}|et{#ENV*{erreurs}|table_valeur{previsu}|non}|oui)<input type="submit" class="submit" name="envoyer_message" value="<:forum:forum_envoyer:>" />]</p>
