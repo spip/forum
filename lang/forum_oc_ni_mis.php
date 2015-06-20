@@ -12,18 +12,18 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// B
 	'bouton_radio_articles_futurs' => 'basta ai article futur (mìnga d’acioun sus la basa de dounada).',
-	'bouton_radio_articles_tous' => 'a toui lu article sensa echecioun',
-	'bouton_radio_articles_tous_sauf_forum_desactive' => 'a toui lu article, levat aquelu que lou fòrou es desativat.',
+	'bouton_radio_articles_tous' => 'à toui lu article sensa echecioun',
+	'bouton_radio_articles_tous_sauf_forum_desactive' => 'à toui lu article, levat aquelu que lou fòrou es desativat.',
 	'bouton_radio_enregistrement_obligatoire' => 'Registramen oubligatori (lu utilisaire si devon abounà en dounant li sieu adressa e-mail denant de poudé poustà li countribucioun).',
 	'bouton_radio_moderation_priori' => 'Mouderacioun <i>a priòri</i> (li
-	countribucioun aparèisson publicamen après validacioun dei
+	countribucioun aparèisson publicamen après validacioun dai
 	aministratour).',
 	'bouton_radio_modere_abonnement' => 'sus abounamen',
 	'bouton_radio_modere_posteriori' => 'mouderacioun a posteriòri',
 	'bouton_radio_modere_priori' => 'mouderacioun a priòri',
 	'bouton_radio_publication_immediate' => 'Publicacioun immediata dei message
-	(li countribucioun aparéisson sus lou còu que soun mandadi, lu aministratour li pouòdon
-	suprimà pi).',
+	(li countribucioun aparéisson sus lou còu que soun mandadi, lu aministratour li pouòdon pi
+	suprimà).',
 
 	// D
 	'documents_interdits_forum' => 'Doucumen prouhibat en lou fòrou',
@@ -46,7 +46,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_cliquer_retour' => 'Clicàs <a href=\'@retour_forum@\'>aquì</a> per countinuà.',
 	'forum_envoyer' => 'Mandà',
 	'forum_forum' => 'fòrou',
-	'forum_info_modere' => 'Aqueu fòrou es mouderat a priòri : la vouòstra countribucioun aparéisserà après estre estada validada d’un aministratour dóu sit.',
+	'forum_info_modere' => 'Aqueu fòrou es mouderat a priòri : la vouòstra countribucioun aparéisserà après estre estada validada da un aministratour dóu sit.',
 	'forum_lien_hyper' => 'Estac ipertèst',
 	'forum_message' => 'Lou vouòstre message',
 	'forum_message_definitif' => 'Message definitiéu : mandà au sit',
@@ -58,15 +58,15 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_poste_par_court' => 'Message poustat @parauteur@.',
 	'forum_poste_par_generique' => 'Message poustat @parauteur@ (@objet@ « @titre@ »).',
 	'forum_qui_etes_vous' => 'Qu sias ?',
-	'forum_saisie_texte_info' => 'Aqueu fourmulari acheta li escourcha SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> e lou code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Per creà lu paràgrafou, laissàs simplamen dei ligna vuèii.',
-	'forum_texte' => 'Test dóu vouòstre message',
+	'forum_saisie_texte_info' => 'Aqueu fourmulari acheta li escourcha SPIP <code>[-&gt;url] {{gras}} {italique} &lt;quote&gt; &lt;code&gt;</code> e lou code HTML <code>&lt;q&gt; &lt;del&gt; &lt;ins&gt;</code>. Per creà lu paràgrafou, laissàs simplamen de ligna vuèii.',
+	'forum_texte' => 'Tèstou dóu vouòstre message',
 	'forum_titre' => 'Titre',
 	'forum_url' => 'Lou vouòstre sit web',
-	'forum_valider' => 'Validà aqueu chausida',
+	'forum_valider' => 'Validà aquela chausida',
 	'forum_voir_avant' => 'Previsualisà',
 	'forum_votre_email' => 'La vouòstra adressa e-mail',
 	'forum_votre_nom' => 'Lou vouòstre noum',
-	'forum_vous_enregistrer' => 'Da participà à
+	'forum_vous_enregistrer' => 'Per participà en
   aqueu fòrou, devès d’en premier vi registrà. Mercì
   d’endicà aquì souta l’identificant persounal que v’es
   estat fournit. Se noun sias registrat, devès',
@@ -77,19 +77,19 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_bruler_messages' => 'Signalà couma Spam',
 	'icone_legitimer_message' => 'Signalà couma licit',
 	'icone_poster_message' => 'Poustà un message',
-	'icone_suivi_forum' => 'Segut dóu fòrou public : @nb_forums@ countribucioun',
+	'icone_suivi_forum' => 'Segut dóu fòrou pùblicou : @nb_forums@ countribucioun',
 	'icone_suivi_forums' => 'Sègre/gerà lu fòrou',
 	'icone_supprimer_message' => 'Suprimà aqueu message',
 	'icone_supprimer_messages' => 'Suprimà aquelu message',
-	'icone_valider_message' => 'Validà aquelu message',
+	'icone_valider_message' => 'Validà aqueu message',
 	'icone_valider_messages' => 'Validà aquelu message',
 	'icone_valider_repondre_message' => 'Validà e Respouòndre en aqueu message',
 	'info_1_message_forum' => '1 message de fòrou',
-	'info_activer_forum_public' => 'Per ativà lu fòrou public, vourguès chausì lu sieu mòdou
+	'info_activer_forum_public' => 'Per ativà lu fòrou pùblicou, vourguès chausì lu sieu mòdou
  de mouderacioun predefinit :',
 	'info_appliquer_choix_moderation' => 'Aplicà aquela chausida de mouderacioun :',
-	'info_config_forums_prive' => 'En l’espaci privat dau sit, poudès ativà plusiur tìpou de fòrou :',
-	'info_config_forums_prive_admin' => 'Un fòrou reservat ai aministratour dau sit :',
+	'info_config_forums_prive' => 'En l’espaci privat dóu sit, poudès ativà mai d’un tìpou de fòrou :',
+	'info_config_forums_prive_admin' => 'Un fòrou reservat ai aministratour dóu sit :',
 	'info_config_forums_prive_global' => 'Un fòrou toutal, dubert en toui lu redatour :',
 	'info_config_forums_prive_objets' => 'Un fòrou souta cada article, brèva, sit referençat, eca. :',
 	'info_desactiver_forum_public' => 'Desativà l’utilisacioun dei fòrou
@@ -100,20 +100,20 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_forcer_previsualisation_court' => 'Fourçà la previsualisacioun',
 	'info_forcer_previsualisation_long' => 'Fourcà la previsualisacioun denant de mandà lou message',
 	'info_forums_liees_mot' => 'Lu message ligat en aquèu mot',
-	'info_gauche_suivi_forum_2' => 'La pàgina de <i>segut dei fòrou</i> es un autis de gestioun dóu vouòstre sit (e noun un espaci de discussioun o de redacioun). Aficha touti li countribucioun dei fòrou dóu sit, aqueli dóu sit pùblicou o aqueli dóu sit privat, e vi permete de gerà aquesti countribucioun.',
+	'info_gauche_suivi_forum_2' => 'La pàgina de <i>segut dei fòrou</i> es un òutis de gestioun dóu vouòstre sit (e noun un espaci de discussioun o de redacioun). Aficha touti li countribucioun dei fòrou dóu sit, aqueli dóu sit pùblicou o aqueli dóu sit privat, e vi permete de gerà aquesti countribucioun.',
 	'info_liens_syndiques_3' => 'fòrou',
 	'info_liens_syndiques_4' => 'soun',
 	'info_liens_syndiques_5' => 'fòrou',
 	'info_liens_syndiques_6' => 'es',
 	'info_liens_syndiques_7' => 'en aspèra de validacioun',
-	'info_liens_texte' => 'Estac countengut en lou tèst dóu message',
+	'info_liens_texte' => 'Estac countengut en lou tèstou dóu message',
 	'info_liens_titre' => 'Estac countengut en lou titre dóu message',
 	'info_mode_fonctionnement_defaut_forum_public' => 'Mode de founciounamen predefinit dei fòrou public',
 	'info_nb_messages_forum' => '@nb@ message de fòrou',
-	'info_option_email' => 'Coura un visitaire dóu sit pouòsta un message nouvèu en lou fòrou assouciat a un article, lu autour de l’article pouòdon estre prevengut d’aqueu message per e-mail. Endicàs per cada tìpou de fòrou se si cau utilisà aquela oupcioun.',
+	'info_option_email' => 'Coura un visitaire dóu sit pouòsta un message nouvèu en lou fòrou assouciat a un article, lu autour de l’article pouòdon estre prevengut d’aqueu message da e-mail. Endicàs per cada tìpou de fòrou se si cau utilisà aquela oupcioun.',
 	'info_pas_de_forum' => 'mìnga fòrou',
-	'info_question_visiteur_ajout_document_forum' => 'Se voulès autourisà lu visitaire a jougne dei doucumen (image, soun…) dau siéu message de fòrou, endicàs aquì souta la lista dei estensioun de doucumen autourisat per lu fòrou (ex : gif, jpg, png, mp3).',
-	'info_question_visiteur_ajout_document_forum_format' => 'Se voulès autourisà toui lu tìpou de doucumen counsiderat couma segur da SPIP, metès una estela. Per ren autourisà, endicàs ren.',
+	'info_question_visiteur_ajout_document_forum' => 'Se voulès autourisà lu visitaire a jougne de doucumen (image, soun…) dau siéu message de fòrou, endicàs aquì souta la lista dei estensioun de doucumen autourisat per lu fòrou (ex : gif, jpg, png, mp3).',
+	'info_question_visiteur_ajout_document_forum_format' => 'Se voulès autourisà toui lu tìpou de doucumen counsiderat couma segur da SPIP, metès una stela. Per ren autourisà, endicàs ren.',
 	'info_selectionner_message' => 'Seleciounà lu message :',
 	'interface_formulaire' => 'Interfaça fourmulari',
 	'interface_onglets' => 'Interfaça embé ounglet',
@@ -152,7 +152,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// O
 	'onglet_messages_internes' => 'Message interna',
 	'onglet_messages_publics' => 'Message pùblicou',
-	'onglet_messages_vide' => 'Message sensa tèst',
+	'onglet_messages_vide' => 'Message sensa tèstou',
 
 	// R
 	'repondre_message' => 'Respouòndre en aquéu message',
