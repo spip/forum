@@ -100,56 +100,10 @@
 		<:lien_supprimer:></label>
 		</div>]
 		<div>
-		[<div id='formats_docs_autorises'>
-			<label for="ajouter_document"><:forum:extensions_autorisees:>(#ENV{formats_documents_forum}|join{', '})</label>
-			<a href='#formats_docs_autorises' id='plus_de_docs' title='<:forum:extensions_autorisees_lien:>'>\[ + \]</a>
-		</div>]
+		[<label for="ajouter_document"><:forum:extensions_autorisees:> (#ENV{formats_documents_forum}|is_array|?{#ENV{formats_documents_forum}|join{', '},#ENV{formats_documents_forum}})</label>]
 		<input class='file' type="file" name="ajouter_document" id="ajouter_document"[
-		accept="(#ENV{formats_documents_forum}|join{','})"] />
+		accept="(#ENV{formats_documents_forum}|is_array|?{#ENV{formats_documents_forum}|join{', '},''})"] />
 		</div>
-
-		[(#ENV{formats_documents_forum}|oui)
-		<style type="text/css">
-			#formats_docs_autorises.actif{ height: 1.5em; margin-bottom: 1em; overflow: hidden; position: relative; }
-			#plus_de_docs{height: 1.5em;}
-				#formats_docs_autorises label.avec_bouton{padding-right: 35px;}
-				#plus_de_docs{display: none;position: absolute;top: 0;right: 0;}
-				#formats_docs_autorises.actif #plus_de_docs{display: block;}
-		</style>
-		<script type='text/javascript'>/*<!\[CDATA\[*/
-		if (window.jQuery)
-			jQuery(function(){
-				jQuery('#ajouter_document_up')
-				.next().hide()
-				.prev().find(':checkbox').bind('change', function(){
-					jQuery('#ajouter_document_up').hide().next().show();
-			});
-			function f_docs_autorises(){
-				contenant = '#formats_docs_autorises';
-				cible = '#formats_docs_autorises label';
-				declencheur = '#plus_de_docs';
-				hauteur = jQuery(cible).height();
-				hauteur_max = jQuery(declencheur).height();
-				if(hauteur>hauteur_max){ jQuery(contenant).addClass('actif'); jQuery(cible).addClass('avec_bouton'); }
-				/* Au clic */
-				jQuery("#plus_de_docs").on( "click", function(e) {
-					e.preventDefault();
-					if(jQuery(this).hasClass("ouvert")){
-						jQuery(this).removeClass("ouvert");
-						jQuery(contenant).animate({ height: "1.5em" }, 400, function() { /* fin */ });
-						jQuery(declencheur).html('\[ + \]');
-					}else{
-						jQuery(this).addClass("ouvert");
-						hauteur = jQuery(cible).height();
-						jQuery(contenant).animate({ height: hauteur+5 }, 400, function() { /* fin */ });
-						jQuery(declencheur).html('\[ - \]');
-					}
-				});
-			}
-			f_docs_autorises();
-		});
-		/*\]\]>*/</script>
-		]
 	</div>
 	</div></fieldset>
 ]

@@ -143,7 +143,7 @@ function formulaires_forum_charger_dist($objet, $id_objet, $id_forum,
 		'config' => array('afficher_barre' => ($GLOBALS['meta']['forums_afficher_barre']!='non' ? ' ' : '')),
 		'_hidden' => $script_hidden, # pour les variables hidden qui seront inserees dans le form et dans le form de previsu
 		'cle_ajouter_document' => $cle,
-		'formats_documents_forum' => forum_documents_acceptes(),
+		'formats_documents_forum' => trim($GLOBALS['meta']['formats_documents_forum']) == '*' ? _T('forum:extensions_autorisees_toutes') : forum_documents_acceptes(),
 		'ajouter_document' => isset($_FILES['ajouter_document']['name']) ? $_FILES['ajouter_document']['name'] : '',
 		'nobot' => ($cle ? _request($cle) : _request('nobot')),
 		'ajouter_groupe' => $ajouter_groupe,
