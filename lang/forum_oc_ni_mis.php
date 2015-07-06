@@ -31,7 +31,6 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// E
 	'erreur_enregistrement_message' => 'Lou vouòstre message a pas pouscut estre registrat per l’encausa d’un proublema tècnicou',
 	'extensions_autorisees' => 'Estensioun autourisadi :',
-	'extensions_autorisees_lien' => 'Veire touti li estensioun de fichié autourisadi',
 
 	// F
 	'form_pet_message_commentaire' => 'Un message, un coumentari ?',

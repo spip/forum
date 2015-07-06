@@ -28,7 +28,6 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// E
 	'erreur_enregistrement_message' => 'A sua mensagem não pode ser gravada em razão de um problema técnico',
 	'extensions_autorisees' => 'Extensões permitidas:',
-	'extensions_autorisees_lien' => 'Ver todas as extensões de arquivos permitidas',
 
 	// F
 	'form_pet_message_commentaire' => 'Uma mensagem ou comentário?',
