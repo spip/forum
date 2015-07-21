@@ -33,6 +33,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// E
 	'erreur_enregistrement_message' => 'لم يتم تسجيل مشاركتك بسبب مشكلة تقنية',
 	'extensions_autorisees' => 'اللواحق المسموح بها:',
+	'extensions_autorisees_toutes' => 'الكل',
 
 	// F
 	'form_pet_message_commentaire' => 'أي رسالة أو تعليق؟',
