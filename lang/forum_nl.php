@@ -31,6 +31,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// E
 	'erreur_enregistrement_message' => 'Wegens technische problemen kon je bericht niet opgeslaagd worden',
 	'extensions_autorisees' => 'Toegestane extensies:',
+	'extensions_autorisees_toutes' => 'alles',
 
 	// F
 	'form_pet_message_commentaire' => 'Een bericht, een commentaar?',
