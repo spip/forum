@@ -30,6 +30,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// E
 	'erreur_enregistrement_message' => 'Váš príspevok sa z technických príčin nepodarilo uložiť.',
 	'extensions_autorisees' => 'Povolené prípony:',
+	'extensions_autorisees_toutes' => 'všetky',
 
 	// F
 	'form_pet_message_commentaire' => 'Nejaký príspevok alebo komentáre?',
