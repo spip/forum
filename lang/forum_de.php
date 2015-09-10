@@ -27,6 +27,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// E
 	'erreur_enregistrement_message' => 'Fehler: Ihr Beitrag konnte nicht gespeichert werden.',
 	'extensions_autorisees' => 'Erlaubte Endungen:',
+	'extensions_autorisees_toutes' => 'Alle',
 
 	// F
 	'form_pet_message_commentaire' => 'Eine Nachricht, ein Kommentar?',
