@@ -117,22 +117,23 @@ function inclure_forum_prive_previsu($texte,$titre, $url_site, $nom_site, $ajout
 	// supprimer les <form> de la previsualisation
 	// (sinon on ne peut pas faire <cadre>...</cadre> dans les forums)
 	return preg_replace("@<(/?)form\b@ism",
-			    '<\1div',
+		'<\1div',
 		inclure_balise_dynamique(array('formulaires/inc-forum_prive_previsu',
-		      0,
-		      array(
-			'titre' => safehtml(typo($titre)),
-			'texte' => safehtml(propre($texte)),
-			'notes' => safehtml(calculer_notes()),
-			'url_site' => vider_url($url_site),
-			'nom_site' => safehtml(typo($nom_site)),
-			'ajouter_mot' => (is_array($ajouter_mot) ? $ajouter_mot : array($ajouter_mot)),
-			'ajouter_document' => $doc,
-			#'erreur' => $erreur, // kesako ? non définie ?
-			'bouton' => $bouton
+			0,
+			array(
+				'titre' => safehtml(typo($titre)),
+				'texte' => safehtml(propre($texte)),
+				'notes' => safehtml(calculer_notes()),
+				'url_site' => vider_url($url_site),
+				'nom_site' => safehtml(typo($nom_site)),
+				'ajouter_mot' => (is_array($ajouter_mot) ? $ajouter_mot : array($ajouter_mot)),
+				'ajouter_document' => $doc,
+				#'erreur' => $erreur, // kesako ? non définie ?
+				'bouton' => $bouton
 			)
-					       ),
-					 false));
+		),
+		false)
+	);
 }
 
 
