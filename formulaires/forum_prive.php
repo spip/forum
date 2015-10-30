@@ -14,6 +14,19 @@ if (!defined("_ECRIRE_INC_VERSION")) return;
 
 include_spip('inc/forum');
 
+/**
+ * Identification du formulaire poste : ne pas tenir compte du retour
+ * @param $objet
+ * @param $id_objet
+ * @param $id_forum
+ * @param $forcer_previsu
+ * @param $statut
+ * @return array
+ */
+function formulaires_forum_prive_identifier_dist($objet, $id_objet, $id_forum, $forcer_previsu, $statut){
+	return array($objet, $id_objet, $id_forum, $forcer_previsu, $statut);
+}
+
 function formulaires_forum_prive_charger_dist($objet, $id_objet, $id_forum, $forcer_previsu, $statut, $retour='') {
 
 	if (!function_exists($f='forum_recuperer_titre'))
