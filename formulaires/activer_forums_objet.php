@@ -26,7 +26,7 @@ if (!defined("_ECRIRE_INC_VERSION")) return;
  * @return bool
  *     true si les forums publics sont autorisés, false sinon
 **/
-function get_forums_publics($id_objet=0, $objet='article') {
+function get_forums_publics($id_objet = 0, $objet = 'article') {
 
 	if ($objet=='article' AND $id_objet) {
 		$obj = sql_fetsel("accepter_forum", "spip_articles", "id_article=".intval($id_objet));
@@ -46,7 +46,7 @@ function get_forums_publics($id_objet=0, $objet='article') {
  * @return array
  *     Contexte du squelette du formulaire
  */
-function formulaires_activer_forums_objet_charger_dist($id_objet, $objet='article'){
+function formulaires_activer_forums_objet_charger_dist($id_objet, $objet = 'article'){
 	if (!autoriser('modererforum', $objet, $id_objet))
 		return false;
 
@@ -75,7 +75,7 @@ function formulaires_activer_forums_objet_charger_dist($id_objet, $objet='articl
  * @return array
  *     Retours des traitements
  */
-function formulaires_activer_forums_objet_traiter_dist($id_objet, $objet='article'){
+function formulaires_activer_forums_objet_traiter_dist($id_objet, $objet = 'article'){
 	include_spip('inc/autoriser');
 	if ($objet=='article' AND autoriser('modererforum', $objet, $id_objet)){
 		$statut = _request('accepter_forum');

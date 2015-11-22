@@ -22,7 +22,7 @@ include_spip('inc/actions');
  * @param string $recherche
  * @return array
  */
-function critere_statut_controle_forum($type, $id_secteur=0, $recherche='') {
+function critere_statut_controle_forum($type, $id_secteur = 0, $recherche = '') {
 
 	if (!$id_secteur) {
 		$from = 'spip_forum AS F';
@@ -81,7 +81,7 @@ function critere_statut_controle_forum($type, $id_secteur=0, $recherche='') {
 // - forum/id_forum
 // - objet/id_objet
 // http://code.spip.net/@calcul_index_forum
-function calcul_index_forum($objet,$id_objet) {
+function calcul_index_forum($objet, $id_objet) {
 	return substr($objet,0,1).$id_objet;
 }
 
@@ -148,7 +148,7 @@ function parent_forum($id_forum) {
  * @param unknown_type $ancre
  * @return unknown
  */
-function generer_url_forum_dist($id_forum, $args='', $ancre='') {
+function generer_url_forum_dist($id_forum, $args = '', $ancre = '') {
 	$generer_url_forum = charger_fonction('generer_url_forum','urls');
 	return $generer_url_forum($id_forum, $args, $ancre);
 }
@@ -190,7 +190,7 @@ function conserver_original($id_forum) {
 
 // appelle conserver_original(), puis modifie le contenu via l'API inc/modifier
 // http://code.spip.net/@enregistre_et_modifie_forum
-function enregistre_et_modifie_forum($id_forum, $c=false) {
+function enregistre_et_modifie_forum($id_forum, $c = false) {
 	if ($err = conserver_original($id_forum)) {
 		spip_log("erreur de sauvegarde de l'original, $err");
 		return;
@@ -209,7 +209,7 @@ function enregistre_et_modifie_forum($id_forum, $c=false) {
  * @param bool $publie
  * @return bool|string
  */
-function forum_recuperer_titre_dist($objet, $id_objet, $id_forum=0, $publie = true) {
+function forum_recuperer_titre_dist($objet, $id_objet, $id_forum = 0, $publie = true) {
 	include_spip('inc/filtres');
 	$titre = "";
 

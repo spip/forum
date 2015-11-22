@@ -24,7 +24,7 @@ if (!defined("_ECRIRE_INC_VERSION")) return;
  * @param string $nom_meta_base_version
  * @param string $version_cible
  */
-function forum_upgrade($nom_meta_base_version,$version_cible){
+function forum_upgrade($nom_meta_base_version, $version_cible){
 
 	// cas particulier :
 	// si plugin pas installe mais que la table existe

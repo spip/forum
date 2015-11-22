@@ -27,7 +27,7 @@ function mots_du_forum($ajouter_mot, $id_message)
 
 
 // http://code.spip.net/@tracer_erreur_forum
-function tracer_erreur_forum($type='') {
+function tracer_erreur_forum($type = '') {
 	spip_log("erreur forum ($type): ".print_r($_POST, true));
 
 	define('_TRACER_ERREUR_FORUM', false);
@@ -163,7 +163,7 @@ function forum_insert_base($c, $id_forum, $objet, $id_objet, $statut, $ajouter_m
 
 
 // http://code.spip.net/@forum_insert_statut
-function forum_insert_statut($champs, $forcer_statut=NULL)
+function forum_insert_statut($champs, $forcer_statut = NULL)
 {
 	include_spip('inc/forum');
 	$statut = controler_forum($champs['objet'], $champs['id_objet']);

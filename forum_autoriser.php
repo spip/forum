@@ -33,7 +33,7 @@ function forum_autoriser(){}
  * @param  array  $opt   Options de cette autorisation
  * @return bool          true s'il a le droit, false sinon
 **/
-function autoriser_foruminternesuivi_menu_dist($faire, $type='', $id=0, $qui = NULL, $opt = NULL){
+function autoriser_foruminternesuivi_menu_dist($faire, $type = '', $id = 0, $qui = NULL, $opt = NULL){
 	if ((($GLOBALS['meta']['forum_prive'] == 'non') && ($GLOBALS['meta']['forum_prive_admin'] == 'non'))
 		OR (($GLOBALS['meta']['forum_prive'] == 'non') && ($qui['statut'] == '1comite')))
 		return false;
@@ -50,7 +50,7 @@ function autoriser_foruminternesuivi_menu_dist($faire, $type='', $id=0, $qui = N
  * @param  array  $opt   Options de cette autorisation
  * @return bool          true s'il a le droit, false sinon
 **/
-function autoriser_forumreactions_menu_dist($faire, $type='', $id=0, $qui = NULL, $opt = NULL){
+function autoriser_forumreactions_menu_dist($faire, $type = '', $id = 0, $qui = NULL, $opt = NULL){
 	return (sql_countsel('spip_forum') && autoriser('publierdans','rubrique',_request('id_rubrique')));
 }
 

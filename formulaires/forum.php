@@ -25,7 +25,7 @@ include_spip('inc/forum');
  * @param $retour
  * @return array
  */
-function formulaires_forum_identifier_dist($objet, $id_objet, $id_forum,$ajouter_mot, $ajouter_groupe, $afficher_previsu, $retour){
+function formulaires_forum_identifier_dist($objet, $id_objet, $id_forum, $ajouter_mot, $ajouter_groupe, $afficher_previsu, $retour){
 	return array($objet, $id_objet, $id_forum,$ajouter_mot, $ajouter_groupe);
 }
 
@@ -45,7 +45,7 @@ function formulaires_forum_identifier_dist($objet, $id_objet, $id_forum,$ajouter
  *   url de retour
  * @return array|bool
  */
-function formulaires_forum_charger_dist($objet, $id_objet, $id_forum,
+function formulaires_forum_charger_dist($objet, $id_objet, $id_forum, 
                                         $ajouter_mot, $ajouter_groupe, $forcer_previsu, $retour){
 
 	if (!function_exists($f = 'forum_recuperer_titre'))
@@ -207,7 +207,7 @@ function forum_fichier_tmp($arg){
  *   url de retour
  * @return array|bool
  */
-function formulaires_forum_verifier_dist($objet, $id_objet, $id_forum,
+function formulaires_forum_verifier_dist($objet, $id_objet, $id_forum, 
                                          $ajouter_mot, $ajouter_groupe, $forcer_previsu, $retour){
 	include_spip('inc/acces');
 	include_spip('inc/texte');
@@ -388,7 +388,7 @@ function forum_documents_acceptes(){
  * @param int $id_forum
  * @return string
  */
-function inclure_previsu($texte, $titre, $url_site, $nom_site, $ajouter_mot, $doc,
+function inclure_previsu($texte, $titre, $url_site, $nom_site, $ajouter_mot, $doc, 
                          $objet, $id_objet, $id_forum){
 	global $table_des_traitements;
 
@@ -454,7 +454,7 @@ function inclure_previsu($texte, $titre, $url_site, $nom_site, $ajouter_mot, $do
  *   url de retour
  * @return array|bool
  */
-function formulaires_forum_traiter_dist($objet, $id_objet, $id_forum,
+function formulaires_forum_traiter_dist($objet, $id_objet, $id_forum, 
                                         $ajouter_mot, $ajouter_groupe, $forcer_previsu, $retour){
 
 	$forum_insert = charger_fonction('forum_insert', 'inc');

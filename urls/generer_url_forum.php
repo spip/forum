@@ -12,7 +12,7 @@
 
 if (!defined("_ECRIRE_INC_VERSION")) return;
 
-function urls_generer_url_forum_dist($id_forum, $args='', $ancre='') {
+function urls_generer_url_forum_dist($id_forum, $args = '', $ancre = '') {
 	if ($id_forum = intval($id_forum)) {
 		include_spip('inc/forum');
 		list($type, $id,) = racine_forum($id_forum);

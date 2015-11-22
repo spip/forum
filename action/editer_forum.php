@@ -17,7 +17,7 @@ include_spip('inc/modifier');
 // au prealable conserver_original($id_forum)
 // http://code.spip.net/@revision_forum
 if(!function_exists('revision_forum')){
-	function revision_forum($id_forum, $c=false) {
+	function revision_forum($id_forum, $c = false) {
 
 		$t = sql_fetsel("*", "spip_forum", "id_forum=".intval($id_forum));
 		if (!$t) {

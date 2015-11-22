@@ -13,7 +13,7 @@
 if (!defined("_ECRIRE_INC_VERSION")) return;
 
 // http://code.spip.net/@action_instituer_forum_dist
-function action_instituer_lot_forum_dist($arg=null) {
+function action_instituer_lot_forum_dist($arg = null) {
 
 	if (is_null($arg)){
 		$securiser_action = charger_fonction('securiser_action', 'inc');

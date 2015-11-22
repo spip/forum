@@ -12,7 +12,7 @@
 
 if (!defined("_ECRIRE_INC_VERSION")) return;
 
-function forum_compte_messages_from($email,$id_forum){
+function forum_compte_messages_from($email, $id_forum){
 	static $mem = array();
 
 	if (isset($mem[$email]))

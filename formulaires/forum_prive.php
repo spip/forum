@@ -27,7 +27,7 @@ function formulaires_forum_prive_identifier_dist($objet, $id_objet, $id_forum, $
 	return array($objet, $id_objet, $id_forum, $forcer_previsu, $statut);
 }
 
-function formulaires_forum_prive_charger_dist($objet, $id_objet, $id_forum, $forcer_previsu, $statut, $retour='') {
+function formulaires_forum_prive_charger_dist($objet, $id_objet, $id_forum, $forcer_previsu, $statut, $retour = '') {
 
 	if (!function_exists($f='forum_recuperer_titre'))
 		$f = 'forum_recuperer_titre_dist';
@@ -81,7 +81,7 @@ function formulaires_forum_prive_charger_dist($objet, $id_objet, $id_forum, $for
 }
 
 
-function formulaires_forum_prive_verifier_dist($objet, $id_objet, $id_forum, $forcer_previsu, $statut, $retour='') {
+function formulaires_forum_prive_verifier_dist($objet, $id_objet, $id_forum, $forcer_previsu, $statut, $retour = '') {
 	include_spip('inc/acces');
 	include_spip('inc/texte');
 	include_spip('inc/forum');
@@ -123,7 +123,7 @@ function formulaires_forum_prive_verifier_dist($objet, $id_objet, $id_forum, $fo
 }
 
 
-function inclure_forum_prive_previsu($texte,$titre, $url_site, $nom_site, $ajouter_mot, $doc=""){
+function inclure_forum_prive_previsu($texte, $titre, $url_site, $nom_site, $ajouter_mot, $doc = ""){
 	$bouton = _T('forum:forum_message_definitif');
 	include_spip('public/assembler');
 	include_spip('public/composer');
@@ -150,7 +150,7 @@ function inclure_forum_prive_previsu($texte,$titre, $url_site, $nom_site, $ajout
 }
 
 
-function formulaires_forum_prive_traiter_dist($objet, $id_objet, $id_forum, $forcer_previsu, $statut, $retour='') {
+function formulaires_forum_prive_traiter_dist($objet, $id_objet, $id_forum, $forcer_previsu, $statut, $retour = '') {
 
 	$forum_insert = charger_fonction('forum_insert', 'inc');
 	$id_reponse = $forum_insert($objet, $id_objet, $id_forum,$statut);
