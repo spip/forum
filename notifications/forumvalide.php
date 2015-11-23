@@ -21,6 +21,7 @@ if (!defined("_ECRIRE_INC_VERSION")) return;
  * pas été à la notification forumposte (sachant que les deux peuvent se
  * suivre si le forum est validé directement ('pos' ou 'abo')
  *
+ * @pipeline_appel notifications_destinataires
  * @see inc/forum_insert.php
  * 
  * @param string $quoi
@@ -49,11 +50,12 @@ function notifications_forumvalide_dist($quoi, $id_forum, $options) {
 	include_spip('inc/texte');
 	include_spip('inc/filtres');
 	include_spip('inc/autoriser');
+	include_spip('inc/session');
 
 	// Qui va-t-on prevenir ?
 	$tous = array();
 	// Ne pas ecrire au posteur du message, ni au moderateur qui valide le forum,
-	$pasmoi = array($t['email_auteur'],$GLOBALS['visiteur_session']['email']);
+	$pasmoi = array_filter(array($t['email_auteur'], session_get('email')));
 
 	// 1. Les auteurs de l'objet lie au forum
 	// seulement ceux qui n'ont
@@ -73,16 +75,18 @@ function notifications_forumvalide_dist($quoi, $id_forum, $options) {
 	}
 
 	$options['forum'] = $t;
-	$destinataires = pipeline('notifications_destinataires',
-		array(
-			'args'=>array('quoi'=>$quoi,'id'=>$id_forum,'options'=>$options)
-		,
-			'data'=>$tous)
-	);
+	$destinataires = pipeline('notifications_destinataires', array(
+		'args' => array(
+			'quoi' => $quoi,
+			'id' => $id_forum,
+			'options' => $options
+		),
+		'data' => $tous
+	));
 
 	// Nettoyer le tableau
 	// en enlevant les exclus
-	notifications_nettoyer_emails($destinataires,$pasmoi);
+	notifications_nettoyer_emails($destinataires, $pasmoi);
 
 	//
 	// Envoyer les emails
