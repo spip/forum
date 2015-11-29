@@ -32,6 +32,6 @@ if (window.jQuery){ jQuery(function(){
 	jQuery(window).on('beforeunload', function(e){ jQuery(window).unbind();if (!confirm_quit) return;e.returnValue='<:forum:forum_attention_message_non_poste|texte_script:>';return e.returnValue;	});
 	jQuery('fieldset.previsu').closest('form').next('form').bind('submit',function(){
 		confirm_quit=false;
-	})
+	});
 });}
 /*]]>*/</script>
