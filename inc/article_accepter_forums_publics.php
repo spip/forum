@@ -21,6 +21,3 @@ function inc_article_accepter_forums_publics_dist($id_objet) {
 
 	return substr($accepter_forum, 0, 3);
 }
-
-
-?>

@@ -35,22 +35,22 @@ function notifications_forumvalide_dist($quoi, $id_forum, $options) {
 	$t = sql_fetsel("*", "spip_forum", "id_forum=" . intval($id_forum));
 	if (!$t
 		// forum sur un message prive : pas de notification ici (cron)
-		OR @$t['statut'] == 'perso'
+		or @$t['statut'] == 'perso'
 	) {
 		return;
 	}
 
 	// plugin notification si present
-	$prevenir_auteurs = isset($GLOBALS['notifications']['prevenir_auteurs']) AND $GLOBALS['notifications']['prevenir_auteurs'];
+	$prevenir_auteurs = isset($GLOBALS['notifications']['prevenir_auteurs']) and $GLOBALS['notifications']['prevenir_auteurs'];
 	// sinon voie normale
-	if ($t['objet'] == 'article' AND !$prevenir_auteurs) {
+	if ($t['objet'] == 'article' and !$prevenir_auteurs) {
 		$s = sql_getfetsel('accepter_forum', 'spip_articles', "id_article=" . $t['id_objet']);
 		if (!$s) {
 			$s = substr($GLOBALS['meta']["forums_publics"], 0, 3);
 		}
 
 		$prevenir_auteurs = (strpos(@$GLOBALS['meta']['prevenir_auteurs'], ",$s,") !== false
-			OR @$GLOBALS['meta']['prevenir_auteurs'] === 'oui'); // compat
+			or @$GLOBALS['meta']['prevenir_auteurs'] === 'oui'); // compat
 	}
 
 	include_spip('inc/texte');
@@ -106,5 +106,3 @@ function notifications_forumvalide_dist($quoi, $id_forum, $options) {
 	}
 
 }
-
-?>

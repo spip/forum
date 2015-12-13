@@ -92,7 +92,7 @@ function formulaires_forum_charger_dist(
 
 	// exiger l'authentification des posteurs pour les forums sur abo
 	if ($accepter_forum == "abo") {
-		if (!isset($GLOBALS["visiteur_session"]['statut']) OR !$GLOBALS["visiteur_session"]['statut']) {
+		if (!isset($GLOBALS["visiteur_session"]['statut']) or !$GLOBALS["visiteur_session"]['statut']) {
 			return array(
 				'action' => '', #ne sert pas dans ce cas, on la vide pour mutualiser le cache
 				'editable' => false,
@@ -117,7 +117,7 @@ function formulaires_forum_charger_dist(
 	$ids['id_forum'] = ($x = intval($id_forum)) ? $x : '';
 
 	// par défaut, on force la prévisualisation du message avant de le poster
-	if (($forcer_previsu == 'non') OR (empty($forcer_previsu) AND $GLOBALS['meta']["forums_forcer_previsu"] == "non")) {
+	if (($forcer_previsu == 'non') or (empty($forcer_previsu) and $GLOBALS['meta']["forums_forcer_previsu"] == "non")) {
 		$forcer_previsu = 'non';
 	} else {
 		$forcer_previsu = 'oui';
@@ -195,8 +195,8 @@ function formulaires_forum_charger_dist(
  */
 function forum_fichier_tmp($arg) {
 # astuce : mt_rand pour autoriser les hits simultanes
-	while (($alea = time()+@mt_rand())+intval($arg)
-		AND @file_exists($f = _DIR_TMP . "forum_$alea.lck")) {
+	while (($alea = time() + @mt_rand()) + intval($arg)
+		and @file_exists($f = _DIR_TMP . "forum_$alea.lck")) {
 	};
 	spip_touch($f);
 
@@ -205,7 +205,7 @@ function forum_fichier_tmp($arg) {
 	if ($dh = @opendir(_DIR_TMP)) {
 		while (($file = @readdir($dh)) !== false) {
 			if (preg_match('/^forum_([0-9]+)\.lck$/', $file)
-				AND (time()-@filemtime(_DIR_TMP . $file) > 4*3600)
+				and (time() - @filemtime(_DIR_TMP . $file) > 4 * 3600)
 			) {
 				spip_unlink(_DIR_TMP . $file);
 			}
@@ -246,7 +246,7 @@ function formulaires_forum_verifier_dist(
 	include_spip('base/abstract_sql');
 
 	// par défaut, on force la prévisualisation du message avant de le poster
-	if (($forcer_previsu == 'non') OR (empty($forcer_previsu) AND $GLOBALS['meta']["forums_forcer_previsu"] == "non")) {
+	if (($forcer_previsu == 'non') or (empty($forcer_previsu) and $GLOBALS['meta']["forums_forcer_previsu"] == "non")) {
 		$forcer_previsu = 'non';
 	} else {
 		$forcer_previsu = 'oui';
@@ -263,7 +263,7 @@ function formulaires_forum_verifier_dist(
 	// portant la cle du formulaire ; et ses metadonnees avec
 
 	if (isset($_FILES['ajouter_document'])
-		AND $_FILES['ajouter_document']['tmp_name']
+		and $_FILES['ajouter_document']['tmp_name']
 	) {
 
 		$acceptes = forum_documents_acceptes();
@@ -273,7 +273,7 @@ function formulaires_forum_verifier_dist(
 			// securite :
 			// verifier si on possede la cle (ie on est autorise a poster)
 			// (sinon tant pis) ; cf. charger.php pour la definition de la cle
-			OR _request('cle_ajouter_document') != calculer_cle_action($a = "ajouter-document-$objet-$id_objet")
+			or _request('cle_ajouter_document') != calculer_cle_action($a = "ajouter-document-$objet-$id_objet")
 		) {
 			$erreurs['document_forum'] = _T('forum:documents_interdits_forum');
 			unset($_FILES['ajouter_document']);
@@ -305,7 +305,7 @@ function formulaires_forum_verifier_dist(
 			// si ok on stocke les meta donnees, sinon on efface
 			if (isset($erreurs['document_forum'])) {
 				spip_unlink($tmp . '.bin');
-				unset ($_FILES['ajouter_document']);
+				unset($_FILES['ajouter_document']);
 			} else {
 				$doc['tmp_name'] = $tmp . '.bin';
 				ecrire_fichier($tmp . '.txt', serialize($doc));
@@ -313,8 +313,8 @@ function formulaires_forum_verifier_dist(
 		}
 	} // restaurer/supprimer le document eventuellement uploade au tour precedent
 	elseif (isset($GLOBALS['visiteur_session']['tmp_forum_document'])
-		AND $tmp = $GLOBALS['visiteur_session']['tmp_forum_document']
-		AND file_exists($tmp . '.bin')
+		and $tmp = $GLOBALS['visiteur_session']['tmp_forum_document']
+		and file_exists($tmp . '.bin')
 	) {
 		if (_request('supprimer_document_ajoute')) {
 			spip_unlink($tmp . '.bin');
@@ -327,13 +327,13 @@ function formulaires_forum_verifier_dist(
 
 	$min_length = (defined('_FORUM_LONGUEUR_MINI') ? _FORUM_LONGUEUR_MINI : 10);
 	if (strlen($texte = _request('texte')) < $min_length
-		AND !$ajouter_mot AND $GLOBALS['meta']['forums_texte'] == 'oui'
+		and !$ajouter_mot and $GLOBALS['meta']['forums_texte'] == 'oui'
 	) {
 		$erreurs['texte'] = _T($min_length == 10 ? 'forum:forum_attention_dix_caracteres' : 'forum:forum_attention_nb_caracteres_mini',
 			array('min' => $min_length));
 	} elseif (defined('_FORUM_LONGUEUR_MAXI')
-		AND _FORUM_LONGUEUR_MAXI > 0
-		AND strlen($texte) > _FORUM_LONGUEUR_MAXI
+		and _FORUM_LONGUEUR_MAXI > 0
+		and strlen($texte) > _FORUM_LONGUEUR_MAXI
 	) {
 		$erreurs['texte'] = _T('forum:forum_attention_trop_caracteres',
 			array(
@@ -342,15 +342,15 @@ function formulaires_forum_verifier_dist(
 			));
 	}
 
-	if (array_reduce($_POST, 'reduce_strlen', (20*1024)) < 0) {
+	if (array_reduce($_POST, 'reduce_strlen', (20 * 1024)) < 0) {
 		$erreurs['erreur_message'] = _T('forum:forum_message_trop_long');
 	} else {
 		// Ne pas autoriser d'envoi hacke si forum sur abonnement
 		if (controler_forum($objet, $id_objet) == 'abo'
-			AND !test_espace_prive()
+			and !test_espace_prive()
 		) {
 			if (!isset($GLOBALS['visiteur_session'])
-				OR !isset($GLOBALS['visiteur_session']['statut'])
+				or !isset($GLOBALS['visiteur_session']['statut'])
 			) {
 				$erreurs['erreur_message'] = _T('forum_non_inscrit');
 			} elseif ($GLOBALS['visiteur_session']['statut'] == '5poubelle') {
@@ -360,13 +360,13 @@ function formulaires_forum_verifier_dist(
 	}
 
 	if (strlen($titre = _request('titre')) < 3
-		AND $GLOBALS['meta']['forums_titre'] == 'oui'
+		and $GLOBALS['meta']['forums_titre'] == 'oui'
 	) {
 		$erreurs['titre'] = _T('forum:forum_attention_trois_caracteres');
 	}
 
-	if (!count($erreurs) AND !_request('confirmer_previsu_forum')) {
-		if (!_request('envoyer_message') OR $forcer_previsu <> 'non') {
+	if (!count($erreurs) and !_request('confirmer_previsu_forum')) {
+		if (!_request('envoyer_message') or $forcer_previsu <> 'non') {
 			$previsu = inclure_previsu($texte, $titre, _request('url_site'), _request('nom_site'), _request('ajouter_mot'),
 				$doc,
 				$objet, $id_objet, $id_forum);
@@ -378,8 +378,8 @@ function formulaires_forum_verifier_dist(
 	//  Si forum avec previsu sans bon hash de securite, echec
 	if (!count($erreurs)) {
 		if (!test_espace_prive()
-			AND $forcer_previsu <> 'non'
-			AND forum_insert_noprevisu()
+			and $forcer_previsu <> 'non'
+			and forum_insert_noprevisu()
 		) {
 			$erreurs['erreur_message'] = _T('forum:forum_acces_refuse');
 		}
@@ -524,8 +524,8 @@ function formulaires_forum_traiter_dist(
 	}
 
 	if (defined('_FORUM_AUTORISER_POST_ID_FORUM')
-		AND _FORUM_AUTORISER_POST_ID_FORUM
-		AND _request('id_forum')
+		and _FORUM_AUTORISER_POST_ID_FORUM
+		and _request('id_forum')
 	) {
 		$id_forum = _request('id_forum');
 	}
@@ -562,6 +562,3 @@ function formulaires_forum_traiter_dist(
 
 	return $res;
 }
-
-
-?>

@@ -26,9 +26,9 @@ function boucle_FORUMS_dist($id_boucle, &$boucles) {
 	// Les criteres {tout} et {plat} inversent ce choix
 	// de meme qu'un critere sur {id_forum} ou {id_parent}
 	if (!isset($boucle->modificateur['tout'])
-		AND !isset($boucle->modificateur['plat'])
-		AND !isset($boucle->modificateur['criteres']['id_forum'])
-		AND !isset($boucle->modificateur['criteres']['id_parent'])
+		and !isset($boucle->modificateur['plat'])
+		and !isset($boucle->modificateur['criteres']['id_forum'])
+		and !isset($boucle->modificateur['criteres']['id_parent'])
 	) {
 		array_unshift($boucle->where, array("'='", "'$id_table." . "id_parent'", 0));
 	}
@@ -109,8 +109,8 @@ function balise_PARAMETRES_FORUM_dist($p) {
 	// dans le contexte ; on demande en tout etat de cause
 	// a la boucle mere de reserver son id_primary
 	if ($p->id_boucle
-		AND isset($p->boucles[$p->id_boucle])
-		AND $primary = $p->boucles[$p->id_boucle]->primary
+		and isset($p->boucles[$p->id_boucle])
+		and $primary = $p->boucles[$p->id_boucle]->primary
 	) {
 		$_type = _q($p->boucles[$p->id_boucle]->type_requete);
 		$_primary = champ_sql($primary, $p);
@@ -168,8 +168,8 @@ function calcul_parametres_forum(&$env, $reponse, $type, $primary) {
 	// dans ce cas on va chercher dans la base.
 	if ($id_parent = intval($reponse)) {
 		if ($type
-			AND $type != 'forums'
-			AND $primary
+			and $type != 'forums'
+			and $primary
 		) {
 			$forum = array('objet' => $type, 'id_objet' => $primary);
 		} else {
@@ -185,7 +185,7 @@ function calcul_parametres_forum(&$env, $reponse, $type, $primary) {
 	}
 
 	// Ce n'est pas une reponse, on prend la boucle mere
-	if ($type AND $primary) {
+	if ($type and $primary) {
 		return id_table_objet($type) . '=' . intval($primary);
 	}
 
@@ -193,7 +193,7 @@ function calcul_parametres_forum(&$env, $reponse, $type, $primary) {
 	// ce que nous propose le contexte #ENV
 	foreach ($env as $k => $v) {
 		if (preg_match(',^id_([a-z_]+)$,S', $k)
-			AND $id = intval($v)
+			and $id = intval($v)
 		) {
 			return id_table_objet($k) . '=' . $v;
 		}
@@ -228,7 +228,7 @@ function quete_accepter_forum($id_article) {
 //
 // http://code.spip.net/@lang_parametres_forum
 function lang_parametres_forum($qs, $lang) {
-	if (is_array($lang) AND preg_match(',id_([a-z_]+)=([0-9]+),', $qs, $r)) {
+	if (is_array($lang) and preg_match(',id_([a-z_]+)=([0-9]+),', $qs, $r)) {
 		$id = 'id_' . $r[1];
 		if ($t = $lang[$id]) {
 			$lang = sql_getfetsel('lang', $t, "$id=" . $r[2]);
@@ -236,7 +236,7 @@ function lang_parametres_forum($qs, $lang) {
 	}
 	// Si ce n'est pas la meme que celle du site, l'ajouter aux parametres
 
-	if ($lang AND $lang <> $GLOBALS['meta']['langue_site']) {
+	if ($lang and $lang <> $GLOBALS['meta']['langue_site']) {
 		return $qs . "&lang=" . $lang;
 	}
 
@@ -250,5 +250,3 @@ function lang_parametres_forum($qs, $lang) {
 function code_invalideur_forums_dist($p, $code) {
 	return $code;
 }
-
-?>

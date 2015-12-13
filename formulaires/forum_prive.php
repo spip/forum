@@ -36,7 +36,7 @@ function formulaires_forum_prive_charger_dist($objet, $id_objet, $id_forum, $for
 		$f = 'forum_recuperer_titre_dist';
 	}
 	// si objet, il faut un titre, sinon on est dans un statut privrac/privadm qui permet un forum sans objet
-	if ($objet AND $id_objet AND !$titre = $f($objet, $id_objet, $id_forum, false)) {
+	if ($objet and $id_objet and !$titre = $f($objet, $id_objet, $id_forum, false)) {
 		return false;
 	}
 
@@ -56,7 +56,7 @@ function formulaires_forum_prive_charger_dist($objet, $id_objet, $id_forum, $for
 	$ids['id_forum'] = ($x = intval($id_forum)) ? $x : '';
 
 	// par défaut, on force la prévisualisation du message avant de le poster
-	if (($forcer_previsu == 'non') OR (empty($forcer_previsu) AND $GLOBALS['meta']["forums_forcer_previsu"] == "non")) {
+	if (($forcer_previsu == 'non') or (empty($forcer_previsu) and $GLOBALS['meta']["forums_forcer_previsu"] == "non")) {
 		$forcer_previsu = 'non';
 	} else {
 		$forcer_previsu = 'oui';
@@ -100,14 +100,14 @@ function formulaires_forum_prive_verifier_dist($objet, $id_objet, $id_forum, $fo
 
 	$min_length = (defined('_FORUM_LONGUEUR_MINI') ? _FORUM_LONGUEUR_MINI : 10);
 	if (strlen($texte = _request('texte')) < $min_length
-		AND !_request('ajouter_mot') AND $GLOBALS['meta']['forums_texte'] == 'oui'
+		and !_request('ajouter_mot') and $GLOBALS['meta']['forums_texte'] == 'oui'
 	) {
 		$erreurs['texte'] = _T($min_length == 10 ? 'forum:forum_attention_dix_caracteres' : 'forum:forum_attention_nb_caracteres_mini',
 			array('min' => $min_length));
 	} else {
 		if (defined('_FORUM_LONGUEUR_MAXI')
-			AND _FORUM_LONGUEUR_MAXI > 0
-			AND strlen($texte) > _FORUM_LONGUEUR_MAXI
+			and _FORUM_LONGUEUR_MAXI > 0
+			and strlen($texte) > _FORUM_LONGUEUR_MAXI
 		) {
 			$erreurs['texte'] = _T('forum:forum_attention_trop_caracteres',
 				array(
@@ -118,16 +118,16 @@ function formulaires_forum_prive_verifier_dist($objet, $id_objet, $id_forum, $fo
 	}
 
 	if (strlen($titre = _request('titre')) < 3
-		AND $GLOBALS['meta']['forums_titre'] == 'oui'
+		and $GLOBALS['meta']['forums_titre'] == 'oui'
 	) {
 		$erreurs['titre'] = _T('forum:forum_attention_trois_caracteres');
 	}
 
-	if (array_reduce($_POST, 'reduce_strlen', (20*1024)) < 0) {
+	if (array_reduce($_POST, 'reduce_strlen', (20 * 1024)) < 0) {
 		$erreurs['erreur_message'] = _T('forum:forum_message_trop_long');
 	}
 
-	if (!count($erreurs) AND !_request('envoyer_message') AND !_request('confirmer_previsu_forum')) {
+	if (!count($erreurs) and !_request('envoyer_message') and !_request('confirmer_previsu_forum')) {
 		$previsu = inclure_forum_prive_previsu($texte, $titre, _request('url_site'), _request('nom_site'),
 			_request('ajouter_mot'));
 		$erreurs['previsu'] = $previsu;
@@ -199,6 +199,3 @@ function formulaires_forum_prive_traiter_dist($objet, $id_objet, $id_forum, $for
 
 	return $res;
 }
-
-
-?>

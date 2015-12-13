@@ -31,9 +31,9 @@ function action_instituer_lot_forum_dist($arg = null) {
 		 *
 		 */
 		if (preg_match(",^(\w+)-,", $arg, $match)
-			AND in_array($statut = $match[1], array('publie', 'off', 'spam'))
+			and in_array($statut = $match[1], array('publie', 'off', 'spam'))
 		) {
-			$arg = substr($arg, strlen($statut)+1);
+			$arg = substr($arg, strlen($statut) + 1);
 
 			$arg = explode('/', $arg);
 			$ip = array_shift($arg);
@@ -70,9 +70,9 @@ function action_instituer_lot_forum_dist($arg = null) {
 		 * dans un taleau ids[]
 		 */
 		elseif (preg_match(",^(\w+)$,", $arg, $match)
-			AND in_array($statut = $match[1], array('publie', 'off', 'spam'))
-			AND $id = _request('ids')
-			AND is_array($id)
+			and in_array($statut = $match[1], array('publie', 'off', 'spam'))
+			and $id = _request('ids')
+			and is_array($id)
 		) {
 
 			$ids = array_map('intval', $id);
@@ -95,5 +95,3 @@ function action_instituer_lot_forum_dist($arg = null) {
 	}
 
 }
-
-?>

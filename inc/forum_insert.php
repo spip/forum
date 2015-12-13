@@ -56,7 +56,7 @@ function inc_forum_insert_dist($objet, $id_objet, $id_forum, $force_statut = nul
 
 	if (!in_array($force_statut, array('privrac', 'privadm'))) {
 		if (!strlen($objet)
-			OR !intval($id_objet)
+			or !intval($id_objet)
 		) {
 			spip_log("Erreur insertion forum sur objet='$objet', id_objet=$id_objet", 'forum.' . _LOG_ERREUR);
 
@@ -104,7 +104,7 @@ function forum_insert_base($c, $id_forum, $objet, $id_objet, $statut, $ajouter_m
 
 	if (!in_array($statut, array('privrac', 'privadm'))) {
 		// si le statut est vide, c'est qu'on ne veut pas de ce presume spam !
-		if (!$statut OR !$objet OR !$id_objet) {
+		if (!$statut or !$objet or !$id_objet) {
 			$args = func_get_args();
 			spip_log("Erreur sur forum_insert_base " . var_export($args, 1), 'forum.' . _LOG_ERREUR);
 
@@ -148,7 +148,7 @@ function forum_insert_base($c, $id_forum, $objet, $id_objet, $statut, $ajouter_m
 
 		// Ajouter un document
 		if (isset($_FILES['ajouter_document'])
-			AND $_FILES['ajouter_document']['tmp_name']
+			and $_FILES['ajouter_document']['tmp_name']
 		) {
 			$files[] = array(
 				'tmp_name' => $_FILES['ajouter_document']['tmp_name'],
@@ -191,5 +191,3 @@ function forum_insert_statut($champs, $forcer_statut = null) {
 
 	return $champs;
 }
-
-?>

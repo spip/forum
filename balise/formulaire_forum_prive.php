@@ -125,5 +125,3 @@ function balise_FORMULAIRE_FORUM_PRIVE_stat($args, $context_compil) {
 	return
 		array($objet, $id_objet, $id_forum, $forcer_previsu, $statut, $retour);
 }
-
-?>

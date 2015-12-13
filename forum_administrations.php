@@ -36,7 +36,7 @@ function forum_upgrade($nom_meta_base_version, $version_cible) {
 		$trouver_table = charger_fonction('trouver_table', 'base');
 		$trouver_table(''); // vider le cache des descriptions !
 		if ($desc = $trouver_table('spip_forum')
-			AND isset($desc['field']['id_article'])
+			and isset($desc['field']['id_article'])
 		) {
 			ecrire_meta($nom_meta_base_version, '1.0.0');
 		}
@@ -117,5 +117,3 @@ function forum_vider_tables($nom_meta_base_version) {
 
 	effacer_meta($nom_meta_base_version);
 }
-
-?>

@@ -44,7 +44,7 @@ function forum_accueil_encours($texte) {
 			}
 			$texte .= "\n<br />" . $lien;
 		}
-		if (strlen($texte) AND $GLOBALS['meta']['forum_prive_objets'] != 'non') {
+		if (strlen($texte) and $GLOBALS['meta']['forum_prive_objets'] != 'non') {
 			$cpt2 = sql_countsel("spip_articles", "statut='prop'");
 			if ($cpt2) {
 				$texte = _T('forum:texte_en_cours_validation_forum') . $texte;
@@ -117,8 +117,8 @@ function forum_accueil_informations($texte) {
  */
 function forum_afficher_fiche_objet($flux) {
 	if ($type = $flux['args']['type']
-		AND $table_sql = table_objet_sql($type)
-		AND in_array($table_sql, explode(',', $GLOBALS['meta']['forum_prive_objets']))
+		and $table_sql = table_objet_sql($type)
+		and in_array($table_sql, explode(',', $GLOBALS['meta']['forum_prive_objets']))
 	) {
 		$id = $flux['args']['id'];
 		$contexte = array_merge($flux['args']['contexte'],
@@ -134,7 +134,7 @@ function forum_afficher_fiche_objet($flux) {
 	if (($type = $flux['args']['type']) == 'rubrique') {
 		$id_rubrique = $flux['args']['id'];
 		if (autoriser('publierdans', 'rubrique', $id_rubrique)
-			AND !sql_getfetsel('id_parent', 'spip_rubriques', 'id_rubrique=' . intval($id_rubrique))
+			and !sql_getfetsel('id_parent', 'spip_rubriques', 'id_rubrique=' . intval($id_rubrique))
 		) {
 			include_spip('inc/forum');
 			list($from, $where) = critere_statut_controle_forum('prop', $id_rubrique);
@@ -160,7 +160,7 @@ function forum_afficher_fiche_objet($flux) {
  */
 function forum_afficher_config_objet($flux) {
 	if (($type = $flux['args']['type'])
-		AND $id = $flux['args']['id']
+		and $id = $flux['args']['id']
 	) {
 		if (autoriser('modererforum', $type, $id)) {
 			$id_table_objet = id_table_objet($type);
@@ -182,7 +182,7 @@ function forum_afficher_message_statut_objet($flux) {
 	if ($type = $flux['args']['type'] == 'article') {
 		$statut = $flux['args']['statut'];
 		if ($GLOBALS['meta']['forum_prive_objets'] != 'non'
-			AND $statut == 'prop'
+			and $statut == 'prop'
 		) {
 			$flux['data'] .= "<p class='article_prop'>" . _T('forum:text_article_propose_publication_forum') . '</p>';
 		}
@@ -199,11 +199,11 @@ function forum_afficher_message_statut_objet($flux) {
  */
 function forum_boite_infos($flux) {
 	if ($flux['args']['type'] == 'rubrique'
-		AND $id_rubrique = $flux['args']['id']
+		and $id_rubrique = $flux['args']['id']
 	) {
 		if (autoriser('publierdans', 'rubrique', $id_rubrique)
 			// [doc] d'ou il vient ce row ?
-			AND (!isset($flux['args']['row']['id_parent']) OR !$flux['args']['row']['id_parent'])
+			and (!isset($flux['args']['row']['id_parent']) or !$flux['args']['row']['id_parent'])
 		) {
 			include_spip('inc/forum');
 			list($from, $where) = critere_statut_controle_forum('prop', $id_rubrique);
@@ -221,7 +221,7 @@ function forum_boite_infos($flux) {
 			}
 		}
 	} elseif ($flux['args']['type'] == 'auteur'
-		AND $id_auteur = $flux['args']['id']
+		and $id_auteur = $flux['args']['id']
 	) {
 		if ($nb = sql_countsel('spip_forum', "statut!='poubelle' AND id_auteur=" . intval($id_auteur))) {
 			$nb = "<div>" . singulier_ou_pluriel($nb, "forum:info_1_message_forum",
@@ -337,10 +337,10 @@ function forum_optimiser_base_disparus($flux) {
 	## date de reference = 4 mois
 	## definir a 0 pour desactiver
 	if (!defined('_CNIL_PERIODE')) {
-		define('_CNIL_PERIODE', 3600*24*31*4);
+		define('_CNIL_PERIODE', 3600 * 24 * 31 * 4);
 	}
 	if (_CNIL_PERIODE) {
-		$critere_cnil = 'date_heure<"' . date('Y-m-d', time()-_CNIL_PERIODE) . '"'
+		$critere_cnil = 'date_heure<"' . date('Y-m-d', time() - _CNIL_PERIODE) . '"'
 			. ' AND statut != "spam"'
 			. ' AND (ip LIKE "%.%" OR ip LIKE "%:%")'; # ipv4 ou ipv6
 
@@ -381,7 +381,7 @@ function forum_pre_insertion($flux) {
 function forum_prepare_recherche($flux) {
 	# Pour les forums, unifier par id_thread et forcer statut='publie'
 	if ($flux['args']['type'] == 'forum'
-		AND $points = $flux['data']
+		and $points = $flux['data']
 	) {
 		$serveur = $flux['args']['serveur'];
 		$modificateurs = (isset($flux['args']['modificateurs']) ? $flux['args']['modificateurs'] : array());
@@ -413,7 +413,7 @@ function forum_prepare_recherche($flux) {
  */
 function forum_rubrique_encours($flux) {
 	if (strlen($flux['data'])
-		AND $GLOBALS['meta']['forum_prive_objets'] != 'non'
+		and $GLOBALS['meta']['forum_prive_objets'] != 'non'
 	) {
 		$flux['data'] = _T('forum:texte_en_cours_validation_forum') . $flux['data'];
 	}
@@ -439,5 +439,3 @@ function forum_trig_supprimer_objets_lies($objets) {
 
 	return $objets;
 }
-
-?>

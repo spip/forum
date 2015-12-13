@@ -52,7 +52,7 @@ if (!function_exists('revision_forum')) {
 		$id_thread = intval($t["id_thread"]);
 		$cles = array();
 		foreach (array('id_objet', 'objet') as $k) {
-			if (isset($c[$k]) AND $c[$k]) {
+			if (isset($c[$k]) and $c[$k]) {
 				$cles[$k] = $c[$k];
 			}
 		}
@@ -60,7 +60,7 @@ if (!function_exists('revision_forum')) {
 		// Modification des id_article etc
 		// (non autorise en standard mais utile pour des crayons)
 		// on deplace tout le thread {sauf les originaux}.
-		if (count($cles) AND $id_thread) {
+		if (count($cles) and $id_thread) {
 			spip_log("update thread id_thread=$id_thread avec " . var_export($cles, 1), 'forum.' . _LOG_INFO_IMPORTANTE);
 			sql_updateq("spip_forum", $cles, "id_thread=" . $id_thread . " AND statut!='original'");
 			// on n'affecte pas $r, car un deplacement ne change pas l'auteur
@@ -68,7 +68,7 @@ if (!function_exists('revision_forum')) {
 
 		// s'il y a vraiment eu une modif et que le message est public
 		// on enregistre le nouveau date_thread
-		if ($err === '' AND $t['statut'] == 'publie') {
+		if ($err === '' and $t['statut'] == 'publie') {
 			// on ne stocke ni le numero IP courant ni le nouvel id_auteur
 			// dans le message modifie (trop penible a l'usage) ; mais du
 			// coup attention a la responsabilite editoriale

@@ -130,7 +130,7 @@ function racine_forum($id_forum) {
 	}
 
 	if ($row['id_parent']
-		AND $row['id_thread'] != $id_forum
+		and $row['id_thread'] != $id_forum
 	) // eviter boucle infinie
 	{
 		return racine_forum($row['id_thread']);
@@ -243,14 +243,14 @@ function forum_recuperer_titre_dist($objet, $id_objet, $id_forum = 0, $publie = 
 		$titre = $f($id_objet);
 	} else {
 		include_spip('base/objets');
-		if ($publie AND !objet_test_si_publie($objet, $id_objet)) {
+		if ($publie and !objet_test_si_publie($objet, $id_objet)) {
 			return false;
 		}
 
 		$titre = generer_info_entite($id_objet, $objet, 'titre', '*');
 	}
 
-	if ($titre AND $id_forum) {
+	if ($titre and $id_forum) {
 		$titre_m = sql_getfetsel('titre', 'spip_forum', "id_forum = " . intval($id_forum));
 		if (!$titre_m) {
 			return false; // URL fabriquee
@@ -356,7 +356,5 @@ function forum_get_objets_depuis_env() {
 
 // http://code.spip.net/@reduce_strlen
 function reduce_strlen($n, $c) {
-	return $n-(is_string($c) ? strlen($c) : 0);
+	return $n - (is_string($c) ? strlen($c) : 0);
 }
-
-?>

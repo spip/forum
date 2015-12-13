@@ -41,5 +41,3 @@ function formulaires_configurer_forums_prives_traiter_dist() {
 
 	return $res;
 }
-
-?>

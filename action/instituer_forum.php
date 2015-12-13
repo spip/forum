@@ -50,7 +50,7 @@ function instituer_un_forum($statut, $row) {
 	}
 
 	// Notifier de la publication du message, s'il etait 'prop'
-	if ($old == 'prop' AND $statut == 'publie') {
+	if ($old == 'prop' and $statut == 'publie') {
 		if ($notifications = charger_fonction('notifications', 'inc')) {
 			$notifications('forumvalide', $id_forum);
 		}
@@ -63,9 +63,9 @@ function instituer_un_forum($statut, $row) {
 	// c'est imparfait dans le cas ou les crayons ont ete utilises pour modifier ce message entre temps
 	// car la date_thread aurait cette derniere date alors que pas le message
 	// mais c'est au mieux de ce que l'on peut faire quand on depublie un SPAM ou supprime un message
-	if ($statut == 'publie' OR $old == 'publie') {
+	if ($statut == 'publie' or $old == 'publie') {
 		if ($statut == 'publie'
-			OR !($date_thread = sql_getfetsel("date_heure", "spip_forum",
+			or !($date_thread = sql_getfetsel("date_heure", "spip_forum",
 				"statut='publie' AND id_thread=" . $row['id_thread'], "", "date_heure DESC", "0,1"))
 		) {
 			$date_thread = date('Y-m-d H:i:s');
@@ -94,5 +94,3 @@ function instituer_un_forum($statut, $row) {
 		)
 	);
 }
-
-?>

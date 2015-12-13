@@ -147,5 +147,3 @@ function forum_declarer_tables_objets_sql($tables) {
 
 	return $tables;
 }
-
-?>

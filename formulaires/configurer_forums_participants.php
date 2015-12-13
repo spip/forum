@@ -28,7 +28,7 @@ function formulaires_configurer_forums_participants_traiter_dist() {
 
 	$purger_skel = false;
 	if ($accepter_forum = _request('forums_publics')
-		AND ($accepter_forum != $GLOBALS['meta']["forums_publics"])
+		and ($accepter_forum != $GLOBALS['meta']["forums_publics"])
 	) {
 		$purger_skel = true;
 		$accepter_forum = substr($accepter_forum, 0, 3);
@@ -58,5 +58,3 @@ function formulaires_configurer_forums_participants_traiter_dist() {
 
 	return array('message_ok' => _T('config_info_enregistree'));
 }
-
-?>

@@ -30,7 +30,7 @@ function formulaires_configurer_forums_contenu_charger_dist() {
 function formulaires_configurer_forums_contenu_verifier_dist() {
 	$erreurs = array();
 
-	if (!_request('forums_titre') AND !_request('forums_texte') AND !_request('forums_urlref')) {
+	if (!_request('forums_titre') and !_request('forums_texte') and !_request('forums_urlref')) {
 		$erreurs['forums_titre'] = _T('info_obligatoire');
 	}
 
@@ -55,5 +55,3 @@ function formulaires_configurer_forums_contenu_traiter_dist() {
 
 	return array('message_ok' => _T('config_info_enregistree'));
 }
-
-?>

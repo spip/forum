@@ -205,7 +205,7 @@ function balise_forum_retrouve_objet($ido, $id_forum, $args, $context_compil, $o
 	unset($i);
 
 	// et si on n'a toujours pas ce qu'on souhaite, on tente de le trouver dans un forum existant...
-	if (($objet == 'forum' OR !$id_objet) and $id_forum) {
+	if (($objet == 'forum' or !$id_objet) and $id_forum) {
 		if ($objet = sql_fetsel(array('id_objet', 'objet'), 'spip_forum', 'id_forum=' . intval($id_forum))) {
 			$id_objet = $objet['id_objet'];
 			$objet = $objet['objet'];
@@ -216,11 +216,9 @@ function balise_forum_retrouve_objet($ido, $id_forum, $args, $context_compil, $o
 		}
 	}
 	// vraiment la... faut pas exagerer !
-	if ($objet_obligatoire AND !$id_objet) {
+	if ($objet_obligatoire and !$id_objet) {
 		return false;
 	}
 
 	return array($objet, $id_objet, $url);
 }
-
-?>

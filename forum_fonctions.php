@@ -95,5 +95,3 @@ function interdit_html($texte) {
 
 	return $texte;
 }
-
-?>

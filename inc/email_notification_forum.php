@@ -76,14 +76,14 @@ function inc_email_notification_forum_dist($t, $email, $contexte = array()) {
 			$champ = strtoupper($champ);
 			$traitement = (isset($GLOBALS['table_des_traitements'][$champ]) ? $GLOBALS['table_des_traitements'][$champ] : null);
 			if (is_array($traitement)
-				AND (isset($traitement[$table_objet]) OR isset($traitement[0]))
+				and (isset($traitement[$table_objet]) or isset($traitement[0]))
 			) {
 				$traitement = $traitement[isset($traitement[$table_objet]) ? $table_objet : 0];
 				$traitement = str_replace('%s', "'" . texte_script($v) . "'", $traitement);
 				eval("\$v = $traitement;");
 			}
 
-			$links = $links+extraire_balises($v, 'a');
+			$links = $links + extraire_balises($v, 'a');
 		}
 		$links = extraire_attribut($links, 'href');
 		$links = implode("\n", $links);

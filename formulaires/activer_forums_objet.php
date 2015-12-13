@@ -30,7 +30,7 @@ if (!defined("_ECRIRE_INC_VERSION")) {
  **/
 function get_forums_publics($id_objet = 0, $objet = 'article') {
 
-	if ($objet == 'article' AND $id_objet) {
+	if ($objet == 'article' and $id_objet) {
 		$obj = sql_fetsel("accepter_forum", "spip_articles", "id_article=" . intval($id_objet));
 
 		if ($obj) {
@@ -61,7 +61,7 @@ function formulaires_activer_forums_objet_charger_dist($id_objet, $objet = 'arti
 	$nb_forums = sql_countsel("spip_forum",
 		"objet=" . sql_quote($objet) . " AND id_objet=" . intval($id_objet) . " AND statut IN ('publie', 'off', 'prop', 'spam')");
 	$editable = ($objet == 'article') ? true : false;
-	if (!$editable AND !$nb_forums) {
+	if (!$editable and !$nb_forums) {
 		return false;
 	}
 
@@ -85,7 +85,7 @@ function formulaires_activer_forums_objet_charger_dist($id_objet, $objet = 'arti
  */
 function formulaires_activer_forums_objet_traiter_dist($id_objet, $objet = 'article') {
 	include_spip('inc/autoriser');
-	if ($objet == 'article' AND autoriser('modererforum', $objet, $id_objet)) {
+	if ($objet == 'article' and autoriser('modererforum', $objet, $id_objet)) {
 		$statut = _request('accepter_forum');
 		include_spip('base/abstract_sql');
 		sql_updateq("spip_articles", array("accepter_forum" => $statut), "id_article=" . intval($id_objet));
@@ -99,5 +99,3 @@ function formulaires_activer_forums_objet_traiter_dist($id_objet, $objet = 'arti
 
 	return array('message_ok' => _T('config_info_enregistree'), 'editable' => true);
 }
-
-?>

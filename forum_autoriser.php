@@ -38,7 +38,7 @@ function forum_autoriser() { }
  **/
 function autoriser_foruminternesuivi_menu_dist($faire, $type = '', $id = 0, $qui = null, $opt = null) {
 	if ((($GLOBALS['meta']['forum_prive'] == 'non') && ($GLOBALS['meta']['forum_prive_admin'] == 'non'))
-		OR (($GLOBALS['meta']['forum_prive'] == 'non') && ($qui['statut'] == '1comite'))
+		or (($GLOBALS['meta']['forum_prive'] == 'non') && ($qui['statut'] == '1comite'))
 	) {
 		return false;
 	}
@@ -122,8 +122,8 @@ function autoriser_forum_moderer_dist($faire, $type, $id, $qui, $opt) {
 	if ($id) {
 		include_spip('inc/forum');
 		if ($racine = racine_forum($id)
-			AND list($objet, $id_objet,) = $racine
-			AND $objet
+			and list($objet, $id_objet, ) = $racine
+			and $objet
 		) {
 			return autoriser('modererforum', $objet, $id_objet);
 		}
@@ -246,5 +246,3 @@ function autoriser_forumadmin_participer_dist($faire, $type, $id, $qui, $opt) {
 function autoriser_participerforumprive_dist($faire, $type, $id, $qui, $opt) {
 	return true;
 }
-
-?>

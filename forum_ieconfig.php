@@ -36,5 +36,3 @@ function forum_ieconfig_metas($table) {
 
 	return $table;
 }
-
-?>

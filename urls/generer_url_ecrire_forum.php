@@ -17,10 +17,10 @@ if (!defined("_ECRIRE_INC_VERSION")) {
 // http://code.spip.net/@generer_url_ecrire_forum
 function urls_generer_url_ecrire_forum_dist($id, $args = '', $ancre = '', $public = null, $connect = '') {
 	$a = "id_forum=" . intval($id);
-	if (is_null($public) AND !$connect) {
+	if (is_null($public) and !$connect) {
 		$public = objet_test_si_publie('forum', $id, $connect);
 	}
-	$h = ($public OR $connect)
+	$h = ($public or $connect)
 		? generer_url_entite_absolue($id, 'forum', $args, $ancre, $connect)
 		: (generer_url_ecrire('controler_forum', "debut_forum=@$id" . ($args ? "&$args" : ''))
 			. ($ancre ? "#$ancre" : ''));
