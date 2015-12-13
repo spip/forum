@@ -2,11 +2,13 @@
 
 /**
  * Déclarations des configurations qui peuvent être sauvegardées
- * 
+ *
  * @package SPIP\Forum\Pipelines
-**/
+ **/
 
-if (!defined("_ECRIRE_INC_VERSION")) return;
+if (!defined("_ECRIRE_INC_VERSION")) {
+	return;
+}
 
 /**
  * Ajoute les metas sauvegardables de Forum pour le plugin IEConfig
@@ -15,10 +17,10 @@ if (!defined("_ECRIRE_INC_VERSION")) return;
  *
  * @param array $table
  *     Déclaration des sauvegardes
- * @return array 
+ * @return array
  *     Déclaration des sauvegardes complétées
-**/
-function forum_ieconfig_metas($table){
+ **/
+function forum_ieconfig_metas($table) {
 	$table['forums_contenu']['titre'] = _T('forum:titre_forum');
 	$table['forums_contenu']['icone'] = 'forum-public-16.png';
 	$table['forums_contenu']['metas_brutes'] = 'forums_titre,forums_texte,forums_urlref,forums_afficher_barre,formats_documents_forum';
@@ -31,7 +33,7 @@ function forum_ieconfig_metas($table){
 	$table['forums_prives']['titre'] = _T('forum:titre_config_forums_prive');
 	$table['forums_prives']['icone'] = 'forum-interne-16.png';
 	$table['forums_prives']['metas_brutes'] = 'forum_prive_objets,forum_prive,forum_prive_admin';
-	
+
 	return $table;
 }
 

@@ -14,8 +14,10 @@
  * Gestion du formulaire Forum Privé et de sa balise
  *
  * @package SPIP\Forum\Balises
-**/
-if (!defined("_ECRIRE_INC_VERSION")) return;	#securite
+ **/
+if (!defined("_ECRIRE_INC_VERSION")) {
+	return;
+}  #securite
 
 include_spip('inc/acces');
 include_spip('inc/texte');
@@ -32,7 +34,7 @@ include_spip('inc/forum');
  * de mots-clés dans les forums : si la variable de personnalisation
  * `$afficher_groupe[]` est définie dans le fichier d'appel, et si la table
  * de référence est OK, la liste des mots-clés est alors proposée.
- * 
+ *
  * @balise
  * @see balise_FORMULAIRE_FORUM()
  * @example
@@ -47,7 +49,7 @@ include_spip('inc/forum');
  * @return Champ
  *     Pile complétée par le code à générer
  */
-function balise_FORMULAIRE_FORUM_PRIVE ($p) {
+function balise_FORMULAIRE_FORUM_PRIVE($p) {
 
 	/**
 	 * On recupere $objet et $id_objet depuis une boucle englobante si possible
@@ -55,10 +57,10 @@ function balise_FORMULAIRE_FORUM_PRIVE ($p) {
 	 * sur quoi le formulaire porte.
 	 * Enfin, on pourra aussi forcer objet et id_objet depuis l'appel du formulaire
 	 */
-	$i_boucle  = $p->nom_boucle ? $p->nom_boucle : $p->id_boucle;
+	$i_boucle = $p->nom_boucle ? $p->nom_boucle : $p->id_boucle;
 	if (isset($p->boucles[$i_boucle])) {
 		$_id_objet = $p->boucles[$i_boucle]->primary;
-		$_type     = $p->boucles[$i_boucle]->id_table;
+		$_type = $p->boucles[$i_boucle]->id_table;
 	} else {
 		$_id_objet = $_type = '';
 	}
@@ -82,7 +84,7 @@ function balise_FORMULAIRE_FORUM_PRIVE ($p) {
 		$obtenir = array_merge($obtenir, $ids);
 	}
 
-	$p = calculer_balise_dynamique($p,'FORMULAIRE_FORUM_PRIVE', $obtenir,
+	$p = calculer_balise_dynamique($p, 'FORMULAIRE_FORUM_PRIVE', $obtenir,
 		array("'$_type'", count($ids))
 	);
 
@@ -112,9 +114,11 @@ function balise_FORMULAIRE_FORUM_PRIVE_stat($args, $context_compil) {
 
 	include_spip('balise/formulaire_forum');
 	// si statut privrac ou privadm, pas besoin d'objet !
-	$r = balise_forum_retrouve_objet($ido,$id_forum,$args,$context_compil,!in_array($statut,array('privrac','privadm')));
-	if (!$r)
+	$r = balise_forum_retrouve_objet($ido, $id_forum, $args, $context_compil,
+		!in_array($statut, array('privrac', 'privadm')));
+	if (!$r) {
 		return false;
+	}
 
 	list($objet, $id_objet, $retour) = $r;
 
