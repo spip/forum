@@ -13,6 +13,7 @@
 		<traducteur nom="kerivo" lien="http://trad.spip.net/auteur/kerivo" />
 	</langue>
 	<langue code="bs" url="http://trad.spip.net/tradlang_module/forum?lang_cible=bs" total="138" traduits="49" relire="0" modifs="19" nouveaux="70" pourcent="35.51">
+		<traducteur nom="kent1" lien="http://trad.spip.net/auteur/kent1" />
 	</langue>
 	<langue code="ca" url="http://trad.spip.net/tradlang_module/forum?lang_cible=ca" total="138" traduits="66" relire="0" modifs="18" nouveaux="54" pourcent="47.83">
 		<traducteur nom="merce" lien="http://trad.spip.net/auteur/merce" />

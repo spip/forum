@@ -25,7 +25,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum' => 'Forum',
 	'forum_acces_refuse' => 'Nemate vise pristup ovim forumima.',
 	'forum_attention_dix_caracteres' => '<b>Upozorenje!</b> Vasa poruka mora sadrzati najmanje deset karaktera.',
-	'forum_attention_trois_caracteres' => '<b>Upozorenje!</b> Vas naslov mora sadrzati najmanje tri karaktera.',
+	'forum_attention_trois_caracteres' => '<b>Upozorenje!</b> Vaš naslov mora imati najmanje tri karaktera.',
 	'forum_avez_selectionne' => 'Izabrali ste:',
 	'forum_cliquer_retour' => 'Kliknite <a href=\'@retour_forum@\'>ici</a> da bi ste nastavili.',
 	'forum_forum' => 'forum',
