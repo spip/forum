@@ -202,7 +202,7 @@ function forum_fichier_tmp($arg) {
 
 # et maintenant on purge les locks de forums ouverts depuis > 4 h
 
-	if ($dh = @opendir(_DIR_TMP)) {
+	if ($dh = opendir(_DIR_TMP)) {
 		while (($file = @readdir($dh)) !== false) {
 			if (preg_match('/^forum_([0-9]+)\.lck$/', $file)
 				and (time() - @filemtime(_DIR_TMP . $file) > 4 * 3600)
