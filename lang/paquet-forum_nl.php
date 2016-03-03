@@ -10,8 +10,8 @@ if (!defined('_ECRIRE_INC_VERSION')) {
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// F
-	'forum_description' => 'Forum van SPIP (private en openbaar)',
-	'forum_slogan' => 'Beheer van de private en openbare SPIP fora'
+	'forum_description' => 'Forum van SPIP (privé en openbaar)',
+	'forum_slogan' => 'Beheer van de privé en openbare SPIP forums'
 );
 
 ?>
