@@ -45,7 +45,7 @@ function inc_email_notification_forum_dist($t, $email, $contexte = array()) {
 				} else {
 					if ($t['statut'] == 'publie') # forum publie
 					{
-						$url = generer_url_entite($id_forum, 'forum');
+						$url = generer_url_entite($id_forum, 'forum', '', 'forum' . $id_forum, false);
 					} else #  forum modere, spam, poubelle direct ....
 					{
 						$url = generer_url_ecrire('controler_forum', "debut_id_forum=" . $id_forum);
