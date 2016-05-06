@@ -11,4 +11,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_description' => 'Forum de SPIP (privé et public)',
 	'forum_slogan' => 'Gestion des forums privés et publics dans SPIP'
 );
-

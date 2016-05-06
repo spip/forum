@@ -13,4 +13,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_description' => 'سخنگاه اسپيپ (خصوصي همگاني)؟',
 	'forum_slogan' => 'مديريت سخنگاه‌هاي خصوصي و همگاني در اسپيپ'
 );
-
