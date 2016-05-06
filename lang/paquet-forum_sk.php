@@ -14,4 +14,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_slogan' => 'Riadenie súkromných aj verejných diskusných fór v SPIPe'
 );
 
-?>
