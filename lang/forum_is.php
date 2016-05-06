@@ -28,4 +28,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_valider_message' => 'Staðfesta skilaboðin'
 );
 
-?>

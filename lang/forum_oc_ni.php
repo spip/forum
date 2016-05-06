@@ -103,4 +103,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_page_forum_suivi' => 'Seguit dei fòros'
 );
 
-?>

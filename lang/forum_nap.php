@@ -58,4 +58,3 @@ avvertiti via email. Desideri utilizzare quest’opzione?', # MODIF
 	'titre_forum' => 'Forum'
 );
 
-?>

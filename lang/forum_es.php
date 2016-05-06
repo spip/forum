@@ -178,4 +178,3 @@ suministrado. Si no está inscrito/a, debe',
 	'voir_messages_objet' => 'ver los mensajes'
 );
 
-?>

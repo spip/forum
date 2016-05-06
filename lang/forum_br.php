@@ -176,4 +176,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'voir_messages_objet' => 'Gwelet ar c’hemenadennoù'
 );
 
-?>

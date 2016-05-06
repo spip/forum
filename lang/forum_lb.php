@@ -167,4 +167,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'voir_messages_objet' => 'd’Message gesinn'
 );
 
-?>

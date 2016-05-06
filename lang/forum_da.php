@@ -96,4 +96,3 @@ De vil være lukkede i forhold til afsnit, meddelelser osv..',
 	'titre_page_forum_suivi' => 'Opfølgning på forummer'
 );
 
-?>

@@ -121,4 +121,3 @@ sonradan yok edebilir).',
 	'titre_page_forum_suivi' => 'Forumların izlenmesi '
 );
 
-?>

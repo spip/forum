@@ -179,4 +179,3 @@ utilizadores devem ter uma assinatura ao fornecer o seu endereço e-mail antes d
 	'voir_messages_objet' => 'visualizar as mensagens'
 );
 
-?>

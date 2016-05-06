@@ -119,4 +119,3 @@ La publikaj forumoj estos laŭkaze unu post la alia permesitaj
 	'titre_page_forum_suivi' => 'Superrigardo de la forumoj'
 );
 
-?>

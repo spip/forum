@@ -181,4 +181,3 @@ sui singoli articoli; saranno invece proibiti nelle rubriche, nelle brevi, ecc',
 	'voir_messages_objet' => 'vedi il messaggio'
 );
 
-?>

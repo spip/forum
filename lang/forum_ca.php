@@ -119,4 +119,3 @@ Si ja n’esteu, escriviu a continuació l’identifcador que us ha estat propor
 	'titre_page_forum_suivi' => 'Seguiment dels fòrums'
 );
 
-?>
