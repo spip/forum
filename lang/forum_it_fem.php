@@ -122,4 +122,3 @@ avvertite via email. Per ogni tipo di forum, indica se desideri utilizzare quest
 	'titre_forum_suivi' => 'Monitoraggio dei forum',
 	'titre_page_forum_suivi' => 'Monitoraggio dei forum'
 );
-

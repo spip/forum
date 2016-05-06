@@ -164,4 +164,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// V
 	'voir_messages_objet' => 'تمام پيام‌ها را بنگريد'
 );
-

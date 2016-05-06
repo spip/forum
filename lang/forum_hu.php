@@ -101,4 +101,3 @@ amit kapott. Amennyiben nincs regisztrálva, akkor',
 	'titre_forum_suivi' => 'A fórumok megfigyelése',
 	'titre_page_forum_suivi' => 'Fórumok megfigyelése'
 );
-

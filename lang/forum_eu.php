@@ -171,4 +171,3 @@ Inskribaturik ez bazaude, aurretik inskribatu behar duzu.',
 	// V
 	'voir_messages_objet' => 'mezuak ikusi'
 );
-

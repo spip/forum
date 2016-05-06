@@ -104,4 +104,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_forum_suivi' => 'ការ​តាមដាន​វេទិកា',
 	'titre_page_forum_suivi' => 'ការ​តាមដាន​វេទិកា'
 );
-

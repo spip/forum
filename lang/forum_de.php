@@ -174,4 +174,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// V
 	'voir_messages_objet' => 'Beiträge anzeigen'
 );
-

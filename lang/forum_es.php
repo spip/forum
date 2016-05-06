@@ -177,4 +177,3 @@ suministrado. Si no está inscrito/a, debe',
 	// V
 	'voir_messages_objet' => 'ver los mensajes'
 );
-

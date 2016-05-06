@@ -73,4 +73,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_forum_suivi' => 'Oppfølging av forum',
 	'titre_page_forum_suivi' => 'Oppfølging av forum'
 );
-

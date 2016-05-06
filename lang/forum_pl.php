@@ -106,4 +106,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_forum_suivi' => 'Archiwum forum',
 	'titre_page_forum_suivi' => 'Archiwum forum'
 );
-

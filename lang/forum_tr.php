@@ -120,4 +120,3 @@ sonradan yok edebilir).',
 	'titre_forum_suivi' => 'Forumların izlenmesi ',
 	'titre_page_forum_suivi' => 'Forumların izlenmesi '
 );
-

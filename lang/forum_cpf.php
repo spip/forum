@@ -98,4 +98,3 @@ sanm inn limèl. Indik tèrla si ou vé anserv lopsyon-la ?', # MODIF
 	'titre_forum_suivi' => 'Swivi bann forom',
 	'titre_page_forum_suivi' => 'Swivi bann forom'
 );
-

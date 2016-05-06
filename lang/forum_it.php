@@ -180,4 +180,3 @@ sui singoli articoli; saranno invece proibiti nelle rubriche, nelle brevi, ecc',
 	// V
 	'voir_messages_objet' => 'vedi il messaggio'
 );
-

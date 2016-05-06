@@ -181,4 +181,3 @@ De publieke forums kunnen per artikel toegestaan worden. Ze worden niet toegesta
 	// V
 	'voir_messages_objet' => 'berichten bekijken'
 );
-

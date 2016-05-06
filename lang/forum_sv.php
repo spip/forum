@@ -101,4 +101,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_cadre_forum_interne' => 'Internt forum',
 	'titre_forum' => 'Forum'
 );
-

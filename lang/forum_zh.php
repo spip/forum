@@ -102,4 +102,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_forum_suivi' => '论坛跟踪',
 	'titre_page_forum_suivi' => '论坛跟踪'
 );
-

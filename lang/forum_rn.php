@@ -19,4 +19,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// R
 	'repondre_message' => 'Kwishura kuri ubu butumwa'
 );
-

@@ -107,4 +107,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_forum_suivi' => 'Sledování diskusních skupin',
 	'titre_page_forum_suivi' => 'Sledování diskusních skupin'
 );
-

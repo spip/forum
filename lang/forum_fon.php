@@ -91,4 +91,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_forum_suivi' => 'Bɔ núkún nú kplékplé ɔ',
 	'titre_page_forum_suivi' => 'Bɔnúkún kplékplé ɔ jí'
 );
-

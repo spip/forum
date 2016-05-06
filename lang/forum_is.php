@@ -27,4 +27,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_supprimer_message' => 'Eyða þessum skilaboðum',
 	'icone_valider_message' => 'Staðfesta skilaboðin'
 );
-

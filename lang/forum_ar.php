@@ -185,4 +185,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// V
 	'voir_messages_objet' => 'عرض المشاركات'
 );
-

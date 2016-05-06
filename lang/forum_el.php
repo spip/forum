@@ -75,4 +75,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_cadre_forum_interne' => 'Εσωτερικό φόρουμ',
 	'titre_forum' => 'Φόρουμ'
 );
-

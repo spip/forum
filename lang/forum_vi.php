@@ -92,4 +92,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_forum_suivi' => 'Quản trị Diễn đàn',
 	'titre_page_forum_suivi' => 'Quản trị diễn đàn'
 );
-

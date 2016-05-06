@@ -96,4 +96,3 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_forum_suivi' => 'နောက်ဆက်တွဲဖိုရမ်',
 	'titre_page_forum_suivi' => 'ဖိုရမ်နောက်ဆက်တွဲ'
 );
-
