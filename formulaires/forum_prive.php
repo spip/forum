@@ -127,6 +127,10 @@ function formulaires_forum_prive_verifier_dist($objet, $id_objet, $id_forum, $fo
 		$erreurs['erreur_message'] = _T('forum:forum_message_trop_long');
 	}
 
+	if ($url = _request('url_site') and !tester_url_absolue($url)) {
+		$erreurs['url_site'] = _T('info_url_site_pas_conforme');
+	}
+
 	if (!count($erreurs) and !_request('envoyer_message') and !_request('confirmer_previsu_forum')) {
 		$previsu = inclure_forum_prive_previsu($texte, $titre, _request('url_site'), _request('nom_site'),
 			_request('ajouter_mot'));
