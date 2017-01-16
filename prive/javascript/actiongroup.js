@@ -165,7 +165,7 @@ actiongroup.activate = function(sel){
 		});
 
 	$('#actiongroup .action')
-		.unbind('click')
+		.off('click')
 		.click(function(){
 			var href=$(this).attr('data-href');
 			var ids = [];

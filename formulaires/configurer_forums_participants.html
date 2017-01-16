@@ -58,16 +58,17 @@
 
 </div>
 <script type='text/javascript'>
-jQuery(document).ready(function(){
-	jQuery('.editer.configurer_forums_publics input').each(function(){
-		var checked = jQuery(this).prop('checked');
-		jQuery(this).bind('change',function(){
-			if (jQuery(this).prop('checked')==checked)
-				jQuery('#config-options-').hide();
-			else
-				jQuery('#config-options-').show();
+jQuery(function($){
+	$('.editer.configurer_forums_publics input').each(function(){
+		var checked = $(this).prop('checked');
+		$(this).on('change', function(){
+			if ($(this).prop('checked')==checked) {
+				$('#config-options-').hide();
+			} else {
+				$('#config-options-').show();
+			}
 		});
 	});
-	jQuery('#config-options-').hide();
+	$('#config-options-').hide();
 });
 </script>
