@@ -56,8 +56,8 @@
 		<traducteur nom="Raquel S. Bujaldón" lien="https://trad.spip.net/auteur/raquel-s-bujaldon" />
 		<traducteur nom="severo" lien="https://trad.spip.net/auteur/severo" />
 	</langue>
-	<langue code="eu" url="https://trad.spip.net/tradlang_module/forum?lang_cible=eu" total="138" traduits="133" relire="0" modifs="0" nouveaux="5" pourcent="96.38">
-		<traducteur nom="otalazt" lien="https://trad.spip.net/auteur/otalazt" />
+	<langue code="eu" url="https://trad.spip.net/tradlang_module/forum?lang_cible=eu" total="138" traduits="138" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
+		<traducteur nom="otalazt" lien="https://trad.spip.net/auteur/otalazt-7232" />
 	</langue>
 	<langue code="fa" url="https://trad.spip.net/tradlang_module/forum?lang_cible=fa" total="138" traduits="127" relire="0" modifs="1" nouveaux="10" pourcent="92.03">
 		<traducteur nom="Davood Hossein" lien="https://trad.spip.net/auteur/davood-hossein" />
