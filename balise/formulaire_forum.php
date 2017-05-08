@@ -29,7 +29,7 @@ include_spip('inc/forum');
  * #FORMULAIRE_FORUM seul calcule (objet, id_objet) depuis la boucle parente
  * #FORMULAIRE_FORUM{#SELF} pour forcer l'url de retour
  * #FORMULAIRE_FORUM{#SELF, article, 3} pour forcer l'objet et son identifiant
- * http://code.spip.net/@balise_FORMULAIRE_FORUM
+ * https://code.spip.net/@balise_FORMULAIRE_FORUM
  *
  * @param Object $p
  * @return Object
@@ -81,7 +81,7 @@ function balise_FORMULAIRE_FORUM ($p) {
 /**
  * Chercher l'objet/id_objet et la configuration du forum
  *
- * http://code.spip.net/@balise_FORMULAIRE_FORUM_stat
+ * https://code.spip.net/@balise_FORMULAIRE_FORUM_stat
  *
  * @param array $args
  * @param array $context_compil

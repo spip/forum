@@ -162,7 +162,7 @@ function formulaires_forum_charger_dist($objet, $id_objet, $id_forum,
  * Ce systeme n'est pas fonctionnel pour les forums sans previsu (notamment
  * si $afficher_previsu = 'non')
  *
- * http://code.spip.net/@forum_fichier_tmp
+ * https://code.spip.net/@forum_fichier_tmp
  *
  * @param $arg
  * @return int
@@ -364,7 +364,7 @@ function forum_documents_acceptes(){
 /**
  * Preparer la previsu d'un message de forum
  *
- * http://code.spip.net/@inclure_previsu
+ * https://code.spip.net/@inclure_previsu
  *
  * @param string $texte
  * @param string $titre
