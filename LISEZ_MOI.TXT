@@ -1,11 +1,11 @@
 Suite à http://comments.gmane.org/gmane.comp.web.spip.zone/31692, dépot du présent lisez_moi.txt pour clarifier la situation de cette version de ce plugin.
 
 
-Cette version du plugin Forum est une "copie" des forums de SPIP 3 (la version dev à l'époque) compatible SPIP 2.1 : http://zone.spip.org/trac/spip-zone/changeset/41555
+Cette version du plugin Forum est une "copie" des forums de SPIP 3 (la version dev à l'époque) compatible SPIP 2.1 : https://zone.spip.org/trac/spip-zone/changeset/41555
 
 Dans SPIP 2.1 les forums sont encore intégrés au core (pas sous forme de plugins dans extensions). Ce plugin surcharge les forums du core afin de permettre d'utiliser des forums sur tous types d'objets en 2.1. *Cette version n'est pas maintenue car "non officielle"*, voilà pourquoi le plugin n'est pas distribué en zip
 
 
-Pour le côté interface des forums avec gestion des spams,  il y a le plugin "Interface d'administration des forums" qui fait tout ça en 2.x : http://zone.spip.org/trac/spip-zone/browser/_plugins_/forum/plugin.xml
+Pour le côté interface des forums avec gestion des spams,  il y a le plugin "Interface d'administration des forums" qui fait tout ça en 2.x : https://zone.spip.org/trac/spip-zone/browser/_plugins_/forum/plugin.xml
 
 
