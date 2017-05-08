@@ -35,8 +35,8 @@ include_spip('inc/forum');
  * de référence est OK, la liste des mots-clés est alors proposée.
  *
  * @balise
- * @link http://www.spip.net/3969 Balise `#FORMULAIRE_FORUM`
- * @link http://www.spip.net/1827 Les formulaires
+ * @link https://www.spip.net/3969 Balise `#FORMULAIRE_FORUM`
+ * @link https://www.spip.net/1827 Les formulaires
  * @example
  *     ```
  *     #FORMULAIRE_FORUM seul calcule (objet, id_objet) depuis la boucle parente
