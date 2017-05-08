@@ -42,7 +42,7 @@ function boucle_FORUMS_dist($id_boucle, &$boucles) {
 }
 
 // {meme_parent}
-// http://www.spip.net/@meme_parent
+// https://www.spip.net/@meme_parent
 // http://code.spip.net/@critere_meme_parent_dist
 function critere_FORUMS_meme_parent_dist($idb, &$boucles, $crit) {
 	global $exceptions_des_tables;
