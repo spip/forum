@@ -45,7 +45,7 @@ if(!function_exists('autoriser_bouton_controle_forum_dist')){
 
 // Consulter le forum des admins ?
 // admins y compris restreints
-// http://code.spip.net/@autoriser_forum_admin_dist
+// https://code.spip.net/@autoriser_forum_admin_dist
 if(!function_exists('autoriser_forum_admin_dist')){
 function autoriser_forum_admin_dist($faire, $type, $id, $qui, $opt) {
 	return

@@ -10,7 +10,7 @@
  *  Pour plus de details voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
-// http://code.spip.net/@generer_url_ecrire_forum
+// https://code.spip.net/@generer_url_ecrire_forum
 function urls_generer_url_ecrire_forum_dist($id, $args='', $ancre='', $statut='', $connect='') {
 	$a = "id_forum=" . intval($id);
 	if (!$statut) {

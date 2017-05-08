@@ -17,7 +17,7 @@ include_spip('inc/actions');
 
 // Ce fichier est inclus par dist/formulaires/forum.php
 
-// http://code.spip.net/@controler_forum_abo
+// https://code.spip.net/@controler_forum_abo
 function controler_forum_abo($retour)
 {
 	global $visiteur_session;
@@ -47,7 +47,7 @@ function controler_forum_abo($retour)
  * @param int $id_objet identifiant de l'objet
  * @param string $res chaine de 3 caractere parmi 'non','pos','pri','abo'
  */
-// http://code.spip.net/@controler_forum
+// https://code.spip.net/@controler_forum
 function controler_forum($objet, $id_objet) {
 	// Valeur par defaut
 	$accepter_forum = $GLOBALS['meta']["forums_publics"];
@@ -60,7 +60,7 @@ function controler_forum($objet, $id_objet) {
 	return substr($accepter_forum, 0, 3);
 }
 
-// http://code.spip.net/@mots_du_forum
+// https://code.spip.net/@mots_du_forum
 function mots_du_forum($ajouter_mot, $id_message)
 {
 	$t = array('id_forum' => $id_message);
@@ -70,14 +70,14 @@ function mots_du_forum($ajouter_mot, $id_message)
 }
 
 
-// http://code.spip.net/@reduce_strlen
+// https://code.spip.net/@reduce_strlen
 function reduce_strlen($n, $c)
 {
   return $n - (is_string($c) ? strlen($c) : 0);
 }
 
 
-// http://code.spip.net/@tracer_erreur_forum
+// https://code.spip.net/@tracer_erreur_forum
 function tracer_erreur_forum($type='') {
 	spip_log("erreur forum ($type): ".print_r($_POST, true));
 
@@ -92,7 +92,7 @@ function tracer_erreur_forum($type='') {
 }
 
 // Un parametre permet de forcer le statut (exemple: plugin antispam)
-// http://code.spip.net/@inc_forum_insert_dist
+// https://code.spip.net/@inc_forum_insert_dist
 function inc_forum_insert_dist($force_statut = NULL) {
 	# en reponse a
 	$id_forum = intval(_request('id_forum'))>0?intval(_request('id_forum')):0;
@@ -175,7 +175,7 @@ spip_log('id_thread='.$thread['id_thread'], 'forum');
 	return array($url, $id_reponse);
 }
 
-// http://code.spip.net/@forum_insert_base
+// https://code.spip.net/@forum_insert_base
 function forum_insert_base($c, $id_forum, $objet, $id_objet, $statut, $retour)
 {
 	$afficher_texte = (_request('afficher_texte') <> 'non');
@@ -245,7 +245,7 @@ function forum_insert_base($c, $id_forum, $objet, $id_objet, $statut, $retour)
 // calcul de l'adresse de retour en cas d'echec du POST
 // mais la veritable adresse de retour sera calculee apres insertion
 
-// http://code.spip.net/@forum_insert_nopost
+// https://code.spip.net/@forum_insert_nopost
 function forum_insert_nopost($id_forum, $objet, $id_objet)
 {
 	if ($id_forum>0)
@@ -256,7 +256,7 @@ function forum_insert_nopost($id_forum, $objet, $id_objet)
 	return str_replace('&amp;','&',$r);
 }
 
-// http://code.spip.net/@forum_insert_noprevisu
+// https://code.spip.net/@forum_insert_noprevisu
 function forum_insert_noprevisu()
 {
 	// simuler une action venant de l'espace public
@@ -283,7 +283,7 @@ function forum_insert_noprevisu()
 	return false;
 }
 
-// http://code.spip.net/@forum_insert_statut
+// https://code.spip.net/@forum_insert_statut
 function forum_insert_statut($champs, $retour, $forcer_statut=NULL)
 {
 	$statut = controler_forum($champs['objet'], $champs['id_objet']);

@@ -13,7 +13,7 @@
 if (!defined("_ECRIRE_INC_VERSION")) return;
 
 // Recuperer le reglage des forums publics de l'article x
-// http://code.spip.net/@get_forums_publics
+// https://code.spip.net/@get_forums_publics
 function get_forums_publics($id_objet=0, $objet='article') {
 
 	if ($objet=='article' AND $id_objet) {

@@ -14,7 +14,7 @@ if (!defined("_ECRIRE_INC_VERSION")) return;
 include_spip('inc/actions');
 
 // recuperer le critere SQL qui selectionne nos forums
-// http://code.spip.net/@critere_statut_controle_forum
+// https://code.spip.net/@critere_statut_controle_forum
 function critere_statut_controle_forum($type, $id_rubrique=0, $recherche='') {
 
 	if (is_array($id_rubrique))   $id_rubrique = join(',',$id_rubrique);
@@ -75,7 +75,7 @@ function critere_statut_controle_forum($type, $id_rubrique=0, $recherche='') {
 // obsolete, remplace par l'appel systematique a 2 invalideurs :
 // - forum/id_forum
 // - objet/id_objet
-// http://code.spip.net/@calcul_index_forum
+// https://code.spip.net/@calcul_index_forum
 function calcul_index_forum($objet,$id_objet) {
 	return substr($objet,0,1).$id_objet;
 }
@@ -83,7 +83,7 @@ function calcul_index_forum($objet,$id_objet) {
 //
 // Recalculer tous les threads
 //
-// http://code.spip.net/@calculer_threads
+// https://code.spip.net/@calculer_threads
 function calculer_threads() {
 	// fixer les id_thread des debuts de discussion
 	sql_update('spip_forum', array('id_thread'=>'id_forum'), "id_parent=0");
@@ -107,7 +107,7 @@ function calculer_threads() {
 }
 
 // Calculs des URLs des forums (pour l'espace public)
-// http://code.spip.net/@racine_forum
+// https://code.spip.net/@racine_forum
 function racine_forum($id_forum){
 	if (!$id_forum = intval($id_forum)) return false;
 
@@ -123,7 +123,7 @@ function racine_forum($id_forum){
 } 
 
 
-// http://code.spip.net/@parent_forum
+// https://code.spip.net/@parent_forum
 function parent_forum($id_forum) {
 	if (!$id_forum = intval($id_forum)) return;
 	$row = sql_fetsel("id_parent, objet, id_objet", "spip_forum", "id_forum=".$id_forum);
@@ -149,7 +149,7 @@ function generer_url_forum_dist($id_forum, $args='', $ancre='') {
 }
 
 
-// http://code.spip.net/@generer_url_forum_parent
+// https://code.spip.net/@generer_url_forum_parent
 function generer_url_forum_parent($id_forum) {
 	if ($id_forum = intval($id_forum)) {
 		list($type, $id) = parent_forum($id_forum);
@@ -162,7 +162,7 @@ function generer_url_forum_parent($id_forum) {
 
 // Quand on edite un forum, on tient a conserver l'original
 // sous forme d'un forum en reponse, de statut 'original'
-// http://code.spip.net/@conserver_original
+// https://code.spip.net/@conserver_original
 function conserver_original($id_forum) {
 	$s = sql_fetsel("id_forum", "spip_forum", "id_parent=".sql_quote($id_forum)." AND statut='original'");
 
@@ -184,7 +184,7 @@ function conserver_original($id_forum) {
 }
 
 // appelle conserver_original(), puis modifie le contenu via l'API inc/modifier
-// http://code.spip.net/@enregistre_et_modifie_forum
+// https://code.spip.net/@enregistre_et_modifie_forum
 function enregistre_et_modifie_forum($id_forum, $c=false) {
 	if ($err = conserver_original($id_forum)) {
 		spip_log("erreur de sauvegarde de l'original, $err");

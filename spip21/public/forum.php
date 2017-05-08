@@ -18,7 +18,7 @@ include_spip('public/quete');
 //
 // <BOUCLE(FORUMS)>
 //
-// http://code.spip.net/@boucle_FORUMS_dist
+// https://code.spip.net/@boucle_FORUMS_dist
 function boucle_FORUMS($id_boucle, &$boucles) {
 	$boucle = &$boucles[$id_boucle];
 	$id_table = $boucle->id_table;
@@ -47,7 +47,7 @@ function boucle_FORUMS($id_boucle, &$boucles) {
 
 // {meme_parent}
 // https://www.spip.net/@meme_parent
-// http://code.spip.net/@critere_meme_parent_dist
+// https://code.spip.net/@critere_meme_parent_dist
 function critere_FORUMS_meme_parent($idb, &$boucles, $crit) {
 	global $exceptions_des_tables;
 	$boucle = &$boucles[$idb];
@@ -87,7 +87,7 @@ function public_critere_secteur_forums($idb, &$boucles, $val, $crit)
 // par exemple en tete de inc-forums.html ; impossible donc de
 // savoir a quel objet elle va s'appliquer, ca dependra du contexte
 //
-// http://code.spip.net/@balise_PARAMETRES_FORUM_dist
+// https://code.spip.net/@balise_PARAMETRES_FORUM_dist
 function balise_PARAMETRES_FORUM($p) {
 	// s'il y a un id_article dans le contexte, regarder le statut
 	// accepter_forum de cet article
@@ -202,7 +202,7 @@ function calcul_parametres_forum(&$env, $reponse, $type, $primary) {
 // Pour que le compilo ajoute un invalideur a la balise #PARAMETRES_FORUM
 // Noter l'invalideur de la page contenant ces parametres,
 // en cas de premier post sur le forum
-// http://code.spip.net/@code_invalideur_forums
+// https://code.spip.net/@code_invalideur_forums
 function code_invalideur_forums_dist($p, $code) {
 	return $code;
 }
