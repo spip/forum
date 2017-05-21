@@ -28,6 +28,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// E
 	'erreur_enregistrement_message' => 'Ne ket bet posubl enrolliñ ho kemenadenn ablamour d’un diaesamant teknikel',
+	'extensions_autorisees_toutes' => 'holl',
 
 	// F
 	'form_pet_message_commentaire' => 'Ur gemennadenn, un evezhiadenn ?',
