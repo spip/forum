@@ -92,7 +92,8 @@
 	</langue>
 	<langue code="is" url="https://trad.spip.net/tradlang_module/forum?lang_cible=is" total="138" traduits="8" relire="0" modifs="6" nouveaux="124" pourcent="5.80">
 	</langue>
-	<langue code="it" url="https://trad.spip.net/tradlang_module/forum?lang_cible=it" total="138" traduits="137" relire="0" modifs="0" nouveaux="1" pourcent="99.28">
+	<langue code="it" url="https://trad.spip.net/tradlang_module/forum?lang_cible=it" total="138" traduits="138" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
+		<traducteur nom="Alberto" lien="https://trad.spip.net/auteur/alberto" />
 		<traducteur nom="Julia14" lien="https://trad.spip.net/auteur/julia14" />
 		<traducteur nom="phante" lien="https://trad.spip.net/auteur/phante" />
 	</langue>
