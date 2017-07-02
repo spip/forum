@@ -5,7 +5,7 @@
 [<p class="reponse_formulaire reponse_formulaire_erreur">(#ENV*{message_erreur})</p>]
 
 	<form action="#ENV{action}#formulaire_configurer_forums_participants" method="post"><div>
-		[(#ACTION_FORMULAIRE{#ENV{action}})]
+		#ACTION_FORMULAIRE
 		<div class="editer-groupe">
 			<div class='editer configurer_forums_publics[ (#ENV**{erreurs}|table_valeur{forums_publics}|oui)erreur]'>
 				[

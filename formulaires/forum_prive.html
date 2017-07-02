@@ -8,7 +8,7 @@
 
 ][<form action="#ENV{action}#formulaire_forum" method="post" class="noajax">
 	<div>
-	[(#ACTION_FORMULAIRE{#ENV{action}})]
+	#ACTION_FORMULAIRE
 	<input type='hidden' name='titre' value="#ENV{titre}" />
 	<input type='hidden' name='texte' value="#ENV{texte}" />
 	<input type='hidden' name='url_site' value="#ENV{url_site}" />
@@ -25,7 +25,7 @@
 [(#ENV{editable})
 
 <form action="#ENV{action}#formulaire_forum" method="post" enctype='multipart/form-data'><div>
-	[(#ACTION_FORMULAIRE{#ENV{action}})]
+	#ACTION_FORMULAIRE
 	[<input type="hidden" name="id_forum" value="(#ENV*{id_forum})" />]
 
 [(#ENV{config}|table_valeur{forums_titre})

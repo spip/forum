@@ -5,7 +5,7 @@
 [<p class="reponse_formulaire reponse_formulaire_erreur">(#ENV*{message_erreur})</p>]
 
 	<form action="#ENV{action}#formulaire_configurer_contenu_forums" method="post"><div>
-		[(#ACTION_FORMULAIRE{#ENV{action}})]
+		#ACTION_FORMULAIRE
 		<div class="editer-groupe">
 			<div class='editer configurer_champs_forums[ (#ENV**{erreurs}|table_valeur{forums_titre}|oui)erreur]'>
 				<label><:config_activer_champs:></label>[
