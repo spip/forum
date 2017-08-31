@@ -92,10 +92,9 @@ function critere_FORUMS_compter_reponses($idb, &$boucles, $crit) {
 
 	$boucle->from['fils'] = 'spip_forum';
 	$boucle->from_type['fils'] = 'left';
-	$boucle->join["fils"]= array("'$id_table'", "'$id_parent'", "'id_forum'");
+	$boucle->join["fils"] = array("'$id_table'", "'$id_parent'", "'id_forum'", "'fils.statut='.sql_quote('publie')");
 
 	$boucle->select[]= 'COUNT(fils.id_forum) AS nombre_reponses';
-	$boucle->where[] = array("'='", "'fils.statut'",  "sql_quote('publie')");
 
 	// Gestion du having
 	if (count($crit->param)) {
