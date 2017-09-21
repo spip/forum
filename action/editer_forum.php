@@ -66,9 +66,9 @@ if (!function_exists('revision_forum')) {
 			// on n'affecte pas $r, car un deplacement ne change pas l'auteur
 		}
 
-		// s'il y a vraiment eu une modif et que le message est public
-		// on enregistre le nouveau date_thread
-		if ($err === '' and $t['statut'] == 'publie') {
+		// s'il y a vraiment eu une modif et que le message est publié ou posté dans un forum du privé
+		// on enregistre la nouvelle date_thread
+		if ($err === '' and in_array($t['statut'], array('publie', 'prive', 'privrac', 'privadm'))) {
 			// on ne stocke ni le numero IP courant ni le nouvel id_auteur
 			// dans le message modifie (trop penible a l'usage) ; mais du
 			// coup attention a la responsabilite editoriale
