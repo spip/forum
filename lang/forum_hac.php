@@ -9,8 +9,15 @@ if (!defined('_ECRIRE_INC_VERSION')) {
 
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
+	// B
+	'bouton_radio_modere_abonnement' => 'تۊمارکەردەی وازیان',
+
+	// E
+	'extensions_autorisees_toutes' => 'گرد',
+
 	// F
 	'form_pet_message_commentaire' => 'يك پيام ، يك تفسير ؟',
+	'forum' => 'فۆڕوم',
 	'forum_acces_refuse' => '.شما ديگر اجازه استفاده از اين سخنگاه را نداريد',
 	'forum_attention_dix_caracteres' => '</b>! توجه<b>   پيامتان بايد بيش از ده حرف باشد.',
 	'forum_attention_trois_caracteres' => '</b>! توجه<b> عنوانتان بايد بيش از سه حرف باشد. ',
@@ -26,13 +33,13 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_page_url' => 'اگر پيامتان راجع به يك مقاله چاپ شده يا به يك صفحه اى كه داراى اطلاعات سودمندى است مربوط ميشود، خواهشمند است عنوان صفحه وآدرس آنرا در زير مشخص كنيد ',
 	'forum_poste_par' => 'پيام @parauteur@ بدنبال مقاله « @titre@ »  فرستاده شده. ', # MODIF
 	'forum_qui_etes_vous' => '(اختيارى) <b> كى هستيد؟ </b>                                      ', # MODIF
-	'forum_texte' => ':متن پيامتان', # MODIF
-	'forum_titre' => ':عنوان', # MODIF
-	'forum_url' => 'URL :', # MODIF
+	'forum_texte' => 'تێکستو پەیامەکەو تۊ',
+	'forum_titre' => 'سەردېڕ',
+	'forum_url' => 'لینک',
 	'forum_valider' => 'اين انتخاب را معتبر كنيد',
 	'forum_voir_avant' => 'اين پيام را پيش از فرستادن آن بخوانيد', # MODIF
-	'forum_votre_email' => ':آدرس ايميل تان', # MODIF
-	'forum_votre_nom' => '(نام  يا (نام مستعارتان  ', # MODIF
+	'forum_votre_email' => 'ئیمەیل ئەدرەسو تۊ',
+	'forum_votre_nom' => 'نامۊ تۊ',
 	'forum_vous_enregistrer' => ' براى شركت در اين سخنگاه، شما بايد از پيش ثبت نام ميكرديد. خواهشمند است كلمه شناساييتان را كه دريافت كرده ايد در زير مشخص كنيد.اگر ثبت نشديد، بايد',
 	'forum_vous_inscrire' => 'ثبت نام كنيد.   ',
 
@@ -40,6 +47,14 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_suivi_forums' => 'پيگيرى/اداره كردن سخنگاه',
 	'icone_supprimer_message' => 'اين پيام را حذف كنيد',
 	'icone_valider_message' => 'اين پيام را معتبر كنيد',
+	'info_liens_syndiques_3' => 'سەکۊکۍ',
+	'info_liens_syndiques_4' => 'ھەنۍ',
+	'info_liens_syndiques_6' => 'ھەن',
+	'info_pas_de_forum' => 'سەکۊ نیا',
+
+	// M
+	'messages_aucun' => 'ھیچ',
+	'messages_tous' => 'گرد',
 
 	// O
 	'onglet_messages_internes' => 'پيام هاى داخلى',
