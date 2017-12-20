@@ -10,27 +10,6 @@
 [(#ENV{editable})
 
 
-[(#REM)
-	Bloc de previsualisation du forum envoye
-
-	Si on valide la previsu, on n'envoie pas en ajax car, si le post reussit
-	il faudra certainement redessiner toute la page pour afficher le nouveau
-	forum
-
-][<form action="#ENV{action}#formulaire_forum" method="post" class="noajax">
-	<div>
-	#ACTION_FORMULAIRE
-	<input type='hidden' name='titre' value="#ENV{titre}" />
-	<input type='hidden' name='texte' value="#ENV{texte}" />
-	<input type='hidden' name='url_site' value="#ENV{url_site}" />
-	<input type='hidden' name='nom_site' value="#ENV{nom_site}" />
-	[<input type="hidden" name="id_forum" value="(#ENV*{id_forum})" />]
-	[(#INCLURE{fond=formulaires/inc-forum_ajouter_mot, ajouter_mot})]
-	(#ENV**{erreurs}|table_valeur{previsu})
-	</div>
-</form>]
-
-
 <form action="#ENV{action}#formulaire_forum" method="post" enctype='multipart/form-data'><div>
 	#ACTION_FORMULAIRE
 	[<input type="hidden" name="id_forum" value="(#ENV*{id_forum})" />]
@@ -123,6 +102,26 @@
 	(#ENV{forcer_previsu}|=={non}|et{#ENV*{erreurs}|table_valeur{previsu}|non}|oui)<input type="submit" class="submit" name="envoyer_message" value="<:forum:forum_envoyer:>" />]</p>
 </div>
 </form>
+
+[(#REM)
+	Bloc de previsualisation du forum envoye
+
+	Si on valide la previsu, on n'envoie pas en ajax car, si le post reussit
+	il faudra certainement redessiner toute la page pour afficher le nouveau
+	forum
+
+][<form action="#ENV{action}#formulaire_forum" method="post" class="noajax">
+	<div>
+	#ACTION_FORMULAIRE
+	<input type='hidden' name='titre' value="#ENV{titre}" />
+	<input type='hidden' name='texte' value="#ENV{texte}" />
+	<input type='hidden' name='url_site' value="#ENV{url_site}" />
+	<input type='hidden' name='nom_site' value="#ENV{nom_site}" />
+	[<input type="hidden" name="id_forum" value="(#ENV*{id_forum})" />]
+	[(#INCLURE{fond=formulaires/inc-forum_ajouter_mot, ajouter_mot})]
+	(#ENV**{erreurs}|table_valeur{previsu})
+	</div>
+</form>]
 
 ]
 </div>
