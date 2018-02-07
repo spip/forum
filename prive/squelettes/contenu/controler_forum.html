@@ -1,4 +1,9 @@
+[(#OBJET|non)
 [(#AUTORISER{moderer,forum}|sinon_interdire_acces)]
+]
+[(#OBJET|oui)
+[(#AUTORISER{modererforum,#OBJET,#ID_OBJET}|sinon_interdire_acces)]
+]
 [(#VAL{_INTERDIRE_TEXTE_HTML}|define{oui}|vide) Activer l'echappement du HTML dans cette page de moderation]
 <h1 class="grostitre"><:forum:titre_forum_suivi:>[(#VAL{forums_}|concat{#ENV{type_message,public}}|bouton_spip_rss)]</h1>
 
