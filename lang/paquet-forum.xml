@@ -5,6 +5,9 @@
 	<langue code="ast" url="https://trad.spip.net/tradlang_module/paquet-forum?lang_cible=ast" total="2" traduits="2" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 		<traducteur nom="Xuacu" lien="https://trad.spip.net/auteur/xuacu" />
 	</langue>
+	<langue code="br" url="https://trad.spip.net/tradlang_module/paquet-forum?lang_cible=br" total="2" traduits="1" relire="0" modifs="0" nouveaux="1" pourcent="50.00">
+		<traducteur nom="nonobreizh" lien="https://trad.spip.net/auteur/nonobreizh" />
+	</langue>
 	<langue code="de" url="https://trad.spip.net/tradlang_module/paquet-forum?lang_cible=de" total="2" traduits="2" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 		<traducteur nom="klaus++" lien="https://trad.spip.net/auteur/klaus" />
 	</langue>
