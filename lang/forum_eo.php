@@ -73,9 +73,9 @@ forviŝi ilin poste).',
 	'forum_vous_inscrire' => 'registriĝi.',
 
 	// I
-	'icone_bruler_message' => 'Raporti kiel trudmesaĝo', # RELIRE
-	'icone_bruler_messages' => 'Raporti kiel trudmesaĝo', # RELIRE
-	'icone_legitimer_message' => 'Raporti kiel taŭga mesaĝo', # RELIRE
+	'icone_bruler_message' => 'Raporti kiel trudmesaĝo',
+	'icone_bruler_messages' => 'Raporti kiel trudmesaĝo',
+	'icone_legitimer_message' => 'Raporti kiel taŭga mesaĝo',
 	'icone_poster_message' => 'Sendi mesaĝon',
 	'icone_suivi_forum' => 'Superrigardo de la publika forumo : @nb_forums@ kontribuo(j)',
 	'icone_suivi_forums' => 'Superrigardi/mastrumi la forumojn',
@@ -116,7 +116,7 @@ La publikaj forumoj estos laŭkaze unu post la alia permesitaj
 	'info_question_visiteur_ajout_document_forum' => 'Se vi deziras permesi al vizitantoj kunsendi dokumentojn (bildojn, sonaĵojn...) al siaj forumaj mesaĝoj, bonvolu indiki ĉi-sube la liston de dosiernomaj sufiksoj permesitaj por la forumoj (ekz. : gif, jpg, png, mp3).',
 	'info_question_visiteur_ajout_document_forum_format' => 'Se vi deziras permesi ĉiujn tipojn de dokumentoj konsideritaj kiel sekuraj de Spip, entajpu steleton. Por nenion permesi, nenion entajpu.',
 	'info_selectionner_message' => 'Elekti la mesaĝojn :',
-	'interface_formulaire' => 'Formulara interfaco', # RELIRE
+	'interface_formulaire' => 'Formulara interfaco',
 	'interface_onglets' => 'Interfaco kun langetoj',
 	'item_activer_forum_administrateur' => 'Aktivigi la forumon de la mastrumantoj',
 	'item_config_forums_prive_global' => 'Aktivigi la forumon de redaktantoj',
@@ -169,7 +169,7 @@ La publikaj forumoj estos laŭkaze unu post la alia permesitaj
 	'text_article_propose_publication_forum' => 'Senhezite sciigu vian opinion danke al forumo ligita al tiu artikolo (sube de la paĝo).',
 	'texte_en_cours_validation' => 'Ĉi-subaj artikoloj, fulm-informoj, forumoj estas proponitaj por publikigo.',
 	'texte_en_cours_validation_forum' => 'Senhezite sciigu vian opinion danke al forumoj, kiuj estas ligitaj al ili.',
-	'texte_messages_publics' => 'Publikaj mesaĝoj pri :', # RELIRE
+	'texte_messages_publics' => 'Publikaj mesaĝoj pri :',
 	'titre_cadre_forum_administrateur' => 'Privata forumo de la mastrumantoj',
 	'titre_cadre_forum_interne' => 'Interna forumo',
 	'titre_config_forums_prive' => 'Forumoj de la privata spaco',
