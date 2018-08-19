@@ -92,8 +92,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_config_forums_prive' => 'In het privé gedeelte van de site kun je verschillende soorten forums activeren:',
 	'info_config_forums_prive_admin' => 'Een forum dat voor de beheerders van de site is gereserveerd:',
 	'info_config_forums_prive_global' => 'Een globaal forum, open voor alle redacteuren:',
-	'info_config_forums_prive_objets' => 'Een forum onder elk artikel, nieuwsbericht, gerefereerde site, enz.:',
-	'info_desactiver_forum_public' => 'Het gebruik van de publieke forums desactiveren.
+	'info_config_forums_prive_objets' => 'Een forum onder elk artikel, elke nieuwsflits, gerefereerde site, enz.:',
+	'info_desactiver_forum_public' => 'Het gebruik van de publieke forums deactiveren.
 De publieke forums kunnen per artikel toegestaan worden. Ze worden niet toegestaan op rubrieken en nieuwsberichten, enz.',
 	'info_envoi_forum' => 'Versturen van de forumbijdragen aan de auteurs van de artikelen',
 	'info_fonctionnement_forum' => 'Werking van het forum:',
@@ -120,14 +120,14 @@ De publieke forums kunnen per artikel toegestaan worden. Ze worden niet toegesta
 	'item_activer_forum_administrateur' => 'Forum van beheerders activeren',
 	'item_config_forums_prive_global' => 'Het redacteurenforum activeren',
 	'item_config_forums_prive_objets' => 'Deze forums activeren',
-	'item_desactiver_forum_administrateur' => 'Forum van de beheerders desactiveren',
-	'item_non_config_forums_prive_global' => 'Het forum van de redacteuren desactiveren',
-	'item_non_config_forums_prive_objets' => 'Deze forums desactiveren',
+	'item_desactiver_forum_administrateur' => 'Forum van de beheerders deactiveren',
+	'item_non_config_forums_prive_global' => 'Het forum van de redacteuren deactiveren',
+	'item_non_config_forums_prive_objets' => 'Deze forums deactiveren',
 
 	// L
 	'label_selectionner' => 'Selecteren: ',
 	'lien_reponse_article' => 'Reageer op dit artikel',
-	'lien_reponse_breve_2' => 'Reageer op dit nieuwsbericht',
+	'lien_reponse_breve_2' => 'Reageer op deze nieuwsflits',
 	'lien_reponse_message' => 'Reageer op deze bijdrage',
 	'lien_reponse_rubrique' => 'Reageer op deze rubriek',
 	'lien_reponse_site_reference' => 'Reageer op deze gerefereerde site',
