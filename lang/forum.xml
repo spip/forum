@@ -100,7 +100,8 @@
 	</langue>
 	<langue code="it_fem" url="https://trad.spip.net/tradlang_module/forum?lang_cible=it_fem" total="138" traduits="62" relire="0" modifs="22" nouveaux="54" pourcent="44.93">
 	</langue>
-	<langue code="ja" url="https://trad.spip.net/tradlang_module/forum?lang_cible=ja" total="138" traduits="49" relire="0" modifs="19" nouveaux="70" pourcent="35.51">
+	<langue code="ja" url="https://trad.spip.net/tradlang_module/forum?lang_cible=ja" total="138" traduits="138" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
+		<traducteur nom="origenius" lien="https://trad.spip.net/auteur/origenius" />
 	</langue>
 	<langue code="km" url="https://trad.spip.net/tradlang_module/forum?lang_cible=km" total="138" traduits="58" relire="0" modifs="19" nouveaux="61" pourcent="42.03">
 	</langue>
