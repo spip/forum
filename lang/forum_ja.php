@@ -32,7 +32,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'extensions_autorisees_toutes' => '全',
 
 	// F
-	'form_pet_message_commentaire' => 'よろしければ、投稿をお寄せください。',
+	'form_pet_message_commentaire' => 'よろしければ、メッセージをお寄せください。',
 	'forum' => '掲示板',
 	'forum_acces_refuse' => 'これらの掲示板にアクセス出来なくなりました。',
 	'forum_attention_dix_caracteres' => '<b>警告！</b>投稿は10文字以上でなければなりません。',
