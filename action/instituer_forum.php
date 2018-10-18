@@ -46,7 +46,7 @@ function instituer_un_forum($statut, $row) {
 	while ($id_messages) {
 		sql_updateq("spip_forum", array("statut" => $statut), sql_in("id_forum", $id_messages) . " AND statut = '$old'");
 
-		$id_messages = array_map('reset', sql_allfetsel("id_forum", "spip_forum", sql_in("id_parent", $id_messages)));
+		$id_messages = array_column(sql_allfetsel("id_forum", "spip_forum", sql_in("id_parent", $id_messages)), 'id_forum');
 	}
 
 	// Notifier de la publication du message, s'il etait 'prop'
