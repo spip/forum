@@ -30,7 +30,7 @@
 							href='[(#ID_AUTEUR|generer_url_entite{auteur})]'>#MODELE{auteur_nom,id_auteur}</a>][(#ID_AUTEUR|non)#AUTEUR]</td>
 			<td class='date secondaire'>[(#DATE_HEURE|affdate_jourcourt)]</td>
 			<td class='id'>[(#AUTORISER{modererforum,#OBJET,#ID_OBJET}|?{
-				<a href="[(#URL_ECRIRE{controler_forum,debut_forum=#ID_FORUM})]">#ID_FORUM</a>,
+				<a href="[(#URL_ECRIRE{controler_forum,debut_forum=@#ID_FORUM})]">#ID_FORUM</a>,
 				#ID_FORUM
 			})]</td>
 		</tr>
