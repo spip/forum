@@ -18,7 +18,6 @@
 	<pipeline nom="forum_objets_depuis_env" action="" />
 	<pipeline nom="declarer_tables_objets_sql" inclure="base/forum.php" />
 	<pipeline nom="declarer_tables_interfaces" inclure="base/forum.php" />
-	<pipeline nom="lister_champs_selection_conditionnelle" inclure="forum_pipelines.php" />
 	<pipeline nom="autoriser" inclure="forum_autoriser.php" />
 	<pipeline nom="notifications" inclure="inc/email_notification_forum.php" />
 	<pipeline nom="accueil_encours" inclure="forum_pipelines.php" />
