@@ -19,7 +19,7 @@
 		</tr>
 	</thead>
 	<tbody>
-	<BOUCLE_liste_art(FORUMS){id_?}{id_rubrique?}{where?}{statut?}{recherche?}{tri #ENV{par,date_heure},#GET{defaut_tri}}{pagination #ENV{nb,10}}>
+	<BOUCLE_liste_art(FORUMS){id_?}{where?}{statut?}{recherche?}{tri #ENV{par,date_heure},#GET{defaut_tri}}{pagination #ENV{nb,10}}>
 		<tr class="[(#COMPTEUR_BOUCLE|alterner{row_odd,row_even})]">
 			<td class='statut'>[(#CHEMIN_IMAGE{[forum-statut-(#STATUT)-24.png]}|balise_img|inserer_attribut{alt,#VAL{forum:statut_}|concat{#STATUT}|_T})]</td>
 			<td class='titre principale'><a href="[(#ID_FORUM|generer_url_entite{forum})]"

@@ -448,3 +448,19 @@ function forum_trig_supprimer_objets_lies($objets) {
 
 	return $objets;
 }
+
+
+
+/**
+ * Ajouter `{id_rubrique?}` sur la table forums lors de l’utilisation
+ * du critère de selections conditionnelles `{id_?}`.
+ *
+ * @param array $flux
+ * @return array
+ */
+function forum_lister_champs_selection_conditionnelle($flux) {
+	if ($flux['args']['table'] === 'spip_forum') {
+		$flux['data'][] = 'id_rubrique';
+	}
+	return $flux;
+}
