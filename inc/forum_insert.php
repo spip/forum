@@ -113,10 +113,11 @@ function forum_insert_base($c, $id_forum, $objet, $id_objet, $statut, $ajouter_m
 	}
 
 	// Entrer le message dans la base
+	include_spip('inc/session');
 	$id_reponse = sql_insertq('spip_forum', array(
 		'date_heure' => date('Y-m-d H:i:s'),
 		'ip' => $GLOBALS['ip'],
-		'id_auteur' => $GLOBALS['visiteur_session']['id_auteur']
+		'id_auteur' => session_get('id_auteur'),
 	));
 
 	if ($id_reponse) {
