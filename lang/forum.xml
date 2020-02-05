@@ -1,9 +1,9 @@
 <traduction
 	module="forum"
-	id="forum--forum-fef70"
+	id="forum--forum-cf272"
 	gestionnaire="salvatore"
 	url="https://trad.spip.net"
-	source="svn://zone.spip.org/spip-zone/_core_/plugins/forum/lang"
+	source="https://git.spip.net/spip/forum.git"
 	reference="fr">
 	<langue code="ar" url="https://trad.spip.net/tradlang_module/forum?lang_cible=ar" total="138" traduits="138" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 		<traducteur nom="George" lien="https://trad.spip.net/auteur/جورج-قندلفت" />
