@@ -113,7 +113,8 @@
 	<langue code="oc_gsc" url="https://trad.spip.net/tradlang_module/forum?lang_cible=oc_gsc" total="138" traduits="49" relire="0" modifs="19" nouveaux="70" pourcent="35.51" />
 	<langue code="oc_lms" url="https://trad.spip.net/tradlang_module/forum?lang_cible=oc_lms" total="138" traduits="49" relire="0" modifs="19" nouveaux="70" pourcent="35.51" />
 	<langue code="oc_lnc" url="https://trad.spip.net/tradlang_module/forum?lang_cible=oc_lnc" total="138" traduits="50" relire="0" modifs="20" nouveaux="68" pourcent="36.23" />
-	<langue code="oc_ni" url="https://trad.spip.net/tradlang_module/forum?lang_cible=oc_ni" total="138" traduits="60" relire="1" modifs="10" nouveaux="67" pourcent="43.48">
+	<langue code="oc_ni" url="https://trad.spip.net/tradlang_module/forum?lang_cible=oc_ni" total="138" traduits="127" relire="0" modifs="0" nouveaux="11" pourcent="92.03">
+		<traducteur nom="Bastian" lien="https://trad.spip.net/auteur/bastian" />
 		<traducteur nom="sylvain" lien="https://trad.spip.net/auteur/sylvain" />
 	</langue>
 	<langue code="oc_ni_la" url="https://trad.spip.net/tradlang_module/forum?lang_cible=oc_ni_la" total="138" traduits="49" relire="0" modifs="19" nouveaux="70" pourcent="35.51" />
