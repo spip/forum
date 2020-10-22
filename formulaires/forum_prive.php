@@ -80,7 +80,7 @@ function formulaires_forum_prive_charger_dist($objet, $id_objet, $id_forum, $for
 		'config' => $config,
 		'titre' => isset($titre) ? $titre : '',
 		'_hidden' => $script_hidden, # pour les variables hidden
-		'url_site' => "http://",
+		'url_site' => "",
 		'forcer_previsu' => $forcer_previsu,
 		'id_forum' => $id_forum, // passer id_forum au formulaire pour lui permettre d'afficher a quoi l'internaute repond
 		'_sign' => implode('_', $ids),

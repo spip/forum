@@ -156,7 +156,7 @@ function formulaires_forum_charger_dist(
 		'titre' => $titre,
 		'texte' => '',
 		'nom_site' => '',
-		'url_site' => 'http://'
+		'url_site' => ''
 	);
 
 	return array_merge($vals, array(
