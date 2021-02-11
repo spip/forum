@@ -36,3 +36,33 @@ function forum_compte_messages_from($email, $id_forum) {
 
 	return $mem[$email];
 }
+
+/**
+ * Titre du lien "Répondre à ce ..."
+ * @param $objet
+ * @return string
+ */
+function forum_titre_lien_repondre_a($objet) {
+	switch ($objet) {
+		case 'article':
+			$titre = _T('forum:lien_reponse_article');
+			break;
+		case 'rubrique':
+			$titre = _T('forum:lien_reponse_rubrique');
+			break;
+		case 'breve':
+			$titre = _T('forum:lien_reponse_breve_2');
+			break;
+		case 'site':
+		case 'syndic':
+			$titre = _T('forum:lien_reponse_site_reference');
+			break;
+		default:
+			$titre = _T($objet . ':lien_reponse_' . $objet, [], ['force' => false]);
+			if (!$titre) {
+				$titre = _T('forum:lien_reponse_message');
+			}
+			break;
+	}
+	return $titre;
+}
