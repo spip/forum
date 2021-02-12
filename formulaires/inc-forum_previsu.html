@@ -1,7 +1,8 @@
 <fieldset class="previsu">
 	<legend><:previsualisation:></legend>
-	<ul>
-		<li>
+	[<div class="reponse_formulaire reponse error">(#ENV*{erreur})</div>]
+	<div class="editer-groupe">
+		<div class="editer editer_previsu">
 			<ul class='forum'>
 				<li class="forum-fil">
 					<div class="comment">
@@ -19,9 +20,8 @@
 					</div>
 				</li>
 			</ul>
-			[<li class="reponse_formulaire reponse error">(#ENV*{erreur})</li>]
-		</li>
-	</ul>
+		</div>
+	</div>
 	[<p class="boutons"><input type="submit" class="btn submit" onclick="jQuery(window).off();" name="confirmer_previsu_forum" value="(#ENV*{bouton})" /></p>]
 </fieldset>
 <br class="clear" />
