@@ -15,6 +15,67 @@ if (!defined("_ECRIRE_INC_VERSION")) {
 }
 include_spip('inc/modifier');
 
+/**
+ * Inserer en base un message de forum
+ * @param int $id_parent
+ * @param null $set
+ * @return bool|string
+ */
+function forum_inserer($id_parent=null, $set = null) {
+
+	include_spip('inc/session');
+	$champs = [
+		'id_parent' => $id_parent ? $id_parent : 0,
+		'id_thread' => $id_parent ? sql_getfetsel("id_thread", "spip_forum", "id_forum=" . intval($id_parent)) : 0,
+		'date_heure' => date('Y-m-d H:i:s'),
+		'ip' => $GLOBALS['ip'],
+		'id_auteur' => session_get('id_auteur'),
+		'objet' => '',
+		'id_objet' => 0,
+		'statut' => 'prop',
+	];
+
+	if ($set) {
+		$champs = array_merge($champs, $set);
+	}
+
+	// Envoyer aux plugins
+	$champs = pipeline('pre_insertion',
+		array(
+			'args' => array(
+				'table' => 'spip_forum',
+				'id_parent' => $id_parent,
+			),
+			'data' => $champs
+		)
+	);
+
+	$id = sql_insertq('spip_forum', $champs);
+
+	if ($id) {
+		// initialiser le thread si c'est un nouveau
+		if (!$champs['id_thread']) {
+			$champs['id_thread'] = $id;
+			sql_updateq('spip_forum', $champs, 'id_forum='.intval($id));
+		}
+
+		pipeline('post_insertion',
+			array(
+				'args' => array(
+					'table' => 'spip_forum',
+					'id_parent' => $id_parent,
+					'id_objet' => $id,
+				),
+				'data' => $champs
+			)
+		);
+
+	}
+
+	return $id;
+}
+
+
 // Nota: quand on edite un forum existant, il est de bon ton d'appeler
 // au prealable conserver_original($id_forum)
 // https://code.spip.net/@revision_forum
