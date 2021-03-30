@@ -8,7 +8,7 @@ la premiere fois qu'un message est poste (cf. inc/invalideur). ]
 
 [(#REM) Messages du forum ]
 <B_forums>
-[<p class='pagination'>(#PAGINATION)</p>]
+[<nav class='pagination'>(#PAGINATION)</nav>]
 <ul class="forum">
 
 	<BOUCLE_forums(FORUMS) {id_objet ?}{objet ?}{statut?}{statut==#GET{prive}} {!par date}{pagination 10}>

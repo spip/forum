@@ -70,7 +70,7 @@
 	<h3>[(#GRAND_TOTAL|singulier_ou_pluriel{forum:info_1_message_forum,forum:info_nb_messages_forum}|sinon{<:forum:aucun_message_forum:>})]</h3>
 	<div class="clear"></div>
 
-	[<p class='pagination'>(#PAGINATION{prive})</p>]
+	[<nav class='pagination'>(#PAGINATION{prive})</nav>]
 	<ul class='liste-items forums'>
 		<BOUCLE_forum(FORUMS){id_forum?}{id_thread?}{id_objet?}{id_secteur?}{objet?}{id_auteur?}{auteur?}{email_auteur?}{ip?}{!par id_forum}{pagination #ENV{nb,10}}{statut?}{statut LIKE #GET{prive}}{statut !LIKE #GET{public}}{texte LIKE #GET{vide}}{recherche?}>
 			<li class="item forum[ (#EXPOSE)] statut_#STATUT[ (#COMPTEUR_BOUCLE|alterner{'','odd'})]" id='forum#ID_FORUM' data-id='#ID_FORUM'
@@ -79,7 +79,7 @@
 			</li>
 		</BOUCLE_forum>
 	</ul>
-	[<p class='pagination'>(#PAGINATION{prive})</p>]
+	[<nav class='pagination'>(#PAGINATION{prive})</nav>]
 </B_forum>
 
 	<h3><:forum:aucun_message_forum:></h3>
