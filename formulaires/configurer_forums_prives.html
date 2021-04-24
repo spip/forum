@@ -9,12 +9,12 @@
 		<p class='explication'><:forum:info_config_forums_prive:></p>
 		<div class="editer-groupe">
 			#SET{name,forum_prive_objets}#SET{erreurs,#ENV**{erreurs}|table_valeur{#GET{name}}}
-			<div class="editer long_label editer_[(#GET{name})][ (#GET{obli})][ (#GET{erreurs}|oui)erreur]">
+			<div class="editer editer_[(#GET{name})][ (#GET{obli})][ (#GET{erreurs}|oui)erreur]">
 				<label><:forum:item_config_forums_prive_objets:></label>[
 				<span class='erreur_message'>(#GET{erreurs})</span>
 				]#INCLURE{fond=formulaires/inc-choisir-objets,name=#GET{name},selected=#ENV**{#GET{name}},exclus=spip_forum}
 			</div>
-			<div class='editer long_label configurer_forum_prive[ (#ENV**{erreurs}|table_valeur{forum_prive}|oui)erreur]'>
+			<div class='editer configurer_forum_prive[ (#ENV**{erreurs}|table_valeur{forum_prive}|oui)erreur]'>
 				<label><:forum:info_config_forums_prive_global:></label>[
 				<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{forum_prive})</span>
 				]<div class='choix'>
@@ -26,7 +26,7 @@
 					<label for="forum_prive_non"><:forum:item_non_config_forums_prive_global:></label>
 				</div>
 			</div>
-			<div class='editer long_label configurer_forum_prive_admin[ (#ENV**{erreurs}|table_valeur{forum_prive_admin}|oui)erreur]'>
+			<div class='editer configurer_forum_prive_admin[ (#ENV**{erreurs}|table_valeur{forum_prive_admin}|oui)erreur]'>
 				<label><:forum:info_config_forums_prive_admin:></label>[
 				<span class='erreur_message'>(#ENV**{erreurs}|table_valeur{forum_prive_admin})</span>
 				]<div class='choix'>
