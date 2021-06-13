@@ -10,5 +10,6 @@ if (!defined('_ECRIRE_INC_VERSION')) {
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// F
-	'forum_description' => 'SPIP forum (prevez ha publik)'
+	'forum_description' => 'SPIP forum (prevez ha publik)',
+	'forum_slogan' => 'Merañ ar foromoù preves ha foran e-barzh SPIP'
 );
