@@ -17,10 +17,10 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'bouton_radio_articles_tous' => 'en holl pennadoù.',
 	'bouton_radio_articles_tous_sauf_forum_desactive' => 'en holl bennadoù n’eo ket bet diweredekaet o forom',
 	'bouton_radio_enregistrement_obligatoire' => 'Enrolladenn ret (a-raok gallout kemer perzh e rank an implijerien en em enrollañ en ur reiñ o chomlec’h postel).',
-	'bouton_radio_moderation_priori' => 'Gwiriañ a-raok embann (diskouez a reer ar c’hemennadennoù ur wech lennet hag aotreet gant ar verourien hepken).', # MODIF
+	'bouton_radio_moderation_priori' => 'Gwiriañ a-raok embann (diskouez a reer ar c’hemennadennoù ur wech lennet hag aotreet gant ar verourien hepken).',
 	'bouton_radio_modere_abonnement' => 'war goumanant',
-	'bouton_radio_modere_posteriori' => 'gwiriañ goude an embann', # MODIF
-	'bouton_radio_modere_priori' => 'gwiriañ a-raok embann', # MODIF
+	'bouton_radio_modere_posteriori' => 'gwiriañ goude an embann',
+	'bouton_radio_modere_priori' => 'gwiriañ a-raok embann',
 	'bouton_radio_publication_immediate' => 'Embann ar c’hemennadennoù kerkent (embannet e vez ar c’hemennadennoù diouzhtu goude bezañ bet skrivet, war-lerc’h e c’hellont bezañ diverket gant ar verourien).',
 
 	// D
@@ -28,6 +28,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// E
 	'erreur_enregistrement_message' => 'Ne ket bet posubl enrolliñ ho kemenadenn ablamour d’un diaesamant teknikel',
+	'extensions_autorisees' => 'Astennoù aotreet',
 	'extensions_autorisees_toutes' => 'holl',
 
 	// F
@@ -38,31 +39,31 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_message_non_poste' => 'Taolit evezh, n’ho peus ket kaset ho kemenadenn !',
 	'forum_attention_nb_caracteres_mini' => '<b>Taolit evezh !</b> ho kemenadenn a rank bezañ henni @min@ letrenn.',
 	'forum_attention_trois_caracteres' => '<b>Diwallit !</b> Teir arouezenn d’an nebeutañ a rank bezañ en ho titl.',
-	'forum_attention_trop_caracteres' => '<b>Diwallit !</b> re hir eo ho kemennadenn (@compte@ arouez) : arabat e vefe ouzhpenn @max@ arouezenn enni evit gallout bezañ kaset.', # MODIF
+	'forum_attention_trop_caracteres' => '<b>Diwallit !</b> re hir eo ho kemennadenn (@compte@ arouez) : arabat e vefe ouzhpenn @max@ arouezenn enni evit gallout bezañ kaset.',
 	'forum_avez_selectionne' => 'Diuzet hoc’h eus :',
 	'forum_cliquer_retour' => 'Klikit <a href=\'@retour_forum@\'>amañ</a> evit kenderc’hel.',
 	'forum_envoyer' => 'Kas',
 	'forum_forum' => 'forom',
-	'forum_info_modere' => 'Habaskaet eo ar forom-mañ a-raok embann ar pennadoù : ne vo ket gwelet ho kemennadenn a-raok na vefe lennet hag asantet gant unan eus merourien al lec’hienn.', # MODIF
-	'forum_lien_hyper' => '<b>liamm gourskrid</b> (Diret)', # MODIF
+	'forum_info_modere' => 'Habaskaet eo ar forom-mañ a-raok embann ar pennadoù : ne vo ket gwelet ho kemennadenn a-raok na vefe lennet hag asantet gant unan eus merourien al lec’hienn.',
+	'forum_lien_hyper' => '<b>liamm gourskrid</b> (Diret)',
 	'forum_message' => 'Ho kemenadenn',
 	'forum_message_definitif' => 'Kemennadenn echu : kas d’al lec’hienn',
-	'forum_message_trop_long' => 'Re hir eo ho kemennadenn. 20000 arouezenn a c’heller lakaat d’ar muiañ.', # MODIF
-	'forum_ne_repondez_pas' => 'Na respontit ket d’ar postel-mañ, met war ar forom, d’ar chomlec’h da-heul :', # MODIF
+	'forum_message_trop_long' => 'Re hir eo ho kemennadenn. 20000 arouezenn a c’heller lakaat d’ar muiañ.',
+	'forum_ne_repondez_pas' => 'Na respontit ket d’ar postel-mañ, met war ar forom, d’ar chomlec’h da-heul :',
 	'forum_page_url' => '(Ma ra ho kemmennadenn anv eus ur pennad all war Internet pe eus ur bajenn warni muioc’h a ditouroù e c’hellit skrivañ amañ goude titl ar bajenn hag ar chomlec’h anezhi.)',
 	'forum_permalink' => 'Liamm peurbad davet an addispleg',
-	'forum_poste_par' => 'Kemennadenn kaset @parauteur@ da-heul ar pennad « @titre@ ».', # MODIF
+	'forum_poste_par' => 'Kemennadenn kaset @parauteur@ da-heul ar pennad « @titre@ ».',
 	'forum_poste_par_court' => 'Kemenadenn kaset@parauteur@.',
 	'forum_poste_par_generique' => 'kemenadenn kaset@parauteur@ (@objet@ « @titre@ »).',
-	'forum_qui_etes_vous' => '<b>Piv oc’h-hu ?</b> (Diret)', # MODIF
+	'forum_qui_etes_vous' => '<b>Piv oc’h-hu ?</b> (Diret)',
 	'forum_saisie_texte_info' => 'Ar furmskrid-mañ a zegemer ar berradennoù SPIP <code>[->url] {{gras}} {italique} <quote> <code></code> et le code HTML <code><q> <del> <ins></code>. Evit sevel rannbennadoù, n’eus nemet lezel linennoù goulo.',
-	'forum_texte' => 'Testenn ho kemennadenn :', # MODIF
+	'forum_texte' => 'Testenn ho kemennadenn :',
 	'forum_titre' => 'Titl',
-	'forum_url' => 'URL :', # MODIF
+	'forum_url' => 'Ho lec’hienn web',
 	'forum_valider' => 'Kadarnaat an dibab-mañ',
-	'forum_voir_avant' => 'Rakwelet ar gemennadenn a-raok kas anezhi', # MODIF
-	'forum_votre_email' => 'Ho postel :', # MODIF
-	'forum_votre_nom' => 'Hoc’h anv (pe lesanv) :', # MODIF
+	'forum_voir_avant' => 'Rakwelet ar gemennadenn a-raok kas anezhi',
+	'forum_votre_email' => 'Ho postel :',
+	'forum_votre_nom' => 'Hoc’h anv (pe lesanv) :',
 	'forum_vous_enregistrer' => 'Evit kemer perzh er forom-mañ e rankit bezañ enrollet en a-raok.
   Trugarez da skrivañ amañ dindan an titouroù hiniennel zo bet roet deoc’h.
   Ma n’oc’h ket enrollet c’hoazh e rankit ',
@@ -81,9 +82,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'icone_valider_messages' => 'Kadarnaat ar c’hemenadennoù-mañ',
 	'icone_valider_repondre_message' => 'Kadarnaat ha respont d’ar gemenadenn-mañ',
 	'info_1_message_forum' => '1 gemenadenn forum',
-	'info_activer_forum_public' => '<i>Evit enaouiñ ar foromoù foran, dibabit un doare da habaskaat dre ziouer:</i>', # MODIF
+	'info_activer_forum_public' => '<i>Evit enaouiñ ar foromoù foran, dibabit un doare da habaskaat dre ziouer:</i>',
 	'info_appliquer_choix_moderation' => 'Lakaat an dibab habaskaat-mañ e pleustr :',
-	'info_config_forums_prive' => 'E lodenn brevez al lec’hienn e c’hellit ober gant seurtoù foromoù disheñvel :', # MODIF
+	'info_config_forums_prive' => 'E lodenn brevez al lec’hienn e c’hellit ober gant meur a stumm forom disheñvel :',
 	'info_config_forums_prive_admin' => 'Ur forom miret evit merourien al lec’hienn hepken :',
 	'info_config_forums_prive_global' => 'Ur forom hollek, digor d’an holl skridaozerien :',
 	'info_config_forums_prive_objets' => 'Ur forom dindan pep pennad, berrskrid, lec’hienn menegeret, h.a. :',
@@ -93,7 +94,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_forcer_previsualisation_court' => 'Forsañ ar rak gwelet',
 	'info_forcer_previsualisation_long' => 'Forsañ ar rakgwelet araok kas ar gemenadenn',
 	'info_forums_liees_mot' => 'kemenadennoù ar forum liammet gant ar ger-mañ',
-	'info_gauche_suivi_forum_2' => 'Pajenn <i>heuliañ ar foromoù</i> a dalvez da verañ ho lec’hienn, ha ket da dabutal pe da skridaozañ. Warni emañ an holl evezhiadennoù bet graet war foromoù al lec’hienn (lodennoù foran ha prevez), deoc’h da c’hallout o merañ.', # MODIF
+	'info_gauche_suivi_forum_2' => 'Pajenn <i>heuliañ ar foromoù</i> a dalvez da verañ ho lec’hienn (ha ket da dabutal pe da skridaozañ). Warni emañ an holl evezhiadennoù bet graet war foromoù al lec’hienn (lodennoù foran ha prevez), deoc’h da c’hallout o merañ.',
 	'info_liens_syndiques_3' => 'forom',
 	'info_liens_syndiques_4' => 'zo',
 	'info_liens_syndiques_5' => 'forom',
@@ -107,8 +108,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
   e c’hell skridaozerien ar pennad bezañ kelaouet eus kement-se dre bostel.
   Ret eo deoc’h lavarout evit pep doare forom daoust ha fellout a ra deoc’h e vefe graet pe get.',
 	'info_pas_de_forum' => 'forom ebet',
-	'info_question_visiteur_ajout_document_forum' => 'M’hoc’h eus c’hoant da aotren ar weladennerien da stagañ restroù (skeudennoù, son, ...) ouzh o c’hemennadennoù war ar foromoù, neuze eo dav skrivañ amañ peseurt astennoù teulioù a vo aotreet war ar foromoù (da skouer : gif, png, jpg, mp3).', # MODIF
-	'info_question_visiteur_ajout_document_forum_format' => 'M’hoc’h eus c’hoant da aotren an holl seurtoù restroù en deus SPIP fiziañs enno, neuze lakait ur steredennig. Kuit da aotren tra ebet, na lakait netra !', # MODIF
+	'info_question_visiteur_ajout_document_forum' => 'M’hoc’h eus c’hoant da aotren ar weladennerien da stagañ restroù (skeudennoù, son, ...) ouzh o c’hemennadennoù war ar foromoù, neuze eo dav skrivañ amañ peseurt astennoù teulioù a vo aotreet war ar foromoù (da skouer : gif, png, jpg, mp3).',
+	'info_question_visiteur_ajout_document_forum_format' => 'M’hoc’h eus c’hoant da aotren an holl seurtoù restroù en deus SPIP fiziañs enno, neuze lakait ur steredennig. Evit aotren tra ebet, na lakait netra !',
 	'info_selectionner_message' => 'Dibab ar c’hemenadennoù :',
 	'interface_formulaire' => 'Etrefas furmskrid',
 	'interface_onglets' => 'Etrefas gant ivinennoù',
@@ -125,7 +126,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'lien_reponse_breve_2' => 'Respont d’ar berrskrid',
 	'lien_reponse_message' => 'Respont d’ar gemenadenn',
 	'lien_reponse_rubrique' => 'Respont d’ar rubrikenn',
-	'lien_reponse_site_reference' => 'Respont d’al lec’hienn menegeret :', # MODIF
+	'lien_reponse_site_reference' => 'Respont d’al lec’hienn daveennet :',
 	'lien_vider_selection' => 'Goulloiñ an dibab',
 
 	// M
