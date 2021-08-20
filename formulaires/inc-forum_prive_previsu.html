@@ -24,5 +24,5 @@
 <br class="clear" />
 <script type="text/javascript">/*<![CDATA[*/
 var confirmer_previsu_forum_poste = false;
-if (window.jQuery){ jQuery(function(){ jQuery(window).unload(function() { if (!confirmer_previsu_forum_poste) alert('<:forum:forum_attention_message_non_poste|texte_script:>');confirmer_previsu_forum_poste=true;});});}
+if (window.jQuery){ jQuery(function(){ jQuery(window).on('unload', function() { if (!confirmer_previsu_forum_poste) alert('<:forum:forum_attention_message_non_poste|texte_script:>');confirmer_previsu_forum_poste=true;});});}
 /*]]>*/</script>
