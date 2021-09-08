@@ -10,7 +10,7 @@
  *  Pour plus de détails voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
-if (!defined("_ECRIRE_INC_VERSION")) {
+if (!defined('_ECRIRE_INC_VERSION')) {
 	return;
 }
 
@@ -30,8 +30,9 @@ function action_instituer_lot_forum_dist($arg = null) {
 		 * statut-ip/email/id_auteur/auteur
 		 *
 		 */
-		if (preg_match(",^(\w+)-,", $arg, $match)
-			and in_array($statut = $match[1], array('publie', 'off', 'spam'))
+		if (
+			preg_match(',^(\w+)-,', $arg, $match)
+			and in_array($statut = $match[1], ['publie', 'off', 'spam'])
 		) {
 			$arg = substr($arg, strlen($statut) + 1);
 
@@ -40,22 +41,22 @@ function action_instituer_lot_forum_dist($arg = null) {
 			$email_auteur = array_shift($arg);
 			$id_auteur = intval(array_shift($arg));
 			$auteur = implode('/', $arg);
-			$where = array();
+			$where = [];
 			// pas de moderation par lot sur les forum prives
-			$where[] = sql_in('statut', array('privadm', 'prive', 'privrac'), 'NOT');
+			$where[] = sql_in('statut', ['privadm', 'prive', 'privrac'], 'NOT');
 			if ($ip) {
-				$where[] = "ip=" . sql_quote($ip);
+				$where[] = 'ip=' . sql_quote($ip);
 			}
 			if ($email_auteur) {
-				$where[] = "email_auteur=" . sql_quote($email_auteur);
+				$where[] = 'email_auteur=' . sql_quote($email_auteur);
 			}
 			if ($id_auteur) {
-				$where[] = "id_auteur=" . intval($id_auteur);
+				$where[] = 'id_auteur=' . intval($id_auteur);
 			}
 			if ($auteur) {
-				$where[] = "auteur=" . sql_quote($auteur);
+				$where[] = 'auteur=' . sql_quote($auteur);
 			}
-			$rows = sql_allfetsel("*", "spip_forum", $where);
+			$rows = sql_allfetsel('*', 'spip_forum', $where);
 			if (!count($rows)) {
 				return;
 			}
@@ -69,18 +70,18 @@ function action_instituer_lot_forum_dist($arg = null) {
 		 * les id concernes sont passes en arg supplementaires
 		 * dans un taleau ids[]
 		 */
-		elseif (preg_match(",^(\w+)$,", $arg, $match)
-			and in_array($statut = $match[1], array('publie', 'off', 'spam'))
+		elseif (
+			preg_match(',^(\w+)$,', $arg, $match)
+			and in_array($statut = $match[1], ['publie', 'off', 'spam'])
 			and $id = _request('ids')
 			and is_array($id)
 		) {
-
 			$ids = array_map('intval', $id);
-			$where = array();
+			$where = [];
 			// pas de moderation par lot sur les forum prives
-			$where[] = sql_in('statut', array('privadm', 'prive', 'privrac'), 'NOT');
+			$where[] = sql_in('statut', ['privadm', 'prive', 'privrac'], 'NOT');
 			$where[] = sql_in('id_forum', $ids);
-			$rows = sql_allfetsel("*", "spip_forum", $where);
+			$rows = sql_allfetsel('*', 'spip_forum', $where);
 			if (!count($rows)) {
 				return;
 			}
@@ -91,7 +92,6 @@ function action_instituer_lot_forum_dist($arg = null) {
 			}
 		}
 	} else {
-		spip_log("instituer_lot_forum interdit pour auteur " . $GLOBALS['visiteur_session']['id_auteur'], _LOG_ERREUR);
+		spip_log('instituer_lot_forum interdit pour auteur ' . $GLOBALS['visiteur_session']['id_auteur'], _LOG_ERREUR);
 	}
-
 }

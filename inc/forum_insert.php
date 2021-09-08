@@ -10,7 +10,7 @@
  *  Pour plus de détails voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
-if (!defined("_ECRIRE_INC_VERSION")) {
+if (!defined('_ECRIRE_INC_VERSION')) {
 	return;
 }
 include_spip('inc/forum');
@@ -22,7 +22,7 @@ include_spip('inc/actions');
 // https://code.spip.net/@mots_du_forum
 function mots_du_forum($ajouter_mot, $id_message) {
 	include_spip('action/editer_mot');
-	mot_associer($ajouter_mot, array('forum' => $id_message));
+	mot_associer($ajouter_mot, ['forum' => $id_message]);
 }
 
 
@@ -33,10 +33,13 @@ function tracer_erreur_forum($type = '') {
 	define('_TRACER_ERREUR_FORUM', false);
 	if (_TRACER_ERREUR_FORUM) {
 		$envoyer_mail = charger_fonction('envoyer_mail', 'inc');
-		$envoyer_mail($GLOBALS['meta']['email_webmaster'], "erreur forum ($type)",
+		$envoyer_mail(
+			$GLOBALS['meta']['email_webmaster'],
+			"erreur forum ($type)",
 			"erreur sur le forum ($type) :\n\n" .
 			'$_POST = ' . print_r($_POST, true) . "\n\n" .
-			'$_SERVER = ' . print_r($_SERVER, true));
+			'$_SERVER = ' . print_r($_SERVER, true)
+		);
 	}
 }
 
@@ -54,8 +57,9 @@ function tracer_erreur_forum($type = '') {
  */
 function inc_forum_insert_dist($objet, $id_objet, $id_forum, $force_statut = null) {
 
-	if (!in_array($force_statut, array('privrac', 'privadm'))) {
-		if (!strlen($objet)
+	if (!in_array($force_statut, ['privrac', 'privadm'])) {
+		if (
+			!strlen($objet)
 			or !intval($id_objet)
 		) {
 			spip_log("Erreur insertion forum sur objet='$objet', id_objet=$id_objet", 'forum.' . _LOG_ERREUR);
@@ -70,7 +74,7 @@ function inc_forum_insert_dist($objet, $id_objet, $id_forum, $force_statut = nul
 	include_spip('inc/modifier');
 	include_spip('inc/session');
 	$champs = objet_info('forum', 'champs_editables');
-	$c = collecter_requests($champs, array());
+	$c = collecter_requests($champs, []);
 
 	$c['statut'] = 'off';
 	$c['objet'] = $objet;
@@ -78,14 +82,14 @@ function inc_forum_insert_dist($objet, $id_objet, $id_forum, $force_statut = nul
 	$c['auteur'] = sinon(session_get('nom'), session_get('session_nom'));
 	$c['email_auteur'] = sinon(session_get('email'), session_get('session_email'));
 
-	$c = pipeline('pre_edition', array(
-		'args' => array(
+	$c = pipeline('pre_edition', [
+		'args' => [
 			'table' => 'spip_forum',
 			'id_objet' => $id_forum,
 			'action' => 'instituer'
-		),
+		],
 		'data' => forum_insert_statut($c, $force_statut)
-	));
+	]);
 
 	$id_reponse = forum_insert_base($c, $id_forum, $objet, $id_objet, $c['statut'], _request('ajouter_mot'));
 
@@ -96,17 +100,16 @@ function inc_forum_insert_dist($objet, $id_objet, $id_forum, $force_statut = nul
 	}
 
 	return $id_reponse;
-
 }
 
 // https://code.spip.net/@forum_insert_base
 function forum_insert_base($c, $id_forum, $objet, $id_objet, $statut, $ajouter_mot = false) {
 
-	if (!in_array($statut, array('privrac', 'privadm'))) {
+	if (!in_array($statut, ['privrac', 'privadm'])) {
 		// si le statut est vide, c'est qu'on ne veut pas de ce presume spam !
 		if (!$statut or !$objet or !$id_objet) {
 			$args = func_get_args();
-			spip_log("Erreur sur forum_insert_base " . var_export($args, 1), 'forum.' . _LOG_ERREUR);
+			spip_log('Erreur sur forum_insert_base ' . var_export($args, 1), 'forum.' . _LOG_ERREUR);
 
 			return false;
 		}
@@ -114,27 +117,27 @@ function forum_insert_base($c, $id_forum, $objet, $id_objet, $statut, $ajouter_m
 
 	// Entrer le message dans la base
 	include_spip('inc/session');
-	$id_reponse = sql_insertq('spip_forum', array(
+	$id_reponse = sql_insertq('spip_forum', [
 		'date_heure' => date('Y-m-d H:i:s'),
 		'ip' => $GLOBALS['ip'],
 		'id_auteur' => session_get('id_auteur'),
-	));
+	]);
 
 	if ($id_reponse) {
 		if ($id_forum > 0) {
-			$id_thread = sql_getfetsel("id_thread", "spip_forum", "id_forum =" . intval($id_forum));
+			$id_thread = sql_getfetsel('id_thread', 'spip_forum', 'id_forum =' . intval($id_forum));
 		} else {
 			$id_thread = $id_reponse;
 		} # id_thread oblige INSERT puis UPDATE.
 
 		// Entrer les cles
-		sql_updateq('spip_forum', array(
+		sql_updateq('spip_forum', [
 			'id_parent' => $id_forum,
 			'objet' => $objet,
 			'id_objet' => $id_objet,
 			'id_thread' => $id_thread,
 			'statut' => $statut
-		), "id_forum=" . intval($id_reponse));
+		], 'id_forum=' . intval($id_reponse));
 
 		// Entrer les mots-cles associes
 		if ($ajouter_mot) {
@@ -148,24 +151,29 @@ function forum_insert_base($c, $id_forum, $objet, $id_objet, $statut, $ajouter_m
 		revision_forum($id_reponse, $c);
 
 		// Ajouter un document
-		if (isset($_FILES['ajouter_document'])
+		if (
+			isset($_FILES['ajouter_document'])
 			and $_FILES['ajouter_document']['tmp_name']
 		) {
-			$files[] = array(
+			$files[] = [
 				'tmp_name' => $_FILES['ajouter_document']['tmp_name'],
 				'name' => $_FILES['ajouter_document']['name']
-			);
+			];
 			$ajouter_documents = charger_fonction('ajouter_documents', 'action');
 			$ajouter_documents(
 				'new',
 				$files,
 				'forum',
 				$id_reponse,
-				'document');
+				'document'
+			);
 			// supprimer le temporaire et ses meta donnees
 			spip_unlink($_FILES['ajouter_document']['tmp_name']);
-			spip_unlink(preg_replace(',\.bin$,',
-				'.txt', $_FILES['ajouter_document']['tmp_name']));
+			spip_unlink(preg_replace(
+				',\.bin$,',
+				'.txt',
+				$_FILES['ajouter_document']['tmp_name']
+			));
 		}
 
 		// Notification

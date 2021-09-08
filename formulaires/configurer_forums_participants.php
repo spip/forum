@@ -10,16 +10,15 @@
  *  Pour plus de détails voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
-if (!defined("_ECRIRE_INC_VERSION")) {
+if (!defined('_ECRIRE_INC_VERSION')) {
 	return;
 }
 
 function formulaires_configurer_forums_participants_charger_dist() {
 
-	return array(
-		'forums_publics' => $GLOBALS['meta']["forums_publics"],
-	);
-
+	return [
+		'forums_publics' => $GLOBALS['meta']['forums_publics'],
+	];
 }
 
 function formulaires_configurer_forums_participants_traiter_dist() {
@@ -27,8 +26,9 @@ function formulaires_configurer_forums_participants_traiter_dist() {
 	include_spip('inc/meta');
 
 	$purger_skel = false;
-	if ($accepter_forum = _request('forums_publics')
-		and ($accepter_forum != $GLOBALS['meta']["forums_publics"])
+	if (
+		$accepter_forum = _request('forums_publics')
+		and ($accepter_forum != $GLOBALS['meta']['forums_publics'])
 	) {
 		$purger_skel = true;
 		$accepter_forum = substr($accepter_forum, 0, 3);
@@ -36,14 +36,17 @@ function formulaires_configurer_forums_participants_traiter_dist() {
 
 	// Appliquer les changements de moderation forum
 	// forums_publics_appliquer : futur, saufnon, tous
-	if (in_array($appliquer = _request('forums_publics_appliquer'),
-		array('tous', 'saufnon')
-	)) {
+	if (
+		in_array(
+			$appliquer = _request('forums_publics_appliquer'),
+			['tous', 'saufnon']
+		)
+	) {
 		$sauf = ($appliquer == 'saufnon')
 			? "accepter_forum != 'non'"
 			: '';
 
-		sql_updateq('spip_articles', array('accepter_forum' => $accepter_forum), $sauf);
+		sql_updateq('spip_articles', ['accepter_forum' => $accepter_forum], $sauf);
 	}
 
 	if ($accepter_forum == 'abo') {
@@ -53,8 +56,8 @@ function formulaires_configurer_forums_participants_traiter_dist() {
 	appliquer_modifs_config();
 	if ($purger_skel) {
 		include_spip('inc/invalideur');
-		suivre_invalideur("forum/*");
+		suivre_invalideur('forum/*');
 	}
 
-	return array('message_ok' => _T('config_info_enregistree'));
+	return ['message_ok' => _T('config_info_enregistree')];
 }

@@ -10,7 +10,7 @@
  *  Pour plus de détails voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
-if (!defined("_ECRIRE_INC_VERSION")) {
+if (!defined('_ECRIRE_INC_VERSION')) {
 	return;
 }
 
@@ -27,7 +27,7 @@ include_spip('inc/forum');
  * @return array
  */
 function formulaires_forum_prive_identifier_dist($objet, $id_objet, $id_forum, $forcer_previsu, $statut) {
-	return array($objet, $id_objet, $id_forum, $forcer_previsu, $statut);
+	return [$objet, $id_objet, $id_forum, $forcer_previsu, $statut];
 }
 
 function formulaires_forum_prive_charger_dist($objet, $id_objet, $id_forum, $forcer_previsu, $statut, $retour = '') {
@@ -49,43 +49,43 @@ function formulaires_forum_prive_charger_dist($objet, $id_objet, $id_forum, $for
 	// Donc ne pas changer la valeur de ce tableau entre le calcul de
 	// la signature et la fabrication des Hidden
 	// Faire attention aussi a 0 != ''
-	$ids = array();
+	$ids = [];
 	$ids[$primary] = ($x = intval($id_objet)) ? $x : '';
 	$ids['id_objet'] = ($x = intval($id_objet)) ? $x : '';
 	$ids['objet'] = $objet;
 	$ids['id_forum'] = ($x = intval($id_forum)) ? $x : '';
 
 	// par défaut, on force la prévisualisation du message avant de le poster
-	if (($forcer_previsu == 'non') or (empty($forcer_previsu) and $GLOBALS['meta']["forums_forcer_previsu"] == "non")) {
+	if (($forcer_previsu == 'non') or (empty($forcer_previsu) and $GLOBALS['meta']['forums_forcer_previsu'] == 'non')) {
 		$forcer_previsu = 'non';
 	} else {
 		$forcer_previsu = 'oui';
 	}
 
 	// pour les hidden
-	$script_hidden = "";
+	$script_hidden = '';
 	foreach ($ids as $id => $v) {
 		$script_hidden .= "<input type='hidden' name='$id' value='$v' />";
 	}
 
-	$config = array();
-	foreach (array('afficher_barre', 'forum_titre', 'forums_texte', 'forums_urlref') as $k) {
+	$config = [];
+	foreach (['afficher_barre', 'forum_titre', 'forums_texte', 'forums_urlref'] as $k) {
 		$config[$k] = ' ';
 	}
 
-	return array(
+	return [
 		'nom_site' => '',
 		'table' => $table,
 		'texte' => '',
 		'config' => $config,
 		'titre' => isset($titre) ? $titre : '',
 		'_hidden' => $script_hidden, # pour les variables hidden
-		'url_site' => "",
+		'url_site' => '',
 		'forcer_previsu' => $forcer_previsu,
 		'id_forum' => $id_forum, // passer id_forum au formulaire pour lui permettre d'afficher a quoi l'internaute repond
 		'_sign' => implode('_', $ids),
 		'_autosave_id' => $ids,
-	);
+	];
 }
 
 
@@ -96,28 +96,35 @@ function formulaires_forum_prive_verifier_dist($objet, $id_objet, $id_forum, $fo
 	include_spip('inc/session');
 	include_spip('base/abstract_sql');
 
-	$erreurs = array();
+	$erreurs = [];
 
 	$min_length = (defined('_FORUM_LONGUEUR_MINI') ? _FORUM_LONGUEUR_MINI : 10);
-	if (strlen($texte = _request('texte')) < $min_length
+	if (
+		strlen($texte = _request('texte')) < $min_length
 		and !_request('ajouter_mot') and $GLOBALS['meta']['forums_texte'] == 'oui'
 	) {
-		$erreurs['texte'] = _T($min_length == 10 ? 'forum:forum_attention_dix_caracteres' : 'forum:forum_attention_nb_caracteres_mini',
-			array('min' => $min_length));
+		$erreurs['texte'] = _T(
+			$min_length == 10 ? 'forum:forum_attention_dix_caracteres' : 'forum:forum_attention_nb_caracteres_mini',
+			['min' => $min_length]
+		);
 	} else {
-		if (defined('_FORUM_LONGUEUR_MAXI')
+		if (
+			defined('_FORUM_LONGUEUR_MAXI')
 			and _FORUM_LONGUEUR_MAXI > 0
 			and strlen($texte) > _FORUM_LONGUEUR_MAXI
 		) {
-			$erreurs['texte'] = _T('forum:forum_attention_trop_caracteres',
-				array(
+			$erreurs['texte'] = _T(
+				'forum:forum_attention_trop_caracteres',
+				[
 					'compte' => strlen($texte),
 					'max' => _FORUM_LONGUEUR_MAXI
-				));
+				]
+			);
 		}
 	}
 
-	if (strlen($titre = _request('titre')) < 3
+	if (
+		strlen($titre = _request('titre')) < 3
 		and $GLOBALS['meta']['forums_titre'] == 'oui'
 	) {
 		$erreurs['titre'] = _T('forum:forum_attention_trois_caracteres');
@@ -132,8 +139,13 @@ function formulaires_forum_prive_verifier_dist($objet, $id_objet, $id_forum, $fo
 	}
 
 	if (!count($erreurs) and !_request('envoyer_message') and !_request('confirmer_previsu_forum')) {
-		$previsu = inclure_forum_prive_previsu($texte, $titre, _request('url_site'), _request('nom_site'),
-			_request('ajouter_mot'));
+		$previsu = inclure_forum_prive_previsu(
+			$texte,
+			$titre,
+			_request('url_site'),
+			_request('nom_site'),
+			_request('ajouter_mot')
+		);
 		$erreurs['previsu'] = $previsu;
 		$erreurs['message_erreur'] = ''; // on ne veut pas du message_erreur automatique
 	}
@@ -142,30 +154,33 @@ function formulaires_forum_prive_verifier_dist($objet, $id_objet, $id_forum, $fo
 }
 
 
-function inclure_forum_prive_previsu($texte, $titre, $url_site, $nom_site, $ajouter_mot, $doc = "") {
+function inclure_forum_prive_previsu($texte, $titre, $url_site, $nom_site, $ajouter_mot, $doc = '') {
 	$bouton = _T('forum:forum_message_definitif');
 	include_spip('public/assembler');
 	include_spip('public/composer');
 	// supprimer les <form> de la previsualisation
 	// (sinon on ne peut pas faire <cadre>...</cadre> dans les forums)
-	return preg_replace("@<(/?)form\b@ism",
+	return preg_replace(
+		"@<(/?)form\b@ism",
 		'<\1div',
-		inclure_balise_dynamique(array(
+		inclure_balise_dynamique(
+			[
 			'formulaires/inc-forum_prive_previsu',
 			0,
-			array(
+			[
 				'titre' => safehtml(typo($titre)),
 				'texte' => safehtml(propre($texte)),
 				'notes' => safehtml(calculer_notes()),
 				'url_site' => vider_url($url_site),
 				'nom_site' => safehtml(typo($nom_site)),
-				'ajouter_mot' => (is_array($ajouter_mot) ? $ajouter_mot : array($ajouter_mot)),
+				'ajouter_mot' => (is_array($ajouter_mot) ? $ajouter_mot : [$ajouter_mot]),
 				'ajouter_document' => $doc,
 				#'erreur' => $erreur, // kesako ? non définie ?
 				'bouton' => $bouton
-			)
-		),
-			false)
+			]
+			],
+			false
+		)
 	);
 }
 
@@ -196,9 +211,9 @@ function formulaires_forum_prive_traiter_dist($objet, $id_objet, $id_forum, $for
 			}
 		}
 
-		$res = array('redirect' => $retour, 'id_forum' => $id_forum);
+		$res = ['redirect' => $retour, 'id_forum' => $id_forum];
 	} else {
-		$res = array('message_erreur' => _T('forum:erreur_enregistrement_message'));
+		$res = ['message_erreur' => _T('forum:erreur_enregistrement_message')];
 	}
 
 	return $res;

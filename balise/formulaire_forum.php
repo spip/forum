@@ -15,7 +15,7 @@
  *
  * @package SPIP\Forum\Balises
  **/
-if (!defined("_ECRIRE_INC_VERSION")) {
+if (!defined('_ECRIRE_INC_VERSION')) {
 	return;
 }  #securite
 
@@ -72,20 +72,23 @@ function balise_FORMULAIRE_FORUM($p) {
 	$ids = forum_get_objets_depuis_env();
 	$ids = array_values($ids);
 
-	$obtenir = array(
+	$obtenir = [
 		$_id_objet,
 		'id_forum',
 		'ajouter_mot',
 		'ajouter_groupe',
 		'forcer_previsu'
-	);
+	];
 
 	if ($ids) {
 		$obtenir = array_merge($obtenir, $ids);
 	}
 
-	$p = calculer_balise_dynamique($p, 'FORMULAIRE_FORUM', $obtenir,
-		array("'$_type'", count($ids))
+	$p = calculer_balise_dynamique(
+		$p,
+		'FORMULAIRE_FORUM',
+		$obtenir,
+		["'$_type'", count($ids)]
 	);
 
 	// Ajouter le code d'invalideur specifique aux forums
@@ -137,7 +140,7 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 	}
 
 	return
-		array(
+		[
 			$objet,
 			$id_objet,
 			$id_forum,
@@ -145,7 +148,7 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 			$ajouter_groupe,
 			$forcer_previsu,
 			$retour
-		);
+		];
 }
 
 /**
@@ -184,7 +187,7 @@ function balise_forum_retrouve_objet($ido, $id_forum, $args, $context_compil, $o
 	// on tente de prendre l'objet issu de l'environnement si un n'a pas pu etre calcule
 	if (!$objet) {
 		$objets = forum_get_objets_depuis_env();
-		$ids = array();
+		$ids = [];
 		$i = 0;
 		foreach ($objets as $o => $ido) {
 			if ($id = $args[$i]) {
@@ -206,7 +209,7 @@ function balise_forum_retrouve_objet($ido, $id_forum, $args, $context_compil, $o
 
 	// et si on n'a toujours pas ce qu'on souhaite, on tente de le trouver dans un forum existant...
 	if (($objet == 'forum' or !$id_objet) and $id_forum) {
-		if ($objet = sql_fetsel(array('id_objet', 'objet'), 'spip_forum', 'id_forum=' . intval($id_forum))) {
+		if ($objet = sql_fetsel(['id_objet', 'objet'], 'spip_forum', 'id_forum=' . intval($id_forum))) {
 			$id_objet = $objet['id_objet'];
 			$objet = $objet['objet'];
 		} else {
@@ -220,5 +223,5 @@ function balise_forum_retrouve_objet($ido, $id_forum, $args, $context_compil, $o
 		return false;
 	}
 
-	return array($objet, $id_objet, $url);
+	return [$objet, $id_objet, $url];
 }

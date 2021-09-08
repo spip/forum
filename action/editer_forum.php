@@ -10,7 +10,7 @@
  *  Pour plus de détails voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
-if (!defined("_ECRIRE_INC_VERSION")) {
+if (!defined('_ECRIRE_INC_VERSION')) {
 	return;
 }
 include_spip('inc/modifier');
@@ -21,12 +21,12 @@ include_spip('inc/modifier');
  * @param null $set
  * @return bool|string
  */
-function forum_inserer($id_parent=null, $set = null) {
+function forum_inserer($id_parent = null, $set = null) {
 
 	include_spip('inc/session');
 	$champs = [
 		'id_parent' => $id_parent ? $id_parent : 0,
-		'id_thread' => $id_parent ? sql_getfetsel("id_thread", "spip_forum", "id_forum=" . intval($id_parent)) : 0,
+		'id_thread' => $id_parent ? sql_getfetsel('id_thread', 'spip_forum', 'id_forum=' . intval($id_parent)) : 0,
 		'date_heure' => date('Y-m-d H:i:s'),
 		'ip' => $GLOBALS['ip'],
 		'id_auteur' => session_get('id_auteur'),
@@ -40,14 +40,15 @@ function forum_inserer($id_parent=null, $set = null) {
 	}
 
 	// Envoyer aux plugins
-	$champs = pipeline('pre_insertion',
-		array(
-			'args' => array(
+	$champs = pipeline(
+		'pre_insertion',
+		[
+			'args' => [
 				'table' => 'spip_forum',
 				'id_parent' => $id_parent,
-			),
+			],
 			'data' => $champs
-		)
+		]
 	);
 
 	$id = sql_insertq('spip_forum', $champs);
@@ -56,20 +57,20 @@ function forum_inserer($id_parent=null, $set = null) {
 		// initialiser le thread si c'est un nouveau
 		if (!$champs['id_thread']) {
 			$champs['id_thread'] = $id;
-			sql_updateq('spip_forum', $champs, 'id_forum='.intval($id));
+			sql_updateq('spip_forum', $champs, 'id_forum=' . intval($id));
 		}
 
-		pipeline('post_insertion',
-			array(
-				'args' => array(
+		pipeline(
+			'post_insertion',
+			[
+				'args' => [
 					'table' => 'spip_forum',
 					'id_parent' => $id_parent,
 					'id_objet' => $id,
-				),
+				],
 				'data' => $champs
-			)
+			]
 		);
-
 	}
 
 	return $id;
@@ -82,7 +83,7 @@ function forum_inserer($id_parent=null, $set = null) {
 if (!function_exists('revision_forum')) {
 	function revision_forum($id_forum, $c = false) {
 
-		$t = sql_fetsel("*", "spip_forum", "id_forum=" . intval($id_forum));
+		$t = sql_fetsel('*', 'spip_forum', 'id_forum=' . intval($id_forum));
 		if (!$t) {
 			spip_log("erreur forum $id_forum inexistant");
 
@@ -92,7 +93,7 @@ if (!function_exists('revision_forum')) {
 		// Calculer l'invalideur des caches lies a ce forum
 		if ($t['statut'] == 'publie') {
 			include_spip('inc/invalideur');
-			$invalideur = array("id='forum/$id_forum'", "id='" . $t['objet'] . "/" . $t['id_objet'] . "'");
+			$invalideur = ["id='forum/$id_forum'", "id='" . $t['objet'] . '/' . $t['id_objet'] . "'"];
 		} else {
 			$invalideur = '';
 		}
@@ -103,16 +104,19 @@ if (!function_exists('revision_forum')) {
 			$c['url_site'] = vider_url($c['url_site'], false);
 		}
 
-		$err = objet_modifier_champs('forum', $id_forum,
-			array(
-				'nonvide' => array('titre' => _T('info_sans_titre')),
+		$err = objet_modifier_champs(
+			'forum',
+			$id_forum,
+			[
+				'nonvide' => ['titre' => _T('info_sans_titre')],
 				'invalideur' => $invalideur
-			),
-			$c);
+			],
+			$c
+		);
 
-		$id_thread = intval($t["id_thread"]);
-		$cles = array();
-		foreach (array('id_objet', 'objet') as $k) {
+		$id_thread = intval($t['id_thread']);
+		$cles = [];
+		foreach (['id_objet', 'objet'] as $k) {
 			if (isset($c[$k]) and $c[$k]) {
 				$cles[$k] = $c[$k];
 			}
@@ -123,13 +127,13 @@ if (!function_exists('revision_forum')) {
 		// on deplace tout le thread {sauf les originaux}.
 		if (count($cles) and $id_thread) {
 			spip_log("update thread id_thread=$id_thread avec " . var_export($cles, 1), 'forum.' . _LOG_INFO_IMPORTANTE);
-			sql_updateq("spip_forum", $cles, "id_thread=" . $id_thread . " AND statut!='original'");
+			sql_updateq('spip_forum', $cles, 'id_thread=' . $id_thread . " AND statut!='original'");
 			// on n'affecte pas $r, car un deplacement ne change pas l'auteur
 		}
 
 		// s'il y a vraiment eu une modif et que le message est publié ou posté dans un forum du privé
 		// on enregistre la nouvelle date_thread
-		if ($err === '' and in_array($t['statut'], array('publie', 'prive', 'privrac', 'privadm'))) {
+		if ($err === '' and in_array($t['statut'], ['publie', 'prive', 'privrac', 'privadm'])) {
 			// on ne stocke ni le numero IP courant ni le nouvel id_auteur
 			// dans le message modifie (trop penible a l'usage) ; mais du
 			// coup attention a la responsabilite editoriale
@@ -138,7 +142,7 @@ if (!function_exists('revision_forum')) {
 			*/
 
 			// & meme ca ca pourrait etre optionnel
-			sql_updateq("spip_forum", array("date_thread" => date('Y-m-d H:i:s')), "id_thread=" . $id_thread);
+			sql_updateq('spip_forum', ['date_thread' => date('Y-m-d H:i:s')], 'id_thread=' . $id_thread);
 		}
 	}
 }

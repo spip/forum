@@ -10,22 +10,21 @@
  *  Pour plus de détails voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
-if (!defined("_ECRIRE_INC_VERSION")) {
+if (!defined('_ECRIRE_INC_VERSION')) {
 	return;
 }
 
 function formulaires_configurer_forums_prives_charger_dist() {
 
-	return array(
-		'forum_prive_objets' => explode(',', $GLOBALS['meta']["forum_prive_objets"]),
-		'forum_prive' => $GLOBALS['meta']["forum_prive"],
-		'forum_prive_admin' => $GLOBALS['meta']["forum_prive_admin"],
-	);
-
+	return [
+		'forum_prive_objets' => explode(',', $GLOBALS['meta']['forum_prive_objets']),
+		'forum_prive' => $GLOBALS['meta']['forum_prive'],
+		'forum_prive_admin' => $GLOBALS['meta']['forum_prive_admin'],
+	];
 }
 
 function formulaires_configurer_forums_prives_traiter_dist() {
-	$res = array('editable' => true);
+	$res = ['editable' => true];
 
 	if (!is_null($v = _request($m = 'forum_prive_objets'))) {
 		ecrire_meta($m, is_array($v) ? implode(',', $v) : '');

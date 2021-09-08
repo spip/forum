@@ -10,13 +10,13 @@
  *  Pour plus de détails voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
-if (!defined("_ECRIRE_INC_VERSION")) {
+if (!defined('_ECRIRE_INC_VERSION')) {
 	return;
 }
 
 // https://code.spip.net/@generer_url_ecrire_forum
 function urls_generer_url_ecrire_forum_dist($id, $args = '', $ancre = '', $public = null, $connect = '') {
-	$a = "id_forum=" . intval($id);
+	$a = 'id_forum=' . intval($id);
 	if (is_null($public) and !$connect) {
 		$public = objet_test_si_publie('forum', $id, $connect);
 	}

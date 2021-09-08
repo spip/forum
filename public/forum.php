@@ -10,7 +10,7 @@
  *  Pour plus de détails voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
-if (!defined("_ECRIRE_INC_VERSION")) {
+if (!defined('_ECRIRE_INC_VERSION')) {
 	return;
 }
 
@@ -25,12 +25,13 @@ function boucle_FORUMS_dist($id_boucle, &$boucles) {
 	// Par defaut, selectionner uniquement les forums sans mere
 	// Les criteres {tout} et {plat} inversent ce choix
 	// de meme qu'un critere sur {id_forum} ou {id_parent}
-	if (!isset($boucle->modificateur['tout'])
+	if (
+		!isset($boucle->modificateur['tout'])
 		and !isset($boucle->modificateur['plat'])
 		and !isset($boucle->modificateur['criteres']['id_forum'])
 		and !isset($boucle->modificateur['criteres']['id_parent'])
 	) {
-		array_unshift($boucle->where, array("'='", "'$id_table." . "id_parent'", 0));
+		array_unshift($boucle->where, ["'='", "'$id_table." . "id_parent'", 0]);
 	}
 
 	return calculer_boucle($id_boucle, $boucles);
@@ -48,8 +49,8 @@ function critere_FORUMS_meme_parent_dist($idb, &$boucles, $crit) {
 		'id_parent';
 	$mparent = $boucle->id_table . '.' . $id_parent;
 
-	$boucle->where[] = array("'='", "'$mparent'", $arg);
-	$boucle->where[] = array("'>'", "'$mparent'", 0);
+	$boucle->where[] = ["'='", "'$mparent'", $arg];
+	$boucle->where[] = ["'>'", "'$mparent'", 0];
 	$boucle->modificateur['plat'] = true;
 }
 
@@ -92,9 +93,9 @@ function critere_FORUMS_compter_reponses($idb, &$boucles, $crit) {
 
 	$boucle->from['fils'] = 'spip_forum';
 	$boucle->from_type['fils'] = 'left';
-	$boucle->join["fils"] = array("'$id_table'", "'$id_parent'", "'id_forum'", "'fils.statut='.sql_quote('publie')");
+	$boucle->join['fils'] = ["'$id_table'", "'$id_parent'", "'id_forum'", "'fils.statut='.sql_quote('publie')"];
 
-	$boucle->select[]= 'COUNT(fils.id_forum) AS nombre_reponses';
+	$boucle->select[] = 'COUNT(fils.id_forum) AS nombre_reponses';
 
 	// Gestion du having
 	if (count($crit->param)) {
@@ -103,7 +104,7 @@ function critere_FORUMS_compter_reponses($idb, &$boucles, $crit) {
 			$champ = $r[1];
 			$op = $r[2];
 			$op_val = $r[3];
-			$boucle->having[]= array("'".$op."'", "'" . $champ . "'", $op_val);
+			$boucle->having[] = ["'" . $op . "'", "'" . $champ . "'", $op_val];
 		}
 	}
 }
@@ -140,8 +141,14 @@ function balise_FORUM_NOMBRE_REPONSES_dist($p) {
  * @return mixed|string
  */
 function public_critere_secteur_forums_dist($idb, &$boucles, $val, $crit) {
-	return calculer_critere_externe_init($boucles[$idb], array('spip_articles'), 'id_secteur', $boucles[$idb]->show,
-		$crit->cond, true);
+	return calculer_critere_externe_init(
+		$boucles[$idb],
+		['spip_articles'],
+		'id_secteur',
+		$boucles[$idb]->show,
+		$crit->cond,
+		true
+	);
 }
 
 
@@ -173,21 +180,22 @@ function balise_PARAMETRES_FORUM_dist($p) {
 	if ($p->type_requete == 'forums') {
 		$_id_reponse = champ_sql('id_forum', $p);
 	} else {
-		$_id_reponse = "null";
+		$_id_reponse = 'null';
 	}
 
 	// objet et id_objet principaux sont a determiner
 	// dans le contexte ; on demande en tout etat de cause
 	// a la boucle mere de reserver son id_primary
-	if ($p->id_boucle
+	if (
+		$p->id_boucle
 		and isset($p->boucles[$p->id_boucle])
 		and $primary = $p->boucles[$p->id_boucle]->primary
 	) {
 		$_type = _q($p->boucles[$p->id_boucle]->type_requete);
 		$_primary = champ_sql($primary, $p);
 	} else {
-		$_type = "null";
-		$_primary = "null";
+		$_type = 'null';
+		$_primary = 'null';
 	}
 
 	// le code de base des parametres
@@ -238,11 +246,12 @@ function calcul_parametres_forum(&$env, $reponse, $type, $primary) {
 	// la boucle mere, mais il est possible que non (forums imbriques etc)
 	// dans ce cas on va chercher dans la base.
 	if ($id_parent = intval($reponse)) {
-		if ($type
+		if (
+			$type
 			and $type != 'forums'
 			and $primary
 		) {
-			$forum = array('objet' => $type, 'id_objet' => $primary);
+			$forum = ['objet' => $type, 'id_objet' => $primary];
 		} else {
 			$forum = sql_fetsel('objet, id_objet', 'spip_forum', 'id_forum=' . $id_parent);
 		}
@@ -263,7 +272,8 @@ function calcul_parametres_forum(&$env, $reponse, $type, $primary) {
 	// dernier recours, on regarde pour chacun des objets forumables
 	// ce que nous propose le contexte #ENV
 	foreach ($env as $k => $v) {
-		if (preg_match(',^id_([a-z_]+)$,S', $k)
+		if (
+			preg_match(',^id_([a-z_]+)$,S', $k)
 			and $id = intval($v)
 		) {
 			return id_table_objet($k) . '=' . $v;
@@ -279,7 +289,7 @@ function quete_accepter_forum($id_article) {
 	// article (forum de breves), $id_article est nul
 	// mais il faut neanmoins accepter l'affichage du forum
 	// d'ou le 0=>'' (et pas 0=>'non').
-	static $cache = array(0 => '');
+	static $cache = [0 => ''];
 
 	$id_article = intval($id_article);
 
@@ -308,7 +318,7 @@ function lang_parametres_forum($qs, $lang) {
 	// Si ce n'est pas la meme que celle du site, l'ajouter aux parametres
 
 	if ($lang and $lang <> $GLOBALS['meta']['langue_site']) {
-		return $qs . "&lang=" . $lang;
+		return $qs . '&lang=' . $lang;
 	}
 
 	return $qs;
