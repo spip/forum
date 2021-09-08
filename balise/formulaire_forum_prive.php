@@ -15,7 +15,7 @@
  *
  * @package SPIP\Forum\Balises
  **/
-if (!defined("_ECRIRE_INC_VERSION")) {
+if (!defined('_ECRIRE_INC_VERSION')) {
 	return;
 }  #securite
 
@@ -72,20 +72,23 @@ function balise_FORMULAIRE_FORUM_PRIVE($p) {
 	$ids = forum_get_objets_depuis_env();
 	$ids = array_values($ids);
 
-	$obtenir = array(
+	$obtenir = [
 		$_id_objet,
 		'id_forum',
 		'forcer_previsu',
 		'statut',
-	);
+	];
 
 
 	if ($ids) {
 		$obtenir = array_merge($obtenir, $ids);
 	}
 
-	$p = calculer_balise_dynamique($p, 'FORMULAIRE_FORUM_PRIVE', $obtenir,
-		array("'$_type'", count($ids))
+	$p = calculer_balise_dynamique(
+		$p,
+		'FORMULAIRE_FORUM_PRIVE',
+		$obtenir,
+		["'$_type'", count($ids)]
 	);
 
 	return $p;
@@ -114,8 +117,13 @@ function balise_FORMULAIRE_FORUM_PRIVE_stat($args, $context_compil) {
 
 	include_spip('balise/formulaire_forum');
 	// si statut privrac ou privadm, pas besoin d'objet !
-	$r = balise_forum_retrouve_objet($ido, $id_forum, $args, $context_compil,
-		!in_array($statut, array('privrac', 'privadm')));
+	$r = balise_forum_retrouve_objet(
+		$ido,
+		$id_forum,
+		$args,
+		$context_compil,
+		!in_array($statut, ['privrac', 'privadm'])
+	);
 	if (!$r) {
 		return false;
 	}
@@ -123,5 +131,5 @@ function balise_FORMULAIRE_FORUM_PRIVE_stat($args, $context_compil) {
 	list($objet, $id_objet, $retour) = $r;
 
 	return
-		array($objet, $id_objet, $id_forum, $forcer_previsu, $statut, $retour);
+		[$objet, $id_objet, $id_forum, $forcer_previsu, $statut, $retour];
 }

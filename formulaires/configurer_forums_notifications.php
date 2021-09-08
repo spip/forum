@@ -10,7 +10,7 @@
  *  Pour plus de détails voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
-if (!defined("_ECRIRE_INC_VERSION")) {
+if (!defined('_ECRIRE_INC_VERSION')) {
 	return;
 }
 $GLOBALS['liste_des_forums']['forum:bouton_radio_modere_posteriori'] = 'pos';
@@ -19,7 +19,7 @@ $GLOBALS['liste_des_forums']['forum:bouton_radio_modere_abonnement'] = 'abo';
 $GLOBALS['liste_des_forums']['forum:info_pas_de_forum'] = 'non';
 
 function formulaires_configurer_forums_notifications_charger_dist() {
-	$valeurs = array();
+	$valeurs = [];
 	$m = $GLOBALS['meta']['prevenir_auteurs'];
 	$l = $GLOBALS['liste_des_forums'];
 	unset($l['forum:info_pas_de_forum']);
@@ -33,7 +33,7 @@ function formulaires_configurer_forums_notifications_charger_dist() {
 function formulaires_configurer_forums_notifications_traiter_dist() {
 	include_spip('inc/meta');
 
-	$res = array();
+	$res = [];
 	foreach ($GLOBALS['liste_des_forums'] as $desc => $val) {
 		if (_request('prevenir_auteurs_' . $val)) {
 			$res[] = $val;
@@ -41,5 +41,5 @@ function formulaires_configurer_forums_notifications_traiter_dist() {
 	}
 	ecrire_meta('prevenir_auteurs', $res ? (',' . join(',', $res) . ',') : 'non');
 
-	return array('message_ok' => _T('config_info_enregistree'));
+	return ['message_ok' => _T('config_info_enregistree')];
 }

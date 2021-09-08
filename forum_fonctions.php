@@ -16,7 +16,7 @@
  * @package SPIP\Forum\Fonctions
  **/
 
-if (!defined("_ECRIRE_INC_VERSION")) {
+if (!defined('_ECRIRE_INC_VERSION')) {
 	return;
 }
 
@@ -72,7 +72,7 @@ function filtre_url_rss_forum($param) {
 		$k = 'id_' . ($t = 'thread');
 	}
 
-	return generer_url_public("rss_forum_$t", array($k => $v));
+	return generer_url_public("rss_forum_$t", [$k => $v]);
 }
 
 /**
@@ -90,7 +90,7 @@ function filtre_url_rss_forum($param) {
  **/
 function interdit_html($texte) {
 	if (defined('_INTERDIRE_TEXTE_HTML')) {
-		$texte = str_replace("<", "&lt;", $texte);
+		$texte = str_replace('<', '&lt;', $texte);
 	}
 
 	return $texte;

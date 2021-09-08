@@ -10,7 +10,7 @@
  *  Pour plus de détails voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
-if (!defined("_ECRIRE_INC_VERSION")) {
+if (!defined('_ECRIRE_INC_VERSION')) {
 	return;
 }
 
@@ -37,7 +37,7 @@ function formulaires_forum_identifier_dist(
 	$afficher_previsu,
 	$retour
 ) {
-	return array($objet, $id_objet, $id_forum, $ajouter_mot, $ajouter_groupe);
+	return [$objet, $id_objet, $id_forum, $ajouter_mot, $ajouter_groupe];
 }
 
 
@@ -84,22 +84,22 @@ function formulaires_forum_charger_dist(
 	$primary = id_table_objet($objet);
 
 	// table a laquelle sont associes les mots :
-	if ($GLOBALS['meta']["mots_cles_forums"] != "oui") {
+	if ($GLOBALS['meta']['mots_cles_forums'] != 'oui') {
 		$table = '';
 	} else {
 		$table = table_objet($objet);
 	}
 
 	// exiger l'authentification des posteurs pour les forums sur abo
-	if ($accepter_forum == "abo") {
-		if (!isset($GLOBALS["visiteur_session"]['statut']) or !$GLOBALS["visiteur_session"]['statut']) {
-			return array(
+	if ($accepter_forum == 'abo') {
+		if (!isset($GLOBALS['visiteur_session']['statut']) or !$GLOBALS['visiteur_session']['statut']) {
+			return [
 				'action' => '', #ne sert pas dans ce cas, on la vide pour mutualiser le cache
 				'editable' => false,
 				'login_forum_abo' => ' ',
 				'inscription' => generer_url_public('identifiants', 'lang=' . $GLOBALS['spip_lang']),
 				'oubli' => generer_url_public('spip_pass', 'lang=' . $GLOBALS['spip_lang'], true),
-			);
+			];
 		}
 	}
 
@@ -110,14 +110,14 @@ function formulaires_forum_charger_dist(
 	// Donc ne pas changer la valeur de ce tableau entre le calcul de
 	// la signature et la fabrication des Hidden
 	// Faire attention aussi a 0 != ''
-	$ids = array();
+	$ids = [];
 	$ids[$primary] = ($x = intval($id_objet)) ? $x : '';
 	$ids['id_objet'] = ($x = intval($id_objet)) ? $x : '';
 	$ids['objet'] = $objet;
 	$ids['id_forum'] = ($x = intval($id_forum)) ? $x : '';
 
 	// par défaut, on force la prévisualisation du message avant de le poster
-	if (($forcer_previsu == 'non') or (empty($forcer_previsu) and $GLOBALS['meta']["forums_forcer_previsu"] == "non")) {
+	if (($forcer_previsu == 'non') or (empty($forcer_previsu) and $GLOBALS['meta']['forums_forcer_previsu'] == 'non')) {
 		$forcer_previsu = 'non';
 	} else {
 		$forcer_previsu = 'oui';
@@ -134,7 +134,7 @@ function formulaires_forum_charger_dist(
 	}
 
 	// pour les hidden
-	$script_hidden = "";
+	$script_hidden = '';
 	foreach ($ids as $id => $v) {
 		$script_hidden .= "<input type='hidden' name='$id' value='$v' />";
 	}
@@ -152,29 +152,29 @@ function formulaires_forum_charger_dist(
 
 	// Valeurs par defaut du formulaire
 	// si le formulaire a ete sauvegarde, restituer les valeurs de session
-	$vals = array(
+	$vals = [
 		'titre' => $titre,
 		'texte' => '',
 		'nom_site' => '',
 		'url_site' => ''
-	);
+	];
 
-	return array_merge($vals, array(
+	return array_merge($vals, [
 		'modere' => (($accepter_forum != 'pri') ? '' : ' '),
 		'table' => $table,
-		'config' => array('afficher_barre' => ($GLOBALS['meta']['forums_afficher_barre'] != 'non' ? ' ' : '')),
+		'config' => ['afficher_barre' => ($GLOBALS['meta']['forums_afficher_barre'] != 'non' ? ' ' : '')],
 		'_hidden' => $script_hidden, # pour les variables hidden qui seront inserees dans le form et dans le form de previsu
 		'cle_ajouter_document' => $cle,
 		'formats_documents_forum' => trim($GLOBALS['meta']['formats_documents_forum']) == '*' ? _T('forum:extensions_autorisees_toutes') : forum_documents_acceptes(),
 		'ajouter_document' => isset($_FILES['ajouter_document']['name']) ? $_FILES['ajouter_document']['name'] : '',
 		'nobot' => ($cle ? _request($cle) : _request('nobot')),
 		'ajouter_groupe' => $ajouter_groupe,
-		'ajouter_mot' => (is_array($ajouter_mot) ? $ajouter_mot : array($ajouter_mot)),
+		'ajouter_mot' => (is_array($ajouter_mot) ? $ajouter_mot : [$ajouter_mot]),
 		'forcer_previsu' => $forcer_previsu,
 		'id_forum' => $id_forum, // passer id_forum au formulaire pour lui permettre d'afficher a quoi l'internaute repond
 		'_sign' => implode('_', $ids),
 		'_autosave_id' => $ids,
-	));
+	]);
 }
 
 
@@ -195,8 +195,10 @@ function formulaires_forum_charger_dist(
  */
 function forum_fichier_tmp($arg) {
 # astuce : mt_rand pour autoriser les hits simultanes
-	while (($alea = time() + @mt_rand()) + intval($arg)
-		and @file_exists($f = _DIR_TMP . "forum_$alea.lck")) {
+	while (
+		($alea = time() + @mt_rand()) + intval($arg)
+		and @file_exists($f = _DIR_TMP . "forum_$alea.lck")
+	) {
 	};
 	spip_touch($f);
 
@@ -204,7 +206,8 @@ function forum_fichier_tmp($arg) {
 
 	if ($dh = opendir(_DIR_TMP)) {
 		while (($file = @readdir($dh)) !== false) {
-			if (preg_match('/^forum_([0-9]+)\.lck$/', $file)
+			if (
+				preg_match('/^forum_([0-9]+)\.lck$/', $file)
 				and (time() - @filemtime(_DIR_TMP . $file) > 4 * 3600)
 			) {
 				spip_unlink(_DIR_TMP . $file);
@@ -246,14 +249,14 @@ function formulaires_forum_verifier_dist(
 	include_spip('base/abstract_sql');
 
 	// par défaut, on force la prévisualisation du message avant de le poster
-	if (($forcer_previsu == 'non') or (empty($forcer_previsu) and $GLOBALS['meta']["forums_forcer_previsu"] == "non")) {
+	if (($forcer_previsu == 'non') or (empty($forcer_previsu) and $GLOBALS['meta']['forums_forcer_previsu'] == 'non')) {
 		$forcer_previsu = 'non';
 	} else {
 		$forcer_previsu = 'oui';
 	}
 
-	$erreurs = array();
-	$doc = array();
+	$erreurs = [];
+	$doc = [];
 
 	// desactiver id_rubrique si un id_article ou autre existe dans le contexte
 	// if ($id_article OR $id_breve OR $id_forum OR $id_syndic)
@@ -262,10 +265,10 @@ function formulaires_forum_verifier_dist(
 	// stocker un eventuel document dans un espace temporaire
 	// portant la cle du formulaire ; et ses metadonnees avec
 
-	if (isset($_FILES['ajouter_document'])
+	if (
+		isset($_FILES['ajouter_document'])
 		and $_FILES['ajouter_document']['tmp_name']
 	) {
-
 		$acceptes = forum_documents_acceptes();
 		if (
 			// si on a poste un $_FILES mais que l'option n'est pas active : cas produit par les bots qui spamment automatiquement
@@ -290,7 +293,7 @@ function formulaires_forum_verifier_dist(
 			list($extension, $doc['name']) = fixer_extension_document($doc);
 
 			if (!in_array($extension, $acceptes)) {
-				$erreurs['document_forum'] = _T('public:formats_acceptes', array('formats' => join(', ', $acceptes)));
+				$erreurs['document_forum'] = _T('public:formats_acceptes', ['formats' => join(', ', $acceptes)]);
 			} else {
 				include_spip('inc/getdocument');
 				if (!deplacer_fichier_upload($doc['tmp_name'], $tmp . '.bin')) {
@@ -312,7 +315,8 @@ function formulaires_forum_verifier_dist(
 			}
 		}
 	} // restaurer/supprimer le document eventuellement uploade au tour precedent
-	elseif (isset($GLOBALS['visiteur_session']['tmp_forum_document'])
+	elseif (
+		isset($GLOBALS['visiteur_session']['tmp_forum_document'])
 		and $tmp = $GLOBALS['visiteur_session']['tmp_forum_document']
 		and file_exists($tmp . '.bin')
 	) {
@@ -326,30 +330,38 @@ function formulaires_forum_verifier_dist(
 	}
 
 	$min_length = (defined('_FORUM_LONGUEUR_MINI') ? _FORUM_LONGUEUR_MINI : 10);
-	if (strlen($texte = _request('texte')) < $min_length
+	if (
+		strlen($texte = _request('texte')) < $min_length
 		and !$ajouter_mot and $GLOBALS['meta']['forums_texte'] == 'oui'
 	) {
-		$erreurs['texte'] = _T($min_length == 10 ? 'forum:forum_attention_dix_caracteres' : 'forum:forum_attention_nb_caracteres_mini',
-			array('min' => $min_length));
-	} elseif (defined('_FORUM_LONGUEUR_MAXI')
+		$erreurs['texte'] = _T(
+			$min_length == 10 ? 'forum:forum_attention_dix_caracteres' : 'forum:forum_attention_nb_caracteres_mini',
+			['min' => $min_length]
+		);
+	} elseif (
+		defined('_FORUM_LONGUEUR_MAXI')
 		and _FORUM_LONGUEUR_MAXI > 0
 		and strlen($texte) > _FORUM_LONGUEUR_MAXI
 	) {
-		$erreurs['texte'] = _T('forum:forum_attention_trop_caracteres',
-			array(
+		$erreurs['texte'] = _T(
+			'forum:forum_attention_trop_caracteres',
+			[
 				'compte' => strlen($texte),
 				'max' => _FORUM_LONGUEUR_MAXI
-			));
+			]
+		);
 	}
 
 	if (array_reduce($_POST, 'reduce_strlen', (20 * 1024)) < 0) {
 		$erreurs['erreur_message'] = _T('forum:forum_message_trop_long');
 	} else {
 		// Ne pas autoriser d'envoi hacke si forum sur abonnement
-		if (controler_forum($objet, $id_objet) == 'abo'
+		if (
+			controler_forum($objet, $id_objet) == 'abo'
 			and !test_espace_prive()
 		) {
-			if (!isset($GLOBALS['visiteur_session'])
+			if (
+				!isset($GLOBALS['visiteur_session'])
 				or !isset($GLOBALS['visiteur_session']['statut'])
 			) {
 				$erreurs['erreur_message'] = _T('forum_non_inscrit');
@@ -359,7 +371,8 @@ function formulaires_forum_verifier_dist(
 		}
 	}
 
-	if (strlen($titre = _request('titre')) < 3
+	if (
+		strlen($titre = _request('titre')) < 3
 		and $GLOBALS['meta']['forums_titre'] == 'oui'
 	) {
 		$erreurs['titre'] = _T('forum:forum_attention_trois_caracteres');
@@ -367,9 +380,17 @@ function formulaires_forum_verifier_dist(
 
 	if (!count($erreurs) and !_request('confirmer_previsu_forum')) {
 		if (!_request('envoyer_message') or $forcer_previsu <> 'non') {
-			$previsu = inclure_previsu($texte, $titre, _request('url_site'), _request('nom_site'), _request('ajouter_mot'),
+			$previsu = inclure_previsu(
+				$texte,
+				$titre,
+				_request('url_site'),
+				_request('nom_site'),
+				_request('ajouter_mot'),
 				$doc,
-				$objet, $id_objet, $id_forum);
+				$objet,
+				$id_objet,
+				$id_forum
+			);
 			$erreurs['previsu'] = $previsu;
 			$erreurs['message_erreur'] = ''; // on ne veut pas du message_erreur automatique
 		}
@@ -377,7 +398,8 @@ function formulaires_forum_verifier_dist(
 
 	//  Si forum avec previsu sans bon hash de securite, echec
 	if (!count($erreurs)) {
-		if (!test_espace_prive()
+		if (
+			!test_espace_prive()
 			and $forcer_previsu <> 'non'
 			and forum_insert_noprevisu()
 		) {
@@ -397,7 +419,7 @@ function formulaires_forum_verifier_dist(
 function forum_documents_acceptes() {
 	$formats = trim($GLOBALS['meta']['formats_documents_forum']);
 	if (!$formats) {
-		return array();
+		return [];
 	}
 	if ($formats !== '*') {
 		$formats = array_filter(preg_split(',[^a-zA-Z0-9/+_],', $formats));
@@ -448,7 +470,7 @@ function inclure_previsu(
 	// comme on voit c'est complique... y a peut-etre plus simple ?
 	// recuperer les filtres eventuels de 'mes_fonctions.php' sur les balises
 	include_spip('public/parametrer');
-	$tmptexte = "";
+	$tmptexte = '';
 	$evaltexte = isset($table_des_traitements['TEXTE']['forums'])
 		? $table_des_traitements['TEXTE']['forums']
 		: $table_des_traitements['TEXTE'][0];
@@ -457,32 +479,37 @@ function inclure_previsu(
 	// [fixme]
 	// $connect et $Pile ne sont pas definis ici :/
 	// mais font souvent partie des variables appelees par les traitements
-	$connect = "";
-	$Pile = array(0 => array());
+	$connect = '';
+	$Pile = [0 => []];
 	eval($evaltexte);
 
 	// supprimer les <form> de la previsualisation
 	// (sinon on ne peut pas faire <cadre>...</cadre> dans les forums)
-	return preg_replace("@<(/?)form\b@ism",
+	return preg_replace(
+		"@<(/?)form\b@ism",
 		'<\1div',
-		inclure_balise_dynamique(array(
+		inclure_balise_dynamique(
+			[
 			'formulaires/inc-forum_previsu',
 			0,
-			array(
+			[
 				'titre' => safehtml(typo($titre)),
 				'texte' => $tmptexte,
 				'notes' => safehtml(calculer_notes()),
 				'url_site' => vider_url($url_site),
 				'nom_site' => safehtml(typo($nom_site)),
-				'ajouter_mot' => (is_array($ajouter_mot) ? $ajouter_mot : array($ajouter_mot)),
+				'ajouter_mot' => (is_array($ajouter_mot) ? $ajouter_mot : [$ajouter_mot]),
 				'ajouter_document' => $doc,
 				#'erreur' => $erreur, // non definie ?
 				'bouton' => $bouton,
 				'objet' => $objet,
 				'id_objet' => $id_objet,
 				'id_forum' => $id_forum
-			)
-		), false));
+			]
+			],
+			false
+		)
+	);
 }
 
 
@@ -520,10 +547,11 @@ function formulaires_forum_traiter_dist(
 	if (strlen(_request(_request('cle_ajouter_document')))) {
 		tracer_erreur_forum('champ interdit (nobot) rempli');
 
-		return array('message_erreur' => _T('forum:erreur_enregistrement_message'));
+		return ['message_erreur' => _T('forum:erreur_enregistrement_message')];
 	}
 
-	if (defined('_FORUM_AUTORISER_POST_ID_FORUM')
+	if (
+		defined('_FORUM_AUTORISER_POST_ID_FORUM')
 		and _FORUM_AUTORISER_POST_ID_FORUM
 		and _request('id_forum')
 	) {
@@ -555,9 +583,9 @@ function formulaires_forum_traiter_dist(
 			}
 		}
 
-		$res = array('redirect' => $retour, 'id_forum' => $id_reponse);
+		$res = ['redirect' => $retour, 'id_forum' => $id_reponse];
 	} else {
-		$res = array('message_erreur' => _T('forum:erreur_enregistrement_message'));
+		$res = ['message_erreur' => _T('forum:erreur_enregistrement_message')];
 	}
 
 	return $res;

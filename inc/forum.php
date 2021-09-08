@@ -10,7 +10,7 @@
  *  Pour plus de détails voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
-if (!defined("_ECRIRE_INC_VERSION")) {
+if (!defined('_ECRIRE_INC_VERSION')) {
 	return;
 }
 include_spip('inc/actions');
@@ -28,14 +28,14 @@ function critere_statut_controle_forum($type, $id_secteur = 0, $recherche = '') 
 
 	if (!$id_secteur) {
 		$from = 'spip_forum AS F';
-		$where = "";
-		$and = "";
+		$where = '';
+		$and = '';
 	} else {
 		if (!is_array($id_secteur)) {
 			$id_secteur = explode(',', $id_secteur);
 		}
 		$from = 'spip_forum AS F, spip_articles AS A';
-		$where = sql_in("A.id_secteur", $id_secteur) . " AND F.objet='article' AND F.id_objet=A.id_article";
+		$where = sql_in('A.id_secteur', $id_secteur) . " AND F.objet='article' AND F.id_objet=A.id_article";
 		$and = ' AND ';
 	}
 
@@ -64,19 +64,21 @@ function critere_statut_controle_forum($type, $id_secteur = 0, $recherche = '') 
 	if ($recherche) {
 		# recherche par IP
 		if (preg_match(',^\d+\.\d+\.(\*|\d+\.(\*|\d+))$,', $recherche)) {
-			$and .= " AND ip LIKE " . sql_quote(str_replace('*', '%', $recherche));
+			$and .= ' AND ip LIKE ' . sql_quote(str_replace('*', '%', $recherche));
 		} else {
 			include_spip('inc/rechercher');
 			if ($a = recherche_en_base($recherche, 'forum')) {
-				$and .= " AND " . sql_in('id_forum',
-						array_keys(array_pop($a)));
+				$and .= ' AND ' . sql_in(
+					'id_forum',
+					array_keys(array_pop($a))
+				);
 			} else {
-				$and .= " AND 0=1";
+				$and .= ' AND 0=1';
 			}
 		}
 	}
 
-	return array($from, "$where$and");
+	return [$from, "$where$and"];
 }
 
 // Index d'invalidation des forums
@@ -94,26 +96,31 @@ function calcul_index_forum($objet, $id_objet) {
 // https://code.spip.net/@calculer_threads
 function calculer_threads() {
 	// fixer les id_thread des debuts de discussion
-	sql_update('spip_forum', array('id_thread' => 'id_forum'), "id_parent=0");
+	sql_update('spip_forum', ['id_thread' => 'id_forum'], 'id_parent=0');
 	// reparer les messages qui n'ont pas l'id_secteur de leur parent
 	do {
-		$discussion = "0";
+		$discussion = '0';
 		$precedent = 0;
-		$r = sql_select("fille.id_forum AS id,	maman.id_thread AS thread", 'spip_forum AS fille, spip_forum AS maman',
-			"fille.id_parent = maman.id_forum AND fille.id_thread <> maman.id_thread", '', "thread");
+		$r = sql_select(
+			'fille.id_forum AS id,	maman.id_thread AS thread',
+			'spip_forum AS fille, spip_forum AS maman',
+			'fille.id_parent = maman.id_forum AND fille.id_thread <> maman.id_thread',
+			'',
+			'thread'
+		);
 		while ($row = sql_fetch($r)) {
 			if ($row['thread'] == $precedent) {
-				$discussion .= "," . $row['id'];
+				$discussion .= ',' . $row['id'];
 			} else {
 				if ($precedent) {
-					sql_updateq("spip_forum", array("id_thread" => $precedent), "id_forum IN ($discussion)");
+					sql_updateq('spip_forum', ['id_thread' => $precedent], "id_forum IN ($discussion)");
 				}
 				$precedent = $row['thread'];
 				$discussion = $row['id'];
 			}
 		}
-		sql_updateq("spip_forum", array("id_thread" => $precedent), "id_forum IN ($discussion)");
-	} while ($discussion != "0");
+		sql_updateq('spip_forum', ['id_thread' => $precedent], "id_forum IN ($discussion)");
+	} while ($discussion != '0');
 }
 
 // Calculs des URLs des forums (pour l'espace public)
@@ -123,20 +130,20 @@ function racine_forum($id_forum) {
 		return false;
 	}
 
-	$row = sql_fetsel("id_parent, objet, id_objet, id_thread", "spip_forum", "id_forum=" . $id_forum);
+	$row = sql_fetsel('id_parent, objet, id_objet, id_thread', 'spip_forum', 'id_forum=' . $id_forum);
 
 	if (!$row) {
 		return false;
 	}
 
-	if ($row['id_parent']
+	if (
+		$row['id_parent']
 		and $row['id_thread'] != $id_forum
-	) // eviter boucle infinie
-	{
-		return racine_forum($row['id_thread']);
+	) { // eviter boucle infinie
+	return racine_forum($row['id_thread']);
 	}
 
-	return array($row['objet'], $row['id_objet'], $id_forum);
+	return [$row['objet'], $row['id_objet'], $id_forum];
 }
 
 
@@ -145,14 +152,14 @@ function parent_forum($id_forum) {
 	if (!$id_forum = intval($id_forum)) {
 		return;
 	}
-	$row = sql_fetsel("id_parent, objet, id_objet", "spip_forum", "id_forum=" . $id_forum);
+	$row = sql_fetsel('id_parent, objet, id_objet', 'spip_forum', 'id_forum=' . $id_forum);
 	if (!$row) {
-		return array();
+		return [];
 	}
 	if ($row['id_parent']) {
-		return array('forum', $row['id_parent']);
+		return ['forum', $row['id_parent']];
 	} else {
-		return array($row['objet'], $row['id_objet']);
+		return [$row['objet'], $row['id_objet']];
 	}
 }
 
@@ -189,20 +196,20 @@ function generer_url_forum_parent($id_forum) {
 // sous forme d'un forum en reponse, de statut 'original'
 // https://code.spip.net/@conserver_original
 function conserver_original($id_forum) {
-	$s = sql_fetsel("id_forum", "spip_forum", "id_parent=" . intval($id_forum) . " AND statut='original'");
+	$s = sql_fetsel('id_forum', 'spip_forum', 'id_parent=' . intval($id_forum) . " AND statut='original'");
 
 	if ($s) {
 		return '';
 	} // pas d'erreur
 
 	// recopier le forum
-	$t = sql_fetsel("*", "spip_forum", "id_forum=" . intval($id_forum));
+	$t = sql_fetsel('*', 'spip_forum', 'id_forum=' . intval($id_forum));
 
 	if ($t) {
 		unset($t['id_forum']);
 		$id_copie = sql_insertq('spip_forum', $t);
 		if ($id_copie) {
-			sql_updateq('spip_forum', array('id_parent' => $id_forum, 'statut' => 'original'), "id_forum=$id_copie");
+			sql_updateq('spip_forum', ['id_parent' => $id_forum, 'statut' => 'original'], "id_forum=$id_copie");
 
 			return ''; // pas d'erreur
 		}
@@ -237,7 +244,7 @@ function enregistre_et_modifie_forum($id_forum, $c = false) {
  */
 function forum_recuperer_titre_dist($objet, $id_objet, $id_forum = 0, $publie = true) {
 	include_spip('inc/filtres');
-	$titre = "";
+	$titre = '';
 
 	if ($f = charger_fonction($objet . '_forum_extraire_titre', 'inc', true)) {
 		$titre = $f($id_objet);
@@ -251,7 +258,7 @@ function forum_recuperer_titre_dist($objet, $id_objet, $id_forum = 0, $publie = 
 	}
 
 	if ($titre and $id_forum) {
-		$titre_m = sql_getfetsel('titre', 'spip_forum', "id_forum = " . intval($id_forum));
+		$titre_m = sql_getfetsel('titre', 'spip_forum', 'id_forum = ' . intval($id_forum));
 		if (!$titre_m) {
 			return false; // URL fabriquee
 		}
@@ -284,7 +291,7 @@ function forum_recuperer_titre_dist($objet, $id_objet, $id_forum = 0, $publie = 
  */
 function controler_forum($objet, $id_objet) {
 	// Valeur par defaut
-	$accepter_forum = $GLOBALS['meta']["forums_publics"];
+	$accepter_forum = $GLOBALS['meta']['forums_publics'];
 
 	// il y a un cas particulier pour l'acceptation de forum d'article...
 	if ($f = charger_fonction($objet . '_accepter_forums_publics', 'inc', true)) {
@@ -309,7 +316,7 @@ function forum_insert_noprevisu() {
 	$securiser_action = charger_fonction('securiser_action', 'inc');
 	$arg = $securiser_action();
 
-	$file = _DIR_TMP . "forum_" . preg_replace('/[^0-9]/', '', $arg) . ".lck";
+	$file = _DIR_TMP . 'forum_' . preg_replace('/[^0-9]/', '', $arg) . '.lck';
 	if (!file_exists($file)) {
 		# ne pas tracer cette erreur, peut etre due a un double POST
 		# tracer_erreur_forum('session absente');
@@ -341,12 +348,12 @@ function forum_get_objets_depuis_env() {
 		// on met une cle (le type d'objet) pour qu'un appel du pipeline
 		// puisse facilement soustraire un objet qu'il ne veut pas avec
 		// unset($objets['rubrique']) par exemple.
-		$objets = pipeline('forum_objets_depuis_env', array(
+		$objets = pipeline('forum_objets_depuis_env', [
 			'article' => id_table_objet('article'),
 			'rubrique' => id_table_objet('rubrique'),
 			'site' => id_table_objet('site'),
 			'breve' => id_table_objet('breve')
-		));
+		]);
 		asort($objets);
 	}
 

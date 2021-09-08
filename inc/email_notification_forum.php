@@ -10,7 +10,7 @@
  *  Pour plus de détails voir le fichier COPYING.txt ou l'aide en ligne.   *
 \***************************************************************************/
 
-if (!defined("_ECRIRE_INC_VERSION")) {
+if (!defined('_ECRIRE_INC_VERSION')) {
 	return;
 }
 
@@ -22,33 +22,29 @@ if (!defined("_ECRIRE_INC_VERSION")) {
  * @param array $contexte
  * @return string
  */
-function inc_email_notification_forum_dist($t, $email, $contexte = array()) {
-	static $contextes_store = array();
+function inc_email_notification_forum_dist($t, $email, $contexte = []) {
+	static $contextes_store = [];
 
 	if (!isset($contextes_store[$t['id_forum']])) {
 		$url = '';
 		$id_forum = $t['id_forum'];
 
-		if ($t['statut'] == 'prive') # forum prive
-		{
-			if ($t['id_objet']) {
+		if ($t['statut'] == 'prive') { # forum prive
+		if ($t['id_objet']) {
 				$url = generer_url_entite($t['id_objet'], $t['objet'], '', 'forum' . $id_forum, false);
-			}
+		}
 		} else {
-			if ($t['statut'] == 'privrac') # forum general
-			{
-				$url = generer_url_ecrire('forum') . '#forum' . $id_forum;
+			if ($t['statut'] == 'privrac') { # forum general
+			$url = generer_url_ecrire('forum') . '#forum' . $id_forum;
 			} else {
-				if ($t['statut'] == 'privadm') # forum des admins
-				{
-					$url = generer_url_ecrire('forum', 'quoi=admin') . '#forum' . $id_forum;
+				if ($t['statut'] == 'privadm') { # forum des admins
+				$url = generer_url_ecrire('forum', 'quoi=admin') . '#forum' . $id_forum;
 				} else {
-					if ($t['statut'] == 'publie') # forum publie
-					{
-						$url = generer_url_entite($id_forum, 'forum', '', 'forum' . $id_forum, true);
+					if ($t['statut'] == 'publie') { # forum publie
+					$url = generer_url_entite($id_forum, 'forum', '', 'forum' . $id_forum, true);
 					} else #  forum modere, spam, poubelle direct ....
 					{
-						$url = generer_url_ecrire('controler_forum', "debut_id_forum=" . $id_forum);
+						$url = generer_url_ecrire('controler_forum', 'debut_id_forum=' . $id_forum);
 					}
 				}
 			}
@@ -69,10 +65,10 @@ function inc_email_notification_forum_dist($t, $email, $contexte = array()) {
 		// pour la moderation (permet de reperer les SPAMS avec des liens caches)
 		include_spip('inc/filtres');
 
-		$links = array();
+		$links = [];
 		foreach ($t as $champ => $v) {
 			// il faut appliquer le traitement de raccourci car sinon on rate des liens sous forme [->..] utilises par les spammeurs !
-			$v = appliquer_traitement_champ($v, $champ, "forum", $contexte);
+			$v = appliquer_traitement_champ($v, $champ, 'forum', $contexte);
 			$links = $links + extraire_balises($v, 'a');
 		}
 		$links = extraire_attribut($links, 'href');
@@ -82,32 +78,31 @@ function inc_email_notification_forum_dist($t, $email, $contexte = array()) {
 		$contextes_store[$t['id_forum']] = $t;
 	}
 
-	$fond = "notifications/forum_poste";
+	$fond = 'notifications/forum_poste';
 	if (isset($contexte['fond'])) {
 		$fond = $contexte['fond'];
 		unset($contexte['fond']);
 	}
 	$t = array_merge($contextes_store[$t['id_forum']], $contexte);
 	// Rechercher eventuellement la langue du destinataire
-	if (null !== ($l = sql_getfetsel('lang', 'spip_auteurs', "email=" . sql_quote($email)))) {
+	if (null !== ($l = sql_getfetsel('lang', 'spip_auteurs', 'email=' . sql_quote($email)))) {
 		$l = lang_select($l);
 	}
 
 	$parauteur = (strlen($t['auteur']) <= 2) ? '' :
-		(" " . _T('forum_par_auteur', array(
+		(' ' . _T('forum_par_auteur', [
 					'auteur' => $t['auteur']
-				)
-			) .
+				]) .
 			($t['email_auteur'] ? ' <' . $t['email_auteur'] . '>' : ''));
 
 	$titre = textebrut(typo($t['titre_source']));
 	if ($titre) {
 		$forum_poste_par = _T(
 			$t['objet'] == 'article' ? 'forum:forum_poste_par' : 'forum:forum_poste_par_generique',
-			array('parauteur' => $parauteur, 'titre' => $titre, 'objet' => $t['objet'])
+			['parauteur' => $parauteur, 'titre' => $titre, 'objet' => $t['objet']]
 		);
 	} else {
-		$forum_poste_par = _T('forum:forum_poste_par_court', array('parauteur' => $parauteur));
+		$forum_poste_par = _T('forum:forum_poste_par_court', ['parauteur' => $parauteur]);
 	}
 
 	$t['par_auteur'] = $forum_poste_par;

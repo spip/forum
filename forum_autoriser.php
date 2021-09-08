@@ -15,7 +15,7 @@
  *
  * @package SPIP\Forum\Autorisations
  **/
-if (!defined("_ECRIRE_INC_VERSION")) {
+if (!defined('_ECRIRE_INC_VERSION')) {
 	return;
 }
 
@@ -24,7 +24,8 @@ if (!defined("_ECRIRE_INC_VERSION")) {
  *
  * @pipeline autoriser
  */
-function forum_autoriser() { }
+function forum_autoriser() {
+}
 
 /**
  * Autorisation de voir l'élément «forums internes» dans le menu
@@ -37,7 +38,8 @@ function forum_autoriser() { }
  * @return bool          true s'il a le droit, false sinon
  **/
 function autoriser_foruminternesuivi_menu_dist($faire, $type = '', $id = 0, $qui = null, $opt = null) {
-	if ((($GLOBALS['meta']['forum_prive'] == 'non') && ($GLOBALS['meta']['forum_prive_admin'] == 'non'))
+	if (
+		(($GLOBALS['meta']['forum_prive'] == 'non') && ($GLOBALS['meta']['forum_prive_admin'] == 'non'))
 		or (($GLOBALS['meta']['forum_prive'] == 'non') && ($qui['statut'] == '1comite'))
 	) {
 		return false;
@@ -121,7 +123,8 @@ function autoriser_forum_moderer_dist($faire, $type, $id, $qui, $opt) {
 	// si on fournit un id : deleguer a modererforum sur l'objet concerne
 	if ($id) {
 		include_spip('inc/forum');
-		if ($racine = racine_forum($id)
+		if (
+			$racine = racine_forum($id)
 			and list($objet, $id_objet, ) = $racine
 			and $objet
 		) {
@@ -260,5 +263,5 @@ function autoriser_participerforumprive_dist($faire, $type, $id, $qui, $opt) {
  * @return bool          true s'il a le droit, false sinon
  **/
 function autoriser_configurerforum_menu_dist($faire, $type, $id, $qui, $opt) {
-    return autoriser('configurer', 'forum', $id, $qui, $opt);
+	return autoriser('configurer', 'forum', $id, $qui, $opt);
 }
