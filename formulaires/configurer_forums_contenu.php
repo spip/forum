@@ -35,12 +35,12 @@ function formulaires_configurer_forums_contenu_verifier_dist() {
 
 	foreach (
 		[
-				 'forums_titre',
-				 'forums_texte',
-				 'forums_urlref',
-				 'forums_afficher_barre',
-				 'forums_forcer_previsu'
-			 ] as $champ
+			'forums_titre',
+			'forums_texte',
+			'forums_urlref',
+			'forums_afficher_barre',
+			'forums_forcer_previsu'
+		] as $champ
 	) {
 		if (_request($champ) !== 'oui') {
 			set_request($champ, 'non');
