@@ -1,7 +1,7 @@
 <paquet
 	prefix="forum"
 	categorie="communication"
-	version="1.11.7"
+	version="1.11.8"
 	etat="stable"
 	compatibilite="[3.2.0;3.2.*]"
 	logo="prive/themes/spip/images/forum-32.png"
