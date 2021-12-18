@@ -97,7 +97,7 @@ if (!function_exists('revision_forum')) {
 			$invalideur = '';
 		}
 
-		// Supprimer 'http://' tout seul
+		// Supprimer 'http://' ou 'https://' tout seul
 		if (isset($c['url_site'])) {
 			include_spip('inc/filtres');
 			$c['url_site'] = vider_url($c['url_site'], false);
