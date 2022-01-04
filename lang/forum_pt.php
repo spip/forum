@@ -31,6 +31,8 @@ utilizadores devem ter uma assinatura ao fornecer o seu endereço e-mail antes d
 
 	// E
 	'erreur_enregistrement_message' => 'A sua mensagem não pôde ser guardada devido a um problema técnico',
+	'extensions_autorisees' => 'Extensões permitidas:',
+	'extensions_autorisees_toutes' => 'todas',
 
 	// F
 	'form_pet_message_commentaire' => 'Alguma mensagem ou comentário ?',
@@ -43,6 +45,7 @@ utilizadores devem ter uma assinatura ao fornecer o seu endereço e-mail antes d
 	'forum_attention_trop_caracteres' => '<b>Atenção !</b> A sua mensagem é demasiado longa (@compte@ caracteres) : para poder ser guardada não pode conter mais de @max@ caracteres.',
 	'forum_avez_selectionne' => 'Seleccionou :',
 	'forum_cliquer_retour' => 'Clique <a href=\'@retour_forum@\'>ici</a> para continuar.',
+	'forum_envoyer' => 'Enviar',
 	'forum_forum' => 'fórum',
 	'forum_info_modere' => 'Este fórum é moderado antes da publicação : a sua contribuição só aparecerá depois de ser validada por um administrador do sítio.',
 	'forum_lien_hyper' => '<b>Link hipertexto</b> (opcional)',
@@ -95,6 +98,8 @@ utilizadores devem ter uma assinatura ao fornecer o seu endereço e-mail antes d
  nos artigos ; serão proibidos nas rubricas, notícias, etc.',
 	'info_envoi_forum' => 'Envio dos fóruns aos autores dos artigos',
 	'info_fonctionnement_forum' => 'Funcionamento do fórum :',
+	'info_forcer_previsualisation_court' => 'Forçar pré-visualização',
+	'info_forcer_previsualisation_long' => 'Forçar pré-visualização antes de enviar mensagem',
 	'info_forums_liees_mot' => 'Mensagens de fórum ligadas a esta palavra-chave',
 	'info_gauche_suivi_forum_2' => 'A página <i>gestão dos fóruns </i> é um instrumento de gestão do seu sítio (e não um espaço de discussão ou de redacção). Exibe todas as contribuições do fórum público deste artigo e permite-lhe gerir essas contribuições. ',
 	'info_liens_syndiques_3' => 'fóruns',

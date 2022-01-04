@@ -124,8 +124,9 @@
 	<langue code="oc_prv" url="https://trad.spip.net/tradlang_module/forum?lang_cible=oc_prv" total="138" traduits="49" relire="0" modifs="19" nouveaux="70" pourcent="35.51" />
 	<langue code="oc_va" url="https://trad.spip.net/tradlang_module/forum?lang_cible=oc_va" total="138" traduits="49" relire="0" modifs="19" nouveaux="70" pourcent="35.51" />
 	<langue code="pl" url="https://trad.spip.net/tradlang_module/forum?lang_cible=pl" total="138" traduits="50" relire="0" modifs="20" nouveaux="68" pourcent="36.23" />
-	<langue code="pt" url="https://trad.spip.net/tradlang_module/forum?lang_cible=pt" total="138" traduits="133" relire="0" modifs="0" nouveaux="5" pourcent="96.38">
+	<langue code="pt" url="https://trad.spip.net/tradlang_module/forum?lang_cible=pt" total="138" traduits="138" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
 		<traducteur nom="Cláudia Anjos Lopes" lien="https://trad.spip.net/auteur/claudia_a_lopes" />
+		<traducteur nom="Jorge Paulo Malveira Pimentel Dos Santos" lien="https://trad.spip.net/auteur/jorge-paulo-malveira-pimentel-dos-santos" />
 		<traducteur nom="Ricardo Porto" lien="https://trad.spip.net/auteur/ricardo-porto" />
 	</langue>
 	<langue code="pt_br" url="https://trad.spip.net/tradlang_module/forum?lang_cible=pt_br" total="138" traduits="138" relire="0" modifs="0" nouveaux="0" pourcent="100.00">
