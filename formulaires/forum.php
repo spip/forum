@@ -544,7 +544,7 @@ function formulaires_forum_traiter_dist(
 
 	// Antispam basique :
 	// si l'input invisible a ete renseigne, ca ne peut etre qu'un bot
-	if (strlen(_request(_request('cle_ajouter_document')))) {
+	if (strlen(_request(_request('cle_ajouter_document')) ?? '')) {
 		tracer_erreur_forum('champ interdit (nobot) rempli');
 
 		return ['message_erreur' => _T('forum:erreur_enregistrement_message')];
