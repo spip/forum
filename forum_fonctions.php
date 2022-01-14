@@ -67,7 +67,7 @@ function filtre_url_rss_forum($param) {
 	if (!preg_match(',.*(id_(\w*?))=([0-9]+),S', $param, $regs)) {
 		return '';
 	}
-	list(, $k, $t, $v) = $regs;
+	[, $k, $t, $v] = $regs;
 	if ($t == 'forum') {
 		$k = 'id_' . ($t = 'thread');
 	}

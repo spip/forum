@@ -25,7 +25,7 @@ function forum_inserer($id_parent = null, $set = null) {
 
 	include_spip('inc/session');
 	$champs = [
-		'id_parent' => $id_parent ? $id_parent : 0,
+		'id_parent' => $id_parent ?: 0,
 		'id_thread' => $id_parent ? sql_getfetsel('id_thread', 'spip_forum', 'id_forum=' . intval($id_parent)) : 0,
 		'date_heure' => date('Y-m-d H:i:s'),
 		'ip' => $GLOBALS['ip'],

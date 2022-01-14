@@ -22,7 +22,7 @@ function action_instituer_forum_dist($arg = null) {
 		$arg = $securiser_action();
 	}
 
-	list($id_forum, $statut) = preg_split('/\W/', $arg);
+	[$id_forum, $statut] = preg_split('/\W/', $arg);
 	$id_forum = intval($id_forum);
 	$row = sql_fetsel('*', 'spip_forum', "id_forum=$id_forum");
 	if (!$row) {

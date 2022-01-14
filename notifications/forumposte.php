@@ -39,8 +39,8 @@ function notifications_forumposte_dist($quoi, $id_forum, $options) {
 			$s = substr($GLOBALS['meta']['forums_publics'], 0, 3);
 		}
 
-		$prevenir_auteurs = (strpos(@$GLOBALS['meta']['prevenir_auteurs'], ",$s,") !== false
-			or @$GLOBALS['meta']['prevenir_auteurs'] === 'oui'); // compat
+		$prevenir_auteurs = (strpos($GLOBALS['meta']['prevenir_auteurs'] ?? '', (string) ",$s,") !== false
+			or ($GLOBALS['meta']['prevenir_auteurs'] ?? '') === 'oui'); // compat
 	}
 
 	include_spip('inc/texte');

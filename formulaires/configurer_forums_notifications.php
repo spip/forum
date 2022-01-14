@@ -24,7 +24,7 @@ function formulaires_configurer_forums_notifications_charger_dist() {
 	$l = $GLOBALS['liste_des_forums'];
 	unset($l['forum:info_pas_de_forum']);
 	foreach ($l as $desc => $val) {
-		$valeurs['prevenir_auteurs_' . $val] = (($m == 'oui') or strpos($m, ",$val,") !== false);
+		$valeurs['prevenir_auteurs_' . $val] = (($m == 'oui') or strpos($m, (string) ",$val,") !== false);
 	}
 
 	return $valeurs;

@@ -57,7 +57,7 @@ function balise_FORMULAIRE_FORUM_PRIVE($p) {
 	 * sur quoi le formulaire porte.
 	 * Enfin, on pourra aussi forcer objet et id_objet depuis l'appel du formulaire
 	 */
-	$i_boucle = $p->nom_boucle ? $p->nom_boucle : $p->id_boucle;
+	$i_boucle = $p->nom_boucle ?: $p->id_boucle;
 	if (isset($p->boucles[$i_boucle])) {
 		$_id_objet = $p->boucles[$i_boucle]->primary;
 		$_type = $p->boucles[$i_boucle]->id_table;
@@ -128,7 +128,7 @@ function balise_FORMULAIRE_FORUM_PRIVE_stat($args, $context_compil) {
 		return false;
 	}
 
-	list($objet, $id_objet, $retour) = $r;
+	[$objet, $id_objet, $retour] = $r;
 
 	return
 		[$objet, $id_objet, $id_forum, $forcer_previsu, $statut, $retour];

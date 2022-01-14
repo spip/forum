@@ -17,7 +17,7 @@ if (!defined('_ECRIRE_INC_VERSION')) {
 function urls_generer_url_forum_dist($id_forum, $args = '', $ancre = '') {
 	if ($id_forum = intval($id_forum)) {
 		include_spip('inc/forum');
-		list($type, $id, ) = racine_forum($id_forum);
+		[$type, $id, ] = racine_forum($id_forum);
 		if ($type) {
 			if (!$ancre) {
 				$ancre = "forum$id_forum";

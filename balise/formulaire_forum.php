@@ -57,7 +57,7 @@ function balise_FORMULAIRE_FORUM($p) {
 	 * Enfin, on pourra aussi forcer objet et id_objet depuis l'appel du formulaire
 	 */
 
-	$i_boucle = $p->nom_boucle ? $p->nom_boucle : $p->id_boucle;
+	$i_boucle = $p->nom_boucle ?: $p->id_boucle;
 	if ($i_boucle) { // La balise peut aussi être utilisée hors boucle.
 		$_id_objet = $p->boucles[$i_boucle]->primary;
 		$_type = $p->boucles[$i_boucle]->id_table;
@@ -128,7 +128,7 @@ function balise_FORMULAIRE_FORUM_stat($args, $context_compil) {
 		return false;
 	}
 
-	list($objet, $id_objet, $retour) = $r;
+	[$objet, $id_objet, $retour] = $r;
 
 	// on verifie ici si on a le droit de poster sur ce forum
 	// doublonne le test dans le formulaire, mais permet d'utiliser la balise
@@ -169,7 +169,7 @@ function balise_forum_retrouve_objet($ido, $id_forum, $args, $context_compil, $o
 	$_objet = $context_compil[5]; // type le la boucle deja calcule
 	$nb_ids_env = $context_compil[6]; // nombre d'elements id_xx recuperes
 	$nb = $nb_ids_env;
-	$url = isset($args[$nb]) ? $args[$nb] : '';
+	$url = $args[$nb] ?? '';
 	$objet = isset($args[++$nb]) ? $args[$nb] : '';
 	$id_objet = isset($args[++$nb]) ? $args[$nb] : 0;
 

@@ -105,6 +105,7 @@ function inc_forum_insert_dist($objet, $id_objet, $id_forum, $force_statut = nul
 // https://code.spip.net/@forum_insert_base
 function forum_insert_base($c, $id_forum, $objet, $id_objet, $statut, $ajouter_mot = false) {
 
+	$files = [];
 	if (!in_array($statut, ['privrac', 'privadm'])) {
 		// si le statut est vide, c'est qu'on ne veut pas de ce presume spam !
 		if (!$statut or !$objet or !$id_objet) {

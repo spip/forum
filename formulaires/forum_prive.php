@@ -78,7 +78,7 @@ function formulaires_forum_prive_charger_dist($objet, $id_objet, $id_forum, $for
 		'table' => $table,
 		'texte' => '',
 		'config' => $config,
-		'titre' => isset($titre) ? $titre : '',
+		'titre' => $titre ?? '',
 		'_hidden' => $script_hidden, # pour les variables hidden
 		'url_site' => '',
 		'forcer_previsu' => $forcer_previsu,

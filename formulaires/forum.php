@@ -166,7 +166,7 @@ function formulaires_forum_charger_dist(
 		'_hidden' => $script_hidden, # pour les variables hidden qui seront inserees dans le form et dans le form de previsu
 		'cle_ajouter_document' => $cle,
 		'formats_documents_forum' => trim($GLOBALS['meta']['formats_documents_forum']) == '*' ? _T('forum:extensions_autorisees_toutes') : forum_documents_acceptes(),
-		'ajouter_document' => isset($_FILES['ajouter_document']['name']) ? $_FILES['ajouter_document']['name'] : '',
+		'ajouter_document' => $_FILES['ajouter_document']['name'] ?? '',
 		'nobot' => ($cle ? _request($cle) : _request('nobot')),
 		'ajouter_groupe' => $ajouter_groupe,
 		'ajouter_mot' => (is_array($ajouter_mot) ? $ajouter_mot : [$ajouter_mot]),
@@ -194,9 +194,10 @@ function formulaires_forum_charger_dist(
  * @return int
  */
 function forum_fichier_tmp($arg) {
-# astuce : mt_rand pour autoriser les hits simultanes
+	$f = null;
+	# astuce : random_int pour autoriser les hits simultanes
 	while (
-		($alea = time() + @mt_rand()) + intval($arg)
+		($alea = time() + random_int(0, mt_getrandmax())) + intval($arg)
 		and @file_exists($f = _DIR_TMP . "forum_$alea.lck")
 	) {
 	};
@@ -243,6 +244,7 @@ function formulaires_forum_verifier_dist(
 	$forcer_previsu,
 	$retour
 ) {
+	$meta = null;
 	include_spip('inc/acces');
 	include_spip('inc/texte');
 	include_spip('inc/session');
@@ -282,7 +284,7 @@ function formulaires_forum_verifier_dist(
 			unset($_FILES['ajouter_document']);
 		} else {
 			if (!isset($GLOBALS['visiteur_session']['tmp_forum_document'])) {
-				session_set('tmp_forum_document', sous_repertoire(_DIR_TMP, 'documents_forum') . md5(uniqid(rand())));
+				session_set('tmp_forum_document', sous_repertoire(_DIR_TMP, 'documents_forum') . md5(uniqid(random_int(0, mt_getrandmax()))));
 			}
 
 			$tmp = $GLOBALS['visiteur_session']['tmp_forum_document'];
@@ -290,7 +292,7 @@ function formulaires_forum_verifier_dist(
 
 			include_spip('inc/joindre_document');
 			include_spip('action/ajouter_documents');
-			list($extension, $doc['name']) = fixer_extension_document($doc);
+			[$extension, $doc['name']] = fixer_extension_document($doc);
 
 			if (!in_array($extension, $acceptes)) {
 				$erreurs['document_forum'] = _T('public:formats_acceptes', ['formats' => join(', ', $acceptes)]);
@@ -471,9 +473,7 @@ function inclure_previsu(
 	// recuperer les filtres eventuels de 'mes_fonctions.php' sur les balises
 	include_spip('public/parametrer');
 	$tmptexte = '';
-	$evaltexte = isset($table_des_traitements['TEXTE']['forums'])
-		? $table_des_traitements['TEXTE']['forums']
-		: $table_des_traitements['TEXTE'][0];
+	$evaltexte = $table_des_traitements['TEXTE']['forums'] ?? $table_des_traitements['TEXTE'][0];
 	$evaltexte = '$tmptexte = ' . str_replace('%s', '$texte', $evaltexte) . ';';
 	// evaluer...
 	// [fixme]

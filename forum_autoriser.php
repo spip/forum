@@ -125,7 +125,7 @@ function autoriser_forum_moderer_dist($faire, $type, $id, $qui, $opt) {
 		include_spip('inc/forum');
 		if (
 			$racine = racine_forum($id)
-			and list($objet, $id_objet, ) = $racine
+			and [$objet, $id_objet, ] = $racine
 			and $objet
 		) {
 			return autoriser('modererforum', $objet, $id_objet);

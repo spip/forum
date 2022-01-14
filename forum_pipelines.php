@@ -88,7 +88,7 @@ function forum_accueil_informations($texte) {
 	if ($cpt) {
 		if ($where) {
 			include_spip('inc/forum');
-			list($f, $w) = critere_statut_controle_forum('public');
+			[$f, $w] = critere_statut_controle_forum('public');
 			$q = sql_select('COUNT(*) AS cnt, F.statut', "$f", "$w ", 'F.statut');
 			while ($row = sql_fetch($q)) {
 				$r = $row['statut'];
@@ -149,7 +149,7 @@ function forum_afficher_fiche_objet($flux) {
 			and !sql_getfetsel('id_parent', 'spip_rubriques', 'id_rubrique=' . intval($id_rubrique))
 		) {
 			include_spip('inc/forum');
-			list($from, $where) = critere_statut_controle_forum('prop', $id_rubrique);
+			[$from, $where] = critere_statut_controle_forum('prop', $id_rubrique);
 			$n_forums = sql_countsel($from, $where);
 		} else {
 			$n_forums = 0;
@@ -228,7 +228,7 @@ function forum_boite_infos($flux) {
 			and (!isset($flux['args']['row']['id_parent']) or !$flux['args']['row']['id_parent'])
 		) {
 			include_spip('inc/forum');
-			list($from, $where) = critere_statut_controle_forum('prop', $id_rubrique);
+			[$from, $where] = critere_statut_controle_forum('prop', $id_rubrique);
 			$n_forums = sql_countsel($from, $where);
 		} else {
 			$n_forums = 0;
@@ -352,7 +352,7 @@ function forum_optimiser_base_disparus($flux) {
 			// si un seul lien (ce forum donc), on supprime le document
 			// si un document est attache a plus d'un forum, c'est un cas bizarre ou gere a la main
 			// on ne touche a rien !
-			if (count(objet_trouver_liens(['document' => $row['id_document']], '*')) == 1) {
+			if ((is_countable(objet_trouver_liens(['document' => $row['id_document']], '*')) ? count(objet_trouver_liens(['document' => $row['id_document']], '*')) : 0) == 1) {
 				autoriser_exception('supprimer', 'document', $row['id_document']);
 				if ($supprimer_document = charger_fonction('supprimer_document', 'action', true)) {
 					$supprimer_document($row['id_document']);
@@ -417,7 +417,7 @@ function forum_prepare_recherche($flux) {
 		and $points = $flux['data']
 	) {
 		$serveur = $flux['args']['serveur'];
-		$modificateurs = (isset($flux['args']['modificateurs']) ? $flux['args']['modificateurs'] : []);
+		$modificateurs = ($flux['args']['modificateurs'] ?? []);
 
 		// pas de groupe par thread si {plat}
 		if (!isset($modificateurs['plat'])) {

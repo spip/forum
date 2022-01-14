@@ -182,7 +182,7 @@ function generer_url_forum_dist($id_forum, $args = '', $ancre = '') {
 // https://code.spip.net/@generer_url_forum_parent
 function generer_url_forum_parent($id_forum) {
 	if ($id_forum = intval($id_forum)) {
-		list($type, $id) = parent_forum($id_forum);
+		[$type, $id] = parent_forum($id_forum);
 		if ($type) {
 			return generer_url_entite($id, $type);
 		}

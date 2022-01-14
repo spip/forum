@@ -57,7 +57,7 @@ function action_instituer_lot_forum_dist($arg = null) {
 				$where[] = 'auteur=' . sql_quote($auteur);
 			}
 			$rows = sql_allfetsel('*', 'spip_forum', $where);
-			if (!count($rows)) {
+			if (!(is_countable($rows) ? count($rows) : 0)) {
 				return;
 			}
 
@@ -82,7 +82,7 @@ function action_instituer_lot_forum_dist($arg = null) {
 			$where[] = sql_in('statut', ['privadm', 'prive', 'privrac'], 'NOT');
 			$where[] = sql_in('id_forum', $ids);
 			$rows = sql_allfetsel('*', 'spip_forum', $where);
-			if (!count($rows)) {
+			if (!(is_countable($rows) ? count($rows) : 0)) {
 				return;
 			}
 

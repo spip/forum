@@ -44,9 +44,7 @@ function critere_FORUMS_meme_parent_dist($idb, &$boucles, $crit) {
 	global $exceptions_des_tables;
 	$boucle = &$boucles[$idb];
 	$arg = kwote(calculer_argument_precedent($idb, 'id_parent', $boucles));
-	$id_parent = isset($exceptions_des_tables[$boucle->id_table]['id_parent']) ?
-		$exceptions_des_tables[$boucle->id_table]['id_parent'] :
-		'id_parent';
+	$id_parent = $exceptions_des_tables[$boucle->id_table]['id_parent'] ?? 'id_parent';
 	$mparent = $boucle->id_table . '.' . $id_parent;
 
 	$boucle->where[] = ["'='", "'$mparent'", $arg];
@@ -85,9 +83,7 @@ function critere_FORUMS_meme_parent_dist($idb, &$boucles, $crit) {
 function critere_FORUMS_compter_reponses($idb, &$boucles, $crit) {
 	$boucle = &$boucles[$idb];
 
-	$id_parent = isset($GLOBALS['exceptions_des_tables'][$boucle->id_table]['id_parent']) ?
-		$GLOBALS['exceptions_des_tables'][$boucle->id_table]['id_parent'] :
-		'id_parent';
+	$id_parent = $GLOBALS['exceptions_des_tables'][$boucle->id_table]['id_parent'] ?? 'id_parent';
 
 	$id_table = $boucle->id_table;
 
@@ -98,7 +94,7 @@ function critere_FORUMS_compter_reponses($idb, &$boucles, $crit) {
 	$boucle->select[] = 'COUNT(fils.id_forum) AS nombre_reponses';
 
 	// Gestion du having
-	if (count($crit->param)) {
+	if (is_countable($crit->param) ? count($crit->param) : 0) {
 		$champ = $crit->param[0][0]->texte;
 		if (preg_match(',^(\w+)\s*([<>=])\s*([0-9]+)$,', $champ, $r)) {
 			$champ = $r[1];
