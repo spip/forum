@@ -117,27 +117,16 @@ function forum_insert_base($c, $id_forum, $objet, $id_objet, $statut, $ajouter_m
 
 	// Entrer le message dans la base
 	include_spip('inc/session');
-	$id_reponse = sql_insertq('spip_forum', [
-		'date_heure' => date('Y-m-d H:i:s'),
-		'ip' => $GLOBALS['ip'],
-		'id_auteur' => session_get('id_auteur'),
-	]);
+	include_spip('action/editer_forum');
+
+	$set = [
+		'objet' => $objet,
+		'id_objet' => $id_objet,
+		'statut' => $statut,
+	];
+	$id_reponse = forum_inserer($id_forum, $set);
 
 	if ($id_reponse) {
-		if ($id_forum > 0) {
-			$id_thread = sql_getfetsel('id_thread', 'spip_forum', 'id_forum =' . intval($id_forum));
-		} else {
-			$id_thread = $id_reponse;
-		} # id_thread oblige INSERT puis UPDATE.
-
-		// Entrer les cles
-		sql_updateq('spip_forum', [
-			'id_parent' => $id_forum,
-			'objet' => $objet,
-			'id_objet' => $id_objet,
-			'id_thread' => $id_thread,
-			'statut' => $statut
-		], 'id_forum=' . intval($id_reponse));
 
 		// Entrer les mots-cles associes
 		if ($ajouter_mot) {
@@ -147,7 +136,6 @@ function forum_insert_base($c, $id_forum, $objet, $id_objet, $statut, $ajouter_m
 		//
 		// Entree du contenu et invalidation des caches
 		//
-		include_spip('action/editer_forum');
 		revision_forum($id_reponse, $c);
 
 		// Ajouter un document
