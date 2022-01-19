@@ -371,11 +371,6 @@ parameters:
 			path: formulaires/forum.php
 
 		-
-			message: "#^Function generer_url_forum not found\\.$#"
-			count: 1
-			path: formulaires/forum.php
-
-		-
 			message: "#^Function generer_url_public not found\\.$#"
 			count: 2
 			path: formulaires/forum.php
@@ -456,11 +451,6 @@ parameters:
 			path: formulaires/forum.php
 
 		-
-			message: "#^Undefined variable\\: \\$meta$#"
-			count: 2
-			path: formulaires/forum.php
-
-		-
 			message: "#^Function _T not found\\.$#"
 			count: 7
 			path: formulaires/forum_prive.php
@@ -482,11 +472,6 @@ parameters:
 
 		-
 			message: "#^Function generer_url_entite not found\\.$#"
-			count: 1
-			path: formulaires/forum_prive.php
-
-		-
-			message: "#^Function generer_url_forum not found\\.$#"
 			count: 1
 			path: formulaires/forum_prive.php
 
@@ -667,7 +652,7 @@ parameters:
 
 		-
 			message: "#^Function objet_trouver_liens not found\\.$#"
-			count: 1
+			count: 2
 			path: forum_pipelines.php
 
 		-
@@ -982,7 +967,7 @@ parameters:
 
 		-
 			message: "#^Function session_get not found\\.$#"
-			count: 5
+			count: 4
 			path: inc/forum_insert.php
 
 		-
@@ -998,21 +983,6 @@ parameters:
 		-
 			message: "#^Function spip_unlink not found\\.$#"
 			count: 2
-			path: inc/forum_insert.php
-
-		-
-			message: "#^Function sql_getfetsel not found\\.$#"
-			count: 1
-			path: inc/forum_insert.php
-
-		-
-			message: "#^Function sql_insertq not found\\.$#"
-			count: 1
-			path: inc/forum_insert.php
-
-		-
-			message: "#^Function sql_updateq not found\\.$#"
-			count: 1
 			path: inc/forum_insert.php
 
 		-
