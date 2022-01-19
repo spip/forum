@@ -128,7 +128,6 @@ function forum_insert_base($c, $id_forum, $objet, $id_objet, $statut, $ajouter_m
 	$id_reponse = forum_inserer($id_forum, $set);
 
 	if ($id_reponse) {
-
 		// Entrer les mots-cles associes
 		if ($ajouter_mot) {
 			mots_du_forum($ajouter_mot, $id_reponse);
