@@ -31,7 +31,7 @@ function inc_email_notification_forum_dist($t, $email, $contexte = []) {
 
 		if ($t['statut'] == 'prive') { # forum prive
 		if ($t['id_objet']) {
-				$url = generer_url_entite($t['id_objet'], $t['objet'], '', 'forum' . $id_forum, false);
+				$url = generer_objet_url($t['id_objet'], $t['objet'], '', 'forum' . $id_forum, false);
 		}
 		} else {
 			if ($t['statut'] == 'privrac') { # forum general
@@ -41,7 +41,7 @@ function inc_email_notification_forum_dist($t, $email, $contexte = []) {
 				$url = generer_url_ecrire('forum', 'quoi=admin') . '#forum' . $id_forum;
 				} else {
 					if ($t['statut'] == 'publie') { # forum publie
-					$url = generer_url_entite($id_forum, 'forum', '', 'forum' . $id_forum, true);
+					$url = generer_objet_url($id_forum, 'forum', '', 'forum' . $id_forum, true);
 					} else #  forum modere, spam, poubelle direct ....
 					{
 						$url = generer_url_ecrire('controler_forum', 'debut_id_forum=' . $id_forum);
@@ -56,7 +56,7 @@ function inc_email_notification_forum_dist($t, $email, $contexte = []) {
 		}
 		if ($t['id_objet']) {
 			include_spip('inc/filtres');
-			$t['titre_source'] = generer_info_entite($t['id_objet'], $t['objet'], 'titre');
+			$t['titre_source'] = generer_objet_info($t['id_objet'], $t['objet'], 'titre');
 		}
 
 		$t['url'] = $url;

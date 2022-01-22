@@ -178,7 +178,7 @@ function generer_url_forum_parent($id_forum) {
 	if ($id_forum = intval($id_forum)) {
 		[$type, $id] = parent_forum($id_forum);
 		if ($type) {
-			return generer_url_entite($id, $type);
+			return generer_objet_url($id, $type);
 		}
 	}
 
@@ -246,7 +246,7 @@ function forum_recuperer_titre_dist($objet, $id_objet, $id_forum = 0, $publie = 
 			return false;
 		}
 
-		$titre = generer_info_entite($id_objet, $objet, 'titre', '*');
+		$titre = generer_objet_info($id_objet, $objet, 'titre', '*');
 	}
 
 	if ($titre and $id_forum) {

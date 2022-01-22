@@ -366,7 +366,7 @@ parameters:
 			path: formulaires/forum.php
 
 		-
-			message: "#^Function generer_url_entite not found\\.$#"
+			message: "#^Function generer_objet_url not found\\.$#"
 			count: 1
 			path: formulaires/forum.php
 
@@ -471,7 +471,7 @@ parameters:
 			path: formulaires/forum_prive.php
 
 		-
-			message: "#^Function generer_url_entite not found\\.$#"
+			message: "#^Function generer_objet_url not found\\.$#"
 			count: 1
 			path: formulaires/forum_prive.php
 
@@ -766,18 +766,18 @@ parameters:
 			path: inc/email_notification_forum.php
 
 		-
-			message: "#^Function generer_info_entite not found\\.$#"
+			message: "#^Function generer_objet_info not found\\.$#"
 			count: 1
+			path: inc/email_notification_forum.php
+
+		-
+			message: "#^Function generer_objet_url not found\\.$#"
+			count: 2
 			path: inc/email_notification_forum.php
 
 		-
 			message: "#^Function generer_url_ecrire not found\\.$#"
 			count: 3
-			path: inc/email_notification_forum.php
-
-		-
-			message: "#^Function generer_url_entite not found\\.$#"
-			count: 2
 			path: inc/email_notification_forum.php
 
 		-
@@ -836,12 +836,12 @@ parameters:
 			path: inc/forum.php
 
 		-
-			message: "#^Function generer_info_entite not found\\.$#"
+			message: "#^Function generer_objet_info not found\\.$#"
 			count: 1
 			path: inc/forum.php
 
 		-
-			message: "#^Function generer_url_entite not found\\.$#"
+			message: "#^Function generer_objet_url not found\\.$#"
 			count: 1
 			path: inc/forum.php
 
@@ -1181,12 +1181,12 @@ parameters:
 			path: public/forum.php
 
 		-
-			message: "#^Function generer_url_ecrire not found\\.$#"
+			message: "#^Function generer_objet_url_absolue not found\\.$#"
 			count: 1
 			path: urls/generer_url_ecrire_forum.php
 
 		-
-			message: "#^Function generer_url_entite_absolue not found\\.$#"
+			message: "#^Function generer_url_ecrire not found\\.$#"
 			count: 1
 			path: urls/generer_url_ecrire_forum.php
 
@@ -1196,7 +1196,7 @@ parameters:
 			path: urls/generer_url_ecrire_forum.php
 
 		-
-			message: "#^Function generer_url_entite not found\\.$#"
+			message: "#^Function generer_objet_url not found\\.$#"
 			count: 1
 			path: urls/generer_url_forum.php
 

@@ -207,7 +207,7 @@ function formulaires_forum_prive_traiter_dist($objet, $id_objet, $id_forum, $for
 			} else {
 				$thread = sql_fetsel('id_thread', 'spip_forum', 'id_forum=' . $id_reponse);
 				spip_log('id_thread=' . $thread['id_thread'], 'forum');
-				$retour = generer_url_entite($thread['id_thread'], 'forum');
+				$retour = generer_objet_url($thread['id_thread'], 'forum');
 			}
 		}
 

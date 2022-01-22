@@ -23,7 +23,7 @@ function urls_generer_url_forum_dist($id_forum, $args = '', $ancre = '') {
 				$ancre = "forum$id_forum";
 			}
 
-			return generer_url_entite($id, $type, $args, $ancre, true);
+			return generer_objet_url($id, $type, $args, $ancre, true);
 		}
 	}
 

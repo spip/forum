@@ -22,12 +22,12 @@
 	<BOUCLE_liste_art(FORUMS){id_?}{where?}{statut?}{recherche?}{tri #ENV{par,date_heure},#GET{defaut_tri}}{pagination #ENV{nb,10}}>
 		<tr class="[(#COMPTEUR_BOUCLE|alterner{row_odd,row_even})]">
 			<td class='statut'>[(#CHEMIN_IMAGE{[forum-statut-(#STATUT)-24.png]}|balise_img|inserer_attribut{alt,#VAL{forum:statut_}|concat{#STATUT}|_T})]</td>
-			<td class='titre principale'><a href="[(#ID_FORUM|generer_url_entite{forum})]"
+			<td class='titre principale'><a href="[(#ID_FORUM|generer_objet_url{forum})]"
 																																						title="<:info_numero_abbreviation|attribut_html:> #ID_FORUM">[(#RANG). ]#TITRE</a>
 			[<div class='texte'>(#TEXTE|couper{100})</div>]
 			</td>
 			<td class='auteur'>[(#ID_AUTEUR|oui)<a
-							href='[(#ID_AUTEUR|generer_url_entite{auteur})]'>#MODELE{auteur_nom,id_auteur}</a>][(#ID_AUTEUR|non)#AUTEUR]</td>
+							href='[(#ID_AUTEUR|generer_objet_url{auteur})]'>#MODELE{auteur_nom,id_auteur}</a>][(#ID_AUTEUR|non)#AUTEUR]</td>
 			<td class='date secondaire'>[(#DATE_HEURE|affdate_jourcourt)]</td>
 			<td class='id'>[(#AUTORISER{modererforum,#OBJET,#ID_OBJET}|?{
 				<a href="[(#URL_ECRIRE{controler_forum,debut_forum=@#ID_FORUM})]">#ID_FORUM</a>,
