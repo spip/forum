@@ -250,11 +250,19 @@ function forum_boite_infos($flux) {
 		and $id_auteur = $flux['args']['id']
 	) {
 		if ($nb = sql_countsel('spip_forum', "statut!='poubelle' AND id_auteur=" . intval($id_auteur))) {
-			$nb = '<div><a href="' . generer_url_ecrire('controler_forum', 'id_auteur=' . $id_auteur) . '">' . singulier_ou_pluriel(
-				$nb,
-				'forum:info_1_message_forum',
-				'forum:info_nb_messages_forum'
-			) . '</a></div>';
+			if (autoriser('moderer', 'forum')) {
+				$nb = '<div><a href="' . generer_url_ecrire('controler_forum', 'id_auteur=' . $id_auteur) . '">' . singulier_ou_pluriel(
+					$nb,
+					'forum:info_1_message_forum',
+					'forum:info_nb_messages_forum'
+				) . '</a></div>';				
+			} else {
+				$nb = '<div>' . singulier_ou_pluriel(
+					$nb,
+					'forum:info_1_message_forum',
+					'forum:info_nb_messages_forum'
+				) . '</div>';
+			}
 			if ($p = strpos($flux['data'], '<!--nb_elements-->')) {
 				$flux['data'] = substr_replace($flux['data'], $nb, $p, 0);
 			}
