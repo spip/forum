@@ -1,6 +1,7 @@
-# README
+# Plugin Forum
 
-Quelques notes de documentation.
+Ce plugin gère des forums privés et publics dans SPIP
+
 
 ## Modèle de données
 
