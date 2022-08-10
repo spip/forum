@@ -1,5 +1,11 @@
 # Changelog
 
+## [Unreleased]
+
+### Fixed
+
+- #4760 Suivre le changement de comportement de appliquer_filtre et utiliser appliquer_si_filtre à la place
+
 ## [3.0.4] - 2022-05-20
 
 ### Added
